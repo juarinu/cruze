@@ -1,0 +1,735 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8" />
+<title>Global Diagnostic System</title>
+<link rel="stylesheet" type="text/css" href="mdiprint.css" media="print" />
+<!-- Version 2.0.16 with all screenshots and Export Function explanation (Snapshot) -->
+
+<style type="text/css">
+	  <!--
+	div.all { margin-top:2px; margin-left:2px; margin-right:auto }
+	  
+.style1 { text-align: center;
+}
+.style2 {
+	border-style: solid;
+	border-color: black;
+	border-width: 1px;
+}
+.style3 {
+	border: 1px solid black;
+}
+.tableinsert {
+	vertical-align: top;
+	text-indent: 20px;
+}
+.caution {
+	padding: 10px;
+	margin: 0px;
+	border-color: #0000FF;
+	border-style: outset;
+	border-width: 1px 4px 4px 4px;
+	border-left: 1px solid #808080;
+	border-top: 1px solid #808080;
+	background-color: #FFCCCC;
+}
+.important {
+	padding: 10px;
+	margin: 0px;
+	border-color: #0000FF;
+	border-style: outset;
+	border-width: 1px 4px 4px 4px;
+	border-left: 1px solid #808080;
+	border-top: 1px solid #808080;
+	background-color: #FFCCCF;
+}
+.note {
+	padding: 10px;
+	margin: 0px;
+	border-color: #0000FF;
+	border-style: outset;
+	border-width: 1px 4px 4px 4px;
+	border-left: 1px solid #808080;
+	border-top: 1px solid #808080;
+	background-color: #99CCFF;
+}
+.notice {
+	padding: 10px;
+	margin: 0px;
+	border-color: #808080 #666666 #666666 #808080;
+	border-style: solid outset outset solid;
+	border-width: 1px 4px 4px 4px;
+	border-left: 1px solid #808080;
+	border-top: 1px solid #808080;
+	background-color: #C0C0C0;}
+
+* {
+	font-family:arial,sans-serif;}
+
+
+
+-->
+</style>
+</head>
+<body><div class="all">
+
+ <h1 align="center">Global Diagnostic System</h1>
+ <h1>Indholdsfortegnelse</h1>
+ <ol>
+ <li><a href="#intro">Indledning</a></li>
+ <li><a href="#product_description">Produktbeskrivelse</a></li>
+ <li><a href="#installation">GDS-installation</a></li>
+ <li><a href="#getting_started">Introduktion</a></li>
+ <li><a href="#navigation">Almindelig navigering</a></li>
+ <li><a href="#diagnostics">Diagnosticering</a></li>
+ <li><a href="#troubleshooting">Fejlfinding</a></li>
+ </ol>
+ <hr />
+
+  <h1><a name="intro"></a>Indledning</h1>
+ <h2>GDS-referencevejledning</h2>
+ <p>Oversigtsvejledningen til Global Diagnostic System (GDS) giver et overblik over GDS.</p>
+ <p>Hele indholdet i denne håndbog er baseret på de seneste produktoplysninger, der har været tilgængelige på udgivelsestidspunktet.<!--j-->&nbsp;<!--j-->Retten forbeholdes til at foretage ændringer på et hvilket som helst tidspunkt uden varsel.</p>
+ <p>Ingen del af denne publikation må reproduceres, opbevares i noget genfindingssystem, eller overføres i nogen form, inklusive, men ikke begrænset til, hverken elektronisk, mekanisk, fotokopieringsmæssig, registrerende, eller på anden måde uden forudindhentet skriftlig tilladelse fra GM Service and Parts Operations.<!--j-->&nbsp;<!--j-->Dette omfatter alle tekster, tabeller, illustrationer og diagrammer.</p>
+ <p>Anmodninger om tilladelse skal sendes til:</p>
+ <p>General Motors Corporation<br />
+Service and Parts Operations<br />
+Product Engineering<br />
+37350 Ecorse Road<br />
+Romulus, MI 48174-1376<br />
+U.S.A.</p>
+ <p>© 2008 GM Service and Parts Operation (GM's service- og reservedelstjeneste).<!--j-->&nbsp;<!--j-->Produceret i Amerikas Forenede Stater.<!--j-->&nbsp;<!--j-->Alle rettigheder forbeholdes.</p>
+ <hr />
+
+  <h2>Generelle oplysninger</h2>
+ <p>
+GDS er beregnet til brug for uddannet servicepersonale til diagnosticering og reparatur af elektroniske systemer til automobiler.<!--j-->&nbsp;<!--j-->
+
+Der er gjort alle forsøg på at bidrage med komplette og nøjagtige tekniske oplysninger, som er baseret på fabrikkens serviceoplysninger, der har været tilgængelige på udgivelsestidspunktet.<!--j-->&nbsp;<!--j-->
+Imidlertid forbeholdes retten til at foretage ændringer på et hvilket som helst tidspunkt uden varsel.</p>
+ <p>
+For at blive fortroligt med GDS og dens egenskaber, og hvordan den anvendes, skal denne brugervejledning læses grundigt igennem, inden GDS sættes i værk.</p>
+ <p>GDS giver følgende egenskaber:</p>
+ <ul>
+ <li>Udlæsning af fejlkoder ved diagnosticering</li>
+ <li>Udlæsning af ECU-identifikationsoplysninger</li>
+ <li>Udlæsning og grafisk fremstilling af datalisteparametre</li>
+ <li>Optagelse og lagring af data med øjebliksbilleder</li>
+ <li>Kontrolfunktioner</li>
+ <li>Konfigurerings- og nulstillingsfunktioner</li>
+ <li>Optagelse og lagring af diagnosticeringsprotokoller</li>
+ <li>Lagring af diagnosticeringssessioner for hvert køretøj</li>
+ </ul>
+
+  <table width="80%" border="0">
+ <tr>
+ <td class="important">
+ <b><!--j-->Vigtigt<!--j-->:<!--j--></b><br />
+SPS-programmering af køretøjets styringer understøttes ikke i GDS.<!--j-->&nbsp;<!--j-->Anvend programmet TIS2Web/GlobalTIS SPS til programmering med MDI af SPS-videregivelse.</td>
+ </tr>
+ </table>
+ <hr />
+
+  <h2>Kundesupportoversigt</h2>
+ <p>
+
+Ring til det lokale Customer Support Center for at hjælp til spørgsmål eller problemer vedrørende betjeningen af GM-Techline-produktet og de tilhørende produkter, eller for at arrangere garanti og ikke-garanti reparationer.<!--j-->&nbsp;<!--j-->Kontakt GM Dealer Equipment ved bestilling af reservedele.</p>
+ <h3>Før du ringer</h3>
+ <p>Før du foretager et opkald til Helpdesk, sørg da for at have følgende informationer klar:</p>
+ <ul>
+ <li>Forhandlernavn, adresse og forhandlerkodenummer</li>
+ <li>Serienummer på MDI eller notebook, hvis relevant</li>
+ <li>Navn, delnummer og mængde af den artikel, som anmodes om</li>
+ <li>Telefonnummer, som teknikeren kan kontaktes på.</li>
+ </ul>
+ <p>Udarbejd en kort beskrivelse af problemet:</p>
+ <ul>
+ <li>Fortæl hvornår problemet opstod</li>
+ <li>List eventuelle viste fejlkoder</li>
+ <li>Fortæl hvilket tilbehør, der blev anvendt, da problemet opstod, og opgiv oplysningerne om køretøjet</li>
+ </ul>
+
+  <h4>IDENTIFIKATION AF DIN MDI</h4>
+ <p>GM MDI-montagemærkaten findes på bagsiden af enheden.<!--j-->&nbsp;<!--j-->
+
+Montageidentifikationsnummeret består af 2 dele: En produktionskode, der kan spores, og et entydigt serienummer.<!--j-->&nbsp;<!--j-->
+Serienummeret anvendes til at identificere MDI med i programmellet.</p>
+
+  <h3>Foretagelse af opkald</h3>
+
+  <h4>Europæiske brugere</h4>
+ <h5>GDS programmelinstallation &amp; tekniske støtte til systemkommunikation:</h5>
+ <p><b>DAC - Dealer Assistance Center:</b><br />
+
+
+Teknisk brugerstøtte til GDS-programmel, til GDS-kommunikation med TIS2Web/GlobalTIS og MDI gives af forhandlerassistancecentret.<br />
+
+De respektive landes gældende telefonnummer findes på logon-siden i Kanal 21-portalen.</p>
+ <h5>
+GDS diagnosticeringsstøtte til køretøjer:</h5>
+ <p><b>Det Europæiske Tekniske Assistancecenter:</b><br />
+
+Teknisk brugerstøtte vedrørende spørgsmål om køretøjskommunikation under GDS-baseret diagnosticeringsbegivenheder gives af Det Europæiske Tekniske Assistancecenter.<!--j-->&nbsp;<!--j-->
+De respektive landes gældende telefonnummer fås hos den lokale afdeling af General Motors Europa.</p>
+ <h5>
+Teknisk støtte til uafhængige værksteder/eftersalgsmarkedet:</h5>
+ <p><b>European Customer Assistance Center</b><br />
+Uafhængige værksteder kan kontakte European Customer Assistance Center for ovenstående tjenester med teknisk støtte.<!--j-->&nbsp;<!--j-->
+Kontaktoplysningerne findes på portalen GME InfoTech.</p>
+ <hr />
+ <h3>Softwarelicensaftale</h3>
+ <p>Læs denne licensaftale til programmellet grundigt, inden programmellet tages i brug.<!--j-->&nbsp;<!--j-->
+Ibrugtagning af programmellet vil være ensbetydende med en accept af de vilkår og betingelser, der gælder for denne.</p>
+ <p>EJERSKAB<!--j-->:<!--j-->&nbsp;<!--j-->
+
+
+Programmellet er ophavsretligt beskyttet arbejde tilhørende General Motors Corporation, og De anerkender, at General Motors Corporation ejer hele ophavsretten og anden ejendomsret, titel og interesse i og til programmellet.<!--j-->&nbsp;<!--j-->
+Alle rettigheder til programmellet, der ikke er specifikt givet i licens herunder, forbeholdes udtrykkeligt af General Motors Corporation.</p>
+ <p>ANVENDELSE<!--j-->:<!--j-->&nbsp;<!--j-->
+Der bevilges en ikke-eksklusiv, ikke-overdragelig licens til at bruge programmellet på flere computersystemer.<!--j-->&nbsp;<!--j-->
+
+Der må ikke foretages baglæns konstruktion eller rekonstruktion ud fra programkoden eller dekompileres, redigeres, reproduceres, distribueres eller sælges af dette programmel, hverken helt eller delvist.<!--j-->&nbsp;<!--j-->
+Denne licens er Deres personlige og betinget af overholdelse til fulde af alle de vilkår og betingelser, der er indeholdt heri.</p>
+ <p>Ophævelse<!--j-->:<!--j-->&nbsp;<!--j-->
+
+General Motors Corporation kan ophæve denne aftale om programmellicens i tilfælde af, at de indeholdte vilkår og betingelser ikke overholdes.<!--j-->&nbsp;<!--j-->
+
+Efter en ophævelse skal anvendelsen af programmellet omgående ophøre, og enhver og alle kopier af programmellet skal destrueres, inklusive, men ikke begrænset til, de, der ligger på Deres computersystemer.</p>
+ <hr />
+ <h1><a name="product_description"></a>2.<!--j-->&nbsp;<!--j-->Produktbeskrivelse</h1>
+ <h2>Pc-krav til forhandlere<!--j-->&nbsp;<!--j-->(<!--j-->Europa<!--j-->)</h2>
+ <p>De minimale pc-krav for at kunne køre GDS sammen med TIS2Web og GlobalTIS:</p>
+ <ul>
+ <li>Processor:<br />
+Intel Pentium M, 1,5 GHz</li>
+ <li>Systemhukommelse (RAM)<br />
+1 GB til GDS og TIS2Web/GlobalTIS klient; 2GB til GDS og GlobalTIS som enkeltstående</li>
+ <li>Mindste harddiskdrev:<br />
+40 GB</li>
+ <li>Operativsystemet<!--j-->:<br />Windows XP Professional (SP2)</li>
+ <li>Andre programmelkomponenter:<br />
+Java Web Start 1.5x eller højere<br />
+ </li>
+ </ul>
+ <p>
+Se den GME IT maskinel- og programmelspecifikation, der kan fås hos den lokale GME-organisation, for at få flere oplysninger.</p>
+ <hr />
+ <h1><a name="installation"></a>3.<!--j-->&nbsp;<!--j-->GDS-installation</h1>
+ <h2>GDS-komponentoversigt:</h2>
+ <p>GDS-programmellet omfatter følgende moduler, som installeres indledningsvist og opdateres regelmæssigt med periodiske mellemrum.<!--j-->&nbsp;<!--j-->[I]</p>
+ <ul>
+ <li><b>GDS Base System</b><br />
+Det installerede GDS-grundprogrammel på pc'en</li>
+ <li><!--j--><b><!--j-->GDS-leverancer<!--j--></b><!--j-->:<br />
+Diagnosticeringsdatapakker til køretøjsmodeller, der udfører diagnosticeringsrutinerne med køretøjsstyringerne.</li>
+ <li><!--j--><b><!--j-->GDS Smart Start<!--j--></b><!--j-->:<!--j--><br />Programagent som sammenligner udgaverne på GDS Base System, GDS-leverancer og MDI Manager-programmelserveren mellem TIS2Web/GlobalTIS og den lokale installation.<!--j-->&nbsp;<!--j-->Hvis der er nye opdateringer tilgængelige, vil der blive bedt om, at de hentes.</li>
+ <li><!--j--><b><!--j-->MDI Manager-programmel (en separat programapplikation)<!--j--></b><!--j-->:<br />
+Program til opdatering og konfigurering af MDI-udstyret (brugergrænseflade til multidiagnosticering)</li>
+ </ul>
+ <p><img src="../../images/gds_i_dan.gif" alt="gds_i.gif" width="650px"/><br />
+[I]</p>
+ <hr />
+ <h2>Installation:</h2>
+ <p>GDS kan installeres fra en separat installations-dvd eller hentet direkte fra TIS2Web/GlobalTIS.</p>
+ <h3>Installation fra GDS-dvd'en:</h3>
+ <ul>
+ <li>Pc'en skal startes i administrationstilstand</li>
+ <li>Start installationsprogrammet i menuen Start på dvd'en</li>
+ <li>Vælg sprog til installeringsproceduren</li>
+ <li>Den allerede eksisterende GDS-konfiguration og -data kan genanvendes, hvis der skulle blive fundet en tidligere installation af GDS på pc'en.</li>
+ <li>Accepter licensaftalen (for at kunne fortsætte)</li>
+ <li>Vælg installationsmappen til GDS</li>
+ <li>Starter installationen af GDS</li>
+ <li>Programmellet MDI Manager installeres, hvis der ikke findes andre eller en ældre udgave af MDI Manager installeret på pc'en.<!--j-->&nbsp;<!--j-->MDI-hardwaren skal være tilsluttet under installationen ved den den første installation af MDI Manager.<!--j-->&nbsp;<!--j-->Se MDI-brugervejledningen for flere oplysninger.</li>
+ <li>GDS kan startes ved hjælp af skrivebordssymbolet eller via Start/Programmer/GDS, når installationen er fuldført.<!--j-->&nbsp;<!--j--><img src="../../images/gds_icon.png" alt="gds_icon.png" /></li>
+ <li>Om nødvendigt konfigureres brandmuren til at tillade GDS-kommunikation med MDI-udstyret.</li>
+ <li>GDS Smart Start starter, og den viste opdatering udføres, inden GDS startes.</li>
+ </ul>
+ <hr />
+ <h3>Installation fra TIS2Web/GlobalTIS<!--j-->:</h3>
+ <p><img src="../../images/gds_ii_dan.gif" alt="gds_ii.gif" width="600px"/><br />
+[II]</p>
+ <table width="80%" border="0">
+ <tr>
+ <td class="important"><b><!--j-->Vigtigt<!--j-->:<!--j--></b><!--j-->&nbsp;<!--j-->Under installationen fra TIS2Web hentes der ca. 140 MB via internettet.</td></tr></table>
+ <ul>
+ <li>Pc'en skal køre i administrationstilstand</li>
+ <li>Start GDS på TIS2Web/GlobalTIS-hjemmesiden<!--j-->&nbsp;<!--j-->[II]</li>
+ <li>GDS Smart Start hentes fra serveren TIS2Web, og alt afhænging af internetforbindelsen kan det tage lidt tid.</li>
+ <li>Vælg installationsmappen til GDS.</li>
+ <li>Angiv adgangskoden til internettet (gælder kun hvis der anvendes en proxyserver til internetadgangen)</li>
+ <li>Om nødvendigt konfigureres brandmuren til at tillade GDS-kommunikation med MDI-udstyret.</li>
+ <li>Når GDS Smart Start-installationen begynder, kan det tage et øjeblik.</li>
+ <li>Start GDS Smart Start, hvorefter GDS-opdateringen udføres.<!--j-->&nbsp;<!--j-->[III]</li>
+ <li>Når installationsfilerne er hentet, vises GDS-versionen og MDI Manager-programversionen, og kan hentes ved at godkende den, sådan som det forlanges i dialogen.<!--j-->&nbsp;<!--j-->Ved hjælp af knappen  <b>Vis status for overførsel</b> kan statuslinjen på opdateringen vises.</li>
+ <li>Programmellet MDI Manager installeres, såfremt det ikke allerede er  installeret et MDI Manager- programmel på pc'en, og hvis der findes en ældre udgave af programmellet MDI Manager.<!--j-->&nbsp;<!--j-->MDI-hardwaren skal være tilsluttet under installationen ved den den første installation af MDI Manager.<!--j-->&nbsp;<!--j-->Se MDI-brugervejledningen for flere oplysninger.</li>
+ </ul>
+
+  <table width="200" border="0">
+ <tr>
+ <td><img src="../../images/gds_iii_dan.gif" alt="gds_III.gif" width="200px"/></td>
+ <td><img src="../../images/gds_iv_dan.gif" alt="gds_IV.gif" width="150px" /></td>
+ </tr>
+ <tr>
+ <td>[III]</td>
+ <td>[IV]</td>
+ </tr>
+ </table>
+ <hr />
+ <h3>GDS-opdatering via Smart Start<!--j-->:</h3>
+Start GDS enten fra TIS2Web/GlobalTIS eller som selvstændigt program via Windows-startmenuen.<!--j-->&nbsp;<!--j-->Før GDS indlæses, starter Smart Start-agenten og sammenligner følgende versioner af PC GDS-installationen med TIS2Web / GlobalTIS-serverindhold:</p>
+ <ul>
+ <li>GDS Smart Start</li>
+ <li>GDS Base System</li>
+ <li>MDI Manager</li>
+ </ul>
+ <p>Smart Start spørger brugeren, om der er nye udgaver tilgængelige på serveren, der skal hentes.<!--j-->&nbsp;<!--j-->[IV]</p>
+ <!--<p>Smart Start-opdateringen af GDS Base System, GDS-leverancer og MDI Manager udføres kun, hvis GDS startes fra TIS2Web/GlobalTIS og ikke er i enkeltstående tilstand.<!--j-->&nbsp;<!--j--><!--The update capability of standalone started GDS will be available in a future version.</p>
+--> <table width="80%" border="0">
+ <tr>
+ 	 <td class="important"><!--j--><b><!--j-->Vigtigt<!--j--><!--j-->:<!--j--></b><!--j-->&nbsp;<!--j-->Den beskrevne opdatering kræver, at pc'en altid kører i administrationstilstand.</td></tr></table>
+ <hr />
+ <h3>Annullering af GDS Base System-installationen</h3>
+ <p>GDS-installationen kan tilbageføres til den tidligere installerede udgave, hvis en GDS-opdatering forårsager driftsproblemer.</p>
+ <p>Tilbageføringen sker ved at gå til START -&gt;PROGRAMMER -&gt; GDS -&gt; GDS TILBAGEFØRING.<!--j-->&nbsp;<!--j-->En forudsætning for tilbageføringen er, at der skal installeres en ældre GDS-version på pc'en.</p>
+ <h3>GDS-licenskontrolsystem (Lease)</h3>
+ <p>GDS-licensstyringssystemet forhindrer uautoriseret anvendelse af GDS.<!--j-->&nbsp;<!--j-->For at forny GDS-leasingen er det nødvendigt at starte GDS fra TIS2Web eller GlobalTIS.<!--j-->&nbsp;<!--j-->GDS-leasingen kræver fornyelse efter 7 dage, hvis programmet i dette tidsrum kun er blevet startet i selvstændig tilstand.<!--j-->&nbsp;<!--j--><br>Hvis GDS-leasingen er udløbet, beder en fejlmeddelelse brugeren om at starte GDS-programmet fra TIS2Web/GlobalTIS for at forny leasingen.</p>
+ <hr />
+ <h3>Hent og opdater GDS-leverancer</h3>
+ <p>GDS-leverancer er diagnosticeringprogrammer, der styrer kommunikationen og diagnosticeringstjenesterne mellem GDS og styreenhed til køretøjet<!--j-->.<!--j-->&nbsp;<!--j-->GDS-leverancer frigives pr. model og opdateres hele tiden på TIS2Web/GlobalTIS.</p>
+ <p>GDS Smart Start identificerer automatisk, hvis der er nye eller opdaterede udgaver til levering og tilgængelige på TIS2Web/GlobalTIS, når opdateringsprocessen sættes i gang.<!--j-->.<!--j-->&nbsp;<!--j-->Nye leverancer skal først overføres til en lokal mappe på pc'en, før de kan installeres på GDS.<!--j-->&nbsp;<!--j-->Opdateringer af leverancer, der allerede er installeret overføres automatisk og behøver blot at blive installeret i masterdatabasen på GDS.</p>
+ <br clear=all />
+ <hr />
+ <h3>Indledende overførsel og opdatering af GDS-leverancer</h3>
+ <ul><li>Start GDS enten fra TIS2Web/GlobalTIS eller som selvstændigt program via Windows-startmenuen.</li>
+ <li>Vælg knappen  <b>Tilføj en ny diagnosticeringspakke</b> på logonskærmen til GDS.</li>
+ <li>Tryk på knappen  <b>Opdater leverancelisten fra serveren</b>.<!--j-->&nbsp;<!--j-->[V-1]<!--j-->.<!--j-->&nbsp;<!--j-->På serveren vises pakker, der er tilgængelige, men ikke overført endnu, med symbolet.<!--j-->&nbsp;<!--j-->
+ <img src="../../images/gds_server.png" alt="gds_server.png" width="36" height="34" /></li>
+ <li>Marker og hent pakkerne til leverance.<!--j-->&nbsp;<!--j-->[V-2]<!--j-->.<!--j-->&nbsp;<!--j-->Filterfunktionen hjælper til at søge efter bestemte leverancer.<!--j-->&nbsp;<!--j-->Overførte pakker til leverance vises med symbolet.<!--j-->&nbsp;<!--j--><img src="../../images/gds_pc.png" alt="gds_pc.png" /></li>
+ <li>Installer de overførte pakker i masterdatabasen til GDS, idet installerede pakker vises i højre programvindue.<!--j-->&nbsp;<!--j-->[V-3]<!--j-->.</li>
+ </ul>
+ <p><img src="../../images/gds_v_dan.gif" alt="gds_v.gif" width="650px"/><br />
+[V]</p>
+ <hr />
+ <h2>Opdater installerede GDS-leverancer på masterdatabasen<!--j-->:</h2>
+ <ul>
+ 	 <li>Klik på knappen  <b>Opdater diagnosticeringspakken</b> på logonskærmen til GDS<!--j-->&nbsp;<!--j-->[VI-1]<!--j-->.<!--j-->&nbsp;<!--j-->GDS sammenligner de installerede udgaver af GDS-leverancer med de leverancer, der er tilgængelige på serveren, og henter de opdaterede pakker.</li>
+ 	 <li>De overførte pakker vises til installation i det nederste vindue til venstre.<!--j-->&nbsp;<!--j-->Vælg knappen  <b>Installer</b> eller  <b>Installer alle</b> for at starte installationen.<!--j-->&nbsp;<!--j-->[VI-2]<!--j-->.</li>
+ </ul>
+ <p><img src="../../images/gds_vi_dan.gif" alt="gds_vi.gif" width="650px"/><br />
+[VI]<!--j-->:</p>
+ <hr />
+ <h2>
+Tilbagefør opdatering af leverancen</h2>
+ <p>
+
+Tilbageføringsprocessen er stort set magen til den, der er beskrevet i afsnittet Indledende overførsel og opdatering af GDS-leverancer</p>
+ <ul>
+ 	 <li>Vælg knappen  <b>Tilføj en ny diagnosticeringspakke</b> på logonskærmen til GDS.</li>
+ 	 <li>Tryk på knappen  <b>Opdater leverancelisten fra serveren</b>.<!--j-->&nbsp;<!--j-->[V-1]<!--j--></li>
+ <li>Marker og hent de ønskede ældre udgaver af pakker til leverance.<!--j-->&nbsp;<!--j-->Filterfunktionen hjælper til at søge efter bestemte leverancer.</li>
+ <li>Installer de overførte pakker på masterdatabasen til GDS.</li>
+ </ul>
+ <hr />
+ <h2>Afinstallation af GDS<!--j-->:</h2>
+ <p>GDS kan afinstallerede ved at starte følgende program:</p>
+ <p>
+START -&gt; PROGRAMMER -&gt; GDS -&gt;GDS AFINSTALLATION</p>
+ <hr />
+ <h2>
+Skift sprog på GDS<!--j-->&nbsp;<!--j-->/<!--j-->&nbsp;<!--j-->Internationale indstillinger<!--j-->:</h2>
+ <p>GDS anvender operativsystemets sprogindstilling på pc'en.<!--j-->&nbsp;<!--j-->Der er ingen menu i GDS til ændring af sprogindstillingen.<!--j-->&nbsp;<!--j-->Udfør følgende trin for at ændre sprogindstillingen på GDS.</p>
+ <ul>
+ <li>Åbn Kontrolpanel i Windows ved hjælp af følgende sekvens:<!--j-->&nbsp;<!--j-->START -&gt; INDSTILLINGER -&gt; KONTROLPANEL</li>
+ <li>Åbn menuen Internationale og sproglige indstillinger</li>
+ <li>Vælg det ønskede land i  <b>Standarder og formater</b></li>
+ <li>Åbn menuen AVANCERET.<!--j-->&nbsp;<!--j-->Vælg den ønskede sprogindstilling i rullelisten for programmer, der ikke understøtter Unicode</li>
+ <li>Konfigurér de internationale indstillinger til ændring af de viste enheder i GDS.</li>
+ </ul>
+ <hr />
+ <h1><a name="getting_started"></a>4.<!--j-->&nbsp;<!--j-->Introduktion</h1>
+ <p><b><!--j-->NOTE<!--j-->:<br />
+Inden GDS udføres, er det vigtigt at iagttage følgende forholdsregler:<!--j--></b></p>
+ <ul>
+ <li>Brug af en forældet udgave kan forårsage skade på køretøjets moduler.<!--j-->&nbsp;<!--j-->GDS og brugergrænsefladen til multidiagnosticering skal være forsynet med den seneste programmeludgave.</li>
+ <li>Kontroller, at køretøjets akkumulator er ladet fuldt op.<!--j-->&nbsp;<!--j-->Batterispændingen på GDS skal være på 12-14 V.</li>
+ <li>Der må imidlertid ikke tilsluttes et ladeaggregat til køretøjet under anvendelsen af MDI.</li>
+ <li>Kontroller, at kabelforbindelserne er tilsluttet korrekt.<!--j-->&nbsp;<!--j-->Et afbrudt kabel kan evt. forårsage fejl på styringen.</li>
+ <li>Ved brug af en bærbar computer eller anden skærmenhed (håndholdt computer m.v.) til GDS, skal det sikres, at strømforsyningen er tilsluttet korrekt.<!--j-->&nbsp;<!--j-->Hvis den forsynes med vekselstrøm og elledningen går ud af stikket, kan det afbryde programmeringen og forårsage skade på styringsmodulet.<!--j-->&nbsp;<!--j-->Hvis den bærbare computer drives med hjælp af en indbygget strømkilde, dvs. et batteri, skal det kontrolleres, at det er tilstrækkeligt opladet til at gennemføre GDS-processen.</li>
+ </ul>
+ <table width="80%" border="0">
+ <tr>
+ <td class="note"><b>NOTE</b><br />
+
+Hvis der skal programmeres en ECU, skal den installeres på køretøjet, før denne proces påbegyndes.<!--j-->&nbsp;<!--j-->Kontroller, at køretøjets akkumulator er ladet fuldt op.</td></tr></table>
+ <table width="80%" border="0">
+ <tr>
+ <td class="important"><b>Vigtigt</b><br />
+For at mindske risikoen for tab af signaler, skal MDI'en konfigureres til det kommunikationsvalg, der er mest stabilt i de aktuelle omgivelser.<!--j--><!--j-->Der kan vælges mellem USB, Ethernet eller trådløst Ethernet.</td></tr></table>
+ <hr />
+ <h2>Startproceduren for GDS<!--j-->:</h2>
+ <p>GDS kan startes via TIS2Web/GlobalTIS ved at klikke på ikonet GDS.<!--j-->&nbsp;<!--j-->Som alternativ kan GDS også startes i enkeltstående tilstand via menuen Start i Windows.</p><ol><li>Klik på symbolet GDS i hovedmenuen i TIS2Web/GlobalTIS for at starte.<!--j-->.<!--j-->&nbsp;<!--j-->Hvis GDS startes i enkeltstående tilstand, så klik på START/PROGRAMMER/GDS.</li><li>Når GDS Smart Start startes, udføres den viste opdatering.<!--j-->&nbsp;<!--j-->Hvis der er en ny udgave af GDS eller MDI Manager tilgængelig på serveren, bliver der bedt om, at den hentes og installeres på pc'en.<!--j-->&nbsp;<!--j-->Klik på  <b>Fortsæt,</b> for at starte overføringen eller installationen<!--j-->&nbsp;<!--j-->[IV]<!--j-->.<!--j-->&nbsp;<!--j-->Hvis GDS startes i enkeltstående tilstand, er opdateringer ikke muligt.</li>
+ 	 <li>Siden til at logge på GDS indlæses.</li></ol>
+ <hr />
+ <h1><a name="navigation"></a>5.<!--j-->&nbsp;<!--j-->Almindelig navigering</h1>
+ <h2>Rullegardinmenuer<!--j-->&nbsp;<!--j--><img src="../../images/gds_menu.png" alt="gds_menu.png" width="57" height="38" /></h2>
+ <p>Der er 5 rullegardinmenuer tilgængelige fra GDS<!--j-->&nbsp;<!--j-->[VII]</p> <p>Bemærk<!--j-->:<!--j-->&nbsp;<!--j-->Disse menuer er kun menuvalg til pc-udgaverne af GDS<!--j-->.<!--j-->&nbsp;<!--j-->Der findes desuden et format til berøringsskærme, hvori menuerne er tilgængelige via en genvejstaste.</p> <ul>
+ <li>I menuen  <b>Fil</b> findes menupunktet  <b>Afslut</b> til lukning af GDS.</li>
+ <li>Der findes 2 valgmuligheder i menuen  <b>Session</b>.<!--j-->&nbsp;<!--j--><b>Gem den aktuelle sessionslog</b> og  <b>Tilføjer kommentarer til sessionen...</b><br /><b>Tilføjer kommentarer til sessionen...</b>: Der kan indtastes oplysninger fra tastaturet og de kan gemmes i Administration af sessionslogger.</li>
+ <li>Under valget  <b>Værktøjer</b> findes der 5 valgmuligheder:<!--j-->&nbsp;<!--j-->Start sporing<!--j-->,<!--j-->&nbsp;<!--j-->Genafspilning af øjebliksbilleder<!--j-->,<!--j-->&nbsp;<!--j-->Opret rapport<!--j-->,<!--j-->&nbsp;<!--j-->Viser filoverførselsstatus...<!--j-->,<!--j-->&nbsp;<!--j-->Brugeradministration<br />Der kan oprettes nye brugere ved at klikke på symbolet på siden  <b>Brugeradministration</b><!--j-->&nbsp;<!--j-->
+ <img src="../../images/gds_add-user.png" alt="gds_add-user.png" width="27" height="26" />
+ <!--j-->.</li>
+ <li><b>Vindue</b>: I menuen </b>Præferencer</b> kan skærmkonfigurationen vælges, f.eks. fuldskærmstilstand, pc- eller berøringsskærmstilstand.</li>
+ <li>Der er 3 valgmuligheder i  <b>Hjælp-markøren</b>:<br /><b>Indholdet af Hjælp</b> viser alle tilgængelige Hjælp-filer i GDS.<!--j-->&nbsp;<!--j-->
+<b>Om GDS</b> viser GDS-udgaven og det såkaldte byggenummer.<!--j-->&nbsp;<!--j-->
+<b>Vis MDI-udgave</b> viser MDI-programmel- og maskineludgaverne.<!--j-->&nbsp;<!--j-->
+Hav altid disse oplysninger parat ved en evt. kontakt med vort Customer Support Center.</li></ul><p></p>
+ <p><img src="../../images/gds_vii_dan.gif" alt="gds_vii.gif" width="120px"/><br />
+[VII]</p>
+ <hr />
+ <h2>Værktøjslinje med diagnosticeringsprogram</h2>
+ <p>Der findes flere valmuligheder på værktøjslinjen, som er tilgængelige, når visningen med systemnavigering nås.<!--j-->&nbsp;<!--j-->[VIII]</p>
+ <ul>
+ <li><b>Optag øjebliksbilleder</b> - angivet med en rød prik - er kun tilgængelig, når visningen med systemnavigeringen er nået, og anvendes til at optage et øjebliksbillede af et køretøj.<!--j-->&nbsp;<!--j-->Mens der optages øjebliksbilleder, er denne markering utilgængelig.</li>
+ <li><b>Stands optagelsen af øjebliksbilleder</b> - angivet med en blå firkant - fremkommer, mens et øjeblikbillede til et køretøj optages.<!--j-->&nbsp;<!--j-->Denne indstilling vælges for at standse optagelsen af øjebliksbillederne og gemme filen.</li>
+ <li>Symbolet  <b>Skærmbilledudklip</b> vælges for at fange indholdet det viste skærmbillede og gemme det på et sted på computeren.</li>
+ <li><b>Zoom ud</b> forøger den viste skriftstørrelse.<!--j-->&nbsp;<!--j-->Det viste billede mindskes i størrelse hver gang, der klikkes på musen.</li>
+ <li>Valget af  <b> Zoom ind</b> forøger den viste skriftstørrelse.<!--j-->&nbsp;<!--j-->Det viste billede forstørres i størrelse hver gang, der klikkes på musen.</li>
+ <li>Knappen  <b>Afslut</b> lukker det aktive diagnosticeringsprogram.</li>
+ </ul>
+ <p><img src="../../images/gds_viii_dan.gif" alt="gds_viii.gif" width="400px"/><br />
+[VIII]</p>
+ <hr />
+ <h2>Piletaster</h2>
+ <p>Piletasterne vises nederst på parameterlisten.<!--j-->&nbsp;<!--j-->Piletasterne kan bruges til følgende navigeringer:</p>
+ <p><img src="../../images/gds_ix_dan.gif" alt="gds_ix.gif" width="600px"/><br />
+[IX]<!--j-->:</p>
+ <ul>
+ <li>Pilen  <b>Flyt opad</b> kan bruges til at bevæge sig én mappe op ad gangen på parameterlisten, hver gang den vælges.</li>
+ <li>Pilen  <b>Flyt nedad</b> kan bruges til at bevæge sig én mappe ned ad gangen på parameterlisten, hver gang den vælges.</li>
+ <li>Pilen  <b>Flyt til højre</b> kan bruges til at åbne ét niveau i navigationshierarkiet.</li>
+ <li>Pilen  <b>Flyt til venstre</b> kan bruges til at lukke ét niveau i navigationshierarkiet.<!--j-->&nbsp;<!--j-->Denne valgmulighed vises ikke på producerens første skærmbillede.</li></ul>
+ <hr />
+ <h2>Øvrige taster</h2>
+ <p>Der findes desuden 3 andre taster nederst i alle skærmbilleder.<!--j-->&nbsp;<!--j-->Disse taster kan anvendes til følgende:</p>
+ <ul>
+ <li><b>Start</b> giver mulighed for at starte et program.</li>
+ <li><b>Forrige handling</b> kan anvendes at gå til det forrige skærmbillede.<!--j-->&nbsp;<!--j-->Denne valgmulighed er kun tilgængelig, når der findes et skærmbillede at gå tilbage til.</li>
+ <li><b>Næste handling</b> kan anvendes at gå til det næste skærmbillede.<!--j-->&nbsp;<!--j-->Denne valgmulighed er kun tilgængelig, såfremt alle de nødvendige markeringer er foretaget på det nuværende skærmbillede.</li>
+ </ul>
+ <br clear=all />
+ <hr />
+ <h2>Indtastning af køretøjs-/MDI-oplysninger</h2>
+ <p>1.<!--j-->&nbsp;<!--j-->Marker en bruger, der skal logges på, i hovedmenuen på GDS.<!--j-->&nbsp;<!--j-->Hvis der ikke har været oprettet nogen bruger, kan en ny bruger oprettes, ellers kan standardbrugeren markeres.<!--j-->&nbsp;<!--j-->(Se afsnittet om rullegardinmenuer)<br />
+ </p>
+ <p>2.<!--j-->&nbsp;<!--j-->Når adgangsvalget er foretaget, vises skærmbilledet med menuen Identifikation.<!--j-->&nbsp;<!--j-->På dette skærmbillede er der flere muligheder tilgængelige:</p>
+ <p><img src="../../images/gds_x_dan.gif" alt="gds_x.gif" width="650px"/><br />
+[X]</p>
+ <ul>
+ 	 <li>[X-1]<!--j-->&nbsp;<!--j--><b><b>MDI-valg</b></b><!--j-->:<!--j-->&nbsp;<!--j-->Alle de MDI'er viser, der er tilgængelige på forskellige netværk hos forhandlerene. Der kan markeres den MDI, som anvendes til at udføre diagnosticering på køretøjer med.<!--j-->&nbsp;<!--j-->For at oprette MDI-forbindelse skal en tilgængelig MDI fremhæves ved at klikke på den og vælge  <b>Opret forbindelse</b>.<!--j-->&nbsp;<!--j-->Vælg  <b>Afbryd forbindelsen</b> for at afbryde forbindelsen til MDI.<!--j-->&nbsp;<!--j-->Tilknyt en ny MDI til køretøjet, og vælg  <b>Opret forbindelse</b>.<!--j-->&nbsp;<!--j-->Vælg  <b>Opdater</b> for at undersøge, om der er nye MDI'er på de tilgængelige netværk.<!--j-->&nbsp;<!--j-->Marker afkrydsningsfeltet  <b>Naviger uden MDI</b> for at fortsætte i MDI uden, at der er tilsluttet nogen GDS.</li>
+ <li>[X-2]<!--j-->&nbsp;<!--j--><b><b>VIN-indtastning</b></b><!--j-->:<!--j-->&nbsp;<!--j-->Stelnummeret numeriske felt til manuelt indtastning eller automatisk VIN-idenfikation fra køretøjets styring.<!--j-->&nbsp;<!--j-->(MDI-forbindelse nødvendig).<!--j-->&nbsp;<!--j-->Yderligere kommentarer i forbindelse med denne VIN/køretøj kan tilføjes i nedenstående tekstfelt.</li>
+ <li>[X-3]<!--j-->&nbsp;<!--j--><b>Stelnummer</b> paragraf<!--j-->:<!--j-->&nbsp;<!--j-->Vælg allerførst bilmærke, model og modelår.</li>
+ <li>[X-4]<!--j-->&nbsp;<!--j--><b><b>Køretøjets diagnosticeringshistorik</b></b><!--j-->:<!--j-->&nbsp;<!--j-->Hvis et køretøj er diagnosticeret tidligere ved hjælp af dette GDS-system, lagres VIN med de tilhørende informationer under køretøjets historik.<!--j-->&nbsp;<!--j-->Vælg det køretøj, der skal diagnosticeres, på listen og fortsæt direkte til  <b>Køretøjets hjemmeside</b>.<!--j-->&nbsp;<!--j-->Der findes en filterfunktion til fri tekst.</li>
+ </ul>
+ <p>3.<!--j-->&nbsp;<!--j--><b>Køretøjets hjemmeside</b> vises.<!--j-->&nbsp;<!--j-->From this screen various vehicle data is displayed including: entered vehicle information, previous vehicle diagnosis, session comments, session log reports, and stored data</p>
+ <hr />
+ <h2><b><b>Køretøjets hjemmeside</b></b></h2>
+ <p><b>Køretøjets hjemmeside</b> omfatter flere områder:</p>
+ <p>[XI-1]<!--j-->:<!--j-->&nbsp;<!--j--><b>Biloplysninger</b> viser en liste over alle køretøjsinformationer, inkl. bilmærke, model og modelår m.v.<br />Denne liste opdateres i takt med at køretøjet diagnosticeres og gemmes med hver session.<!--j-->&nbsp;<!--j--><b>Slet valg af bilindstilling</b> anvendes til at slette valget af indholdet for et tidligere køretøj.<!--j-->&nbsp;<!--j-->Fremhæv den linje, der skal slettes af listen med indholdet for et køretøj, og vælg Slet udstyr.</p>
+ <p>[XI-2]<!--j-->:<!--j-->&nbsp;<!--j--><b>Sessionskommentarer</b> anvendes til tilføjelse af fritformulerede brugerkommentarer vedrørende en diagnosticeringssession.<!--j-->&nbsp;<!--j-->Klik på  <b>Tilføj en kommentar</b> for at føje yderligere oplysninger vedrørende sessionen til.<!--j-->&nbsp;<!--j-->Der kan indtastes oplysninger under bruger-, data- og kommentarområderne via tastaturet.<!--j-->&nbsp;<!--j-->Til sletning af tidligere kommentarer fremhæves oplysningerne under bruger- data- eller kommentarområderne, hvorefter der klikkes på  <b>Slet den markerede kommentar</b>.</p>
+ <p>[XI-3]<!--j-->:<!--j-->&nbsp;<!--j--><b>Rapporter med sessionslog</b> kan anvendes til udskrift af oplysninger om køretøjets diagnosticering.<!--j-->&nbsp;<!--j--><b>Fuld visning</b> viser en komplet rapport over alle diagnosticeringer, der er foretaget på køretøjet.<!--j-->&nbsp;<!--j--><b>Enkel rapport</b> viser en oversigt over køretøjets diagnosticering.</p>
+ <p>[XI-4]<!--j-->:<!--j-->&nbsp;<!--j--><b>Data med et øjebliksbillede</b> giver en liste over gemte data med et øjebliksbillede for køretøjet.<!--j-->&nbsp;<!--j-->Brugernavnet, filnavnet og tilhørende dato for data med øjebliksbillede samt kommentarer vises.<!--j-->&nbsp;<!--j-->En genafspilning af øjebliksbilledet kan fremvises ved at fremhæve elementet og vælge  <b>Gennemgå</b>.<!--j-->&nbsp;<!--j-->De enkelte elementer kan slettes ved at fremhæve elementet og vælge  <b>Slet</b>.<br />[XI-6]<!--j-->:<!--j-->&nbsp;<!--j--><b><a name="export_snap">Eksporter</a></b> gemmer et snapshot til din lokale PC.<!--j-->&nbsp;<!--j-->Du kan så sende snapshot-data til yderligere analyse hos den relevante person.</p>
+ <p>[XI-5]<!--j-->:<!--j-->&nbsp;<!--j-->Menuen  <b>Afviklede programmer</b> viser en sessionshistorik med diagnosticeringer.</p>
+
+  <p><b>Næste handling</b> anvendes til at fortsætte diagnosticeringen af det valgte køretøj.</p>
+ <p><img src="../../images/gds_xi_dan.gif" alt="gds_xi.gif" width="650px"/><br />
+[XI]</p>
+ <hr />
+ <h2>Systemnavigering - Valg af diagnosticeringsprogram</h2>
+ <p>Når De har valgt  <b>Næste handling</b> på  <b>Køretøjets hjemmeside</b> fremkommer visningen af Systemnavigeringen.<!--j-->&nbsp;<!--j-->[XII]<!--j-->.</p>
+ <p>Vælg den ønskede navigationssti, der skal undersøges på køretøjet.<!--j-->&nbsp;<!--j-->Navigeringen sker enten ved hjælp af navigeringspilene: Pil højre/venstre åbner/lukker en undermappe, og Startknappen starter det valgte diagnosticeringsprogram.<!--j-->&nbsp;<!--j-->Det er desuden muligt at navigere med musen ved at klikke på +-tegnet i navigeringshieraktiet eller ved hjælp af piletasterne på tastaturet.</p>
+ <p>
+Fortsæt med at vælge mapper til den ønskede sti, indtil et diagnosticeringsprogram nås, som er udstyret med et programikon.</p>
+ <p>
+
+Når diagnosticeringsprogrammet er startet, forsvinder visningen med systemnavigeringen og erstattes af et diagnosticeringsprogram.<!--j-->&nbsp;<!--j-->
+Når diagnosticeringsprogrammet er færdigt, vælges  <b>Afslut</b> øverst i højre side af visningen med diagnosticeringsprogrammet.<!--j-->&nbsp;<!--j-->
+Dette lukker diagnosticeringsprogrammet, og returnerer til visningen med systemnavigeringen.</p>
+ <p><img src="../../images/gds_xii_dan.gif" alt="gds_xii.gif" width="350px"/><br />
+[XII]</p>
+ <hr />
+ <h1><a name="diagnostics"></a>6.<!--j-->&nbsp;<!--j-->Diagnosticering</h1>
+ <h2>DTC-visning</h2>
+ <p>Når  <b>Køretøjets DTC-oplysninger</b> vælges, fremkommer der en liste over ECU'er (fork. for 'Electronic Control Units' eller på dansk 'elektroniske kontrolenheder') og antallet af DTC'er, som er gemt lige nu, fra  <b>Diagnosticeringsprogram</b>.</p>
+ <p><img src="../../images/gds_xiii_dan.gif" alt="gds_xiii.gif" width="400px"/><br />
+[XIII]</p>
+ <p>
+Der er gemt 4 DTC'er til modulet med instrumentklynger i det viste eksempel.<!--j-->&nbsp;<!--j-->Vælg  <b>Fortsæt,</b> for at vise DTC-hovedsiden.<br />
+
+  <img src="../../images/gds_xiv_dan.gif" alt="gds_xiv.gif" width="650px"/><br />
+[XIV]</p>
+ <p>De tilgængelige DTC'er vises i en tabel.<!--j-->&nbsp;<!--j-->
+Indholdet af den viste tabel kan konfigureres.<!--j-->&nbsp;<!--j-->Klik på  <b>Kolonnevalg</b> for at tilføje eller fjerne søjler i tabellen.<!--j-->&nbsp;<!--j-->[XIV-1]<!--j-->.<!--j-->&nbsp;<!--j-->
+Følgende DTC-informationer kan vises:</p>
+ <table border=1 cellspacing=0 cellpadding=0>
+ <tr>
+ <td width=158 valign=top><p><b>Valg</b></p></td>
+ <td width=427 valign=top><p><b>Beskrivelse</b></p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>Status</p></td>
+ <td width=427 valign=top><p><img src="../../images/gds_status-unknown.png" alt="gds_status-unknown.png" width="16" height="16" /><!--j-->&nbsp;<!--j-->Ny DTC angivet under indlæsningsgennemløb.<!--j-->&nbsp;<!--j-->Beskrivelsesteksten til DTC angives med fed skrift.</p>
+ <p><img src="../../images/gds_mail-generic.png" alt="gds_mail-generic.png" /><!--j-->&nbsp;<!--j-->Nuværende DTC uden ændringer siden seneste indlæsningsgennemløb.</p>
+ <p><img src="../../images/gds_forward.png" alt="gds_forward.png" /><!--j-->&nbsp;<!--j-->
+Nuværende DTC med statusændring siden seneste indlæsningsgennemløb.<!--j-->&nbsp;<!--j-->
+Beskrivelsesteksten til DTC angives med kursiv skrift.</p>
+ <p><img src="../../images/gds_mail-delete.png" alt="gds_mail-delete.png" /><!--j-->&nbsp;<!--j-->
+DTC slettet i den nuværende indlæsningsgennemløb.<!--j-->&nbsp;<!--j-->
+Beskrivelsesteksten til DTC angives på rød baggrund.</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>ECU</p></td>
+ <td width=427 valign=top><p>Kontrolenhedens navn</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>Funktionssystem</p></td>
+ <td width=427 valign=top><p>Funktionssystemet navn (Et sæt med ECU'er)</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>DTC</p></td>
+ <td width=427 valign=top><p>DTC-fejlkode</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>Symptombyte</p></td>
+ <td width=427 valign=top><p>Symptombytekode, der er knyttet til DTC</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>Beskrivelse</p></td>
+ <td width=427 valign=top><p>Beskrivelsesteksten til DTC</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>Symptom</p></td>
+ <td width=427 valign=top><p>Beskrivelse af afkodet symptom</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>Statusbyte</p></td>
+ <td width=427 valign=top><p>Reserveret til fremtidig brug</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>Status efter afkodning</p></td>
+ <td width=427 valign=top><p>DTC'en nuværende status</p></td>
+ </tr>
+ </table>
+ <p>
+Visse ECU'er kan sættes som filter ved hjælp af  <b>Filtreringsindstillinger</b>, sådan så kun DTC'er til de angivne ECU'er vises<!--j-->&nbsp;<!--j-->[XIV-2]<!--j-->.<!--j-->&nbsp;<!--j-->
+Denne funktion kan anvendes, når DTC'erne læses ud<br />
+
+Der kan frit indtastes tekst i det nederste felt til filtrering af DTC-visningen, f.eks. en bestemt fejlkode eller et nøgleord.<br />
+Den detaljerede DTC-status kan vises ved markering i afkrydsningsfeltet  <b>Vis TDC-status</b><!--j-->&nbsp;<!--j-->[XIV-3]<!--j-->.</p>
+ <hr />
+ <h3>Ryd DTC'erne</h3>
+ <p><!--j-->[XIV-4]<!--j-->&nbsp;<!--j-->
+Der fremkommer et skærmbillede med køjetøjets DTC-oplysninger, hvis  <b>Slet fejlkoder</b> vælges.<!--j-->&nbsp;<!--j-->[XV]<br />
+Anvend  <b>Tilføj</b>- eller  <b>Tilføj alle</b>-pilen til at markere de ECU'er, der skal ryddes.<!--j-->&nbsp;<!--j-->
+Visse ECU'er kan kun ryddes sammen med andre, hvorfor de i de tilfælde markeres sammen.<!--j-->&nbsp;<!--j-->
+De markerede ECU'er vises i højre side af skærmbilledet.<!--j-->&nbsp;<!--j-->Vælg  <b>OK</b> for at ryde de markerede ECU'er.<!--j-->&nbsp;<!--j-->
+Vælg  <b>Annuller</b>, hvis ECU'er ikke skal ryddes på nuværende tidspunkt.<!--j-->&nbsp;<!--j-->
+Der fremkommer et pop-op statusvindue, hvis  <b>OK</b> vælges.<!--j-->&nbsp;<!--j-->
+De slettede koder skifter til rødt og forsvinder ved næste opdatering.</p>
+ <p><img src="../../images/gds_xv_dan.gif" alt="gds_xv.gif" width="500px"/><br />
+[XV]</p>
+ <hr />
+ <h3>Opdater DTC'erne</h3>
+ <p>GDS forlanger en DTC-opdatering af styreenheden, hvis knappen  <b>Opdatér fejlkoder</b> vælges.<!--j-->&nbsp;<!--j-->[XIV-5]<!--j-->.</p>
+ <hr />
+ <h3>Forlad DTC-programmet</h3>
+ <p>
+Forlad DTC-programmet ved hjælp af knappen  <b>Afslut</b>.<!--j-->&nbsp;<!--j-->[XIV-6]<!--j-->.</p>
+ <table width="80%" border="0">
+ <tr>
+ <td class="important"><b><!--j-->Vigtigt<!--j-->:<!--j--></b><!--j-->&nbsp;<!--j-->
+Det er kun valget af  <b>Afslut</b>, der gør det muligt at forlade <b>Diagnosticeringsprogram</b>.<!--j-->&nbsp;<!--j-->
+Det er ikke muligt at afslutte GDS, mens diagnosticeringsprogrammerne kører.<!--j-->&nbsp;<!--j-->
+Afslut GDS ved at navigere tilbage til GDS's logonside.</td></tr></table>
+ <hr />
+ <h3>Identifikationsoplysninger</h3>
+ <p>
+Programmet  <b>Datavisning</b> kan anvendes til at vise styreenhedens køretøjsdata.<!--j-->&nbsp;<!--j-->
+Skærmbilledet med styreenhedens identifikation giver oplysninger om styringsprogrammet og varianter af hardware, der kan være nødvendige oplysninger for Det Tekniske Assistancecenter.</p>
+ <hr />
+ <h2>
+Datavisning</h2>
+ <p>
+Programmet Datavisning giver statussen for køretøjets styringsdata og -signaler i realtid.</p>
+ <p>
+Standardvisningen af de valgte styringsdata vises i en tabel  <b>Alle parametre</b>.<!--j-->&nbsp;<!--j-->[XVI-1]<!--j-->.<!--j-->&nbsp;<!--j-->
+Konfigurér de viste kolonner individuelt ved hjælp af knappen  <b>Kolonnevalg</b>.<!--j-->&nbsp;<!--j-->[XVI-3]<!--j-->.</p>
+ <p>Individuelle parametre kan vises på en overvågningsliste ved at markere  <b>Tilføj til overvågningslisten</b>.<!--j-->&nbsp;<!--j-->[XVI-2]<!--j-->.</p>
+
+  <p><img src="../../images/gds_xvi_dan.gif" alt="gds_xvi.gif" width="650px"/><br />
+[XVI]</p>
+
+  <p>
+Parametre, der er markeret på overvågningslisten, kan vises med visningen af  <b>Linjegraf</b>.<!--j-->&nbsp;<!--j-->[XVII-1]<!--j-->.<!--j-->&nbsp;<!--j-->
+
+
+Marker det parameter, der skal vises på rullelisten, og klik på knappen Tilføj for at starte visningen med  <b>Linjegraf</b>.<!--j-->&nbsp;<!--j-->[XVII-2]<!--j-->.<!--j-->&nbsp;<!--j-->
+Det er muligt at vise flere parametre på linjegrafen.</p>
+ <p>
+Knapperne på den nederste værktøjslinje gør det muligt at konfigurere visningen af linjegrafen.<!--j-->&nbsp;<!--j-->[XVII-3]</p>
+ <ol>
+ <li><b>Afbryd rulningen midlertidigt/genoptag rulningen</b>: Skift mellem en statisk visning og en dynamisk korrigering af skærmbilledet med linjegrafen.</li>
+ <li><b>Datapunkter</b>: Skift den grafiske visning mellem punkttilstand og linjetilstand</li>
+ <li><b>Tilføj mærke</b>: Fremhæv bestemte positioner/hændelser på linjegrafen.</li>
+ <li>Funktionen  <b>Zoom ind</b>/ <b>Zoom ud</b></li>
+ </ol>
+ <p>
+
+  <img src="../../images/gds_xvii_dan.gif" alt="gds_xvii.gif" width="650px"/><br />
+[XVII]</p>
+ <p>
+De enkelte parametre på listen  <b>Alle parametre</b> kan vises grafisk<!--j-->&nbsp;<!--j-->[XVI-1]<!--j-->.<!--j-->&nbsp;<!--j-->
+Marker det enkelte parameter og vælg den ønskede visningstilstand i markeringsboksen<!--j-->&nbsp;<!--j-->[XVIII-1]<!--j-->.<!--j-->&nbsp;<!--j-->Parametret kan vises i følgende tilstande:</p>
+ <ul type=square>
+ 	 <li>Cirkulær graf<!--j-->&nbsp;<!--j-->[XVIII-2]<!--j-->.</li>
+ 	 <li>Søjlegraf<!--j-->&nbsp;<!--j-->[XVIII-3]<!--j-->.</li>
+ 	 <li>Stor synlighed<!--j-->&nbsp;<!--j-->[XVIII-4]<!--j-->.</li>
+ </ul>
+ <p>Maksimalt 4 parametre eller visningstilstande kan vises samtidigt.</p>
+
+
+   <p><img src="../../images/gds_xviii_dan.gif" alt="gds_xviii.gif" width="650px"/><br />
+[XVIII]</p>
+ <hr />
+ <h3>Genafspilning af øjebliksbilleder</h3>
+ <p>Funktionen  <b>Genafspilning af øjebliksbillede</b> tillader gennemsyn af tidligere optagne øjebliksbilleder af køretøjsdata.<!--j-->&nbsp;<!--j-->Disse oplysninger kan anvendes til analysering af problemer med køretøjet og opsporing af tilstande med udløsningsfejl.<!--j-->&nbsp;<!--j-->Den grafiske funktion kan anvendes til sammeligning af parametre for at se, om et komponent fungerer korrekt.<!--j-->&nbsp;<!--j-->Optagne øjebliksbilleder kan markeres til visning på følgende 3 måder:</p>
+ <ul>
+ <li>Marker en fil med et øjebliksbillede fra  <b>Køretøjets hjemmeside</b>, og klik på valget Gennemsyn.</li>
+ <li>Dobbeltklik på det markerede øjebliksbillede fra  <b>Køretøjets hjemmeside</b>.</li>
+ <li>Indtast valget  <b>Værktøjer</b> fra valget  <b>Menu</b> og valget  <b>Genafspilning af øjebliksbillede</b>.<!--j-->&nbsp;<!--j-->Åbn derefter  <b>Styring af øjebliksbilleder</b>.<!--j-->&nbsp;<!--j-->Dobbeltklik på filen med det øjebliksbillede, der skal vises, eller klik på valget Indlæs øjebliksbillede, og marker et fil med et øjebliksbillede.</li>
+ </ul>
+ <p>Uanset valgformen fremkommer pop op-vinduet Fil indlæst fra skærmbilledet  <b>Genafspilning af øjebliksbillede</b>.<!--j-->&nbsp;<!--j-->Vælg OK i pop op-vinduet.</p>
+ <hr />
+ <h3>Afspilningsfunktioner til øjebliksbilleder<!--j-->&nbsp;<!--j-->[XIX-1]</h3>
+ <p>Der er flere afspilningsfunktioner til øjebliksbilleder, som anvendes til genafspilning af optagede øjebliksbilleder.</p>
+
+
+   <table width="84%" height="80" border="1">
+ <tr>
+ <td width="7%"><img src="../../images/gds_play.png" alt="gds_play.png" width="25" height="23" /></td>
+ <td width="93%">
+Afspilningsfunktionen anvendes til at afspille øjebliksbillederne fremad ved at klikke på dette valg.<!--j-->
+
+&nbsp;<!--j-->
+
+Der bevæger sig et mærke hen over skærmbilledet, når dette valg anvendes.<!--j-->
+
+&nbsp;<!--j-->
+Alle valg i dette område skifter til gråt, når de er aktive.</td>
+ </tr>
+ <tr>
+ <td><img src="../../images/gds_pause.png" alt="gds_pause.png" width="24" height="21" /></td>
+ <td>Pausefunktionen anvendes til at standse afspilningen af øjebliksbilleder midlertidigt.<!--j-->&nbsp;<!--j-->Når der klikkes på det valg for anden gang, fortsætter afspilningen af øjebliksbilledet på det sted, hvor det blev standset.</td>
+ </tr>
+ <tr>
+ <td><img src="../../images/gds_stop.png" alt="gds_stop.png" width="24" height="19" /></td>
+ <td>Stopfunktionen anvendes til helt at standse afspilningen af øjebliksbillederne.<!--j-->&nbsp;<!--j-->Hvis Afspilning vælges at have brugt Stopfunktionen, så starter øjebliksbillederne helt forfra.</td>
+ </tr>
+ </table>
+ <hr />
+ <h3>Tidsstyring<!--j-->&nbsp;<!--j-->[XIX-2]</h3>
+ <p><b>Tidsstyring</b> anvendes til at styre genafspilningen af øjebliksbillederne.<!--j-->&nbsp;<!--j-->Denne funktion tillader valg af en bestemt tidsramme, visning af forskellige skærmbilleder og styring af opdateringshastigheden.<!--j-->&nbsp;<!--j-->Følgende funktioner kan vælges direkte under  <b>Tidsstyring</b>.</p>
+ <table width="84%" border="1">
+ <tr>
+ <td><img src="../../images/gds_bookmark.png" alt="gds_bookmark.png" width="17" height="24" /></td>
+ <td>Bogmærkevalget tillader, at der tilføjes en bestemt kommentar på det nuværende skærmbillede, så det er muligt at vende tilbage til det senerehen.<!--j-->&nbsp;<!--j-->Når denne indstilling vælges, fremkommer der et pop op-vindue.<!--j-->&nbsp;<!--j-->Indtast et bogmærke og vælg OK.</td>
+ </tr>
+ <tr>
+ <td><img src="../../images/gds_notepad.png" alt="gds_notepad.png" width="26" height="22" /></td>
+ <td>Notesblokken kan vælges til at tilføje kommentar med til filen med genafspilning af øjebliksbilleder på det aktuelle tidspunkt.<!--j-->&nbsp;<!--j-->Når denne indstilling vælges, fremkommer der et pop op-vindue.<!--j-->&nbsp;<!--j-->Indtast en kommentar til filen med øjebliksbilleder og vælg OK.</td>
+ </tr>
+ <tr>
+ <td><img src="../../images/gds_load.png" alt="gds_load.png" width="23" height="23" /></td>
+ <td>Den blå mappe med Indlæs øjebliksbillede åbner en fil med øjebliksbilleder og gør den klar til videre analysering.<!--j-->&nbsp;<!--j-->Hvis du ønsker at se et <a href="#export_snap">eksporteret snapshot</a>, skal du først dekomprimere den tilhørende arkiv *.zip.<!--j-->&nbsp;<!--j--><!--j-->&nbsp;<!--j-->Denne funktion er også tilgængelig på en tilgængelig fil med øjebliksbilleder fra  <b>Styring af øjebliksbilleder</b>.</td>
+ </tr>
+ <tr>
+ <td><img src="../../images/gds_time-options.png" alt="gds_time-options.png" width="19" height="23" /></td>
+ <td>Pil ned viser alle indstillinger i  <b>Tidsstyring</b>, når den vælges.<!--j-->&nbsp;<!--j-->Individuelle indstillinger kan også vælges ved at klikke på det ønskede element.</td>
+ </tr>
+ <tr>
+ <td><img src="../../images/gds_speed.png" alt="gds_speed.png" width="57" height="27" /></td>
+ <td>
+Opdateringshastigheden for visning af øjeblikbilleder kan styres ved at vælge denne indstilling.<!--j-->
+
+&nbsp;<!--j-->
+
+Der kan vælges langsomme hastigheder såsom 1/8X, 1/4X og 1/2X.<!--j-->
+
+&nbsp;<!--j-->
+
+Realtidshastigheden kan også stilles til 1.<!--j-->
+
+&nbsp;<!--j-->
+Hurtigere hastigheder på 2X, 4X og 8X kan også opnås ved hjælp af denne funktion.</td>
+ </tr>
+ </table>
+
+
+   <hr />
+ <h3>Vis valg<!--j-->&nbsp;<!--j-->[XIX-3]</h3>
+ <p>Hvert Vis valg giver en forskellig måde at vise køretøjsdataene på til analysering.<!--j-->&nbsp;<!--j-->Følgende funktioner kan vælges under  <b>Tilgængelige visninger</b>.</p>
+ <ul>
+ <li>Listevisning af parametre viser indkommende oplysninger fra en fil med øjebliksbilleder.<!--j-->&nbsp;<!--j-->Den aktuelle parameterværdi vises på skærmbilledet.</li>
+ </ul>
+ <table width="80%" border="0">
+ <tr>
+ 	<td class="important"><b>Vigtigt</b><br />Parameterbetegnelsen vises på det originale sprog, der har været anvendt ved billedfangsten, hvis der ikke er nogen oversættelse tilgængelig for betegnelsen.</td></tr></table>
+ <ul>
+ <li>Logvisning omfatter alle oplysningerne fra filen med øjebliksbilledet.<!--j-->&nbsp;<!--j-->Alle parameterværdier anføres på liste i den rækkefølge, de er optaget.<!--j-->&nbsp;<!--j-->Specifikke parametre kan tilføjes eller fjernes fra overvågningslisten ved at klikke på det relevante element.</li>
+ <li>Statusvisning viser alle parameterværdierne inden for en nærmere bestemt tidsramme.<!--j-->&nbsp;<!--j-->Disse værdier kan anvendes til sammenligning med den nye udløservisning</li>
+ <li>Udløservisning viser alle system- og brugerdefinerede udløsere.<!--j-->&nbsp;<!--j-->Denne funktion kan anvendes, når der er en kombination af faktorer indblandet i et diagnosticeringsproblem.<!--j-->&nbsp;<!--j-->
+Når en udløsertilstand er opfyldt, viser der en advarselstrekant på skærmbilledet.<ul><li>Indlæs udløsere<!--j-->&nbsp;<!--j-->-<!--j-->&nbsp;<!--j-->Tillader indlæsning af en fil, der indeholder definitioner på udløsere.</li>
+ 	 <li>Gem udløsere<!--j-->&nbsp;<!--j-->-<!--j-->&nbsp;<!--j-->Tillader at gemme udløseren på computerharddisken.</li>
+ <li>Fjern udløser<!--j-->&nbsp;<!--j-->-<!--j-->&nbsp;<!--j-->Tillader fjernelse af den aktuelle udløser, der ikke længere vil være til stede.</li>
+ <li>Rediger udløser<!--j-->&nbsp;<!--j-->-<!--j-->&nbsp;<!--j-->viser et pop op-vindue, hvori begrænsningerne og parametrene, der er knyttet til en udløser, kan redigeres.</li>
+ <li>Tilføj udløser<!--j-->&nbsp;<!--j-->-<!--j-->&nbsp;<!--j-->viser et pop op-vindue til konfigurering af en udløser.</li></ul></li>
+ <li>DTC-visning<!--j-->&nbsp;<!--j-->-<!--j-->&nbsp;<!--j-->Når Afspilningsfunktionen er valgt og denne indstilling er valgt, åbner denne funktion listen over optagne DTC'er.</li>
+ <li>Linjegrafsvisning viser data, der kan synliggøres i forhold til en tidsakse.<!--j-->&nbsp;<!--j-->I denne visning kan bestemste parametre vælges til grafisk fremstilling med en markering i afkrydsningsfeltet ud for Valgt.<!--j-->&nbsp;<!--j-->For neden på grafen findes der 4 funktioner:  <b>Zoom ind</b> til øgning af størrelsen,  <b>Zoom ud</b> til reducering af størrelsen, samt  <b>Bogmærker</b> og  <b>Afbryd rulning midlertidigt</b>.<!--j-->&nbsp;<!--j-->Hver af disse funktioner er tilgængelige ved at klikke på dem.</li>
+ </ul>
+ <p><img src="../../images/gds_xix_dan.gif" alt="gds_xix.gif" width="650px"/><br />
+[XIX]</p>
+ <hr />
+ <h2>Styringsfunktioner:</h2>
+ <p>Ved hjælp af styringsfunktionerne i GDS kan bestemte køretøjsfunktioner styres fra GDS-systemet.<!--j-->&nbsp;<!--j-->Vælg Styringsfunktioner til den bestemte styring under Systemnavigering for at starte programmet Styringsfunktion.</p>
+ <p>Styringsfunktionerne er indlagt i skærmbilledet med datalisten.<!--j-->&nbsp;<!--j-->Under kørslen af styringsfunktionen kan det viste parameter overvåges eller optages ved hjælp funktionen med øjebliksbilleder i GDS.</p>
+ <p>GDS understøtter 2 styringsfunktionstyper:</p>
+ <p>1.<!--j-->&nbsp;<!--j-->Digital styringsfunktion med muligheden for at slå den til/fra.<!--j-->&nbsp;<!--j-->[XX-1]</p>
+ <p><img src="../../images/gds_xx_dan.gif" alt="gds_xx.gif" width="650px"/><br />
+[XX]</p>
+ <p>2.<!--j-->&nbsp;<!--j-->Analog styringsfunktion med styringsegenskaber i funktionen.<!--j-->&nbsp;<!--j-->Udløserfunktionen kan styres ved hjælp af styreknapperne eller ved at bevæge markøren på skalaen ude i højre side.<!--j-->&nbsp;<!--j-->[XXI-1]<!--j-->&nbsp;<!--j-->eller<!--j-->&nbsp;<!--j-->[XXI-2]<!--j-->.</p>
+ <p><img src="../../images/gds_xxi_dan.gif" alt="gds_xxi.gif" width="650px"/><br />[XXI]</p>
+ <hr />
+ <h2>Konfigurerings- og nulstillingsfunktioner:</h2>
+ <p>Konfigurerings- og nulstillingsfunktionerne er bestemte styringsfunktioner, der skal køres, når systemudløserne erstattes, når de kræver at blive nulstillet.<!--j-->&nbsp;<!--j-->Se den pågældende servicevejledning til systemet for flere oplysninger.</p>
+ <hr />
+ <h1><a name="troubleshooting"></a>7.<!--j-->&nbsp;<!--j-->FEJLFINDING</h1>
+
+  <h2>Forbindelsesproblemer med MDI</h2>
+ <p>Hvis MDI-forbindelserne er løse eller ikke korrekt forbundet til køretøjet/computeren, fremkommer der et pop op-vindue.<!--j-->&nbsp;<!--j-->Udfør følgende trin:</p><ul>
+ <li>Sørg for, at MDI-styringsprogrammellet ikke kører samtidigt med, at der udføres en GDS.</li>
+ <li>Sørg for, at MDI'en er korrekt forbundet til køretøjet og computeren.</li>
+ <li>Brug et kendt &quot;godt USB-kabel&quot; fra en anden MDI-enhed, hvis den findes disponibel.<!--j-->&nbsp;<!--j-->Udfør alle forbindelser og prøv igen.</li>
+ <li>Brug et kendt &quot;godt MDI DLC-forbindelseskabel&quot; fra en anden MDI-enhed, hvis den findes disponibel.<!--j-->&nbsp;<!--j-->Udfør alle forbindelser og prøv igen.</li>
+ <li>Hvis betingelsen fortsat forekommer, så kontakt Customer Support.</li>
+ <li>Sørg for, at brandmuren ikke blokerer for GDS/MDI-kommunkationen.</li>
+ </ul>
+ <hr />
+ <h2>GDS/MDI Manager programmelkonflikt</h2>
+ <p>GDS-programmellet og MDI Manager-programmellet kan ikke køre samtidigt.<!--j-->&nbsp;<!--j-->Hvis begge programmer køres samtidigt, kan der opstå en programmelkonflikt.<!--j-->&nbsp;<!--j-->Valget Detaljer giver mulige oplysninger vedrørende fejlen.<!--j-->&nbsp;<!--j-->Customer Support kan bede om af få disse oplysninger, hvis problemet fortsætter.</p>
+ <p>Hvis programmelkonflikten fortsætter med at forekomme, kan der fremkomme et pop op-vindue med &quot;Der er opstået en alvorlig fejl&quot; i styringsprogrammellet MDI.<!--j-->&nbsp;<!--j-->Luk styringsprogrammellet MDI og returner til programmet GDS.<!--j-->&nbsp;<!--j-->Hvis problemet fortsætter med at være til stede efter at have gået til GDS, skal Customer Support kontaktes.</p>
+ <p>&nbsp;</p>
+ <p align="right"><font size="2">&copy; GM Europe, SPO Engineering, International Operations - 08 May 2009 (V3.0)</font></p>
+ </div>
+
+  </body>
+ </html>

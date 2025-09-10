@@ -1,0 +1,3732 @@
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style>.T2{    BORDER-TOP: white;}  .T3{    BORDER-BOTTOM: white;} .T4{    BORDER-TOP: white;    BORDER-BOTTOM: white} .I{ padding-left : 10pt}  .Tighten{ padding-left : 7pt} .Arial{ font-family : Arial, Helvetica, sans-serif;margin-left: 10pt;margin-right : 10pt } .TableB{ margin-left : 0pt}</style>
+<TITLE>Manual de servicio técnico2008 Captiva DTC P2121 -</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+
+ function FixMenu()
+{
+menuTop = document.body.scrollTop + document.body.clientHeight -40;
+menu.style.top = menuTop;
+menu.style.width = document.body.clientWidth; 
+}
+
+</SCRIPT>
+</HEAD>
+<BODY class="Arial" onLoad="FixMenu()" onScroll="FixMenu()" onResize="FixMenu()">
+<SPAN ID="menu" STYLE="position:absolute; left:0px; top:0px; width:0px"><A border="0" href="7C2_1F2J.es.html"><IMG src="../../../../graphic-pool/Icons/Totop.gif" align="right" halign="Bottom" border="0" alt="Al principio del documento"></A></SPAN><TABLE width="100%" BORDER="1" rules="none" cellspacing="0" cellpadding="0" style="magin-top: 5pt"><TBODY>
+<TR BGCOLOR="cccc99" height="15">
+<TD width="30%"><div style="padding-left: 5pt"><B><FONT face="Arial">Captiva</FONT></B></div></TD>
+<TD width="70%" align="right" colspan="8"></TD>
+</TR>
+<TR BGCOLOR="white" height="60">
+<TD width="35%" align="left"><TABLE><TR>
+<TD width="5%" align="left"><A href="7C2_1F2I.es.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_back.gif" alt="A la página anterior"></A></TD>
+<TD width="5%" align="left"></TD>
+<TD width="5%" align="left"><A href="7C2_1F2K.es.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_next.gif" alt="A la página siguiente"></A></TD>
+</TR></TABLE></TD>
+<TD><TABLE width="65%" align="right"><TR>
+<TD style="font-size:10"><A href="../../../GMDE_TIS_START.html" target="_top"><IMG src="../../code/menu-images/home.gif" border="0" alt="Página de inicio GMDE"></A></TD>
+<TD style="font-size:10"><A href="../toc_Captiva.html" target="menu"><IMG src="../../code/menu-images/static-TOC.gif" border="0" alt="Índice estático"></A></TD>
+<TD style="font-size:10"><A href="../toc_Captiva_code.html" target="code"><IMG src="../../code/menu-images/menu_folder_open.gif" border="0" alt="Índice dinámico"></A></TD>
+<TD style="font-size:10"><A href="../../help/readme_EN.htm" target="top" class="bottom_copyright"><IMG src="../../code/menu-images/help.gif" border="0" alt="¿Ayuda?"></A></TD>
+</TR></TABLE></TD>
+</TR>
+</TBODY></TABLE>
+	
+		<P></P>
+<DIV align="center" id="C1F2P2121"><font size="4"><b>DTC P2121 - </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="C1F2APPS1"><font size="4"><b>Rendimiento del sensor 1 de posición del pedal del acelerador (APP)</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="C1F2CD"><b>descripción del circuito</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">El conjunto del pedal acelerador consta de dos sensores de posición del pedal acelerador (APP). Los sensores APP están montados en el conjunto del pedal y no pueden repararse. Los sensores APP proporcionan una tensión de señal y cambia en relación con la posición del pedal del acelerador. El módulo de control del motor (ECM) proporciona un circuito de referencia de 5 voltios y un circuito de referencia baja para cada uno de los sensores APP.</div>
+				<div class="T1" align="left">La tensión de la señal del sensor 1 APP cuando el pedal se pisa, desde aprox. 1,0 voltios en reposo hasta más de 4 voltios al pisarlo a tope. La tensión de la señal del sensor 2 del APP aumenta al pisar el pedal, desde aprox. 0,5 voltios en reposo a más de 2 voltios con el pedal del acelerador pisado a tope.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2CRD"><b>Condiciones para la ejecución del DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>La tensión de batería es superior a 8 V.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2CSDT"><b>Condiciones para la activación del DTC</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">La diferencia entre la tensión de los sensores 1 y 2 del APP es superior a la esperada.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2ATWD"><b>Acción realizada cuando se activa el DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>La luz testigo de fallo (MIL) se iluminará en cuanto se produzca el error.</Li>
+					<Li>El ECM registrará las condiciones de funcionamiento en el momento de la avería. Esta información se almacenará en las memorias intermedias de datos instantáneos y registros de averías.</Li>
+					<Li>Se almacena un historial del DTC.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2CCMD"><b>Condiciones para borrar el DTC y apagar la MIL</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>La MIL se apagará después de tres o cuatro ciclos de conducción consecutivos en los que se efectúe el diagnóstico sin ningún fallo.</Li>
+					<Li>El historial del DTC se borrará después de efectuar 40 ciclos consecutivos de calentamiento sin ninguna avería.</Li>
+					<Li>El(los) DTC(s) puede(n) borrarse empleando un scanner.</Li>
+					<Li>Desconectando la alimentación de la batería del ECM durante 10 segundos.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2DA"><b>Asistencia en el diagnóstico</b></DIV>
+<P></P>
+			
+				<UL>
+<Li>Compruebe si hay signos de entrada de agua en los conectores del ECM. Si se produce la entrada de agua, pueden activarse diferentes DTCs sin que haya ningún problema en ningún circuito o componente durante la fase de diagnóstico.</Li>
+					<Li>Cuando el ECM detecta un problema dentro del sistema TAC, pueden activarse varios DTCs relacionados con el sistema TAC. Esto se debe a las diferentes pruebas redundantes ejecutadas de forma continua en este sistema. La locación y reparación de un problema individual puede corregir más de un DTC. La desconexión de componentes durante las pruebas puede añadir otros DTCs. Recuerde esto al revisar la información almacenada en la captura de información.</Li>
+					<Li>Para un problema intermitente, consulte   <A target="_blank" href="7C2_1F2O.es.html#C1F2INTER">"Averías intermitentes".</A>
+					</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="C1F2P21211"><font size="4"><b>DTC P2121 - Rendimiento del sensor 1 de posición del pedal acelerador (APP)</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Paso</B></TD>
+<TD align="center"><B>Medida</B></TD>
+<TD align="center"><B>Valor(es)</B></TD>
+<TD align="center"><B>Sí</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>¿Se ha realizado la comprobación del sistema de diagnóstico?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Ir a   <A target="_blank" href="7C2_1F22.es.html#C1F2DSC">"Comprobación del sistema de diagnóstico"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<P></P>
+<DIV><B><FONT color="navy">Importante: NO pise el pedal del acelerador.</FONT></B></DIV>
+<P></P>
+								
+								<OL>
+<Li>Ponga el motor en marcha.</Li>
+									<Li>Observe con un scanner la información del DTC.</Li>
+								</OL>
+								<div>¿Se ha activado algún otro DTC del módulo de control del actuador del acelerador (TAC) o del sensor de posición del pedal del acelerador (APP) a excepción del DTC P1125?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Consulte la tabla de DTCs específica</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 3</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Observe los parámetros Correcto/Incorrecto del sensor APP con un scanner.</div>
+								<div>¿El scanner indica Incorrecto en alguno de estos parámetros?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 5</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Gire la llave de contacto a la posición ON con el motor apagado.</Li>
+									<Li>Observe los ángulos del sensor APP en ambos sensores con un scanner.</Li>
+									<Li>Pise lentamente el pedal del acelerador, parando al 25, 50, 75 y 100%.</Li>
+									<Li>Suelte lentamente el pedal del acelerador, parando al 75, 50, 25 y 0%.</Li>
+								</OL>
+								<div>¿El scanner indica que la diferencia entre la tensión de los sensores 1 y 2 del APP es superior al valor especificado durante la prueba anterior?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>0,716 V, 0,273 V cuando los dos sensores de APP dan lecturas superiores a 1,25 V, 1,074 V cuando ambos sensores dan valores superiores a 3,35 V.</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Ir a   <A target="_blank" href="7C2_1F22.es.html#C1F2DA">"Ayudas para el diagnóstico"</A>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Gire la llave de contacto a la posición OFF.</Li>
+									<Li>Desenchufe el conector del cableado del sensor de APP.</Li>
+									<Li>Conecte un puente con fusible entre el circuito de referencia de 5 voltios del sensor 1 y masa.</Li>
+									<Li>Gire la llave de contacto a la posición ON con el motor apagado.</Li>
+									<Li>Observe con un scanner el parámetro de tensión del sensor 1 de APP.</Li>
+								</OL>
+								<div>¿El scanner indica que la tensión del sensor 1 de APP se encuentra en el valor especificado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>0,0 V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 10</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Conecte un puente con fusible entre el circuito de referencia de 5 voltios del sensor 1 de APP y el circuito de referencia baja del sensor 1 de APP.</Li>
+									<Li>Observe con un scanner el parámetro de tensión del sensor 1 de APP.</Li>
+								</OL>
+								<div>¿El scanner indica que la tensión del sensor 1 de APP se encuentra en el valor especificado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>0,0 V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 11</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Conecte un puente con fusible entre el circuito de señal del sensor 1 de APP y el circuito de referencia de 5 voltios del sensor 1 de APP.</Li>
+									<Li>Observe con un scanner el parámetro de tensión del sensor 1 de APP.</Li>
+								</OL>
+								<div>¿El scanner indica que la tensión del sensor 1 de APP se encuentra cerca del valor especificado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>5 V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 13</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Compruebe si hay un cortocircuito entre el circuito de señal del sensor 1 de APP y el resto de circuitos de APP en el conector de cableado del sensor de APP con un multímetro digital (DMM).</div>
+								<div>¿El DMM indica un cortocircuito a otro circuito?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 9</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 12</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Gire la llave de contacto a la posición OFF.</Li>
+									<Li>Desenchufe los dos conectores del cableado del ECM.</Li>
+									<Li>Con un DMM, compruebe si hay un cortocircuito entre el circuito de señal del sensor 1 de APP y el resto de circuitos de APP en el conector de cableado del sensor de APP.</Li>
+								</OL>
+								<div>¿Encontró y corrigió la anomalía?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 17</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 14</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Gire la llave de contacto a la posición OFF.</Li>
+									<Li>Desenchufe el conector del cableado del ECM que contenga los circuitos de APP.</Li>
+									<Li>Compruebe si hay un circuito abierto o resistencia alta en el circuito de referencia de 5 voltios del sensor 1 de APP con un DMM.</Li>
+								</OL>
+								<div>¿Encontró y corrigió la anomalía?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 17</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 14</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">11</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Gire la llave de contacto a la posición OFF.</Li>
+									<Li>Desenchufe el conector del cableado del ECM que contenga los circuitos de APP.</Li>
+									<Li>Compruebe si hay un circuito abierto o resistencia alta en el circuito de referencia baja del sensor 1 de APP con un DMM.</Li>
+								</OL>
+								<div>¿Encontró y corrigió la anomalía?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 17</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 14</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">12</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Gire la llave de contacto a la posición OFF.</Li>
+									<Li>Desenchufe el conector del cableado del ECM que contenga los circuitos de APP.</Li>
+									<Li>Compruebe si hay un circuito abierto o resistencia alta en el circuito de señal del sensor 1 de APP con un DMM.</Li>
+								</OL>
+								<div>¿Encontró un circuito abierto o resistencia alta?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 17</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 14</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">13</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Compruebe si hay malas conexiones en el conector de cableado del sensor de APP.</div>
+								<div>¿Encontró y corrigió la anomalía?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 17</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 15</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">14</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Compruebe si hay malas conexiones en los conectores del ECM.</div>
+								<div>¿Encontró y corrigió la anomalía?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 17</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 16</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">15</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Sustituya el conjunto del sensor de APP.</div>
+								<div>¿Se ha realizado la sustitución?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 17</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">16</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Sustituya el ECM.</div>
+								<div>¿Se ha realizado la sustitución?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 17</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">17</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Borre con un scanner los DTCs.</Li>
+									<Li>Gire la llave de contacto a la posición OFF durante 30 segundos. Ponga el motor en marcha.</Li>
+									<Li>Haga funcionar el vehículo en las condiciones requeridas para la ejecución de este DTC. También puede hacer funcionar el vehículo en las condiciones observadas en los datos instantáneos/registros de averías.</Li>
+								</OL>
+								<div>¿No superó el DTC el encendido?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 18</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">18</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Observe con un scanner la información de captura.</div>
+								<div>¿Se activa algún DTC no diagnosticado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al apartado   <A target="_blank" href="7C2_1F24.es.html#C1F2DTC">Lista de códigos de diagnóstico de averías (DTC) - Vehículo en Información de DTCs de vehículos</A>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Sistema OK</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<P></P>
+<DIV align="center" id="C1F2P2122"><font size="4"><b>DTC P2122 - </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="C1F2APPS"><font size="4"><b>Tensión baja del circuito del sensor 1 de posición del pedal del acelerador (APP)</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="C1F2CD1"><b>descripción del circuito</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">El conjunto del pedal acelerador consta de dos sensores de posición del pedal acelerador (APP). Los sensores APP están montados en el conjunto del pedal y no pueden repararse. Los sensores APP proporcionan una tensión de señal y cambia en relación con la posición del pedal del acelerador. El módulo de control del motor (ECM) proporciona un circuito de referencia de 5 voltios y un circuito de referencia baja para cada uno de los sensores APP.</div>
+				<div class="T1" align="left">La tensión de la señal del sensor 1 APP cuando el pedal se pisa, desde aprox. 1,0 voltios en reposo hasta más de 4 voltios al pisarlo a tope. La tensión de la señal del sensor 2 del APP aumenta al pisar el pedal, desde aprox. 0,5 voltios en reposo a más de 2 voltios con el pedal del acelerador pisado a tope.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2CRD1"><b>Condiciones para la ejecución del DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>La tensión de batería es superior a 8 V.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2CSDT1"><b>Condiciones para la activación del DTC</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">La tensión del sensor de APP es inferior a 0,898 V.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2ATWD1"><b>Acción realizada cuando se activa el DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>La luz testigo de fallo (MIL) se iluminará en cuanto se produzca el error.</Li>
+					<Li>El ECM registrará las condiciones de funcionamiento en el momento de la avería. Esta información se almacenará en las memorias intermedias de datos instantáneos y registros de averías.</Li>
+					<Li>Se almacena un historial del DTC.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2CCMD1"><b>Condiciones para borrar el DTC y apagar la MIL</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>La MIL se apagará después de tres o cuatro ciclos de conducción consecutivos en los que se efectúe el diagnóstico sin ningún fallo.</Li>
+					<Li>El historial del DTC se borrará después de efectuar 40 ciclos consecutivos de calentamiento sin ninguna avería.</Li>
+					<Li>El(los) DTC(s) puede(n) borrarse empleando un scanner.</Li>
+					<Li>Desconectando la alimentación de la batería del ECM durante 10 segundos.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2DA1"><b>Asistencia en el diagnóstico</b></DIV>
+<P></P>
+			
+				<UL>
+<Li>Para un problema intermitente, consulte   <A target="_blank" href="7C2_1F2O.es.html#C1F2INTER">"Averías intermitentes".</A>
+					</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="C1F2P21221"><font size="4"><b>DTC P2122 - Tensión baja en el circuito del sensor 1 de posición del pedal del acelerador (APP)</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Paso</B></TD>
+<TD align="center"><B>Medida</B></TD>
+<TD align="center"><B>Valor(es)</B></TD>
+<TD align="center"><B>Sí</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>¿Se ha realizado la comprobación del sistema de diagnóstico?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Ir a   <A target="_blank" href="7C2_1F22.es.html#C1F2DSC">"Comprobación del sistema de diagnóstico"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Gire la llave de contacto a la posición ON con el motor apagado.</Li>
+									<Li>Observe el parámetro de tensión del sensor 1 de posición del pedal del acelerador (APP) con un scanner.</Li>
+								</OL>
+								<div>¿Es la tensión inferior a la especificada?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>0,49 V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 5</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 3</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Observe con un scanner la información del DTC.</Li>
+									<Li>Pise lentamente el pedal del acelerador hasta alcanzar la posición de totalmente abierto (WOT), a continuación suelte lentamente el pedal del acelerador hasta la posición cerrada.</Li>
+									<Li>Repita esta acción varias veces.</Li>
+								</OL>
+								<div>¿No superó el DTC el encendido?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 13</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Observe los datos instantáneos/registros de averías para este DTC.</Li>
+									<Li>Gire la llave de contacto a la posición OFF durante 30 segundos.</Li>
+									<Li>Ponga el motor en marcha.</Li>
+									<Li>Haga funcionar el vehículo en las condiciones requeridas para establece este DTC. También puede hacer funcionar el vehículo en las condiciones observadas en los datos instantáneos/registros de averías.</Li>
+								</OL>
+								<div>¿No superó el DTC el encendido?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 5</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Ir a   <A target="_blank" href="7C2_1F22.es.html#C1F2DA">"Ayudas para el diagnóstico"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Gire la llave de contacto a la posición OFF.</Li>
+									<Li>Desenchufe el conector del cableado del sensor de APP.</Li>
+									<Li>Gire la llave de contacto a la posición ON con el motor apagado.</Li>
+									<Li>Ajuste un DMM para comprobar amperaje en la escala de 400 mA.</Li>
+									<Li>Mida el amperaje del circuito de referencia de 5 voltios del sensor 1 del APP al circuito de referencia baja del sensor 1 de APP, con un DMM.</Li>
+								</OL>
+								<div>¿Es el amperaje superior al especificado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>80 mV</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 9</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Gire la llave de contacto a la posición OFF.</Li>
+									<Li>Conecte un puente con fusible de 3 amperios entre el circuito de referencia de 5 voltios del sensor 1 de APP y el circuito de señal del sensor 1 de APP.</Li>
+									<Li>Gire la llave de contacto a la posición ON con el motor apagado.</Li>
+									<Li>Observe con un scanner el parámetro de tensión del sensor 1 de APP.</Li>
+								</OL>
+								<div>¿Está la tensión dentro de los valores especificados?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>4,8 - 5,2 V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 10</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Gire la llave de contacto a la posición OFF.</Li>
+									<Li>Quite el fusible del módulo de control del motor ECM/TCM del bloque de fusibles del motor.</Li>
+									<Li>Mida con un multímetro digital (DMM) la resistencia entre el circuito de referencia baja del sensor 1 de APP y una masa correcta.</Li>
+								</OL>
+								<div>¿Es la resistencia inferior a la especificada?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>10 ohmios</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 11</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Desconecte el ECM.</Li>
+									<Li>Compruebe si el circuito de referencia de baja del sensor 1 de APP presenta alguna interrupción o una resistencia alta.</Li>
+								</OL>
+								<div>¿Encontró y corrigió la anomalía?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 15</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 12</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Compruebe si el circuito de referencia de 5 voltios del sensor 1 de APP presenta las siguientes anomalías:</Li>
+									<UL>
+<Li>Una derivación a masa</Li>
+										<Li>Alta resistencia</Li>
+										<Li>Un circuito abierto</Li>
+									</UL>
+								</OL>
+								<OL>
+<Li value="4">Haga las reparaciones necesarias.</Li>
+								</OL>
+								<div>¿Encontró y corrigió la anomalía?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 15</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 12</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Compruebe si el circuito de señal del sensor 1 de APP presenta las siguientes anomalías:</Li>
+									<UL>
+<Li>Una derivación a masa</Li>
+										<Li>Alta resistencia</Li>
+										<Li>Un circuito abierto</Li>
+									</UL>
+								</OL>
+								<OL>
+<Li value="4">Haga las reparaciones necesarias.</Li>
+								</OL>
+								<div>¿Encontró y corrigió la anomalía?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 15</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 12</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">11</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Compruebe si hay alguna avería intermitente o mala conexión en el conjunto del APP.</div>
+								<div>¿Encontró y corrigió la anomalía?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 15</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 13</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">12</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Compruebe si hay alguna avería intermitente o mala conexión en el ECM.</div>
+								<div>¿Encontró y corrigió la anomalía?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 15</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 14</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">13</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Sustituya el conjunto del APP.</div>
+								<div>¿Se ha realizado la sustitución?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 15</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">14</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Sustituya el ECM.</div>
+								<div>¿Se ha realizado la sustitución?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 15</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">15</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Borre con un scanner los DTCs.</Li>
+									<Li>Gire la llave de contacto a la posición OFF durante 30 segundos.</Li>
+									<Li>Ponga el motor en marcha.</Li>
+									<Li>Haga funcionar el vehículo en las condiciones requeridas para establece este DTC. También puede hacer funcionar el vehículo en las condiciones observadas en los datos instantáneos/registros de averías.</Li>
+								</OL>
+								<div>¿No superó el DTC el encendido?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 16</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">16</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Compruebe si se activa algún otro DTC.</div>
+								<div>¿Se activa algún DTC no diagnosticado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Consulte la tabla de DTCs específica</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Sistema OK</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<P></P>
+<DIV align="center" id="C1F2P2123"><font size="4"><b>DTC P2123 - </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="C1F2APPS11"><font size="4"><b>Tensión alta del circuito del sensor 1 de posición del pedal del acelerador (APP)</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="C1F2CD2"><b>descripción del circuito</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">El conjunto del pedal acelerador consta de dos sensores de posición del pedal acelerador (APP). Los sensores APP están montados en el conjunto del pedal y no pueden repararse. Los sensores APP proporcionan una tensión de señal y cambia en relación con la posición del pedal del acelerador. El módulo de control del motor (ECM) proporciona un circuito de referencia de 5 voltios y un circuito de referencia baja para cada uno de los sensores APP.</div>
+				<div class="T1" align="left">La tensión de la señal del sensor 1 APP cuando el pedal se pisa, desde aprox. 1,0 voltios en reposo hasta más de 4 voltios al pisarlo a tope. La tensión de la señal del sensor 2 del APP aumenta al pisar el pedal, desde aprox. 0,5 voltios en reposo a más de 2 voltios con el pedal del acelerador pisado a tope.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2CRD2"><b>Condiciones para la ejecución del DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>La llave de contacto esté en la posición ON.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2CSDT2"><b>Condiciones para la activación del DTC</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">La tensión del sensor de APP es superior a 4,824 V.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2ATWD2"><b>Acción realizada cuando se activa el DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>La luz testigo de fallo (MIL) se iluminará en cuanto se produzca el error.</Li>
+					<Li>El ECM registrará las condiciones de funcionamiento en el momento de la avería. Esta información se almacenará en las memorias intermedias de datos instantáneos y registros de averías.</Li>
+					<Li>Se almacena un historial del DTC.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2CCMD2"><b>Condiciones para borrar el DTC y apagar la MIL</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>La MIL se apagará después de tres o cuatro ciclos de conducción consecutivos en los que se efectúe el diagnóstico sin ningún fallo.</Li>
+					<Li>El historial del DTC se borrará después de efectuar 40 ciclos consecutivos de calentamiento sin ninguna avería.</Li>
+					<Li>El(los) DTC(s) puede(n) borrarse empleando un scanner.</Li>
+					<Li>Desconectando la alimentación de la batería del ECM durante 10 segundos.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2DA2"><b>Asistencia en el diagnóstico</b></DIV>
+<P></P>
+			
+				<UL>
+<Li>Para un problema intermitente, consulte   <A target="_blank" href="7C2_1F2O.es.html#C1F2INTER">"Averías intermitentes".</A>
+					</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="C1F2P21231"><font size="4"><b>DTC P2123 - Tensión alta en el circuito del sensor 1 de posición del pedal del acelerador (APP)</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Paso</B></TD>
+<TD align="center"><B>Medida</B></TD>
+<TD align="center"><B>Valor(es)</B></TD>
+<TD align="center"><B>Sí</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>¿Se ha realizado la comprobación del sistema de diagnóstico?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Ir a   <A target="_blank" href="7C2_1F22.es.html#C1F2DSC">"Comprobación del sistema de diagnóstico"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Gire la llave de contacto a la posición ON con el motor apagado.</Li>
+									<Li>Observe el parámetro de tensión del sensor 1 de posición del pedal del acelerador (APP) con un scanner.</Li>
+								</OL>
+								<div>¿Es la tensión inferior a la especificada?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>4,0 V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 5</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 3</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Observe con un scanner la información del DTC.</Li>
+									<Li>Pise lentamente el pedal del acelerador hasta alcanzar la posición de totalmente abierto (WOT), a continuación suelte lentamente el pedal del acelerador hasta la posición cerrada.</Li>
+									<Li>Repita esta acción varias veces.</Li>
+								</OL>
+								<div>¿No superó el DTC el encendido?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 13</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Observe los datos instantáneos/registros de averías para este DTC.</Li>
+									<Li>Gire la llave de contacto a la posición OFF durante 30 segundos.</Li>
+									<Li>Ponga el motor en marcha.</Li>
+									<Li>Haga funcionar el vehículo en las condiciones requeridas para establece este DTC. También puede hacer funcionar el vehículo en las condiciones observadas en los datos instantáneos/registros de averías.</Li>
+								</OL>
+								<div>¿No superó el DTC el encendido?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 5</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Ir a   <A target="_blank" href="7C2_1F22.es.html#C1F2DA">"Ayudas para el diagnóstico"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Gire la llave de contacto a la posición OFF.</Li>
+									<Li>Desenchufe el conector del cableado del sensor de APP.</Li>
+									<Li>Gire la llave de contacto a la posición ON con el motor apagado.</Li>
+									<Li>Observe la tensión del sensor 1 de APP con el scanner.</Li>
+								</OL>
+								<div>¿Es la tensión inferior a la especificada?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>0,1 V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 10</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Mida con un multímetro digital (DMM) la tensión entre el circuito de referencia de 5 voltios del sensor 1 de APP y una buena masa.</div>
+								<div>¿Es la tensión superior a la especificada?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>6 V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 9</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 7</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Gire la llave de contacto a la posición OFF.</Li>
+									<Li>Quite el fusible del módulo de control del motor ECM/TCM del bloque de fusibles del motor.</Li>
+									<Li>Mida con un multímetro digital (DMM) la resistencia entre el circuito de referencia baja del sensor de APP y una buena masa.</Li>
+								</OL>
+								<div>¿Es la resistencia inferior a la especificada?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>10 ohmios</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 11</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Gire la llave de contacto a la posición OFF.</Li>
+									<Li>Desconecte el ECM.</Li>
+									<Li>Compruebe si hay un circuito abierto, cortocircuito con tensión o resistencia alta en el circuito de referencia baja del sensor 1 de APP.</Li>
+								</OL>
+								<div>¿Encontró y corrigió la anomalía?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 15</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 12</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Compruebe si el circuito de referencia de 5 voltios del sensor 1 de APP está en cortocircuito con la tensión.</div>
+								<div>¿Encontró y corrigió la anomalía?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 15</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 12</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Compruebe si el circuito de señal del sensor 1 de APP está en cortocircuito con la tensión.</div>
+								<div>¿Encontró y corrigió la anomalía?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 15</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 12</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">11</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Compruebe si hay terminales en cortocircuito o malas conexiones en el sensor de APP.</div>
+								<div>¿Encontró y corrigió la anomalía?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 15</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 13</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">12</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Compruebe si hay terminales en cortocircuito o malas conexiones en el ECM.</div>
+								<div>¿Encontró y corrigió la anomalía?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 15</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 14</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">13</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Sustituya el conjunto del pedal del acelerador.</div>
+								<div>¿Se ha realizado la sustitución?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 15</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">14</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Sustituya el ECM.</div>
+								<div>¿Se ha realizado la sustitución?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 15</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">15</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Borre con un scanner los DTCs.</Li>
+									<Li>Gire la llave de contacto a la posición OFF durante 30 segundos.</Li>
+									<Li>Ponga el motor en marcha.</Li>
+									<Li>Haga funcionar el vehículo en las condiciones requeridas para establece este DTC. También puede hacer funcionar el vehículo en las condiciones observadas en los datos instantáneos/registros de averías.</Li>
+								</OL>
+								<div>¿No superó el DTC el encendido?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 16</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">16</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Compruebe si se activa algún otro DTC.</div>
+								<div>¿Se activa algún DTC no diagnosticado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Consulte la tabla de DTCs específica</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Sistema OK</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<P></P>
+<DIV align="center" id="C1F2P2127"><font size="4"><b>DTC P2127 - </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="C1F2APPS2"><font size="4"><b>Tensión baja del circuito del sensor 2 de posición del pedal del acelerador (APP)</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="C1F2CD3"><b>descripción del circuito</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">El conjunto del pedal acelerador consta de dos sensores de posición del pedal acelerador (APP). Los sensores APP están montados en el conjunto del pedal y no pueden repararse. Los sensores APP proporcionan una tensión de señal y cambia en relación con la posición del pedal del acelerador. El módulo de control del motor (ECM) proporciona un circuito de referencia de 5 voltios y un circuito de referencia baja para cada uno de los sensores APP.</div>
+				<div class="T1" align="left">La tensión de la señal del sensor 1 APP cuando el pedal se pisa, desde aprox. 1,0 voltios en reposo hasta más de 4 voltios al pisarlo a tope. La tensión de la señal del sensor 2 del APP aumenta al pisar el pedal, desde aprox. 0,5 voltios en reposo a más de 2 voltios con el pedal del acelerador pisado a tope.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2CRD3"><b>Condiciones para la ejecución del DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>La llave de contacto esté en la posición ON.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2CSDT3"><b>Condiciones para la activación del DTC</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">La tensión del sensor de APP es inferior a 0,820 V.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2ATWD3"><b>Acción realizada cuando se activa el DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>La luz testigo de fallo (MIL) se iluminará en cuanto se produzca el error.</Li>
+					<Li>El ECM registrará las condiciones de funcionamiento en el momento de la avería. Esta información se almacenará en las memorias intermedias de datos instantáneos y registros de averías.</Li>
+					<Li>Se almacena un historial del DTC.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2CCMD3"><b>Condiciones para borrar el DTC y apagar la MIL</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>La MIL se apagará después de tres o cuatro ciclos de conducción consecutivos en los que se efectúe el diagnóstico sin ningún fallo.</Li>
+					<Li>El historial del DTC se borrará después de efectuar 40 ciclos consecutivos de calentamiento sin ninguna avería.</Li>
+					<Li>El(los) DTC(s) puede(n) borrarse empleando un scanner.</Li>
+					<Li>Desconectando la alimentación de la batería del ECM durante 10 segundos.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2DA3"><b>Asistencia en el diagnóstico</b></DIV>
+<P></P>
+			
+				<UL>
+<Li>Para un problema intermitente, consulte   <A target="_blank" href="7C2_1F2O.es.html#C1F2INTER">"Averías intermitentes".</A>
+					</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="C1F2P21271"><font size="4"><b>DTC P2127 - Tensión baja en el circuito del sensor 2 de posición del pedal del acelerador (APP)</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Paso</B></TD>
+<TD align="center"><B>Medida</B></TD>
+<TD align="center"><B>Valor(es)</B></TD>
+<TD align="center"><B>Sí</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>¿Se ha realizado la comprobación del sistema de diagnóstico?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Ir a   <A target="_blank" href="7C2_1F22.es.html#C1F2DSC">"Comprobación del sistema de diagnóstico"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Gire la llave de contacto a la posición ON con el motor apagado.</Li>
+									<Li>Observe el parámetro de tensión del sensor 2 de posición del pedal del acelerador (APP) con un scanner.</Li>
+								</OL>
+								<div>¿Es la tensión inferior a la especificada?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>0,49 V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 5</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 3</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Observe con un scanner la información del DTC.</Li>
+									<Li>Pise lentamente el pedal del acelerador hasta alcanzar la posición de totalmente abierto (WOT), a continuación suelte lentamente el pedal del acelerador hasta la posición cerrada.</Li>
+									<Li>Repita esta acción varias veces.</Li>
+								</OL>
+								<div>¿No superó el DTC el encendido?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 13</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Observe los datos instantáneos/registros de averías para este DTC.</Li>
+									<Li>Gire la llave de contacto a la posición OFF durante 30 segundos.</Li>
+									<Li>Ponga el motor en marcha.</Li>
+									<Li>Haga funcionar el vehículo en las condiciones requeridas para establece este DTC. También puede hacer funcionar el vehículo en las condiciones observadas en los datos instantáneos/registros de averías.</Li>
+								</OL>
+								<div>¿No superó el DTC el encendido?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 5</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Ir a   <A target="_blank" href="7C2_1F22.es.html#C1F2DA">"Ayudas para el diagnóstico"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Gire la llave de contacto a la posición OFF.</Li>
+									<Li>Desenchufe el conector del cableado del sensor de APP.</Li>
+									<Li>Gire la llave de contacto a la posición ON con el motor apagado.</Li>
+									<Li>Ajuste un DMM para comprobar amperaje en la escala de 400 mA.</Li>
+									<Li>Mida el amperaje del circuito de referencia de 5 voltios del sensor 2 del APP al circuito de referencia baja del sensor 2 de APP, con un DMM.</Li>
+								</OL>
+								<div>¿Es el amperaje superior al especificado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>80 mV</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 9</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Gire la llave de contacto a la posición OFF.</Li>
+									<Li>Conecte un puente con fusible de 3 amperios entre el circuito de referencia de 5 voltios del sensor 2 de APP y el circuito de señal del sensor 2 de APP.</Li>
+									<Li>Gire la llave de contacto a la posición ON con el motor apagado.</Li>
+									<Li>Observe con un scanner el parámetro de tensión del sensor 2 de APP.</Li>
+								</OL>
+								<div>¿Está la tensión dentro de los valores especificados?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>4,8 - 5,2 V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 10</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Gire la llave de contacto a la posición OFF.</Li>
+									<Li>Quite el fusible del módulo de control del motor ECM/TCM del bloque de fusibles del motor.</Li>
+									<Li>Mida con un multímetro digital (DMM) la tensión entre el circuito de referencia baja del sensor 2 de APP y una buena masa.</Li>
+								</OL>
+								<div>¿Es la resistencia inferior a la especificada?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>10 ohmios</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 11</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Desconecte el ECM.</Li>
+									<Li>Compruebe si el circuito de referencia de baja del sensor 2 de APP presenta alguna interrupción o una resistencia alta.</Li>
+								</OL>
+								<div>¿Encontró y corrigió la anomalía?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 15</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 12</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Compruebe si el circuito de referencia de 5 voltios del sensor 2 de APP presenta las siguientes anomalías:</Li>
+									<UL>
+<Li>Una derivación a masa</Li>
+										<Li>Alta resistencia</Li>
+										<Li>Un circuito abierto</Li>
+									</UL>
+								</OL>
+								<OL>
+<Li value="4">Haga las reparaciones necesarias.</Li>
+								</OL>
+								<div>¿Encontró y corrigió la anomalía?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 15</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 12</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Compruebe si el circuito de señal del sensor 2 de APP presenta las siguientes anomalías:</Li>
+									<UL>
+<Li>Una derivación a masa</Li>
+										<Li>Alta resistencia</Li>
+										<Li>Un circuito abierto</Li>
+									</UL>
+								</OL>
+								<OL>
+<Li value="4">Haga las reparaciones necesarias.</Li>
+								</OL>
+								<div>¿Encontró y corrigió la anomalía?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 15</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 12</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">11</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Compruebe si hay alguna avería intermitente o mala conexión en el conjunto del APP.</div>
+								<div>¿Encontró y corrigió la anomalía?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 15</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 13</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">12</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Compruebe si hay alguna avería intermitente o mala conexión en el ECM.</div>
+								<div>¿Encontró y corrigió la anomalía?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 15</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 14</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">13</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Sustituya el conjunto del APP.</div>
+								<div>¿Se ha realizado la sustitución?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 15</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">14</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Sustituya el ECM.</div>
+								<div>¿Se ha realizado la sustitución?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 15</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">15</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Borre con un scanner los DTCs.</Li>
+									<Li>Gire la llave de contacto a la posición OFF durante 30 segundos.</Li>
+									<Li>Ponga el motor en marcha.</Li>
+									<Li>Haga funcionar el vehículo en las condiciones requeridas para establece este DTC. También puede hacer funcionar el vehículo en las condiciones observadas en los datos instantáneos/registros de averías.</Li>
+								</OL>
+								<div>¿No superó el DTC el encendido?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 16</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">16</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Compruebe si se activa algún otro DTC.</div>
+								<div>¿Se activa algún DTC no diagnosticado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Consulte la tabla de DTCs específica</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Sistema OK</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<P></P>
+<DIV align="center" id="C1F2P2128"><font size="4"><b>DTC P2128 - </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="C1F2APPS21"><font size="4"><b>Tensión alta del circuito del sensor 2 de posición del pedal del acelerador (APP)</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="C1F2CD4"><b>descripción del circuito</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">El conjunto del pedal acelerador consta de dos sensores de posición del pedal acelerador (APP). Los sensores APP están montados en el conjunto del pedal y no pueden repararse. Los sensores APP proporcionan una tensión de señal y cambia en relación con la posición del pedal del acelerador. El módulo de control del motor (ECM) proporciona un circuito de referencia de 5 voltios y un circuito de referencia baja para cada uno de los sensores APP.</div>
+				<div class="T1" align="left">La tensión de la señal del sensor 1 APP cuando el pedal se pisa, desde aprox. 1,0 voltios en reposo hasta más de 4 voltios al pisarlo a tope. La tensión de la señal del sensor 2 del APP aumenta al pisar el pedal, desde aprox. 0,5 voltios en reposo a más de 2 voltios con el pedal del acelerador pisado a tope.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2CRD4"><b>Condiciones para la ejecución del DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>La tensión de batería es superior a 8 V.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2CSDT4"><b>Condiciones para la activación del DTC</b></DIV>
+<P></P>
+			
+				<UL>
+<Li>La tensión del sensor de APP es superior a 4,824 V.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2ATWD4"><b>Acción realizada cuando se activa el DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>La luz testigo de fallo (MIL) se iluminará en cuanto se produzca el error.</Li>
+					<Li>El ECM registrará las condiciones de funcionamiento en el momento de la avería. Esta información se almacenará en las memorias intermedias de datos instantáneos y registros de averías.</Li>
+					<Li>Se almacena un historial del DTC.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2CCMD4"><b>Condiciones para borrar el DTC y apagar la MIL</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>La MIL se apagará después de tres o cuatro ciclos de conducción consecutivos en los que se efectúe el diagnóstico sin ningún fallo.</Li>
+					<Li>El historial del DTC se borrará después de efectuar 40 ciclos consecutivos de calentamiento sin ninguna avería.</Li>
+					<Li>El(los) DTC(s) puede(n) borrarse empleando un scanner.</Li>
+					<Li>Desconectando la alimentación de la batería del ECM durante 10 segundos.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2DA4"><b>Asistencia en el diagnóstico</b></DIV>
+<P></P>
+			
+				<UL>
+<Li>Para un problema intermitente, consulte   <A target="_blank" href="7C2_1F2O.es.html#C1F2INTER">"Averías intermitentes".</A>
+					</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="C1F2P21281"><font size="4"><b>DTC P2128 - Tensión alta en el circuito del sensor 2 de posición del pedal del acelerador (APP)</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Paso</B></TD>
+<TD align="center"><B>Medida</B></TD>
+<TD align="center"><B>Valor(es)</B></TD>
+<TD align="center"><B>Sí</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>¿Se ha realizado la comprobación del sistema de diagnóstico?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Ir a   <A target="_blank" href="7C2_1F22.es.html#C1F2DSC">"Comprobación del sistema de diagnóstico"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Gire la llave de contacto a la posición ON con el motor apagado.</Li>
+									<Li>Observe el parámetro de tensión del sensor 2 de posición del pedal del acelerador (APP) con un scanner.</Li>
+								</OL>
+								<div>¿Es la tensión inferior a la especificada?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>4,0 V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 5</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 3</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Observe con un scanner la información del DTC.</Li>
+									<Li>Pise lentamente el pedal del acelerador hasta alcanzar la posición de totalmente abierto (WOT), a continuación suelte lentamente el pedal del acelerador hasta la posición cerrada.</Li>
+									<Li>Repita esta acción varias veces.</Li>
+								</OL>
+								<div>¿No superó el DTC el encendido?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 13</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Observe los datos instantáneos/registros de averías para este DTC.</Li>
+									<Li>Gire la llave de contacto a la posición OFF durante 30 segundos.</Li>
+									<Li>Ponga el motor en marcha.</Li>
+									<Li>Haga funcionar el vehículo en las condiciones requeridas para establece este DTC. También puede hacer funcionar el vehículo en las condiciones observadas en los datos instantáneos/registros de averías.</Li>
+								</OL>
+								<div>¿No superó el DTC el encendido?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 5</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Ir a   <A target="_blank" href="7C2_1F22.es.html#C1F2DA">"Ayudas para el diagnóstico"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Gire la llave de contacto a la posición OFF.</Li>
+									<Li>Desenchufe el conector del cableado del sensor de APP.</Li>
+									<Li>Gire la llave de contacto a la posición ON con el motor apagado.</Li>
+									<Li>Observe la tensión del sensor 2 de APP con el scanner.</Li>
+								</OL>
+								<div>¿Es la tensión inferior a la especificada?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>0,1 V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 10</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Mida con un multímetro digital (DMM) la tensión entre el circuito de referencia de 5 voltios del sensor 2 de APP y una buena masa.</div>
+								<div>¿Es la tensión superior a la especificada?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>6 V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 9</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 7</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Gire la llave de contacto a la posición OFF.</Li>
+									<Li>Quite el fusible del módulo de control del motor ECM/TCM del bloque de fusibles del motor.</Li>
+									<Li>Mida con un multímetro digital (DMM) la resistencia entre el circuito de referencia baja del sensor 2 de APP y una buena masa.</Li>
+								</OL>
+								<div>¿Es la resistencia inferior a la especificada?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>10 ohmios</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 11</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Gire la llave de contacto a la posición OFF.</Li>
+									<Li>Desconecte el ECM.</Li>
+									<Li>Compruebe si hay un circuito abierto, cortocircuito con tensión o resistencia alta en el circuito de referencia baja del sensor 2 de APP.</Li>
+								</OL>
+								<div>¿Encontró y corrigió la anomalía?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 15</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 12</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Compruebe si el circuito de referencia de 5 voltios del sensor 2 de APP está en cortocircuito con la tensión.</div>
+								<div>¿Encontró y corrigió la anomalía?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 15</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 12</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Compruebe si el circuito de señal del sensor 2 de APP está en cortocircuito con la tensión.</div>
+								<div>¿Encontró y corrigió la anomalía?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 15</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 12</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">11</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Compruebe si hay terminales en cortocircuito o malas conexiones en el sensor de APP.</div>
+								<div>¿Encontró y corrigió la anomalía?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 15</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 13</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">12</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Compruebe si hay terminales en cortocircuito o malas conexiones en el ECM.</div>
+								<div>¿Encontró y corrigió la anomalía?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 15</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 14</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">13</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Sustituya el conjunto del pedal del acelerador.</div>
+								<div>¿Se ha realizado la sustitución?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 15</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">14</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Sustituya el ECM.</div>
+								<div>¿Se ha realizado la sustitución?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 15</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">15</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Borre con un scanner los DTCs.</Li>
+									<Li>Gire la llave de contacto a la posición OFF durante 30 segundos.</Li>
+									<Li>Ponga el motor en marcha.</Li>
+									<Li>Haga funcionar el vehículo en las condiciones requeridas para establece este DTC. También puede hacer funcionar el vehículo en las condiciones observadas en los datos instantáneos/registros de averías.</Li>
+								</OL>
+								<div>¿No superó el DTC el encendido?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 16</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">16</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Compruebe si se activa algún otro DTC.</div>
+								<div>¿Se activa algún DTC no diagnosticado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Consulte la tabla de DTCs específica</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Sistema OK</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<P></P>
+<DIV align="center" id="C1F2P2135"><font size="4"><b>DTC P2135 - </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="C1F2TPS1C"><font size="4"><b>Correlación del sensor 1-2 de posición del acelerador (TP)</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="C1F2CD5"><b>descripción del circuito</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">El sensor de posición del acelerador (TP) incorpora 2 sensores TP en un alojamiento. Cada uno de los dos sensores incorpora un circuito de referencia de 5 voltios suministrados por el ECM. El ECM ofrece a cada sensor TP un circuito de referencia baja. Cada sensor de TP suministra al ECM una tensión de señal proporcional a la posición de la placa del acelerador. Las tensiones de la señal TP son contrarias entre sí. El sensor 1 de TP sube hasta la tensión de referencia cuando se abre la placa del acelerador. El sensor 2 de TP desciende hasta la referencia baja cuando la placa del acelerador se abre.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2CRD5"><b>Condiciones para la ejecución del DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>La llave de contacto esté en la posición ON.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2CSDT5"><b>Condiciones para la activación del DTC</b></DIV>
+<P></P>
+			
+				<UL>
+<Li>La diferencia entre los valores normalizados de TPS1 y TPS2 es superior a la esperada durante un periodo de tiempo determinado.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2ATWD5"><b>Acción realizada cuando se activa el DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>La luz testigo de fallo (MIL) se iluminará en cuanto se produzca el error.</Li>
+					<Li>El ECM registrará las condiciones de funcionamiento en el momento de la avería. Esta información se almacenará en las memorias intermedias de datos instantáneos y registros de averías.</Li>
+					<Li>Se almacena un historial del DTC.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2CCMD5"><b>Condiciones para borrar el DTC y apagar la MIL</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>La MIL se apagará después de tres o cuatro ciclos de conducción consecutivos en los que se efectúe el diagnóstico sin ningún fallo.</Li>
+					<Li>El historial del DTC se borrará después de efectuar 40 ciclos consecutivos de calentamiento sin ninguna avería.</Li>
+					<Li>El(los) DTC(s) puede(n) borrarse empleando un scanner.</Li>
+					<Li>Desconectando la alimentación de la batería del ECM durante 10 segundos.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2DA5"><b>Asistencia en el diagnóstico</b></DIV>
+<P></P>
+			
+				<UL>
+<Li>Compruebe si hay signos de entrada de agua en los conectores del ECM. Cuando se produce la entrada de agua, puede que se activen diferentes DTCs sin que se encuentren problemas en circuitos o componentes durante las pruebas de diagnóstico. </Li>
+					<Li>Cuando el ECM detecta un problema dentro del sistema TAC, pueden activarse varios DTCs relacionados con el sistema TAC. Esto se debe a las diferentes pruebas redundantes ejecutadas de forma continua en este sistema. La localización y reparación de un problema concreto puede corregir más de 1 DTC. La desconexión de componentes durante las pruebas puede activar otros DTCs. Tenga esto en cuenta al revisar la información de captura.</Li>
+					<Li>Si este DTC es intermitente, consulte el apartado   <A target="_blank" href="7C2_1F2O.es.html#C1F2INTER">"Averías intermitentes".</A>
+					</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="C1F2P21351"><font size="4"><b>DTC P2135 -Correlación de los sensores 1-2 de posición del acelerador (TP)</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Paso</B></TD>
+<TD align="center"><B>Medida</B></TD>
+<TD align="center"><B>Valor(es)</B></TD>
+<TD align="center"><B>Sí</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>¿Se ha realizado la comprobación del sistema de diagnóstico?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Ir a   <A target="_blank" href="7C2_1F22.es.html#C1F2DSC">"Comprobación del sistema de diagnóstico"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Gire la llave de contacto a la posición ON con el motor apagado.</Li>
+									<Li>Observe el sensor 1 y el 2 de posición del acelerador (TP) con un scanner.</Li>
+								</OL>
+								<div>¿El parámetro de los sensores 1 y 2 de TP indica Incorrecto?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 3</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Desmonte del cuerpo del acelerador del conducto de entrada de aire.</Li>
+									<Li>Desenchufe el conector de cableado del motor del actuador del acelerador.</Li>
+									<Li>Lentamente, abra manualmente la placa del acelerador hasta la posición totalmente abierta (WOT) y cierre después varias veces la placa mientras observa el parámetro del sensor de TP.</Li>
+								</OL>
+								<div>¿El parámetro Sensor de TP cambia de Correcto a Incorrecto durante la prueba anterior?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 17</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Desenchufe el conector de cableado del sensor de posición del acelerador (TP).</Li>
+									<Li>Desenchufe los conectores de cableado del módulo de control del actuador del acelerador (TAC).</Li>
+									<Li>Compruebe la resistencia del circuito de referencia de 5 voltios del sensor 1 de TP.</Li>
+								</OL>
+								<div>¿No superó el DTC el encendido?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 19</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Compruebe si hay un cortocircuito en el circuito de referencia de 5 voltios del sensor 1 de TP y el resto de circuitos del ECM.</div>
+								<div>¿Encontró y corrigió la anomalía?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 19</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 6</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Compruebe la resistencia del circuito de señal del sensor 1 de TP.</div>
+								<div>¿Encontró y corrigió la anomalía?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 19</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 7</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Compruebe si hay un cortocircuito en el circuito de señal del sensor 1 de TP y el resto de circuitos del ECM.</div>
+								<div>¿Encontró y corrigió la anomalía?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>10 ohmios</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 19</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Compruebe la resistencia del circuito de referencia baja del sensor 1 de TP.</div>
+								<div>¿Encontró y corrigió la anomalía?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 19</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 9</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Compruebe si hay un cortocircuito en el circuito de referencia baja del sensor 1 de TP y el resto de circuitos del ECM.</div>
+								<div>¿Encontró y corrigió la anomalía?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 19</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 10</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Compruebe la resistencia del circuito de referencia de 5 voltios del sensor 2 de TP.</div>
+								<div>¿Encontró y corrigió la anomalía?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 19</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 11</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">11</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Compruebe si hay un cortocircuito en el circuito de referencia de 5 voltios del sensor 2 de TP y el resto de circuitos del ECM.</div>
+								<div>¿Encontró y corrigió la anomalía?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 19</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 12</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">12</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Compruebe la resistencia del circuito de señal del sensor 2 de TP.</div>
+								<div>¿Encontró y corrigió la anomalía?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 19</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 13</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">13</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Compruebe si hay un cortocircuito en el circuito de señal del sensor 2 de TP y el resto de circuitos del ECM.</div>
+								<div>¿Encontró y corrigió la anomalía?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 19</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 14</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">14</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Compruebe la resistencia del circuito de referencia baja del sensor 2 de TP.</div>
+								<div>¿Encontró y corrigió la anomalía?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 19</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 15</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">15</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Compruebe si hay un cortocircuito en el circuito de referencia baja del sensor 2 de TP y el resto de circuitos del ECM.</div>
+								<div>¿Encontró y corrigió la anomalía?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 19</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 16</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">16</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Compruebe si hay malas conexiones en el conector de cableado del ECM.</div>
+								<div>¿Encontró y corrigió la anomalía?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 19</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 17</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">17</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Compruebe si hay malas conexiones en el conector de cableado del sensor de TP.</div>
+								<div>¿Encontró y corrigió la anomalía?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 19</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 18</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">18</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Sustituya el conjunto del cuerpo del acelerador.</div>
+								<div>¿Se ha realizado la sustitución?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 19</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">19</TD>
+						<TD width="49%" valign="top">
+							
+								<UL>
+<Li>Borre con un scanner los DTCs.</Li>
+									<Li>Gire la llave de contacto a la posición OFF durante 30 segundos.</Li>
+									<Li>Ponga el motor en marcha.</Li>
+									<Li>Haga funcionar el vehículo en las condiciones requeridas para la ejecución de este DTC. También puede hacer funcionar el vehículo en las condiciones observadas en los datos instantáneos/registros de averías.</Li>
+								</UL>
+								<div>¿El DTC se activa y pasa?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 20</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 2</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">20</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Compruebe si se activa algún otro DTC.</div>
+								<div>¿Se activa algún DTC no diagnosticado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Consulte la tabla de DTCs específica</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Sistema OK</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<P></P>
+<DIV align="center" id="C1F2P2138"><font size="4"><b>DTC P2138 - </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="C1F2APPS3"><font size="4"><b>Correlación de sensores 1-2 de posición del pedal acelerador (APP)</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="C1F2CD6"><b>descripción del circuito</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">El conjunto del pedal acelerador consta de dos sensores de posición del pedal acelerador (APP). Los sensores APP están montados en el conjunto del pedal y no pueden repararse. Los sensores APP proporcionan una tensión de señal y cambia en relación con la posición del pedal del acelerador. El módulo de control del motor (ECM) proporciona un circuito de referencia de 5 voltios y un circuito de referencia baja para cada uno de los sensores APP.</div>
+				<div class="T1" align="left">La tensión de la señal del sensor 1 APP cuando el pedal se pisa, desde aprox. 1,0 voltios en reposo hasta más de 4 voltios al pisarlo a tope. La tensión de la señal del sensor 2 del APP aumenta al pisar el pedal, desde aprox. 0,5 voltios en reposo a más de 2 voltios con el pedal del acelerador pisado a tope.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2CRD6"><b>Condiciones para la ejecución del DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>La tensión de batería es superior a 8 V.</Li>
+					<Li>La tensión del sensor de APP es superior a 1,23 V.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2CSDT6"><b>Condiciones para la activación del DTC</b></DIV>
+<P></P>
+			
+				<UL>
+<Li>Si el ECM detecta que la diferencia entre la tensión de señal de los sensores de APP 1 y 2 es superior a un valor predeterminado, se activa este DTC.</Li>
+					<Li>La tensión del sensor 1 de APP es superior a 1,5 V.</Li>
+					<Li>Cualquier error en los sensores 1 y 2 del APP.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2ATWD6"><b>Acción realizada cuando se activa el DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>La luz testigo de fallo (MIL) se iluminará en cuanto se produzca el error.</Li>
+					<Li>El ECM registrará las condiciones de funcionamiento en el momento de la avería. Esta información se almacenará en las memorias intermedias de datos instantáneos y registros de averías.</Li>
+					<Li>Se almacena un historial del DTC.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2CCMD6"><b>Condiciones para borrar el DTC y apagar la MIL</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>La MIL se apagará después de tres o cuatro ciclos de conducción consecutivos en los que se efectúe el diagnóstico sin ningún fallo.</Li>
+					<Li>El historial del DTC se borrará después de efectuar 40 ciclos consecutivos de calentamiento sin ninguna avería.</Li>
+					<Li>El(los) DTC(s) puede(n) borrarse empleando un scanner.</Li>
+					<Li>Desconectando la alimentación de la batería del ECM durante 10 segundos.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2DA6"><b>Asistencia en el diagnóstico</b></DIV>
+<P></P>
+			
+				<UL>
+<Li>Para un problema intermitente, consulte   <A target="_blank" href="7C2_1F2O.es.html#C1F2INTER">"Averías intermitentes".</A>
+					</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="C1F2P21381"><font size="4"><b>DTC P2138 - Correlación de sensores 1-2 de posición del pedal acelerador (APP)</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Paso</B></TD>
+<TD align="center"><B>Medida</B></TD>
+<TD align="center"><B>Valor(es)</B></TD>
+<TD align="center"><B>Sí</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>¿Se ha realizado la comprobación del sistema de diagnóstico?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Ir a   <A target="_blank" href="7C2_1F22.es.html#C1F2DSC">"Comprobación del sistema de diagnóstico"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Gire la llave de contacto a la posición ON con el motor apagado.</Li>
+									<Li>Lleve a cabo las siguientes pruebas:</Li>
+									<UL>
+<Li>Pise rápidamente el pedal del acelerador desde la posición de descanso hasta la posición de acelerador totalmente abierto (WOT) y suelte el pedal. Repita el procedimiento varias veces.</Li>
+										<Li>Pise lentamente el pedal del acelerador hasta WOT y deje que regrese lentamente a la posición de descanso. Repita el procedimiento varias veces.</Li>
+									</UL>
+								</OL>
+								<OL>
+<Li value="4">Observe el parámetro de los sensores 1 y 2 de posición del pedal acelerador (APP) con un scanner.</Li>
+								</OL>
+								<div>¿Aparece el valor Correcto (Agree) en la pantalla del scanner?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>4,0 V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 3</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Observe con un scanner la información del DTC.</div>
+								<div>¿También se activan los DTCs P0122, P0123, P0222, P0223, P2122, P2123, P2127 y P2128?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Consulte la tabla de DTCs específica</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Observe los datos instantáneos/registros de averías para este DTC.</Li>
+									<Li>Gire la llave de contacto a la posición OFF durante 30 segundos.</Li>
+									<Li>Ponga el motor en marcha.</Li>
+									<Li>Haga funcionar el vehículo en las condiciones requeridas para establece este DTC. También puede hacer funcionar el vehículo en las condiciones observadas en los datos instantáneos/registros de averías.</Li>
+								</OL>
+								<div>¿No superó el DTC el encendido?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 5</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Ir a   <A target="_blank" href="7C2_1F22.es.html#C1F2DA">"Ayudas para el diagnóstico"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Gire la llave de contacto a la posición OFF.</Li>
+									<Li>Desenchufe el conector del cableado del sensor de APP.</Li>
+									<Li>Gire la llave de contacto a la posición ON con el motor apagado.</Li>
+									<Li>Conecte una lámpara de pruebas entre el circuito de referencia de 5 voltios del sensor 1 del APP y una buena masa. 5. Conecte un DMM en la sonda de la lámpara de pruebas y en una masa en buen estado.</Li>
+								</OL>
+								<div>¿Está la tensión dentro de los valores especificados?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>4,8 - 5,1 V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 11</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Conecte una lámpara de pruebas entre el circuito de referencia de 5 voltios del sensor 2 de APP y una buena masa.</Li>
+									<Li>Conecte un multímetro digital (DMM) entre el cabezal medidor de la lámpara de pruebas y una buena masa.</Li>
+								</OL>
+								<div>¿Está la tensión dentro de los valores especificados?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>4,8 - 5,1 V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 11</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Conecte un cable puente con fusible de 3 amperios entre el circuito de referencia de 5 voltios y el circuito de señal del sensor 1 de APP.</Li>
+									<Li>Observe con un scanner el parámetro de tensión del sensor 1 de APP.</Li>
+								</OL>
+								<div>¿Es la tensión superior a la especificada?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>4,8 V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 8</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 12</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Conecte un cable puente con fusible de 3 amperios entre el circuito de referencia de 5 voltios y el circuito de señal 2 del sensor de APP.</Li>
+									<Li>Observe con un scanner el parámetro de tensión del sensor 2 de APP.</Li>
+								</OL>
+								<div>¿Es la tensión superior a la especificada?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>4,8 V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 9</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 12</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Gire la llave de contacto a la posición OFF.</Li>
+									<Li>Quite el fusible del módulo de control del motor ECM/TCM del bloque de fusibles del motor.</Li>
+									<Li>Mida con un multímetro digital (DMM) la resistencia entre el circuito de referencia baja del sensor 1 de APP y una buena masa.</Li>
+								</OL>
+								<div>¿Es la resistencia inferior a la especificada?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>10 ohmios</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 10</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 13</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Mida con un multímetro digital (DMM) la resistencia entre el circuito de referencia baja del sensor 2 de APP y una buena masa.</div>
+								<div>¿Es la resistencia inferior a la especificada?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>10 ohmios</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 14</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 13</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">11</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Compruebe el circuito de referencia de 5 voltios de los sensores 1 y 2 de APP por si presentan una resistencia alta, una derivación a masa, cortocircuito con la tensión o circuito abierto.</div>
+								<div>¿Encontró y corrigió la anomalía?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 19</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 16</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">12</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Compruebe el circuito de señal de los sensores 1 y 2 de APP por si presentan una resistencia alta, derivación a masa o un circuito abierto.</div>
+								<div>¿Encontró y corrigió la anomalía?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 19</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 16</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">13</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Compruebe el circuito de referencia baja de los sensores 1 y 2 de APP por si presentan una resistencia alta o un circuito abierto.</div>
+								<div>¿Encontró y corrigió la anomalía?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 19</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 16</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">14</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Compruebe el circuito de señal del sensor 1 de APP por si hay un cortocircuito con el circuito de señal del sensor 2 de APP.</div>
+								<div>¿Encontró y corrigió la anomalía?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 19</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 16</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">15</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Compruebe si hay alguna avería intermitente o mala conexión en el sensor de APP.</div>
+								<div>¿Encontró y corrigió la anomalía?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 19</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 17</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">16</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Compruebe si hay alguna avería intermitente o mala conexión en el ECM.</div>
+								<div>¿Encontró y corrigió la anomalía?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 19</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 18</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">17</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Sustituya el sensor de APP.</div>
+								<div>¿Se ha realizado la sustitución?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 19</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">18</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Sustituya el ECM.</div>
+								<div>¿Se ha realizado la sustitución?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 19</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">19</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Borre con un scanner los DTCs.</Li>
+									<Li>Gire la llave de contacto a la posición OFF durante 30 segundos.</Li>
+									<Li>Ponga el motor en marcha.</Li>
+									<Li>Haga funcionar el vehículo en las condiciones requeridas para establece este DTC. También puede hacer funcionar el vehículo en las condiciones observadas en los datos instantáneos/registros de averías.</Li>
+								</OL>
+								<div>¿No superó el DTC el encendido?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 20</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">20</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Compruebe si se activa algún otro DTC.</div>
+								<div>¿Se activa algún DTC no diagnosticado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Consulte la tabla de DTCs específica</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Sistema OK</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<P></P>
+<DIV align="center" id="C1F2P2176"><font size="4"><b>DTC P2176 - </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="C1F2TCLPL"><font size="4"><b>Posición inferior del control del acelerador no memorizada</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="C1F2CD8"><b>descripción del circuito</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">El ECM controla y evalúa la tensión de señal de los sensores de posición del pedal acelerador (APP) y los datos proporcionados por otros sensores para determinar la apertura deseada de la mariposa. Para controlar el movimiento de la placa del acelerador, el ECM aplica una tensión de señal modulada en anchura de impulso (PWM) al motor del actuador de la mariposa, a través de los circuitos de control del motor del actuador. Además, el ECM controla la tensión de la señal aplicada al circuito de control del motor del actuador de la mariposa. Se activa un DTC del circuito de control del motor TAC cuando el ECM detecta un fallo en el rendimiento del motor o los circuitos del TAC.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2CRD9"><b>Condiciones para la ejecución del DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>El motor sea nuevo.</Li>
+					<Li>El controlador electrónico de la mariposa sea nuevo.</Li>
+					<Li>Inicialización del actuador de control de la mariposa.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2CSD9"><b>Condiciones para la activación del DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>La velocidad del motor sea superior a 250 rpm.</Li>
+					<Li>La velocidad del vehículo sea superior a 0 km/h.</Li>
+					<Li>La posición del pedal acelerador sea igual o superior a 14,902%.</Li>
+					<Li>La temperatura del refrigerante del motor sea inferior a 5,3 °C o superior a 100,5 °C.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2ATWD9"><b>Acción realizada cuando se activa el DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>La luz testigo de fallo (MIL) se iluminará en cuanto se produzca el error.</Li>
+					<Li>El ECM registrará las condiciones de funcionamiento en el momento de la avería. Esta información se almacenará en las memorias intermedias de datos instantáneos y registros de averías.</Li>
+					<Li>Se almacena un historial del DTC.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2CCM9"><b>Condiciones para borrar el DTC y apagar la MIL</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>La MIL se apagará después de tres o cuatro ciclos de conducción consecutivos en los que se efectúe el diagnóstico sin ningún fallo.</Li>
+					<Li>El historial del DTC se borrará después de efectuar 40 ciclos consecutivos de calentamiento sin ninguna avería.</Li>
+					<Li>El(los) DTC(s) puede(n) borrarse empleando un scanner.</Li>
+					<Li>Desconectando la alimentación de la batería del ECM durante 10 segundos.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="C1F2P21761"><font size="4"><b>DTC P2176 - Posición inferior del control del acelerador no memorizada</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Paso</B></TD>
+<TD align="center"><B>Medida</B></TD>
+<TD align="center"><B>Valor(es)</B></TD>
+<TD align="center"><B>Sí</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>¿Se ha realizado la comprobación del sistema de diagnóstico?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>
+								-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Ir a   <A target="_blank" href="7C2_1F22.es.html#C1F2DSC">"Comprobación del sistema de diagnóstico"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Gire la llave de contacto a la posición OFF durante 30 segundos.</Li>
+									<Li>Haga circular el vehículo de forma que se reproduzca el DTC.</Li>
+									<Li>Ponga el motor en marcha.</Li>
+									<Li>Pise con movimiento rápido el pedal acelerador para abrir la mariposa por completo y, a continuación, levante el pie. Repita este procedimiento varias veces.</Li>
+									<Li>Con el scanner, seleccione la función de visualización del DTC.</Li>
+								</OL>
+								<div>¿No superó el DTC P2176 el encendido?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<div>¿También se activan los P0121, P0122, P0123, P0221, P0222 y P0223?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Consulte la tabla de DTCs específica</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Desenchufe el conector del cableado del actuador de la mariposa.</Li>
+									<Li>Revise la placa del acelerador y verifique si se presentan los siguientes problemas:</Li>
+									<UL>
+<Li>suciedad excesiva en el cuerpo de la mariposa,</Li>
+										<Li>no está en posición de reposo,</Li>
+										<Li>agarrotada en apertura o cierre,</Li>
+										<Li>agarrotada al pasar de la posición abierta a cerrada y viceversa, y</Li>
+										<Li>libertad en el movimiento de apertura o cierre, sin la presión del muelle.</Li>
+									</UL>
+								</OL>
+								<div>¿Encontró y corrigió la anomalía?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 13</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Revise si hay averías en el motor que causan la velocidad de ralentí incorrecta.</div>
+								<div>¿Encontró y corrigió la anomalía?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 13</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 6</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Gire la llave de contacto a la posición ON con el motor parado.</Li>
+									<Li>Utilizando un multímetro digital, mida la tensión entre el circuito de tensión positiva del TAC y el alojamiento del ECM.</Li>
+								</OL>
+								<div>¿Está la tensión dentro de los valores especificados?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>2 - 4 V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 9</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Gire la llave de contacto a la posición ON con el motor parado.</Li>
+									<Li>Utilizando un multímetro digital, mida la tensión entre el circuito control de tensión positiva del TAC y el alojamiento del ECM.</Li>
+								</OL>
+								<div>¿Está la tensión dentro de los valores especificados?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>2 - 4 V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 8</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 9</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Gire la llave de contacto a la posición OFF.</Li>
+									<Li>Conecte una lámpara de pruebas entre el circuito de control negativo y positivo del TAC.</Li>
+									<Li>Mientras observa la lámpara de pruebas, gire la llave de contacto a la posición ON durante 5 segundos y, a continuación, a la posición OFF.</Li>
+								</OL>
+								<div>¿La lámpara de pruebas se enciende durante unos instantes cada vez que se realiza el ciclo de encendido?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 11</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 10</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Compruebe si el circuito de control del TAC con una tensión fuera de del valor especificado presenta alta resistencia, o está interrumpido, derivado a masa o en cortocircuito con la tensión.</div>
+								<div>¿Encontró y corrigió la anomalía?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 13</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 12</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Compruebe si existe un cortocircuito entre los circuitos de control negativo y positivo del TAC.</div>
+								<div>¿Encontró y corrigió la anomalía?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 13</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 12</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">11</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Sustituya el conjunto del cuerpo del acelerador.</div>
+								<div>¿Se ha realizado la sustitución?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 13</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">12</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Sustituya el ECM.</div>
+								<div>¿Se ha realizado la sustitución?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 13</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">13</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Borre con un scanner los DTCs.</Li>
+									<Li>Gire la llave de contacto a la posición OFF durante 30 segundos.</Li>
+									<Li>Ponga el motor en marcha.</Li>
+									<Li>Haga funcionar el vehículo en las condiciones requeridas para establece este DTC. También puede hacer funcionar el vehículo en las condiciones observadas en los datos instantáneos/registros de averías.</Li>
+								</OL>
+								<div>¿No superó el DTC el encendido?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 14</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">14</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Compruebe si se activa algún otro DTC.</div>
+								<div>¿Se activa algún DTC no diagnosticado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Consulte la tabla de DTCs específica</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Sistema OK</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+<BR><BR><TABLE align="center"><TR>
+<TD align="left"><A href="7C2_1F2I.es.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_back.gif" alt="A la página anterior"></A></TD>
+<TD align="left"></TD>
+<TD align="left"><A href="7C2_1F2K.es.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_next.gif" alt="A la página siguiente"></A></TD>
+<TD></TD>
+</TR></TABLE>
+<TABLE width="100%"><TBODY><TR BGCOLOR="DarkSlateBlue" align="center"><TD><FONT color="white"><B>© Copyright Chevrolet Europe. Reservados todos los derechos</B></FONT></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>

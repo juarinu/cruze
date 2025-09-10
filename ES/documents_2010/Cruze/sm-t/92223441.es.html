@@ -1,0 +1,131 @@
+<HTML>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><TITLE>Información de servicio</TITLE><STYLE>
+	.ListIndentBul2Refer{margin-left : 40pt}  ..ListIndentBul2{margin-left : -20pt}
+	.SubListIndent{margin-left : -15pt}
+	.UpNo{border-top : white}  .DownNo{border-bottom : white}  ..BothNo{border-top : white; border-bottom : white}
+	.UpBold{border-top : thin double ridge}  .DownBold{border-bottom : thin double ridge}  .BothBold{border-top : thin double ridge; border-bottom : thin double ridge}
+	.ImageIndent{margin-left : 0%}  .ImageTitleIndent{margin-left : 5%}  .ParagraphIndent{margin-left : 20pt}
+	.Arial{font-family : Arial, Helvetica, sans-serif; margin-left : 10pt; margin-right : 10pt}
+</STYLE>
+<SCRIPT LANGUAGE="JavaScript">
+	function FixMenu()
+	{
+		menuTop = document.body.scrollTop + document.body.clientHeight -40;
+		menu.style.top = menuTop;
+		menu.style.width = document.body.clientWidth; 
+	}
+</SCRIPT>
+</HEAD>
+<BODY class="Arial" onLoad="FixMenu()" onScroll="FixMenu()" onResize="FixMenu()" BGCOLOR="#FFFFFF">
+<SPAN ID="menu" STYLE="position:absolute; left:0px; top:0px; width:0px">
+	<A border="0" href="92223441.es.html">
+	<IMG src="../../../../graphic-pool/Icons/Totop.gif" align="right" halign="Bottom" border="0" alt="A la parte superior del documento"></A>
+</SPAN>
+<TABLE CELLSPACING="0"  width="100%" BORDER="1" rules="none" cellspacing="0" cellpadding="0" style="magin-top: 5pt">
+<TBODY>
+<TR BGCOLOR="cccc99" height="15">
+<TD width="30%"><div style="padding-left: 5pt"><B><FONT face="Arial">Cruze</FONT></B></div></TD>
+<TD width="70%" align="right" colspan="8"></TD>
+</TR>
+<TR BGCOLOR="white" height="60">
+<TD width="35%" align="left">
+<TABLE CELLSPACING="0" >
+<TR>
+<TD width="5%" align="left">&nbsp;</TD>
+<TD width="5%" align="left"></TD>
+<TD width="5%" align="left">&nbsp;</TD>
+</TR>
+</TABLE>
+</TD>
+<TD>
+<TABLE CELLSPACING="0"  width="65%" align="right">
+<TR>
+<TD style="font-size:10">
+	<A href="../../../GMDE_TIS_START.html" target="_top">
+	<IMG src="../../code/menu-images/home.gif" border="0" alt="Página de inicio GMDE">
+</A></TD>
+<TD style="font-size:10">
+	<A href="../toc_Cruze.html" target="menu"><IMG src="../../code/menu-images/static-TOC.gif" border="0" alt="TOC estático de carga"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../toc_Cruze_code.html" target="code"><IMG src="../../code/menu-images/menu_folder_open.gif" border="0" alt="TOC dinámico de carga"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../../help/readme_EN.htm" target="top" class="bottom_copyright"><IMG src="../../code/menu-images/help.gif" border="0" alt="¿Ayuda?"></A>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+<H2>Programación y configuración del módulo de control del motor LXT</H2>
+
+<p>Los siguientes procedimientos de servicio requieren de una acción de programación o configuración para completar la reparación.</p>
+
+<A NAME="ss1-2223441">
+<A HREF="#ss1-2223441">
+<H3>Antes de programar el módulo de control del motor</H3></A>
+<p><font color=brown><b>Nota:&nbsp;</b>NO programe un módulo de control a menos que siga un procedimiento de servicio o un boletín de servicio. La programación de un módulo de control en cualquier otro caso no corregirá de manera permanente el problema del cliente.</font></p><p>Deben satisfacerse los siguientes criterios antes de llevar a cabo el procedimiento de programación o aprendizaje:</p>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Tensión de sistema del vehículo</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Que no haya ningún problema en el sistema de carga. Todo problema con el sistema de carga debe repararse antes de programar un módulo de control. </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Tensión de la batería entre 12-16&nbsp;V. La batería debe cargarse antes de programar el módulo de control si la tensión de la misma es baja.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Que NO haya ningún cargador de batería conectado a la batería del vehículo. Un voltaje del sistema incorrecto o fluctuaciones del mismo desde un cargador de batería podría provocar un fallo de programación o daños en el módulo de control.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Apague o desconecte cualquier de los sistemas siguientes ya que podrían crear una carga en la batería del vehículo:</td></tr></table></div>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;</font></td><td valign="top">Twilight Sentinel</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;</font></td><td valign="top">Luces interiores </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;</font></td><td valign="top">Luces de marcha diurna</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;</font></td><td valign="top">Sistemas HVAC</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;</font></td><td valign="top">Ventiladores de refrigeración del motor, etc.</td></tr></table></div>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">El interruptor de encendido debe estar en la posición correcta. La herramienta de diagnóstico le pedirá que conecte el encendido (ON) con el motor parado. NO modifique la posición del interruptor del encendido durante el procedimiento de programación salvo que se le indique expresamente.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Cada una de las conexiones de herramientas que aparecen a continuación son seguras:</td></tr></table></div>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;</font></td><td valign="top">La conexión en el conector de enlace de datos (DLC)</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;</font></td><td valign="top">Los circuitos de alimentación de tensión</td></tr></table></div>
+
+
+<p>NO altere los mazos de cables de la herramienta mientras realiza la programación. Si se produce alguna interrupción mientras se programa, puede darse un fallo de programación o dañarse el módulo de control.</p>
+
+<A NAME="ss2-2223441">
+<A HREF="#ss2-2223441">
+<H3>Sustitución del ECM</H3></A><p>Si se sustituye el módulo de control del motor (ECM), deben realizarse los siguientes procedimientos.</p>
+
+<OL><LI TYPE="1">Conecte una herramienta de diagnóstico al vehículo y entre en el SPS. Consulte <a href="92223856.es.html">Sistema de programación de servicio (SPS)</a> .</LI>
+
+<p><font color=brown><b>Nota:&nbsp;</b>La función &quot;Prepare módulo de control para su retirada&quot; sólo se puede ejecutar cuando aún es posible la comunicación con el módulo antiguo.</font></p><LI TYPE="1">Antes de retirar el módulo de control antiguo, ejecute la función del SPS &quot;Prepare módulo de control para su retirada&quot;. </LI>
+<LI TYPE="1">Sustituya el ECM.</LI>
+<LI TYPE="1">Ejecute la función del SPS &quot;Módulo de control del motor: programación&quot; y siga las instrucciones que aparecen en pantalla.</LI>
+<LI TYPE="1">Ejecute la función del SPS &quot;Módulo de control del motor: configuración &amp; instalación&quot; y siga las instrucciones que aparecen en pantalla. En la pantalla &quot;Módulo de control: función(es) configuración e instalación&quot;, seleccione en ambos módulos de control estas opciones: &quot;Configuración/Reconfiguración e Instalación del módulo de control apropiado&quot;.</LI>
+<LI TYPE="1">Ejecute la función del SPS &quot;Program. del inmovilizador&quot;. Consultar <a href="92172824.es.html">Programación de componentes del sistema del inmovilizador</a> .</LI>
+<LI TYPE="1">Borre los DTC tras completar el procedimiento de programación.</LI>
+<LI TYPE="1">Arranque el motor y déjelo al ralentí.</LI>
+<LI TYPE="1">Si la función del SPS &quot;Prepare módulo de control para su retirada&quot; no se pudiera ejecutar, realice lo siguiente:</LI>
+<p>Tiempo restante de vida útil del aceite del motor. Cuando esté disponible esta función, utilice una herramienta de diagnóstico para reiniciar el tiempo de vida útil del aceite del motor al porcentaje original que se registró antes de retirar el módulo.</p>
+</OL>
+
+<A NAME="ss3-2223441">
+<A HREF="#ss3-2223441">
+<H3>Reprogramación del ECM</H3></A><p>Siga los siguientes procedimientos si se necesita reprogramar el módulo de control del motor (ECM):</p>
+
+<OL><LI TYPE="1">Conecte una herramienta de diagnóstico al vehículo y entre en el SPS. Consulte <a href="92223856.es.html">Sistema de programación de servicio (SPS)</a> .</LI>
+<LI TYPE="1">Ejecute la función del SPS &quot;Módulo de control del motor: programación&quot; y siga las instrucciones que aparecen en pantalla.</LI>
+<LI TYPE="1">Tiempo restante de vida útil del aceite del motor. Tiempo restante de vida útil del aceite del motor. Cuando esté disponible esta función, utilice una herramienta de diagnóstico para reiniciar el tiempo de vida útil del aceite del motor al porcentaje original que se registró antes de volver a programar el módulo.</LI>
+</OL>
+
+
+
+
+<TABLE CELLSPACING="0"  align="center"><TR>
+<TD align="left">&nbsp;</TD>
+<TD align="left"></TD>
+<TD align="left">&nbsp;</TD>
+<TD></TD>
+</TR></TABLE>
+<BR><BR><TABLE CELLSPACING="0"  width="100%"><TBODY><TR BGCOLOR="DarkSlateBlue" align="center"><TD><FONT color="white"><B>© Copyright Chevrolet. Reservados todos los derechos</B></FONT></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>

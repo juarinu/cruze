@@ -1,0 +1,735 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8" />
+<title>Global Diagnostic System</title>
+<link rel="stylesheet" type="text/css" href="mdiprint.css" media="print" />
+<!-- Version 2.0.16 with all screenshots and Export Function explanation (Snapshot) -->
+
+<style type="text/css">
+	  <!--
+	div.all { margin-top:2px; margin-left:2px; margin-right:auto }
+	  
+.style1 { text-align: center;
+}
+.style2 {
+	border-style: solid;
+	border-color: black;
+	border-width: 1px;
+}
+.style3 {
+	border: 1px solid black;
+}
+.tableinsert {
+	vertical-align: top;
+	text-indent: 20px;
+}
+.caution {
+	padding: 10px;
+	margin: 0px;
+	border-color: #0000FF;
+	border-style: outset;
+	border-width: 1px 4px 4px 4px;
+	border-left: 1px solid #808080;
+	border-top: 1px solid #808080;
+	background-color: #FFCCCC;
+}
+.important {
+	padding: 10px;
+	margin: 0px;
+	border-color: #0000FF;
+	border-style: outset;
+	border-width: 1px 4px 4px 4px;
+	border-left: 1px solid #808080;
+	border-top: 1px solid #808080;
+	background-color: #FFCCCF;
+}
+.note {
+	padding: 10px;
+	margin: 0px;
+	border-color: #0000FF;
+	border-style: outset;
+	border-width: 1px 4px 4px 4px;
+	border-left: 1px solid #808080;
+	border-top: 1px solid #808080;
+	background-color: #99CCFF;
+}
+.notice {
+	padding: 10px;
+	margin: 0px;
+	border-color: #808080 #666666 #666666 #808080;
+	border-style: solid outset outset solid;
+	border-width: 1px 4px 4px 4px;
+	border-left: 1px solid #808080;
+	border-top: 1px solid #808080;
+	background-color: #C0C0C0;}
+
+* {
+	font-family:arial,sans-serif;}
+
+
+
+-->
+</style>
+</head>
+<body><div class="all">
+
+ <h1 align="center">Global Diagnostic System</h1>
+ <h1>Tartalomjegyzék</h1>
+ <ol>
+ <li><a href="#intro">Bevezetés</a></li>
+ <li><a href="#product_description">Termékleírás</a></li>
+ <li><a href="#installation">GDS telepítése</a></li>
+ <li><a href="#getting_started">Bevezetés a Works használatába</a></li>
+ <li><a href="#navigation">Általános Navigáció</a></li>
+ <li><a href="#diagnostics">Diagnosztika</a></li>
+ <li><a href="#troubleshooting">Hibaelhárítás</a></li>
+ </ol>
+ <hr />
+
+  <h1><a name="intro"></a>Bevezetés</h1>
+ <h2>GDS ismertető</h2>
+ <p>A Global Diagnostic System (GDS) rövid ismertető áttekintést nyújt a GDS programról.</p>
+ <p>A kézikönyv a termékkel kapcsolatos, a kiadáskor érvényes legújabb információkat tartalmazza.<!--j-->&nbsp;<!--j-->Az előzetes tájékoztatás nélküli módosítás jogát fenntartjuk.</p>
+ <p>A GM Service and Parts Operations előzetes írásbeli beleegyezése nélkül, jelen kiadvány részben vagy egészben történő sokszorosítása, bármilyen beolvasó rendszeren történő tárolása, vagy bármilyen formában történő továbbítása, beleértve az elektronikust, mechanikust, fénymásolást, rögzítést vagy egyéb módszereket, tilos<!--j-->&nbsp;<!--j-->Ez vonatkozik az összes szövegre, táblázatra, rajzra és diagramra.</p>
+ <p>A jóváhagyásra vonatkozó kérelmeket az alábbi címre küldje:</p>
+ <p>General Motors Corporation<br />
+Service and Parts Operations<br />
+Product Engineering<br />
+37350 Ecorse Road<br />
+Romulus, MI 48174-1376<br />
+U.S.A.</p>
+ <p>© 2008 GM Service and Parts Operation.<!--j-->&nbsp;<!--j-->Származási hely: Egyesült Államok<!--j-->&nbsp;<!--j-->Minden jog fenntartva.</p>
+ <hr />
+
+  <h2>Általános információk</h2>
+ <p>
+A GDS program képzett szakemberek számára készült, gépjárművek elektronikus rendszereinek diagnosztizálásához és javításához.<!--j-->&nbsp;<!--j-->
+
+Mindent elkövettünk, hogy a kiadvány megjelenésének időpontjában rendelkezésre álló legteljesebb és legpontosabb, a gyári szervizszolgáltatásra alapozott technikai információkat biztosítsunk.<!--j-->&nbsp;<!--j-->
+Azonban, fenntartjuk az előzetes tájékoztatás nélküli módosítás jogát.</p>
+ <p>
+Mielőtt megkezdené a GDS program használatát, olvassa el a Felhasználói útmutatót a GDS rendszer megismeréséhez, és használatának elsajátításához.</p>
+ <p>A GDS program az alábbi szolgáltatásokat biztosítja:</p>
+ <ul>
+ <li>Hibakód kiolvasása</li>
+ <li>ECU azonosítási információk kiolvasása</li>
+ <li>Adatlista-paraméterek kiolvasása és grafikus megjelenítése</li>
+ <li>Pillanatfelvétel-adatok rögzítése és tárolása</li>
+ <li>Vezérlési funkciók</li>
+ <li>Konfigurációs és visszaállítási funkciók</li>
+ <li>Diagnosztikai protokollok rögzítése és tárolása</li>
+ <li>Diagnosztikai munkamenetek tárolása gépjárművenként</li>
+ </ul>
+
+  <table width="80%" border="0">
+ <tr>
+ <td class="important">
+ <b><!--j-->Fontos<!--j-->:<!--j--></b><br />
+A GDS nem támogatja a gépjárművezérlők SPS programozását.<!--j-->&nbsp;<!--j-->Az MDI segítségével történő SPS Pass Through programozáshoz használja a TIS2Web / GlobalTIS SPS programot.</td>
+ </tr>
+ </table>
+ <hr />
+
+  <h2>Ügyfélszolgálati áttekintés</h2>
+ <p>
+
+GM-Techline terméke vagy a kapcsolódó termékek működésével kapcsolatos kérdésekkel, problémákkal, garanciális vagy nem garanciális javításokkal kapcsolatban forduljon telefonon a helyi Customer Support Center szolgálathoz.<!--j-->&nbsp;<!--j-->Cserealkatrészek megrendelésével kapcsolatban forduljon a GM Dealer Equipment szolgálathoz.</p>
+ <h3>Mielőtt telefonálna</h3>
+ <p>Mielőtt az ügyfélszolgálati központot hívná, készítse elő a következő információkat:</p>
+ <ul>
+ <li>Forgalmazó neve, címe és forgalmazói kódszáma</li>
+ <li>MDI vagy notebook sorozatszáma, ha rendelkezésre áll</li>
+ <li>A keresett tétel neve, cikkszáma és mennyisége</li>
+ <li>A műszaki szakember telefonos elérhetősége.</li>
+ </ul>
+ <p>Készítse el a probléma részletes leírását:</p>
+ <ul>
+ <li>Közölje, mikor lépett fel a probléma</li>
+ <li>Soroljon fel minden megjelent hibakódot</li>
+ <li>Közölje, hogy amikor a hiba történt milyen segédberendezések voltak használatban, valamint a gépjármű adatait</li>
+ </ul>
+
+  <h4>AZ MDI BEAZONOSÍTÁSA</h4>
+ <p>A GM MDI-interfész címkéje az egység hátoldalán található<!--j-->&nbsp;<!--j-->
+
+Az egységazonosító két részből áll: egy gyártási kódból, mely az azonosítást szolgálja, és egy egyedi sorozatszámból.<!--j-->&nbsp;<!--j-->
+A sorozatszámot használja a rendszer az MDI azonosítására az alkalmazásban.</p>
+
+  <h3>Telefonhívás</h3>
+
+  <h4>Európai felhasználók</h4>
+ <h5>GDS szoftvertelepítési és rendszerkommunikációs támogatás:</h5>
+ <p><b>DAC - Dealer Assistance Center:</b><br />
+
+
+A GDS szoftvertámogatást, a GDS és a TIS2Web / GlobalTIS, valamint az MDI közötti kommunikációval kapcsolatos támogatást a DAC (Kereskedő támogatási központ) biztosítja.<br />
+
+Az egyes országokban hívható telefonszámok megtalálhatók a Channel 21 portál bejelentkezési oldalán.</p>
+ <h5>
+GDS gépjármű-diagnosztikai támogatás</h5>
+ <p><b>Európai technikai támogatási központ:</b><br />
+
+A GDS diagnosztikai események közben jelentkező gépjármű-kommunikációs problémákkal kapcsolatos támogatást az Európai technikai támogatási központ biztosítja.<!--j-->&nbsp;<!--j-->
+Az egyes országokban hívható telefonszámok a General Motors Europe helyi szervezetétől szerezhetők be.</p>
+ <h5>
+Támogatás - Független szervizek/utángyártás:</h5>
+ <p><b>European Customer Assistance Center</b><br />
+A fenti támogatási szolgáltatások igénybe vételéhez a független szervizek a European Customer Assistance Center szolgálathoz fordulhatnak.<!--j-->&nbsp;<!--j-->
+A kapcsolat részletei megtalálhatók a GME InfoTech portálon.</p>
+ <hr />
+ <h3>Szoftver licensz szerződés</h3>
+ <p>A szoftver használatának megkezdése előtt figyelmesen olvassa el a szoftver licencszerződést.<!--j-->&nbsp;<!--j-->
+A szoftver használatának megkezdése a jelen kiadványban foglalt feltételek és kikötések elfogadásával jár.</p>
+ <p>TULAJDON<!--j-->:<!--j-->&nbsp;<!--j-->
+
+
+A szoftver a General Motors Corporation szerzői joggal védett tulajdona. Ön elfogadja, hogy a General Motors Corporation birtokolja a szerzői és tulajdonjogokat, címeket és a szoftverhez kapcsolódó érdekeket.<!--j-->&nbsp;<!--j-->
+A szoftverre vonatkozó minden jog, amely nincs licencelve jelen szerződésben, a General Motors Corporation kizárólagos tulajdonát képezi.</p>
+ <p>HASZNÁLAT<!--j-->:<!--j-->&nbsp;<!--j-->
+Önt nem kizárólagos, nem átruházható licenc illeti meg a szoftver több számítógéprendszeren történő használatára vonatkozóan.<!--j-->&nbsp;<!--j-->
+
+A szoftver visszafejtése, módosítása, reprodukálása, terjesztése vagy értékesítése, részben vagy egészben, tilos.<!--j-->&nbsp;<!--j-->
+A licenc személyesen Önt illeti, és a jelen szerződésben foglalt feltételeknek való szigorú megfelelés a feltétele.</p>
+ <p>Felmondás<!--j-->:<!--j-->&nbsp;<!--j-->
+
+Amennyiben a jelen szerződésben foglalt feltételeket nem tartja be, a General Motors Corporationnek lehetősége van felmondani ezen licencszerződést.<!--j-->&nbsp;<!--j-->
+
+A szerződés megszűnését követően Ön köteles azonnali hatállyal felfüggeszteni a szoftver használatát, és megsemmisíteni a szoftver összes példányát, beleértve a számítógéprendszereken tárolt változatokat is.</p>
+ <hr />
+ <h1><a name="product_description"></a>2.<!--j-->&nbsp;<!--j-->Termékleírás</h1>
+ <h2>Kereskedői számítógép-követelmények<!--j-->&nbsp;<!--j-->(<!--j-->Európa<!--j-->)</h2>
+ <p>A GDS és a TIS2Web/GlobalTIS együttes működéséhez szükséges minimális számítógép-követelmények:</p>
+ <ul>
+ <li>Processzor:<br />
+Intel Pentium M, 1,5GHz</li>
+ <li>Rendszermemória (RAM)<br />
+1 GB a GDS és TIS2Web / GlobalTIS ügyfélprogramhoz; 2 GB a GDS és a GlobalTIS önálló programhoz</li>
+ <li>Merevlemez minimális követelmény:<br />
+40 GB</li>
+ <li>Operációs rendszer<!--j-->:<br />Windows XP Professional (SP2)</li>
+ <li>Egyéb szoftverösszetevők:<br />
+Java Web Start 1.5x vagy későbbi<br />
+ </li>
+ </ul>
+ <p>
+További információkért tekintse meg a GME IT hardver- és szoftverspecifikációját, mely a helyi GME szervezetnél szerezhető be.</p>
+ <hr />
+ <h1><a name="installation"></a>3.<!--j-->&nbsp;<!--j-->GDS telepítése</h1>
+ <h2>A GDS összetevőinek áttekintése:</h2>
+ <p>A GDS alkalmazás a következő telepített és adott időközönként frissített modulokat tartalmazza.<!--j-->&nbsp;<!--j-->[I]</p>
+ <ul>
+ <li><b>GDS Base System</b><br />
+A számítógépen telepített alap GDS alkalmazás</li>
+ <li><!--j--><b><!--j-->GDS termékek<!--j--></b><!--j-->:<br />
+Diagnosztikai adatcsomagok gépjárműmodellekhez, melyek végrehajtják a diagnosztikai rutinokat a gépjárművezérlőkkel.</li>
+ <li><!--j--><b><!--j-->GDS Smart Start<!--j--></b><!--j-->:<!--j--><br />Alkalmazásügynök, amely összeveti a GDS Base System, a GDS csomagok és az MDI Manager alkalmazás kiszolgáló verzióit a TIS2Web/GlobalTIS és a helyi telepítés között.<!--j-->&nbsp;<!--j-->Amennyiben új frissítések állnak rendelkezésre, a rendszer kezdeményezi letöltésüket.</li>
+ <li><!--j--><b><!--j-->MDI Manager alkalmazás (különálló program)<!--j--></b><!--j-->:<br />
+Az MDI eszköz (többszörös diagnosztikai interfész) frissítésére és konfigurálására szolgáló alkalmazás.</li>
+ </ul>
+ <p><img src="../../images/gds_i_hun.gif" alt="gds_i.gif" width="650px"/><br />
+[I]</p>
+ <hr />
+ <h2>Telepítés:</h2>
+ <p>A GDS különálló telepítő DVD-ről, vagy közvetlenül a TIS2Web / GlobalTIS rendszerről letöltve telepíthető.</p>
+ <h3>Telepítés a GDS DVD-ről:</h3>
+ <ul>
+ <li>A számítógépet rendszergazda jogosultságokkal kell elindítani.</li>
+ <li>A DVD start menüjéből indítsa el a futtatható fájlt.</li>
+ <li>Jelölje ki a telepítő nyelvét.</li>
+ <li>Ha a rendszer korábbi GDS telepítést észlel a számítógépen, a létező GDS-beállítások és adatok újra felhasználhatók.</li>
+ <li>Fogadja el a licencszerződést (a folytatás feltétele)</li>
+ <li>Jelölje ki a GDS telepítési könyvtárát</li>
+ <li>Elindul a GDS telepítési folyamata</li>
+ <li>Ha az MDI Manager alkalmazás még nincs vagy korábbi verziója van telepítve a számítógépen, az MDI Manager alkalmazás telepítése is megtörténik.<!--j-->&nbsp;<!--j-->Az MDI Manager alkalmazás telepítéséhez az MDI hardvernek a telepítési folyamat alatt csatlakoztatva kell lennie.<!--j-->&nbsp;<!--j-->További részleteket az MDI felhasználói kézikönyvében talál.</li>
+ <li>A telepítési folyamat befejezését követően a GDS program az asztalon található parancsikonnal vagy a Start/Minden program/GDS paranccsal indítható.<!--j-->&nbsp;<!--j--><img src="../../images/gds_icon.png" alt="gds_icon.png" /></li>
+ <li>Amennyiben szükséges, állítsa be a tűzfalat a GDS és az MDI eszköz közötti kommunikáció engedélyezésére.</li>
+ <li>Elindul a GDS Smart Start, és a GDS program indítása előtt a rendszer végrehajtja a megjelenített frissítési folyamatot.</li>
+ </ul>
+ <hr />
+ <h3>Telepítés a TIS2Web / GlobalTIS-ről<!--j-->:</h3>
+ <p><img src="../../images/gds_ii_hun.gif" alt="gds_ii.gif" width="600px"/><br />
+[II]</p>
+ <table width="80%" border="0">
+ <tr>
+ <td class="important"><b><!--j-->Fontos<!--j-->:<!--j--></b><!--j-->&nbsp;<!--j-->A TIS2Web-ről történő telepítéskor nagyjából 140 MB adat kerül letöltésre az internetről.</td></tr></table>
+ <ul>
+ <li>A számítógépnek rendszergazda jogosultságokkal kell futnia.</li>
+ <li>Indítsa el a GDS lehetőséget a TIS2Web / GlobalTIS Kezdőlapon.<!--j-->&nbsp;<!--j-->[II]</li>
+ <li>A rendszer letölti a GDS Smart Start alkalmazást a TIS2Web kiszolgálóról. Az internetkapcsolattól függően, ez eltarthat néhány percig.</li>
+ <li>Jelölje ki a GDS telepítési könyvtárát.</li>
+ <li>Adja meg az internetjelszót (amennyiben proxykiszolgálón keresztül csatlakozik az internethez.)</li>
+ <li>Amennyiben szükséges, állítsa be a tűzfalat a GDS és az MDI eszköz közötti kommunikáció engedélyezésére.</li>
+ <li>A GDS Smart Start telepítése eltarthat néhány percig.</li>
+ <li>A GDS Smart Start indításakor a rendszer végrehajtja a GDS frissítési folyamatot.<!--j-->&nbsp;<!--j-->[III]</li>
+ <li>A telepítési fájlok letöltését követően megjelenik a GDS és az MDI Manager szoftververziója, amelyek jóváhagyás után letölthetők.<!--j-->&nbsp;<!--j-->A(z)  <b>Letöltési folyamat megjelenítése</b> gombbal megjeleníthető a letöltési folyamat állapotsora.</li>
+ <li>Ha az MDI Manager alkalmazás még nincs telepítve vagy az MDI Manager korábbi verziója van telepítve a számítógépen az MDI Manager alkalmazás telepítése is megtörténik.<!--j-->&nbsp;<!--j-->Az MDI Manager alkalmazás telepítéséhez az MDI hardvernek csatlakoztatva kell a lennie a telepítési folyamat alatt.<!--j-->&nbsp;<!--j-->További részleteket az MDI felhasználói kézikönyvében talál.</li>
+ </ul>
+
+  <table width="200" border="0">
+ <tr>
+ <td><img src="../../images/gds_iii_hun.gif" alt="gds_III.gif" width="200px"/></td>
+ <td><img src="../../images/gds_iv_hun.gif" alt="gds_IV.gif" width="150px" /></td>
+ </tr>
+ <tr>
+ <td>[III]</td>
+ <td>[IV]</td>
+ </tr>
+ </table>
+ <hr />
+ <h3>GDS frissítése a Smart Start alkalmazással<!--j-->:</h3>
+Indítsa el a GDS-t a TIS2Web/GlobalTIS-ről vagy önálló alkalmazásként a Windows start menüjén keresztül.<!--j-->&nbsp;<!--j-->A GDS betöltése előtt a beindításra kerül a Smart Start ágens, és összehasonlítja a számítógép GDS installációjának alábbi verzióit a TIS2Web / GlobalTIS szerver tartalmával:</p>
+ <ul>
+ <li>GDS Smart Start</li>
+ <li>GDS Base System</li>
+ <li>MDI Manager</li>
+ </ul>
+ <p>Ha a kiszolgálón rendelkezésre állnak a program új verziói, a Smart Start felkínálja a felhasználónak a frissítések letöltését.<!--j-->&nbsp;<!--j-->[IV]</p>
+ <!--<p>A GDS Base System rendszer, a GDS csomagok és a MDI Manager alkalmazás Smart Start frissítési folyamata csak akkor kerül végrehajtásra, ha a GDS indítása nem önálló üzemmódban, hanem a TIS2Web/GlobalTIS-ről történik.<!--j-->&nbsp;<!--j--><!--The update capability of standalone started GDS will be available in a future version.</p>
+--> <table width="80%" border="0">
+ <tr>
+ 	 <td class="important"><!--j--><b><!--j-->Fontos<!--j--><!--j-->:<!--j--></b><!--j-->&nbsp;<!--j-->A leírt frissítési folyamatok végrehajtásához a számítógépnek végig rendszergazdai jogosultságokkal kell futnia.</td></tr></table>
+ <hr />
+ <h3>A GDS Base System telepítés visszaállítása</h3>
+ <p>Ha a GDS frissítése működési hibákat okoz, a GDS telepítés visszaállítható az előző telepített verzióra.</p>
+ <p>A visszaállítás végrehajtásához kattintson a START -&gt;PROGRAMOK -&gt; GDS -&gt; GDS VISSZAÁLLÍTÁS parancsra.<!--j-->&nbsp;<!--j-->A visszaállítás csak akkor hajtható végre, ha a számítógépen telepítve van a GDS korábbi verziója.</p>
+ <h3>GDS licensz vezérlő rendszer (bérlet)</h3>
+ <p>A GDS licencvezérlési rendszer megakadályozza a GDS engedély nélküli használatát.<!--j-->&nbsp;<!--j-->A GDS bérlet megújításához a GDS-t a TIS2Web-ről vagy a GlobalTIS-ről kell indítani.<!--j-->&nbsp;<!--j-->Ha az alkalmazás hosszabb ideig csak önálló üzemmódban került futtatásra, a GDS bérletet 7 naponta meg kell újítani.<!--j-->&nbsp;<!--j--><br>Ha a GDS bérlet lejárt, hibaüzenet figyelmezteti a felhasználót, hogy futtassa a GDS alkalmazást, a bérlet megújítása érdekében, a TIS2Web/GlobalTIS-ről.</p>
+ <hr />
+ <h3>GDS termékek letöltése és frissítése</h3>
+ <p>A GDS termékek diagnosztikai alkalmazások, amelyek a kommunikációs és diagnosztikai szolgáltatásokat vezérlik a GDS és a gépjárművezérlő között.<!--j-->.<!--j-->&nbsp;<!--j-->A GDS csomagok modellenként kerülnek kibocsátásra, és folyamatosan frissítődnek a TIS2Web / GlobalTIS rendszeren.</p>
+ <p>A frissítési folyamat indításakor a GDS Smart Start automatikusan ellenőrzi, hogy a TIS2Web / GlobalTIS rendszeren vannak-e új vagy frissített csomagok.<!--j-->.<!--j-->&nbsp;<!--j-->Az új csomagokat a GDS programon történő telepítés előtt egy helyi könyvtárba kell menteni a számítógépen.<!--j-->&nbsp;<!--j-->A már telepített csomagok frissítéseit a program automatikusan letölti, és a csomagokat csupán a GDS főadatbázisba kell telepíteni.</p>
+ <br clear=all />
+ <hr />
+ <h3>GDS csomagok első letöltése és telepítése</h3>
+ <ul><li>Indítsa el a GDS-t a TIS2Web/GlobalTIS-ről vagy önálló alkalmazásként a Windows start menüjén keresztül.</li>
+ <li>A GDS Bejelentkezési képernyőjén válassza a(z) <b>Új diagnosztikai csomag hozzáadása</b> gombot.</li>
+ <li>Nyomja meg a(z)  <b>Terméklista frissítése a kiszolgálóról</b> gombot.<!--j-->&nbsp;<!--j-->[V-1]<!--j-->.<!--j-->&nbsp;<!--j-->A kiszolgálón a rendelkezésre álló, de még nem letöltött csomagok a következő ikonnal vannak jelölve:<!--j-->&nbsp;<!--j-->
+ <img src="../../images/gds_server.png" alt="gds_server.png" width="36" height="34" /></li>
+ <li>Jelölje ki és töltse le a csomagokat.<!--j-->&nbsp;<!--j-->[V-2]<!--j-->.<!--j-->&nbsp;<!--j-->A szűrő funkció megkönnyíti az egyes csomagok megtalálását.<!--j-->&nbsp;<!--j-->A letöltött termékcsomagok a következő ikonnal vannak jelölve:<!--j-->&nbsp;<!--j--><img src="../../images/gds_pc.png" alt="gds_pc.png" /></li>
+ <li>Telepítse a letöltött csomagokat a GDS főadatbázisába. A telepített csomagokat a rendszer a jobb oldali alkalmazásablakban jeleníti meg.<!--j-->&nbsp;<!--j-->[V-3]<!--j-->.</li>
+ </ul>
+ <p><img src="../../images/gds_v_hun.gif" alt="gds_v.gif" width="650px"/><br />
+[V]</p>
+ <hr />
+ <h2>Telepített GDS csomagok frissítése a főadatbázisban<!--j-->:</h2>
+ <ul>
+ 	 <li>A GDS Bejelentkezési képernyőjén kattintson a(z) <b>Diagnosztikai csomag frissítése</b> gombra.<!--j-->&nbsp;<!--j-->[VI-1]<!--j-->.<!--j-->&nbsp;<!--j-->A GDS összeveti a telepített GDS csomagok verzióit a kiszolgálón található csomagok verzióival, és letölti a frissített csomagokat.</li>
+ 	 <li>A letöltött és telepíthető csomagok a bal alsó ablakban jelennek meg.<!--j-->&nbsp;<!--j-->A telepítés a(z)  <b>Telepítés</b> vagy a(z)  <b>Összes telepítése</b> gombok egyikével indítható.<!--j-->&nbsp;<!--j-->[VI-2]<!--j-->.</li>
+ </ul>
+ <p><img src="../../images/gds_vi_hun.gif" alt="gds_vi.gif" width="650px"/><br />
+[VI]<!--j-->:</p>
+ <hr />
+ <h2>
+Csomagfrissítés visszaállítása</h2>
+ <p>
+
+A visszaállítási folyamat gyakorlatilag megegyezik a GDS csomagok első letöltése és telepítése című részben leírt folyamattal.</p>
+ <ul>
+ 	 <li>A GDS Bejelentkezési képernyőjén válassza a(z) <b>Új diagnosztikai csomag hozzáadása</b> gombot.</li>
+ 	 <li>Nyomja meg a(z)  <b>Terméklista frissítése a kiszolgálóról</b> gombot.<!--j-->&nbsp;<!--j-->[V-1]<!--j--></li>
+ <li>Jelölje ki és töltse le a kívánt régebbi csomagverziókat.<!--j-->&nbsp;<!--j-->A szűrő funkció megkönnyíti az egyes csomagok megtalálását.</li>
+ <li>Telepítse a letöltött csomagokat a GDS főadatbázisba.</li>
+ </ul>
+ <hr />
+ <h2>A GDS eltávolítása<!--j-->:</h2>
+ <p>A GDS a következő program futtatásával távolítható el:</p>
+ <p>
+START -&gt; MINDEN PROGRAM -&gt; GDS -&gt;GDS ELTÁVOLÍTÁS</p>
+ <hr />
+ <h2>
+A GDS nyelvi<!--j-->&nbsp;<!--j-->/<!--j-->&nbsp;<!--j-->Területi beállításainak módosítása<!--j-->:</h2>
+ <p>A GDS alkalmazás a számítógép operációs rendszerének nyelvi beállításait használja.<!--j-->&nbsp;<!--j-->A GDS nem tartalmaz nyelvi beállítások módosítására szolgáló menüt.<!--j-->&nbsp;<!--j-->A GDS nyelvi beállításainak módosításához kövesse az alábbi lépéseket.</p>
+ <ul>
+ <li>Nyissa meg a Windows rendszerben a VEZÉRLŐPULTOT a következőképpen:<!--j-->&nbsp;<!--j-->START -&gt; BEÁLLÍTÁSOK -&gt; VEZÉRLŐPULT</li>
+ <li>Nyissa meg a NYELVI ÉS TERÜLETI BEÁLLÍTÁSOK párbeszédpanelt.</li>
+ <li>Jelölje ki a kívánt országot a(z)  <b>SZABVÁNYOK ÉS FORMÁTUMOK</b> részben.</li>
+ <li>Nyissa meg a SPECIÁLIS menüt.<!--j-->&nbsp;<!--j-->Jelölje ki a kívánt nyelvet a UNICODE-OT NEM HASZNÁLÓ PROGRAMOK NYELVE részben található legördülő menüben.</li>
+ <li>A TERÜLETI BEÁLLÍTÁSOK lapon testre szabhatja a GDS programban megjelenő egységeket.</li>
+ </ul>
+ <hr />
+ <h1><a name="getting_started"></a>4.<!--j-->&nbsp;<!--j-->Bevezetés a Works használatába</h1>
+ <p><b><!--j-->JEGYZET<!--j-->:<br />
+A GDS használatának megkezdése előtt fontos figyelembe venni az alábbi óvintézkedéseket:<!--j--></b></p>
+ <ul>
+ <li>Lejárt verzió használata a gépjárműmodulok sérüléséhez vezethet.<!--j-->&nbsp;<!--j-->A GDS-nek és az MDI-nek a legújabb szoftververzióval kell rendelkeznie.</li>
+ <li>A gépjármű akkumulátorának teljesen töltött állapotban kell lennie.<!--j-->&nbsp;<!--j-->A GDS használatához az akkumulátorfeszültségnek 12 és 14 volt között kell lennie.</li>
+ <li>A MDI használata alatt azonban tilos akkumulátortöltőt csatlakoztatni a gépjárműhez.</li>
+ <li>A kábelcsatlakozásoknak biztonságosnak kell lenniük.<!--j-->&nbsp;<!--j-->A nem megfelelő csatlakozás vezérlőhibát okozhat.</li>
+ <li>Ha hordozható számítógépen vagy egyéb megjelenítési eszközön (PDA stb.) használja a GDS programot, ellenőrizze, hogy a tápcsatlakozó megfelelően van-e csatlakoztatva a készülékhez.<!--j-->&nbsp;<!--j-->Ha hálózati áramforrást használ, a lecsatlakozott vezeték megszakíthatja a programozást és sérülést okozhat a vezérlőmodulban.<!--j-->&nbsp;<!--j-->Ha a hordozható számítógép akkumulátorral működik, ellenőrizze, hogy a töltöttségi szint elegendő-e a GDS-folyamat befejezéséhez.</li>
+ </ul>
+ <table width="80%" border="0">
+ <tr>
+ <td class="note"><b>JEGYZET</b><br />
+
+ECU-programozás esetén az egységet be kell építeni a gépjárműbe a folyamat megkezdése előtt.<!--j-->&nbsp;<!--j-->A gépjármű akkumulátorának teljesen töltött állapotban kell lennie.</td></tr></table>
+ <table width="80%" border="0">
+ <tr>
+ <td class="important"><b>Fontos</b><br />
+A előforduló jelveszteség csökkentése érdekében, az MDI-egységet a hely alapján a legstabilabb kommunikációs beállításra kell konfigurálni.<!--j--><!--j-->A választható lehetőségek: USB, Ethernet vagy vezeték nélküli internet.</td></tr></table>
+ <hr />
+ <h2>GDS indítási folyamat<!--j-->:</h2>
+ <p>A GDS programot a TIS2Web/GlobalTIS rendszerből lehet elindítani a GDS-ikonnal.<!--j-->&nbsp;<!--j-->Másik lehetőségként a GDS önálló módban is elindítható, a Windows Start menüjéből.</p><ol><li>Az indításhoz kattintson a GDS ikonra a TIS2Web/GlobalTIS főmenüjében.<!--j-->.<!--j-->&nbsp;<!--j-->A GDS önálló üzemmódban történő indításához kattintson a START/MINDEN PROGRAM/GDS parancsra.</li><li>A GDS Smart Start elindul, és a rendszer végrehajtja a frissítési folyamatot.<!--j-->&nbsp;<!--j-->Ha a kiszolgálón a GDS-nek vagy az MDI Manager alkalmazásnak újabb verziója található, a rendszer jóváhagyást kér az adatok letöltésére és a számítógépre történő telepítésre.<!--j-->&nbsp;<!--j-->A letöltés vagy telepítés elindításához kattintson a(z)  <b>Folytatás</b> gombra.<!--j-->&nbsp;<!--j-->[IV]<!--j-->.<!--j-->&nbsp;<!--j-->A GDS önálló üzemmódban történő indításakor nincs lehetőség a frissítésre.</li>
+ 	 <li>A rendszer betölti a GDS Bejelentkezési oldalt.</li></ol>
+ <hr />
+ <h1><a name="navigation"></a>5.<!--j-->&nbsp;<!--j-->Általános Navigáció</h1>
+ <h2>Legördülő menük<!--j-->&nbsp;<!--j--><img src="../../images/gds_menu.png" alt="gds_menu.png" width="57" height="38" /></h2>
+ <p>A GDS programban öt legördülő menü áll rendelkezésre.<!--j-->&nbsp;<!--j-->[VII]</p> <p>Megjegyzés<!--j-->:<!--j-->&nbsp;<!--j-->A menük csak a GDS PC-változataiban érhetők el.<!--j-->.<!--j-->&nbsp;<!--j-->A program érintőképernyős változatában a menüelemek felugró gomb formájában jelennek meg.</p> <ul>
+ <li>A(z)  <b>Fájl</b> menü a(z)  <b>Kilépés</b> parancsot tartalmazza, amellyel a GDS bezárható.</li>
+ <li>A(z)  <b>Munkamenet</b> menü két parancsot tartalmaz:<!--j-->&nbsp;<!--j--><b>Aktuális munkamenetnapló mentése</b> és  <b>Megjegyzések hozzáadása a munkamenethez...</b>.<br /><b>Megjegyzések hozzáadása a munkamenethez...</b>: Információkat lehet bevinni a számítógép billentyűzete segítségével és menteni a Munkamenetnapló-kezelőben.</li>
+ <li>A(z)  <b>Eszközök</b> menü öt parancsot tartalmaz:<!--j-->&nbsp;<!--j-->Nyomkövetés indítása<!--j-->,<!--j-->&nbsp;<!--j-->Pillanatfelvétel visszajátszása<!--j-->,<!--j-->&nbsp;<!--j-->Jelentés létrehozása<!--j-->,<!--j-->&nbsp;<!--j-->Letöltési állapot megjelenítése...<!--j-->,<!--j-->&nbsp;<!--j-->Felhasználó adminisztrálás<br />Új felhasználókat a(z)  <b>Felhasználó adminisztrálás</b> oldalon található ikonra kattintva lehet létrehozni.<!--j-->&nbsp;<!--j-->
+ <img src="../../images/gds_add-user.png" alt="gds_add-user.png" width="27" height="26" />
+ <!--j-->.</li>
+ <li><b>Ablak</b>: A </b>Beállítások</b> menüben konfigurálható a képernyő (például teljes képernyős üzemmód, PC vagy érintőképernyős üzemmód).</li>
+ <li>A(z)  <b>Súgó menü</b> három parancsot tartalmaz:<br />A(z)  <b>Súgó tartalma</b> megjeleníti az összes GDS-súgófájlt.<!--j-->&nbsp;<!--j-->
+A(z)  <b>GDS névjegye</b> parancs a GDS verzióját és a build azonosítót jeleníti meg.<!--j-->&nbsp;<!--j-->
+A(z)  <b>MDI-verzió megjelenítése</b> parancs az MDI szoftver- és hardververzióit jeleníti meg.<!--j-->&nbsp;<!--j-->
+A Customer Support Center szolgálat felkeresésekor szüksége lehet ezekre az adatokra.</li></ul><p></p>
+ <p><img src="../../images/gds_vii_hun.gif" alt="gds_vii.gif" width="120px"/><br />
+[VII]</p>
+ <hr />
+ <h2>Diagnosztikai program eszköztár</h2>
+ <p>Számos eszköztárelem áll rendelkezésre a rendszernavigáció nézetben.<!--j-->&nbsp;<!--j-->[VIII]</p>
+ <ul>
+ <li>A(z)  <b>Pillanatfelvétel rögzítése</b> (piros kör) paranccsal pillanatfelvétel készíthető a gépjárműről. Csak a rendszernavigáció nézetben érhető el.<!--j-->&nbsp;<!--j-->Pillanatfelvétel készítése közben ez a parancs nem érhető el.</li>
+ <li>A(z)  <b>Pillanatfelvétel rögzítésének leállítása</b> (kék négyzet) csak pillanatfelvétel rögzítése közben aktív.<!--j-->&nbsp;<!--j-->A parancs leállítja a felvételt, és menti a fájlt.</li>
+ <li>A(z)  <b>Képernyőkép</b> ikonnal a megjelenített képernyő tartalma rögzíthető és menthető a számítógépen.</li>
+ <li>A(z)  <b>Távolítás</b> paranccsal csökkenthető a betűméret.<!--j-->&nbsp;<!--j-->A megjelenített kép mérete minden kattintásnál csökken.</li>
+ <li>A(z)  <b> Közelítés</b> paranccsal növelhető a betűméret.<!--j-->&nbsp;<!--j-->A megjelenített kép mérete minden kattintásnál nő.</li>
+ <li>A(z)  <b>Kilépés</b> gombbal bezárható az aktív diagnosztikai program.</li>
+ </ul>
+ <p><img src="../../images/gds_viii_hun.gif" alt="gds_viii.gif" width="400px"/><br />
+[VIII]</p>
+ <hr />
+ <h2>Nyilak</h2>
+ <p>A nyilak a paraméterlista alatt találhatók.<!--j-->&nbsp;<!--j-->A nyilak a következő műveletekre használhatók:</p>
+ <p><img src="../../images/gds_ix_hun.gif" alt="gds_ix.gif" width="600px"/><br />
+[IX]<!--j-->:</p>
+ <ul>
+ <li>A(z)  <b>Felfelé</b> nyíl minden megnyomásával egy mappával feljebb kerül a paraméterlistában.</li>
+ <li>A(z)  <b>Lefelé</b> nyíl minden megnyomásával egy mappával lejjebb kerül a paraméterlistában.</li>
+ <li>A(z)  <b>Jobbra</b> nyíllal megnyitható a navigációs fa egy szintje.</li>
+ <li>A(z)  <b>Balra</b> nyíllal bezárható a navigációs fa egy szintje.<!--j-->&nbsp;<!--j-->A parancs nem jelenik meg a folyamat első képernyőjén.</li></ul>
+ <hr />
+ <h2>Egyéb gombok</h2>
+ <p>A képernyők alján három másik gomb is található.<!--j-->&nbsp;<!--j-->Ezek a gombok a következő műveletekre használhatók:</p>
+ <ul>
+ <li>A(z)  <b>Indítás</b> gombbal programot lehet elindítani.</li>
+ <li>A(z)  <b>Előző művelet</b> gombbal az előző képernyőre lehet lépni.<!--j-->&nbsp;<!--j-->Ez a parancs csak akkor áll rendelkezésre, ha van olyan képernyő, amelyre vissza lehet lépni.</li>
+ <li>A(z)  <b>Következő művelet</b> gombbal a következő képernyőre lehet lépni.<!--j-->&nbsp;<!--j-->Ez a parancs csak akkor áll rendelkezésre, ha az aktuális képernyőn az összes szükséges kijelölés megtörtént.</li>
+ </ul>
+ <br clear=all />
+ <hr />
+ <h2>A gépjármű / MDI adatainak bevitele</h2>
+ <p>1.<!--j-->&nbsp;<!--j-->A GDS főmenüjében jelöljön ki egy felhasználót a bejelentkezésre.<!--j-->&nbsp;<!--j-->Ha nem lett még létrehozva felhasználó, újat lehet létrehozni vagy megadható az alapértelmezett felhasználó.<!--j-->&nbsp;<!--j-->(Lásd a Legördülő menük részt.)<br />
+ </p>
+ <p>2.<!--j-->&nbsp;<!--j-->Miután a hozzáférést kiválasztotta, megjelenik az Azonosítás képernyő.<!--j-->&nbsp;<!--j-->A képernyőn több lehetőség is rendelkezésre áll:</p>
+ <p><img src="../../images/gds_x_hun.gif" alt="gds_x.gif" width="650px"/><br />
+[X]</p>
+ <ul>
+ 	 <li>[X-1]<!--j-->&nbsp;<!--j--><b><b>MDI-kijelölés</b></b><!--j-->:<!--j-->&nbsp;<!--j-->A kereskedés különböző hálózatain rendelkezésre álló összes MDI látható. Jelölje ki a gépjármű diagnosztikájához használt MDI-t.<!--j-->&nbsp;<!--j-->Az MDI-kapcsolathoz jelöljön ki egyet a listában szereplő MDI-k közül, és kattintson a(z)  <b>Kapcsolódás</b> gombra.<!--j-->&nbsp;<!--j-->A(z)  <b>Kapcsolat bontása</b> gombbal bonthatja az MDI-kapcsolatot.<!--j-->&nbsp;<!--j-->Csatlakoztassa az új MDI-t a gépjárműhez és kattintson a(z)  <b>Kapcsolódás</b> gombra.<!--j-->&nbsp;<!--j-->A(z)  <b>Frissítés</b> gombbal ellenőrizheti, hogy van-e új MDI a rendelkezésre álló hálózatokon.<!--j-->&nbsp;<!--j-->Ha a GDS használatát MDI-kapcsolat nélkül szeretné folytatni, jelölje be a(z) <b>Navigálás MDI nélkül</b> négyzetet.</li>
+ <li>[X-2]<!--j-->&nbsp;<!--j--><b><b>VIN-bevitel</b></b><!--j-->:<!--j-->&nbsp;<!--j-->A gépjármű azonosítószámának beírására, vagy a VIN-azonosítónak a gépjármű vezérlőjétől történő automatikus beolvasására szolgáló mező.<!--j-->&nbsp;<!--j-->(MDI-kapcsolat szükséges).<!--j-->&nbsp;<!--j-->A VIN-re vagy gépjárműre vonatkozó további megjegyzéseket a mező alatti szövegmezőbe lehet írni.</li>
+ <li>[X-3]<!--j-->&nbsp;<!--j--><b>Gépjármű azonosítása</b> rész<!--j-->:<!--j-->&nbsp;<!--j-->A folytatás előtt jelölje ki a gyártmányt, modellt és gyártási évet.</li>
+ <li>[X-4]<!--j-->&nbsp;<!--j--><b><b>Gépjármű diagnosztikai előzményei</b></b><!--j-->:<!--j-->&nbsp;<!--j-->Ha a gépjármű korábban már diagnosztizálva volt a GDS rendszerrel, a VIN és a kapcsolódó adatok az előzmények részben találhatók.<!--j-->&nbsp;<!--j-->A listában szereplő diagnosztizálandó gépjármű kijelölésével közvetlenül a(z)  <b>Gépjármű kezdőlapja</b> képernyőre léphet.<!--j-->&nbsp;<!--j-->Rendelkezésre áll egy szabad szöveges szűrőfunkció.</li>
+ </ul>
+ <p>3.<!--j-->&nbsp;<!--j-->Megjelenik a(z)  <b>Gépjármű kezdőlapja</b> képernyő.<!--j-->&nbsp;<!--j-->From this screen various vehicle data is displayed including: entered vehicle information, previous vehicle diagnosis, session comments, session log reports, and stored data</p>
+ <hr />
+ <h2><b><b>Gépjármű kezdőlapja</b></b></h2>
+ <p>A(z)  <b>Gépjármű kezdőlapja</b> oldal több részből áll:</p>
+ <p>[XI-1]<!--j-->:<!--j-->&nbsp;<!--j-->A(z) <b>Gépjármű adatai</b> részben megtalálható a gépjárműhez kapcsolódó összes információ, többek között a gyártmány, modell, gyártási év stb.<br />A gépjármű diagnosztizálása közben a rendszer frissíti a listát, és az egyes munkamenetek alkalmával menti azt.<!--j-->&nbsp;<!--j-->A(z) <b>Kijelölt gépjármű-beállítás törlése</b> paranccsal törölheti a gépjárműre vonatkozó régi, kijelölt elemet.<!--j-->&nbsp;<!--j-->A Gépjármű környezete listában jelölje ki a törlendő sort és kattintson a Kijelölt egység törlése parancsra.</p>
+ <p>[XI-2]<!--j-->:<!--j-->&nbsp;<!--j-->A(z)  <b>Munkamenet megjegyzések</b> szakaszban a felhasználók megjegyzéseket rögzíthetnek egy diagnosztikai munkamenetre vonatkozóan.<!--j-->&nbsp;<!--j-->Ha a munkamenettel kapcsolatban további megjegyzéseket szeretne rögzíteni, kattintson a(z)  <b>Megjegyzés hozzáadása</b> parancsra.<!--j-->&nbsp;<!--j-->Számítógépe billentyűinek segítségével a Felhasználó, Adat vagy Megjegyzés mezőkbe vihet be adatot.<!--j-->&nbsp;<!--j-->Korábbi megjegyzések törléséhez jelölje ki a Felhasználó, Adat vagy Megjegyzés mezőben az adatot, és kattintson a(z)  <b>Kijelölt megjegyzés törlése</b> parancsra.</p>
+ <p>[XI-3]<!--j-->:<!--j-->&nbsp;<!--j-->A(z)  <b>Munkamenetnapló-jelentések</b> szakaszban kinyomtathatja a gépjármű diagnosztikai adatait.<!--j-->&nbsp;<!--j-->A(z)  <b>Teljes nézet</b> paranccsal a gépjárműn elvégzett összes diagnosztikai művelet teljes jelentését kinyomtathatja.<!--j-->&nbsp;<!--j-->A(z)  <b>Egyszerű jelentés</b> paranccsal összegzést nyomtathat a gépjármű-diagnosztikáról.</p>
+ <p>[XI-4]<!--j-->:<!--j-->&nbsp;<!--j-->A(z) <b>Pillanatfelvétel-adat</b> a gépjárműhez kapcsolódó összes pillanatfelvétel-adatot tartalmazza.<!--j-->&nbsp;<!--j-->A felhasználó neve, a pillanatkép-fájl neve, a kép dátuma és megjegyzések láthatók a szakaszban.<!--j-->&nbsp;<!--j-->Egy elem kijelölésével és a(z)  <b>Áttekintés</b> paranccsal pillanatfelvétel-visszajátszás jeleníthető meg.<!--j-->&nbsp;<!--j-->Az egyes elemek, kijelölés után, a(z)  <b>Törlés</b> paranccsal törölhetők.<br />[XI-6]<!--j-->:<!--j-->&nbsp;<!--j--><b><a name="export_snap">Export</a></b> egy pillanatfelvétel mentésére szolgál a helyi személyi számítógépen.<!--j-->&nbsp;<!--j-->A mentés után elküldheti ennek a pillanatfelvételnek az adatait további elemzésre a megfelelő személynek.</p>
+ <p>[XI-5]<!--j-->:<!--j-->&nbsp;<!--j-->A(z)  <b>Végrehajtott programok</b> menü előzmény diagnosztikai munkameneteket jelenít meg.</p>
+
+  <p>A(z)  <b>Következő művelet</b> gombbal folytatható a kijelölt gépjármű diagnosztikája.</p>
+ <p><img src="../../images/gds_xi_hun.gif" alt="gds_xi.gif" width="650px"/><br />
+[XI]</p>
+ <hr />
+ <h2>Rendszernavigáció - Diagnosztikai programok kijelölése</h2>
+ <p>Miután a(z)  <b>Következő művelet</b> képernyőn megnyomta a(z)  <b>Gépjármű kezdőlapja</b> gombot, megjelenik a Rendszernavigáció képernyő.<!--j-->&nbsp;<!--j-->[XII]<!--j-->.</p>
+ <p>Jelölje ki a gépjárművön vizsgálni kívánt navigációs útvonalat.<!--j-->&nbsp;<!--j-->A navigáció végezhető a navigációs gombokkal: a jobbra és balra nyilakkal megnyithatók illetve becsukhatók a mappák, az Indítás gombbal elindítható a kijelölt diagnosztikai program.<!--j-->&nbsp;<!--j-->A navigáció az egérrel is lehetséges, a navigációs fa + ikonjaira kattintva, vagy a számítógép billentyűzetén található nyílgombokkal.</p>
+ <p>
+Folytassa a kívánt diagnosztikai útvonalon a mappák kijelölését, amíg eléri az alkalmazásikonnal jelölt diagnosztikai programot.</p>
+ <p>
+
+Amint elindít egy diagnosztikai programot a Rendszernavigáció nézet helyén a diagnosztikai program képernyője jelenik meg.<!--j-->&nbsp;<!--j-->
+A diagnosztikai program futtatása után kattintson a diagnosztikai program nézet jobb felső sarkában található  <b>Kilépés</b> gombra.<!--j-->&nbsp;<!--j-->
+Ezzel bezárja a diagnosztikai programot, és visszatér a Rendszernavigáció nézetbe.</p>
+ <p><img src="../../images/gds_xii_hun.gif" alt="gds_xii.gif" width="350px"/><br />
+[XII]</p>
+ <hr />
+ <h1><a name="diagnostics"></a>6.<!--j-->&nbsp;<!--j-->Diagnosztika</h1>
+ <h2>Hibakód megjelenítés</h2>
+ <p>Amikor a(z)  <b>Gépjármű hibakódadatai</b> lapot kijelöli, ECU-k (elektronikus vezérlőegység) és az aktuálisan tárolt hibakódok listája jelenik meg a(z)  <b>Diagnosztikai program</b> nézetből.</p>
+ <p><img src="../../images/gds_xiii_hun.gif" alt="gds_xiii.gif" width="400px"/><br />
+[XIII]</p>
+ <p>
+A fenti példában 4 tárolt hibakód látható a berendezéscsoport-modulhoz.<!--j-->&nbsp;<!--j-->Kattintson a(z)  <b>Folytatás</b> gombra a hibakód főoldalának megjelenítéséhez.<br />
+
+  <img src="../../images/gds_xiv_hun.gif" alt="gds_xiv.gif" width="650px"/><br />
+[XIV]</p>
+ <p>Az elérhető hibakódok megjelennek a táblázatban.<!--j-->&nbsp;<!--j-->
+A tábla tartalma testreszabható.<!--j-->&nbsp;<!--j-->A(z)  <b>Oszlopok kijelölése</b> gombra kattintva hozzáadhat vagy eltávolíthat oszlopokat a táblából.<!--j-->&nbsp;<!--j-->[XIV-1]<!--j-->.<!--j-->&nbsp;<!--j-->
+A következő hibakódadatok jeleníthetők meg:</p>
+ <table border=1 cellspacing=0 cellpadding=0>
+ <tr>
+ <td width=158 valign=top><p><b>Kijelölés</b></p></td>
+ <td width=427 valign=top><p><b>Leírás</b></p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>Állapot</p></td>
+ <td width=427 valign=top><p><img src="../../images/gds_status-unknown.png" alt="gds_status-unknown.png" width="16" height="16" /><!--j-->&nbsp;<!--j-->Új hibakódbejegyzés az olvasási ciklus alatt.<!--j-->&nbsp;<!--j-->A hibakódleírás szövege félkövérre változik.</p>
+ <p><img src="../../images/gds_mail-generic.png" alt="gds_mail-generic.png" /><!--j-->&nbsp;<!--j-->Jelenlévő hibakód, nincs változás az utolsó olvasási ciklus óta.</p>
+ <p><img src="../../images/gds_forward.png" alt="gds_forward.png" /><!--j-->&nbsp;<!--j-->
+Aktuális hibakód, változással az utolsó olvasási ciklus óta.<!--j-->&nbsp;<!--j-->
+A hibakódleírás szövege dőltre változik.</p>
+ <p><img src="../../images/gds_mail-delete.png" alt="gds_mail-delete.png" /><!--j-->&nbsp;<!--j-->
+A hibakód törölve lett az aktuális olvasási ciklus során.<!--j-->&nbsp;<!--j-->
+A hibakódleírás szövegének háttere pirosra vált.</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>ECU</p></td>
+ <td width=427 valign=top><p>Vezérlőegység neve</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>Működési rendszer</p></td>
+ <td width=427 valign=top><p>Működési rendszer neve (ECU-készlet)</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>Hibakód</p></td>
+ <td width=427 valign=top><p>Hibakód</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>Tünetbájt</p></td>
+ <td width=427 valign=top><p>A hibakódhoz társított tünetbájt kódja</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>Leírás</p></td>
+ <td width=427 valign=top><p>A hibakód szöveges leírása</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>Tünet</p></td>
+ <td width=427 valign=top><p>Dekódolt tünetleírás</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>Állapotbájt</p></td>
+ <td width=427 valign=top><p>Jövőbeli használatra</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>Dekódolt állapot</p></td>
+ <td width=427 valign=top><p>A hibakód aktuális állapota</p></td>
+ </tr>
+ </table>
+ <p>
+A(z)  <b>Szűrési beállítások</b> szakaszban az egyes ECU-egységekre végezhet szűrést, így csak a felsorolt ECU-k hibakódjai jelennek meg.<!--j-->&nbsp;<!--j-->[XIV-2]<!--j-->.<!--j-->&nbsp;<!--j-->
+Ez a funkció a gépjármű összes hibakódja beolvasásakor illetve a működési rendszerrel használatos.<br />
+
+Az alsó mezőben szabadon írható be szöveg a hibakódok szűréséhez, például egy adott kód vagy kulcsszó alapján.<br />
+A(z)  <b>Hibakódállapot megjelenítése</b> négyzet bejelölésével megjelenik a hibakódok részletes állapota.<!--j-->&nbsp;<!--j-->[XIV-3]<!--j-->.</p>
+ <hr />
+ <h3>Hibakódok törlése</h3>
+ <p><!--j-->[XIV-4]<!--j-->&nbsp;<!--j-->
+A(z)  <b>Hibakódok törlése</b> gombra kattintva a gépjármű hibakódadatait megjelenítő képernyő jelenik meg.<!--j-->&nbsp;<!--j-->[XV]<br />
+A(z)  <b>Hozzáadás</b> vagy a(z)  <b>Összes hozzáadása</b> nyilakkal jelölje ki a törölni kívánt ECU-kat.<!--j-->&nbsp;<!--j-->
+Egyes ECU-k csak együttesen törölhetők, így a kijelölésük is együtt történik.<!--j-->&nbsp;<!--j-->
+A kijelölt ECU-k a képernyő jobb oldalán jelennek meg.<!--j-->&nbsp;<!--j-->Kattintson a(z)  <b>OK</b> gombra a kijelölt ECU-k törléséhez.<!--j-->&nbsp;<!--j-->
+Kattintson a(z)  <b>Mégse</b> gombra, ha jelenleg nem kívánja törölni a kijelölt ECU-kat.<!--j-->&nbsp;<!--j-->
+A(z)  <b>OK</b> gomb megnyomása után egy folyamatjelző ablak jelenik meg.<!--j-->&nbsp;<!--j-->
+A törölt kódok piros színűre váltanak, és a következő frissítés alkalmával eltűnnek.</p>
+ <p><img src="../../images/gds_xv_hun.gif" alt="gds_xv.gif" width="500px"/><br />
+[XV]</p>
+ <hr />
+ <h3>Hibakódok frissítése</h3>
+ <p>A(z)  <b>Hibakód frissítése</b> gomb megnyomása után a GDS a hibakódok frissítését kéri a vezérlőtől.<!--j-->&nbsp;<!--j-->[XIV-5]<!--j-->.</p>
+ <hr />
+ <h3>Kilépés a Hibakód programból</h3>
+ <p>
+A Hibakód programból a(z)  <b>Kilépés</b> gomb megnyomásával léphet ki.<!--j-->&nbsp;<!--j-->[XIV-6]<!--j-->.</p>
+ <table width="80%" border="0">
+ <tr>
+ <td class="important"><b><!--j-->Fontos<!--j-->:<!--j--></b><!--j-->&nbsp;<!--j-->
+A <b>Diagnosztikai program</b> csak a(z)  <b>Kilépés</b> gombbal lehet kilépni.<!--j-->&nbsp;<!--j-->
+A GDS programból nem lehet kilépni, amíg a rendszer diagnosztikai programokat futtat.<!--j-->&nbsp;<!--j-->
+A GDS programból való kilépéshez navigáljon vissza a GDS Bejelentkezési oldalra.</td></tr></table>
+ <hr />
+ <h3>Azonosítási információk</h3>
+ <p>
+A gépjárművezérlő adatai a(z)  <b>Adatok megjelenítése</b> programmal tekinthetők meg.<!--j-->&nbsp;<!--j-->
+A vezérlőazonosítási képernyő a vezérlőszoftver és -hardver változatairól tartalmaz információkat, amelyekre a Technical Assistance Center szolgálatnak lehet szüksége.</p>
+ <hr />
+ <h2>
+Adatok megjelenítése</h2>
+ <p>
+Az Adatok megjelenítése program valós időben jeleníti meg a gépjárművezérlő adatait és jeleit.</p>
+ <p>
+A kijelölt vezérlő adatainak alapértelmezett nézete a(z)  <b>Összes paraméter</b> táblán látható.<!--j-->&nbsp;<!--j-->[XVI-1]<!--j-->.<!--j-->&nbsp;<!--j-->
+A(z)  <b>Oszlopok kijelölése</b> gombbal egyenként beállíthatók a megjelenített oszlopok.<!--j-->&nbsp;<!--j-->[XVI-3]<!--j-->.</p>
+ <p>A(z)  <b>Hozzáadás a figyelési listához</b> gombbal az egyes paraméterek egy figyelési listán tekinthetők meg.<!--j-->&nbsp;<!--j-->[XVI-2]<!--j-->.</p>
+
+  <p><img src="../../images/gds_xvi_hun.gif" alt="gds_xvi.gif" width="650px"/><br />
+[XVI]</p>
+
+  <p>
+A figyelési listán szereplő paraméterek megtekinthetők a(z)  <b>Vonaldiagram</b> nézetben.<!--j-->&nbsp;<!--j-->[XVII-1]<!--j-->.<!--j-->&nbsp;<!--j-->
+
+
+Jelölje ki a legördülő listából a megjelenítendő paramétert, majd nyomja meg a Hozzáadás gombot a(z)  <b>Vonaldiagram</b> nézet indításához.<!--j-->&nbsp;<!--j-->[XVII-2]<!--j-->.<!--j-->&nbsp;<!--j-->
+Egyszerre több paraméter megtekintése lehetséges a vonaldiagramban.</p>
+ <p>
+Az alsó eszköztáron található gombok használatával konfigurálható a vonaldiagram.<!--j-->&nbsp;<!--j-->[XVII-3]</p>
+ <ol>
+ <li><b>Görgetés szüneteltetése/Görgetés folytatása</b>: A vonaldiagram statikus vagy dinamikus nézete közötti váltás.</li>
+ <li><b>Adatpontok</b>: A diagram váltása pont vagy vonal megjelenítés között.</li>
+ <li><b>Jelölő hozzáadása</b>: A vonaldiagram egyes pontjainak, eseményeinek kiemelése.</li>
+ <li><b>Közelítés</b> /  <b>Távolítás</b> funkció</li>
+ </ol>
+ <p>
+
+  <img src="../../images/gds_xvii_hun.gif" alt="gds_xvii.gif" width="650px"/><br />
+[XVII]</p>
+ <p>
+Lehetőség van a(z)  <b>Összes paraméter</b> lista egyes paramétereinek grafikus megjelenítésére<!--j-->&nbsp;<!--j-->[XVI-1]<!--j-->.<!--j-->&nbsp;<!--j-->
+Jelölje ki a különálló paramétert és a jelölődobozban jelölje ki a kívánt megjelenítési módot<!--j-->&nbsp;<!--j-->[XVIII-1]<!--j-->.<!--j-->&nbsp;<!--j-->A paraméter a következő változatokban jeleníthető meg:</p>
+ <ul type=square>
+ 	 <li>Mérőóra<!--j-->&nbsp;<!--j-->[XVIII-2]<!--j-->.</li>
+ 	 <li>Sávdiagram<!--j-->&nbsp;<!--j-->[XVIII-3]<!--j-->.</li>
+ 	 <li>Részletes megjelenítés<!--j-->&nbsp;<!--j-->[XVIII-4]<!--j-->.</li>
+ </ul>
+ <p>Egyszerre akár 4 paraméter vagy megjelenítési mód jeleníthető meg a képernyőn.</p>
+
+
+   <p><img src="../../images/gds_xviii_hun.gif" alt="gds_xviii.gif" width="650px"/><br />
+[XVIII]</p>
+ <hr />
+ <h3>Pillanatfelvétel visszajátszása</h3>
+ <p>A(z)  <b>Pillanatfelvétel visszajátszása</b> funkció segítségével megtekinthetők a gépjármű korábban rögzített pillanatfelvétel-adatai.<!--j-->&nbsp;<!--j-->Az információ gépjárműproblémák elemzésére és kiváltóhibák feltételeinek észlelésére használható.<!--j-->&nbsp;<!--j-->A diagram funkció alkalmazható két paraméter összehasonlítására, és annak megállapítására, hogy az összetevő megfelelően működik-e.<!--j-->&nbsp;<!--j-->A rögzített pillanatfelvételeket a következő három módszerrel lehet kijelölni megtekintésre:</p>
+ <ul>
+ <li>Jelölje ki a pillanatfelvétel-fájlt a(z)  <b>Gépjármű kezdőlapja</b> képernyőn, majd kattintson az Áttekintés parancsra.</li>
+ <li>Kattintson kétszer a kijelölt pillanatfelvételre a(z)  <b>Gépjármű kezdőlapja</b> képernyőn.</li>
+ <li>A(z)  <b>Menü</b> kiválasztásból lépjen a(z)  <b>Eszközök</b> kiválasztásba, majd a(z)  <b>Pillanatfelvétel visszajátszása</b> parancsára.<!--j-->&nbsp;<!--j-->Nyissa meg a(z)  <b>Pillanatfelvétel-kezelő</b> programot.<!--j-->&nbsp;<!--j-->Kattintson kétszer a megtekinteni kívánt pillanatfelvétel-fájlra, vagy kattintson a Pillanatfelvétel betöltése lehetőségre és jelöljön ki egy pillanatfelvételt.</li>
+ </ul>
+ <p>A kijelölési módszertől függetlenül, megjelenik a Fájl betöltve előugró ablak a(z)  <b>Pillanatfelvétel visszajátszása</b> képernyőn.<!--j-->&nbsp;<!--j-->Kattintson az OK gombra az előugró ablakon.</p>
+ <hr />
+ <h3>Pillanatfelvételek lejátszása<!--j-->&nbsp;<!--j-->[XIX-1]</h3>
+ <p>Számos lejátszási funkció áll rendelkezésre a rögzített pillanatfelvételek visszajátszására.</p>
+
+
+   <table width="84%" height="80" border="1">
+ <tr>
+ <td width="7%"><img src="../../images/gds_play.png" alt="gds_play.png" width="25" height="23" /></td>
+ <td width="93%">
+A Lejátszás gombra kattintva indítható el a pillanatfelvétel.<!--j-->
+
+&nbsp;<!--j-->
+
+A gomb használatakor egy jelölő halad végig a képernyőn.<!--j-->
+
+&nbsp;<!--j-->
+Használatkor a szakasz gombjai szürkére váltanak.</td>
+ </tr>
+ <tr>
+ <td><img src="../../images/gds_pause.png" alt="gds_pause.png" width="24" height="21" /></td>
+ <td>A Szünet gombbal szüneteltetni lehet a pillanatfelvétel lejátszását.<!--j-->&nbsp;<!--j-->A gomb újbóli megnyomásával a pillanatfelvétel lejátszása a leállított pontról folytatható.</td>
+ </tr>
+ <tr>
+ <td><img src="../../images/gds_stop.png" alt="gds_stop.png" width="24" height="19" /></td>
+ <td>A Stop gomb a pillanatfelvétel-lejátszás leállítására használható.<!--j-->&nbsp;<!--j-->Ha a Stop gomb után a Lejátszás gombra kattint, a pillanatfelvétel lejátszása ismét az elejétől indul el.</td>
+ </tr>
+ </table>
+ <hr />
+ <h3>Idővezérlés<!--j-->&nbsp;<!--j-->[XIX-2]</h3>
+ <p>A(z)  <b>Idővezérlés</b> szakasz a pillanatkép-visszajátszás vezérlésére használható.<!--j-->&nbsp;<!--j-->A szakaszban egy adott időkeret kijelölése, különböző nézetek megjelenítése és a lejátszási sebesség vezérlése lehetséges.<!--j-->&nbsp;<!--j-->A következő funkciók közvetlenül a(z)  <b>Idővezérlés</b> fül alatt találhatók:</p>
+ <table width="84%" border="1">
+ <tr>
+ <td><img src="../../images/gds_bookmark.png" alt="gds_bookmark.png" width="17" height="24" /></td>
+ <td>A Könyvjelző gomb segítségével egy megjegyzést adhat az aktuális megjelenítéshez, majd később visszatérhet erre a pontra.<!--j-->&nbsp;<!--j-->A gomb megnyomásakor egy előugró ablak jelenik meg.<!--j-->&nbsp;<!--j-->Írja be a könyvjelző nevét és kattintson az OK gombra.</td>
+ </tr>
+ <tr>
+ <td><img src="../../images/gds_notepad.png" alt="gds_notepad.png" width="26" height="22" /></td>
+ <td>A Jegyzettömbbel megjegyzések adhatók a pillanatfelvétel-visszajátszási fájl aktuális időpontjához.<!--j-->&nbsp;<!--j-->A gomb megnyomásakor egy előugró ablak jelenik meg.<!--j-->&nbsp;<!--j-->Írjon be egy megjegyzést és kattintson az OK gombra.</td>
+ </tr>
+ <tr>
+ <td><img src="../../images/gds_load.png" alt="gds_load.png" width="23" height="23" /></td>
+ <td>A Pillanatfelvétel betöltése (kék mappa) gombbal nyitható meg a pillanatfelvétel-fájl, és készíthető elő további elemzésre.<!--j-->&nbsp;<!--j-->Ha meg akarja jeleníteni az egyik <a href="#export_snap">exportált pillanatfelvételt</a>, előbb bontsa ki a megfelelő *.zip archívum-fájlt.<!--j-->&nbsp;<!--j--><!--j-->&nbsp;<!--j-->Ezt úgy is el lehet érni, ha a(z)  <b>Pillanatfelvétel-kezelő</b> ablakban az egyik elérhető pillanatfelvétel-fájlra kattint.</td>
+ </tr>
+ <tr>
+ <td><img src="../../images/gds_time-options.png" alt="gds_time-options.png" width="19" height="23" /></td>
+ <td>A Lefele nyíl gombra kattintva megjelenik a(z)  <b>Idővezérlés</b> szakasz összes beállítása.<!--j-->&nbsp;<!--j-->Az egyes beállítások külön kijelölhetőek a kívánt elemre történő kattintással.</td>
+ </tr>
+ <tr>
+ <td><img src="../../images/gds_speed.png" alt="gds_speed.png" width="57" height="27" /></td>
+ <td>
+A beállítás a pillanatfelvétel lejátszási sebességét módosítja.<!--j-->
+
+&nbsp;<!--j-->
+
+A felvétel megtekinthető 1/8X, 1/4X, 1/2X lassításban.<!--j-->
+
+&nbsp;<!--j-->
+
+Az 1 beállítás valós időben játssza le a felvételt.<!--j-->
+
+&nbsp;<!--j-->
+A beállítással a felvétel 2X, 4X és 8X gyorsításban is megtekinthető.</td>
+ </tr>
+ </table>
+
+
+   <hr />
+ <h3>Nézetek kijelölése<!--j-->&nbsp;<!--j-->[XIX-3]</h3>
+ <p>Minden nézet különböző módon jeleníti meg a gépjármű adatait elemzési célokra.<!--j-->&nbsp;<!--j-->A következő funkciók találhatók a(z)  <b>Rendelkezésre álló nézetek</b> szakaszban:</p>
+ <ul>
+ <li>Paraméterlista nézet - A pillanatfelvétel-fájlból beolvasott adatokat jeleníti meg.<!--j-->&nbsp;<!--j-->A paraméterek aktuális értéke jelenik meg a képernyőn.</li>
+ </ul>
+ <table width="80%" border="0">
+ <tr>
+ 	<td class="important"><b>Fontos</b><br />Ha a paraméternévnek nincs fordítása, a paraméter a rögzítéshez használt eredeti nyelven jelenik meg.</td></tr></table>
+ <ul>
+ <li>Napló nézet - A pillanatfelvétel-fájl összes adatát tartalmazza.<!--j-->&nbsp;<!--j-->A paraméterértékek a rögzítés sorrendjében szerepelnek.<!--j-->&nbsp;<!--j-->Az egyes elemekre kattintva azok a figyelési listához adhatók vagy eltávolíthatók onnan.</li>
+ <li>Állapot nézet - adott időkeret összes paraméterének értékét jeleníti meg.<!--j-->&nbsp;<!--j-->Az értékek összevethetők a Kiváltó nézettel.</li>
+ <li>Kiváltó nézet - a rendszer és a felhasználó által definiált kiváltókat jeleníti meg.<!--j-->&nbsp;<!--j-->A funkció akkor használható, ha egy diagnosztikai problémában több tényező kap szerepet.<!--j-->&nbsp;<!--j-->
+Ha egy kiváltó feltétel teljesül, figyelmeztető háromszög jelenik meg a képernyőn.<ul><li>Kiváltók betöltése<!--j-->&nbsp;<!--j-->-<!--j-->&nbsp;<!--j-->Kiváltó definíciókat tartalmazó fájl betöltését teszi lehetővé.</li>
+ 	 <li>Kiváltók mentése<!--j-->&nbsp;<!--j-->-<!--j-->&nbsp;<!--j-->A kiváltó mentését teszi lehetővé a számítógép merevlemezére.</li>
+ <li>Kiváltó eltávolítása<!--j-->&nbsp;<!--j-->-<!--j-->&nbsp;<!--j-->Eltávolítja az aktuális kiváltót, amely ezt követően már nem lesz jelen.</li>
+ <li>Kiváltó szerkesztése<!--j-->&nbsp;<!--j-->-<!--j-->&nbsp;<!--j-->Megjelenít egy előugró ablakot, amelyben módosíthatók a kiváltó paraméterei és határértékei.</li>
+ <li>Kiváltó hozzáadása<!--j-->&nbsp;<!--j-->-<!--j-->&nbsp;<!--j-->Megjelenít egy előugró ablakot, amelyben új kiváltó konfigurálható.</li></ul></li>
+ <li>Hibakód nézet<!--j-->&nbsp;<!--j-->-<!--j-->&nbsp;<!--j-->Ha a beállítást a lejátszáskor aktiválja, megjelenik a rögzített hibakódok listája.</li>
+ <li>Vonaldiagram nézet - az adatokat időtengely mentén jeleníti meg.<!--j-->&nbsp;<!--j-->A Kijelölt oszlopban a négyzet bejölésével az egyes paraméterek megjeleníthetők a diagramban.<!--j-->&nbsp;<!--j-->A diagram alatt négy gomb található:  <b>Közelítés</b> (méret növelése),  <b>Távolítás</b> (méret csökkentése),  <b>Könyvjelzők</b> és  <b>Görgetés szüneteltetése</b>.<!--j-->&nbsp;<!--j-->A funkciók a gombokra kattintva érhetők el.</li>
+ </ul>
+ <p><img src="../../images/gds_xix_hun.gif" alt="gds_xix.gif" width="650px"/><br />
+[XIX]</p>
+ <hr />
+ <h2>Vezérlési funkciók:</h2>
+ <p>A GDS vezérlési funkciói lehetőséget biztosítanak arra, hogy a gépjármű egyes funkcióit a GDS rendszerből lehessen irányítani.<!--j-->&nbsp;<!--j-->A Vezérlési funkciók program indításához, a Rendszernavigáció képernyőn jelölje ki az adott vezérlő vezérlési funkcióit.</p>
+ <p>A vezérlési funkciók az adatlista-megjelenítésbe vannak ágyazva.<!--j-->&nbsp;<!--j-->A vezérlési funkció végrehajtása alatt a megjelenített paraméter megfigyelhető és rögzíthető a GDS pillanatfelvétel szolgáltatásával.</p>
+ <p>A GDS két vezérlési funkciótípust támogat:</p>
+ <p>1.<!--j-->&nbsp;<!--j-->Digitális vezérlési funkció be- és kikapcsolás lehetőséggel<!--j-->&nbsp;<!--j-->[XX-1]</p>
+ <p><img src="../../images/gds_xx_hun.gif" alt="gds_xx.gif" width="650px"/><br />
+[XX]</p>
+ <p>2.<!--j-->&nbsp;<!--j-->Analóg vezérlési funkció, a funkció vezérlési lehetőségével.<!--j-->&nbsp;<!--j-->A működtető funkciót a vezérlő gombokkal vagy a mutató skálán történő mozgatásával lehet vezérelni.<!--j-->&nbsp;<!--j-->[XXI-1]<!--j-->&nbsp;<!--j-->vagy<!--j-->&nbsp;<!--j-->[XXI-2]<!--j-->.</p>
+ <p><img src="../../images/gds_xxi_hun.gif" alt="gds_xxi.gif" width="650px"/><br />[XXI]</p>
+ <hr />
+ <h2>Konfigurációs és visszaállítási funkciók:</h2>
+ <p>A konfigurációs és visszaállítási funkciók különleges vezérlési funkciók, amelyeket a rendszerműködtetők cseréje vagy ellenőrzése esetén kell végrehajtani.<!--j-->&nbsp;<!--j-->További részletek a rendszer Szervizkézikönyvében találhatók.</p>
+ <hr />
+ <h1><a name="troubleshooting"></a>7.<!--j-->&nbsp;<!--j-->HIBAELHÁRÍTÁS</h1>
+
+  <h2>MDI-kapcsolati hibák</h2>
+ <p>Egy előreugró ablak figyelmezteti a felhasználót, ha az MDI csatlakozói nem megfelelően vannak a gépjárműhez vagy a számítógéphez csatlakoztatva.<!--j-->&nbsp;<!--j-->Ilyenkor hajtsa végre a következő lépéseket:</p><ul>
+ <li>Ellenőrizze, hogy a GDS program működése közben az MDI Manager szoftver nem fut.</li>
+ <li>Ellenőrizze, hogy az MDI megfelelően van-e csatlakoztatva a gépjárműhez és a számítógéphez.</li>
+ <li>Használjon egy &quot;biztosan működő USB kábelt&quot; egy másik MDI-egységről, ha lehetséges.<!--j-->&nbsp;<!--j-->Végezze el az összes csatlakozást, és próbálja újra.</li>
+ <li>Használjon egy &quot;biztosan működő MDI DLC-kapcsolati kábelt&quot; egy másik MDI-egységről, ha lehetséges.<!--j-->&nbsp;<!--j-->Végezze el az összes csatlakozást, és próbálja újra.</li>
+ <li>Ha a probléma nem szűnik meg, forduljon a Customer Support szolgálathoz.</li>
+ <li>Ellenőrizze, hogy a GDS és az MDI kommunikációját nem blokkolja-e tűzfal.</li>
+ </ul>
+ <hr />
+ <h2>GDS/MDI Manager szoftverütközés</h2>
+ <p>A GDS és az MDI Manager programok nem futhatnak egy időben.<!--j-->&nbsp;<!--j-->Ütközéshez vezethet, ha a két program egyszerre fut.<!--j-->&nbsp;<!--j-->A Részletek gomb megnyomásával további lehetséges információkat kaphat a hibával kapcsolatban.<!--j-->&nbsp;<!--j-->Az információkat kérhetik a Customer Support szolgálat munkatársai, ha a probléma nem szűnik meg.</p>
+ <p>Amennyiben a probléma továbbra is megjelenik, az MDI Manager programban megjelenhet a &quot;Végzetes hiba történt&quot; előugró ablak.<!--j-->&nbsp;<!--j-->Zárja be az MDI Manager programot, és térjen vissza a GDS programba.<!--j-->&nbsp;<!--j-->Amennyiben a hiba a GDS programba való belépést követően továbbra is jelentkezik, forduljon a Customer Support szolgálathoz.</p>
+ <p>&nbsp;</p>
+ <p align="right"><font size="2">&copy; GM Europe, SPO Engineering, International Operations - 08 May 2009 (V3.0)</font></p>
+ </div>
+
+  </body>
+ </html>

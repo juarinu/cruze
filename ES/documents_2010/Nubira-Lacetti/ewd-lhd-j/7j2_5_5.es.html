@@ -1,0 +1,807 @@
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<STYLE>
+      		.ListIndentBul2Refer{margin-left : 40pt}  ..ListIndentBul2{margin-left : -20pt}
+      		.SubListIndent{margin-left : -15pt}
+      		.UpNo{border-top : white}  .DownNo{border-bottom : white}  ..BothNo{border-top : white; border-bottom : white}
+      		.UpBold{border-top : thin double ridge}  .DownBold{border-bottom : thin double ridge}  .BothBold{border-top : thin double ridge; border-bottom : thin double ridge}
+      		.ImageIndent{margin-left : 0%}  .ImageTitleIndent{margin-left : 5%}  .ParagraphIndent{margin-left : 20pt}
+      		.Arial{font-family : Arial, Helvetica, sans-serif; margin-left : 10pt; margin-right : 10pt}
+      	</STYLE>
+<SCRIPT LANGUAGE="JavaScript">
+				function FixMenu()
+				{
+					menuTop = document.body.scrollTop + document.body.clientHeight -40;
+					menu.style.top = menuTop;
+					menu.style.width = document.body.clientWidth; 
+				}
+			</SCRIPT><TITLE>Diagrama de cableado eléctrico 2009  5. ECM (MÓDULO DE CONTROL DEL MOTOR): EDC16C39 (DIESEL)</TITLE>
+</HEAD>
+<BODY class="Arial" onLoad="FixMenu()" onScroll="FixMenu()" onResize="FixMenu()">
+<SPAN ID="menu" STYLE="position:absolute; left:0px; top:0px; width:0px"><A border="0" href="7J2_5_5.es.html"><IMG src="../../../../graphic-pool/Icons/Totop.gif" align="right" halign="Bottom" border="0" alt="Al principio del documento"></A></SPAN><TABLE width="100%" BORDER="1" rules="none" cellspacing="0" cellpadding="0" style="magin-top: 5pt"><TBODY>
+<TR BGCOLOR="cccc99" height="15">
+<TD width="30%"><div style="padding-left: 5pt"><B><FONT face="Arial">Nubira-Lacetti</FONT></B></div></TD>
+<TD width="70%" align="right" colspan="8"></TD>
+</TR>
+<TR BGCOLOR="white" height="60">
+<TD width="35%" align="left"><TABLE><TR>
+<TD width="5%" align="left"><A href="7J2_5_4.es.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_back.gif" alt="A la página anterior"></A></TD>
+<TD width="5%" align="left"></TD>
+<TD width="5%" align="left"><A href="7J2_5_6.es.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_next.gif" alt="A la página siguiente"></A></TD>
+</TR></TABLE></TD>
+<TD><TABLE width="65%" align="right"><TR>
+<TD style="font-size:10"><A href="../../../GMDE_TIS_START.html" target="_top"><IMG src="../../code/menu-images/home.gif" border="0" alt="Página de inicio GMDE"></A></TD>
+<TD style="font-size:10"><A href="../toc_Nubira-Lacetti.html" target="menu"><IMG src="../../code/menu-images/static-TOC.gif" border="0" alt="Índice estático"></A></TD>
+<TD style="font-size:10"><A href="../toc_Nubira-Lacetti_code.html" target="code"><IMG src="../../code/menu-images/menu_folder_open.gif" border="0" alt="Índice dinámico"></A></TD>
+<TD style="font-size:10"><A href="../../help/readme_EN.htm" target="top" class="bottom_copyright"><IMG src="../../code/menu-images/help.gif" border="0" alt="¿Ayuda?"></A></TD>
+</TR></TABLE></TD>
+</TR>
+</TBODY></TABLE>
+	<P></P>
+<BR><BR><DIV align="left" id="J5ECM"><FONT size="5" face="Arial, Helvetica, sans-serif"><B>5. ECM (MÓDULO DE CONTROL DEL MOTOR): EDC16C39 (DIESEL)</B></FONT></DIV>
+<P></P>
+	<P></P>
+<DIV align="left" id="J5BPSGG"><FONT size="4" face="Arial, Helvetica, sans-serif"><B>1) BATERÍA, ALIMENTACIÓN DE TENSIÓN, MASA, UNIDAD DE CONTROL DE LA BUJÍA DE PRECALENTAMIENTO, CALEFACTOR DE COMBUSTIBLE, SENSOR DE CKP Y CIRCUITO DEL GENERADOR</B></FONT></DIV>
+<P></P>
+		<P></P>
+<DIV>
+<IMG class="ImageIndent" border="1" src="../../../../graphic-pool/J/7B/1/J7B15212.png" alt="J7B15212.png"><BR><A target="_blank" href="../../../../graphic-pool/J/7B/1/J7B15212.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Gráfico de visualización"></A><A target="_blank" href="../../GraphicText/ewd/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Traducciones de texto en gráficos"></A><p style="font-size:9pt; border:1pt outset"></p>
+</DIV>
+<BR><P></P>
+		<P></P>
+<DIV align=""><B><FONT size="4">a. INFORMACIÓN DEL CONECTOR</FONT></B></DIV>
+<P></P>
+<TABLE BORDER="1" cellpadding="5%" width="95%" align="center" cellspacing="0">
+<THEAD><TR>
+<TD align="center" valign="middle" BGCOLOR="#d4d4d4"><B>Nº DE CONECTOR<BR>(Nº CLAVIJA, COLOR)</B></TD>
+<TD align="center" valign="middle" BGCOLOR="#d4d4d4"><B>CONEXIÓN DEL CABLEADO DE CONEXIÓN</B></TD>
+<TD align="center" valign="middle" BGCOLOR="#d4d4d4"><B>POSICIÓN DEL CONECTOR</B></TD>
+</TR></THEAD>
+<TBODY>
+<TR>
+<TD align="left" valign="middle" class="Normal" width="30%">C102 (11 patillas, blanco)	</TD>
+					<TD align="left" valign="middle" class="Normal" width="35%">Carrocería - Caja de fusibles del motor</TD>
+					<TD align="left" valign="middle" class="Normal" width="40%">bloque (mazo) de fusibles del motor</TD>
+				</TR>
+				<TR>
+<TD align="left" valign="middle" class="Normal" width="30%">C103 (10 patillas, blanco)</TD>
+					<TD align="left" valign="middle" class="Normal" width="35%">Motor - Caja de fusibles del motor</TD>
+					<TD align="left" valign="middle" class="Normal" width="40%">bloque (mazo) de fusibles del motor</TD>
+				</TR>
+				<TR>
+<TD align="left" valign="middle" class="Normal" width="30%">C106 (20 patillas, blanco)	</TD>
+					<TD align="left" valign="middle" class="Normal" width="35%">Motor - Caja de fusibles del motor</TD>
+					<TD align="left" valign="middle" class="Normal" width="40%">bloque (mazo) de fusibles del motor</TD>
+				</TR>
+				<TR>
+<TD align="left" valign="middle" class="Normal" width="30%">C115 (4 patillas, negro)</TD>
+					<TD align="left" valign="middle" class="Normal" width="35%">Motor - Bujía de precalentamiento (Diesel)</TD>
+					<TD align="left" valign="middle" class="Normal" width="40%">Cilindro superior izquierdo</TD>
+				</TR>
+				<TR>
+<TD align="left" valign="middle" class="Normal" width="30%">C201 (76 patillas, negro)</TD>
+					<TD align="left" valign="middle" class="Normal" width="35%">P/I - Caja de fusibles del P/I</TD>
+					<TD align="left" valign="middle" class="Normal" width="40%">Caja de fusibles del P/I</TD>
+				</TR>
+				<TR>
+<TD align="left" valign="middle" class="Normal" width="30%">C202 (89 patillas, blanco)	</TD>
+					<TD align="left" valign="middle" class="Normal" width="35%">P/I - Carrocería </TD>
+					<TD align="left" valign="middle" class="Normal" width="40%">Lado izquierdo del compartimento para las piernas del conductor</TD>
+				</TR>
+				<TR>
+<TD align="left" valign="middle" class="Normal" width="30%">G104</TD>
+					<TD align="left" valign="middle" class="Normal" width="35%">Motor</TD>
+					<TD align="left" valign="middle" class="Normal" width="40%">Debajo del motor de arranque</TD>
+				</TR>
+			</TBODY>
+</TABLE>
+		<P></P>
+		<P></P>
+<DIV align=""><B><FONT size="4">b. SÍMBOLO DE IDENTIFICACIÓN DEL CONECTOR Y POSICIÓN DEL NÚMERO DE CLAVIJA</FONT></B></DIV>
+<P></P>
+<P></P>
+<DIV>
+<IMG class="ImageIndent" border="1" src="../../../../graphic-pool/J/7B/1/J7B1P100.png" alt="J7B1P100.png"><BR><A target="_blank" href="../../../../graphic-pool/J/7B/1/J7B1P100.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Gráfico de visualización"></A><A target="_blank" href="../../GraphicText/ewd/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Traducciones de texto en gráficos"></A><p style="font-size:9pt; border:1pt outset"></p>
+</DIV>
+<BR><P></P>
+		<P></P>
+		<P></P>
+<DIV align=""><B><FONT size="4">c. POSICIÓN DE TOMAS DE TIERRA Y CONECTORES</FONT></B></DIV>
+<P></P>
+<P></P>
+<UL><LI><DIV align="left" id="J5WE"><FONT size="4" face="Arial, Helvetica, sans-serif"><B>CABLEADO DEL MOTOR</B></FONT></DIV></LI></UL>
+<P></P>
+				<P></P>
+<DIV align="left" id="J5DIESE" class="ListIndentBul2Refer"><FONT size="3" face="Arial, Helvetica, sans-serif"><B>DIESEL</B></FONT></DIV>
+<P></P>
+					<P></P>
+<DIV>
+<IMG class="ImageIndent" border="1" src="../../../../graphic-pool/J/7B/1/J7B12007.png" alt="J7B12007.png"><BR><A target="_blank" href="../../../../graphic-pool/J/7B/1/J7B12007.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Gráfico de visualización"></A><A target="_blank" href="../../GraphicText/ewd/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Traducciones de texto en gráficos"></A><p style="font-size:9pt; border:1pt outset"></p>
+</DIV>
+<BR><P></P>
+					<P></P>
+<DIV>
+<IMG class="ImageIndent" border="1" src="../../../../graphic-pool/J/7B/1/J7B12008.png" alt="J7B12008.png"><BR><A target="_blank" href="../../../../graphic-pool/J/7B/1/J7B12008.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Gráfico de visualización"></A><A target="_blank" href="../../GraphicText/ewd/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Traducciones de texto en gráficos"></A><p style="font-size:9pt; border:1pt outset"></p>
+</DIV>
+<BR><P></P>
+				
+			
+		<P></P>
+	
+	<P></P>
+<DIV align="left" id="J5IEGTS"><FONT size="4" face="Arial, Helvetica, sans-serif"><B>2) INYECTOR, SENSOR DE TEMPERATURA DE GASES DE ESCAPE, SENSOR DE TEMPERATURA DE COMBUSTIBLE Y CIRCUITO DE LA BOMBA DE COMBUSTIBLE</B></FONT></DIV>
+<P></P>
+		<P></P>
+<DIV>
+<IMG class="ImageIndent" border="1" src="../../../../graphic-pool/J/7B/1/J7B15101.png" alt="J7B15101.png"><BR><A target="_blank" href="../../../../graphic-pool/J/7B/1/J7B15101.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Gráfico de visualización"></A><A target="_blank" href="../../GraphicText/ewd/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Traducciones de texto en gráficos"></A><p style="font-size:9pt; border:1pt outset"></p>
+</DIV>
+<BR><P></P>
+		<P></P>
+<DIV align=""><B><FONT size="4">a. INFORMACIÓN DEL CONECTOR</FONT></B></DIV>
+<P></P>
+<TABLE BORDER="1" cellpadding="5%" width="95%" align="center" cellspacing="0">
+<THEAD><TR>
+<TD align="center" valign="middle" BGCOLOR="#d4d4d4"><B>Nº DE CONECTOR<BR>(Nº CLAVIJA, COLOR)</B></TD>
+<TD align="center" valign="middle" BGCOLOR="#d4d4d4"><B>CONEXIÓN DEL CABLEADO DE CONEXIÓN</B></TD>
+<TD align="center" valign="middle" BGCOLOR="#d4d4d4"><B>POSICIÓN DEL CONECTOR</B></TD>
+</TR></THEAD>
+<TBODY>
+<TR>
+<TD align="left" valign="middle" class="Normal" width="30%">C101 (21 patillas, blanco)	</TD>
+					<TD align="left" valign="middle" class="Normal" width="35%">Carrocería - Caja de fusibles del motor</TD>
+					<TD align="left" valign="middle" class="Normal" width="40%">bloque (mazo) de fusibles del motor</TD>
+				</TR>
+				<TR>
+<TD align="left" valign="middle" class="Normal" width="30%">C106 (20 patillas, blanco)	</TD>
+					<TD align="left" valign="middle" class="Normal" width="35%">Motor - Caja de fusibles del motor</TD>
+					<TD align="left" valign="middle" class="Normal" width="40%">bloque (mazo) de fusibles del motor</TD>
+				</TR>
+				<TR>
+<TD align="left" valign="middle" class="Normal" width="30%">G104</TD>
+					<TD align="left" valign="middle" class="Normal" width="35%">Motor</TD>
+					<TD align="left" valign="middle" class="Normal" width="40%">Debajo del motor de arranque</TD>
+				</TR>
+				<TR>
+<TD align="left" valign="middle" class="Normal" width="30%">G302</TD>
+					<TD align="left" valign="middle" class="Normal" width="35%">Carrocería</TD>
+					<TD align="left" valign="middle" class="Normal" width="40%">Debajo del montante C izquierdo</TD>
+				</TR>
+			</TBODY>
+</TABLE>
+		<P></P>
+		<P></P>
+<DIV align=""><B><FONT size="4">b. SÍMBOLO DE IDENTIFICACIÓN DEL CONECTOR Y POSICIÓN DEL NÚMERO DE CLAVIJA</FONT></B></DIV>
+<P></P>
+<P></P>
+<DIV>
+<IMG class="ImageIndent" border="1" src="../../../../graphic-pool/J/7B/1/J7B1P101.png" alt="J7B1P101.png"><BR><A target="_blank" href="../../../../graphic-pool/J/7B/1/J7B1P101.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Gráfico de visualización"></A><A target="_blank" href="../../GraphicText/ewd/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Traducciones de texto en gráficos"></A><p style="font-size:9pt; border:1pt outset"></p>
+</DIV>
+<BR><P></P>
+		<P></P>
+		<P></P>
+<DIV align=""><B><FONT size="4">c. POSICIÓN DE TOMAS DE TIERRA Y CONECTORES</FONT></B></DIV>
+<P></P>
+<P></P>
+<UL><LI><DIV align="left" id="J5WE1"><FONT size="4" face="Arial, Helvetica, sans-serif"><B>CABLEADO DEL MOTOR</B></FONT></DIV></LI></UL>
+<P></P>
+				<P></P>
+<DIV align="left" id="J5DIESE1" class="ListIndentBul2Refer"><FONT size="3" face="Arial, Helvetica, sans-serif"><B>DIESEL</B></FONT></DIV>
+<P></P>
+					<P></P>
+<DIV>
+<IMG class="ImageIndent" border="1" src="../../../../graphic-pool/J/7B/1/J7B12007.png" alt="J7B12007.png"><BR><A target="_blank" href="../../../../graphic-pool/J/7B/1/J7B12007.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Gráfico de visualización"></A><A target="_blank" href="../../GraphicText/ewd/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Traducciones de texto en gráficos"></A><p style="font-size:9pt; border:1pt outset"></p>
+</DIV>
+<BR><P></P>
+					<P></P>
+<DIV>
+<IMG class="ImageIndent" border="1" src="../../../../graphic-pool/J/7B/1/J7B12008.png" alt="J7B12008.png"><BR><A target="_blank" href="../../../../graphic-pool/J/7B/1/J7B12008.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Gráfico de visualización"></A><A target="_blank" href="../../GraphicText/ewd/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Traducciones de texto en gráficos"></A><p style="font-size:9pt; border:1pt outset"></p>
+</DIV>
+<BR><P></P>
+				
+			
+		<P></P>
+	
+	<P></P>
+<DIV align="left" id="J5SFMUR"><FONT size="4" face="Arial, Helvetica, sans-serif"><B>3) SENSOR (MAF/IAT, DPF, ECT, ACP, PRESIÓN DE RAMPA DE INYECTORES), UNIDAD DE MEDICIÓN DE COMBUSTIBLE Y CIRCUITO DE VÁLVULA DE CONTROL DE PRESIÓN DE RAMPA DE INYECTORES</B></FONT></DIV>
+<P></P>
+		<P></P>
+<DIV>
+<IMG class="ImageIndent" border="1" src="../../../../graphic-pool/J/7B/1/J7B15102.png" alt="J7B15102.png"><BR><A target="_blank" href="../../../../graphic-pool/J/7B/1/J7B15102.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Gráfico de visualización"></A><A target="_blank" href="../../GraphicText/ewd/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Traducciones de texto en gráficos"></A><p style="font-size:9pt; border:1pt outset"></p>
+</DIV>
+<BR><P></P>
+		<P></P>
+<DIV align=""><B><FONT size="4">a. INFORMACIÓN DEL CONECTOR</FONT></B></DIV>
+<P></P>
+<TABLE BORDER="1" cellpadding="5%" width="95%" align="center" cellspacing="0">
+<THEAD><TR>
+<TD align="center" valign="middle" BGCOLOR="#d4d4d4"><B>Nº DE CONECTOR<BR>(Nº CLAVIJA, COLOR)</B></TD>
+<TD align="center" valign="middle" BGCOLOR="#d4d4d4"><B>CONEXIÓN DEL CABLEADO DE CONEXIÓN</B></TD>
+<TD align="center" valign="middle" BGCOLOR="#d4d4d4"><B>POSICIÓN DEL CONECTOR</B></TD>
+</TR></THEAD>
+<TBODY>
+<TR>
+<TD align="left" valign="middle" class="Normal" width="30%">C102 (11 patillas, blanco)	</TD>
+					<TD align="left" valign="middle" class="Normal" width="35%">Carrocería - Caja de fusibles del motor</TD>
+					<TD align="left" valign="middle" class="Normal" width="40%">bloque (mazo) de fusibles del motor</TD>
+				</TR>
+				<TR>
+<TD align="left" valign="middle" class="Normal" width="30%">C106 (20 patillas, blanco)	</TD>
+					<TD align="left" valign="middle" class="Normal" width="35%">Motor - Caja de fusibles del motor</TD>
+					<TD align="left" valign="middle" class="Normal" width="40%">bloque (mazo) de fusibles del motor</TD>
+				</TR>
+				<TR>
+<TD align="left" valign="middle" class="Normal" width="30%">C108 (36 patillas, negro)</TD>
+					<TD align="left" valign="middle" class="Normal" width="35%">Carrocería - Motor (Diesel)</TD>
+					<TD align="left" valign="middle" class="Normal" width="40%">Caja de fusibles del motor, izquierda</TD>
+				</TR>
+				<TR>
+<TD align="left" valign="middle" class="Normal" width="30%">C201 (76 patillas, negro)</TD>
+					<TD align="left" valign="middle" class="Normal" width="35%">P/I - Caja de fusibles del P/I</TD>
+					<TD align="left" valign="middle" class="Normal" width="40%">Caja de fusibles del P/I</TD>
+				</TR>
+				<TR>
+<TD align="left" valign="middle" class="Normal" width="30%">C202 (89 patillas, blanco)	</TD>
+					<TD align="left" valign="middle" class="Normal" width="35%">P/I - Carrocería </TD>
+					<TD align="left" valign="middle" class="Normal" width="40%">Lado izquierdo del compartimento para las piernas del conductor</TD>
+				</TR>
+				<TR>
+<TD align="left" valign="middle" class="Normal" width="30%">C208 (15 patillas, blanco)</TD>
+					<TD align="left" valign="middle" class="Normal" width="35%">P/I - FATC</TD>
+					<TD align="left" valign="middle" class="Normal" width="40%">Detrás de la guantera</TD>
+				</TR>
+				<TR>
+<TD align="left" valign="middle" class="Normal" width="30%">C211 (patilla 15, blanco)</TD>
+					<TD align="left" valign="middle" class="Normal" width="35%">I.P - Carrocería (Diesel)</TD>
+					<TD align="left" valign="middle" class="Normal" width="40%">Lado izquierdo del compartimento para las piernas del conductor</TD>
+				</TR>
+			</TBODY>
+</TABLE>
+		<P></P>
+		<P></P>
+<DIV align=""><B><FONT size="4">b. SÍMBOLO DE IDENTIFICACIÓN DEL CONECTOR Y POSICIÓN DEL NÚMERO DE CLAVIJA</FONT></B></DIV>
+<P></P>
+<P></P>
+<DIV>
+<IMG class="ImageIndent" border="1" src="../../../../graphic-pool/J/7B/1/J7B1P102.png" alt="J7B1P102.png"><BR><A target="_blank" href="../../../../graphic-pool/J/7B/1/J7B1P102.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Gráfico de visualización"></A><A target="_blank" href="../../GraphicText/ewd/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Traducciones de texto en gráficos"></A><p style="font-size:9pt; border:1pt outset"></p>
+</DIV>
+<BR><P></P>
+		<P></P>
+		<P></P>
+<DIV align=""><B><FONT size="4">c. POSICIÓN DE TOMAS DE TIERRA Y CONECTORES</FONT></B></DIV>
+<P></P>
+<P></P>
+<UL><LI><DIV align="left" id="J5WE2"><FONT size="4" face="Arial, Helvetica, sans-serif"><B>CABLEADO DEL MOTOR</B></FONT></DIV></LI></UL>
+<P></P>
+				<P></P>
+<DIV align="left" id="J5DIESE2" class="ListIndentBul2Refer"><FONT size="3" face="Arial, Helvetica, sans-serif"><B>DIESEL</B></FONT></DIV>
+<P></P>
+					<P></P>
+<DIV>
+<IMG class="ImageIndent" border="1" src="../../../../graphic-pool/J/7B/1/J7B12007.png" alt="J7B12007.png"><BR><A target="_blank" href="../../../../graphic-pool/J/7B/1/J7B12007.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Gráfico de visualización"></A><A target="_blank" href="../../GraphicText/ewd/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Traducciones de texto en gráficos"></A><p style="font-size:9pt; border:1pt outset"></p>
+</DIV>
+<BR><P></P>
+					<P></P>
+<DIV>
+<IMG class="ImageIndent" border="1" src="../../../../graphic-pool/J/7B/1/J7B12008.png" alt="J7B12008.png"><BR><A target="_blank" href="../../../../graphic-pool/J/7B/1/J7B12008.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Gráfico de visualización"></A><A target="_blank" href="../../GraphicText/ewd/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Traducciones de texto en gráficos"></A><p style="font-size:9pt; border:1pt outset"></p>
+</DIV>
+<BR><P></P>
+				
+			
+		<P></P>
+	
+	<P></P>
+<DIV align="left" id="J5TPAWS"><FONT size="4" face="Arial, Helvetica, sans-serif"><B>4) ACTUADOR DE LA PLACA DEL ACELERADOR, SOLENOIDE DE LA COMPUERTA DE DESCARGA, SENSOR CMP, INTERRUPTOR DE EMBRAGUE, VÁLVULA EGR Y CIRCUITO DE SENSOR DE PRESIÓN DE SOBREALIMENTACIÓN</B></FONT></DIV>
+<P></P>
+		<P></P>
+<DIV>
+<IMG class="ImageIndent" border="1" src="../../../../graphic-pool/J/7B/1/J7B15103.png" alt="J7B15103.png"><BR><A target="_blank" href="../../../../graphic-pool/J/7B/1/J7B15103.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Gráfico de visualización"></A><A target="_blank" href="../../GraphicText/ewd/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Traducciones de texto en gráficos"></A><p style="font-size:9pt; border:1pt outset"></p>
+</DIV>
+<BR><P></P>
+		<P></P>
+<DIV align=""><B><FONT size="4">a. INFORMACIÓN DEL CONECTOR</FONT></B></DIV>
+<P></P>
+<TABLE BORDER="1" cellpadding="5%" width="95%" align="center" cellspacing="0">
+<THEAD><TR>
+<TD align="center" valign="middle" BGCOLOR="#d4d4d4"><B>Nº DE CONECTOR<BR>(Nº CLAVIJA, COLOR)</B></TD>
+<TD align="center" valign="middle" BGCOLOR="#d4d4d4"><B>CONEXIÓN DEL CABLEADO DE CONEXIÓN</B></TD>
+<TD align="center" valign="middle" BGCOLOR="#d4d4d4"><B>POSICIÓN DEL CONECTOR</B></TD>
+</TR></THEAD>
+<TBODY>
+<TR>
+<TD align="left" valign="middle" class="Normal" width="30%">C103 (10 patillas, blanco)</TD>
+					<TD align="left" valign="middle" class="Normal" width="35%">Motor - Caja de fusibles del motor</TD>
+					<TD align="left" valign="middle" class="Normal" width="40%">bloque (mazo) de fusibles del motor</TD>
+				</TR>
+				<TR>
+<TD align="left" valign="middle" class="Normal" width="30%">C106 (20 patillas, blanco)	</TD>
+					<TD align="left" valign="middle" class="Normal" width="35%">Motor - Caja de fusibles del motor</TD>
+					<TD align="left" valign="middle" class="Normal" width="40%">bloque (mazo) de fusibles del motor</TD>
+				</TR>
+				<TR>
+<TD align="left" valign="middle" class="Normal" width="30%">C108 (36 patillas, negro)</TD>
+					<TD align="left" valign="middle" class="Normal" width="35%">Carrocería - Motor (Diesel)</TD>
+					<TD align="left" valign="middle" class="Normal" width="40%">Caja de fusibles del motor, izquierda</TD>
+				</TR>
+				<TR>
+<TD align="left" valign="middle" class="Normal" width="30%">C201 (76 patillas, negro)</TD>
+					<TD align="left" valign="middle" class="Normal" width="35%">P/I - Caja de fusibles del P/I</TD>
+					<TD align="left" valign="middle" class="Normal" width="40%">Caja de fusibles del P/I</TD>
+				</TR>
+				<TR>
+<TD align="left" valign="middle" class="Normal" width="30%">C211 (patilla 15, blanco)</TD>
+					<TD align="left" valign="middle" class="Normal" width="35%">I.P - Carrocería (Diesel)</TD>
+					<TD align="left" valign="middle" class="Normal" width="40%">Lado izquierdo del compartimento para las piernas del conductor</TD>
+				</TR>
+				<TR>
+<TD align="left" valign="middle" class="Normal" width="30%">G104</TD>
+					<TD align="left" valign="middle" class="Normal" width="35%">Motor</TD>
+					<TD align="left" valign="middle" class="Normal" width="40%">Debajo del motor de arranque</TD>
+				</TR>
+			</TBODY>
+</TABLE>
+		<P></P>
+		<P></P>
+<DIV align=""><B><FONT size="4">b. SÍMBOLO DE IDENTIFICACIÓN DEL CONECTOR Y POSICIÓN DEL NÚMERO DE CLAVIJA</FONT></B></DIV>
+<P></P>
+<P></P>
+<DIV>
+<IMG class="ImageIndent" border="1" src="../../../../graphic-pool/J/7B/1/J7B1P103.png" alt="J7B1P103.png"><BR><A target="_blank" href="../../../../graphic-pool/J/7B/1/J7B1P103.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Gráfico de visualización"></A><A target="_blank" href="../../GraphicText/ewd/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Traducciones de texto en gráficos"></A><p style="font-size:9pt; border:1pt outset"></p>
+</DIV>
+<BR><P></P>
+		<P></P>
+		<P></P>
+<DIV align=""><B><FONT size="4">c. POSICIÓN DE TOMAS DE TIERRA Y CONECTORES</FONT></B></DIV>
+<P></P>
+<P></P>
+<UL><LI><DIV align="left" id="J5WE3"><FONT size="4" face="Arial, Helvetica, sans-serif"><B>CABLEADO DEL MOTOR</B></FONT></DIV></LI></UL>
+<P></P>
+				<P></P>
+<DIV align="left" id="J5DIESE3" class="ListIndentBul2Refer"><FONT size="3" face="Arial, Helvetica, sans-serif"><B>DIESEL</B></FONT></DIV>
+<P></P>
+					<P></P>
+<DIV>
+<IMG class="ImageIndent" border="1" src="../../../../graphic-pool/J/7B/1/J7B12007.png" alt="J7B12007.png"><BR><A target="_blank" href="../../../../graphic-pool/J/7B/1/J7B12007.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Gráfico de visualización"></A><A target="_blank" href="../../GraphicText/ewd/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Traducciones de texto en gráficos"></A><p style="font-size:9pt; border:1pt outset"></p>
+</DIV>
+<BR><P></P>
+					<P></P>
+<DIV>
+<IMG class="ImageIndent" border="1" src="../../../../graphic-pool/J/7B/1/J7B12008.png" alt="J7B12008.png"><BR><A target="_blank" href="../../../../graphic-pool/J/7B/1/J7B12008.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Gráfico de visualización"></A><A target="_blank" href="../../GraphicText/ewd/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Traducciones de texto en gráficos"></A><p style="font-size:9pt; border:1pt outset"></p>
+</DIV>
+<BR><P></P>
+				
+			
+		<P></P>
+	
+	<P></P>
+<DIV align="left" id="J5CVSC"><FONT size="4" face="Arial, Helvetica, sans-serif"><B>5) GRUPO Y CIRCUITO DE VELOCIDAD DEL VEHÍCULO</B></FONT></DIV>
+<P></P>
+		<P></P>
+<DIV>
+<IMG class="ImageIndent" border="1" src="../../../../graphic-pool/J/9B/1/J9B15006.png" alt="J9B15006.png"><BR><A target="_blank" href="../../../../graphic-pool/J/9B/1/J9B15006.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Gráfico de visualización"></A><A target="_blank" href="../../GraphicText/ewd/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Traducciones de texto en gráficos"></A><p style="font-size:9pt; border:1pt outset"></p>
+</DIV>
+<BR><P></P>
+		<P></P>
+<DIV align=""><B><FONT size="4">a. INFORMACIÓN DEL CONECTOR</FONT></B></DIV>
+<P></P>
+<TABLE BORDER="1" cellpadding="5%" width="95%" align="center" cellspacing="0">
+<THEAD><TR>
+<TD align="center" valign="middle" BGCOLOR="#d4d4d4"><B>Nº DE CONECTOR<BR>(Nº CLAVIJA, COLOR)</B></TD>
+<TD align="center" valign="middle" BGCOLOR="#d4d4d4"><B>CONEXIÓN DEL CABLEADO DE CONEXIÓN</B></TD>
+<TD align="center" valign="middle" BGCOLOR="#d4d4d4"><B>POSICIÓN DEL CONECTOR</B></TD>
+</TR></THEAD>
+<TBODY>
+<TR>
+<TD align="left" valign="middle" class="Normal" width="30%">C102 (11 patillas, blanco)	</TD>
+					<TD align="left" valign="middle" class="Normal" width="35%">Carrocería - Caja de fusibles del motor</TD>
+					<TD align="left" valign="middle" class="Normal" width="40%">bloque (mazo) de fusibles del motor</TD>
+				</TR>
+				<TR>
+<TD align="left" valign="middle" class="Normal" width="30%">C104 (24 patillas, blanco)</TD>
+					<TD align="left" valign="middle" class="Normal" width="35%">Caja de fusibles del motor - Parte delantera</TD>
+					<TD align="left" valign="middle" class="Normal" width="40%">bloque (mazo) de fusibles del motor</TD>
+				</TR>
+				<TR>
+<TD align="left" valign="middle" class="Normal" width="30%">C106 (20 patillas, blanco)	</TD>
+					<TD align="left" valign="middle" class="Normal" width="35%">Motor - Caja de fusibles del motor</TD>
+					<TD align="left" valign="middle" class="Normal" width="40%">bloque (mazo) de fusibles del motor</TD>
+				</TR>
+				<TR>
+<TD align="left" valign="middle" class="Normal" width="30%">C108 (36 patillas, negro)</TD>
+					<TD align="left" valign="middle" class="Normal" width="35%">Carrocería - Motor (Diesel)</TD>
+					<TD align="left" valign="middle" class="Normal" width="40%">Caja de fusibles del motor, izquierda</TD>
+				</TR>
+				<TR>
+<TD align="left" valign="middle" class="Normal" width="30%">C201 (76 patillas, negro)</TD>
+					<TD align="left" valign="middle" class="Normal" width="35%">P/I - Caja de fusibles del P/I</TD>
+					<TD align="left" valign="middle" class="Normal" width="40%">Caja de fusibles del P/I</TD>
+				</TR>
+				<TR>
+<TD align="left" valign="middle" class="Normal" width="30%">C202 (89 patillas, blanco)	</TD>
+					<TD align="left" valign="middle" class="Normal" width="35%">P/I - Carrocería </TD>
+					<TD align="left" valign="middle" class="Normal" width="40%">Lado izquierdo del compartimento para las piernas del conductor</TD>
+				</TR>
+				<TR>
+<TD align="left" valign="middle" class="Normal" width="30%">C206 (22 patillas, blanco)</TD>
+					<TD align="left" valign="middle" class="Normal" width="35%">P/I - TCM</TD>
+					<TD align="left" valign="middle" class="Normal" width="40%">Encima del compartimento para las piernas del conductor</TD>
+				</TR>
+				<TR>
+<TD align="left" valign="middle" class="Normal" width="30%">C211 (patilla 15, blanco)</TD>
+					<TD align="left" valign="middle" class="Normal" width="35%">I.P - Carrocería (Diesel)</TD>
+					<TD align="left" valign="middle" class="Normal" width="40%">Lado izquierdo del compartimento para las piernas del conductor</TD>
+				</TR>
+				<TR>
+<TD align="left" valign="middle" class="Normal" width="30%">G104</TD>
+					<TD align="left" valign="middle" class="Normal" width="35%">Motor</TD>
+					<TD align="left" valign="middle" class="Normal" width="40%">Debajo del motor de arranque</TD>
+				</TR>
+			</TBODY>
+</TABLE>
+		<P></P>
+		<P></P>
+<DIV align=""><B><FONT size="4">b. SÍMBOLO DE IDENTIFICACIÓN DEL CONECTOR Y POSICIÓN DEL NÚMERO DE CLAVIJA</FONT></B></DIV>
+<P></P>
+<P></P>
+<DIV>
+<IMG class="ImageIndent" border="1" src="../../../../graphic-pool/J/7B/1/J7B1P104.png" alt="J7B1P104.png"><BR><A target="_blank" href="../../../../graphic-pool/J/7B/1/J7B1P104.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Gráfico de visualización"></A><A target="_blank" href="../../GraphicText/ewd/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Traducciones de texto en gráficos"></A><p style="font-size:9pt; border:1pt outset"></p>
+</DIV>
+<BR><P></P>
+		<P></P>
+		<P></P>
+<DIV align=""><B><FONT size="4">c. POSICIÓN DE TOMAS DE TIERRA Y CONECTORES</FONT></B></DIV>
+<P></P>
+<P></P>
+<UL><LI><DIV align="left" id="J5WE4"><FONT size="4" face="Arial, Helvetica, sans-serif"><B>CABLEADO DEL MOTOR</B></FONT></DIV></LI></UL>
+<P></P>
+				<P></P>
+<DIV align="left" id="J5DIESE4" class="ListIndentBul2Refer"><FONT size="3" face="Arial, Helvetica, sans-serif"><B>DIESEL</B></FONT></DIV>
+<P></P>
+					<P></P>
+<DIV>
+<IMG class="ImageIndent" border="1" src="../../../../graphic-pool/J/7B/1/J7B12007.png" alt="J7B12007.png"><BR><A target="_blank" href="../../../../graphic-pool/J/7B/1/J7B12007.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Gráfico de visualización"></A><A target="_blank" href="../../GraphicText/ewd/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Traducciones de texto en gráficos"></A><p style="font-size:9pt; border:1pt outset"></p>
+</DIV>
+<BR><P></P>
+				
+			
+		<P></P>
+	
+	<P></P>
+<DIV align="left" id="J5CWSC"><FONT size="4" face="Arial, Helvetica, sans-serif"><B>6) GRUPO Y CIRCUITO DEL SENSOR WIF</B></FONT></DIV>
+<P></P>
+		<P></P>
+<DIV>
+<IMG class="ImageIndent" border="1" src="../../../../graphic-pool/J/7B/1/J7B15213.png" alt="J7B15213.png"><BR><A target="_blank" href="../../../../graphic-pool/J/7B/1/J7B15213.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Gráfico de visualización"></A><A target="_blank" href="../../GraphicText/ewd/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Traducciones de texto en gráficos"></A><p style="font-size:9pt; border:1pt outset"></p>
+</DIV>
+<BR><P></P>
+		<P></P>
+<DIV align=""><B><FONT size="4">a. INFORMACIÓN DEL CONECTOR</FONT></B></DIV>
+<P></P>
+<TABLE BORDER="1" cellpadding="5%" width="95%" align="center" cellspacing="0">
+<THEAD><TR>
+<TD align="center" valign="middle" BGCOLOR="#d4d4d4"><B>Nº DE CONECTOR<BR>(Nº CLAVIJA, COLOR)</B></TD>
+<TD align="center" valign="middle" BGCOLOR="#d4d4d4"><B>CONEXIÓN DEL CABLEADO DE CONEXIÓN</B></TD>
+<TD align="center" valign="middle" BGCOLOR="#d4d4d4"><B>POSICIÓN DEL CONECTOR</B></TD>
+</TR></THEAD>
+<TBODY>
+<TR>
+<TD align="left" valign="middle" class="Normal" width="30%">C103 (10 patillas, blanco)</TD>
+					<TD align="left" valign="middle" class="Normal" width="35%">Motor - Caja de fusibles del motor</TD>
+					<TD align="left" valign="middle" class="Normal" width="40%">bloque (mazo) de fusibles del motor</TD>
+				</TR>
+				<TR>
+<TD align="left" valign="middle" class="Normal" width="30%">C106 (20 patillas, blanco)	</TD>
+					<TD align="left" valign="middle" class="Normal" width="35%">Motor - Caja de fusibles del motor</TD>
+					<TD align="left" valign="middle" class="Normal" width="40%">bloque (mazo) de fusibles del motor</TD>
+				</TR>
+				<TR>
+<TD align="left" valign="middle" class="Normal" width="30%">C108 (36 patillas, negro)</TD>
+					<TD align="left" valign="middle" class="Normal" width="35%">Carrocería - Motor (Diesel)</TD>
+					<TD align="left" valign="middle" class="Normal" width="40%">Caja de fusibles del motor, izquierda</TD>
+				</TR>
+				<TR>
+<TD align="left" valign="middle" class="Normal" width="30%">C113 (16 patillas, negro)</TD>
+					<TD align="left" valign="middle" class="Normal" width="35%">Carrocería - Parte delantera</TD>
+					<TD align="left" valign="middle" class="Normal" width="40%">Detrás del soporte del ECM</TD>
+				</TR>
+				<TR>
+<TD align="left" valign="middle" class="Normal" width="30%">C201 (76 patillas, negro)</TD>
+					<TD align="left" valign="middle" class="Normal" width="35%">P/I - Caja de fusibles del P/I</TD>
+					<TD align="left" valign="middle" class="Normal" width="40%">Caja de fusibles del P/I</TD>
+				</TR>
+				<TR>
+<TD align="left" valign="middle" class="Normal" width="30%">C202 (89 patillas, blanco)	</TD>
+					<TD align="left" valign="middle" class="Normal" width="35%">P/I - Carrocería </TD>
+					<TD align="left" valign="middle" class="Normal" width="40%">Lado izquierdo del compartimento para las piernas del conductor</TD>
+				</TR>
+				<TR>
+<TD align="left" valign="middle" class="Normal" width="30%">C208 (15 patillas, blanco)</TD>
+					<TD align="left" valign="middle" class="Normal" width="35%">P/I - FATC</TD>
+					<TD align="left" valign="middle" class="Normal" width="40%">Detrás de la guantera</TD>
+				</TR>
+				<TR>
+<TD align="left" valign="middle" class="Normal" width="30%">C211 (patilla 15, blanco)</TD>
+					<TD align="left" valign="middle" class="Normal" width="35%">I.P - Carrocería (Diesel)</TD>
+					<TD align="left" valign="middle" class="Normal" width="40%">Lado izquierdo del compartimento para las piernas del conductor</TD>
+				</TR>
+				<TR>
+<TD align="left" valign="middle" class="Normal" width="30%">G104</TD>
+					<TD align="left" valign="middle" class="Normal" width="35%">Motor</TD>
+					<TD align="left" valign="middle" class="Normal" width="40%">Debajo del motor de arranque</TD>
+				</TR>
+			</TBODY>
+</TABLE>
+		<P></P>
+		<P></P>
+<DIV align=""><B><FONT size="4">b. SÍMBOLO DE IDENTIFICACIÓN DEL CONECTOR Y POSICIÓN DEL NÚMERO DE CLAVIJA</FONT></B></DIV>
+<P></P>
+<P></P>
+<DIV>
+<IMG class="ImageIndent" border="1" src="../../../../graphic-pool/J/7B/1/J7B1P115.png" alt="J7B1P115.png"><BR><A target="_blank" href="../../../../graphic-pool/J/7B/1/J7B1P115.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Gráfico de visualización"></A><A target="_blank" href="../../GraphicText/ewd/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Traducciones de texto en gráficos"></A><p style="font-size:9pt; border:1pt outset"></p>
+</DIV>
+<BR><P></P>
+		<P></P>
+		<P></P>
+<DIV align=""><B><FONT size="4">c. POSICIÓN DE TOMAS DE TIERRA Y CONECTORES</FONT></B></DIV>
+<P></P>
+<P></P>
+<UL><LI><DIV align="left" id="J5WE05"><FONT size="4" face="Arial, Helvetica, sans-serif"><B>CABLEADO DEL MOTOR</B></FONT></DIV></LI></UL>
+<P></P>
+				<P></P>
+<DIV align="left" id="J5DIESE5" class="ListIndentBul2Refer"><FONT size="3" face="Arial, Helvetica, sans-serif"><B>DIESEL</B></FONT></DIV>
+<P></P>
+					<P></P>
+<DIV>
+<IMG class="ImageIndent" border="1" src="../../../../graphic-pool/J/7B/1/J7B12007.png" alt="J7B12007.png"><BR><A target="_blank" href="../../../../graphic-pool/J/7B/1/J7B12007.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Gráfico de visualización"></A><A target="_blank" href="../../GraphicText/ewd/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Traducciones de texto en gráficos"></A><p style="font-size:9pt; border:1pt outset"></p>
+</DIV>
+<BR><P></P>
+					<P></P>
+<DIV>
+<IMG class="ImageIndent" border="1" src="../../../../graphic-pool/J/7B/1/J7B12008.png" alt="J7B12008.png"><BR><A target="_blank" href="../../../../graphic-pool/J/7B/1/J7B12008.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Gráfico de visualización"></A><A target="_blank" href="../../GraphicText/ewd/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Traducciones de texto en gráficos"></A><p style="font-size:9pt; border:1pt outset"></p>
+</DIV>
+<BR><P></P>
+				
+			
+		<P></P>
+	
+	<P></P>
+<DIV align="left" id="J5BSASC"><FONT size="4" face="Arial, Helvetica, sans-serif"><B>7) INTERRUPTOR DE FRENOS, SENSOR APP Y CIRCUITO DE CONTROL DE VELOCIDAD CRUCERO</B></FONT></DIV>
+<P></P>
+		<P></P>
+<DIV>
+<IMG class="ImageIndent" border="1" src="../../../../graphic-pool/J/9B/1/J9B15095.png" alt="J9B15095.png"><BR><A target="_blank" href="../../../../graphic-pool/J/9B/1/J9B15095.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Gráfico de visualización"></A><A target="_blank" href="../../GraphicText/ewd/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Traducciones de texto en gráficos"></A><p style="font-size:9pt; border:1pt outset"></p>
+</DIV>
+<BR><P></P>
+		<P></P>
+<DIV align=""><B><FONT size="4">a. INFORMACIÓN DEL CONECTOR</FONT></B></DIV>
+<P></P>
+<TABLE BORDER="1" cellpadding="5%" width="95%" align="center" cellspacing="0">
+<THEAD><TR>
+<TD align="center" valign="middle" BGCOLOR="#d4d4d4"><B>Nº DE CONECTOR<BR>(Nº CLAVIJA, COLOR)</B></TD>
+<TD align="center" valign="middle" BGCOLOR="#d4d4d4"><B>CONEXIÓN DEL CABLEADO DE CONEXIÓN</B></TD>
+<TD align="center" valign="middle" BGCOLOR="#d4d4d4"><B>POSICIÓN DEL CONECTOR</B></TD>
+</TR></THEAD>
+<TBODY>
+<TR>
+<TD align="left" valign="middle" class="Normal" width="30%">C102 (11 patillas, blanco)	</TD>
+					<TD align="left" valign="middle" class="Normal" width="35%">Carrocería - Caja de fusibles del motor</TD>
+					<TD align="left" valign="middle" class="Normal" width="40%">bloque (mazo) de fusibles del motor</TD>
+				</TR>
+				<TR>
+<TD align="left" valign="middle" class="Normal" width="30%">C108 (36 patillas, negro)</TD>
+					<TD align="left" valign="middle" class="Normal" width="35%">Carrocería - Motor (Diesel)</TD>
+					<TD align="left" valign="middle" class="Normal" width="40%">Caja de fusibles del motor, izquierda</TD>
+				</TR>
+				<TR>
+<TD align="left" valign="middle" class="Normal" width="30%">C201 (76 patillas, negro)</TD>
+					<TD align="left" valign="middle" class="Normal" width="35%">P/I - Caja de fusibles del P/I</TD>
+					<TD align="left" valign="middle" class="Normal" width="40%">Caja de fusibles del P/I</TD>
+				</TR>
+				<TR>
+<TD align="left" valign="middle" class="Normal" width="30%">C202 (89 patillas, blanco)	</TD>
+					<TD align="left" valign="middle" class="Normal" width="35%">P/I - Carrocería </TD>
+					<TD align="left" valign="middle" class="Normal" width="40%">Lado izquierdo del compartimento para las piernas del conductor</TD>
+				</TR>
+			</TBODY>
+</TABLE>
+		<P></P>
+		<P></P>
+<DIV align=""><B><FONT size="4">b. SÍMBOLO DE IDENTIFICACIÓN DEL CONECTOR Y POSICIÓN DEL NÚMERO DE CLAVIJA</FONT></B></DIV>
+<P></P>
+<P></P>
+<DIV>
+<IMG class="ImageIndent" border="1" src="../../../../graphic-pool/J/7B/1/J7B1P106.png" alt="J7B1P106.png"><BR><A target="_blank" href="../../../../graphic-pool/J/7B/1/J7B1P106.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Gráfico de visualización"></A><A target="_blank" href="../../GraphicText/ewd/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Traducciones de texto en gráficos"></A><p style="font-size:9pt; border:1pt outset"></p>
+</DIV>
+<BR><P></P>
+		<P></P>
+		<P></P>
+<DIV align=""><B><FONT size="4">c. POSICIÓN DE TOMAS DE TIERRA Y CONECTORES</FONT></B></DIV>
+<P></P>
+<P></P>
+<UL><LI><DIV align="left" id="J5WIP"><FONT size="4" face="Arial, Helvetica, sans-serif"><B>CABLEADO DEL PANEL DE INSTRUMENTOS</B></FONT></DIV></LI></UL>
+<P></P>
+				<P></P>
+<DIV>
+<IMG class="ImageIndent" border="1" src="../../../../graphic-pool/J/9B/1/J9B12004.png" alt="J9B12004.png"><BR><A target="_blank" href="../../../../graphic-pool/J/9B/1/J9B12004.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Gráfico de visualización"></A><A target="_blank" href="../../GraphicText/ewd/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Traducciones de texto en gráficos"></A><p style="font-size:9pt; border:1pt outset"></p>
+</DIV>
+<BR><P></P>
+			
+		<P></P>
+	
+	<P></P>
+<DIV align="left" id="J5DMLIC"><FONT size="4" face="Arial, Helvetica, sans-serif"><B>8) DLC, LUZ DE MIL Y CIRCUITO DE CONTROL DE INMOVILIZADOR: CON INMOVILIZADOR</B></FONT></DIV>
+<P></P>
+		<P></P>
+<DIV>
+<IMG class="ImageIndent" border="1" src="../../../../graphic-pool/J/9B/1/J9B15007.png" alt="J9B15007.png"><BR><A target="_blank" href="../../../../graphic-pool/J/9B/1/J9B15007.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Gráfico de visualización"></A><A target="_blank" href="../../GraphicText/ewd/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Traducciones de texto en gráficos"></A><p style="font-size:9pt; border:1pt outset"></p>
+</DIV>
+<BR><P></P>
+		<P></P>
+<DIV align=""><B><FONT size="4">a. INFORMACIÓN DEL CONECTOR</FONT></B></DIV>
+<P></P>
+<TABLE BORDER="1" cellpadding="5%" width="95%" align="center" cellspacing="0">
+<THEAD><TR>
+<TD align="center" valign="middle" BGCOLOR="#d4d4d4"><B>Nº DE CONECTOR<BR>(Nº CLAVIJA, COLOR)</B></TD>
+<TD align="center" valign="middle" BGCOLOR="#d4d4d4"><B>CONEXIÓN DEL CABLEADO DE CONEXIÓN</B></TD>
+<TD align="center" valign="middle" BGCOLOR="#d4d4d4"><B>POSICIÓN DEL CONECTOR</B></TD>
+</TR></THEAD>
+<TBODY>
+<TR>
+<TD align="left" valign="middle" class="Normal" width="30%">C105 (4 patillas, blanco)</TD>
+					<TD align="left" valign="middle" class="Normal" width="35%">Carrocería - Caja de fusibles del motor</TD>
+					<TD align="left" valign="middle" class="Normal" width="40%">bloque (mazo) de fusibles del motor</TD>
+				</TR>
+				<TR>
+<TD align="left" valign="middle" class="Normal" width="30%">C108 (36 patillas, negro)</TD>
+					<TD align="left" valign="middle" class="Normal" width="35%">Carrocería - Motor (Diesel)</TD>
+					<TD align="left" valign="middle" class="Normal" width="40%">Caja de fusibles del motor, izquierda</TD>
+				</TR>
+				<TR>
+<TD align="left" valign="middle" class="Normal" width="30%">C110 (12 patillas, blanco)	</TD>
+					<TD align="left" valign="middle" class="Normal" width="35%">ABS - Carrocería</TD>
+					<TD align="left" valign="middle" class="Normal" width="40%">Debajo de la caja de fusibles del motor</TD>
+				</TR>
+				<TR>
+<TD align="left" valign="middle" class="Normal" width="30%">C201 (76 patillas, negro)</TD>
+					<TD align="left" valign="middle" class="Normal" width="35%">P/I - Caja de fusibles del P/I</TD>
+					<TD align="left" valign="middle" class="Normal" width="40%">Caja de fusibles del P/I</TD>
+				</TR>
+				<TR>
+<TD align="left" valign="middle" class="Normal" width="30%">C202 (89 patillas, blanco)	</TD>
+					<TD align="left" valign="middle" class="Normal" width="35%">P/I - Carrocería </TD>
+					<TD align="left" valign="middle" class="Normal" width="40%">Lado izquierdo del compartimento para las piernas del conductor</TD>
+				</TR>
+				<TR>
+<TD align="left" valign="middle" class="Normal" width="30%">C206 (22 patillas, blanco)</TD>
+					<TD align="left" valign="middle" class="Normal" width="35%">P/I - TCM	</TD>
+					<TD align="left" valign="middle" class="Normal" width="40%">Encima del compartimento para las piernas del conductor</TD>
+				</TR>
+				<TR>
+<TD align="left" valign="middle" class="Normal" width="30%">C207 (6 patillas, blanco)</TD>
+					<TD align="left" valign="middle" class="Normal" width="35%">Airbag - P/I</TD>
+					<TD align="left" valign="middle" class="Normal" width="40%">Encima del compartimento derecho para las piernas del conductor</TD>
+				</TR>
+				<TR>
+<TD align="left" valign="middle" class="Normal" width="30%">G201</TD>
+					<TD align="left" valign="middle" class="Normal" width="35%">P/I</TD>
+					<TD align="left" valign="middle" class="Normal" width="40%">Caja de fusibles del P/I, izquierda</TD>
+				</TR>
+			</TBODY>
+</TABLE>
+		<P></P>
+		<P></P>
+<DIV align=""><B><FONT size="4">b. SÍMBOLO DE IDENTIFICACIÓN DEL CONECTOR Y POSICIÓN DEL NÚMERO DE CLAVIJA</FONT></B></DIV>
+<P></P>
+<P></P>
+<DIV>
+<IMG class="ImageIndent" border="1" src="../../../../graphic-pool/J/7B/1/J7B1P107.png" alt="J7B1P107.png"><BR><A target="_blank" href="../../../../graphic-pool/J/7B/1/J7B1P107.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Gráfico de visualización"></A><A target="_blank" href="../../GraphicText/ewd/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Traducciones de texto en gráficos"></A><p style="font-size:9pt; border:1pt outset"></p>
+</DIV>
+<BR><P></P>
+		<P></P>
+		<P></P>
+<DIV align=""><B><FONT size="4">c. POSICIÓN DE TOMAS DE TIERRA Y CONECTORES</FONT></B></DIV>
+<P></P>
+<P></P>
+<UL><LI><DIV align="left" id="J5WIP2"><FONT size="4" face="Arial, Helvetica, sans-serif"><B>CABLEADO DEL PANEL DE INSTRUMENTOS</B></FONT></DIV></LI></UL>
+<P></P>
+				<P></P>
+<DIV>
+<IMG class="ImageIndent" border="1" src="../../../../graphic-pool/J/9B/1/J9B12004.png" alt="J9B12004.png"><BR><A target="_blank" href="../../../../graphic-pool/J/9B/1/J9B12004.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Gráfico de visualización"></A><A target="_blank" href="../../GraphicText/ewd/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Traducciones de texto en gráficos"></A><p style="font-size:9pt; border:1pt outset"></p>
+</DIV>
+<BR><P></P>
+			
+		<P></P>
+	
+	<P></P>
+<DIV align="left" id="J5DMLIC1"><FONT size="4" face="Arial, Helvetica, sans-serif"><B>9) CIRCUITO DE DLC Y LUZ DE MIL: SIN INMOVILIZADOR</B></FONT></DIV>
+<P></P>
+		<P></P>
+<DIV>
+<IMG class="ImageIndent" border="1" src="../../../../graphic-pool/J/9B/1/J9B15008.png" alt="J9B15008.png"><BR><A target="_blank" href="../../../../graphic-pool/J/9B/1/J9B15008.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Gráfico de visualización"></A><A target="_blank" href="../../GraphicText/ewd/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Traducciones de texto en gráficos"></A><p style="font-size:9pt; border:1pt outset"></p>
+</DIV>
+<BR><P></P>
+		<P></P>
+<DIV align=""><B><FONT size="4">a. INFORMACIÓN DEL CONECTOR</FONT></B></DIV>
+<P></P>
+<TABLE BORDER="1" cellpadding="5%" width="95%" align="center" cellspacing="0">
+<THEAD><TR>
+<TD align="center" valign="middle" BGCOLOR="#d4d4d4"><B>Nº DE CONECTOR<BR>(Nº CLAVIJA, COLOR)</B></TD>
+<TD align="center" valign="middle" BGCOLOR="#d4d4d4"><B>CONEXIÓN DEL CABLEADO DE CONEXIÓN</B></TD>
+<TD align="center" valign="middle" BGCOLOR="#d4d4d4"><B>POSICIÓN DEL CONECTOR</B></TD>
+</TR></THEAD>
+<TBODY>
+<TR>
+<TD align="left" valign="middle" class="Normal" width="30%">C105 (4 patillas, blanco)</TD>
+					<TD align="left" valign="middle" class="Normal" width="35%">Carrocería - Caja de fusibles del motor</TD>
+					<TD align="left" valign="middle" class="Normal" width="40%">bloque (mazo) de fusibles del motor</TD>
+				</TR>
+				<TR>
+<TD align="left" valign="middle" class="Normal" width="30%">C108 (36 patillas, negro)</TD>
+					<TD align="left" valign="middle" class="Normal" width="35%">Carrocería - Motor (Diesel)</TD>
+					<TD align="left" valign="middle" class="Normal" width="40%">Caja de fusibles del motor, izquierda</TD>
+				</TR>
+				<TR>
+<TD align="left" valign="middle" class="Normal" width="30%">C110 (12 patillas, blanco)	</TD>
+					<TD align="left" valign="middle" class="Normal" width="35%">ABS - Carrocería</TD>
+					<TD align="left" valign="middle" class="Normal" width="40%">Debajo de la caja de fusibles del motor</TD>
+				</TR>
+				<TR>
+<TD align="left" valign="middle" class="Normal" width="30%">C201 (76 patillas, negro)</TD>
+					<TD align="left" valign="middle" class="Normal" width="35%">P/I - Caja de fusibles del P/I</TD>
+					<TD align="left" valign="middle" class="Normal" width="40%">Caja de fusibles del P/I</TD>
+				</TR>
+				<TR>
+<TD align="left" valign="middle" class="Normal" width="30%">C202 (89 patillas, blanco)	</TD>
+					<TD align="left" valign="middle" class="Normal" width="35%">P/I - Carrocería </TD>
+					<TD align="left" valign="middle" class="Normal" width="40%">Lado izquierdo del compartimento para las piernas del conductor</TD>
+				</TR>
+				<TR>
+<TD align="left" valign="middle" class="Normal" width="30%">C206 (22 patillas, blanco)</TD>
+					<TD align="left" valign="middle" class="Normal" width="35%">P/I - TCM	</TD>
+					<TD align="left" valign="middle" class="Normal" width="40%">Encima del compartimento para las piernas del conductor</TD>
+				</TR>
+				<TR>
+<TD align="left" valign="middle" class="Normal" width="30%">C207 (6 patillas, blanco)</TD>
+					<TD align="left" valign="middle" class="Normal" width="35%">Airbag - P/I</TD>
+					<TD align="left" valign="middle" class="Normal" width="40%">Encima del compartimento derecho para las piernas del conductor</TD>
+				</TR>
+				<TR>
+<TD align="left" valign="middle" class="Normal" width="30%">G201</TD>
+					<TD align="left" valign="middle" class="Normal" width="35%">P/I</TD>
+					<TD align="left" valign="middle" class="Normal" width="40%">Caja de fusibles del P/I, izquierda</TD>
+				</TR>
+			</TBODY>
+</TABLE>
+		<P></P>
+		<P></P>
+<DIV align=""><B><FONT size="4">b. SÍMBOLO DE IDENTIFICACIÓN DEL CONECTOR Y POSICIÓN DEL NÚMERO DE CLAVIJA</FONT></B></DIV>
+<P></P>
+<P></P>
+<DIV>
+<IMG class="ImageIndent" border="1" src="../../../../graphic-pool/J/7B/1/J7B1P108.png" alt="J7B1P108.png"><BR><A target="_blank" href="../../../../graphic-pool/J/7B/1/J7B1P108.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Gráfico de visualización"></A><A target="_blank" href="../../GraphicText/ewd/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Traducciones de texto en gráficos"></A><p style="font-size:9pt; border:1pt outset"></p>
+</DIV>
+<BR><P></P>
+		<P></P>
+		<P></P>
+<DIV align=""><B><FONT size="4">c. POSICIÓN DE TOMAS DE TIERRA Y CONECTORES</FONT></B></DIV>
+<P></P>
+<P></P>
+<UL><LI><DIV align="left" id="J5WIP3"><FONT size="4" face="Arial, Helvetica, sans-serif"><B>CABLEADO DEL PANEL DE INSTRUMENTOS</B></FONT></DIV></LI></UL>
+<P></P>
+				<P></P>
+<DIV>
+<IMG class="ImageIndent" border="1" src="../../../../graphic-pool/J/9B/1/J9B12004.png" alt="J9B12004.png"><BR><A target="_blank" href="../../../../graphic-pool/J/9B/1/J9B12004.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Gráfico de visualización"></A><A target="_blank" href="../../GraphicText/ewd/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Traducciones de texto en gráficos"></A><p style="font-size:9pt; border:1pt outset"></p>
+</DIV>
+<BR><P></P>
+			
+		<P></P>
+	
+<TABLE align="center"><TR>
+<TD align="left"><A href="7J2_5_4.es.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_back.gif" alt="A la página anterior"></A></TD>
+<TD align="left"></TD>
+<TD align="left"><A href="7J2_5_6.es.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_next.gif" alt="A la página siguiente"></A></TD>
+<TD></TD>
+</TR></TABLE>
+<BR><BR><TABLE width="100%"><TBODY><TR BGCOLOR="DarkSlateBlue" align="center"><TD><FONT color="white"><B>© Copyright Chevrolet Europe. Reservados todos los derechos</B></FONT></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>

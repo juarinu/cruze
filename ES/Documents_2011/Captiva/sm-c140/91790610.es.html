@@ -1,0 +1,113 @@
+<HTML>
+<head><link rel="stylesheet" type="text/css" href="si-style.css"/><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><TITLE>Información de servicio</TITLE><STYLE>
+	.ListIndentBul2Refer{margin-left : 40pt}  ..ListIndentBul2{margin-left : -20pt}
+	.SubListIndent{margin-left : -15pt}
+	.UpNo{border-top : white}  .DownNo{border-bottom : white}  ..BothNo{border-top : white; border-bottom : white}
+	.UpBold{border-top : thin double ridge}  .DownBold{border-bottom : thin double ridge}  .BothBold{border-top : thin double ridge; border-bottom : thin double ridge}
+	.ImageIndent{margin-left : 0%}  .ImageTitleIndent{margin-left : 5%}  .ParagraphIndent{margin-left : 20pt}
+	.Arial{font-family : Arial, Helvetica, sans-serif; margin-left : 10pt; margin-right : 10pt}
+</STYLE>
+<SCRIPT LANGUAGE="JavaScript">
+	function FixMenu()
+	{
+		menuTop = document.body.scrollTop + document.body.clientHeight -40;
+		menu.style.top = menuTop;
+		menu.style.width = document.body.clientWidth; 
+	}
+</SCRIPT>
+</HEAD>
+<BODY class="Arial" onLoad="FixMenu()" onScroll="FixMenu()" onResize="FixMenu()" BGCOLOR="#FFFFFF">
+<SPAN ID="menu" STYLE="position:absolute; left:0px; top:0px; width:0px">
+	<A border="0" href="91790610.es.html">
+	<IMG src="../../../../graphic-pool/Icons/Totop.gif" align="right" halign="Bottom" border="0" alt="To the top of the document"></A>
+</SPAN>
+<TABLE width="100%" BORDER="1" rules="none" cellspacing="0" cellpadding="0" style="magin-top: 5pt">
+<TBODY>
+<TR BGCOLOR="cccc99" height="15">
+<TD width="30%"><div style="padding-left: 5pt"><B><FONT face="Arial">Captiva</FONT></B></div></TD>
+<TD width="70%" align="right" colspan="8"></TD>
+</TR>
+<TR BGCOLOR="white" height="60">
+<TD width="35%" align="left">
+<TABLE>
+<TR>
+<TD width="5%" align="left">&nbsp;</TD>
+<TD width="5%" align="left"></TD>
+<TD width="5%" align="left">&nbsp;</TD>
+</TR>
+</TABLE>
+</TD>
+<TD>
+<TABLE width="65%" align="right">
+<TR>
+<TD style="font-size:10">
+	<A href="../../../GMDE_TIS_START.html" target="_top">
+	<IMG src="../../code/menu-images/home.gif" border="0" alt="GMDE Start Page">
+</A></TD>
+<TD style="font-size:10">
+	<A href="../toc_Captiva.html" target="menu"><IMG src="../../code/menu-images/static-TOC.gif" border="0" alt="Load static TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../toc_Captiva_code.html" target="code"><IMG src="../../code/menu-images/menu_folder_open.gif" border="0" alt="Load dynamic TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../../help/readme_EN.htm" target="top" class="bottom_copyright"><IMG src="../../code/menu-images/help.gif" border="0" alt="Help?"></A>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<H2>Descripción y funcionamiento del inmovilizador</H2>
+
+<A NAME="ss1-1790610">
+<A HREF="#ss1-1790610">
+<H3>Sistema antirrobo del vehículo (VTD) -- Inmovilizador</H3></A><p>El módulo electrónico de la carrocería (BCM) proporciona las funciones del sistema antirrobo del vehículo (VTD). Cuando se introduce la llave en el interruptor del encendido y esta se coloca en la posición ON, el BCM suministra tensión de la batería al módulo excitador del sistema antirrobo del vehículo. El módulo excitador del sistema antirrobo del vehículo, que rodea el bombillo del interruptor de encendido, energiza el transpondedor incorporado en el cabezal de la llave. El transpondedor energizado transmite una señal que contiene un valor único, que es recibida por el módulo del excitador del sistema antirrobo del vehículo. El BCM supervisa el valor del transpondedor en el módulo del excitador del sistema antirrobo del vehículo a través del circuito de señal del sensor del sistema de seguridad. Acto seguido, el BCM compara este valor con otro almacenado en la memoria, el código de llave memorizado. Si el valor es correcto, el BCM envía al módulo de control del motor, a través de un circuito de datos serie, una contraseña de continuación de combustible. Si el valor del transpondedor no es correcto, el BCM enviará la contraseña de inhabilitación de combustible a través del circuito de datos serie. </p>
+<p>Los componentes del sistema VTD son:</p>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Módulo antirrobo (TDM)</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Módulo de control de la carrocería (BCM)</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Llave de encendido (Transpondedor)</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Indicador de seguridad</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Módulo de control del motor (ECM)</td></tr></table></div>
+
+<h4>Inmovilizador del módulo antirrobo (TDM) </h4><p>Los vehículos equipados con interruptores de encendido montados en la columna de la dirección incoroporan un excitador en el módulo antirrobo (TDM), situado en la columna de la dirección. El TDM puede memorizar hasta 10&nbsp;llaves (valores de transpondedor).</p>
+<p>El TDM emplea las siguientes señales de entrada: tensión de la batería, tensión conmutada por el encendido y circuito de conexión a masa. El módulo de control del sistema antirrobo emplea las siguientes señales de salida:</p>
+<p>Intercambio de contraseñas y solicitud de autenticación/respuesta con el módulo de control del motor (ECM).</p>
+<p>Cuando se introduce la llave en el cilindro de la cerradura de encendido y se gira a la posición ON, el transpondedor incorporado en la llave es alimentado por las bobinas excitadoras que rodean dicho cilindro. El transpondedor energizado transmite una señal que contiene un valor único, que es recibida por el módulo de control del sistema antirrobo del vehículo. A continuación, el módulo de control del sistema antirrobo del vehículo compara este valor con el código de llave almacenado en la memoria. Seguidamente, el módulo de control del sistema antirrobo del vehículo efectúa una de las funciones siguientes:</p>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Si el valor del transpondedor coincide con el valor almacenado en la memoria del TDM, el TDM envía el mensaje de habilitación de combustible al ECM a través del circuito de datos serie.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Si el valor único del transpondedor no coincide con el valor almacenado en el TDM, el TDM envía el mensaje de inhabilitación de combustible al ECM a través del circuito de datos serie.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Si el valor único del transpondedor no coincide con el valor almacenado en el TDM, el TDM envía el mensaje de inhabilitación de combustible al ECM a través del circuito de datos serie.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Si el TDM no consigue medir el valor del transpondedor de la llave de encendido, el TDM no enviará ningún mensaje al ECM.</td></tr></table></div>
+
+<h4>Módulo de control del motor (ECM)</h4><p>Cuando el módulo de control del motor (ECM) recibe la contraseña de habilitación de combustible del módulo antirrobo (TDM), el ECM autenticará la contraseña. El ECM devuelve esta autenticación al TDM a través del circuito de datos serie. Tanto el ECM como el TDM realizan un cálculo en la recepción de esta señal. Si la respuesta calculada procedente del TDM es igual al cálculo realizado por el ECM, el ECM permitirá el arranque del vehículo.</p>
+<p>El ECM desactivará el arranque del vehículo si se da alguno de los siguientes problemas:</p>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">La contraseña de habilitación del combustible no es válida.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">La contraseña de desactivación de combustible es enviada por el TDM.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">No se reciben contraseñas - No existe comunicación con el TDM.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">La respuesta calculada del TDM a la autenticación no es igual al cálculo del ECM.</td></tr></table></div>
+
+<h4>La llave de encendido (Transpondedor)</h4><p>La llave de encendido para vehículos equipados con Llave maestra III+ (PK3+) es una llave de encendido estándar con un transpondedor situado en el cabezal de plástico de la llave. El valor del transpondedor es fijo y no es posible cambiarlo. El sistema antirrobo del vehículo (VTD) emplea el valor del transpondedor de la llave de encendido para determinar si se emplea una llave de encendido válida para arrancar el vehículo. Hay aproximadamente 3&nbsp;trillones de valores de transpondedor posibles.</p>
+<p>Las llaves de flete permiten acceso total al vehículo del mismo modo que una llave maestra. No obstante, a diferencia de una llave maestra que solo puede memorizar 10&nbsp;llaves de un vehículo concreto, un vehículo puede memorizar un número ilimitado de llaves de flete. Las llaves de flete solo se usan en vehículos configurados para empleo en parques móviles de la policía.</p>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Ponga en marcha el vehículo.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Bloqueo/desbloqueo de las cerraduras de las puertas y el compartimento trasero.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Bloqueo/desbloqueo de los compartimentos portaobjetos.</td></tr></table></div>
+
+<h4>Indicador de seguridad</h4><p>El módulo antirrobo (TDM) puede ordenar al reloj que ilumine el testigo de seguridad solo cuando la llave del encendido esté en la posición ON. El TDM ordenará que se ilumine el testigo de seguridad siempre que se detecte una avería en el sistema VTD y cuando se desactive el arranque del motor.</p>
+
+
+
+<TABLE align="center"><TR>
+<TD align="left">&nbsp;</TD>
+<TD align="left"></TD>
+<TD align="left">&nbsp;</TD>
+<TD></TD>
+</TR></TABLE>
+<BR><BR><TABLE width="100%"><TBODY><TR BGCOLOR="DarkSlateBlue" align="center"><TD><FONT color="white"><B>© Copyright Chevrolet Europe. All rights reserved</B></FONT></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>

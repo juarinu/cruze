@@ -1,0 +1,3935 @@
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style>.T2{    BORDER-TOP: white;}  .T3{    BORDER-BOTTOM: white;} .T4{    BORDER-TOP: white;    BORDER-BOTTOM: white} .I{ padding-left : 10pt}  .Tighten{ padding-left : 7pt} .Arial{ font-family : Arial, Helvetica, sans-serif;margin-left: 10pt;margin-right : 10pt } .TableB{ margin-left : 0pt}</style>
+<TITLE>Manual de servicio técnico2008 Captiva DTC P0131 -
+
+ </TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+
+ function FixMenu()
+{
+menuTop = document.body.scrollTop + document.body.clientHeight -40;
+menu.style.top = menuTop;
+menu.style.width = document.body.clientWidth; 
+}
+
+</SCRIPT>
+</HEAD>
+<BODY class="Arial" onLoad="FixMenu()" onScroll="FixMenu()" onResize="FixMenu()">
+<SPAN ID="menu" STYLE="position:absolute; left:0px; top:0px; width:0px"><A border="0" href="7C2_1F26.es.html"><IMG src="../../../../graphic-pool/Icons/Totop.gif" align="right" halign="Bottom" border="0" alt="Al principio del documento"></A></SPAN><TABLE width="100%" BORDER="1" rules="none" cellspacing="0" cellpadding="0" style="magin-top: 5pt"><TBODY>
+<TR BGCOLOR="cccc99" height="15">
+<TD width="30%"><div style="padding-left: 5pt"><B><FONT face="Arial">Captiva</FONT></B></div></TD>
+<TD width="70%" align="right" colspan="8"></TD>
+</TR>
+<TR BGCOLOR="white" height="60">
+<TD width="35%" align="left"><TABLE><TR>
+<TD width="5%" align="left"><A href="7C2_1F25.es.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_back.gif" alt="A la página anterior"></A></TD>
+<TD width="5%" align="left"></TD>
+<TD width="5%" align="left"><A href="7C2_1F07.es.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_next.gif" alt="A la página siguiente"></A></TD>
+</TR></TABLE></TD>
+<TD><TABLE width="65%" align="right"><TR>
+<TD style="font-size:10"><A href="../../../GMDE_TIS_START.html" target="_top"><IMG src="../../code/menu-images/home.gif" border="0" alt="Página de inicio GMDE"></A></TD>
+<TD style="font-size:10"><A href="../toc_Captiva.html" target="menu"><IMG src="../../code/menu-images/static-TOC.gif" border="0" alt="Índice estático"></A></TD>
+<TD style="font-size:10"><A href="../toc_Captiva_code.html" target="code"><IMG src="../../code/menu-images/menu_folder_open.gif" border="0" alt="Índice dinámico"></A></TD>
+<TD style="font-size:10"><A href="../../help/readme_EN.htm" target="top" class="bottom_copyright"><IMG src="../../code/menu-images/help.gif" border="0" alt="¿Ayuda?"></A></TD>
+</TR></TABLE></TD>
+</TR>
+</TBODY></TABLE>
+	
+		<P></P>
+<DIV align="center" id="C1F2P0131"><font size="4"><b>DTC P0131 -
+
+  </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="C1F2HCLVS"><font size="4"><b>Baja tensión del circuito de la HO2S (sensor 1)</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="C1F2CD"><b>descripción del circuito</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">El módulo de control electrónico del motor (ECM) suministra una tensión aproximada de 0,45V entre los terminales 22 y 3 del conector J2 del ECM. La sonda calentada lambda (O2) varía la tensión dentro de una gama de aproximadamente 1V si el escape es rico, bajando a 0,1V si el escape es pobre. El sensor de O2 es como un circuito abierto y no genera tensión cuando está por debajo de 300°C (600°F). Un circuito abierto del sensor de O2 ó un sensor de O2 frío provocan un funcionamiento en "bucle abierto".</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2CRD"><b>Condiciones para la ejecución del DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>La tensión de la HO2S 2 sea superior a 0,5 voltios.</Li>
+					<Li>El control de la sonda HO2S1 está activado.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2CSD"><b>Condiciones para la activación del DTC</b></DIV>
+<P></P>
+			
+				<UL>
+<Li>La tensión de la HO2S es inferior a 0,06 voltios.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2ATWDS"><b>Acción realizada cuando se activa el DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>La luz testigo de fallo (MIL) se iluminará en cuanto se produzca el error.</Li>
+					<Li>El ECM registrará las condiciones de funcionamiento en el momento de la avería. Esta información se almacenará en las memorias intermedias de datos instantáneos y registros de averías.</Li>
+					<Li>Se almacena un historial del DTC.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2CCM"><b>Condiciones para borrar el DTC y apagar la MIL</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>La MIL se apagará después de tres o cuatro ciclos de conducción consecutivos en los que se efectúe el diagnóstico sin ningún fallo.</Li>
+					<Li>El historial del DTC se borrará después de efectuar 40 ciclos consecutivos de calentamiento sin ninguna avería.</Li>
+					<Li>El(los) DTC(s) puede(n) borrarse empleando un scanner.</Li>
+					<Li>Desconectando la alimentación de la batería del ECM durante 10 segundos.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2DA"><b>Asistencia en el diagnóstico</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">La tensión del scanner varía entre 0,1 voltios y 1,0 voltios mientras está en bucle cerrado.</div>
+				<div class="T1" align="left">Compruebe el cable del sensor de oxígeno (O2). El sensor de O2 puede estar colocado incorrectamente y estar tocando el colector de escape.</div>
+				<div class="T1" align="left">Compruebe si hay alguna conexión a masa intermitente en el cable entre el sensor de O2 y el módulo de control electrónico del motor.</div>
+				<div class="T1" align="left">Realice una prueba de equilibrio de los inyectores para determinar que la obstrucción de un inyector de combustible es la causa del fallo de mezcla pobre.</div>
+				<div class="T1" align="left">Las fugas de vacío en el cárter motor causarán un fallo de mezcla pobre.</div>
+				<div class="T1" align="left">Las fugas en la junta o las grietas en el colector de escape pueden causar que el aire exterior sea succionado hacia el interior del escape y más allá del sensor.</div>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="C1F2P01311"><font size="4"><b>DTC P0131 - Baja tensión del circuito de la HO2S (sensor 1)</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Paso</B></TD>
+<TD align="center"><B>Medida</B></TD>
+<TD align="center"><B>Valor(es)</B></TD>
+<TD align="center"><B>Sí</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Efectúe la comprobación del sistema de diagnóstico.</div>
+								<div>¿Se ha efectuado la comprobación?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Ir a   <A target="_blank" href="7C2_1F22.es.html#C1F2DSC">"Comprobación del sistema de diagnóstico"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Enchufe el scanner al conector de diagnóstico (DLC).</Li>
+									<Li>Deje en marcha el motor hasta que alcance la temperatura normal de funcionamiento.</Li>
+									<Li>Compruebe si está funcionando en bucle cerrado.</Li>
+								</OL>
+								<div>¿El módulo de control electrónico del motor (ECM) entra en bucle cerrado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 9</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Deje en marcha el motor hasta que alcance la temperatura normal de funcionamiento.</Li>
+									<Li>Pise el pedal del acelerador mientras observa si la tensión HO2S cambia suavemente.</Li>
+								</OL>
+								<div>¿Muestra el scanner que la tensión de señal del sensor de oxígeno está dentro del valor especificado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>0,352~0,498V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 5</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<div>¿Muestra el scanner que la tensión de la señal del sensor de oxígeno está por debajo del valor especificado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>0,01 V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Ir a   <A target="_blank" href="7C2_1F22.es.html#C1F2DA">"Ayudas para el diagnóstico"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Desenchufe el conector del sensor del oxígeno.</Li>
+									<Li>Haga funcionar el motor caliente en ralentí.</Li>
+								</OL>
+								<div>¿Muestra el scanner que la tensión de la señal del sensor de oxígeno está por debajo del valor especificado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>0,352~0,498V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Ir a   <A target="_blank" href="7C2_1F22.es.html#C1F2DA">"Ayudas para el diagnóstico"</A>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 6</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Gire la llave de contacto a la posición LOCK.</Li>
+									<Li>Compruebe si hay un circuito abierto en los terminales 1 y 4 del conector J2 del sensor de oxígeno y los terminales 21 y 11 del conector del ECM.</Li>
+								</OL>
+								<div>¿Se ha encontrado la avería?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 8</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 11</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Gire la llave de contacto a la posición LOCK.</Li>
+									<Li>Compruebe si hay derivación a masa en el cable entre el terminal 1 del conector del sensor de oxígeno y el terminal 21 del conector J2 del ECM.</Li>
+								</OL>
+								<div>¿Se ha encontrado la avería?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 8</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 11</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Repare el cable o el terminal del conector si fuera necesario.</Li>
+									<Li>Borre los DTCs del ECM.</Li>
+									<Li>Efectúe una prueba de carretera con el vehículo.</Li>
+									<Li>Realice la comprobación del sistema de diagnóstico.</Li>
+								</OL>
+								<div>¿Se ha realizado la reparación?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Sistema OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Gire la llave de contacto a la posición LOCK.</Li>
+									<Li>Desenchufe el conector del sensor del oxígeno.</Li>
+									<Li>Gire la llave de contacto a la posición ON.</Li>
+								</OL>
+								<div>¿Muestra el scanner que la tensión de la señal del sensor de oxígeno es similar al valor especificado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>Aprox. 0,45 V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 10</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 11</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Sustituya el sensor de oxígeno.</Li>
+									<Li>Borre los DTCs del ECM.</Li>
+									<Li>Realice la comprobación del sistema de diagnóstico.</Li>
+								</OL>
+								<div>¿Se ha realizado la reparación?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Sistema OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">11</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Sustituya el ECM.</Li>
+									<Li>Realice la comprobación del sistema de diagnóstico.</Li>
+								</OL>
+								<div>¿Se ha realizado la reparación?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 12</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">12</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Compruebe si se activa algún otro DTC.</div>
+								<div>¿Se visualiza algún DTC no diagnosticado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Ir a la tabla de DTCs específica</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Sistema OK</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<P></P>
+<DIV align="center" id="C1F2P0132"><font size="4"><b>DTC P0132 - </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="C1F2HCHVS"><font size="4"><b>Alta tensión del circuito de la HO2S (sensor 1)</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="C1F2CD1"><b>descripción del circuito</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">El módulo de control electrónico del motor (ECM) suministra una tensión aproximada de 0,45V entre los terminales 22 y 3 del conector J2 del ECM. La sonda calentada lambda (O2) varía la tensión dentro de una gama de aproximadamente 1V si el escape es rico, bajando a 0,1V si el escape es pobre. El sensor de O2 es como un circuito abierto y no genera tensión cuando está por debajo de 300°C (600°F). Un circuito abierto del sensor de O2 ó un sensor de O2 frío provocan un funcionamiento en "bucle abierto".</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2CRD1"><b>Condiciones para la ejecución del DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>La tensión de la HO2S 2 sea superior a 0,5 voltios.</Li>
+					<Li>El control de la sonda HO2S1 está activado.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2CSDT1"><b>Condiciones para la activación del DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>La tensión del sensor de oxígeno es superior a 1,08 V.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2ATWDS1"><b>Acción realizada cuando se activa el DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>La luz testigo de fallo (MIL) se iluminará en cuanto se produzca el error.</Li>
+					<Li>El ECM registrará las condiciones de funcionamiento en el momento de la avería. Esta información se almacenará en las memorias intermedias de datos instantáneos y registros de averías.</Li>
+					<Li>Se almacena un historial del DTC.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2CCM1"><b>Condiciones para borrar el DTC y apagar la MIL</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>La MIL se apagará después de tres o cuatro ciclos de conducción consecutivos en los que se efectúe el diagnóstico sin ningún fallo.</Li>
+					<Li>El historial del DTC se borrará después de efectuar 40 ciclos consecutivos de calentamiento sin ninguna avería.</Li>
+					<Li>El(los) DTC(s) puede(n) borrarse empleando un scanner.</Li>
+					<Li>Desconectando la alimentación de la batería del ECM durante 10 segundos.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2DA1"><b>Asistencia en el diagnóstico</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">La tensión del scanner varía entre 0,1 voltios y 1,0 voltios mientras está en bucle cerrado.</div>
+				<div class="T1" align="left">Compruebe el cable del sensor de oxígeno (O2). El sensor de O2 puede estar colocado incorrectamente y estar tocando el colector de escape.</div>
+				<div class="T1" align="left">Compruebe si hay alguna conexión a masa intermitente en el cable entre el sensor de O2 y el módulo de control electrónico del motor.</div>
+				<div class="T1" align="left">Realice una prueba de equilibrio de los inyectores para determinar que la obstrucción de un inyector de combustible es la causa del fallo de mezcla pobre.</div>
+				<div class="T1" align="left">Las fugas de vacío en el cárter motor causarán un fallo de mezcla pobre.</div>
+				<div class="T1" align="left">Las fugas en la junta o las grietas en el colector de escape pueden causar que el aire exterior sea succionado hacia el interior del escape y más allá del sensor.</div>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="C1F2P01321"><font size="4"><b>DTC P0132 - Alta tensión del circuito de la HO2S (sensor 1)</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Paso</B></TD>
+<TD align="center"><B>Medida</B></TD>
+<TD align="center"><B>Valor(es)</B></TD>
+<TD align="center"><B>Sí</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Efectúe la comprobación del sistema de diagnóstico.</div>
+								<div>¿Se ha efectuado la comprobación?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Ir a   <A target="_blank" href="7C2_1F22.es.html#C1F2DSC">"Comprobación del sistema de diagnóstico"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Gire la llave de contacto a la posición ON, con el motor apagado.</Li>
+									<Li>Instale un scanner.</Li>
+									<Li>Espere a que el motor alcance la temperatura de funcionamiento.</Li>
+									<Li>Pise el pedal del acelerador mientras observa si la tensión HO2S cambia suavemente.</Li>
+								</OL>
+								<div>¿Muestra el scanner que la tensión de señal del sensor de oxígeno está por encima del valor especificado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>4,0 V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 6</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Gire la llave de contacto a la posición LOCK.</Li>
+									<Li>Desenchufe el conector del sensor O2 y el conector del módulo de control electrónico del motor (ECM).</Li>
+									<Li>Compruebe si hay algún cortocircuito con la tensión de batería en el cable entre el terminal 1 del conector J2 del sensor de oxígeno y el terminal 21 del conector del ECM</Li>
+								</OL>
+								<div>¿Se ha encontrado la avería?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Repare el cable o el terminal del conector si fuera necesario.</Li>
+									<Li>Borre los DTCs del ECM.</Li>
+									<Li>Efectúe una prueba de carretera con el vehículo.</Li>
+									<Li>Realice la comprobación del sistema de diagnóstico.</Li>
+								</OL>
+								<div>¿Se ha realizado la reparación?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Sistema OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Gire la llave de contacto a la posición LOCK.</Li>
+									<Li>Sustituya el sensor de O2.</Li>
+									<Li>Efectúe una prueba de carretera con el vehículo.</Li>
+									<Li>Realice la comprobación del sistema de diagnóstico.</Li>
+								</OL>
+								<div>¿Se ha realizado la sustitución?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Gire la llave de contacto a la posición LOCK.</Li>
+									<Li>Sustituya el ECM.</Li>
+									<Li>Efectúe una prueba de carretera con el vehículo.</Li>
+									<Li>Realice la comprobación del sistema de diagnóstico.</Li>
+								</OL>
+								<div>¿Se ha realizado la sustitución?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Compruebe si se activa algún otro DTC.</div>
+								<div>¿Se visualiza algún DTC no diagnosticado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Consulte la tabla de DTCs específica</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Sistema OK</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<P></P>
+<DIV align="center" id="C1F2P0133"><font size="4"><b>DTC P0133 - </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="C1F2HSRBS"><font size="4"><b>Respuesta lenta de la HO2S (sensor 1)</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="C1F2CD2"><b>descripción del circuito</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">El módulo de control electrónico del motor (ECM) suministra una tensión aproximada de 0,45V entre los terminales 22 y 3 del conector J2 del ECM. La sonda calentada lambda (O2) varía la tensión dentro de una gama de aproximadamente 1V si el escape es rico, bajando a 0,1V si el escape es pobre. El sensor de O2 es como un circuito abierto y no genera tensión cuando está por debajo de 300°C (600°F). Un circuito abierto del sensor de O2 ó un sensor de O2 frío provocan un funcionamiento en "bucle abierto".</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2CRD2"><b>Condiciones para la ejecución del DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>La velocidad del motor está entre 1.600 y 2.840 rpm.</Li>
+					<Li>La temperatura de los gases de escape es superior a los 450°C.</Li>
+					<Li>La carga del motor está entre el 30% y el 65%.</Li>
+					<Li>El control de la sonda HO2S1 está activado.</Li>
+					<Li>Diagnóstico del calentador HO2S1 finalizado.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2CSDT2"><b>Condiciones para la activación del DTC</b></DIV>
+<P></P>
+			
+				<UL>
+<Li>Periodo de ciclo de la señal del sensor de oxígeno superior a 3 segundos.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2ATWDS2"><b>Acción realizada cuando se activa el DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>La luz testigo de fallo (MIL) se encenderá después de 3 ciclos de conducción válidos.</Li>
+					<Li>El ECM registrará las condiciones de funcionamiento en el momento de la avería. Esta información se almacenará en las memorias intermedias de datos instantáneos y registros de averías.</Li>
+					<Li>Se almacena un historial del DTC.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2CCM2"><b>Condiciones para borrar el DTC y apagar la MIL</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>La MIL se apagará después de tres o cuatro ciclos de conducción consecutivos en los que se efectúe el diagnóstico sin ningún fallo.</Li>
+					<Li>El historial del DTC se borrará después de efectuar 40 ciclos consecutivos de calentamiento sin ninguna avería.</Li>
+					<Li>El(los) DTC(s) puede(n) borrarse empleando un scanner.</Li>
+					<Li>Desconectando la alimentación de la batería del ECM durante 10 segundos.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2DA2"><b>Asistencia en el diagnóstico</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">La tensión normal del scanner oscila entre 0,15 y 8,5 mV mientras está en bucle cerrado. Si el DTC P0133 es intermitente, consulte el apartado   <A target="_blank" href="7C2_1F2O.es.html#C1F2INTER">"Fallos intermitentes"</A> de esta sección.</div>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="C1F2P01331"><font size="4"><b>DTC P0133 - Respuesta lenta de la HO2S (sensor 1)</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Paso</B></TD>
+<TD align="center"><B>Medida</B></TD>
+<TD align="center"><B>Valor(es)</B></TD>
+<TD align="center"><B>Sí</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Efectúe la comprobación del sistema de diagnóstico.</div>
+								<div>¿Se ha efectuado la comprobación?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Ir a   <A target="_blank" href="7C2_1F22.es.html#C1F2DSC">"Comprobación del sistema de diagnóstico"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Enchufe el scanner al conector de diagnóstico (DLC).</Li>
+									<Li>Deje en marcha el motor hasta que alcance la temperatura normal de funcionamiento.</Li>
+									<Li>Compruebe si está funcionando en bucle cerrado.</Li>
+								</OL>
+								<div>¿Indica el scanner el bucle cerrado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Gire la llave de contacto a la posición LOCK.</Li>
+									<Li>Revise los datos instantáneos y anote los parámetros.</Li>
+									<Li>Haga funcionar el vehículo dentro de las condiciones de los datos instantáneos y las condiciones para activar el DTC.</Li>
+								</OL>
+								<div>¿Indica el scanner el bucle cerrado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 12</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Desenchufe el conector del HO2S.</Li>
+									<Li>Conecte un puente entre el terminal 1 del conector del sensor de oxígeno y masa.</Li>
+									<Li>Gire la llave de contacto a la posición ON.</Li>
+								</OL>
+								<div>¿Muestra el scanner que la tensión de la señal del sensor de oxígeno está dentro del valor especificado? </div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>0,4~0,5V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 5</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Compruebe si los terminales del conector del sensor de oxígeno están defectuosos o establecen una mala conexión y repárelos si fuera necesario.</div>
+								<div>¿Es necesaria la reparación?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 12</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 6</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Ponga en marcha el motor a ralentí.</Li>
+									<Li>Retire el puente.</Li>
+									<Li>Mida la tensión entre el terminal 4 del conector del sensor de oxígeno y masa.</Li>
+								</OL>
+								<div>¿Está la tensión del sensor de oxígeno por encima del valor especificado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>0,6 V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 11</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Gire la llave de contacto a la posición LOCK.</Li>
+									<Li>Mida la tensión entre el terminal 4 del conector de HO2S y masa.</Li>
+								</OL>
+								<div>¿Está la tensión del sensor de oxígeno por encima del valor especificado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>0,3 V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 9</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 11</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Compruebe si el cable o el conector entre el terminal 1 del sensor de O2 y el terminal 21 del conector J2 del módulo de control electrónico del motor (ECM) está interrumpido o derivado a masa, y haga las reparaciones necesarias.</div>
+								<div>¿Se ha realizado la reparación?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 11</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 9</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repare el cable y el terminal del conector entre el terminal 4 del conector del sensor de oxígeno y el terminal 11 del conector J2 del módulo de control electrónico del motor (ECM).</div>
+								<div>¿Se ha realizado la reparación?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 12</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 10</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Gire la llave de contacto a la posición LOCK.</Li>
+									<Li>Sustituya el ECM.</Li>
+									<Li>Realice la comprobación del sistema de diagnóstico.</Li>
+								</OL>
+								<div>¿Se ha realizado la reparación?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Sistema OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">11</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Sustituya el sensor de O2.</div>
+								<div>¿Se ha realizado la reparación?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 12</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">12</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Borre los DTCs del ECM.</Li>
+									<Li>Realice la comprobación del sistema de diagnóstico.</Li>
+								</OL>
+								<div>¿Se ha realizado la reparación?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 13</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">13</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Compruebe si se activa algún otro DTC.</div>
+								<div>¿Se visualiza algún DTC no diagnosticado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Consulte la tabla de DTCs específica</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Sistema OK</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<P></P>
+<DIV align="center" id="C1F2P0134"><font size="4"><b>DTC P0134 - </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="C1F2HCS1"><font size="4"><b>Sensor 1 del circuito HO2S</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="C1F2CD3"><b>descripción del circuito</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Las sondas lambda calentadas (HO2S) son sensores de oxígeno que sirven para controlar el combustible y comprobar la mezcla después del catalizador. Cada HO2S compara el contenido de oxígeno del aire circundante con el contenido de oxígeno de la corriente de escape. Cuando se arranca el motor por primera vez, el módulo de control electrónico del motor (ECM) funciona en modo de bucle abierto, ignorando la tensión de la señal de la HO2S al calcular la relación de aire/combustible. El ECM suministra a la HO2S una tensión de referencia de unos 0,45 V. La HO2S genera una tensión entre 0~1 V que fluctúa arriba y abajo de la tensión de polarización una vez en bucle cerrado. Una salida de tensión alta de la HO2S indica una mezcla rica de combustible. Una salida de tensión baja de la HO2S indica una mezcla pobre. Dentro de la HO2S hay elementos calefactores que reducen al mínimo el tiempo necesario para que las sondas alcancen la temperatura normal de funcionamiento y puedan dar una señal de tensión exacta.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2CRD10"><b>Condiciones para la ejecución del DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>El tiempo de corte de combustible es superior a 3,0 segundos.</Li>
+					<Li>La tensión de la HO2S2 sea superior a 0,2 voltios.</Li>
+					<Li>La temperatura de los gases de escape es superior a los 600°C.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2CSDT3"><b>Condiciones para la activación del DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>La tensión del sensor está entre 0,4 V y 0,6 V.</Li>
+					<Li>La resistencia interna del sensor de O2 es superior a 20 kΩ.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2ATWDS3"><b>Acción realizada cuando se activa el DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>La luz testigo de fallo (MIL) se iluminará en cuanto se produzca el error.</Li>
+					<Li>El ECM registrará las condiciones de funcionamiento en el momento de la avería. Esta información se almacenará en las memorias intermedias de datos instantáneos y registros de averías.</Li>
+					<Li>Se almacena un historial del DTC.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2CCM3"><b>Condiciones para borrar el DTC y apagar la MIL</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>La MIL se apagará después de tres o cuatro ciclos de conducción consecutivos en los que se efectúe el diagnóstico sin ningún fallo.</Li>
+					<Li>El historial del DTC se borrará después de efectuar 40 ciclos consecutivos de calentamiento sin ninguna avería.</Li>
+					<Li>El(los) DTC(s) puede(n) borrarse empleando un scanner.</Li>
+					<Li>Desconectando la alimentación de la batería del ECM durante 10 segundos.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2TD3"><b>Asistencia en el diagnóstico</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Los números siguientes hacen referencia a los pasos que aparecen en la tabla de diagnóstico:</div>
+				<OL>
+<Li value="2">Si la tensión varía por encima y por debajo del valor especificado, no hay ningún problema.</Li>
+				</OL>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="C1F2P013041"><font size="4"><b>DTC P0134 - Circuito de la HO2S (sensor 1)</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Paso</B></TD>
+<TD align="center"><B>Medida</B></TD>
+<TD align="center"><B>Valor(es)</B></TD>
+<TD align="center"><B>Sí</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>¿Se ha realizado la comprobación del sistema de diagnóstico?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Ir a   <A target="_blank" href="7C2_1F22.es.html#C1F2DSC">"Comprobación del sistema de diagnóstico"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Ponga el motor en marcha.</Li>
+									<Li>Deje que el motor alcance la temperatura normal de funcionamiento.</Li>
+									<Li>Accione el motor a 2.000 RPM durante 30 segundos.</Li>
+									<Li>Observe con un scanner el parámetro de tensión de la HO2S 1.</Li>
+								</OL>
+								<div>¿El parámetro de tensión HO2S 1 varía por encima y por debajo de los valores especificados?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>300-600 mV</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Observe los datos instantáneos/registros de averías para este DTC.</Li>
+									<Li>Gire la llave de contacto a la posición OFF durante 30 segundos.</Li>
+									<Li>Ponga el motor en marcha.</Li>
+									<Li>Haga funcionar el vehículo en las condiciones requeridas para establece este DTC. También puede hacer funcionar el vehículo en las condiciones observadas en los datos instantáneos/registros de averías.</Li>
+								</OL>
+								<div>¿No superó el DTC el encendido?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Ir a   <I><A target="_blank" href="7C2_1F2O.es.html#C1F2INTER">"Averías intermitentes"</A></I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Gire la llave de contacto a la posición OFF.</Li>
+									<Li>Desconecte la HO2S 1.</Li>
+									<Li>Gire la llave de contacto a la posición ON con el motor apagado.</Li>
+									<Li>Observe con un scanner el parámetro de tensión de la HO2S 1.</Li>
+								</OL>
+								<div>¿La tensión del sensor HO2S 1 es superior al valor especificado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>800 mV</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 5</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 6</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Compruebe si el circuito de señal alta de la HO2S 1 está en cortocircuito con la tensión.</div>
+								<div>¿Encontró y corrigió la anomalía?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 17</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 16</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Conecte un puente con fusible de 3 amperios entre el circuito de señal alta del conector de cableado de la HO2S 1 del lado del cableado del motor y el circuito de señal baja del conector de cableado de la HO2S 1 en el lado del cableado del motor.</Li>
+									<Li>Observe con un scanner el parámetro de tensión de la HO2S 1.</Li>
+								</OL>
+								<div>¿La tensión de la HO2S 1 está dentro de los valores especificados?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>400-500 mV</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 8</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 7</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Retire el puente del paso anterior.</Li>
+									<Li>Compruebe si el circuito de control bajo del calentador de la HO2S 1 tiene un cortocircuito con alguno de los siguientes circuitos:</Li>
+									<UL>
+<Li>El circuito de señal baja de la HO2S 1.</Li>
+										<Li>El circuito de señal alta de la HO2S 1.</Li>
+									</UL>
+								</OL>
+								<div>¿Encontró y corrigió la anomalía?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 17</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 13</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Retire el puente del paso anterior.</Li>
+									<Li>Conecte un puente con fusible de 3 amperios desde el circuito de señal alta del conector de cableado de HO2S 1 y masa.</Li>
+									<Li>Observe con un scanner el parámetro de tensión de la HO2S 1.</Li>
+								</OL>
+								<div>¿La tensión de la HO2S 1 está dentro de los valores especificados?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>400-500 mV</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 10</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 9</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Retire el puente del paso anterior.</Li>
+									<Li>Compruebe si hay un circuito abierto en el circuito de señal baja de HO2S 1.</Li>
+								</OL>
+								<div>¿Encontró y corrigió la anomalía?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 17</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 14</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Retire el puente del paso anterior.</Li>
+									<Li>Mida la tensión del circuito de señal alta del conector de cableado de HO2S 1 del lado del cableado del motor y masa con un DMM.</Li>
+								</OL>
+								<div>¿Es la tensión superior a la especificada?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>1 V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 11</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 12</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">11</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Compruebe si el circuito de señal baja de la HO2S 1 está en cortocircuito con la tensión.</div>
+								<div>¿Encontró y corrigió la anomalía?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 17</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 16</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">12</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Compruebe si hay un circuito abierto en el circuito de señal alta de HO2S 1.</div>
+								<div>¿Encontró y corrigió la anomalía?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 17</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 14</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">13</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Compruebe si hay alguna avería intermitente o mala conexión en la HO2S 1.</div>
+								<div>¿Encontró y corrigió la anomalía?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 17</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 15</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">14</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Compruebe si hay alguna avería intermitente o mala conexión en el ECM.</div>
+								<div>¿Encontró y corrigió la anomalía?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 17</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 16</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">15</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Sustituya la HO2S 1.</div>
+								<div>¿Se ha realizado la sustitución?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 17</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">16</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Sustituya el ECM.</div>
+								<div>¿Se ha realizado la sustitución?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 17</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">17</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Borre con un scanner los DTCs.</Li>
+									<Li>Gire la llave de contacto a la posición OFF durante 30 segundos.</Li>
+									<Li>Ponga el motor en marcha.</Li>
+									<Li>Haga funcionar el vehículo en las condiciones requeridas para establece este DTC. También puede hacer funcionar el vehículo en las condiciones observadas en los datos instantáneos/registros de averías.</Li>
+								</OL>
+								<div>¿No superó el DTC el encendido?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 18</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">18</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Compruebe si se activa algún otro DTC.</div>
+								<div>¿Se activa algún DTC no diagnosticado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Ir a la tabla de DTCs específica</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Sistema OK</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<P></P>
+<DIV align="center" id="C1F2P0137"><font size="4"><b>DTC P0137 - </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="C1F2HCLVS1"><font size="4"><b>Baja tensión del circuito de la HO2S (sensor 2)</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="C1F2CD4"><b>descripción del circuito</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">El módulo de control electrónico del motor (ECM) suministra una tensión aproximada de 0,45V entre los terminales 21 y 3 del conector J2 del ECM. La sonda calentada lambda (O2) varía la tensión dentro de una gama de aproximadamente 1V si el escape es rico, bajando a 0,1V si el escape es pobre. El sensor de O2 es como un circuito abierto y no genera tensión cuando está por debajo de 300°C (600°F). Un circuito abierto del sensor de O2 ó un sensor de O2 frío provocan un funcionamiento en "bucle abierto".</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2CRD3"><b>Condiciones para la ejecución del DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>El control de la sonda HO2S2 está activado.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2CSDT4"><b>Condiciones para la activación del DTC</b></DIV>
+<P></P>
+			
+				<UL>
+<Li>La tensión de la HO2S es inferior a 0,06 voltios.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2ATWDS4"><b>Acción realizada cuando se activa el DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>La luz testigo de fallo (MIL) se iluminará en cuanto se produzca el error.</Li>
+					<Li>El ECM registrará las condiciones de funcionamiento en el momento de la avería. Esta información se almacenará en las memorias intermedias de datos instantáneos y registros de averías.</Li>
+					<Li>Se almacena un historial del DTC.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2CCM4"><b>Condiciones para borrar el DTC y apagar la MIL</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>La MIL se apagará después de tres o cuatro ciclos de conducción consecutivos en los que se efectúe el diagnóstico sin ningún fallo.</Li>
+					<Li>El historial del DTC se borrará después de efectuar 40 ciclos consecutivos de calentamiento sin ninguna avería.</Li>
+					<Li>El(los) DTC(s) puede(n) borrarse empleando un scanner.</Li>
+					<Li>Desconectando la alimentación de la batería del ECM durante 10 segundos.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2DA3"><b>Asistencia en el diagnóstico</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>La tensión normal del scanner varía entre 0,1 voltios y 0,9 voltios mientras está en bucle cerrado.</Li>
+					<Li>Compruebe el cable del sensor de oxígeno (O2). El sensor de O2 puede estar colocado incorrectamente y estar tocando el colector de escape.</Li>
+					<Li>Compruebe si hay alguna conexión a masa intermitente en el cable entre el sensor de O2 y el módulo de control electrónico del motor.</Li>
+					<Li>Realice una prueba de equilibrio de los inyectores para determinar que la obstrucción de un inyector de combustible es la causa del fallo de mezcla pobre.</Li>
+					<Li>Las fugas de vacío en el cárter motor causarán un fallo de mezcla pobre.</Li>
+					<Li>Las fugas en la junta o las grietas en el colector de escape pueden causar que el aire exterior sea succionado hacia el interior del escape y más allá del sensor.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="C1F2P01371"><font size="4"><b>DTC P0137 - Baja tensión del circuito de la HO2S (sensor 2)</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Paso</B></TD>
+<TD align="center"><B>Medida</B></TD>
+<TD align="center"><B>Valor(es)</B></TD>
+<TD align="center"><B>Sí</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Efectúe la comprobación del sistema de diagnóstico.</div>
+								<div>¿Se ha efectuado la comprobación?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Ir a   <A target="_blank" href="7C2_1F22.es.html#C1F2DSC">"Comprobación del sistema de diagnóstico"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Gire la llave de contacto a la posición ON, con el motor apagado.</Li>
+									<Li>Instale un scanner.</Li>
+									<Li>Espere a que el motor alcance la temperatura de funcionamiento.</Li>
+									<Li>Ponga en marcha el motor a 1.200 rpm.</Li>
+								</OL>
+								<div>¿Muestra el scanner que la tensión de HO2S coincide con el valor especificado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>0,07-0,52 V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 3</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<div>¿Muestra el scanner que la tensión de HO2S coincide con el valor especificado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>0,1 V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 9</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Ir a   <A target="_blank" href="7C2_1F22.es.html#C1F2DA">"Ayudas para el diagnóstico"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Gire la llave de contacto a la posición LOCK.</Li>
+									<Li>Desenchufe el conector del sensor HO2S y el conector del módulo de control electrónico del motor (ECM).</Li>
+									<Li>Compruebe si hay alguna derivación a masa en el cable de HO2S entre el terminal 4 del conector del sensor y el terminal K94 del conector del ECM.</Li>
+								</OL>
+								<div>¿Se ha encontrado la avería?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 5</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 6</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Repare el cable del terminal del conector si fuera necesario.</Li>
+									<Li>Borre los DTCs del ECM.</Li>
+									<Li>Efectúe una prueba en carretera con el vehículo.</Li>
+									<Li>Realice la comprobación del sistema de diagnóstico.</Li>
+								</OL>
+								<div>¿Se ha realizado la reparación?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Sistema OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Gire la llave de contacto a la posición LOCK.</Li>
+									<Li>Desenchufe el conector del sensor HO2S y el conector del módulo de control electrónico del motor (ECM).</Li>
+									<Li>Compruebe si hay alguna derivación a masa en el cable de HO2S, entre el terminal 2 del conector del sensor y el terminal 3 del conector J2 del ECM.</Li>
+								</OL>
+								<div>¿Se ha encontrado la avería?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Repare el cable del terminal del conector si fuera necesario.</Li>
+									<Li>Borre los DTCs del ECM.</Li>
+									<Li>Efectúe una prueba de carretera con el vehículo.</Li>
+									<Li>Realice la comprobación del sistema de diagnóstico.</Li>
+								</OL>
+								<div>¿Se ha realizado la reparación?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Sistema OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Gire la llave de contacto a la posición LOCK.</Li>
+									<Li>Sustituya la sonda lambda calentada.</Li>
+									<Li>Efectúe una prueba en carretera con el vehículo.</Li>
+									<Li>Realice la comprobación del sistema de diagnóstico.</Li>
+								</OL>
+								<div>¿Se ha realizado la sustitución?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 10</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Gire la llave de contacto a la posición LOCK.</Li>
+									<Li>Sustituya el ECM.</Li>
+									<Li>Efectúe una prueba de carretera con el vehículo.</Li>
+									<Li>Realice la comprobación del sistema de diagnóstico.</Li>
+								</OL>
+								<div>¿Se ha realizado la sustitución?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 10</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Compruebe si se activa algún otro DTC.</div>
+								<div>¿Se visualiza algún DTC no diagnosticado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Consulte la tabla de DTCs específica</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Sistema OK</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<P></P>
+<DIV align="center" id="C1F2P0138"><font size="4"><b>DTC P0138 - </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="C1F2HCHVB1"><font size="4"><b>Alta tensión del circuito de la HO2S (sensor 1 - bancada 2)</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="C1F2CD5"><b>descripción del circuito</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">El módulo de control electrónico del motor (ECM) suministra una tensión aproximada de 0,45V entre los terminales 21 y 3 del conector J2 del ECM. La sonda calentada lambda (O2) varía la tensión dentro de una gama de aproximadamente 1V si el escape es rico, bajando a 0,1V si el escape es pobre. La sonda lambda calentada es como un circuito abierto y no genera tensión cuando está por debajo de 300°C (600°F). Un circuito abierto del sensor de O2 ó un sensor de O2 frío provocan un funcionamiento en "bucle abierto".</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2CRD4"><b>Condiciones para la ejecución del DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>El control de la sonda HO2S2 está activado.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2CSD4"><b>Condiciones para la activación del DTC</b></DIV>
+<P></P>
+			
+				<UL>
+<Li>La tensión de la HO2S es superior a 1,08 voltios.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2ATWDS5"><b>Acción realizada cuando se activa el DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>La luz testigo de fallo (MIL) se iluminará en cuanto se produzca el error.</Li>
+					<Li>El ECM registrará las condiciones de funcionamiento en el momento de la avería. Esta información se almacenará en las memorias intermedias de datos instantáneos y registros de averías.</Li>
+					<Li>Se almacena un historial del DTC.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2CCM5"><b>Condiciones para borrar el DTC y apagar la MIL</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>La MIL se apagará después de tres o cuatro ciclos de conducción consecutivos en los que se efectúe el diagnóstico sin ningún fallo.</Li>
+					<Li>El historial del DTC se borrará después de efectuar 40 ciclos consecutivos de calentamiento sin ninguna avería.</Li>
+					<Li>El(los) DTC(s) puede(n) borrarse empleando un scanner.</Li>
+					<Li>Desconectando la alimentación de la batería del ECM durante 10 segundos.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2DA4"><b>Asistencia en el diagnóstico</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>La tensión normal del scanner varía entre 0,1 voltios y 0,9 voltios mientras está en bucle cerrado.</Li>
+					<Li>Compruebe el cable del sensor de oxígeno (O2). El sensor de O2 puede estar colocado incorrectamente y estar tocando el colector de escape.</Li>
+					<Li>Compruebe si hay alguna conexión a masa intermitente en el cable entre el sensor de O2 y el módulo de control electrónico del motor.</Li>
+					<Li>Realice una prueba de equilibrio de los inyectores para determinar que la obstrucción de un inyector de combustible es la causa del fallo de mezcla pobre.</Li>
+					<Li>Las fugas de vacío en el cárter motor causarán un fallo de mezcla pobre.</Li>
+					<Li>Las fugas en la junta o las grietas en el colector de escape pueden causar que el aire exterior sea succionado hacia el interior del escape y más allá del sensor.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="C1F2P01381"><font size="4"><b>DTC P0138 - Alta tensión del circuito de la HO2S (sensor 2)</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Paso</B></TD>
+<TD align="center"><B>Medida</B></TD>
+<TD align="center"><B>Valor(es)</B></TD>
+<TD align="center"><B>Sí</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Efectúe la comprobación del sistema de diagnóstico.</div>
+								<div>¿Se ha efectuado la comprobación?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Ir a   <A target="_blank" href="7C2_1F22.es.html#C1F2DSC">"Comprobación del sistema de diagnóstico"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Gire la llave de contacto a la posición ON, con el motor apagado.</Li>
+									<Li>Instale un scanner.</Li>
+									<Li>Espere a que el motor alcance la temperatura de funcionamiento.</Li>
+									<Li>Pise el pedal del acelerador mientras observa si la tensión HO2S cambia suavemente.</Li>
+								</OL>
+								<div>¿Muestra el scanner que la tensión de señal del sensor de oxígeno está por encima del valor especificado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>4,0 V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 6</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Gire la llave de contacto a la posición LOCK.</Li>
+									<Li>Desenchufe el conector de la sonda lambda calentada y el conector del módulo de control electrónico del motor (ECM).</Li>
+									<Li>Compruebe si hay algún cortocircuito con la tensión de batería en el cable entre el terminal 1 del conector del de oxígeno calentado y el terminal 21 del conector J2 del ECM</Li>
+								</OL>
+								<div>¿Se ha encontrado la avería?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Repare el cable o el terminal del conector si fuera necesario.</Li>
+									<Li>Borre los DTCs del ECM.</Li>
+									<Li>Efectúe una prueba de carretera con el vehículo.</Li>
+									<Li>Realice la comprobación del sistema de diagnóstico.</Li>
+								</OL>
+								<div>¿Se ha realizado la reparación?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Sistema OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Gire la llave de contacto a la posición LOCK.</Li>
+									<Li>Sustituya la sonda lambda calentada.</Li>
+									<Li>Efectúe una prueba de carretera con el vehículo.</Li>
+									<Li>Realice la comprobación del sistema de diagnóstico.</Li>
+								</OL>
+								<div>¿Se ha realizado la sustitución?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Gire la llave de contacto a la posición LOCK.</Li>
+									<Li>Sustituya el ECM.</Li>
+									<Li>Efectúe una prueba de carretera con el vehículo.</Li>
+									<Li>Realice la comprobación del sistema de diagnóstico.</Li>
+								</OL>
+								<div>¿Se ha realizado la sustitución?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Compruebe si se activa algún otro DTC.</div>
+								<div>¿Se visualiza algún DTC no diagnosticado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Consulte la tabla de DTCs específica</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Sistema OK</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<P></P>
+<DIV align="center" id="C1F2P0140"><font size="4"><b>DTC P0140 - </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="C1F2HCS"><font size="4"><b>Sensor 2 del circuito HO2S</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="C1F2CD6"><b>descripción del circuito</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Las sondas lambda calentadas (HO2S) son sensores de oxígeno que sirven para controlar el combustible y comprobar la mezcla después del catalizador. Cada HO2S compara el contenido de oxígeno del aire circundante con el contenido de oxígeno de la corriente de escape. Cuando se arranca el motor por primera vez, el módulo de control electrónico del motor (ECM) funciona en modo de bucle abierto, ignorando la tensión de la señal de la HO2S al calcular la relación de aire/combustible. El ECM suministra a la HO2S una tensión de referencia de unos 0,45 V. La HO2S genera una tensión entre 0~1 V que fluctúa arriba y abajo de la tensión de polarización una vez en bucle cerrado. Una salida de tensión alta de la HO2S indica una mezcla rica de combustible. Una salida de tensión baja de la HO2S indica una mezcla pobre. Dentro de la HO2S hay elementos calefactores que reducen al mínimo el tiempo necesario para que las sondas alcancen la temperatura normal de funcionamiento y puedan dar una señal de tensión exacta.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2CRD5"><b>Condiciones para la ejecución del DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>La temperatura de los gases de escape es superior a los 600°C.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2CSD6"><b>Condiciones para la activación del DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>La tensión del sensor esté entre 0,4 V y 0,52 V.</Li>
+					<Li>La resistencia interna del sensor de O2 es superior a 40 kΩ.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2ATWDS6"><b>Acción realizada cuando se activa el DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>La luz testigo de fallo (MIL) se iluminará en cuanto se produzca el error.</Li>
+					<Li>El ECM registrará las condiciones de funcionamiento en el momento de la avería. Esta información se almacenará en las memorias intermedias de datos instantáneos y registros de averías.</Li>
+					<Li>Se almacena un historial del DTC.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2CCM6"><b>Condiciones para borrar el DTC y apagar la MIL</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>La MIL se apagará después de tres o cuatro ciclos de conducción consecutivos en los que se efectúe el diagnóstico sin ningún fallo.</Li>
+					<Li>El historial del DTC se borrará después de efectuar 40 ciclos consecutivos de calentamiento sin ninguna avería.</Li>
+					<Li>El(los) DTC(s) puede(n) borrarse empleando un scanner.</Li>
+					<Li>Desconectando la alimentación de la batería del ECM durante 10 segundos.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="C1F2P01401"><font size="4"><b>DTC P0140 - Circuito de la HO2S (sensor 2)</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Paso</B></TD>
+<TD align="center"><B>Medida</B></TD>
+<TD align="center"><B>Valor(es)</B></TD>
+<TD align="center"><B>Sí</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>¿Se ha realizado la comprobación del sistema de diagnóstico?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Ir a   <A target="_blank" href="7C2_1F22.es.html#C1F2DSC">"Comprobación del sistema de diagnóstico"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Ponga el motor en marcha.</Li>
+									<Li>Deje que el motor alcance la temperatura normal de funcionamiento.</Li>
+									<Li>Accione el motor a 1.500 RPM durante 30 segundos.</Li>
+									<Li>Mientras observa el parámetro de tensión de la HO2S 2 con un scanner, cicle de forma rápida el acelerador de la posición cerrada a totalmente abierta (WOT) en 3 ocasiones.</Li>
+								</OL>
+								<div>¿La tensión del sensor HO2S 2 cambia más que el valor especificado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>200 mV</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Observe los datos instantáneos/registros de averías para este DTC.</Li>
+									<Li>Gire la llave de contacto a la posición OFF durante 30 segundos.</Li>
+									<Li>Ponga el motor en marcha.</Li>
+									<Li>Haga funcionar el vehículo en las condiciones requeridas para establece este DTC. También puede hacer funcionar el vehículo en las condiciones observadas en los datos instantáneos/registros de averías.</Li>
+								</OL>
+								<div>¿No superó el DTC el encendido?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Ir a   <A target="_blank" href="7C2_1F2O.es.html#C1F2INTER">"Averías intermitentes"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Gire la llave de contacto a la posición OFF.</Li>
+									<Li>Desenchufe la sonda lambda calentada (HO2S) 2.</Li>
+									<Li>Gire la llave de contacto a la posición ON con el motor apagado.</Li>
+									<Li>Observe con un scanner el parámetro de tensión de la HO2S 2.</Li>
+								</OL>
+								<div>¿La tensión del sensor HO2S 2 es inferior al valor especificado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>100 mV</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Observe con un scanner el parámetro de tensión de la HO2S 2.</div>
+								<div>¿La tensión del sensor HO2S 2 es superior al valor especificado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>800 mV</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Compruebe la derivación a masa del circuito de señal alta de la HO2S2.</div>
+								<div>¿Encontró y corrigió la anomalía?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 21</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 9</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Compruebe si el circuito de señal alta de la HO2S 2 está en cortocircuito con la tensión.</div>
+								<div>¿Encontró y corrigió la anomalía?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 21</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 18</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Mida la tensión del circuito de señal baja del conector de cableado de HO2S 2 del lado del cableado del motor y masa con un DMM.</div>
+								<div>¿Es la tensión superior a la especificada?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>2 V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 10</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 11</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Compruebe si hay un cortocircuito en el circuito de señal alta de la HO2S 2 hasta el circuito de señal baja de la HO2S 2.</div>
+								<div>¿Encontró y corrigió la anomalía?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 17</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 14</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Compruebe si el circuito de señal baja de la HO2S 2 está en cortocircuito con la tensión.</div>
+								<div>¿Encontró y corrigió la anomalía?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 21</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 18</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">11</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Conecte un puente con fusible de 3 amperios entre el circuito de señal alta del conector de cableado de HO2S 2 y masa.</Li>
+									<Li>Observe con un scanner el parámetro de tensión de la HO2S 2.</Li>
+								</OL>
+								<div>¿La tensión del sensor HO2S 2 es inferior al valor especificado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>100 mV</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 12</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 14</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">12</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Retire el puente del paso anterior.</Li>
+									<Li>Conecte un puente con fusible de 3 amperios entre el circuito de señal alta del conector de cableado de la HO2S 2 del lado del cableado del motor y el circuito de señal baja del conector de cableado de la HO2S 2 en el lado del cableado del motor.</Li>
+									<Li>Observe con un scanner el parámetro de tensión de la HO2S 2.</Li>
+								</OL>
+								<div>¿La tensión del sensor HO2S 2 es inferior al valor especificado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>100 mV</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 15</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 13</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">13</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Compruebe si hay un circuito abierto o resistencia alta en el circuito de señal baja de la HO2S 2.</div>
+								<div>¿Encontró y corrigió la anomalía?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 21</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 18</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">14</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Compruebe si hay un circuito abierto o resistencia alta en el circuito de señal alta de la HO2S 2.</div>
+								<div>¿Encontró y corrigió la anomalía?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 21</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 18</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">15</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Compruebe si el circuito de control bajo del calentador de la HO2S 2 está en cortocircuito con el circuito de señal alta o baja de la HO2S 2.</div>
+								<div>¿Encontró y corrigió la anomalía?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 21</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 16</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">16</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li value="1">La HO2S 2 puede detectar un problema de escape rico, pobre, o contaminación en la HO2S. Compruebe las siguientes anomalías:</Li>
+									<UL>
+<Li>HO2S 2 contaminada por silicio.</Li>
+										<Li>Intrusión de agua en el conector de HO2S 2.</Li>
+										<Li>Fuga de escape entre la HO2S 2 y el motor.</Li>
+										<Li>Cualquier fuga de vacío.</Li>
+										<Li>Aceite de motor contaminado con combustible.</Li>
+										<Li>Una presión de combustible incorrecta.</Li>
+										<Li>Cualquier inyector de combustible rico o pobre.</Li>
+									</UL>
+									<Li value="8">Repare cualquiera de los problemas anteriores o similares.</Li>
+								</OL>
+								<div>¿Encontró y corrigió la anomalía?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 21</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 17</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">17</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Compruebe si hay terminales en cortocircuito o malas conexiones en la HO2S 2.</div>
+								<div>¿Encontró y corrigió la anomalía?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 21</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 19</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">18</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Compruebe si hay terminales en cortocircuito o malas conexiones en el ECM.</div>
+								<div>¿Encontró y corrigió la anomalía?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 21</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 20</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">19</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Sustituya la HO2S 2.</div>
+								<div>¿Se ha realizado la sustitución?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 21</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">20</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Sustituya el ECM.</div>
+								<div>¿Se ha realizado la sustitución?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 21</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">21</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Borre con un scanner los DTCs.</Li>
+									<Li>Gire la llave de contacto a la posición OFF durante 30 segundos.</Li>
+									<Li>Ponga el motor en marcha.</Li>
+									<Li>Haga funcionar el vehículo en las condiciones requeridas para establece este DTC. También puede hacer funcionar el vehículo en las condiciones observadas en los datos instantáneos/registros de averías.</Li>
+								</OL>
+								<div>¿No superó el DTC el encendido?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 22</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">22</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Compruebe si se activa algún otro DTC.</div>
+								<div>¿Se activa algún DTC no diagnosticado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Ir a la tabla de DTCs específica</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Sistema OK</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<P></P>
+<DIV align="center" id="C1F2P0201"><font size="4"><b>DTC P0201 - </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="C1F2I1CC"><font size="4"><b>Circuito de control del inyector 1</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="C1F2CD7"><b>descripción del circuito</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">El módulo de control electrónico del motor (ECM) tiene cuatro circuitos de controladores independientes para los inyectores, cada uno de los cuales controla un inyector. Cuando el ECM conecta un circuito del controlador a masa, el inyector se activa. El ECM supervisa la corriente en cada circuito del controlador. El ECM mide una caída de tensión a través de una resistencia fija y la controla. Se supervisa la tensión en cada controlador con el fin de detectar fallos. Si la tensión no es la que el ECM tiene previsto detectar en el circuito, se activa un código de diagnóstico de averías (DTC). Este DTC detecta una derivación a masa y/o un circuito abierto y cortocircuito con la batería para las salidas del lado de baja- de los inyectores.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2CRD6"><b>Condiciones para la ejecución del DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>La llave de contacto esté en la posición ON.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2CSD7"><b>Condiciones para la activación del DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>El ECM detecta un circuito abierto en el circuito de control del inyector 1.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2ATWDS7"><b>Acción realizada cuando se activa el DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>La luz testigo de fallo (MIL) se encenderá después de 3 ciclos de conducción válidos.</Li>
+					<Li>El ECM registrará las condiciones de funcionamiento en el momento de la avería. Esta información se almacenará en las memorias intermedias de datos instantáneos y registros de averías.</Li>
+					<Li>Se almacena un historial del DTC.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2CCM7"><b>Condiciones para borrar el DTC y apagar la MIL</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>La MIL se apagará después de tres o cuatro ciclos de conducción consecutivos en los que se efectúe el diagnóstico sin ningún fallo.</Li>
+					<Li>El historial del DTC se borrará después de efectuar 40 ciclos consecutivos de calentamiento sin ninguna avería.</Li>
+					<Li>El(los) DTC(s) puede(n) borrarse empleando un scanner.</Li>
+					<Li>Desconectando la alimentación de la batería del ECM durante 10 segundos.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2DA7"><b>Asistencia en el diagnóstico</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Un circuito del controlador del inyector 1 que esté abierto o en cortocircuito con la tensión activará un DTC P0201. También causará un fallo de encendido debido a un inyector inoperativo. Se debe activar también un DTC de fallo de encendido que indique cuál es el inyector que no funciona.</div>
+				<div class="T1" align="left">Los ajustes de combustible - momentáneo y de larga duración- que sean excesivamente altos o bajos son una buena indicación de que un inyector está funcionando mal. Consulte el apartado   <A target="_blank" href="7C2_1F23.es.html#C1F2FIBT">"Prueba de equilibrio de los inyectores de combustible"</A> de esta sección para comprobar si los inyectores están funcionando mal.</div>
+				<div class="T1" align="left">La resistencia de los inyectores que se mida en la conexión del ECM será ligeramente mayor que si se hubiera medido directamente en el inyector porque incluye la resistencia del cableado. El valor normal es de aproximadamente 13,5 Ω.</div>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="C1F2P02011"><font size="4"><b>DTC P0201 - Circuito de control del inyector 1</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Paso</B></TD>
+<TD align="center"><B>Medida</B></TD>
+<TD align="center"><B>Valor(es)</B></TD>
+<TD align="center"><B>Sí</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Efectúe la comprobación del sistema de diagnóstico.</div>
+								<div>¿Se ha efectuado la comprobación?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Ir a   <A target="_blank" href="7C2_1F22.es.html#C1F2DSC">"Comprobación del sistema de diagnóstico"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<div>¿Arranca el motor?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Ir a   <A target="_blank" href="7C2_1F22.es.html#C1F2ECWNR">"El motor gira pero no arranca"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Conecte un scanner al conector de diagnóstico (DLC).</Li>
+									<Li>Gire la llave de contacto a la posición ON con el motor apagado.</Li>
+									<Li>Borre los códigos de diagnóstico de averías (DTCs) con un scanner.</Li>
+									<Li>Arranque el motor y déjelo en ralentí durante 1 minuto.</Li>
+								</OL>
+								<div>¿Se vuelve a activar el DTC P0201?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 5</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Gire la llave de contacto a la posición ON con el motor apagado.</Li>
+									<Li>Revise los datos instantáneos y tome nota de los parámetros.</Li>
+									<Li>Haga funcionar el vehículo según las condiciones de los datos instantáneos, como se especifica en esta sección.</Li>
+								</OL>
+								<div>¿Se vuelve a activar el DTC P0201?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 5</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Ir a   <A target="_blank" href="7C2_1F22.es.html#C1F2DA">"Ayudas para el diagnóstico"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Gire la llave de contacto a la posición OFF.</Li>
+									<Li>Desenchufe el conector del módulo de control electrónico del motor (ECM) para el inyector 1.</Li>
+									<Li>Gire la llave de contacto a la posición ON con el motor apagado.</Li>
+									<Li>Con una lámpara de pruebas conectada a masa, compruebe el circuito del conductor, el terminal 26 del conector J2 del ECM.</Li>
+								</OL>
+								<div>¿Se enciende la lámpara de pruebas?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 6</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repare la derivación a masa o interrupción en el circuito del controlador del inyector.</div>
+								<div>¿Se ha realizado la reparación?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 10</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Desenchufe la conexión de cableado del inyector 1.</Li>
+									<Li>Con una lámpara de pruebas conectada a masa, compruebe el circuito del controlador, en el terminal 2.</Li>
+								</OL>
+								<div>¿Se enciende la lámpara de pruebas?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 8</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 9</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repare el cortocircuito con la tensión en el circuito del controlador del inyector.</div>
+								<div>¿Se ha realizado la reparación?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 10</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Gire la llave de contacto a la posición OFF.</Li>
+									<Li>Sustituya el ECM.</Li>
+								</OL>
+								<div>¿Se ha realizado la reparación?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 10</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Borre los DTCs utilizando el scanner.</Li>
+									<Li>Ponga en marcha el motor y déjelo en ralentí hasta que alcance la temperatura normal de funcionamiento.</Li>
+									<Li>Efectúe una prueba de carretera con el vehículo en las condiciones requeridas para que se active este DTC, tal y como se especifica en esta sección.</Li>
+								</OL>
+								<div>¿Indica el scanner que se ha efectuado y superado con éxito el diagnóstico?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 10</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 2</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">11</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Compruebe si se activa algún otro DTC.</div>
+								<div>¿Se activa algún DTC no diagnosticado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Consulte la tabla de DTCs específica</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Sistema OK</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<P></P>
+<DIV align="center" id="C1F2P0202"><font size="4"><b>DTC P0202 - </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="C1F2I2CC"><font size="4"><b>Circuito de control del inyector 2</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="C1F2CD8"><b>descripción del circuito</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">El módulo de control electrónico del motor (ECM) tiene cuatro circuitos de controladores independientes para los inyectores, cada uno de los cuales controla un inyector. Cuando el ECM conecta un circuito del controlador a masa, el inyector se activa. El ECM supervisa la corriente en cada circuito del controlador. El ECM mide una caída de tensión a través de una resistencia fija y la controla. Se supervisa la tensión en cada controlador con el fin de detectar fallos. Si la tensión no es la que el ECM tiene previsto detectar en el circuito, se activa un código de diagnóstico de averías (DTC). Este DTC detecta una derivación a masa y/o un circuito abierto y cortocircuito con la batería para las salidas del lado de baja- de los inyectores.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2CRD7"><b>Condiciones para la ejecución del DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>La llave de contacto esté en la posición ON.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2CSD3"><b>Condiciones para la activación del DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>El ECM detecta un circuito abierto en el circuito de control del inyector 2.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2ATWDS8"><b>Acción realizada cuando se activa el DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>La luz testigo de fallo (MIL) se encenderá después de 3 ciclos de conducción válidos.</Li>
+					<Li>El ECM registrará las condiciones de funcionamiento en el momento de la avería. Esta información se almacenará en las memorias intermedias de datos instantáneos y registros de averías.</Li>
+					<Li>Se almacena un historial del DTC.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2CCM8"><b>Condiciones para borrar el DTC y apagar la MIL</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>La MIL se apagará después de tres o cuatro ciclos de conducción consecutivos en los que se efectúe el diagnóstico sin ningún fallo.</Li>
+					<Li>El historial del DTC se borrará después de efectuar 40 ciclos consecutivos de calentamiento sin ninguna avería.</Li>
+					<Li>El(los) DTC(s) puede(n) borrarse empleando un scanner.</Li>
+					<Li>Desconectando la alimentación de la batería del ECM durante 10 segundos.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2DA8"><b>Asistencia en el diagnóstico</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Un circuito del controlador del inyector 2 que esté abierto o en cortocircuito con la tensión activará un DTC P0202. También causará un fallo de encendido debido a un inyector inoperativo. Se debe activar también un DTC de fallo de encendido que indique cuál es el inyector que no funciona.</div>
+				<div class="T1" align="left">Los ajustes de combustible - momentáneo y de larga duración- que sean excesivamente altos o bajos son una buena indicación de que un inyector está funcionando mal. Consulte el apartado   <A target="_blank" href="7C2_1F23.es.html#C1F2FIBT">"Prueba de equilibrio de los inyectores de combustible"</A> de esta sección para comprobar si los inyectores están funcionando mal.</div>
+				<div class="T1" align="left">La resistencia de los inyectores que se mida en la conexión del ECM será ligeramente mayor que si se hubiera medido directamente en el inyector porque incluye la resistencia del cableado. El valor normal es de aproximadamente 13,5 Ω.</div>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="C1F2P02021"><font size="4"><b>DTC P0202 - Circuito de control del inyector 2</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Paso</B></TD>
+<TD align="center"><B>Medida</B></TD>
+<TD align="center"><B>Valor(es)</B></TD>
+<TD align="center"><B>Sí</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Efectúe la comprobación del sistema de diagnóstico.</div>
+								<div>¿Se ha efectuado la comprobación?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Ir a   <A target="_blank" href="7C2_1F22.es.html#C1F2DSC">"Comprobación del sistema de diagnóstico"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<div>¿Arranca el motor?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Ir a   <A target="_blank" href="7C2_1F22.es.html#C1F2ECWNR">"El motor gira pero no arranca"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Conecte un scanner al conector de diagnóstico (DLC).</Li>
+									<Li>Gire la llave de contacto a la posición ON con el motor apagado.</Li>
+									<Li>Borre los códigos de diagnóstico de averías (DTCs) con un scanner.</Li>
+									<Li>Arranque el motor y déjelo en ralentí durante 1 minuto.</Li>
+								</OL>
+								<div>¿Se vuelve a activar el DTC P0202?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 5</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Gire la llave de contacto a la posición ON con el motor apagado.</Li>
+									<Li>Revise los datos instantáneos y tome nota de los parámetros.</Li>
+									<Li>Haga funcionar el vehículo según las condiciones de los datos instantáneos, como se especifica en esta sección.</Li>
+								</OL>
+								<div>¿Se vuelve a activar el DTC P0202?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 5</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Ir a   <A target="_blank" href="7C2_1F22.es.html#C1F2DA">"Ayudas para el diagnóstico"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Gire la llave de contacto a la posición OFF.</Li>
+									<Li>Desenchufe el conector del módulo de control electrónico del motor (ECM) para el inyector 2.</Li>
+									<Li>Gire la llave de contacto a la posición ON con el motor apagado.</Li>
+									<Li>Con una lámpara de pruebas conectada a masa, compruebe el circuito del conductor, el terminal 18 del conector J2 del ECM.</Li>
+								</OL>
+								<div>¿Se enciende la lámpara de pruebas?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 6</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repare la derivación a masa o interrupción en el circuito del controlador del inyector.</div>
+								<div>¿Se ha realizado la reparación?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 10</I>
+							</div>
+						</TD>
+						<TD valign="middle" align="center" width="15%"> - </TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Desenchufe la conexión de cableado del inyector 2.</Li>
+									<Li>Con una lámpara de pruebas conectada a masa, compruebe el circuito del controlador, en el terminal 2.</Li>
+								</OL>
+								<div>¿Se enciende la lámpara de pruebas?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 8</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 9</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repare el cortocircuito con la tensión en el circuito del controlador del inyector.</div>
+								<div>¿Se ha realizado la reparación?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 10</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Gire la llave de contacto a la posición OFF.</Li>
+									<Li>Sustituya el ECM.</Li>
+								</OL>
+								<div>¿Se ha realizado la reparación?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 10</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Borre los DTCs utilizando el scanner.</Li>
+									<Li>Ponga en marcha el motor y déjelo en ralentí hasta que alcance la temperatura normal de funcionamiento.</Li>
+									<Li>Efectúe una prueba de carretera con el vehículo en las condiciones requeridas para que se active este DTC, tal y como se especifica en esta sección.</Li>
+								</OL>
+								<div>¿Indica el scanner que se ha efectuado y superado con éxito el diagnóstico?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 10</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 2</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">11</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Compruebe si se activa algún otro DTC.</div>
+								<div>¿Se activa algún DTC no diagnosticado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Consulte la tabla de DTCs específica</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Sistema OK</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<P></P>
+<DIV align="center" id="C1F2P0203"><font size="4"><b>DTC P0203 - </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="C1F2I3CC"><font size="4"><b>Circuito de control del inyector 3</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="C1F2CD9"><b>descripción del circuito</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">El módulo de control electrónico del motor (ECM) tiene cuatro circuitos de controladores independientes para los inyectores, cada uno de los cuales controla un inyector. Cuando el ECM conecta un circuito del controlador a masa, el inyector se activa. El ECM supervisa la corriente en cada circuito del controlador. El ECM mide una caída de tensión a través de una resistencia fija y la controla. Se supervisa la tensión en cada controlador con el fin de detectar fallos. Si la tensión no es la que el ECM tiene previsto detectar en el circuito, se activa un código de diagnóstico de averías (DTC). Este DTC detecta una derivación a masa y/o un circuito abierto y cortocircuito con la batería para las salidas del lado de baja- de los inyectores.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2CRD8"><b>Condiciones para la ejecución del DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>La llave de contacto esté en la posición ON.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2CSD9"><b>Condiciones para la activación del DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>El ECM detecta un circuito abierto en el circuito de control del inyector 3.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2ATWDS9"><b>Acción realizada cuando se activa el DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>La luz testigo de fallo (MIL) se encenderá después de 3 ciclos de conducción válidos.</Li>
+					<Li>El ECM registrará las condiciones de funcionamiento en el momento de la avería. Esta información se almacenará en las memorias intermedias de datos instantáneos y registros de averías.</Li>
+					<Li>Se almacena un historial del DTC.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2CCM9"><b>Condiciones para borrar el DTC y apagar la MIL</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>La MIL se apagará después de tres o cuatro ciclos de conducción consecutivos en los que se efectúe el diagnóstico sin ningún fallo.</Li>
+					<Li>El historial del DTC se borrará después de efectuar 40 ciclos consecutivos de calentamiento sin ninguna avería.</Li>
+					<Li>El(los) DTC(s) puede(n) borrarse empleando un scanner.</Li>
+					<Li>Desconectando la alimentación de la batería del ECM durante 10 segundos.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2DA9"><b>Asistencia en el diagnóstico</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Un circuito del controlador del inyector 3 que este abierto o en cortocircuito con la tensión activará un DTC P0203. También causará un fallo de encendido debido a un inyector inoperativo. Se debe activar también un DTC de fallo de encendido que indique cuál es el inyector que no funciona.</div>
+				<div class="T1" align="left">Los ajustes de combustible - momentáneo y de larga duración- que sean excesivamente altos o bajos son una buena indicación de que un inyector está funcionando mal. Consulte el apartado   <A target="_blank" href="7C2_1F23.es.html#C1F2FIBT">"Prueba de equilibrio de los inyectores de combustible"</A> de esta sección para comprobar si los inyectores están funcionando mal.</div>
+				<div class="T1" align="left">La resistencia de los inyectores que se mida en la conexión del ECM será ligeramente mayor que si se hubiera medido directamente en el inyector porque incluye la resistencia del cableado. El valor normal es de aproximadamente 13,5 Ω.</div>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="C1F2P02031"><font size="4"><b>DTC P0203 - Circuito de control del inyector 3</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Paso</B></TD>
+<TD align="center"><B>Medida</B></TD>
+<TD align="center"><B>Valor(es)</B></TD>
+<TD align="center"><B>Sí</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Efectúe la comprobación del sistema de diagnóstico.</div>
+								<div>¿Se ha efectuado la comprobación?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Ir a   <A target="_blank" href="7C2_1F22.es.html#C1F2DSC">"Comprobación del sistema de diagnóstico"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<div>¿Arranca el motor?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Ir a   <A target="_blank" href="7C2_1F22.es.html#C1F2ECWNR">"El motor gira pero no arranca"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Conecte un scanner al conector de diagnóstico (DLC).</Li>
+									<Li>Gire la llave de contacto a la posición ON con el motor apagado.</Li>
+									<Li>Borre los códigos de diagnóstico de averías (DTCs) con un scanner.</Li>
+									<Li>Arranque el motor y déjelo en ralentí durante 1 minuto.</Li>
+								</OL>
+								<div>¿Se vuelve a activar el DTC P0203?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 5</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Gire la llave de contacto a la posición ON con el motor apagado.</Li>
+									<Li>Revise los datos instantáneos y tome nota de los parámetros.</Li>
+									<Li>Haga funcionar el vehículo según las condiciones de los datos instantáneos, como se especifica en esta sección.</Li>
+								</OL>
+								<div>¿Se vuelve a activar el DTC P0203?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 5</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Ir a   <A target="_blank" href="7C2_1F22.es.html#C1F2DA">"Ayudas para el diagnóstico"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Gire la llave de contacto a la posición OFF.</Li>
+									<Li>Desenchufe el conector del módulo de control electrónico del motor (ECM) para el inyector 3.</Li>
+									<Li>Gire la llave de contacto a la posición ON con el motor apagado.</Li>
+									<Li>Con una lámpara de pruebas conectada a masa, compruebe el circuito del conductor, el terminal 10 del conector J2 del ECM.</Li>
+								</OL>
+								<div>¿Se enciende la lámpara de pruebas?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 6</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repare la derivación a masa o interrupción en el circuito del controlador del inyector.</div>
+								<div>¿Se ha realizado la reparación?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 10</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Desenchufe la conexión de cableado del inyector 3.</Li>
+									<Li>Con una lámpara de pruebas conectada a masa, compruebe el circuito del controlador, en el terminal 2.</Li>
+								</OL>
+								<div>¿Se enciende la lámpara de pruebas?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 8</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 9</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repare el cortocircuito con la tensión en el circuito del controlador del inyector.</div>
+								<div>¿Se ha realizado la reparación?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 10</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Gire la llave de contacto a la posición OFF.</Li>
+									<Li>Sustituya el ECM.</Li>
+								</OL>
+								<div>¿Se ha realizado la reparación?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 10</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Borre los DTCs utilizando el scanner.</Li>
+									<Li>Ponga en marcha el motor y déjelo en ralentí hasta que alcance la temperatura normal de funcionamiento.</Li>
+									<Li>Efectúe una prueba de carretera con el vehículo en las condiciones requeridas para que se active este DTC, tal y como se especifica en esta sección.</Li>
+								</OL>
+								<div>¿Indica el scanner que se ha efectuado y superado con éxito el diagnóstico?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 10</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 2</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">11</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Compruebe si se activa algún otro DTC.</div>
+								<div>¿Se activa algún DTC no diagnosticado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Consulte la tabla de DTCs específica</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Sistema OK</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<P></P>
+<DIV align="center" id="C1F2P0204"><font size="4"><b>DTC P0204 - </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="C1F2I4CC"><font size="4"><b>Circuito de control del inyector 4</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="C1F2CD10"><b>descripción del circuito</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">El módulo de control electrónico del motor (ECM) tiene cuatro circuitos de controladores independientes para los inyectores, cada uno de los cuales controla un inyector. Cuando el ECM conecta un circuito del controlador a masa, el inyector se activa. El ECM supervisa la corriente en cada circuito del controlador. El ECM mide una caída de tensión a través de una resistencia fija y la controla. Se supervisa la tensión en cada controlador con el fin de detectar fallos. Si la tensión no es la que el ECM tiene previsto detectar en el circuito, se activa un código de diagnóstico de averías (DTC). Este DTC detecta una derivación a masa y/o un circuito abierto y cortocircuito con la batería para las salidas del lado de baja- de los inyectores.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2CRD9"><b>Condiciones para la ejecución del DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>La llave de contacto esté en la posición ON.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2CSD10"><b>Condiciones para la activación del DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>El ECM detecta un circuito abierto en el circuito de control del inyector 4.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2ATWDS10"><b>Acción realizada cuando se activa el DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>La luz testigo de fallo (MIL) se encenderá después de 3 ciclos de conducción válidos.</Li>
+					<Li>El ECM registrará las condiciones de funcionamiento en el momento de la avería. Esta información se almacenará en las memorias intermedias de datos instantáneos y registros de averías.</Li>
+					<Li>Se almacena un historial del DTC.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2CCM10"><b>Condiciones para borrar el DTC y apagar la MIL</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>La MIL se apagará después de tres o cuatro ciclos de conducción consecutivos en los que se efectúe el diagnóstico sin ningún fallo.</Li>
+					<Li>El historial del DTC se borrará después de efectuar 40 ciclos consecutivos de calentamiento sin ninguna avería.</Li>
+					<Li>El(los) DTC(s) puede(n) borrarse empleando un scanner.</Li>
+					<Li>Desconectando la alimentación de la batería del ECM durante 10 segundos.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2DA10"><b>Asistencia en el diagnóstico</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Un circuito del controlador del inyector 4 que este abierto o en cortocircuito con la tensión activará un DTC P0204. También causará un fallo de encendido debido a un inyector inoperativo. Se debe activar también un DTC de fallo de encendido que indique cuál es el inyector que no funciona.</div>
+				<div class="T1" align="left">Los ajustes de combustible - momentáneo y de larga duración- que sean excesivamente altos o bajos son una buena indicación de que un inyector está funcionando mal. Consulte el apartado   <A target="_blank" href="7C2_1F23.es.html#C1F2FIBT">"Prueba de equilibrio de los inyectores de combustible"</A> de esta sección para comprobar si los inyectores están funcionando mal.</div>
+				<div class="T1" align="left">La resistencia de los inyectores que se mida en la conexión del ECM será ligeramente mayor que si se hubiera medido directamente en el inyector porque incluye la resistencia del cableado. El valor normal es de aproximadamente 13,5 Ω.</div>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="C1F2P02041"><font size="4"><b>DTC P0204 - Circuito de control del inyector 4</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Paso</B></TD>
+<TD align="center"><B>Medida</B></TD>
+<TD align="center"><B>Valor(es)</B></TD>
+<TD align="center"><B>Sí</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Efectúe la comprobación del sistema de diagnóstico.</div>
+								<div>¿Se ha efectuado la comprobación?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Ir a   <A target="_blank" href="7C2_1F22.es.html#C1F2DSC">"Comprobación del sistema de diagnóstico"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<div>¿Arranca el motor?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Ir a   <A target="_blank" href="7C2_1F22.es.html#C1F2ECWNR">"El motor gira pero no arranca"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Conecte un scanner al conector de diagnóstico (DLC).</Li>
+									<Li>Gire la llave de contacto a la posición ON con el motor apagado.</Li>
+									<Li>Borre los códigos de diagnóstico de averías (DTCs) con un scanner.</Li>
+									<Li>Arranque el motor y déjelo en ralentí durante 1 minuto.</Li>
+								</OL>
+								<div>¿Se vuelve a activar el DTC P0204?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 5</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Gire la llave de contacto a la posición ON con el motor apagado.</Li>
+									<Li>Revise los datos instantáneos y tome nota de los parámetros.</Li>
+									<Li>Haga funcionar el vehículo según las condiciones de los datos instantáneos, como se especifica en esta sección.</Li>
+								</OL>
+								<div>¿Se vuelve a activar el DTC P0204?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 5</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Ir a   <A target="_blank" href="7C2_1F22.es.html#C1F2DA">"Ayudas para el diagnóstico"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Gire la llave de contacto a la posición OFF.</Li>
+									<Li>Desenchufe el conector del módulo de control electrónico del motor (ECM) para el inyector 4.</Li>
+									<Li>Gire la llave de contacto a la posición ON con el motor apagado.</Li>
+									<Li>Con una lámpara de pruebas conectada a masa, compruebe el circuito del conductor, el terminal 2 del conector J2 del ECM.</Li>
+								</OL>
+								<div>¿Se enciende la lámpara de pruebas?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 6</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repare la derivación a masa o interrupción en el circuito del controlador del inyector.</div>
+								<div>¿Se ha realizado la reparación?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 10</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Desenchufe la conexión de cableado del inyector 4.</Li>
+									<Li>Con una lámpara de pruebas conectada a masa, compruebe el circuito del controlador, en el terminal 2.</Li>
+								</OL>
+								<div>¿Se enciende la lámpara de pruebas?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 8</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 9</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repare el cortocircuito con la tensión en el circuito del controlador del inyector.</div>
+								<div>¿Se ha realizado la reparación?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 10</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Gire la llave de contacto a la posición OFF.</Li>
+									<Li>Sustituya el ECM.</Li>
+								</OL>
+								<div>¿Se ha realizado la reparación?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 10</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Borre los DTCs utilizando el scanner.</Li>
+									<Li>Ponga en marcha el motor y déjelo en ralentí hasta que alcance la temperatura normal de funcionamiento.</Li>
+									<Li>Efectúe una prueba de carretera con el vehículo en las condiciones requeridas para que se active este DTC, tal y como se especifica en esta sección.</Li>
+								</OL>
+								<div>¿Indica el scanner que se ha efectuado y superado con éxito el diagnóstico?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 10</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 2</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">11</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Compruebe si se activa algún otro DTC.</div>
+								<div>¿Se activa algún DTC no diagnosticado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Consulte la tabla de DTCs específica</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Sistema OK</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+<BR><BR><TABLE align="center"><TR>
+<TD align="left"><A href="7C2_1F25.es.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_back.gif" alt="A la página anterior"></A></TD>
+<TD align="left"></TD>
+<TD align="left"><A href="7C2_1F07.es.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_next.gif" alt="A la página siguiente"></A></TD>
+<TD></TD>
+</TR></TABLE>
+<TABLE width="100%"><TBODY><TR BGCOLOR="DarkSlateBlue" align="center"><TD><FONT color="white"><B>© Copyright Chevrolet Europe. Reservados todos los derechos</B></FONT></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>

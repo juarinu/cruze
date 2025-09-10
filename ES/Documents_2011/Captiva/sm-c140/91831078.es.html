@@ -1,0 +1,179 @@
+<HTML>
+<head><link rel="stylesheet" type="text/css" href="si-style.css"/><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><TITLE>Información de servicio</TITLE><STYLE>
+	.ListIndentBul2Refer{margin-left : 40pt}  ..ListIndentBul2{margin-left : -20pt}
+	.SubListIndent{margin-left : -15pt}
+	.UpNo{border-top : white}  .DownNo{border-bottom : white}  ..BothNo{border-top : white; border-bottom : white}
+	.UpBold{border-top : thin double ridge}  .DownBold{border-bottom : thin double ridge}  .BothBold{border-top : thin double ridge; border-bottom : thin double ridge}
+	.ImageIndent{margin-left : 0%}  .ImageTitleIndent{margin-left : 5%}  .ParagraphIndent{margin-left : 20pt}
+	.Arial{font-family : Arial, Helvetica, sans-serif; margin-left : 10pt; margin-right : 10pt}
+</STYLE>
+<SCRIPT LANGUAGE="JavaScript">
+	function FixMenu()
+	{
+		menuTop = document.body.scrollTop + document.body.clientHeight -40;
+		menu.style.top = menuTop;
+		menu.style.width = document.body.clientWidth; 
+	}
+</SCRIPT>
+</HEAD>
+<BODY class="Arial" onLoad="FixMenu()" onScroll="FixMenu()" onResize="FixMenu()" BGCOLOR="#FFFFFF">
+<SPAN ID="menu" STYLE="position:absolute; left:0px; top:0px; width:0px">
+	<A border="0" href="91831078.es.html">
+	<IMG src="../../../../graphic-pool/Icons/Totop.gif" align="right" halign="Bottom" border="0" alt="To the top of the document"></A>
+</SPAN>
+<TABLE width="100%" BORDER="1" rules="none" cellspacing="0" cellpadding="0" style="magin-top: 5pt">
+<TBODY>
+<TR BGCOLOR="cccc99" height="15">
+<TD width="30%"><div style="padding-left: 5pt"><B><FONT face="Arial">Captiva</FONT></B></div></TD>
+<TD width="70%" align="right" colspan="8"></TD>
+</TR>
+<TR BGCOLOR="white" height="60">
+<TD width="35%" align="left">
+<TABLE>
+<TR>
+<TD width="5%" align="left">&nbsp;</TD>
+<TD width="5%" align="left"></TD>
+<TD width="5%" align="left">&nbsp;</TD>
+</TR>
+</TABLE>
+</TD>
+<TD>
+<TABLE width="65%" align="right">
+<TR>
+<TD style="font-size:10">
+	<A href="../../../GMDE_TIS_START.html" target="_top">
+	<IMG src="../../code/menu-images/home.gif" border="0" alt="GMDE Start Page">
+</A></TD>
+<TD style="font-size:10">
+	<A href="../toc_Captiva.html" target="menu"><IMG src="../../code/menu-images/static-TOC.gif" border="0" alt="Load static TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../toc_Captiva_code.html" target="code"><IMG src="../../code/menu-images/menu_folder_open.gif" border="0" alt="Load dynamic TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../../help/readme_EN.htm" target="top" class="bottom_copyright"><IMG src="../../code/menu-images/help.gif" border="0" alt="Help?"></A>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<H2>Descripción y funcionamiento de las comunicaciones de enlace de datos</H2>
+<p>El sistema de control de la carrocería consiste en el módulo de control de la carrocería (BCM), comunicaciones y varias entradas y salidas. Algunas entradas, salidas y mensajes requieren que otros módulos interactúen con el BCM. El BCM también tiene terminales de entrada y salida discretos para controlar las funciones de la carrocería del vehículo. La tensión positiva de la batería es suministrada al BCM desde el fusible del BCM en el bloque de fusibles del motor. El módulo tiene dos masas en GX201 así como una directamente en la batería del vehículo. El BCM está cableado al bus de datos en serie de alta velocidad GMLAN y al bus de datos en serie de baja velocidad GMLAN y actúa como pasarela entre ellos. Si el BCM no se comunica el vehículo no arrancará debido a la incapacidad del módulo de control del motor/tren motriz (ECM/PCM) y del módulo de control del sistema antirrobo del vehículo (VTD) de comunicarse sin que el BCM suministre la función de pasarela. </p>
+
+<A NAME="ss1-1831078">
+<A HREF="#ss1-1831078">
+<H3>Módulo maestro de modo de potencia</H3></A><p>Este BCM del vehículo funciona como el maestro de modo de potencia (PMM). El interruptor de encendido es un interruptor de baja corriente con múltiples señales de interruptor de encendido discretas al PMM para determinar el modo de potencia que se enviará por los circuitos de datos en serie a los otros módulos que necesitan esta información; y así el PMM activará relés y otras salidas directas del PMM, según sea necesario. </p>
+
+<A NAME="ss2-1831078">
+<A HREF="#ss2-1831078">
+<H3>Datos de serie del dispositivo principal de modo de potencia</H3></A><p>La alimentación a numerosos circuitos de vehículo se controla mediante el módulo que se llama dispositivo principal de modo de potencia (PMM). Este PMM del vehículo es el módulo de control de la carrocería (BCM). El interruptor de encendido es un interruptor de baja corriente con señales discretas múltiples del interruptor de encendido al PMM para determinar el modo de potencia que se enviará a través de los circuitos de datos en serie a otros módulos que necesitan esta información. El PMM también activará relés y otras salidas directas del PMM según se necesite. El PMM determina qué modo de potencia (solicitud de Desac., accesorios, marcha, arranque) se requiere y proporcionará esta información a otros módulos a través de datos en serie. Los módulos que han cambiado entradas de voltaje pueden operar en modo por defecto si el mensaje de datos en serie del PMM no coincide con lo que puede ver el módulo individual de sus propias conexiones.</p>
+<p>El PMM recibe las señales del interruptor de encendido para identificar el modo de potencia que desea el operador. La tabla de Parámetros de modo de potencia PMM ilustra el estado correcto de estos parámetros (circuitos) de entrada correspondiéndose con la posición del interruptor de encendido:</p>
+<TABLE CELLSPACING="0"  WIDTH="100%" BORDER=1>
+<A NAME="tab3-1831078">
+<A HREF="#tab3-1831078">
+<FONT COLOR="#254164"><H4>Parámetros del modo de potencia PMM</H4></FONT></A>
+
+<TR>
+<TH BGCOLOR="#C0C0C0" ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Posición del interruptor de encendido</P>
+</TH><TH BGCOLOR="#C0C0C0" ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Modo de potencia transmitido</P>
+</TH><TH BGCOLOR="#C0C0C0" ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Enc. Desac./Marcha/Arranque (Circuito de tensión Desac./Marcha arranque)</P>
+</TH><TH BGCOLOR="#C0C0C0" ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Accesorios de encendido/Marcha (Circuito de tensión de accesorios)</P>
+</TH><TH BGCOLOR="#C0C0C0" ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Encendido Marcha/Arranque (Circuito de tensión de encendido 1)</P>
+</TH></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>Llave apagado fuera</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>Desac.</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>Llave fuera/ACC</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>Inactivo</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>Inactivo</P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>Llave encendido dentro (BLOQUEO)</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>Desac.</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>Llave dentro/Desac.</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>Inactivo</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>Inactivo</P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>ACC</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>Accesorios</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>Llave dentro/ACC</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>Activo</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>Inactivo</P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>ACTIVADO</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>En marcha</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>En marcha</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>Activo</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>Activo</P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>PUESTA EN MARCHA</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>Solicitud de arranque</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>Arranque</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>Inactivo</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>Activo</P>
+</TD></TR>
+</TABLE>
+<A NAME="ss4-1831078">
+<A HREF="#ss4-1831078">
+<H3>Estados de despierto/dormido del BCM</H3></A><p>El módulo de control de la carrocería (BCM) puede controlar o realizar todas las funciones del BCM en estado despierto. El BCM pasa a estado dormido cuando se ha detenido el control activo o la vigilancia normal de las funciones del sistema y ha pasado el límite de tiempo. El BCM debe detectar ciertas entradas tipos despertador antes de volver al estado despierto. El BCM vigila estas entradas durante el estado dormido.</p>
+<p>El BCM pasará al estado despierto si se detecta cualquiera de las siguientes entradas tipo despertador.</p>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Actividad en la línea de datos de serie</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Detección de una reconexión de la batería</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Cualquier señal de puerta</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Faros encendidos</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Llave en encendido</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Encendido ON</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Luces de estacionamiento encendidas</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Mensaje de mando a distancia o inicio a distancia</td></tr></table></div>
+
+<p>El BCM pasará a estado dormido cuando coincidan las siguientes situaciones:</p>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">El interruptor de encendido está apagado, llave fuera.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">No hay actividad en la línea de datos de serie.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">No se ordenan salidas. </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">No hay temporizadores de retardo contando activamente. </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">No hay presentes entradas tipo despertador. </td></tr></table></div>
+
+<p>Si se cumplen todas estas situaciones, el BCM pasará a estado de baja potencia o dormido. </p>
+
+<A NAME="ss5-1831078">
+<A HREF="#ss5-1831078">
+<H3>Pasarela</H3></A><p>El BCM en este vehículo funciona como una pasarela o retransmisor. El objetivo de la pasarela es transmitir mensajes de datos en serie entre el bus GMLAN de alta velocidad y el bus GMLAN de baja velocidad para la comunicación entre los distintos módulos. La pasarela interactuará con cada una de las redes según el protocolo de transmisión de la red.</p>
+<p>Un ejemplo de esta comunicación necesaria es la comunicación entre el módulo de control del motor (ECM), que es en datos en serie de alta velocidad, y el módulo de control del sistema antirrobo del vehículo (VTD), que es en datos en serie de baja velocidad. Si estos módulos no pueden intercambiar información, el vehículo no arrancará.</p>
+<p>Cualquier comunicación entre el BCM y la herramienta de diagnóstico se realiza en los circuitos de datos en serie GMLAN de alta velocidad. Un DTC de pérdida de comunicación normalmente se activa en módulos distintos del módulo que tiene el fallo de comunicación.</p>
+
+<A NAME="ss6-1831078">
+<A HREF="#ss6-1831078">
+<H3>Control de los datos en serie de la retención de energía para accesorios (RAP)</H3></A><p>Los módulos reciben un mensaje de modo de potencia proveniente del módulo de control de la carrocería (BCM) a través de circuitos de datos en serie, indicando cuando el modo de potencia de la retención de energía para accesorios (RAP) es actual. El BCM monitoriza la posición del interruptor de encendido, la condición de la batería y el estado de las puertas del habitáculo para determinar si se debe iniciar la RAP. Los módulos apoyan entonces el funcionamiento de los sistemas bajo su control como lo requiere su operación de modo de potencia RAP. Los componentes y sistemas que están activos en la RAP también se activan siempre que el encendido esté en cualquier posición que no sea Desac.</p>
+<p>La RAP terminará cuando se cumpla una de las siguientes condiciones:</p>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">El BCM recibe una entrada que indica que se ha abierto cualquier puerta del habitáculo una vez que la llave de encendido está fuera del encendido.</td></tr></table></div>
+
+<p><div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td valign="top"><font color=brown><b>Importante:&nbsp;</b>La única puerta que desactivará la radio durante la RAP es la puerta del conductor. Ésta es una función de la radio y todavía se desactivará tras el límite de tiempo. </font></td></tr></table></div></font></p><div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">El cronómetro interno del BCM para la RAP expira después de unos 10&nbsp;minutos. </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">El BCM detecta una reducción de la capacidad de la batería por debajo del límite prescrito. </td></tr></table></div>
+
+<p>Entonces el BCM envía un mensaje de modo de potencia de datos en serie que termina la función RAP. </p>
+
+<A NAME="ss7-1831078">
+<A HREF="#ss7-1831078">
+<H3>Control del relé de la retención de energía para accesorios (RAP)</H3></A><p>El BCM mantiene el relé de la RAP energizado durante todos los modos de potencia, excepto No-Despierto y Manivela. El relé también está energizado durante unos 10 minutos después de apagar el encendido y retirar la llave, siempre que no haya una puerta abierta.</p>
+<p>Los dispositivos alimentados por el relé de accesorios durante el modo de potencia de la retención de energía para accesorios (RAP) son el techo corredizo, los interruptores de las ventanillas eléctricas y el bloqueo de BTSI/Estacionamiento. </p>
+
+
+
+<TABLE align="center"><TR>
+<TD align="left">&nbsp;</TD>
+<TD align="left"></TD>
+<TD align="left">&nbsp;</TD>
+<TD></TD>
+</TR></TABLE>
+<BR><BR><TABLE width="100%"><TBODY><TR BGCOLOR="DarkSlateBlue" align="center"><TD><FONT color="white"><B>© Copyright Chevrolet Europe. All rights reserved</B></FONT></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>

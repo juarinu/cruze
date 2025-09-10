@@ -1,0 +1,114 @@
+<HTML>
+<head><link rel="stylesheet" type="text/css" href="si-style.css"/><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><TITLE>Información de servicio</TITLE><STYLE>
+	.ListIndentBul2Refer{margin-left : 40pt}  ..ListIndentBul2{margin-left : -20pt}
+	.SubListIndent{margin-left : -15pt}
+	.UpNo{border-top : white}  .DownNo{border-bottom : white}  ..BothNo{border-top : white; border-bottom : white}
+	.UpBold{border-top : thin double ridge}  .DownBold{border-bottom : thin double ridge}  .BothBold{border-top : thin double ridge; border-bottom : thin double ridge}
+	.ImageIndent{margin-left : 0%}  .ImageTitleIndent{margin-left : 5%}  .ParagraphIndent{margin-left : 20pt}
+	.Arial{font-family : Arial, Helvetica, sans-serif; margin-left : 10pt; margin-right : 10pt}
+</STYLE>
+<SCRIPT LANGUAGE="JavaScript">
+	function FixMenu()
+	{
+		menuTop = document.body.scrollTop + document.body.clientHeight -40;
+		menu.style.top = menuTop;
+		menu.style.width = document.body.clientWidth; 
+	}
+</SCRIPT>
+</HEAD>
+<BODY class="Arial" onLoad="FixMenu()" onScroll="FixMenu()" onResize="FixMenu()" BGCOLOR="#FFFFFF">
+<SPAN ID="menu" STYLE="position:absolute; left:0px; top:0px; width:0px">
+	<A border="0" href="92498588.es.html">
+	<IMG src="../../../../graphic-pool/Icons/Totop.gif" align="right" halign="Bottom" border="0" alt="To the top of the document"></A>
+</SPAN>
+<TABLE width="100%" BORDER="1" rules="none" cellspacing="0" cellpadding="0" style="magin-top: 5pt">
+<TBODY>
+<TR BGCOLOR="cccc99" height="15">
+<TD width="30%"><div style="padding-left: 5pt"><B><FONT face="Arial">Captiva</FONT></B></div></TD>
+<TD width="70%" align="right" colspan="8"></TD>
+</TR>
+<TR BGCOLOR="white" height="60">
+<TD width="35%" align="left">
+<TABLE>
+<TR>
+<TD width="5%" align="left">&nbsp;</TD>
+<TD width="5%" align="left"></TD>
+<TD width="5%" align="left">&nbsp;</TD>
+</TR>
+</TABLE>
+</TD>
+<TD>
+<TABLE width="65%" align="right">
+<TR>
+<TD style="font-size:10">
+	<A href="../../../GMDE_TIS_START.html" target="_top">
+	<IMG src="../../code/menu-images/home.gif" border="0" alt="GMDE Start Page">
+</A></TD>
+<TD style="font-size:10">
+	<A href="../toc_Captiva.html" target="menu"><IMG src="../../code/menu-images/static-TOC.gif" border="0" alt="Load static TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../toc_Captiva_code.html" target="code"><IMG src="../../code/menu-images/menu_folder_open.gif" border="0" alt="Load dynamic TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../../help/readme_EN.htm" target="top" class="bottom_copyright"><IMG src="../../code/menu-images/help.gif" border="0" alt="Help?"></A>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<H2>Descripción y operación de la detección de objetos — C145/Carrocería corta UFR</H2>
+<p>El sistema ultrasónico de estacionamiento asistido está diseñado para identificar y notificar al conductor cuando un objeto se halla en la trayectoria del vehículo cuando éste se desplaza hacia delante o hacia atrás a una velocidad de menos de 8&nbsp;km/h (5&nbsp;mph). La distancia y ubicación del objeto se determinan mediante 8 sensores de objeto: 4 situados en el paragolpes trasero y 4 situados en el paragolpes frontal. El sistema de estacionamiento asistido avisará a conductor mediante un pitido que se escucha a través de la radio.</p>
+<p>El sistema de estacionamiento asistido está realizado con los siguientes componentes:</p>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Módulo de control de aparcamiento asistido</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Sensores de alarma de objeto frontal</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Sensores de alarma de objeto trasero</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Interruptor de estacionamiento asistido</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Indicador del interruptor de estacionamiento asistido</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Indicador de aviso en el panel de instrumentos del sistema de aparcamiento asistido</td></tr></table></div>
+
+<h4>Módulo de control de aparcamiento asistido</h4><p>El módulo de control de aparcamiento asistido ofrece una referencia de 8&nbsp;V y una referencia baja a los 8&nbsp;sensores de alarma de objetos. El módulo de control de aparcamiento asistido recibe señales individuales de cada uno de los 8 sensores y determina la ubicación y la distancia de un objeto basándose en esta información. Cuando se detecta un objeto, el módulo de control de aparcamiento asistido enviará un mensaje de datos a través del Bus CAN a la radio solicitando un aviso acústico, un tono para los sensores delanteros y otro tono para los sensores traseros.</p>
+<h4>Sensores de alarma de objeto</h4><p>Los sensores de alarma de objeto están situados en los paragolpes frontal y trasero del vehículo. Los sensores se utilizan para determinar la distancia entre un objeto y el paragolpes. Cada sensor emite una frecuencia ultrasónica que se refleja en cualquier objeto situado delante o detrás del vehículo. Estas reflexiones son captadas por los sensores. La diferencia de tiempo entre la emisión de la frecuencia y el momento en que se recibe la reflexión se denomina el tiempo de eco del sensor, y se utiliza para determinar la distancia hasta el objeto. Los sensores envían esta información al módulo de control de aparcamiento asistido.</p>
+<h4>Interruptor de estacionamiento asistido</h4><p>El estacionamiento asistido se puede activar y desactivar pulsando el interruptor de estacionamiento asistido. Al colocar la marcha atrás también se puede activar el estacionamiento asistido. Al volver a pulsar el interruptor de estacionamiento asistido se desactivará el estacionamiento asistido.</p>
+<h4>Indicador del interruptor de estacionamiento asistido</h4><p>El indicador del interruptor de estacionamiento asistido muestra el estado del estacionamiento asistido. Si la lámpara está activada, el aparcamiento asistido está desactivado.</p>
+
+<A NAME="ss1-2498588">
+<A HREF="#ss1-2498588">
+<H3>Operación del estacionamiento asistido</H3></A><p>Cuando un objeto está en el rango de medida del sensor, el pulso ultrasónico se refleja y es recibido por el sensor que lo ha enviado o por un sensor cercano. El sensor convierte esta señal en una señal de tensión y la envía al módulo de control de aparcamiento asistido. El módulo de control de aparcamiento asistido evalúa las señales recibidas procedentes del sensor. Tan pronto como un objeto está en el rango de medida, el módulo de control de aparcamiento asistido envía un mensaje mediante Bus-CAN a la radio para que emita una señal acústica de distancia.</p>
+<p>El sistema de aparcamiento asistido puede detectar objetos de más de 7,6&nbsp;cm (3&nbsp;pulgs.) de ancho y 25,4&nbsp;cm (10&nbsp;pulgs.) de alto. El sistema no puede detectar objetos a una altura inferior de 15&nbsp;cm sobre el suelo, por debajo del parachoques, debajo del vehículo. Si se detecta un objeto, ocurrirá una de las siguientes cosas: </p>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">El rango de medida de los sensores de alarma de objeto frontal está entre 30-120&nbsp;cm (11,8-47,2&nbsp;pulg.). Desde una distancia de 120&nbsp;cm (47,2&nbsp;pulg.), la señal acústica está activa. La frecuencia del pitido aumenta a medida que disminuye la distancia. Desde una distancia de menos de 30&nbsp;cm (11,8&nbsp;pulg.), el pitido es continuo.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">El rango de medida de los sensores de alarma de objeto trasero está entre 30-180&nbsp;cm (11,8-70,9&nbsp;pulg.). Desde una distancia de 180&nbsp;cm (70,9&nbsp;pulgadas), la señal acústica está activa. La frecuencia del pitido aumenta a medida que disminuye la distancia. Desde una distancia de menos de 30&nbsp;cm (11,8&nbsp;pulg.), el pitido es continuo.</td></tr></table></div>
+
+<p>El aparcamiento asistido se activa en cada ciclo de llave cuando se conecta el encendido y la palanca de cambios se coloca en Drive o en R (marcha atrás). El estacionamiento asistido se puede activar y desactivar pulsando el interruptor de estacionamiento asistido. Al seleccionar DRIVE o REVERSE (marcha atrás) se activa el sistema de aparcamiento asistido. Al pulsar el interruptor de aparcamiento asistido se desactivará el sistema de aparcamiento asistido. Cuando la palanca de cambios está en DRIVE (y el sistema está habilitado) solo supervisan objetos los sensores delanteros. Cuando la palanca de cambios está en REVERSE (marcha atrás) (y el sistema está habilitado) supervisan objetos tanto los sensores delanteros como los traseros.</p>
+<p>El módulo de control de aparcamiento asistido realiza una autocomprobación y monitoriza los sensores por si hubiera fallos mecánicos o eléctricos. Se controla la alimentación de cada sensor y las señales de sensor, que han de cambiar cuando el vehículo se mueve. Si éste no es el caso, el sensor está acústicamente bloqueado o defectuoso. El barro, el hielo y la nieve pueden obstruir el funcionamiento de los sensores. Además de eso el módulo de control de aparcamiento asistido comprueba que esté instalado el tipo correcto de sensor. Si cualquiera de estas pruebas falla, se ajusta un DTC con el síntoma correspondiente, el estacionamiento asistido se desactiva y el indicador de estacionamiento asistido del cuadro del tablero de instrumentos se activa.</p>
+
+<A NAME="ss2-2498588">
+<A HREF="#ss2-2498588">
+<H3>Mensajes del centro de información del conductor sobre el sistema de aparcamiento asistido</H3></A><h4>REPARAR EL SISTEMA DE APARCAMIENTO ASISTIDO</h4><p>El centro de información del conductor muestra el mensaje REPARAR EL SISTEMA DE APARCAMIENTO ASISTIDO cuando el módulo de control de aparcamiento asistido detecta un fallo de funcionamiento en dicho sistema y éste se desactiva. El centro de información del conductor también muestra el mensaje REPARAR EL SISTEMA DE APARCAMIENTO ASISTIDO cuando se produce un fallo de comunicación con el módulo de control de aparcamiento asistido.</p>
+<h4>ESTACIONAMIENTO ASISTIDO DESACTIVADO</h4><p>El centro de información del conductor muestra el mensaje ESTACIONAMIENTO ASISTIDO DESACTIVADO cuando el sistema de aparcamiento asistido se desactiva debido a circunstancias que desactivan o inhiben dicho sistema. El módulo de control de aparcamiento asistido solicita al centro de información del conductor que muestre el mensaje ESTACIONAMIENTO ASISTIDO DESACTIVADO cuando detecta una de las circunstancias siguientes:</p>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">El sistema de aparcamiento asistido se puede desactivar de forma manual mediante el interruptor de aparcamiento asistido.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Se ha montado un objeto detrás del vehículo, por ejemplo, un remolque, un portabicicletas, un dispositivo de remolque o una barra de remolque. También se desactivará el sistema si algún objeto sobresale del portón trasero con éste bajado.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Los sensores del sistema de aparcamiento asistido están cubiertos de nieve, barro, suciedad, lodo o hielo.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">El paragolpes del vehículo está dañado.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Capa de pintura demasiado espesa en un sensor de repuesto del sistema de estacionamiento asistido.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Los sensores del sistema de estacionamiento asistido sufren perturbaciones procedentes de vibraciones como las provocadas por vehículos de gran tamaño cercanos o equipo pesado como, por ejemplo, un martillo neumático.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">El interruptor del freno de estacionamiento está activo y la palanca de cambios no está en PARK (aparcamiento) ni NEUTRAL (punto muerto).</td></tr></table></div>
+
+
+
+
+<TABLE align="center"><TR>
+<TD align="left">&nbsp;</TD>
+<TD align="left"></TD>
+<TD align="left">&nbsp;</TD>
+<TD></TD>
+</TR></TABLE>
+<BR><BR><TABLE width="100%"><TBODY><TR BGCOLOR="DarkSlateBlue" align="center"><TD><FONT color="white"><B>© Copyright Chevrolet Europe. All rights reserved</B></FONT></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>

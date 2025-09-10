@@ -1,0 +1,735 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8" />
+<title>Global Diagnostic System</title>
+<link rel="stylesheet" type="text/css" href="mdiprint.css" media="print" />
+<!-- Version 2.0.16 with all screenshots and Export Function explanation (Snapshot) -->
+
+<style type="text/css">
+	  <!--
+	div.all { margin-top:2px; margin-left:2px; margin-right:auto }
+	  
+.style1 { text-align: center;
+}
+.style2 {
+	border-style: solid;
+	border-color: black;
+	border-width: 1px;
+}
+.style3 {
+	border: 1px solid black;
+}
+.tableinsert {
+	vertical-align: top;
+	text-indent: 20px;
+}
+.caution {
+	padding: 10px;
+	margin: 0px;
+	border-color: #0000FF;
+	border-style: outset;
+	border-width: 1px 4px 4px 4px;
+	border-left: 1px solid #808080;
+	border-top: 1px solid #808080;
+	background-color: #FFCCCC;
+}
+.important {
+	padding: 10px;
+	margin: 0px;
+	border-color: #0000FF;
+	border-style: outset;
+	border-width: 1px 4px 4px 4px;
+	border-left: 1px solid #808080;
+	border-top: 1px solid #808080;
+	background-color: #FFCCCF;
+}
+.note {
+	padding: 10px;
+	margin: 0px;
+	border-color: #0000FF;
+	border-style: outset;
+	border-width: 1px 4px 4px 4px;
+	border-left: 1px solid #808080;
+	border-top: 1px solid #808080;
+	background-color: #99CCFF;
+}
+.notice {
+	padding: 10px;
+	margin: 0px;
+	border-color: #808080 #666666 #666666 #808080;
+	border-style: solid outset outset solid;
+	border-width: 1px 4px 4px 4px;
+	border-left: 1px solid #808080;
+	border-top: 1px solid #808080;
+	background-color: #C0C0C0;}
+
+* {
+	font-family:arial,sans-serif;}
+
+
+
+-->
+</style>
+</head>
+<body><div class="all">
+
+ <h1 align="center">Global Diagnostic System</h1>
+ <h1>Obsah</h1>
+ <ol>
+ <li><a href="#intro">Úvod</a></li>
+ <li><a href="#product_description">Popis produktu</a></li>
+ <li><a href="#installation">Instalace GDS</a></li>
+ <li><a href="#getting_started">Začínáme</a></li>
+ <li><a href="#navigation">Obecná navigace</a></li>
+ <li><a href="#diagnostics">Diagnostika</a></li>
+ <li><a href="#troubleshooting">Odstraňování závad</a></li>
+ </ol>
+ <hr />
+
+  <h1><a name="intro"></a>Úvod</h1>
+ <h2>Referenční příručka GDS</h2>
+ <p>Stručná referenční příručka Global Diagnostic System (GDS) obsahuje přehled systému GDS.</p>
+ <p>Informace obsažené v této příručce jsou založeny na nejnovějších informacích o produktu dostupných v době publikování.<!--j-->&nbsp;<!--j-->Vyhrazujeme si právo kdykoliv provést změny bez upozornění.</p>
+ <p>Žádná část této příručky nesmí být reprodukována, ukládána do paměťového systému ani přenášena jakýmkoliv způsobem, včetně elektronických nebo mechanických metod, fotokopírování, nahrávání nebo jiných způsobů bez předchozího písemného souhlasu GM Service and Parts Operations.<!--j-->&nbsp;<!--j-->Vztahuje se to také na veškeré texty, tabulky, ilustrace a grafy.</p>
+ <p>Požadavky o povolení zasílejte na adresu:</p>
+ <p>General Motors Corporation<br />
+Service and Parts Operations<br />
+Product Engineering<br />
+37350 Ecorse Road<br />
+Romulus, MI 48174-1376<br />
+U.S.A.</p>
+ <p>© 2008 GM Service and Parts Operation.<!--j-->&nbsp;<!--j-->Vyrobeno v USA.<!--j-->&nbsp;<!--j-->Veškerá práva vyhrazena.</p>
+ <hr />
+
+  <h2>Všeobecné informace</h2>
+ <p>
+Systém GDS je určen k používání vyškolenými servisními techniky k diagnostikování a opravování automobilových elektronických systémů.<!--j-->&nbsp;<!--j-->
+
+Byla vyvinuta maximální snaha o zajištění kompletních a přesných technických informací založených na továrních servisních informacích dostupných v době publikování.<!--j-->&nbsp;<!--j-->
+Nicméně si vyhrazujeme právo kdykoliv provést změny bez upozornění.</p>
+ <p>
+Abyste se důkladně seznámili se systémem GDS, s jeho funkcemi a používáním, pročtěte si prosím uživatelskou příručku ještě před spuštěním systému GDS.</p>
+ <p>Systém GDS nabízí následující funkce:</p>
+ <ul>
+ <li>Načtení kódu závady</li>
+ <li>Načtení identifikačních informací ECU</li>
+ <li>Načtení a grafické zobrazení parametru seznamu dat</li>
+ <li>Zaznamenání a uložení dat snímku</li>
+ <li>Ovládací funkce</li>
+ <li>Funkce konfigurace a resetování</li>
+ <li>Protokol zaznamenání a uložení diagnostiky</li>
+ <li>Ukládání diagnostických relací pro jednotlivá vozidla</li>
+ </ul>
+
+  <table width="80%" border="0">
+ <tr>
+ <td class="important">
+ <b><!--j-->Důležité<!--j-->:<!--j--></b><br />
+Programování ovladačů vozidla SPS není systémem GDS podporováno.<!--j-->&nbsp;<!--j-->Pro průběžné programování SPS pomocí systému MDI použijte aplikaci TIS2Web / GlobalTIS SPS.</td>
+ </tr>
+ </table>
+ <hr />
+
+  <h2>Přehled zákaznické podpory</h2>
+ <p>
+
+Pokud budete potřebovat pomoc nebo budete mít dotazy nebo problémy týkající se provozu vašeho systému GM-Techline nebo příbuzných produktů, nebo pokud budete chtít objednat záruční nebo nezáruční opravy, zavolejte na vaši místní Customer Support Center.<!--j-->&nbsp;<!--j-->Pokud chcete objednat náhradní díly, kontaktujte GM Dealer Equipment.</p>
+ <h3>Než zavoláte</h3>
+ <p>Než zavoláte na helpdesk, připravte si následující informace:</p>
+ <ul>
+ <li>Jméno prodejce, adresa a číslo kódu prodejce</li>
+ <li>Sériové číslo rozhraní MDI resp. notebooku, pokud se používá</li>
+ <li>Název, číslo dílu a počet požadovaných kusů</li>
+ <li>Číslo telefonu, na kterém lze kontaktovat technika.</li>
+ </ul>
+ <p>Připravte si stručný popis problému:</p>
+ <ul>
+ <li>Sdělte, kdy se problém vyskytuje</li>
+ <li>Uveďte zobrazené chybové kódy</li>
+ <li>Uveďte, která příslušenství byla v okamžiku výskytu problému používána a také informace o vozidle.</li>
+ </ul>
+
+  <h4>IDENTIFIKACE ROZHRANÍ MDI</h4>
+ <p>Štítek sestavy GM MDI se nachází v zadní části jednotky.<!--j-->&nbsp;<!--j-->
+
+Identifikační číslo sestavy se skládá ze dvou částí: výrobního čísla určeného ke sledování a jedinečného sériového čísla.<!--j-->&nbsp;<!--j-->
+Sériové číslo se používá k identifikování MDI v softwaru.</p>
+
+  <h3>Volání</h3>
+
+  <h4>Evropští uživatelé</h4>
+ <h5>Instalace software GDS &amp; Podpora komunikace systému:</h5>
+ <p><b>DAC - Dealer Assistance Center:</b><br />
+
+
+Uživatelskou podporu pro software GDS, pro komunikaci GDS s TIS2Web / GlobalTIS a MDI poskytuje středisko podpory prodejců.<br />
+
+Příslušné telefonní číslo pro danou zemi naleznete na přihlašovací stránce portálu Kanál 21.</p>
+ <h5>
+Podpora diagnostiky vozidel GDS:</h5>
+ <p><b>Evropské středisko pro technickou pomoc:</b><br />
+
+Uživatelskou podporu při problémech s komunikací při diagnostických postupech založených na GDS poskytuje Evropské středisko pro technickou pomoc.<!--j-->&nbsp;<!--j-->
+Příslušné telefonní číslo pro danou zemi vám poskytne vaše místní evropská organizace společnosti General Motors.</p>
+ <h5>
+Technická podpora pro nezávislé servisní organizace/prodejny autopříslušenství:</h5>
+ <p><b>European Customer Assistance Center</b><br />
+V případě výše uvedených služeb mohou nezávislé servisní organizace kontaktovat European Customer Assistance Center.<!--j-->&nbsp;<!--j-->
+Kontaktní informace jsou uvedeny na portálu GME InfoTech Portal.</p>
+ <hr />
+ <h3>Licenční smlouva na software</h3>
+ <p>Před zahájením používání tohoto softwaru si pečlivě pročtěte licenční smlouvu.<!--j-->&nbsp;<!--j-->
+Další používání tohoto softwaru představuje váš souhlas s uvedenými podmínkami používání.</p>
+ <p>VLASTNICTVÍ<!--j-->:<!--j-->&nbsp;<!--j-->
+
+
+Tento software je autorskými právy chráněným dílem společnosti General Motors Corporation a vy souhlasíte, že společnost General Motors Corporation vlastní veškerá autorská práva a další vlastnická práva, právní nároky a zájem v tomto softwaru.<!--j-->&nbsp;<!--j-->
+Veškerá práva, na která se výslovně nevztahuje níže uvedená licence, si výslovně vyhrazuje společnost General Motors Corporation.</p>
+ <p>POUŽÍVÁNÍ<!--j-->:<!--j-->&nbsp;<!--j-->
+Přiděluje se vám nevýhradní, nepřenosná licence na používání tohoto softwaru na několika počítačových systémech.<!--j-->&nbsp;<!--j-->
+
+Nesmíte provádět zpětnou analýzu, dekompilaci, pozměňování, reprodukování, distribuování nebo prodej tohoto software a to jak celku tak jednotlivých částí.<!--j-->&nbsp;<!--j-->
+Tato licence je udělena osobně vám a je podmíněna vašim důsledným dodržováním všech podmínek a ustanovení v ní obsažených.</p>
+ <p>Ukončení<!--j-->:<!--j-->&nbsp;<!--j-->
+
+Společnost General Motors Corporation může ukončit tuto licenční smlouvu v případě, že nebudete dodržovat podmínky a ustanovení v ní obsažená.<!--j-->&nbsp;<!--j-->
+
+Po jejím ukončení musíte okamžitě přestat používat software a zničit všechny kopie včetně těch, které jsou nainstalovány ve vašich počítačových systémech.</p>
+ <hr />
+ <h1><a name="product_description"></a>2.<!--j-->&nbsp;<!--j-->Popis produktu</h1>
+ <h2>Požadavky na osobní počítač prodejce<!--j-->&nbsp;<!--j-->(<!--j-->Evropa<!--j-->)</h2>
+ <p>Minimální požadavky na osobní počítač pro provoz GDS ve spojení s TIS2Web a GlobalTIS.</p>
+ <ul>
+ <li>Procesor:<br />
+Intel Pentium M, 1,5GHz</li>
+ <li>Paměť systému (RAM)<br />
+1 GB pro GDS a klienta TIS2Web/GlobalTIS; 2 GB pro samostatné GDS a GlobalTIS</li>
+ <li>Minimální velikost pevného disku:<br />
+40 GB</li>
+ <li>Operační systém<!--j-->:<br />Windows XP Professional (SP2)</li>
+ <li>Další softwarové komponenty:<br />
+Java Web Start 1.5x nebo vyšší<br />
+ </li>
+ </ul>
+ <p>
+Další informace naleznete ve specifikaci hardwaru a softwaru GME IT, kterou získáte od vaši místní organizace GME.</p>
+ <hr />
+ <h1><a name="installation"></a>3.<!--j-->&nbsp;<!--j-->Instalace GDS</h1>
+ <h2>Přehled součástí GDS:</h2>
+ <p>Software GDS obsahuje následující moduly, které budou nainstalovány a poté po určitých obdobích pravidelně aktualizovány.<!--j-->&nbsp;<!--j-->[I]</p>
+ <ul>
+ <li><b>GDS Base System</b><br />
+Základní software GDS nainstalovaný na osobním počítači</li>
+ <li><!--j--><b><!--j-->Dodávané služby GDS<!--j--></b><!--j-->:<br />
+Balíčky s diagnostickými daty pro jednotlivé modely vozidel, které spouštějí diagnostické postupy na ovladačích vozidel.</li>
+ <li><!--j--><b><!--j-->GDS Smart Start<!--j--></b><!--j-->:<!--j--><br />Agent aplikací, který porovnává verze dodávaných služeb GDS Base System, GDS a serveru software MDI Manager mezi TIS2Web/GlobalTIS a lokální instalací.<!--j-->&nbsp;<!--j-->Pokud budou nalezeny nové aktualizace, objeví se výzva k jejich stažení.</li>
+ <li><!--j--><b><!--j-->Software MDI Manager (zvláštní aplikace)<!--j--></b><!--j-->:<br />
+Aplikace pro aktualizování a konfigurování zařízení MDI (vícenásobné diagnostické rozhraní)</li>
+ </ul>
+ <p><img src="../../images/gds_i_enu.gif" alt="gds_i.gif" width="650px"/><br />
+[I]</p>
+ <hr />
+ <h2>Instalace:</h2>
+ <p>Systém GDS lze nainstalovat ze zvláštního instalačního DVD nebo přímo stažením z TIS2Web/GlobalTIS.</p>
+ <h3>Instalace z DVD GDS:</h3>
+ <ul>
+ <li>Osobní počítač musíte spustit v režimu správce</li>
+ <li>Spusťte spustitelný soubor ve spouštěcí nabídce DVD</li>
+ <li>Vyberte jazyk pro agenta instalace</li>
+ <li>Pokud bude v počítači nalezena předchozí instalace GDS, může dojít k opětovnému použití dat a konfigurace GDS.</li>
+ <li>Odsouhlaste licenční smlouvu (jinak nelze pokračovat)</li>
+ <li>Vyberte instalační adresář pro GDS</li>
+ <li>Spustí se proces instalace GDS</li>
+ <li>Software MDI Manager se nainstaluje v případě, že na počítači není nainstalován žádný nebo je nainstalován starší software MDI Manager.<!--j-->&nbsp;<!--j-->Při prvním instalování softwaru MDI Manager musí být v průběhu instalace připojen hardware MDI.<!--j-->&nbsp;<!--j-->Další podrobnosti naleznete v příručce MDI.</li>
+ <li>Po dokončení procesu instalace můžete GDS spustit pomocí symbolu na ploše nebo vybráním položky nabídky Start/Programy/GDS.<!--j-->&nbsp;<!--j--><img src="../../images/gds_icon.png" alt="gds_icon.png" /></li>
+ <li>V případě potřeby nakonfigurujte firewall tak, aby povolil komunikaci systému GDS se zařízením MDI.</li>
+ <li>Spustí se GDS Smart Start a zobrazený proces aktualizace se provede ještě před spuštěním GDS.</li>
+ </ul>
+ <hr />
+ <h3>Instalace z TIS2Web/GlobalTIS<!--j-->:</h3>
+ <p><img src="../../images/gds_ii_csy.gif" alt="gds_ii.gif" width="600px"/><br />
+[II]</p>
+ <table width="80%" border="0">
+ <tr>
+ <td class="important"><b><!--j-->Důležité<!--j-->:<!--j--></b><!--j-->&nbsp;<!--j-->Při instalování z TIS2Web se z Internetu stáhne přibližně 140 MB dat.</td></tr></table>
+ <ul>
+ <li>Osobní počítač musí být spuštěn v režimu správce</li>
+ <li>Na stránce TIS2Web/GlobalTIS spusťte GDS<!--j-->&nbsp;<!--j-->[II]</li>
+ <li>Ze serveru TIS2Web se stáhne GDS Smart Start; v závislosti na rychlosti internetového připojení to může chvíli trvat.</li>
+ <li>Vyberte instalační adresář pro GDS.</li>
+ <li>Zadejte heslo pro přístup k Internetu (pouze pokud k přístupu k Internetu používáte proxy server)</li>
+ <li>V případě potřeby nakonfigurujte firewall tak, aby povolil komunikaci systému GDS se zařízením MDI.</li>
+ <li>Po zahájení instalování GDS Smart Start to může chvíli trvat.</li>
+ <li>Po spuštění GDS Smart Start se spustí proces aktualizace GDS.<!--j-->&nbsp;<!--j-->[III]</li>
+ <li>Po stažení instalačních souborů se zobrazí verze GDS a verze softwaru MDI Manager a ty je možné stáhnout odsouhlasením zobrazeného dialogu.<!--j-->&nbsp;<!--j-->Stavový řádek postupu instalace si můžete zobrazit pomocí tlačítka  <b>Zobrazit postup stahování</b>.</li>
+ <li>Software MDI Manager se nainstaluje v případě, že na osobním počítači není nainstalován žádný software MDI Manager nebo pokud tam je nainstalována starší verze MDI Manager.<!--j-->&nbsp;<!--j-->Při prvním instalování softwaru MDI Manager musí být v průběhu instalace připojen hardware MDI.<!--j-->&nbsp;<!--j-->Další podrobnosti naleznete v příručce MDI.</li>
+ </ul>
+
+  <table width="200" border="0">
+ <tr>
+ <td><img src="../../images/gds_iii_csy.gif" alt="gds_III.gif" width="200px"/></td>
+ <td><img src="../../images/gds_iv_csy.gif" alt="gds_IV.gif" width="150px" /></td>
+ </tr>
+ <tr>
+ <td>[III]</td>
+ <td>[IV]</td>
+ </tr>
+ </table>
+ <hr />
+ <h3>Aktualizace GDS pomocí Smart Start<!--j-->:</h3>
+Spusťte GDS ze systému TIS2Web/GlobalTIS nebo jako samostatnou aplikaci přes nabídku spuštění v systému Windows.<!--j-->&nbsp;<!--j-->Před zavedením aplikace GDS se spustí agent Smart Start, který porovná následující verze instalace PC GDS s obsahem serveru TIS2Web/GlobalTIS:</p>
+ <ul>
+ <li>GDS Smart Start</li>
+ <li>GDS Base System</li>
+ <li>MDI Manager</li>
+ </ul>
+ <p>Pokud se na serveru nacházejí nové verze, požádá Smart Start uživatele o odsouhlaseni jejich stažení.<!--j-->&nbsp;<!--j-->[IV]</p>
+ <!--<p>Proces aktualizace Smart Start dodávaných služeb GDS Base System, GDS a MDI Manager se provede pouze v případě, že je systém GDS spuštěn z TIS2Web/GlobalTIS a nikoliv v samostatném režimu.<!--j-->&nbsp;<!--j--><!--The update capability of standalone started GDS will be available in a future version.</p>
+--> <table width="80%" border="0">
+ <tr>
+ 	 <td class="important"><!--j--><b><!--j-->Důležité<!--j--><!--j-->:<!--j--></b><!--j-->&nbsp;<!--j-->Popisované procesy aktualizace vyžadují, aby byl osobní počítač spuštěn v režimu správce.</td></tr></table>
+ <hr />
+ <h3>Vrácení zpět instalace GDSBase System</h3>
+ <p>Instalaci GDS lze vrátit zpět na předchozí nainstalovanou verzi v případě, že aktualizace GDS způsobí provozní problémy.</p>
+ <p>Pokud chcete provézt vrácení zpět, přejděte na START- &gt; PROGRAMY -&gt; GDS -&gt; GDS VRÁCENÍ ZPĚT.<!--j-->&nbsp;<!--j-->Podmínkou pro použití funkce vrácení zpět je existence starší verze GDS nainstalované v osobním počítači.</p>
+ <h3>Systém řízení licencí GDS (pronájem licence)</h3>
+ <p>Systém pro kontrolu licence GDS brání neoprávněnému používání systému GDS.<!--j-->&nbsp;<!--j-->Pokud chcete obnovit licenci na aplikaci GDS, musíte spustit GDS ze systému TIS2Web nebo GlobalTIS.<!--j-->&nbsp;<!--j-->Pokud byla aplikace GDS spuštěna v příslušné době pouze v samostatném režimu, musí se licence na tuto aplikaci obnovit do 7 dnů.<!--j-->&nbsp;<!--j--><br>Jestliže platnost licence na aplikaci GDS vypršela, objeví se chybové hlášení s požadavkem, aby uživatel spustil aplikaci GDS z prostředí TIS2Web/GlobalTIS. Pouze takto bude možné licenci obnovit.</p>
+ <hr />
+ <h3>Stažení a aktualizace dodávaných služeb GDS</h3>
+ <p>Dodávané služby GDS představují diagnostické aplikace, ovládající komunikaci a diagnostické služby mezi GDS a ovladačem vozidla.<!--j-->.<!--j-->&nbsp;<!--j-->Dodávané služby GDS se vydávají pro jednotlivé modely a budou neustále aktualizovány na TIS2Web/GlobalTIS.</p>
+ <p>Při spuštění aktualizačního procesu GDS Smart Start automaticky zjistí, jestli jsou na TIS2Web/GlobalTIS dostupné nové verze dodávaných služeb.<!--j-->.<!--j-->&nbsp;<!--j-->Nové dodávané služby je nutné nejprve stáhnout do lokálního adresáře v osobním počítači a teprve poté je možné je nainstalovat do GDS.<!--j-->&nbsp;<!--j-->Aktualizace již nainstalovaných dodávaných služeb budou automaticky staženy a stačí je nainstalovat do hlavní databáze GDS.</p>
+ <br clear=all />
+ <hr />
+ <h3>První stažení a aktualizace dodávaných služeb GDS</h3>
+ <ul><li>Spusťte GDS ze systému TIS2Web/GlobalTIS nebo jako samostatnou aplikaci přes nabídku spuštění v systému Windows.</li>
+ <li>Stiskněte tlačítko <b>Přidat nový diagnostický balíček</b> na přihlašovací obrazovce GDS.</li>
+ <li>Stiskněte tlačítko  <b>Aktualizace seznamu dodávaných služeb ze serveru</b>.<!--j-->&nbsp;<!--j-->[V-1]<!--j-->.<!--j-->&nbsp;<!--j-->Balíčky dostupné na serveru, ale ještě nestažené, se zobrazí s tímto symbolem.<!--j-->&nbsp;<!--j-->
+ <img src="../../images/gds_server.png" alt="gds_server.png" width="36" height="34" /></li>
+ <li>Označte a stáhněte balíčky s dodávanými službami<!--j-->&nbsp;<!--j-->[V-2]<!--j-->.<!--j-->&nbsp;<!--j-->Funkce filtru vám pomůže vyhledat určité dodávané služby.<!--j-->&nbsp;<!--j-->Stažené balíčky dodávaných služeb se zobrazí s tímto symbolem.<!--j-->&nbsp;<!--j--><img src="../../images/gds_pc.png" alt="gds_pc.png" /></li>
+ <li>Nainstalujte stažené balíčky do hlavní databáze GDS; nainstalované balíčky se zobrazí v pravém okně aplikace<!--j-->&nbsp;<!--j-->[V-3]<!--j-->.</li>
+ </ul>
+ <p><img src="../../images/gds_v_csy.gif" alt="gds_v.gif" width="650px"/><br />
+[V]</p>
+ <hr />
+ <h2>Aktualizace nainstalovaných dodávaných služeb GDS v hlavní databázi.<!--j-->:</h2>
+ <ul>
+ 	 <li>Klepněte na tlačítko <b>Aktualizovat diagnostický balíček</b> na přihlašovací obrazovce GDS<!--j-->&nbsp;<!--j-->[VI-1]<!--j-->.<!--j-->&nbsp;<!--j-->GDS porovná verze nainstalovaných dodávaných služeb GDS s dodávanými službami dostupnými na serveru a stáhne aktualizované balíčky.</li>
+ 	 <li>Stažené balíčky se před instalací zobrazí v levém spodním okně.<!--j-->&nbsp;<!--j-->Instalaci spustíte pomocí tlačítka  <b>Nainstalovat</b> nebo  <b>Nainstalovat vše</b>.<!--j-->&nbsp;<!--j-->[VI-2]<!--j-->.</li>
+ </ul>
+ <p><img src="../../images/gds_vi_csy.gif" alt="gds_vi.gif" width="650px"/><br />
+[VI]<!--j-->:</p>
+ <hr />
+ <h2>
+Vrácení zpět aktualizace dodávané služby</h2>
+ <p>
+
+Proces vrácení zpět je prakticky stejný proces, který je popsán v kapitole První stažení a aktualizace dodávaných služeb GDS</p>
+ <ul>
+ 	 <li>Stiskněte tlačítko <b>Přidat nový diagnostický balíček</b> na přihlašovací obrazovce GDS.</li>
+ 	 <li>Stiskněte tlačítko  <b>Aktualizace seznamu dodávaných služeb ze serveru</b>.<!--j-->&nbsp;<!--j-->[V-1]<!--j--></li>
+ <li>Označte a stáhněte požadované starší verze balíčků dodávaných služeb.<!--j-->&nbsp;<!--j-->Funkce filtru vám pomůže vyhledat určité dodávané služby.</li>
+ <li>Nainstalujte stažené balíčky do hlavní databáze GDS.</li>
+ </ul>
+ <hr />
+ <h2>Odinstalování GDS<!--j-->:</h2>
+ <p>Systém GDS můžete odinstalovat spuštěním následujícího programu:</p>
+ <p>
+START -&gt; PROGRAMY -&gt; GDS -&gt;GDS ODINSTALOVAT</p>
+ <hr />
+ <h2>
+Změna jazyka GDS<!--j-->&nbsp;<!--j-->/<!--j-->&nbsp;<!--j-->Regionální nastavení<!--j-->:</h2>
+ <p>Systém GDS používá jazyková nastavení operačního systému osobního počítače.<!--j-->&nbsp;<!--j-->V systému GDS neexistuje žádná nabídka pro změnu jazykových nastavení.<!--j-->&nbsp;<!--j-->Pokud chcete změnit jazyk systému GDS, proveďte následující kroky.</p>
+ <ul>
+ <li>Pomocí následujícího postupu otevřete Ovládací panely systému Windows.<!--j-->&nbsp;<!--j-->START -&gt; NASTAVENÍ -&gt; OVLÁDACÍ PANELY</li>
+ <li>Otevřete nabídku REGIONÁLNÍ A JAZYKOVÉ MOŽNOSTI</li>
+ <li>Vyberte požadovanou zemi v  <b>STANDARDY A FORMÁTY</b></li>
+ <li>Otevřete nabídku UPŘESNIT.<!--j-->&nbsp;<!--j-->Vyberte požadovaná jazyková nastavení v rozbalovací nabídce pro JINÉ NEŽ UNICODE PROGRAMY</li>
+ <li>Upravte REGIONÁLNÍ MOŽNOSTI tak, aby se změnily jednotky zobrazované v GDS.</li>
+ </ul>
+ <hr />
+ <h1><a name="getting_started"></a>4.<!--j-->&nbsp;<!--j-->Začínáme</h1>
+ <p><b><!--j-->POZNÁMKA<!--j-->:<br />
+Před spuštěním GDS je nutné dodržet následující opatření:<!--j--></b></p>
+ <ul>
+ <li>Používáním zastaralé verze můžete poškodit moduly vozidla.<!--j-->&nbsp;<!--j-->Systém GDS a vícenásobné diagnostické rozhraní musejí používat nejnovější software.</li>
+ <li>Zkontrolujte, jestli je baterie vozidla zcela nabitá.<!--j-->&nbsp;<!--j-->Napětí baterie pro GDS by mělo být mezi 12 a 14 V.</li>
+ <li>Avšak při používání systému MDI nesmí být vozidlo připojeno k nabíječce baterie.</li>
+ <li>Zkontrolujte zapojení kabelů.<!--j-->&nbsp;<!--j-->Odpojený kabel BY MOHL způsobit selhání ovladače.</li>
+ <li>Pokud používáte jako zobrazovací zařízení pro GDS laptop nebo jiné zařízení (např. PDA), zkontrolujte, jestli je řádné připojeno napájení.<!--j-->&nbsp;<!--j-->Pokud je napájeno střídavým proudem a dojde k odpojení napájecího kabelu, může dojít k přerušení programování a k poškození řídicího modulu.<!--j-->&nbsp;<!--j-->Pokud je laptop napájen vnitřním zdrojem (baterie), tak zajistěte, aby byly tyto baterie dostatečně nabity pro dokončení procesu GDS.</li>
+ </ul>
+ <table width="80%" border="0">
+ <tr>
+ <td class="note"><b>POZNÁMKA</b><br />
+
+Pokud se chystáte programovat ECU, musíte ji před zahájením procesu namontovat do vozidla.<!--j-->&nbsp;<!--j-->Zkontrolujte, jestli je baterie vozidla zcela nabitá.</td></tr></table>
+ <table width="80%" border="0">
+ <tr>
+ <td class="important"><b>Důležité</b><br />
+Aby se snížila možnost ztráty signálu, je nutné MDI nakonfigurovat na nejstabilnější komunikační nastavení dostupné ve vašem místě.<!--j--><!--j-->Můžete si vybrat mezi USB, Ethernet nebo Wireless Ethernet.</td></tr></table>
+ <hr />
+ <h2>Postup spuštění GDS<!--j-->:</h2>
+ <p>GDS lze spustit přes TIS2Web/GlobalTIS klepnutím na ikonu GDS.<!--j-->&nbsp;<!--j-->Nebo lze GDS spustit v samostatném režimu pomocí nabídky Start systému Windows.</p><ol><li>Systém spustíte klepnutím na symbol GDS v hlavní nabídce TIS2Web/GlobalTIS.<!--j-->.<!--j-->&nbsp;<!--j-->Pokud chcete spustit systém GDS v samostatném režimu, klepněte na START/PROGRAMY/GDS</li><li>Po spuštění GDS Smart Start se spustí zobrazený proces aktualizace GDS.<!--j-->&nbsp;<!--j-->Pokud je na serveru dostupná nová verze GDS nebo MDI Manager, bude zobrazena výzva k jejímu stažení a instalaci do osobního počítače.<!--j-->&nbsp;<!--j-->Klepnutím na  <b>Pokračovat,</b> spustíte stahování nebo instalaci<!--j-->&nbsp;<!--j-->[IV]<!--j-->.<!--j-->&nbsp;<!--j-->Pokud je systém GDS spuštěn v samostatném režimu, není možné provést žádnou aktualizaci.</li>
+ 	 <li>Načte se přihlašovací stránka GDS.</li></ol>
+ <hr />
+ <h1><a name="navigation"></a>5.<!--j-->&nbsp;<!--j-->Obecná navigace</h1>
+ <h2>Rozevírací nabídky<!--j-->&nbsp;<!--j--><img src="../../images/gds_menu.png" alt="gds_menu.png" width="57" height="38" /></h2>
+ <p>V systému GDS máte k dispozici pět rozevíracích nabídek<!--j-->&nbsp;<!--j-->[VII]</p> <p>Poznámka<!--j-->:<!--j-->&nbsp;<!--j-->Tyto nabídky umožňují výběr nabídek pouze u verze GDS pro osobní počítače<!--j-->.<!--j-->&nbsp;<!--j-->Existuje také formát pro dotykovou obrazovku, kde se nabídky ovládají pomocí rozbalovacích tlačítek.</p> <ul>
+ <li>Nabídka  <b>Soubor</b> obsahuje položku  <b>Konec</b> určenou k uzavření GDS.</li>
+ <li>Nabídka  <b>Relace</b> obsahuje dvě možnosti:<!--j-->&nbsp;<!--j--><b>Uložit aktuální protokol relace</b> a  <b>Přidat komentář k relaci...</b><br /><b>Přidat komentář k relaci...</b>: informace lze zadat z klávesnice vašeho počítače a uložit je do správce protokolu relace.</li>
+ <li>Volba  <b>Nástroje</b> obsahuje pět možností:<!--j-->&nbsp;<!--j-->Spustit sledování<!--j-->,<!--j-->&nbsp;<!--j-->Přehrávání snímků<!--j-->,<!--j-->&nbsp;<!--j-->Vytvořit sestavu<!--j-->,<!--j-->&nbsp;<!--j-->Zobrazit stav stahování...<!--j-->,<!--j-->&nbsp;<!--j-->Administrace uživatelů<br />Nové uživatele můžete vytvářet klepnutím na symbol na stránce  <b>Administrace uživatelů</b><!--j-->&nbsp;<!--j-->
+ <img src="../../images/gds_add-user.png" alt="gds_add-user.png" width="27" height="26" />
+ <!--j-->.</li>
+ <li><b>Okno</b>: V nabídce </b>Preferences</b> si můžete vybrat konfiguraci obrazovky, tj. režim celé obrazovky, PC nebo režim dotykové obrazovky.</li>
+ <li>Nabídka  <b>Výběr nápovědy</b> obsahuje tři volby:<br /><b>Obsah nápovědy</b> zobrazí všechny dostupné soubory nápovědy GDS.<!--j-->&nbsp;<!--j-->
+<b>O aplikaci GDS</b> zobrazí verzi GDS a ID sestavení.<!--j-->&nbsp;<!--j-->
+<b>Zobrazit verzi MDI</b> zobrazí verzi softwaru a hardwaru MDI.<!--j-->&nbsp;<!--j-->
+O tuto informaci můžete být požádáni při kontaktování Customer Support Center.</li></ul><p></p>
+ <p><img src="../../images/gds_vii_csy.gif" alt="gds_vii.gif" width="120px"/><br />
+[VII]</p>
+ <hr />
+ <h2>Panel nástrojů Diagnostická aplikace</h2>
+ <p>Po přechodu do zobrazení navigace systémem se zobrazí několik voleb panelu nástrojů.<!--j-->&nbsp;<!--j-->[VIII]</p>
+ <ul>
+ <li><b>Zaznamenat snímek</b> (červený kruh) je dostupný až ze zobrazení navigace systémem a používá se k zaznamenávání snímků vozidla.<!--j-->&nbsp;<!--j-->Po dobu zaznamenávání snímku není tato možnost dostupná.</li>
+ <li>Po dobu zaznamenávání snímku se zobrazí  <b>Zastavit záznam snímku</b> (modrý čtverec).<!--j-->&nbsp;<!--j-->Po výběru této možnosti se zastaví zaznamenávání snímku a soubor se uloží.</li>
+ <li>Symbol  <b>Snímek obrazovky</b> se používá k zachycení zobrazeného obsahu na obrazovce a k uložení tohoto obsahu do určitého umístění v počítači.</li>
+ <li><b>Zvětšit</b> zvětší velikost písma.<!--j-->&nbsp;<!--j-->Při každém klepnutí myši dojde ke zmenšení zobrazeného obrázku.</li>
+ <li>Výběr  <b> Přiblížit</b> zvětší velikost písma.<!--j-->&nbsp;<!--j-->Při každém klepnutí myši dojde ke zvětšení zobrazeného obrázku.</li>
+ <li>Tlačítko  <b>Konec</b> uzavře aktivní diagnostickou aplikaci.</li>
+ </ul>
+ <p><img src="../../images/gds_viii_csy.gif" alt="gds_viii.gif" width="400px"/><br />
+[VIII]</p>
+ <hr />
+ <h2>Klávesy šipek</h2>
+ <p>Klávesy šipek jsou umístěny ve spodní části seznamu parametrů.<!--j-->&nbsp;<!--j-->Klávesy šipek se používají pro následující navigaci:</p>
+ <p><img src="../../images/gds_ix_csy.gif" alt="gds_ix.gif" width="600px"/><br />
+[IX]<!--j-->:</p>
+ <ul>
+ <li>Šipka  <b>Přesunout nahoru</b> se při každém výběru používá k přesunutí se o jednu složku nahoru v seznamu parametrů.</li>
+ <li>Šipka  <b>Přesunout dolů</b> se při každém výběru používá k přesunutí se o jednu složku dolů v seznamu parametrů.</li>
+ <li>Šipka  <b>Přesunout vpravo</b> se používá k otevření jedné úrovně navigačního stromu.</li>
+ <li>Šipka  <b>Přesunout vlevo</b> se používá k uzavření jedné úrovně navigačního stromu.<!--j-->&nbsp;<!--j-->Tato možnost se nezobrazí, pokud se nacházíte na první obrazovce postupu.</li></ul>
+ <hr />
+ <h2>Ostatní klávesy</h2>
+ <p>Ve spodní části všech obrazovek se nacházejí tři další klávesy.<!--j-->&nbsp;<!--j-->Tyto klávesy se používají k následujícím úkonům:</p>
+ <ul>
+ <li>Pomocí  <b>Spustit</b> můžete spustit aplikaci.</li>
+ <li><b>Akce zpět</b> se používá k přesunu na předchozí obrazovku.<!--j-->&nbsp;<!--j-->Tato možnost bude k dispozici pouze v případě, že je možné vrátit se zpět na nějakou obrazovku.</li>
+ <li>Akce  <b>Další</b> se používá k přesunu na následující obrazovku.<!--j-->&nbsp;<!--j-->Tato možnost bude k dispozici pouze v případě, že na aktuální obrazovce byly provedeny všechny potřebné výběry.</li>
+ </ul>
+ <br clear=all />
+ <hr />
+ <h2>Zadání informací o vozidle/MDI</h2>
+ <p>1.<!--j-->&nbsp;<!--j-->V hlavní nabídce GDS vyberte uživatele, který se chce přihlásit.<!--j-->&nbsp;<!--j-->Pokud nebyl vytvořen žádný uživatel, můžete jej vytvořit nebo můžete vybrat výchozího uživatele.<!--j-->&nbsp;<!--j-->(Viz kapitola o rozevíracích nabídkách)<br />
+ </p>
+ <p>2.<!--j-->&nbsp;<!--j-->Jakmile vyberete způsob přístupu, zobrazí se obrazovka nabídky Identifikace.<!--j-->&nbsp;<!--j-->Na této obrazovce máte několik možností:</p>
+ <p><img src="../../images/gds_x_csy.gif" alt="gds_x.gif" width="650px"/><br />
+[X]</p>
+ <ul>
+ 	 <li>[X-1]<!--j-->&nbsp;<!--j--><b><b>Výběr MDI</b></b><!--j-->:<!--j-->&nbsp;<!--j-->Zobrazí se všechny MDI existující na různých sítích u daného prodejce. Můžete vybrat MDI, který právě používáte, k provedení diagnostiky vozidla.<!--j-->&nbsp;<!--j-->Pokud chcete připojit MDI, zvýrazněte dostupný MDI klepnutím a poté vyberte  <b>Připojit</b>.<!--j-->&nbsp;<!--j-->Vybráním  <b>Odpojit</b> odpojíte MDI.<!--j-->&nbsp;<!--j-->Připojte nový MDI k vozidlu a vyberte  <b>Připojit</b>.<!--j-->&nbsp;<!--j-->Pokud vyberete  <b>Aktualizovat</b>, provede se kontrola nových MDI v dostupných sítích.<!--j-->&nbsp;<!--j-->Pokud chcete pokračovat v práci s GDS bez připojených MDI, zaškrtněte políčko  <b>Navigovat bez MDI</b>.</li>
+ <li>[X-2]<!--j-->&nbsp;<!--j--><b><b>Zadávání VIN</b></b><!--j-->:<!--j-->&nbsp;<!--j-->Pole pro identifikační číslo vozidla určené pro manuální zadání VIN nebo pro automatické zadání VIN z ovladače vozidla.<!--j-->&nbsp;<!--j-->(Nutné připojení MDI).<!--j-->&nbsp;<!--j-->Do následujícího textového pole můžete zadat další komentáře týkající se tohoto VIN/vozidla.</li>
+ <li>[X-3]<!--j-->&nbsp;<!--j-->Sekce  <b>Identifikace vozidla</b><!--j-->:<!--j-->&nbsp;<!--j-->Dříve než budete pokračovat vyberte značku, model a rok modelu.</li>
+ <li>[X-4]<!--j-->&nbsp;<!--j--><b><b>Historie diagnostiky vozidla</b></b><!--j-->:<!--j-->&nbsp;<!--j-->Pokud bylo toto vozidlo již diagnostikováno pomocí systému GDS, budou VIN a asociované informace uloženy v historii vozidla.<!--j-->&nbsp;<!--j-->Ze seznamu vyberte vozidlo, které chcete diagnostikovat a pokračujte přímo na  <b>Domovská stránka vozidla</b>.<!--j-->&nbsp;<!--j-->Zde je k dispozici funkce filtrování textu.</li>
+ </ul>
+ <p>3.<!--j-->&nbsp;<!--j-->Zobrazí se  <b>Domovská stránka vozidla</b>.<!--j-->&nbsp;<!--j-->From this screen various vehicle data is displayed including: entered vehicle information, previous vehicle diagnosis, session comments, session log reports, and stored data</p>
+ <hr />
+ <h2><b><b>Domovská stránka vozidla</b></b></h2>
+ <p><b>Domovská stránka vozidla</b> se skládá z několika ploch:</p>
+ <p>[XI-1]<!--j-->:<!--j-->&nbsp;<!--j--><b>Informace o vozidle</b> obsahuje veškeré informace o vozidle, včetně značky, modelu, roku, atd.<br />Tento seznam se aktualizuje v průběhu diagnostikování vozidla a ukládá se s každou relací.<!--j-->&nbsp;<!--j--><b>Odstranit výběr možností vozidla</b> se používá k odstranění výběru obsahu předchozího vozidla.<!--j-->&nbsp;<!--j-->Zvýrazněte řádek, který chcete odstranit ze seznamu obsahu vozidla a poté vyberte možnost Odstranit vybavení.</p>
+ <p>[XI-2]<!--j-->:<!--j-->&nbsp;<!--j--><b>Komentáře k relaci</b> se používá k zadání neformátovaných uživatelských komentářů o diagnostické relaci.<!--j-->&nbsp;<!--j-->Klepněte na  <b>Přidat komentář</b> a zadejte další informace týkající se dané relace.<!--j-->&nbsp;<!--j-->Informace můžete zadávat pomocí klávesnice do oblastí Uživatel, Data nebo Komentář.<!--j-->&nbsp;<!--j-->Pokud chcete odstranit dříve zadaný komentář, zvýrazněte informace v oblasti Uživatel, Data nebo Komentář a klepněte na  <b>Odstranit vybraný komentář</b>.</p>
+ <p>[XI-3]<!--j-->:<!--j-->&nbsp;<!--j--><b>Sestavy protokolu relace</b> se používá k vytištění diagnostických informací o vozidle.<!--j-->&nbsp;<!--j--><b>Úplné zobrazení</b> vytvoří kompletní sestavu všech diagnostických úkonů provedených na daném vozidle.<!--j-->&nbsp;<!--j--><b>Stručná sestava</b> vytvoří přehled diagnostiky vozidla.</p>
+ <p>[XI-4]<!--j-->:<!--j-->&nbsp;<!--j--><b>Data snímku</b> vytvoří seznam všech uložených snímků daného vozidla.<!--j-->&nbsp;<!--j-->Zobrazí se jméno uživatele, název souboru snímku, datum pořízení snímku a komentáře.<!--j-->&nbsp;<!--j-->Zvýrazněním položky a výběrem  <b>Prohlédnout</b> si můžete přehrát snímek.<!--j-->&nbsp;<!--j-->Jednotlivé položky lze odstranit zvýrazněním položky a vybráním  <b>Odstranit</b>.<br />[XI-6]<!--j-->:<!--j-->&nbsp;<!--j--><b><a name="export_snap">Export</a></b> uloží snímek do místního počítače.<!--j-->&nbsp;<!--j-->Příslušná data ze snímku můžete potom odeslat odpovědné osobně za účelem provedení další analýzy.</p>
+ <p>[XI-5]<!--j-->:<!--j-->&nbsp;<!--j-->Nabídka  <b>Spuštěné programy</b> obsahuje historii diagnostické relace.</p>
+
+  <p><b>Další akce</b> se používá k pokračování v diagnostice vybraného vozidla.</p>
+ <p><img src="../../images/gds_xi_csy.gif" alt="gds_xi.gif" width="650px"/><br />
+[XI]</p>
+ <hr />
+ <h2>Navigace v systému - Výběr diagnostické aplikace</h2>
+ <p>Jakmile vyberete  <b>Další akce</b> v  <b>Domovská stránka vozidla</b>, zobrazí se Navigace v systému.<!--j-->&nbsp;<!--j-->[XII]<!--j-->.</p>
+ <p>Vyberte navigační cestu, kterou chcete ve vozidle prozkoumat.<!--j-->&nbsp;<!--j-->Navigaci lze provést některou z navigačních šipek; pravá/levá šipka otevře/zavře podsložku, tlačítko Spustit spustí vybranou diagnostickou aplikaci.<!--j-->&nbsp;<!--j-->Navigace je také možná pomocí myši klepnutím na symbol + stromu navigace nebo pomocí kláves šipek na klávesnici osobního počítače.</p>
+ <p>
+Pokračujte ve vybírání složek pro požadovanou cestu, dokud nedosáhnete diagnostické aplikace označené ikonou aplikace.</p>
+ <p>
+
+Jakmile spustíte diagnostickou aplikaci, zmizí zobrazení navigace v systému a zobrazí se diagnostická aplikace.<!--j-->&nbsp;<!--j-->
+Po dokončení diagnostické aplikace vyberte  <b>Konec</b> v pravé horní části zobrazení diagnostické aplikace.<!--j-->&nbsp;<!--j-->
+Dojde k zavření diagnostické aplikace a k návratu do zobrazení navigace v systému.</p>
+ <p><img src="../../images/gds_xii_csy.gif" alt="gds_xii.gif" width="350px"/><br />
+[XII]</p>
+ <hr />
+ <h1><a name="diagnostics"></a>6.<!--j-->&nbsp;<!--j-->Diagnostika</h1>
+ <h2>Zobrazení DTC</h2>
+ <p>Pokud vyberete  <b>Informace DTC vozidla</b>, zobrazí se z  <b>Diagnostický program</b> seznam elektronických řídicích jednotek (ECU) a počet aktuálně uložených DTC.</p>
+ <p><img src="../../images/gds_xiii_csy.gif" alt="gds_xiii.gif" width="400px"/><br />
+[XIII]</p>
+ <p>
+V zobrazené ukázce se nacházejí 4 uložené DTC pro modul sdruženého přístroje.<!--j-->&nbsp;<!--j-->Vybráním  <b>Pokračovat,</b> si zobrazíte hlavní stránku DTC.<br />
+
+  <img src="../../images/gds_xiv_csy.gif" alt="gds_xiv.gif" width="650px"/><br />
+[XIV]</p>
+ <p>V tabulce se zobrazí dostupné DTC.<!--j-->&nbsp;<!--j-->
+Obsah zobrazené tabulky lze konfigurovat.<!--j-->&nbsp;<!--j-->Klepnutím na  <b>Výběr sloupce</b> můžete přidávat nebo odebírat sloupce tabulky<!--j-->&nbsp;<!--j-->[XIV-1]<!--j-->.<!--j-->&nbsp;<!--j-->
+Můžete si zobrazit následující informace DTC:</p>
+ <table border=1 cellspacing=0 cellpadding=0>
+ <tr>
+ <td width=158 valign=top><p><b>Výběr</b></p></td>
+ <td width=427 valign=top><p><b>Popis</b></p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>Stav</p></td>
+ <td width=427 valign=top><p><img src="../../images/gds_status-unknown.png" alt="gds_status-unknown.png" width="16" height="16" /><!--j-->&nbsp;<!--j-->Nová sada DTC v průběhu cyklu čtení.<!--j-->&nbsp;<!--j-->Text s popisem DTC bude zobrazen tučně.</p>
+ <p><img src="../../images/gds_mail-generic.png" alt="gds_mail-generic.png" /><!--j-->&nbsp;<!--j-->Přítomná DTC, žádná změna od posledního cyklu čtení.</p>
+ <p><img src="../../images/gds_forward.png" alt="gds_forward.png" /><!--j-->&nbsp;<!--j-->
+Aktuální DTC se stavem změny od posledního cyklu čtení.<!--j-->&nbsp;<!--j-->
+Text s popisem DTC bude zobrazen kurzívou.</p>
+ <p><img src="../../images/gds_mail-delete.png" alt="gds_mail-delete.png" /><!--j-->&nbsp;<!--j-->
+DTC odstraněná při aktuálním cyklu čtení.<!--j-->&nbsp;<!--j-->
+Text s popisem DTC bude zobrazen s červeným pozadím.</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>ECU</p></td>
+ <td width=427 valign=top><p>Název řídicí jednotky</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>Funkční systém</p></td>
+ <td width=427 valign=top><p>Název funkčního systému (sada ECU)</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>DTC</p></td>
+ <td width=427 valign=top><p>Kód DTC</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>Příznakový bajt</p></td>
+ <td width=427 valign=top><p>Kód příznakového bajtu asociovaného s DTC</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>Popis</p></td>
+ <td width=427 valign=top><p>Popis textu DTC</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>Příznak</p></td>
+ <td width=427 valign=top><p>Popis dekódovaného příznaku</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>Stavový bajt</p></td>
+ <td width=427 valign=top><p>Pro budoucí použití</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>Dekódovaný stav</p></td>
+ <td width=427 valign=top><p>Aktuální stav DTC</p></td>
+ </tr>
+ </table>
+ <p>
+Pomocí  <b>Možnosti filtrování</b> si můžete nastavit určité ECU jako filtr - zobrazí se pouze DTC uvedených ECU.<!--j-->&nbsp;<!--j-->[XIV-2]<!--j-->.<!--j-->&nbsp;<!--j-->
+Tuto funkci lze použít v případě, že jsou DTC načítány pro celé vozidlo nebo pro funkční systém.<br />
+
+Do spodního pole můžete zadat libovolný text určený k filtrování zobrazených DTC, např. určitý chybový kód nebo klíčové slovo.<br />
+Pokud zaškrtnete políčko  <b>Zobrazit stav DTC</b>, můžete si zobrazit podrobný stav DTC.<!--j-->&nbsp;<!--j-->[XIV-3]<!--j-->.</p>
+ <hr />
+ <h3>Vymazat DTC</h3>
+ <p><!--j-->[XIV-4]<!--j-->&nbsp;<!--j-->
+Pokud vyberete  <b>Vymazat DTC</b>, zobrazí se obrazovka s informacemi o DTC vozidla.<!--j-->&nbsp;<!--j-->[XV]<br />
+Pomocí šipky  <b>Přidat</b> nebo  <b>Přidat vše</b> vyberte ECU, kterou chcete vymazat.<!--j-->&nbsp;<!--j-->
+Některé ECU lze vymazat pouze společně - v takovém případě budou vybrány společně.<!--j-->&nbsp;<!--j-->
+Vybrané ECU se zobrazí na pravé straně obrazovky.<!--j-->&nbsp;<!--j-->Vybráním  <b>OK</b> vymažete vybrané ECU.<!--j-->&nbsp;<!--j-->
+Pokud nechcete v tento okamžik vymazat ECU, vyberte  <b>Storno</b>.<!--j-->&nbsp;<!--j-->
+Pokud vyberete  <b>OK</b>, zobrazí se místní okno s průběhem.<!--j-->&nbsp;<!--j-->
+Odstraněné kódy se zobrazí červeně a zmizí při následující aktualizaci.</p>
+ <p><img src="../../images/gds_xv_csy.gif" alt="gds_xv.gif" width="500px"/><br />
+[XV]</p>
+ <hr />
+ <h3>Aktualizovat DTC</h3>
+ <p>Pokud stiskněte tlačítko  <b>Aktualizovat DTC</b>, vyžádá si GDS aktualizaci DTC z ovladače<!--j-->&nbsp;<!--j-->[XIV-5]<!--j-->.</p>
+ <hr />
+ <h3>Opustit program DTC</h3>
+ <p>
+Pomocí tlačítka  <b>Konec</b> můžete opustit program DTC<!--j-->&nbsp;<!--j-->[XIV-6]<!--j-->.</p>
+ <table width="80%" border="0">
+ <tr>
+ <td class="important"><b><!--j-->Důležité<!--j-->:<!--j--></b><!--j-->&nbsp;<!--j-->
+<b>Diagnostický program</b> můžete opustit pouze pomocí volby  <b>Konec</b>.<!--j-->&nbsp;<!--j-->
+GDS nelze opustit, pokud probíhá diagnostická aplikace.<!--j-->&nbsp;<!--j-->
+Pokud chcete opustit GDS, přejděte zpět na přihlašovací stránku GDS.</td></tr></table>
+ <hr />
+ <h3>Identifikační informace</h3>
+ <p>
+Program  <b>Zobrazení dat</b> se používá k zobrazení dat ovladače vozidla.<!--j-->&nbsp;<!--j-->
+Zobrazení identifikace ovladače obsahuje informace o variantách softwaru a hardwaru ovladače - tyto informace mohou být požadovány střediskem technické podpory.</p>
+ <hr />
+ <h2>
+Zobrazení dat</h2>
+ <p>
+Program Zobrazení dat poskytuje stav dat a signálů ovladače vozidla v reálném čase.</p>
+ <p>
+Výchozí zobrazení vybraných dat ovladače se zobrazí v tabulce  <b>Všechny parametry</b><!--j-->&nbsp;<!--j-->[XVI-1]<!--j-->.<!--j-->&nbsp;<!--j-->
+Jednotlivé zobrazené sloupce můžete konfigurovat pomocí tlačítka  <b>Výběr sloupce</b><!--j-->&nbsp;<!--j-->[XVI-3]<!--j-->.</p>
+ <p>Jednotlivé parametry si můžete zobrazit ve sledovaném seznamu pomocí  <b>Přidat do sledovaného seznamu</b><!--j-->&nbsp;<!--j-->[XVI-2]<!--j-->.</p>
+
+  <p><img src="../../images/gds_xvi_csy.gif" alt="gds_xvi.gif" width="650px"/><br />
+[XVI]</p>
+
+  <p>
+Parametry vybrané ve sledovaném seznamu si můžete zobrazit v  <b>Liniový graf</b><!--j-->&nbsp;<!--j-->[XVII-1]<!--j-->.<!--j-->&nbsp;<!--j-->
+
+
+V rozevírací nabídce si vyberte parametr, který chcete zobrazit a klepnutím na tlačítko Přidat spusťte zobrazení  <b>Liniový graf</b><!--j-->&nbsp;<!--j-->[XVII-2]<!--j-->.<!--j-->&nbsp;<!--j-->
+V liniovém grafu lze zobrazit více parametrů.</p>
+ <p>
+Liniový graf můžete konfigurovat pomocí tlačítek ve spodním panelu nástrojů.<!--j-->&nbsp;<!--j-->[XVII-3]</p>
+ <ol>
+ <li><b>Pozastavit posuv/Obnovit posuv</b>: Přepínání mezi statickým zobrazením a dynamickou korekcí obrazovky liniového grafu.</li>
+ <li><b>Datové body</b>: Přepínání zobrazení grafu mezi bodovým a liniovým režimem</li>
+ <li><b>Přidat značku</b>: Zvýrazní určité pozice/události v liniovém grafu.</li>
+ <li>Funkce  <b>Přiblížit</b> /  <b>Zvětšit</b></li>
+ </ol>
+ <p>
+
+  <img src="../../images/gds_xvii_csy.gif" alt="gds_xvii.gif" width="650px"/><br />
+[XVII]</p>
+ <p>
+Můžete si graficky zobrazit jednotlivé parametry ze seznamu  <b>Všechny parametry</b><!--j-->&nbsp;<!--j-->[XVI-1]<!--j-->.<!--j-->&nbsp;<!--j-->
+Vyberte jednotlivý parametr a poté ve výběrovém okně vyberte požadovaný režim zobrazení<!--j-->&nbsp;<!--j-->[XVIII-1]<!--j-->.<!--j-->&nbsp;<!--j-->Parametr si můžete zobrazit v následujících režimech:</p>
+ <ul type=square>
+ 	 <li>Kruhový graf<!--j-->&nbsp;<!--j-->[XVIII-2]<!--j-->.</li>
+ 	 <li>Sloupcový graf<!--j-->&nbsp;<!--j-->[XVIII-3]<!--j-->.</li>
+ 	 <li>Vysoká viditelnost<!--j-->&nbsp;<!--j-->[XVIII-4]<!--j-->.</li>
+ </ul>
+ <p>Současně můžete zobrazit až 4 parametry nebo režimy zobrazení.</p>
+
+
+   <p><img src="../../images/gds_xviii_csy.gif" alt="gds_xviii.gif" width="650px"/><br />
+[XVIII]</p>
+ <hr />
+ <h3>Přehrávání snímků</h3>
+ <p>Funkce  <b>Přehrávání snímku</b> umožňuje prohlížení dříve zaznamenaných snímků vozidla.<!--j-->&nbsp;<!--j-->Tyto informace lze použít při analýze problémů vozidla a při detekci podmínek vyvolávajících chyby.<!--j-->&nbsp;<!--j-->Funkci grafu lze použít k porovnávání parametrů za účelem zjištění, jestli určitá součást funguje správným způsobem.<!--j-->&nbsp;<!--j-->Zaznamenané snímky lze vybrat pro prohlédnutí následujícími třemi způsoby:</p>
+ <ul>
+ <li>Vybráním souboru snímku v  <b>Domovská stránka vozidla</b> a klepnutím na možnost Prohlédnout.</li>
+ <li>Poklepáním na vybraný snímek v  <b>Domovská stránka vozidla</b>.</li>
+ <li>Zadáním výběru  <b>Nástroje</b> v  <b>Nabídka</b> a vybráním  <b>Přehrávání snímku</b>.<!--j-->&nbsp;<!--j-->Poté otevřete  <b>Správce snímků</b>.<!--j-->&nbsp;<!--j-->Poklepejte na soubor snímku který chcete zobrazit, nebo klepněte na volbu Načíst snímek a vyberte určitý soubor snímku.</li>
+ </ul>
+ <p>Bez ohledu na použitou metodu výběru se na obrazovce  <b>Přehrávání snímku</b> zobrazí místní okno Soubor načten.<!--j-->&nbsp;<!--j-->V místním okně klepněte na OK.</p>
+ <hr />
+ <h3>Funkce přehrávání snímku<!--j-->&nbsp;<!--j-->[XIX-1]</h3>
+ <p>K přehrávání zaznamenaných snímků se používá několik funkcí.</p>
+
+
+   <table width="84%" height="80" border="1">
+ <tr>
+ <td width="7%"><img src="../../images/gds_play.png" alt="gds_play.png" width="25" height="23" /></td>
+ <td width="93%">
+Pomocí funkce Přehrát přehrajete snímek směrem dopředu.<!--j-->
+
+&nbsp;<!--j-->
+
+Pokud použijete tuto možnost, bude se přes obrazovku posouvat značka.<!--j-->
+
+&nbsp;<!--j-->
+Všechny možnosti na této ploše se označí šedou barvou, pokud jsou aktivní.</td>
+ </tr>
+ <tr>
+ <td><img src="../../images/gds_pause.png" alt="gds_pause.png" width="24" height="21" /></td>
+ <td>Funkce Pozastavit se používá k pozastavení přehrávání snímku.<!--j-->&nbsp;<!--j-->Pokud na tuto možnost klepnete podruhé, obnoví se přehrávání snímku od místa, kde bylo pozastaveno.</td>
+ </tr>
+ <tr>
+ <td><img src="../../images/gds_stop.png" alt="gds_stop.png" width="24" height="19" /></td>
+ <td>Funkce Zastavit se používá k zastavení přehrávání snímku.<!--j-->&nbsp;<!--j-->Pokud po použití funkce Zastavit použijete funkci Přehrát, zahájí se přehrávání snímku od začátku.</td>
+ </tr>
+ </table>
+ <hr />
+ <h3>Řízení času<!--j-->&nbsp;<!--j-->[XIX-2]</h3>
+ <p><b>Řízení času</b> se používá k ovládání přehrávání snímku.<!--j-->&nbsp;<!--j-->Tato funkce umožňuje výběr určitého časového rámce, zobrazení různých pohledů a ovládání rychlosti zobrazování.<!--j-->&nbsp;<!--j-->Následující funkce si můžete vybrat přímo pod  <b>Řízení času</b>.</p>
+ <table width="84%" border="1">
+ <tr>
+ <td><img src="../../images/gds_bookmark.png" alt="gds_bookmark.png" width="17" height="24" /></td>
+ <td>Záložky vám umožňují přidat specifický komentář do aktuální obrazovky a v budoucnosti se do tohoto bodu vrátit.<!--j-->&nbsp;<!--j-->Pokud zvolíte tuto možnost, objeví se místní okno.<!--j-->&nbsp;<!--j-->Zadejte název záložky a klepněte na OK.</td>
+ </tr>
+ <tr>
+ <td><img src="../../images/gds_notepad.png" alt="gds_notepad.png" width="26" height="22" /></td>
+ <td>Pomocí poznámkového bloku můžete přidat komentář do souboru snímku do aktuálního časového bodu.<!--j-->&nbsp;<!--j-->Pokud zvolíte tuto možnost, objeví se místní okno.<!--j-->&nbsp;<!--j-->Zadejte komentář k souboru snímku a klepněte na OK.</td>
+ </tr>
+ <tr>
+ <td><img src="../../images/gds_load.png" alt="gds_load.png" width="23" height="23" /></td>
+ <td>Funkce Načíst snímek (modrá složka) otevře soubor snímku a připraví jej k následovné analýze.<!--j-->&nbsp;<!--j-->Chcete-li <a href="#export_snap">exportovaný snímek</a> uložit, dekomprimujte nejdříve příslušný archivní soubor *.zip.<!--j-->&nbsp;<!--j--><!--j-->&nbsp;<!--j-->Tato funkce je také dostupná klepnutím na soubor snímku v  <b>Správce snímků</b>.</td>
+ </tr>
+ <tr>
+ <td><img src="../../images/gds_time-options.png" alt="gds_time-options.png" width="19" height="23" /></td>
+ <td>Pokud vyberete šipku dolů, zobrazí se všechny možnosti  <b>Řízení času</b>.<!--j-->&nbsp;<!--j-->Jednotlivé možnosti můžete také vybrat klepnutím na odpovídající položku.</td>
+ </tr>
+ <tr>
+ <td><img src="../../images/gds_speed.png" alt="gds_speed.png" width="57" height="27" /></td>
+ <td>
+Pomocí této možnosti můžete ovládat rychlost zobrazování snímku.<!--j-->
+
+&nbsp;<!--j-->
+
+Můžete zvolit pomalou rychlost 1/8X, 1/4X a 1/2X.<!--j-->
+
+&nbsp;<!--j-->
+
+Můžete také zvolit skutečnou rychlost 1.<!--j-->
+
+&nbsp;<!--j-->
+Nebo můžete pomocí této volby nastavit vyšší rychlost 2X, 4X a 8X.</td>
+ </tr>
+ </table>
+
+
+   <hr />
+ <h3>Zobrazit výběry<!--j-->&nbsp;<!--j-->[XIX-3]</h3>
+ <p>Každá položka zobrazení výběrů představuje jiný způsob zobrazení informací o vozidle za účelem analýzy.<!--j-->&nbsp;<!--j-->Následující funkce si můžete vybrat pod  <b>Dostupná zobrazení</b>.</p>
+ <ul>
+ <li>Zobrazení seznamu parametrů - zobrazí příchozí informace ze souboru snímku.<!--j-->&nbsp;<!--j-->Na obrazovce se zobrazí aktuální hodnota parametrů.</li>
+ </ul>
+ <table width="80%" border="0">
+ <tr>
+ 	<td class="important"><b>Důležité</b><br />Pokud není pro daný název k dispozici překlad, zobrazí se název parametru v originálním jazyce použitém při zachycení.</td></tr></table>
+ <ul>
+ <li>Zobrazení protokolu - obsahuje všechny informace o souboru snímku.<!--j-->&nbsp;<!--j-->Všechny hodnoty parametrů jsou uvedeny v pořadí, v jakém byly zaznamenány.<!--j-->&nbsp;<!--j-->Určité parametry lze přidat nebo odebrat ze sledovaného seznamu klepnutím na odpovídající položku.</li>
+ <li>Zobrazení stavu - zobrazí hodnoty všech parametrů ve specifickém časovém rámci.<!--j-->&nbsp;<!--j-->Tyto hodnoty lze použít pro porovnání se zobrazením spouštěče.</li>
+ <li>Zobrazení spouštěče - zobrazí všechny systémové a uživatelem nadefinované spouštěče.<!--j-->&nbsp;<!--j-->Tuto funkci můžete použít, pokud se diagnostický problém skládá z kombinace faktorů.<!--j-->&nbsp;<!--j-->
+Při splnění podmínky spouštěče se na obrazovce zobrazí varovný trojúhelník.<ul><li>Načíst spouštěče<!--j-->&nbsp;<!--j-->-<!--j-->&nbsp;<!--j-->Umožňuje načtení souboru obsahujícího definice spouštěčů.</li>
+ 	 <li>Uložit spouštěče<!--j-->&nbsp;<!--j-->-<!--j-->&nbsp;<!--j-->Umožňuje uložení spouštěče na pevný disk počítače.</li>
+ <li>Odstranit spouštěč<!--j-->&nbsp;<!--j-->-<!--j-->&nbsp;<!--j-->Umožňuje odebrání aktuálního spouštěče. Ten již dále nebude k dispozici.</li>
+ <li>Upravit spouštěč<!--j-->&nbsp;<!--j-->-<!--j-->&nbsp;<!--j-->Zobrazí místní okno, ve kterém můžete změnit limity a parametry obsažené ve spouštěči.</li>
+ <li>Přidat spouštěč<!--j-->&nbsp;<!--j-->-<!--j-->&nbsp;<!--j-->Zobrazí místní okno, ve kterém můžete konfigurovat spouštěč.</li></ul></li>
+ <li>Zobrazení DTC<!--j-->&nbsp;<!--j-->-<!--j-->&nbsp;<!--j-->Pokud vyberete funkci Přehrát a zároveň tuto možnost, otevře se seznam zaznamenaných DTC.</li>
+ <li>Zobrazení liniového grafu - zobrazí data nanesená na časovou osu.<!--j-->&nbsp;<!--j-->V tomto zobrazení si můžete zaškrtnutím polička Vybráno vybírat určité parametry pro zobrazení v grafu.<!--j-->&nbsp;<!--j-->Ve spodní části grafu se nacházejí čtyři funkce:  <b>Přiblížit</b> (zvětšit velikost),  <b>Zvětšit</b> (zmenšit velikost),  <b>Záložky</b> a  <b>Pozastavit posouvání</b>.<!--j-->&nbsp;<!--j-->Každou z těchto funkcí můžete použít klepnutím na odpovídající tlačítko.</li>
+ </ul>
+ <p><img src="../../images/gds_xix_csy.gif" alt="gds_xix.gif" width="650px"/><br />
+[XIX]</p>
+ <hr />
+ <h2>Ovládací funkce:</h2>
+ <p>Pomocí ovládacích funkcí GDS můžete ovládat určité funkce vozidla ze systému GDS.<!--j-->&nbsp;<!--j-->Aplikaci ovládacích funkcí spustíte vybráním ovládacích funkcí určitého ovladače v navigaci systému.</p>
+ <p>Ovládací funkce jsou zabudovány v zobrazení seznamu dat.<!--j-->&nbsp;<!--j-->V průběhu provádění ovládací funkce lze zobrazený parametr monitorovat nebo zaznamenávat pomocí funkce snímku GDS.</p>
+ <p>Systém GDS podporuje dva typy ovládacích funkcí:</p>
+ <p>1.<!--j-->&nbsp;<!--j-->Funkci digitálního ovládání s možností zapínání/vypínání<!--j-->&nbsp;<!--j-->[XX-1]</p>
+ <p><img src="../../images/gds_xx_csy.gif" alt="gds_xx.gif" width="650px"/><br />
+[XX]</p>
+ <p>2.<!--j-->&nbsp;<!--j-->Funkci analogového ovládání s možností ovládání dané funkce.<!--j-->&nbsp;<!--j-->Ovládací prvek lze ovládat pomocí ovládacích tlačítek nebo pohybováním ukazatele po posuvném měřítku na straně.<!--j-->&nbsp;<!--j-->[XXI-1]<!--j-->&nbsp;<!--j-->nebo<!--j-->&nbsp;<!--j-->[XXI-2]<!--j-->.</p>
+ <p><img src="../../images/gds_xxi_csy.gif" alt="gds_xxi.gif" width="650px"/><br />[XXI]</p>
+ <hr />
+ <h2>Funkce konfigurace a resetování:</h2>
+ <p>Funkce konfigurace a resetování představují specifické funkce ovladače, které je nutné použít, pokud dojde k výměně ovládacích prvků systému nebo pokud tyto ovládací prvky vyžadují resetování.<!--j-->&nbsp;<!--j-->Další informace naleznete v příslušné servisní příručce pro daný systém.</p>
+ <hr />
+ <h1><a name="troubleshooting"></a>7.<!--j-->&nbsp;<!--j-->ŘEŠENÍ PŘÍPADNÝCH PROBLÉMŮ</h1>
+
+  <h2>Problémy s připojením MDI</h2>
+ <p>Pokud jsou konektory MDI uvolněné nebo nesprávně zapojené do vozidla/počítače, zobrazí se místní okno.<!--j-->&nbsp;<!--j-->Postupujte následovně:</p><ul>
+ <li>Zajistěte, aby software správce MDI nebyl spuštěn po dobu provádění GDS.</li>
+ <li>Zkontrolujte, jestli je MDI správně zapojen do vozidla a do počítače.</li>
+ <li>Pokud možno, použijte ověřený &quot;dobrý USB kabel&quot; z jiné jednotky MDI.<!--j-->&nbsp;<!--j-->Proveďte veškerá zapojení a zkuste to znovu.</li>
+ <li>Pokud možno, použijte ověřený &quot;dobrý propojovací kabel MDI&quot; z jiné jednotky MDI.<!--j-->&nbsp;<!--j-->Proveďte veškerá zapojení a zkuste to znovu.</li>
+ <li>Pokud tento stav nadále přetrvává, kontaktujte Customer Support.</li>
+ <li>Zkontrolujte, jestli firewall neblokuje komunikaci GDS/MDI.</li>
+ </ul>
+ <hr />
+ <h2>Konflikt mezi softwary GDS/MDI Manager</h2>
+ <p>Softwary GDS a MDI Manager nesmějí být spuštěny současně.<!--j-->&nbsp;<!--j-->Pokud jsou oba tyto softwarové programy spuštěny současně, může dojít k jejich vzájemnému konfliktu.<!--j-->&nbsp;<!--j-->V části Podrobnosti naleznete případné další informace týkající se této chyby.<!--j-->&nbsp;<!--j-->Pokud by problém přetrvával, může vás Customer Support požádat o poskytnutí této informace.</p>
+ <p>Pokud by konflikt softwarů přetrvával, může správce MDI zobrazit místní okno &quot;Nastala kritická chyba&quot;.<!--j-->&nbsp;<!--j-->Ukončete správce MDI a přejděte zpět do programu GDS.<!--j-->&nbsp;<!--j-->Pokud problém stále přetrvává i po otevření GDS, kontaktujte Customer Support.</p>
+ <p>&nbsp;</p>
+ <p align="right"><font size="2">&copy; GM Europe, SPO Engineering, International Operations - 08 May 2009 (V3.0)</font></p>
+ </div>
+
+  </body>
+ </html>

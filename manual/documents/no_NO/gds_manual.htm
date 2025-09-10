@@ -1,0 +1,735 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8" />
+<title>Global Diagnostic System</title>
+<link rel="stylesheet" type="text/css" href="mdiprint.css" media="print" />
+<!-- Version 2.0.16 with all screenshots and Export Function explanation (Snapshot) -->
+
+<style type="text/css">
+	  <!--
+	div.all { margin-top:2px; margin-left:2px; margin-right:auto }
+	  
+.style1 { text-align: center;
+}
+.style2 {
+	border-style: solid;
+	border-color: black;
+	border-width: 1px;
+}
+.style3 {
+	border: 1px solid black;
+}
+.tableinsert {
+	vertical-align: top;
+	text-indent: 20px;
+}
+.caution {
+	padding: 10px;
+	margin: 0px;
+	border-color: #0000FF;
+	border-style: outset;
+	border-width: 1px 4px 4px 4px;
+	border-left: 1px solid #808080;
+	border-top: 1px solid #808080;
+	background-color: #FFCCCC;
+}
+.important {
+	padding: 10px;
+	margin: 0px;
+	border-color: #0000FF;
+	border-style: outset;
+	border-width: 1px 4px 4px 4px;
+	border-left: 1px solid #808080;
+	border-top: 1px solid #808080;
+	background-color: #FFCCCF;
+}
+.note {
+	padding: 10px;
+	margin: 0px;
+	border-color: #0000FF;
+	border-style: outset;
+	border-width: 1px 4px 4px 4px;
+	border-left: 1px solid #808080;
+	border-top: 1px solid #808080;
+	background-color: #99CCFF;
+}
+.notice {
+	padding: 10px;
+	margin: 0px;
+	border-color: #808080 #666666 #666666 #808080;
+	border-style: solid outset outset solid;
+	border-width: 1px 4px 4px 4px;
+	border-left: 1px solid #808080;
+	border-top: 1px solid #808080;
+	background-color: #C0C0C0;}
+
+* {
+	font-family:arial,sans-serif;}
+
+
+
+-->
+</style>
+</head>
+<body><div class="all">
+
+ <h1 align="center">Global Diagnostic System</h1>
+ <h1>Innholdsfortegnelse</h1>
+ <ol>
+ <li><a href="#intro">Innledning</a></li>
+ <li><a href="#product_description">Produktbeskrivelse</a></li>
+ <li><a href="#installation">GDS Installasjon</a></li>
+ <li><a href="#getting_started">Komme i gang</a></li>
+ <li><a href="#navigation">Generell navigasjon</a></li>
+ <li><a href="#diagnostics">Diagnose</a></li>
+ <li><a href="#troubleshooting">Feilsøking</a></li>
+ </ol>
+ <hr />
+
+  <h1><a name="intro"></a>Innledning</h1>
+ <h2>GDS Hurtigveiledning</h2>
+ <p>Global Diagnostic System (GDS)-hurtigveiledningen gir en oversikt over GDS.</p>
+ <p>Alt innhold i denne håndboken er basert på den nyeste produktinformasjonen som var tilgjengelig da den ble trykket.<!--j-->&nbsp;<!--j-->Retten til å foreta endringer til enhver tid uten forvarsel er forbeholdt.</p>
+ <p>Ingen del av denne publikasjonen kan reproduseres, lagres i et søkesystem, eller overføres i en hvilken som helst form på en hvilken som helst måte, inkludert, men ikke begrenset til, elektronisk, mekanisk, fotokopi, opptak eller på annen måte, uten skriftlig forhåndsgodkjenning fra GM Service and Parts Operations.<!--j-->&nbsp;<!--j-->Dette inkluderer all tekst, tabeller, illustrasjoner og diagrammer.</p>
+ <p>Forespørsler om tillatelser sendes til:</p>
+ <p>General Motors Corporation<br />
+Service and Parts Operations<br />
+Product Engineering<br />
+37350 Ecorse Road<br />
+Romulus, MI 48174-1376<br />
+U.S.A.</p>
+ <p>© 2008 GM Service and Parts Operations.<!--j-->&nbsp;<!--j-->Laget i USA.<!--j-->&nbsp;<!--j-->Alle rettigheter forbeholdt.</p>
+ <hr />
+
+  <h2>Generell informasjon</h2>
+ <p>
+GDS er utformet til å brukes av faglærte serviceansatte for å stille en diagnose og reparere bilelektroniske systemer.<!--j-->&nbsp;<!--j-->
+
+Alle forsøk er blitt gjort for å kunne gi komplett og nøyaktig teknisk informasjon basert på fabrikkens serviceinformasjon som var tilgjengelig da publikasjonen gikk i trykken.<!--j-->&nbsp;<!--j-->
+Likevel er retten til å foreta endringer til enhver tid uten forvarsel forbeholdt.</p>
+ <p>
+For å gjøre deg kjent med GDS og mulighetene det representerer, ber vi deg lese gjennom Brukerveiledningen før du begynner å bruke GDS.</p>
+ <p>Med GDS kan du gjøre følgende:</p>
+ <ul>
+ <li>Lese ut diagnosefeilkode</li>
+ <li>Lese ut informasjon om ECU-identifikasjon</li>
+ <li>Lese ut og grafisk visning av datalisteparameter</li>
+ <li>Spille inn og lagre øyeblikksdata</li>
+ <li>Kontrollfunksjoner</li>
+ <li>Konfigurasjons- og tilbakestillingsfunksjoner</li>
+ <li>Spille inn og lagre diagnoseprotokoll</li>
+ <li>Lagring av diagnoseøkter per bil</li>
+ </ul>
+
+  <table width="80%" border="0">
+ <tr>
+ <td class="important">
+ <b><!--j-->Viktig<!--j-->:<!--j--></b><br />
+SPS-programmering av bilstyringsprogrammer støttes ikke i GDS.<!--j-->&nbsp;<!--j-->For SPS-videreføringsprogrammering med MDI bruker du TIS2 / GlobalTIS SPS-programmet.</td>
+ </tr>
+ </table>
+ <hr />
+
+  <h2>Kundestøtte oversikt</h2>
+ <p>
+
+For å få hjelp med et spørsmål eller problem angående operasjonen av vårt GM-Techline-produkt og tilhørende produkter, eller for å bestille garantireparasjoner eller reparasjoner som ikke dekkes av garantien, vennligst ring ditt lokale Customer Support Center.<!--j-->&nbsp;<!--j-->For å bestille nye deler, kontakt GM Dealer Equipment.</p>
+ <h3>Før telefonkontakt</h3>
+ <p>Før oppringing av Hjelpdesken må det påses at følgende informasjon er tilgjengelig:</p>
+ <ul>
+ <li>Forhandlerens navn, adresse og forhandlerens kodenummer</li>
+ <li>Serienummer for MDI eller Notebook hvis det er aktuelt</li>
+ <li>Navn, delenummer og antall av komponenten som forespørres</li>
+ <li>Telefonnummer hvor teknikeren kan nås.</li>
+ </ul>
+ <p>Forbered en kort beskrivelse av problemet:</p>
+ <ul>
+ <li>Opplys tidspunkt for når problemet oppsto</li>
+ <li>Lag en liste med viste feilkoder</li>
+ <li>Oppgi hvilket tilbehør som ble brukt da problemet oppstod, og informasjon om bilen</li>
+ </ul>
+
+  <h4>IDENTIFISER MDI-EN</h4>
+ <p>GM MDI-monteringsetiketten finnes på enhetens bakside.<!--j-->&nbsp;<!--j-->
+
+Monteringsidentifikasjonsnummeret består av to deler: en produksjonskode for oppsporing og et unikt serienummer<!--j-->&nbsp;<!--j-->
+Serienummeret brukes for å identifisere MDI i programvaren.</p>
+
+  <h3>Gjennomføring av oppringing</h3>
+
+  <h4>Europeiske brukere</h4>
+ <h5>GDS-programvareinstallasjon &amp; systemkommunikasjonsstøtte:</h5>
+ <p><b>DAC - Dealer Assistance Center:</b><br />
+
+
+Brukerstøtte for GDS-programvare, for GDS-kommunikasjon til TIS2Web / GlobalTIS og MDI leveres av senteret for forhandlerassistanse.<br />
+
+Du finner telefonnummeret for det aktuelle landet på innloggingssiden til Channel 21-portalen.</p>
+ <h5>
+GDS Diagnosestøtte for bil:</h5>
+ <p><b>Europeisk senter for teknisk støtte:</b><br />
+
+Brukerstøtte for spørsmål vedrørende bilkommunikasjon under GDS-baserte diagnosehendelser tilbys av Europeisk senter for teknisk støtte.<!--j-->&nbsp;<!--j-->
+Telefonnummeret for det aktuelle landet kan fås hos din lokale General Motors Europe-organisasjon.</p>
+ <h5>
+Støtte for uavhengige reparatører/ettermarked:</h5>
+ <p><b>European Customer Assistance Center</b><br />
+Uavhengige reparatører kan kontakte European Customer Assistance Center for de ovennevnte støttetjenestene.<!--j-->&nbsp;<!--j-->
+Kontaktdetaljene finnes i GME Info Tech-portalen.</p>
+ <hr />
+ <h3>Programvarelisensavtale</h3>
+ <p>Les denne lisensavtalen for programvare nøye før du fortsetter å bruke programvaren.<!--j-->&nbsp;<!--j-->
+Dersom du fortsetter å bruke programvaren, betyr dette at du godtar betingelsene heri.</p>
+ <p>EIERSKAP<!--j-->:<!--j-->&nbsp;<!--j-->
+
+
+Programvaren er General Motors Corporations sitt opphavsmessige beskyttede verk og du erkjenner at General Motors Corporations eier all opphavsrett og annen eiendomsrett, tittel og interesse i programvaren.<!--j-->&nbsp;<!--j-->
+Eventuelle rettigheter i programvaren som ikke er lisensiert herunder er uttrykkelig forbeholdt General Motors Corporation.</p>
+ <p>BRUK<!--j-->:<!--j-->&nbsp;<!--j-->
+Du er gitt en ikke-eksklusiv, ikke-overførbar lisens til å bruke programvaren på flere datasystemer.<!--j-->&nbsp;<!--j-->
+
+Du kan ikke reversere, dekompilere, endre, reprodusere, distribuere eller selge programvaren som helhet eller delvis.<!--j-->&nbsp;<!--j-->
+Denne lisensen tilhører deg personlig og betinger streng overholdelse av alle betingelser heri.</p>
+ <p>Oppsigelse<!--j-->:<!--j-->&nbsp;<!--j-->
+
+General Motors Corporation kan avslutte denne programvarelisensavtalen dersom betingelsene heri blir brutt.<!--j-->&nbsp;<!--j-->
+
+Ved oppsigelse må du umiddelbart slutte å bruke programvaren og ødelegge alle eventuelle kopier av programvaren, inkludert, men ikke begrenset til, de som finnes i dine datasystemer.</p>
+ <hr />
+ <h1><a name="product_description"></a>2.<!--j-->&nbsp;<!--j-->Produktbeskrivelse</h1>
+ <h2>PC-krav for forhandler<!--j-->&nbsp;<!--j-->(<!--j-->Europa<!--j-->)</h2>
+ <p>Minimum PC-krav for å bruke GDS sammen med TIS2Web og GlobalTIS:</p>
+ <ul>
+ <li>Prosessor:<br />
+Intel Pentium M, 1,5GHz</li>
+ <li>Systemminne (RAM)<br />
+1GB for GDS og TIS2Web / GlobalTIS-klient; 2GB for GDS og GlobalTIS frittstående</li>
+ <li>Minimum harddisk-stasjon:<br />
+40 GB</li>
+ <li>Operativsystem<!--j-->:<br />Windows XP Professional (SP2)</li>
+ <li>Andre programvarekomponenter:<br />
+Java Web Start 1.5x eller høyere<br />
+ </li>
+ </ul>
+ <p>
+For mer informasjon se spesifikasjonen for GME IT-maskinvare og -programvare. Denne kan fås hos din lokale GME-organisasjon.</p>
+ <hr />
+ <h1><a name="installation"></a>3.<!--j-->&nbsp;<!--j-->GDS Installasjon</h1>
+ <h2>GDS Komponentoversikt:</h2>
+ <p>GDS-programvaren inneholder følgende moduler som først blir installert og deretter oppdatert ofte i visse perioder.<!--j-->&nbsp;<!--j-->[I]</p>
+ <ul>
+ <li><b>GDS Base System</b><br />
+Installert GDS-baseprogramvare på PC-en</li>
+ <li><!--j--><b><!--j-->GDS Leveringsenheter<!--j--></b><!--j-->:<br />
+Diagnosedatapakker for bilmodeller som utfører diagnoserutinene med bilstyringsprogrammene.</li>
+ <li><!--j--><b><!--j-->GDS Smart Start<!--j--></b><!--j-->:<!--j--><br />Programagent som sammenligner versjonene av GDS Base System, GDS-leveringsenheter og MDI Manager-programvareserver mellom TIS2Web/GlobalTIS og den lokale installasjonen.<!--j-->&nbsp;<!--j-->Det kommer opp en påminnelse om å laste ned nye tilgjengelige oppdateringer.</li>
+ <li><!--j--><b><!--j-->MDI Manager-programvare (eget program)<!--j--></b><!--j-->:<br />
+Program for oppdatering og konfigurasjon av MDI-enheten (Multiple Diagnostic Interface)</li>
+ </ul>
+ <p><img src="../../images/gds_i_non.gif" alt="gds_i.gif" width="650px"/><br />
+[I]</p>
+ <hr />
+ <h2>Installasjon:</h2>
+ <p>GDS kan installeres ved hjelp av en egen installasjons-DVD eller direkte som en nedlasting fra TIS2Web / GlobalTIS.</p>
+ <h3>Installasjon fra GDS-DVD:</h3>
+ <ul>
+ <li>PC-en må startes i Administrator-modus</li>
+ <li>Start den kjøreklare installasjonen fra DVD-startmenyen</li>
+ <li>Velg språk for installeringsagenten</li>
+ <li>Eksisterende GDS-konfigurasjon og -data kan brukes på nytt dersom en tidligere GDS-installasjon oppdages på PC-en.</li>
+ <li>Godta lisensavtalen (kreves for å fortsette)</li>
+ <li>Velg installasjonkatalogen for GDS</li>
+ <li>GDS-installasjonsprosessen starter</li>
+ <li>MDI Manager-programvaren vil bli installert dersom det ikke finnes en MDI Manager-programvareversjon på PC-en fra før eller versjonen som finnes er eldre.<!--j-->&nbsp;<!--j-->Første gang MDI Manager-programvaren skal installeres må MDI-maskinvaren være tilkoblet under installasjonen.<!--j-->&nbsp;<!--j-->For flere detaljer se MDI-håndboken.</li>
+ <li>GDS kan startes ved hjelp av skrivebordsymbolet eller via Start/Programmer/GDS etter installasjonen.<!--j-->&nbsp;<!--j--><img src="../../images/gds_icon.png" alt="gds_icon.png" /></li>
+ <li>Dersom det kreves, må brannmuren konfigureres slik at GDS kan kommunisere med MDI-enheten.</li>
+ <li>GDS Smart Start starter, oppdateringsprosessen som vises vil bli utført før GDS startes.</li>
+ </ul>
+ <hr />
+ <h3>Installasjon fra TIS2Web / GlobalTIS<!--j-->:</h3>
+ <p><img src="../../images/gds_ii_non.gif" alt="gds_ii.gif" width="600px"/><br />
+[II]</p>
+ <table width="80%" border="0">
+ <tr>
+ <td class="important"><b><!--j-->Viktig<!--j-->:<!--j--></b><!--j-->&nbsp;<!--j-->Ved installasjon fra TIS2Web lastes cirka 140 MB data ned via Internett.</td></tr></table>
+ <ul>
+ <li>PC-en må kjøres i Administrator-modus</li>
+ <li>Start GDS fra TIS2Web / GlobalTIS-hjemmesiden<!--j-->&nbsp;<!--j-->[II]</li>
+ <li>GDS Smart Start lastes ned fra TIS2Web-serveren. Dette kan ta litt tid, avhengig av Internett-hastigheten.</li>
+ <li>Velg installasjonkatalogen for GDS.</li>
+ <li>Angi Internett-passordet (kun dersom en proxy-server brukes for Internett-tilgang)</li>
+ <li>Dersom det kreves, må brannmuren konfigureres slik at GDS kan kommunisere med MDI-enheten.</li>
+ <li>Når GDS Smart Start-installasjonen begynner, kan dette ta litt tid.</li>
+ <li>Når GDS Smart Start starter, vil GDS-oppdateringen bli utført.<!--j-->&nbsp;<!--j-->[III]</li>
+ <li>Når nedlastingen av installasjonsfilene er ferdig, vises GDS-versjonen og MDI Manager-programvareversjonen, og kan lastes ned ved å klikke bekreftende i dialogboksen som kommer opp.<!--j-->&nbsp;<!--j-->Statuslinjen for oppdateringsprosessen vises ved hjelp av knappen  <b>Vis fremdrift for nedlasting</b>.</li>
+ <li>MDI Manager-programvaren vil bli installert dersom det ikke finnes en MDI Manager-programvare på PC-en eller dersom det eksisterer en eldre versjon av MDI Manager-programvaren.<!--j-->&nbsp;<!--j-->Første gang MDI Manager-programvaren skal installeres må MDI-maskinvaren være tilkoblet under installasjonen.<!--j-->&nbsp;<!--j-->For flere detaljer se MDI-håndboken.</li>
+ </ul>
+
+  <table width="200" border="0">
+ <tr>
+ <td><img src="../../images/gds_iii_non.gif" alt="gds_III.gif" width="200px"/></td>
+ <td><img src="../../images/gds_iv_non.gif" alt="gds_IV.gif" width="150px" /></td>
+ </tr>
+ <tr>
+ <td>[III]</td>
+ <td>[IV]</td>
+ </tr>
+ </table>
+ <hr />
+ <h3>GDS-oppdatering via Smart Start<!--j-->:</h3>
+Start GDS enten fra TIS2Web/GlobalTIS eller som en frittstående applikasjon via startmenyen i Windows.<!--j-->&nbsp;<!--j-->Før GDS lastes inn vil Smart Start-agenten startes, og denne sammenligner følgende versjoner av PC-GDS-installasjonen med innholdet i TIS2Web / GlobalTIS-serveren:</p>
+ <ul>
+ <li>GDS Smart Start</li>
+ <li>GDS Base System</li>
+ <li>MDI Manager</li>
+ </ul>
+ <p>Smart Start minner om nye oppdateringer som brukeren kan laste ned, dersom nye versjoner er tilgjengelige på serveren.<!--j-->&nbsp;<!--j-->[IV]</p>
+ <!--<p>Smart Start-oppdateringen av GDS Base System, GDS-leveringsenheter og MDI Manager vil kun bli utført dersom GDS startes fra TIS2Web/GlobalTIS og ikke i frittstående modus.<!--j-->&nbsp;<!--j--><!--The update capability of standalone started GDS will be available in a future version.</p>
+--> <table width="80%" border="0">
+ <tr>
+ 	 <td class="important"><!--j--><b><!--j-->Viktig<!--j--><!--j-->:<!--j--></b><!--j-->&nbsp;<!--j-->De beskrevne oppdateringene krever at PC-en alltid kjøres i Administrator-modus.</td></tr></table>
+ <hr />
+ <h3>Tilbakerulling av GDS Base System-installasjonen</h3>
+ <p>GDS-installasjonen kan rulles tilbake til den forrige installerte versjonen dersom en GDS-oppdatering fører til driftsproblemer.</p>
+ <p>For å utføre tilbakerullingsfunksjonen, går du til START -&gt;PROGRAMMER -&gt; GDS -&gt; GDS TILBAKERULLING.<!--j-->&nbsp;<!--j-->Det er en forutsetning at en eldre GDS-versjon er installert på PC-en for at tilbakerullingsfunksjonen skal virke.</p>
+ <h3>GDS lisenskontrollsystem (leasing)</h3>
+ <p>GDS-lisenskontrollsystemet hindrer uautorisert bruk av GDS.<!--j-->&nbsp;<!--j-->For å fornye GDS-leasing-forholdet er nødvendig å starte GDS fra TIS2Web eller GlobalTIS.<!--j-->&nbsp;<!--j-->GDS-leasing-forholdet krever fornyelse etter 7 dager dersom applikasjonen ble startet bare i frittstående modus i løpet av denne perioden.<!--j-->&nbsp;<!--j--><br>Dersom GDS-leasing-forholder er utløpt, vil en feilmelding be brukeren om å starte GDS-applikasjonen fra TIS2Web/GlobalTIS for å fornye leasing-forholdet.</p>
+ <hr />
+ <h3>Nedlasting og oppdatering GDS Leveringsenheter</h3>
+ <p>GDS Leveringsenheter er diagnoseprogrammer som kontrollerer kommunikasjonen og diagnosetjenestene mellom GDS og bilstyringsprogrammene<!--j-->.<!--j-->&nbsp;<!--j-->GDS-leveringsenheter utgis for hver modell og vil bli permanent oppdatert på TIS2Web / GlobalTIS.</p>
+ <p>GDS Smart Start identifiserer automatisk dersom nye eller oppdaterte versjoner er tilgjengelige på TIS2Web / GlobalTIS når oppdateringsprosessen utløses<!--j-->.<!--j-->&nbsp;<!--j-->Nye leveringsenheter må lastes ned i en lokal katalog på PC-en før de kan installeres i GDS.<!--j-->&nbsp;<!--j-->Oppdateringer av allerede installerte leveringsenheter vil bli automatisk nedlastet og trenger kun å installeres i GDS-hoveddatabasen.</p>
+ <br clear=all />
+ <hr />
+ <h3>Første nedlasting og oppdatering av GDS-leveringsenheter</h3>
+ <ul><li>Start GDS enten fra TIS2Web/GlobalTIS eller som en frittstående applikasjon via startmenyen i Windows.</li>
+ <li>Velg knappen  <b>Legg til ny diagnosepakke</b> fra GDS-innloggingsvinduet.</li>
+ <li>Trykk på knappen  <b>Oppdater liste over leveringsenheter fra server</b>.<!--j-->&nbsp;<!--j-->[V-1]<!--j-->.<!--j-->&nbsp;<!--j-->Pakker som finnes på serveren, men som ennå ikke er nedlastet, vises med symbolet.<!--j-->&nbsp;<!--j-->
+ <img src="../../images/gds_server.png" alt="gds_server.png" width="36" height="34" /></li>
+ <li>Merk og last ned leveringsenhetpakkene<!--j-->&nbsp;<!--j-->[V-2]<!--j-->.<!--j-->&nbsp;<!--j-->Med filterfunksjonen kan du søke etter bestemte leveringsenheter.<!--j-->&nbsp;<!--j-->Nedlastede leveringsenhetpakker vises med symbolet.<!--j-->&nbsp;<!--j--><img src="../../images/gds_pc.png" alt="gds_pc.png" /></li>
+ <li>Installer de nedlastede pakkene i GDS-hoveddatabasen. Installerte pakker vises i det høyre programvinduet<!--j-->&nbsp;<!--j-->[V-3]<!--j-->.</li>
+ </ul>
+ <p><img src="../../images/gds_v_non.gif" alt="gds_v.gif" width="650px"/><br />
+[V]</p>
+ <hr />
+ <h2>Oppdatering installert GDS-leveringsenheter i hoveddatabasen<!--j-->:</h2>
+ <ul>
+ 	 <li>Klikk på knappen  <b>Oppdater diagnosepakke</b> i GDS-innloggingsvinduet<!--j-->&nbsp;<!--j-->[VI-1]<!--j-->.<!--j-->&nbsp;<!--j-->GDS sammenligner versjonene i de installerte GDS-leveringsenhetene som er tilgjengelige på serveren og laster ned oppdaterte pakker.</li>
+ 	 <li>De nedlastede pakkene vises klare for installasjon i det venstre vinduet nederst.<!--j-->&nbsp;<!--j-->Velg knappen  <b>Installer</b> eller  <b>Installer alle</b> for å begynne installasjonen.<!--j-->&nbsp;<!--j-->[VI-2]<!--j-->.</li>
+ </ul>
+ <p><img src="../../images/gds_vi_non.gif" alt="gds_vi.gif" width="650px"/><br />
+[VI]<!--j-->:</p>
+ <hr />
+ <h2>
+Oppdatering av leveringsenhet for tilbakerulling</h2>
+ <p>
+
+Tilbakerullingsprosessen er stort sett den samme prosessen som er beskrevet i kapittelet Første nedlasting og oppdatering av GDS-leveringsenheter</p>
+ <ul>
+ 	 <li>Velg knappen  <b>Legg til ny diagnosepakke</b> fra GDS-innloggingsvinduet.</li>
+ 	 <li>Trykk på knappen  <b>Oppdater liste over leveringsenheter fra server</b>.<!--j-->&nbsp;<!--j-->[V-1]<!--j--></li>
+ <li>Merk og last ned de ønskede eldre versjonene av leveringsenhetpakkene.<!--j-->&nbsp;<!--j-->Med filterfunksjonen kan du søke etter bestemte leveringsenheter.</li>
+ <li>Installer de nedlastede pakkene i GDS-hoveddatabasen.</li>
+ </ul>
+ <hr />
+ <h2>Avinstallasjon av GDS<!--j-->:</h2>
+ <p>GDS kan avinstalleres ved å starte følgende program:</p>
+ <p>
+START -&gt; PROGRAMMER -&gt; GDS -&gt;GDS AVINSTALLASJON</p>
+ <hr />
+ <h2>
+Endre GDS-språket<!--j-->&nbsp;<!--j-->/<!--j-->&nbsp;<!--j-->Regionale innstillinger<!--j-->:</h2>
+ <p>GDS bruker språkinnstillingen som er i PC-ens operativsystem.<!--j-->&nbsp;<!--j-->Det er ingen meny i GDS der en kan endre språkinnstillingen.<!--j-->&nbsp;<!--j-->Utfør følgende trinn for å endre språket i GDS.</p>
+ <ul>
+ <li>Åpne KONTROLLPANEL i Windows etter følgende rekkefølge:<!--j-->&nbsp;<!--j-->START -&gt; INNSTILLINGER -&gt; KONTROLLPANEL</li>
+ <li>Åpne menyen INNSTILLINGER FOR REGION OG SPRÅK</li>
+ <li>Velg ønsket land i  <b>STANDARDER OG FORMATER</b></li>
+ <li>Åpne menyen AVANSERT.<!--j-->&nbsp;<!--j-->Velg ønsket språkinnstilling i fanen AVANSERT, i nedtrekksvinduet under SPRÅK FOR IKKE-UNICODE-PROGRAMMER</li>
+ <li>Konfigurer REGIONALE INNSTILLINGER for å endre de viste enhetene i GDS.</li>
+ </ul>
+ <hr />
+ <h1><a name="getting_started"></a>4.<!--j-->&nbsp;<!--j-->Komme i gang</h1>
+ <p><b><!--j-->NOTIS<!--j-->:<br />
+Før du utfører GDS, er det viktig å ha kjennskap til følgende forholdsregler:<!--j--></b></p>
+ <ul>
+ <li>Å bruke en utdatert versjon kan skade bilmodulene.<!--j-->&nbsp;<!--j-->GDS og Multiple Diagnostic Interface må ha den nyeste programvaren.</li>
+ <li>Sørg for at bilbatteriet er fullt oppladet<!--j-->&nbsp;<!--j-->Batterispenningen for GDS bør være mellom 12 og 14 volt.</li>
+ <li>Men en batterilader må ikke være tilkoblet bilen når du bruker MDI.</li>
+ <li>Sørg for at kabeltilkoblingene er sikret.<!--j-->&nbsp;<!--j-->En frakoblet kabel KAN føre til at styreprogrammet svikter.</li>
+ <li>Dersom du bruker en bærbar PC/annen visningsenhet (f.eks. PDA) for GDS,  må du sørge for at strømtilførselen er skikkelig tilkoblet.<!--j-->&nbsp;<!--j-->Dersom den drives av vekselstrøm og strømledningen kobles fra, kan dette ødelegge programmeringen og føre til skade på kontrollmodulen.<!--j-->&nbsp;<!--j-->Dersom den bærbare PC-en drives av en intern strømkilde (batteri), sørg for at dette er tilstrekkelig oppladet til å fullføre GDS-prosessen.</li>
+ </ul>
+ <table width="80%" border="0">
+ <tr>
+ <td class="note"><b>NOTIS</b><br />
+
+Dersom en ECU skal programmeres, må denne installeres i bilen før denne prosessen begynner.<!--j-->&nbsp;<!--j-->Sørg for at bilbatteriet er fullt oppladet.</td></tr></table>
+ <table width="80%" border="0">
+ <tr>
+ <td class="important"><b>Viktig</b><br />
+For å redusere muligheten for signaltap, bør MDI konfigureres for det mest stabile kommunikasjonsalternativet i forhold til din plassering.<!--j--><!--j-->Du kan velge fra USB, Ethernet eller trådløst Ethernet.</td></tr></table>
+ <hr />
+ <h2>GDS Oppstartsprosedyre<!--j-->:</h2>
+ <p>GDS kan startes ved hjelp av TIS2Web/GlobalTIS ved å klikke på GDS-ikonet.<!--j-->&nbsp;<!--j-->Eventuelt kan GDS startes i frittstående modus fra Start-menyen i Windows.</p><ol><li>Klikk på GDS-symbolet fra TIS2Web/GlobalTIS-hovedmenyen for å starte<!--j-->.<!--j-->&nbsp;<!--j-->Hvis GDS startes i frittstående modus, klikker du på START/PROGRAMMER/GDS</li><li>Når GDS Smart Start starter, vil GDS-oppdateringen som vises bli utført.<!--j-->&nbsp;<!--j-->Dersom en ny GDS- eller MDI Manager-versjon er tilgjengelig på serveren, vil en dialogboks komme opp med påminnelse om nedlasting og installasjon på PC-en.<!--j-->&nbsp;<!--j-->Klikk på  <b>Fortsett,</b> for å starte nedlastingen eller installasjonen<!--j-->&nbsp;<!--j-->[IV]<!--j-->.<!--j-->&nbsp;<!--j-->Dersom GDS startes i frittstående modus er det ikke mulig å oppdatere.</li>
+ 	 <li>GDS-innloggingsside er lastet.</li></ol>
+ <hr />
+ <h1><a name="navigation"></a>5.<!--j-->&nbsp;<!--j-->Generell navigasjon</h1>
+ <h2>Nedtrekksmenyer<!--j-->&nbsp;<!--j--><img src="../../images/gds_menu.png" alt="gds_menu.png" width="57" height="38" /></h2>
+ <p>Fem nedtrekksmenyer er tilgjengelige fra GDS<!--j-->&nbsp;<!--j-->[VII]</p> <p>Merk<!--j-->:<!--j-->&nbsp;<!--j-->Disse menyene vil kun komme opp som valg for PC-versjonene av GDS<!--j-->.<!--j-->&nbsp;<!--j-->Det vil også finnes et berøringsskjermformat, der man får tilgang til menyene ved hjelp av en hurtigknapp.</p> <ul>
+ <li><b>Fil</b>-menyen har oppføringen  <b>Avslutt</b> for å lukke GDS.</li>
+ <li><b>Økt</b>-menyen har to valg:<!--j-->&nbsp;<!--j--><b>Lagre gjeldende logg for økter</b> og  <b>Legg kommentarer til økt...</b><br /><b>Legg kommentarer til økt...</b>: informasjonen kan angis ved hjelp av datamaskinens tastatur og lagres i behandling for logg for økter</li>
+ <li><b>Verktøy</b>-alternativet gir fem valg:<!--j-->&nbsp;<!--j-->Start sporing<!--j-->,<!--j-->&nbsp;<!--j-->Gjenspilling av øyeblikksdata<!--j-->,<!--j-->&nbsp;<!--j-->Opprett rapport<!--j-->,<!--j-->&nbsp;<!--j-->Vis nedlastingsstatus...<!--j-->,<!--j-->&nbsp;<!--j-->Brukeradministrasjon<br />Nye brukere kan opprettes ved å klikke på symbolet på siden  <b>Brukeradministrasjon</b><!--j-->&nbsp;<!--j-->
+ <img src="../../images/gds_add-user.png" alt="gds_add-user.png" width="27" height="26" />
+ <!--j-->.</li>
+ <li><b>Vindu</b>: I menyen </b>Preferanser</b> kan man velge skjermkonfigurasjon, f.eks. fullt skjermbilde, PC- eller berøringsskjermmodus.</li>
+ <li><b>Valg i hjelp</b> har tre valg:<br /><b>Innhold i hjelp</b> viser alle tilgjengelige GDS-hjelpefiler.<!--j-->&nbsp;<!--j-->
+<b>Om GDS</b> viser GDS-versjonen og Build ID.<!--j-->&nbsp;<!--j-->
+<b>Vis MDI-versjon</b> viser versjonene av MDI-programvaren og -maskinvaren.<!--j-->&nbsp;<!--j-->
+Du kan bli bedt om å oppgi denne informasjonen når du kontakter ditt Customer Support Center.</li></ul><p></p>
+ <p><img src="../../images/gds_vii_non.gif" alt="gds_vii.gif" width="120px"/><br />
+[VII]</p>
+ <hr />
+ <h2>Verktøylinje for diagnoseprogram</h2>
+ <p>Flere valg på verktøylinjen blir tilgjengelige når du er kommet inn i systemets navigasjonsvisning.<!--j-->&nbsp;<!--j-->[VIII]</p>
+ <ul>
+ <li><b>Spille inn øyeblikksdata</b> (rød sirkel) er kun tilgjengelig når du har kommet inn i systemets navigasjonsvisning, og brukes for å spille inn øyeblikksdata for bilen.<!--j-->&nbsp;<!--j-->Når øyeblikksdata spilles inn, er dette valget utilgjengelig.</li>
+ <li><b>Stopp innspilling av øyeblikksdata</b> (blå firkant) vises når øyeblikksdata for en bil spilles inn.<!--j-->&nbsp;<!--j-->Dette alternativet velges for å stoppe innspillingen av øyeblikksdataene og lagre filen.</li>
+ <li><b>Bilde</b>-symbolet velges for å spille inn innholdet som vises på skjermen og lagre det et sted på datamaskinen.</li>
+ <li><b>Zoom ut</b> øker skriftstørrelsen.<!--j-->&nbsp;<!--j-->Bildet som vises reduseres hver gang du klikker med musen.</li>
+ <li><b> Zoom inn</b>-alternativet øker skriftstørrelsen.<!--j-->&nbsp;<!--j-->Bildet som vises forstørres hver gang du klikker med musen.</li>
+ <li><b>Avslutt</b>-knappen lukker det aktive diagnoseprogrammet.</li>
+ </ul>
+ <p><img src="../../images/gds_viii_non.gif" alt="gds_viii.gif" width="400px"/><br />
+[VIII]</p>
+ <hr />
+ <h2>Piltaster</h2>
+ <p>Det finnes piltaster nederst i parameterlisten.<!--j-->&nbsp;<!--j-->Piltastene kan brukes for følgende navigasjon:</p>
+ <p><img src="../../images/gds_ix_non.gif" alt="gds_ix.gif" width="600px"/><br />
+[IX]<!--j-->:</p>
+ <ul>
+ <li><b>Gå opp</b>-piltasten kan brukes til å flytte én mappe opp i parameterlisten hver gang den velges.</li>
+ <li><b>Gå ned</b>-piltasten kan brukes til å flytte én mappe ned i parameterlisten hver gang den velges.</li>
+ <li><b>Gå til høyre</b>-piltasten kan brukes til å åpne et nivå i navigasjonstreet.</li>
+ <li><b>Gå til venstre</b>-piltasten kan brukes til å lukke et nivå i navigasjonstreet.<!--j-->&nbsp;<!--j-->Dette valget vises ikke hvis du er i første skjermbilde av en prosedyre.</li></ul>
+ <hr />
+ <h2>Andre taster</h2>
+ <p>Det er også tre andre taster nederst i alle skjermbildene.<!--j-->&nbsp;<!--j-->Disse tastene kan brukes til følgende:</p>
+ <ul>
+ <li>Med  <b>Starte</b> kan du starte et program.</li>
+ <li>Med  <b>Gå tilbake</b> kan du gå til forrige skjermbilde.<!--j-->&nbsp;<!--j-->Dette valget er kun tilgjengelig når det finnes et skjermbilde å gå tilbake til.</li>
+ <li>Med  <b>Neste handling</b> kan du gå til neste skjermbilde.<!--j-->&nbsp;<!--j-->Dette valget er kun tilgjengelig dersom alle nødvendige valg er gjort i det gjeldende skjermbildet.</li>
+ </ul>
+ <br clear=all />
+ <hr />
+ <h2>Angi bil-/MDI-informasjon</h2>
+ <p>1.<!--j-->&nbsp;<!--j-->Velg en bruker for innlogging fra GDS-hovedmenyen.<!--j-->&nbsp;<!--j-->Dersom ingen bruker er blitt opprettet, kan en ny bruker opprettes eller standardbrukeren kan velges.<!--j-->&nbsp;<!--j-->(Se avsnittet om nedtrekksmenyer)<br />
+ </p>
+ <p>2.<!--j-->&nbsp;<!--j-->Etter at du har valgt alternativet for å få tilgang, vises identifikasjonsmeny-skjermbildet.<!--j-->&nbsp;<!--j-->Flere valg er tilgjengelige fra dette skjermbildet:</p>
+ <p><img src="../../images/gds_x_non.gif" alt="gds_x.gif" width="650px"/><br />
+[X]</p>
+ <ul>
+ 	 <li>[X-1]<!--j-->&nbsp;<!--j--><b><b>MDI-valg</b></b><!--j-->:<!--j-->&nbsp;<!--j-->Alle MDI-er som er tilgjengelige i de ulike nettverkene hos forhandleren vises. Du kan velge den MDI-en som du bruker for å utføre bildiagnostikk.<!--j-->&nbsp;<!--j-->For MDI-tilkobling uthever du en tilgjengelig MDI ved å klikke på den, og velg deretter  <b>Koble til</b>.<!--j-->&nbsp;<!--j-->Velg  <b>Koble fra</b> for å koble fra MDI-en.<!--j-->&nbsp;<!--j-->Legg ny MDI til bilen og velg  <b>Koble til</b>.<!--j-->&nbsp;<!--j-->Velg  <b>Oppdatere</b> for å sjekke om det er nye MDI-er på de tilgjengelige nettverkene.<!--j-->&nbsp;<!--j-->For å fortsette i GDS uten at noen MDI er tilkoblet, må du aktivere avkryssingsboksen  <b>Naviger uten MDI</b>.</li>
+ <li>[X-2]<!--j-->&nbsp;<!--j--><b><b>Innlegging av understellsnummer</b></b><!--j-->:<!--j-->&nbsp;<!--j-->Understellsnummer-felt for manuell oppføring eller automatisk identifikasjon av understellsnummer fra bilstyringsprogrammet.<!--j-->&nbsp;<!--j-->(MDI-tilkobling påkrevd).<!--j-->&nbsp;<!--j-->Tilleggskommentarer tilknyttet dette understellsnummeret / denne bilen kan legges til i tekstfeltet under.</li>
+ <li>[X-3]<!--j-->&nbsp;<!--j--><b>Bilidentifikasjon</b>-avsnitt<!--j-->:<!--j-->&nbsp;<!--j-->velg Merke, Modell og Modellår før du fortsetter.</li>
+ <li>[X-4]<!--j-->&nbsp;<!--j--><b><b>Bilens diagnosehistorikk</b></b><!--j-->:<!--j-->&nbsp;<!--j-->Dersom en bil er diagnostisert tidligere med dette GDS-systemet, vil understellsnummeret og tilhørende informasjon være lagret i bilens historikk.<!--j-->&nbsp;<!--j-->Velg bilen som skal diagnostiseres fra listen og fortsett direkte til  <b>Hjemmeside bil</b>.<!--j-->&nbsp;<!--j-->Et filter for fri tekst er tilgjengelig</li>
+ </ul>
+ <p>3.<!--j-->&nbsp;<!--j--><b>Hjemmeside bil</b>-en vises.<!--j-->&nbsp;<!--j-->From this screen various vehicle data is displayed including: entered vehicle information, previous vehicle diagnosis, session comments, session log reports, and stored data</p>
+ <hr />
+ <h2><b><b>Hjemmeside bil</b></b></h2>
+ <p><b>Hjemmeside bil</b> består av flere områder:</p>
+ <p>[XI-1]<!--j-->:<!--j-->&nbsp;<!--j--><b>Bilinformasjon</b> lister opp all bilinformasjon, inkludert Merke, Modell og Modellår osv.<br />Denne listen oppdateres når bilen diagnostiseres, og lagres etter hver økt.<!--j-->&nbsp;<!--j--><b>Slett valget av bilalternativ</b>-en brukes til å slette et tidligere valgt innhold.<!--j-->&nbsp;<!--j-->Merk raden som skal slettes fra bilinnholdslisten og velg Slett utstyr.</p>
+ <p>[XI-2]<!--j-->:<!--j-->&nbsp;<!--j--><b>Økt-kommentarer</b> brukes til å legge valgfrie tekstkommentarer fra brukere til en diagnoseøkt.<!--j-->&nbsp;<!--j-->Klikk på  <b>Legg til en kommentar</b> for å legge til ekstra informasjon angående en økt.<!--j-->&nbsp;<!--j-->Informasjon kan angis med tastaturet under områdene Bruker, Data eller Kommentar.<!--j-->&nbsp;<!--j-->For å slette tidligere kommentarer, merker du informasjonen under områdene Bruker, Data eller Kommentar, og klikker på  <b>Slett valgt kommentar</b>.</p>
+ <p>[XI-3]<!--j-->:<!--j-->&nbsp;<!--j-->Med  <b>Rapporter for logger for økter</b> kan du få en utskrift av bilens diagnosehistorikk.<!--j-->&nbsp;<!--j--><b>Full visning</b> gir en komplett rapport over all diagnostikk som er utført på bilen.<!--j-->&nbsp;<!--j--><b>Enkel rapport</b> gir et sammendrag over bilens diagnostikk.</p>
+ <p>[XI-4]<!--j-->:<!--j-->&nbsp;<!--j--><b>Øyeblikksdata</b> lister opp alle øyeblikksdata som er lagret for bilen.<!--j-->&nbsp;<!--j-->Brukernavn, navn på øyeblikksdatafil, datoen øyeblikksdataene ble tatt og kommentarer vises.<!--j-->&nbsp;<!--j-->Du kan se en gjenspilling av øyeblikksdataene ved å merke elementet og velge  <b>Gjennomgang</b>.<!--j-->&nbsp;<!--j-->Individuelle elementer kan slettes ved å merke elementet og velge  <b>Slett</b>.<br />[XI-6]<!--j-->:<!--j-->&nbsp;<!--j--><b><a name="export_snap">Eksporter</a></b> lagrer en kopi av skjermbildet på din lokale PC.<!--j-->&nbsp;<!--j-->Du kan deretter sende disse skjermbilde-dataene til aktuelle personer for videre analyse.</p>
+ <p>[XI-5]<!--j-->:<!--j-->&nbsp;<!--j-->Menyen  <b>Utførte programmer</b> gir en økt med diagnostikkhistorie.</p>
+
+  <p><b>Neste handling</b> brukes for å fortsette diagnosen av den valgte bilen.</p>
+ <p><img src="../../images/gds_xi_non.gif" alt="gds_xi.gif" width="650px"/><br />
+[XI]</p>
+ <hr />
+ <h2>Systemnavigasjon - Valg av diagnostikkprogram</h2>
+ <p>Når du har valgt  <b>Neste handling</b> fra  <b>Hjemmeside bil</b>, vises visningen for systemnavigasjon<!--j-->&nbsp;<!--j-->[XII]<!--j-->.</p>
+ <p>Velg navigasjonsbanen du ønsker å undersøke på bilen.<!--j-->&nbsp;<!--j-->Navigasjon kan utføres enten med navigasjonspilene; høyre/venstre-pilene åpner/lukker en undermappe, Start-knappen starter det valgte diagnostikkprogrammet.<!--j-->&nbsp;<!--j-->Det er også mulig å navigere ved hjelp av musen ved å klikke på +-symbolene i navigasjonstreet med piltastene på tastaturet</p>
+ <p>
+Fortsett å velge mapper for ønsket bane til du når et diagnoseprogram som har et programikon.</p>
+ <p>
+
+Når du starter et diagnoseprogram, forsvinner visningen av systemnavigasjonen, og blir erstattet av et diagnoseprogram.<!--j-->&nbsp;<!--j-->
+Når du har fullført diagnoseprogrammet, velger du  <b>Avslutt</b> øverst til høyre i visningen av diagnoseprogrammet.<!--j-->&nbsp;<!--j-->
+Dette lukker diagnoseprogrammet og går tilbake til visningen av systemnavigasjonen.</p>
+ <p><img src="../../images/gds_xii_non.gif" alt="gds_xii.gif" width="350px"/><br />
+[XII]</p>
+ <hr />
+ <h1><a name="diagnostics"></a>6.<!--j-->&nbsp;<!--j-->Diagnose</h1>
+ <h2>Feilkode-visning</h2>
+ <p>Når  <b>Feilkodeinformasjon for bil</b> velges, vises en liste fra  <b>Diagnoseprogram</b> over elektroniske kontrollenheter (ECU-er) og antall feilkoder som er lagret.</p>
+ <p><img src="../../images/gds_xiii_non.gif" alt="gds_xiii.gif" width="400px"/><br />
+[XIII]</p>
+ <p>
+Det finnes fire lagrede feilkoder for instrumentpanel-modulen i eksempelet som vises.<!--j-->&nbsp;<!--j-->Velg  <b>Fortsett,</b> for å vise feilkode-hovedsiden.<br />
+
+  <img src="../../images/gds_xiv_non.gif" alt="gds_xiv.gif" width="650px"/><br />
+[XIV]</p>
+ <p>De tilgjengelige feilkodene vises i en tabell.<!--j-->&nbsp;<!--j-->
+Innholdet i tabellen som vises er konfigurerbart.<!--j-->&nbsp;<!--j-->Klikk på  <b>Kolonnevalg</b> for å legge til eller fjerne kolonner i tabellen<!--j-->&nbsp;<!--j-->[XIV-1]<!--j-->.<!--j-->&nbsp;<!--j-->
+Følgende feilkodeinformasjon kan vises:</p>
+ <table border=1 cellspacing=0 cellpadding=0>
+ <tr>
+ <td width=158 valign=top><p><b>Valg</b></p></td>
+ <td width=427 valign=top><p><b>Beskrivelse</b></p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>Status</p></td>
+ <td width=427 valign=top><p><img src="../../images/gds_status-unknown.png" alt="gds_status-unknown.png" width="16" height="16" /><!--j-->&nbsp;<!--j-->Ny feilkode ble satt under lesesyklus.<!--j-->&nbsp;<!--j-->Tekst for beskrivelse av feilkode er satt til fet.</p>
+ <p><img src="../../images/gds_mail-generic.png" alt="gds_mail-generic.png" /><!--j-->&nbsp;<!--j-->Gjeldende feilkode, ingen endringer siden siste lesesyklus.</p>
+ <p><img src="../../images/gds_forward.png" alt="gds_forward.png" /><!--j-->&nbsp;<!--j-->
+Gjeldende feilkode har endret status siden siste lesesyklus.<!--j-->&nbsp;<!--j-->
+Tekst for feilkodebeskrivelse er satt til kursiv.</p>
+ <p><img src="../../images/gds_mail-delete.png" alt="gds_mail-delete.png" /><!--j-->&nbsp;<!--j-->
+Feilkode slettet i gjeldende lesesyklus.<!--j-->&nbsp;<!--j-->
+Tekst for beskrivelse av feilkode er satt til rød bakgrunn.</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>ECU</p></td>
+ <td width=427 valign=top><p>Navn på kontrollenhet</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>Funksjonssystem</p></td>
+ <td width=427 valign=top><p>Navn på funksjonssystem (sett med ECU)</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>Feilkode</p></td>
+ <td width=427 valign=top><p>Feilkode</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>Symptom-byte</p></td>
+ <td width=427 valign=top><p>Kode for symptombyte tilknyttet feilkode</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>Beskrivelse</p></td>
+ <td width=427 valign=top><p>Tekstbeskrivelse for feilkode</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>Symptom</p></td>
+ <td width=427 valign=top><p>Beskrivelse av dekodet symptom</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>Status-byte</p></td>
+ <td width=427 valign=top><p>For fremtidig bruk</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>Dekodet status</p></td>
+ <td width=427 valign=top><p>Gjeldende status for feilkode</p></td>
+ </tr>
+ </table>
+ <p>
+Med  <b>Filteralternativer</b> kan bestemte ECU-er settes som filter, noe som fører til at kun feilkodene i de oppgitte ECU-ene vises<!--j-->&nbsp;<!--j-->[XIV-2]<!--j-->.<!--j-->&nbsp;<!--j-->
+Denne funksjonen kan brukes når feilkoder leses ut for hele bilen eller av et funksjonssystem.<br />
+
+I det nedre feltet kan fri tekst angis for å filtrere feilkode-displayet, f.eks. en bestemt feilkode eller nøkkelord.<br />
+Den detaljerte feilkodestatusen kan vises når avkryssingsboksen  <b>Vis feilkodestatus</b> er aktivert<!--j-->&nbsp;<!--j-->[XIV-3]<!--j-->.</p>
+ <hr />
+ <h3>Slett feilkoder</h3>
+ <p><!--j-->[XIV-4]<!--j-->&nbsp;<!--j-->
+Dersom  <b>Slett feilkoder</b> er valgt, vises et skjermbilde med informasjon om bilens feilkoder.<!--j-->&nbsp;<!--j-->[XV]<br />
+Bruk  <b>Legg til</b>- eller  <b>Legg til alle</b>-pilen for å velge hvilke ECU-er du vil slette.<!--j-->&nbsp;<!--j-->
+Noen ECU-er kan kun slettes sammen. I så fall må de merkes ut sammen.<!--j-->&nbsp;<!--j-->
+De valgte ECU-ene vil vise på høyre side av skjermbildet.<!--j-->&nbsp;<!--j-->Velg  <b>OK</b> for å slette de valgte ECU-ene.<!--j-->&nbsp;<!--j-->
+Velg  <b>Slett</b> dersom du ikke ønsker å slette ECU-ene på det nåværende tidspunkt.<!--j-->&nbsp;<!--j-->
+Dersom  <b>OK</b> er valgt, vil et popup-vindu som viser fremdriften komme opp.<!--j-->&nbsp;<!--j-->
+De valgte kodene vil bli røde og forsvinne ved neste oppdatering.</p>
+ <p><img src="../../images/gds_xv_non.gif" alt="gds_xv.gif" width="500px"/><br />
+[XV]</p>
+ <hr />
+ <h3>Oppdater feilkoder</h3>
+ <p>Dersom knappen  <b>Oppdater feilkode</b> velges, vil GDS kreve en feilkodeoppdatering fra styringsprogrammet<!--j-->&nbsp;<!--j-->[XIV-5]<!--j-->.</p>
+ <hr />
+ <h3>Avslutte feilkodeprogrammet</h3>
+ <p>
+Avslutt feilkodeprogrammet med  <b>Avslutt</b>-knappen<!--j-->&nbsp;<!--j-->[XIV-6]<!--j-->.</p>
+ <table width="80%" border="0">
+ <tr>
+ <td class="important"><b><!--j-->Viktig<!--j-->:<!--j--></b><!--j-->&nbsp;<!--j-->
+Det er kun med  <b>Avslutt</b>-valget at du kan avslutte <b>Diagnoseprogram</b>.<!--j-->&nbsp;<!--j-->
+Det er ikke mulig å avslutte GDS mens diagnoseprogrammer kjører.<!--j-->&nbsp;<!--j-->
+For å avslutte GDS naviger tilbake til GDS-innloggingssiden.</td></tr></table>
+ <hr />
+ <h3>Identifikasjonsinformasjon</h3>
+ <p>
+Programmet  <b>Datavisning</b> kan brukes til å vise bilens styreprogramdata.<!--j-->&nbsp;<!--j-->
+Visningen av styreprogramidentifikasjonen gir informasjon om programvare- og maskinvarevariantene til styreenheten. Denne informasjonen kan du bli bedt om å oppgi når du kontakter teknisk hjelpesenter.</p>
+ <hr />
+ <h2>
+Datavisning</h2>
+ <p>
+Datavisningsprogrammet gir status om bilens styreprogramdata og -signaler i sanntid.</p>
+ <p>
+Standardvisningen av de valgte styredataene vises i en tabell  <b>Alle parametere</b><!--j-->&nbsp;<!--j-->[XVI-1]<!--j-->.<!--j-->&nbsp;<!--j-->
+Konfigurer kolonnene som vises individuelt med knappen  <b>Kolonnevalg</b><!--j-->&nbsp;<!--j-->[XVI-3]<!--j-->.</p>
+ <p>En individuell parameter kan vises i en overvåkningsliste ved å velge  <b>Legg til overvåkningsliste</b><!--j-->&nbsp;<!--j-->[XVI-2]<!--j-->.</p>
+
+  <p><img src="../../images/gds_xvi_non.gif" alt="gds_xvi.gif" width="650px"/><br />
+[XVI]</p>
+
+  <p>
+Parameterer som er valgt i overvåkningslisten kan vises i  <b>Linjediagram</b>-visningen<!--j-->&nbsp;<!--j-->[XVII-1]<!--j-->.<!--j-->&nbsp;<!--j-->
+
+
+Velg parameteren som skal vises i nedtrekksboksen og klikk på knappen Legg til for å starte  <b>Linjediagram</b>-visningen<!--j-->&nbsp;<!--j-->[XVII-2]<!--j-->.<!--j-->&nbsp;<!--j-->
+Det er mulig å vise flere parametere i linjediagrammet.</p>
+ <p>
+Med knappene på den nedre oppgavelinjen kan du konfigurere visningen av linjediagrammet.<!--j-->&nbsp;<!--j-->[XVII-3]</p>
+ <ol>
+ <li><b>Pause i rullende bilde/Fortsett rullende bilde</b>: Skifte mellom statisk visning eller dynamisk korrigering av skjermbildet med linjediagrammet.</li>
+ <li><b>Datapunkter</b>: Endre diagramvisningen mellom punktmodus eller linjemodus</li>
+ <li><b>Legg til indikator</b>: Merk bestemte posisjoner/handlinger i linjediagrammet.</li>
+ <li><b>Zoom inn</b> /  <b>Zoom ut</b>-funksjon</li>
+ </ol>
+ <p>
+
+  <img src="../../images/gds_xvii_non.gif" alt="gds_xvii.gif" width="650px"/><br />
+[XVII]</p>
+ <p>
+Individuelle parametere i  <b>Alle parametere</b>-listen kan vises grafisk<!--j-->&nbsp;<!--j-->[XVI-1]<!--j-->.<!--j-->&nbsp;<!--j-->
+Velg ønsket parameter og velg ønsket visningsmodus i avkryssingsboksen<!--j-->&nbsp;<!--j-->[XVIII-1]<!--j-->.<!--j-->&nbsp;<!--j-->Parameteren kan vises i følgende moduser:</p>
+ <ul type=square>
+ 	 <li>Sektordiagram<!--j-->&nbsp;<!--j-->[XVIII-2]<!--j-->.</li>
+ 	 <li>Stolpediagram<!--j-->&nbsp;<!--j-->[XVIII-3]<!--j-->.</li>
+ 	 <li>Høy lesbarhet<!--j-->&nbsp;<!--j-->[XVIII-4]<!--j-->.</li>
+ </ul>
+ <p>Opptil 4 parametere eller displaymodus kan vises samtidig.</p>
+
+
+   <p><img src="../../images/gds_xviii_non.gif" alt="gds_xviii.gif" width="650px"/><br />
+[XVIII]</p>
+ <hr />
+ <h3>Gjenspilling av øyeblikksdata</h3>
+ <p>Med  <b>Gjenspilling av øyeblikksdata</b>-funksjonen kan du gå gjennom tidligere innspilt øyeblikksdata for bilen.<!--j-->&nbsp;<!--j-->Denne informasjonen kan brukes til å analysere bilproblemer og oppdage forhold som utløser feil.<!--j-->&nbsp;<!--j-->Med diagramfunksjonen kan du sammenligne parametere for å se om en komponent fungerer skikkelig.<!--j-->&nbsp;<!--j-->Følgende tre metoder kan brukes til å vise innspilt øyeblikksdata:</p>
+ <ul>
+ <li>Velg en øyeblikksdatafil fra  <b>Hjemmeside bil</b> og klikk på Gjennomgang.</li>
+ <li>Dobbeltklikk på de valgte øyeblikksdataene fra  <b>Hjemmeside bil</b>.</li>
+ <li>Angi  <b>Verktøy</b>-valget fra  <b>Meny</b>-valget og velg  <b>Gjenspilling av øyeblikksdata</b>.<!--j-->&nbsp;<!--j-->Åpne deretter  <b>Øyeblikksdata-behandling</b>.<!--j-->&nbsp;<!--j-->Dobbeltklikk på øyeblikksdatafilen du ønsker å se eller klikk på alternativet Last ned øyeblikksdata og velg en øyeblikksdatafil.</li>
+ </ul>
+ <p>Uansett hvilket alternativ du velger, vil et popup-vindu som viser at filen er lastet vises i  <b>Gjenspilling av øyeblikksdata</b>-skjermbildet.<!--j-->&nbsp;<!--j-->Velg OK i popup-vinduet.</p>
+ <hr />
+ <h3>Avspillingsfunksjoner for øyeblikksdata<!--j-->&nbsp;<!--j-->[XIX-1]</h3>
+ <p>Det finnes flere avspillingsfunksjoner som brukes til å spille av øyeblikksdata</p>
+
+
+   <table width="84%" height="80" border="1">
+ <tr>
+ <td width="7%"><img src="../../images/gds_play.png" alt="gds_play.png" width="25" height="23" /></td>
+ <td width="93%">
+Avspillingsfunksjonen brukes for å spille av øyeblikksdataene fremover.<!--j-->
+
+&nbsp;<!--j-->
+
+En indikator beveger seg over skjermbildet når dette alternativet er valgt.<!--j-->
+
+&nbsp;<!--j-->
+Alle valg i dette området blir grå når de er aktive.</td>
+ </tr>
+ <tr>
+ <td><img src="../../images/gds_pause.png" alt="gds_pause.png" width="24" height="21" /></td>
+ <td>Pause-funksjonen brukes til å ta pause i avspillingen av øyeblikksdataene.<!--j-->&nbsp;<!--j-->Klikker du på dette alternativet én gang til, vil avspillingen av øyeblikksdataene bli gjenopptatt der den ble stoppet.</td>
+ </tr>
+ <tr>
+ <td><img src="../../images/gds_stop.png" alt="gds_stop.png" width="24" height="19" /></td>
+ <td>Stopp-funksjonen brukes til å stoppe avspillingen av øyeblikksdataene.<!--j-->&nbsp;<!--j-->Klikker du på Spill av etter at Stopp er trykket på, vil avspillingen starte helt fra begynnelsen.</td>
+ </tr>
+ </table>
+ <hr />
+ <h3>Tidskontroll<!--j-->&nbsp;<!--j-->[XIX-2]</h3>
+ <p><b>Tidskontroll</b> brukes til å kontrollere gjenspillingen av øyeblikksdataene.<!--j-->&nbsp;<!--j-->Med denne funksjonen kan du velge en bestemt tidsramme, vise ulike visninger og kontrollere visningshastigheten.<!--j-->&nbsp;<!--j-->Følgende funksjoner kan velges direkte med  <b>Tidskontroll</b>.</p>
+ <table width="84%" border="1">
+ <tr>
+ <td><img src="../../images/gds_bookmark.png" alt="gds_bookmark.png" width="17" height="24" /></td>
+ <td>Med Bokmerke kan du legge til en bestemt kommentar i gjeldende visning og gå tilbake til dette stedet senere.<!--j-->&nbsp;<!--j-->Når dette alternativet er valgt, vises et popup-vindu.<!--j-->&nbsp;<!--j-->Angi et navn for bokmerket og velg OK.</td>
+ </tr>
+ <tr>
+ <td><img src="../../images/gds_notepad.png" alt="gds_notepad.png" width="26" height="22" /></td>
+ <td>Med Notatblokk kan du legge kommentarer til gjenspillingen av øyeblikksdatafilen på gjeldende tidspunkt.<!--j-->&nbsp;<!--j-->Når dette alternativet er valgt, vises et popup-vindu.<!--j-->&nbsp;<!--j-->Angi en kommentar til øyeblikksdatafilen og velg OK.</td>
+ </tr>
+ <tr>
+ <td><img src="../../images/gds_load.png" alt="gds_load.png" width="23" height="23" /></td>
+ <td>Last ned øyeblikksdata (blå mappe) åpner en øyeblikksdatafil og klargjør den for ytterligere analyse.<!--j-->&nbsp;<!--j-->Hvis du ønsker å se en <a href="#export_snap">eksportert skjermbilde-kopi</a>, dekomprimerer du først den aktuelle arkivfilen *.zip.<!--j-->&nbsp;<!--j--><!--j-->&nbsp;<!--j-->Denne funksjonen er også tilgjengelig ved å klikke på en øyeblikksdatafil fra  <b>Øyeblikksdata-behandling</b>.</td>
+ </tr>
+ <tr>
+ <td><img src="../../images/gds_time-options.png" alt="gds_time-options.png" width="19" height="23" /></td>
+ <td>Ned-pilen viser alle  <b>Tidskontroll</b>-alternativer.<!--j-->&nbsp;<!--j-->Individuelle alternativer kan også velges ved å klikke på ønsket element.</td>
+ </tr>
+ <tr>
+ <td><img src="../../images/gds_speed.png" alt="gds_speed.png" width="57" height="27" /></td>
+ <td>
+Med dette valget kan du kontrollere hastigheten av øyeblikksdatavisningen.<!--j-->
+
+&nbsp;<!--j-->
+
+Lave hastigheter på 1/8X, 1/4X og 1/2X kan velges.<!--j-->
+
+&nbsp;<!--j-->
+
+Sanntidshastigheten kan også settes til 1.<!--j-->
+
+&nbsp;<!--j-->
+Raskere hastigheter på 2X, 4X og 8X kan også velges med dette alternativet.</td>
+ </tr>
+ </table>
+
+
+   <hr />
+ <h3>Visningsalternativer<!--j-->&nbsp;<!--j-->[XIX-3]</h3>
+ <p>Hvert visningsalternativ gir forskjellige måter å vise bildata på for analyse.<!--j-->&nbsp;<!--j-->Følgende funksjoner kan velges med  <b>Tilgjengelige visninger</b>:</p>
+ <ul>
+ <li>Listevisning for parameter - viser innkommende informasjon fra øyeblikksdatafilen.<!--j-->&nbsp;<!--j-->Den gjeldende verdien til parameterne vises på skjermbildet.</li>
+ </ul>
+ <table width="80%" border="0">
+ <tr>
+ 	<td class="important"><b>Viktig</b><br />Parameternavnet vises i originalspråket som brukes for opptak dersom det ikke finnes en oversettelse for navnet.</td></tr></table>
+ <ul>
+ <li>Loggvisning - inneholder all informasjon fra øyeblikksdatafilen.<!--j-->&nbsp;<!--j-->Alle parameterverdier er listet opp i den rekkefølgen de ble innspilt.<!--j-->&nbsp;<!--j-->Bestemte parametere kan legges til eller fjernes fra en overvåkningsliste ved å klikke på ønsket element.</li>
+ <li>Statusvisning - viser verdiene til alle parametere i en bestemt tidsramme.<!--j-->&nbsp;<!--j-->Disse verdiene kan sammenlignes med verdiene i visningen som er satt i gang.</li>
+ <li>Utløservisning - viser alle utløsere som er system- og brukerdefinerte.<!--j-->&nbsp;<!--j-->Denne funksjonen kan brukes når en kombinasjon av flere faktorer er involvert i et diagnoseproblem.<!--j-->&nbsp;<!--j-->
+Når en utløser-betingelse er oppfylt, vises en varselstrekant i skjermbildet.<ul><li>Last utløsere<!--j-->&nbsp;<!--j-->-<!--j-->&nbsp;<!--j-->Gjør at du kan laste en fil som inneholder utløserdefinisjoner.</li>
+ 	 <li>Lagre utløsere<!--j-->&nbsp;<!--j-->-<!--j-->&nbsp;<!--j-->Gjør at du kan lagre utløseren på datamaskinens harddisk.</li>
+ <li>Fjern utløser<!--j-->&nbsp;<!--j-->-<!--j-->&nbsp;<!--j-->Gjør at du kan fjerne gjeldende utløser. Denne vil ikke lenger finnes.</li>
+ <li>Rediger utløser<!--j-->&nbsp;<!--j-->-<!--j-->&nbsp;<!--j-->viser et popup-vindu der du kan endre grenseverdiene og parameterne i en utløser.</li>
+ <li>Legg til utløser<!--j-->&nbsp;<!--j-->-<!--j-->&nbsp;<!--j-->viser et popup-vindu der du kan konfigurere en utløser.</li></ul></li>
+ <li>Feilkode-visning<!--j-->&nbsp;<!--j-->-<!--j-->&nbsp;<!--j-->Når Avspillingsfunksjonen er valgt og dette alternativet er merket, åpner denne funksjonen listen over innspilte feilkoder.</li>
+ <li>Linjediagram-visning - viser data som kan visualiseres i forhold til tidsaksen.<!--j-->&nbsp;<!--j-->I denne visningen kan du velge at det lages diagram for bestemte parametere ved å krysse av i boksen under Valgt.<!--j-->&nbsp;<!--j-->Nederst i diagrammet er det fire funksjoner:  <b>Zoom inn</b> (øk størrelse),  <b>Zoom ut</b> (minsk størrelse),  <b>Bokmerker</b> og  <b>Pause i rullende bilde</b>.<!--j-->&nbsp;<!--j-->Alle disse funksjonene kan aktiveres ved å klikke på dem.</li>
+ </ul>
+ <p><img src="../../images/gds_xix_non.gif" alt="gds_xix.gif" width="650px"/><br />
+[XIX]</p>
+ <hr />
+ <h2>Kontrollfunksjoner:</h2>
+ <p>Med GDS-kontrollfunksjonene kan bestemte bilfunksjoner kontrolleres fra GDS-systemet.<!--j-->&nbsp;<!--j-->Velg kontrollfunksjoner i det bestemte styringsprogrammet i systemnavigasjonen for å starte kontrollfunksjonsprogrammet.</p>
+ <p>Kontrollfunksjonene er innlemmet i datalistevisningen.<!--j-->&nbsp;<!--j-->Når kontrollfunksjonen er aktivert, kan den viste parameteren overvåkes eller spilles inn med GDS-øyeblikksdatafunksjonen.</p>
+ <p>GDS støtter to kontrollfunksjonstyper:</p>
+ <p>1.<!--j-->&nbsp;<!--j-->Digital kontrollfunksjon med PÅ/AV-mulighet<!--j-->&nbsp;<!--j-->[XX-1]</p>
+ <p><img src="../../images/gds_xx_non.gif" alt="gds_xx.gif" width="650px"/><br />
+[XX]</p>
+ <p>2.<!--j-->&nbsp;<!--j-->Analog kontrollfunksjon med kontrollmulighet av funksjonen.<!--j-->&nbsp;<!--j-->Aktiveringsfunksjonen kan kontrolleres med kontrollknappene eller ved å bevege pekeren over tallrekken på siden.<!--j-->&nbsp;<!--j-->[XXI-1]<!--j-->&nbsp;<!--j-->eller<!--j-->&nbsp;<!--j-->[XXI-2]<!--j-->.</p>
+ <p><img src="../../images/gds_xxi_non.gif" alt="gds_xxi.gif" width="650px"/><br />[XXI]</p>
+ <hr />
+ <h2>Konfigurasjons- og tilbakestillingsfunksjoner:</h2>
+ <p>Funksjonene for konfigurasjon og tilbakestilling er spesifikke styringsfunksjoner som må utføres når aktiveringsmekanismene i systemet byttes ut eller når de krever tilbakestilling.<!--j-->&nbsp;<!--j-->For flere detaljer se systemets servicehåndbok.</p>
+ <hr />
+ <h1><a name="troubleshooting"></a>7.<!--j-->&nbsp;<!--j-->FEILSØKING</h1>
+
+  <h2>MDI Tilkoblingsproblemer</h2>
+ <p>Dersom MDI-tilkoblingene er løse eller ikke skikkelig tilkoblet bilen/datamaskinen, vises et popup-vindu.<!--j-->&nbsp;<!--j-->Utfør følgende trinn:</p><ul>
+ <li>Pass på at ikke MDI-behandling-programvaren kjører samtidig som GDS utføres.</li>
+ <li>Sørg for at MDI-en er skikkelig tilkoblet bilen og datamaskinen</li>
+ <li>Bruk en kjent &quot;god USB-kabel&quot; fra en annen MDI-enhet, dersom denne er ledig.<!--j-->&nbsp;<!--j-->Koble alle enheter til og prøv på nytt.</li>
+ <li>Bruk en kjent &quot;god MDI DLC-tilkoblingskabel&quot; fra en annen MDI-enhet, dersom denne er ledig.<!--j-->&nbsp;<!--j-->Koble alle enheter til og prøv på nytt.</li>
+ <li>Ta kontakt med Customer Support dersom problemet vedvarer.</li>
+ <li>Sørg for at brannmuren ikke blokkerer GDS/MDI-kommunikasjonen.</li>
+ </ul>
+ <hr />
+ <h2>GDS/MDI Manager-programvarekonflikt</h2>
+ <p>GDS-programvare og MDI Manager-programvare kan ikke kjøre samtidig.<!--j-->&nbsp;<!--j-->Dersom begge programvarene kjøres samtidig, kan det føre til en programvarekonflikt.<!--j-->&nbsp;<!--j-->Alternativet Detaljer vil gi deg mulig informasjon om feilen.<!--j-->&nbsp;<!--j-->Du kan bli bedt av Customer Support om å fremskaffe denne informasjonen dersom problemet vedvarer.</p>
+ <p>Dersom programvarekonflikten vedvarer, kan det være at et popup-vindu i MDI Manager-programvaren vises med teksten &quot;En fatal feil har oppstått&quot;.<!--j-->&nbsp;<!--j-->Avslutt MDI Manager-programvaren og gå tilbake til GDS-programmet.<!--j-->&nbsp;<!--j-->Ta kontakt med Customer Support dersom problemet vedvarer etter å du har angitt GDS.</p>
+ <p>&nbsp;</p>
+ <p align="right"><font size="2">&copy; GM Europe, SPO Engineering, International Operations - 08 May 2009 (V3.0)</font></p>
+ </div>
+
+  </body>
+ </html>

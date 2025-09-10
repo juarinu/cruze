@@ -1,0 +1,735 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8" />
+<title>Global Diagnostic System</title>
+<link rel="stylesheet" type="text/css" href="mdiprint.css" media="print" />
+<!-- Version 2.0.16 with all screenshots and Export Function explanation (Snapshot) -->
+
+<style type="text/css">
+	  <!--
+	div.all { margin-top:2px; margin-left:2px; margin-right:auto }
+	  
+.style1 { text-align: center;
+}
+.style2 {
+	border-style: solid;
+	border-color: black;
+	border-width: 1px;
+}
+.style3 {
+	border: 1px solid black;
+}
+.tableinsert {
+	vertical-align: top;
+	text-indent: 20px;
+}
+.caution {
+	padding: 10px;
+	margin: 0px;
+	border-color: #0000FF;
+	border-style: outset;
+	border-width: 1px 4px 4px 4px;
+	border-left: 1px solid #808080;
+	border-top: 1px solid #808080;
+	background-color: #FFCCCC;
+}
+.important {
+	padding: 10px;
+	margin: 0px;
+	border-color: #0000FF;
+	border-style: outset;
+	border-width: 1px 4px 4px 4px;
+	border-left: 1px solid #808080;
+	border-top: 1px solid #808080;
+	background-color: #FFCCCF;
+}
+.note {
+	padding: 10px;
+	margin: 0px;
+	border-color: #0000FF;
+	border-style: outset;
+	border-width: 1px 4px 4px 4px;
+	border-left: 1px solid #808080;
+	border-top: 1px solid #808080;
+	background-color: #99CCFF;
+}
+.notice {
+	padding: 10px;
+	margin: 0px;
+	border-color: #808080 #666666 #666666 #808080;
+	border-style: solid outset outset solid;
+	border-width: 1px 4px 4px 4px;
+	border-left: 1px solid #808080;
+	border-top: 1px solid #808080;
+	background-color: #C0C0C0;}
+
+* {
+	font-family:arial,sans-serif;}
+
+
+
+-->
+</style>
+</head>
+<body><div class="all">
+
+ <h1 align="center">Global Diagnostic System</h1>
+ <h1>Kazalo vsebine</h1>
+ <ol>
+ <li><a href="#intro">Uvod</a></li>
+ <li><a href="#product_description">Opis izdelka</a></li>
+ <li><a href="#installation">Namestitev GDS</a></li>
+ <li><a href="#getting_started">Ob začetku uporabe</a></li>
+ <li><a href="#navigation">Splošna navigacija</a></li>
+ <li><a href="#diagnostics">Diagnostika</a></li>
+ <li><a href="#troubleshooting">Odpravljanje napak</a></li>
+ </ol>
+ <hr />
+
+  <h1><a name="intro"></a>Uvod</h1>
+ <h2>Referenčni priročnik GDS</h2>
+ <p>Kratek referenčni priročnik Global Diagnostic System (GDS) omogoča pregled GDS.</p>
+ <p>Celotna vsebina tega priročnika temelji na najnovejših informacijah o izdelku, ki so bile na voljo v času objave.<!--j-->&nbsp;<!--j-->Pridržujemo si pravico do sprememb kadar koli in brez predhodnega obvestila.</p>
+ <p>Nobenega dela te publikacije ni dovoljeno razmnoževati, shranjevati v sisteme za pridobivanje podatkov ali prenašati na kakršen koli način, vključno z, vendar ne omejeno na elektronski ali mehanski način, fotokopiranje, snemanje ali drugo brez predhodne pridobitve dovoljenja s strani GM Service and Parts Operations.<!--j-->&nbsp;<!--j-->To zajema celotno besedilo, tabele, ilustracije in diagrame.</p>
+ <p>Zahteve za dovoljenja je treba poslati na:</p>
+ <p>General Motors Corporation<br />
+Service and Parts Operations<br />
+Product Engineering<br />
+37350 Ecorse Road<br />
+Romulus, MI 48174-1376<br />
+U.S.A.</p>
+ <p>© 2008 GM Service and Parts Operation.<!--j-->&nbsp;<!--j-->Izdelano v ZDA.<!--j-->&nbsp;<!--j-->Vse pravice so pridržane.</p>
+ <hr />
+
+  <h2>Splošne informacije</h2>
+ <p>
+GDS je namenjen usposobljenemu servisnemu osebju za uporabo pri diagnosticiranju in popravilih avtomobilskih elektronskih sistemov.<!--j-->&nbsp;<!--j-->
+
+Naredili smo vse, da bi zagotovili celostne in točne tehnične podatke na osnovi tovarniških servisnih informacij, ki so bile na voljo v času objave te publikacije.<!--j-->&nbsp;<!--j-->
+Pridržujemo pa si pravico do sprememb kadar koli in brez predhodnega obvestila.</p>
+ <p>
+Da bi se seznanili s GDS in njegovimi zmogljivostmi ter načinom uporabe, si pred začetkom uporabe GDS preberite navodila za uporabnike.</p>
+ <p>GDS nudi naslednje zmogljivosti:</p>
+ <ul>
+ <li>Preberite si diagnostične kode težav</li>
+ <li>Preberite identifikacijske podatke ECU</li>
+ <li>Preberite in oglejte si grafični prikaz podatkovnega seznama parametrov</li>
+ <li>Naredite posnetek in shranite njegove podatke</li>
+ <li>Nadzorne funkcije</li>
+ <li>Funkcije konfiguracije in ponastavitev</li>
+ <li>Zajemite in shranite diagnostični protokol</li>
+ <li>Shranjevanje diagnostičnih sej po vozilih</li>
+ </ul>
+
+  <table width="80%" border="0">
+ <tr>
+ <td class="important">
+ <b><!--j-->Pomembno<!--j-->:<!--j--></b><br />
+Programiranje krmilnikov vozila s SPS v GDS ni podprto.<!--j-->&nbsp;<!--j-->Za prehodno programiranje SPS z MDI uporabite program TIS2Web / GlobalTIS SPS.</td>
+ </tr>
+ </table>
+ <hr />
+
+  <h2>Pregled podpore za stranke</h2>
+ <p>
+
+Za odgovor na vprašanje ali pomoč pri kakršnih koli težavah glede delovanja vašega izdelka GM-Techline in priloženih izdelkov ter za dogovor glede garancijskih in zunajgarancijskih popravil pokličite svoj lokalni Customer Support Center.<!--j-->&nbsp;<!--j-->Za naročilo nadomestnih delov se obrnite na GM Dealer Equipment.</p>
+ <h3>Preden pokličete servis</h3>
+ <p>Preden pokličete servisno službo, imejte pripravljene naslednje podatke:</p>
+ <ul>
+ <li>Ime prodajalca, naslov in številka prodajalca</li>
+ <li>serijska številka MDI-ja ali prenosnega računalnika, če je smiselno</li>
+ <li>Ime, številka dela in količina delov, ki jih želite naročiti</li>
+ <li>Telefonska številka, na kateri je dosegljiv tehnik</li>
+ </ul>
+ <p>Pripravite kratek opis težave:</p>
+ <ul>
+ <li>Povejte, kdaj se je težava pojavila.</li>
+ <li>Navedite morebitne prikazane kode napak.</li>
+ <li>Navedite podatke o vozilu in pripomočke, ki ste jih uporabljali, ko se je pojavila težava.</li>
+ </ul>
+
+  <h4>PREPOZNAVANJE VAŠEGA MDI-JA</h4>
+ <p>Oznaka naprave GM MDI se nahaja na njeni zadnji strani.<!--j-->&nbsp;<!--j-->
+
+Identifikacijska številka naprave ima dva dela: kodo izdelave za sledljivost in unikatno serijsko številko.<!--j-->&nbsp;<!--j-->
+Serijska številka se uporablja za identifikacijo MDI v programski opremi.</p>
+
+  <h3>Klicanje</h3>
+
+  <h4>Evropski uporabniki</h4>
+ <h5>GDS Namestitev programske opreme &amp; Podpora komunikacijskega sistema</h5>
+ <p><b>DAC - Dealer Assistance Center:</b><br />
+
+
+Uporabniško podporo za programsko opremo GDS, za komunikacijo GDS s TIS2Web / GlobalTIS in z MDI nudi Center za pomoč trgovcem.<br />
+
+Ustrezno telefonsko številko države lahko najdete na prijavni strani portala Channel 21.</p>
+ <h5>
+Podpora za diagnostiko vozil GDS:</h5>
+ <p><b>Evropski center tehnične pomoči:</b><br />
+
+Uporabniško podporo za težave pri komunikaciji z vozilom med diagnostičnimi dogodki, ki izhajajo iz GDS, nudi evropski center tehnične pomoči.<!--j-->&nbsp;<!--j-->
+Zadevno telefonsko številko države je mogoče dobiti od lokalne organizacije General Motors Europe.</p>
+ <h5>
+Podpora za neodvisne serviserje/poprodajo:</h5>
+ <p><b>European Customer Assistance Center</b><br />
+Neodvisni serviserji se lahko obrnejo na European Customer Assistance Center za pridobitev omenjenih storitev podpore.<!--j-->&nbsp;<!--j-->
+Kontaktni podatki so na voljo na portalu InfoTech GME.</p>
+ <hr />
+ <h3>Licenčna pogodba za programsko opremo</h3>
+ <p>Preden pričnete uporabljati programsko opremo, natančno preberite licenčno pogodbo.<!--j-->&nbsp;<!--j-->
+Uporaba programske opreme bo pomenila vašo potrditev pogojev iz licenčne pogodbe.</p>
+ <p>LASTNIŠTVO<!--j-->:<!--j-->&nbsp;<!--j-->
+
+
+Programska oprema je avtorsko delo podjetja General Motors Corporation in vi sprejemate dejstvo, da je General Motors Corporation lastnik vseh avtorskih in drugih lastniških pravic, imena in interesov v in za to programsko opremo.<!--j-->&nbsp;<!--j-->
+Vse pravice do programske opreme, ki niso posebej navedene v licenci spodaj, si pridržuje izključno General Motors Corporation.</p>
+ <p>UPORABA<!--j-->:<!--j-->&nbsp;<!--j-->
+Dobili ste ne-izključno neprenosljivo licenco za uporabo programske opreme na več računalniških sistemih.<!--j-->&nbsp;<!--j-->
+
+Programske opreme vam ni dovoljeno niti v celoti niti deloma obratno inženirati, razgraditi, spreminjati, razmnoževati, razširjati in prodajati.<!--j-->&nbsp;<!--j-->
+Licenca velja osebno za vas in je pogojena z vašim doslednim upoštevanjem skladnosti z vsemi pogoji, ki so v njej podani.</p>
+ <p>Prekinitev veljavnosti<!--j-->:<!--j-->&nbsp;<!--j-->
+
+General Motors Corporation lahko to licenčno pogodbo zaradi vašega nespoštovanja njenih pogojev prekine.<!--j-->&nbsp;<!--j-->
+
+Po prekinitvi morate programsko opremo takoj prenehati uporabljati in uničiti vsako in vse kopije programske opreme, vključno z, vendar ne omejeno na, tiste, ki se nahajajo na vaših računalniških sistemih.</p>
+ <hr />
+ <h1><a name="product_description"></a>2.<!--j-->&nbsp;<!--j-->Opis izdelka</h1>
+ <h2>Zahteve prodajalca glede strojne opreme<!--j-->&nbsp;<!--j-->(<!--j-->Evropa<!--j-->)</h2>
+ <p>Minimalne zahteve računalniške strojne opreme za uporabo GDS v povezavi s TIS2Web in GlobalTIS:</p>
+ <ul>
+ <li>Procesor:<br />
+Intel Pentium M, 1,5GHz</li>
+ <li>Sistemski spomin (RAM)<br />
+1 GB za GDS in odjemalca TIS2Web / GlobalTIS; 2 GB za GDS in samostojen GlobalTIS</li>
+ <li>Trdi disk minimalno:<br />
+40 GB</li>
+ <li>Operacijski sistem<!--j-->:<br />Windows XP Professional (SP2)</li>
+ <li>Druge komponente programske opreme:<br />
+Java Web Start 1.5x ali novejši<br />
+ </li>
+ </ul>
+ <p>
+Za nadaljnje informacije si oglejte specifikacije strojne in programske opreme GME IT, ki so na voljo v vaši lokalni organizaciji GME.</p>
+ <hr />
+ <h1><a name="installation"></a>3.<!--j-->&nbsp;<!--j-->Namestitev GDS</h1>
+ <h2>Pregled komponent GDS:</h2>
+ <p>Programska oprema GDS vsebuje naslednje module, ki bodo v začetku nameščeni in nato v določenih obdobjih pogosto posodobljeni.<!--j-->&nbsp;<!--j-->[I]</p>
+ <ul>
+ <li><b>GDS Base System</b><br />
+Osnovna programska oprema GDS, nameščena na računalniku</li>
+ <li><!--j--><b><!--j-->Izdelki GDS<!--j--></b><!--j-->:<br />
+Paketi diagnostičnih podatkov za modele vozil, ki izvajajo diagnostične rutine s krmilniki vozil.</li>
+ <li><!--j--><b><!--j-->GDS Smart Start<!--j--></b><!--j-->:<!--j--><br />Programski agent, ki primerja različice GDS Base System, izdelke GDS in programsko opremo MDI Manager v TIS2Web/GlobalTIS in lokalni namestitvi.<!--j-->&nbsp;<!--j-->Ko so na voljo nove posodobitve, se pojavi sporočilo za potrditev prenosa.</li>
+ <li><!--j--><b><!--j-->Programska oprema MDI Manager (ločen program)<!--j--></b><!--j-->:<br />
+Program za posodabljanje in konfiguracijo naprave MDI (večstranski diagnostični vmesnik)</li>
+ </ul>
+ <p><img src="../../images/gds_i_enu.gif" alt="gds_i.gif" width="650px"/><br />
+[I]</p>
+ <hr />
+ <h2>Namestitev:</h2>
+ <p>GDS je mogoče namestiti iz posebnega namestitvenega DVD-ja ali neposredno s prenašanjem iz TIS2Web / GlobalTIS.</p>
+ <h3>Namestitev iz DVD-ja GDS:</h3>
+ <ul>
+ <li>Računalnik je treba zagnati v administratorskem načinu</li>
+ <li>V začetnem meniju DVD-ja zaženite namestitveni program</li>
+ <li>Izberite jezik namestitvenega agenta</li>
+ <li>Obstoječo konfiguracijo GDS in podatke je mogoče ponovno uporabiti, če je bila na računalniku zaznana predhodna namestitev GDS.</li>
+ <li>Sprejmite licenčno pogodbo (to je potrebno za nadaljevanje)</li>
+ <li>Izberite imenik za namestitev GDS</li>
+ <li>Postopek namestitve GDS se je pričel</li>
+ <li>Programska oprema MDI Manager se bo namestila, če še ni nameščena ali pa je na računalniku nameščena starejša različica MDI Manager.<!--j-->&nbsp;<!--j-->Pri prvi namestitvi programske opreme MDI Manager mora biti med postopkom namestitve programske opreme priključena strojna oprema MDI.<!--j-->&nbsp;<!--j-->Za podrobnosti o tem glejte priročnik MDI.</li>
+ <li>Po zaključku postopka namestitve je mogoče GDS zagnati z ikono na namizju ali po Start/Programi/GDS.<!--j-->&nbsp;<!--j--><img src="../../images/gds_icon.png" alt="gds_icon.png" /></li>
+ <li>Če je to potrebno, nastavite požarni zid tako, da bo omogočena komunikacija med GDS in napravo MDI.</li>
+ <li>Pri zagonu GDS Smart Start se bo prikazani postopek posodobitve izvedel pred zagonom GDS.</li>
+ </ul>
+ <hr />
+ <h3>Namestitev iz TIS2Web / GlobalTIS<!--j-->:</h3>
+ <p><img src="../../images/gds_ii_slv.gif" alt="gds_ii.gif" width="600px"/><br />
+[II]</p>
+ <table width="80%" border="0">
+ <tr>
+ <td class="important"><b><!--j-->Pomembno<!--j-->:<!--j--></b><!--j-->&nbsp;<!--j-->Med namestitvijo s TIS2Web bo z interneta prenesenih približno 140 MB podatkov.</td></tr></table>
+ <ul>
+ <li>Računalnik mora biti zagnan v načinu administratorja.</li>
+ <li>GDS zaženite z domače strani TIS2Web / GlobalTIS<!--j-->&nbsp;<!--j-->[II]</li>
+ <li>GDS Smart Start se prenaša s strežnika TIS2Web, čas prenosa pa je odvisen od internetne povezave.</li>
+ <li>Izberite imenik za namestitev GDS.</li>
+ <li>Vnesite internetno geslo (le v primeru, če se za dostop do interneta uporablja posredovalni strežnik)</li>
+ <li>Če je to potrebno, nastavite požarni zid tako, da bo omogočena komunikacija med GDS in napravo MDI.</li>
+ <li>Po pričetku namestitve GDS Smart Start boste morali počakati nekaj trenutkov.</li>
+ <li>Ob zagonu GDS Smart Start se bo izvedel postopek posodabljanja GDS.<!--j-->&nbsp;<!--j-->[III]</li>
+ <li>Po koncu prenosa namestitvenih datotek se bosta prikazali različici programske opreme GDS in MDI Manager, ki jih je mogoče prenesti s potrditvijo v pozivnem okencu.<!--j-->&nbsp;<!--j-->Z gumbom  <b>Prikaži potek prenosa</b> lahko prikličete vrstico stanja postopka posodabljanja.</li>
+ <li>Programska oprema MDI Manager bo nameščena, če MDI Manager še ni nameščena na računalniku ali pa je na njem nameščena starejša različica programske opreme MDI Manager.<!--j-->&nbsp;<!--j-->Pri prvi namestitvi programske opreme MDI Manager mora biti med postopkom namestitve programske opreme priključena strojna oprema MDI.<!--j-->&nbsp;<!--j-->Za podrobnosti o tem glejte priročnik MDI.</li>
+ </ul>
+
+  <table width="200" border="0">
+ <tr>
+ <td><img src="../../images/gds_iii_slv.gif" alt="gds_III.gif" width="200px"/></td>
+ <td><img src="../../images/gds_iv_slv.gif" alt="gds_IV.gif" width="150px" /></td>
+ </tr>
+ <tr>
+ <td>[III]</td>
+ <td>[IV]</td>
+ </tr>
+ </table>
+ <hr />
+ <h3>Posodobitev GDS preko Smart Start<!--j-->:</h3>
+GDS zaženite ali v aplikaciji TIS2Web/GlobalTIS ali kot samostojno aplikacijo v startnem meniju sistema Windows.<!--j-->&nbsp;<!--j-->Preden se GDS naloži, se zažene agent Smart Start in primerja naslednje različice namestitve GDS-ja na osebnem računalniku z vsebino strežnika TIS2Web / GlobalTIS:</p>
+ <ul>
+ <li>GDS Smart Start</li>
+ <li>GDS Base System</li>
+ <li>MDI Manager</li>
+ </ul>
+ <p>Smart Start s pozivnim oknom prikaže uporabniku nove posodobitve za prenos, če na strežniku obstajajo nove različice.<!--j-->&nbsp;<!--j-->[IV]</p>
+ <!--<p>Postopek posodabljanja Smart Start za GDS Base System, izdelke GDS in MDI Manager bo izveden le, če GDS zaženete s TIS2Web/GlobalTIS in ne v samostojnem načinu.<!--j-->&nbsp;<!--j--><!--The update capability of standalone started GDS will be available in a future version.</p>
+--> <table width="80%" border="0">
+ <tr>
+ 	 <td class="important"><!--j--><b><!--j-->Pomembno<!--j--><!--j-->:<!--j--></b><!--j-->&nbsp;<!--j-->Opisani postopki posodabljanja zahtevajo, da je računalnik vedno zagnan v načinu administratorja.</td></tr></table>
+ <hr />
+ <h3>Vrnitev na prejšnje stanje namestitve GDS Base System.</h3>
+ <p>Namestitev GDS je mogoče povrniti v prejšnje stanje namestitve, če pri posodabljanju GDS pride do težav.</p>
+ <p>Za vrnitev v prejšnje stanje pojdite v meni START -&gt;PROGRAMI -&gt; GDS -&gt; GDS ROLLBACK.<!--j-->&nbsp;<!--j-->Za vrnitev v prejšnje stanje mora biti na računalniku že nameščena starejša različica GDS.</p>
+ <h3>Nadzorni sistem za licenco GDS (zakup)</h3>
+ <p>Sistem nadzora nad licencami GDS preprečuje nepooblaščeno uporabo GDS.<!--j-->&nbsp;<!--j-->Za obnovo zakupa programa GDS je potrebno GDS zagnati z aplikacije TIS2Web ali GlobalTIS.<!--j-->&nbsp;<!--j-->Zakup programa GDS zahteva obnovo po 7 dneh, če je bila aplikacija zagnana med tistim časom in samo v samostojnem načinu.<!--j-->&nbsp;<!--j--><br>Če je zakup GDS-ja potekel, mora uporabnik za njegovo obnovo zagnati aplikacijo GDS v aplikaciji TIS2Web/GlobalTIS.</p>
+ <hr />
+ <h3>Prenos in posodabljanje izdelkov GDS</h3>
+ <p>Izdelki GDS so diagnostični programi, ki nadzirajo komunikacijo in diagnostične storitve med GDS in krmilnikom vozila<!--j-->.<!--j-->&nbsp;<!--j-->Izdelki GDS so izdani glede na model in jih je mogoče trajno posodobiti na TIS2Web / GlobalTIS.</p>
+ <p>GDS Smart Start med zagonom postopka posodabljanja samodejno ugotovi, ali so na TIS2Web / GlobalTIS na voljo nove ali posodobljene različice izdelkov.<!--j-->.<!--j-->&nbsp;<!--j-->Nove izdelke je treba najprej prenesti v lokalni imenik na računalniku in jih nato namestiti v GDS.<!--j-->&nbsp;<!--j-->Posodobitve že nameščenih izdelkov bodo prenesene samodejno in jih je le treba namestiti v glavno zbirko podatkov GDS.</p>
+ <br clear=all />
+ <hr />
+ <h3>Prvi prenos in posodobitev izdelkov GDS</h3>
+ <ul><li>GDS zaženite ali v aplikaciji TIS2Web/GlobalTIS ali kot samostojno aplikacijo v startnem meniju sistema Windows.</li>
+ <li>Na prijavnem zaslonu <b>Dodaj nov diagnostični paket</b> izberite gumb GDS.</li>
+ <li>Pritisnite gumb  <b>Posodobite seznam izdelkov na strežniku</b>.<!--j-->&nbsp;<!--j-->[V-1]<!--j-->.<!--j-->&nbsp;<!--j-->Na strežniku so s simbolom prikazani nepreneseni paketi, ki so na voljo.<!--j-->&nbsp;<!--j-->
+ <img src="../../images/gds_server.png" alt="gds_server.png" width="36" height="34" /></li>
+ <li>Označite in prenesite pakete izdelkov<!--j-->&nbsp;<!--j-->[V-2]<!--j-->.<!--j-->&nbsp;<!--j-->Funkcija filtra vam pomaga poiskati določene izdelke.<!--j-->&nbsp;<!--j-->Preneseni paketi izdelkov so označeni s simbolom.<!--j-->&nbsp;<!--j--><img src="../../images/gds_pc.png" alt="gds_pc.png" /></li>
+ <li>Prenesene pakete namestite v glavno zbirko podatkov GDS; nameščeni paketi bodo prikazani v desnem programskem oknu<!--j-->&nbsp;<!--j-->[V-3]<!--j-->.</li>
+ </ul>
+ <p><img src="../../images/gds_v_slv.gif" alt="gds_v.gif" width="650px"/><br />
+[V]</p>
+ <hr />
+ <h2>Posodobitev je izdelke GDS namestila v glavno zbirko podatkov<!--j-->:</h2>
+ <ul>
+ 	 <li>Kliknite na gumb  <b>Posodobi diagnostični paket</b> v prijavnem zaslonu GDS<!--j-->&nbsp;<!--j-->[VI-1]<!--j-->.<!--j-->&nbsp;<!--j-->GDS primerja različice nameščenih izdelkov GDS z izdelki, ki so na voljo na strežniku, in s prenesenimi posodobljenimi paketi.</li>
+ 	 <li>Preneseni paketi so pripravljeni na namestitev v spodnjem levem oknu.<!--j-->&nbsp;<!--j-->Izberite gumb  <b>Namesti</b> ali  <b>Namesti vse</b>, da bi pričeli z namestitvijo.<!--j-->&nbsp;<!--j-->[VI-2]<!--j-->.</li>
+ </ul>
+ <p><img src="../../images/gds_vi_slv.gif" alt="gds_vi.gif" width="650px"/><br />
+[VI]<!--j-->:</p>
+ <hr />
+ <h2>
+Povrnitev prejšnjega stanja pred posodobitvijo izdelka</h2>
+ <p>
+
+Postopek povrnitve prejšnjega stanja je načeloma enak postopku, opisanem v poglavju prvi prenos in posodobitev izdelkov GDS</p>
+ <ul>
+ 	 <li>Na prijavnem zaslonu <b>Dodaj nov diagnostični paket</b> izberite gumb GDS.</li>
+ 	 <li>Pritisnite gumb  <b>Posodobite seznam izdelkov na strežniku</b>.<!--j-->&nbsp;<!--j-->[V-1]<!--j--></li>
+ <li>Označite in prenesite želene različice starejših paketov izdelkov.<!--j-->&nbsp;<!--j-->Funkcija filtra vam pomaga poiskati določene izdelke.</li>
+ <li>Namestite prenesene pakete v glavno zbirko podatkov GDS.</li>
+ </ul>
+ <hr />
+ <h2>Odstranjevanje GDS<!--j-->:</h2>
+ <p>GDS lahko odstranite z zagonom naslednjega programa:</p>
+ <p>
+START -&gt; PROGRAMI -&gt; GDS -&gt;GDS DE-INSTALLATION</p>
+ <hr />
+ <h2>
+Sprememba jezika GDS<!--j-->&nbsp;<!--j-->/<!--j-->&nbsp;<!--j-->Regionalne nastavitve<!--j-->:</h2>
+ <p>GDS uporablja jezikovno nastavitev operacijskega sistema na računalniku.<!--j-->&nbsp;<!--j-->V GDS meni za spremembo jezika ne obstaja.<!--j-->&nbsp;<!--j-->Za spremembo jezika GDS izvedite naslednje korake.</p>
+ <ul>
+ <li>V operacijskem sistemu Windows odprite NADZORNO PLOŠČO z naslednjimi koraki:<!--j-->&nbsp;<!--j-->START &gt; NASTAVITVE &gt; NADZORNA PLOŠČA</li>
+ <li>Odprite PODROČNE IN JEZIKOVNE MOŽNOSTI</li>
+ <li>V  <b>STANDARDI IN OBLIKE</b> izberite želeno državo</li>
+ <li>Odprite meni NAPREDNE NASTAVITVE.<!--j-->&nbsp;<!--j-->Na padajočem seznamu Izberite želeno nastavitev jezika za PROGRAME, KI NE PODPIRAJO NABORA UNICODE</li>
+ <li>PODROČNE MOŽNOSTI nastavite tako, da spremenite prikazane enote v GDS.</li>
+ </ul>
+ <hr />
+ <h1><a name="getting_started"></a>4.<!--j-->&nbsp;<!--j-->Ob začetku uporabe</h1>
+ <p><b><!--j-->OPOMBA<!--j-->:<br />
+Pred zagonom GDS je treba upoštevati naslednja varnostna opozorila:<!--j--></b></p>
+ <ul>
+ <li>Uporaba zastarele različice lahko poškoduje module vozila.<!--j-->&nbsp;<!--j-->GDS in večstranski diagnostični vmesnik morata imeti nameščeno posodobljeno programsko opremo.</li>
+ <li>Preverite, ali je akumulator vozila povsem napolnjen.<!--j-->&nbsp;<!--j-->Napetost akumulatorja za GDS mora biti med 12 in 14 volti.</li>
+ <li>Med uporabo MDI na vozilo ne sme biti priključen polnilec akumulatorjev.</li>
+ <li>Preverite, ali so kabelske povezave pritrjene.<!--j-->&nbsp;<!--j-->Izključen kabel LAHKO povzroči okvaro krmilnika.</li>
+ <li>Če za GDS uporabljate prenosni računalnik/drugo napravo z zaslonom (dlančnik ipd.), preverite, ali je napajalnik pravilno priključen.<!--j-->&nbsp;<!--j-->Če se pri napajanju z napajalnikom izključi napajalni kabel, lahko to prekine programiranje in povzroči poškodbe nadzornega modula.<!--j-->&nbsp;<!--j-->Če prenosni računalnik deluje na notranje napajanje (baterije), preverite, ali so te dovolj polne, da bi bilo mogoče izvesti postopek GDS.</li>
+ </ul>
+ <table width="80%" border="0">
+ <tr>
+ <td class="note"><b>OPOMBA</b><br />
+
+Če nameravate programirati ECU, jo je treba pred pričetkom postopka namestiti v vozilo.<!--j-->&nbsp;<!--j-->Preverite, ali je akumulator vozila povsem napolnjen.</td></tr></table>
+ <table width="80%" border="0">
+ <tr>
+ <td class="important"><b>Pomembno</b><br />
+Da bi zmanjšali možnost izgube signala, je treba MDI konfigurirati, da bi dosegli najstabilnejšo možnost komunikacije na vaši lokaciji.<!--j--><!--j-->Izbirate lahko med USB-jem, eternetom in brezžičnim eternetom.</td></tr></table>
+ <hr />
+ <h2>Postopek za zagon GDS<!--j-->:</h2>
+ <p>GDS je mogoče zagnati preko TIS2Web/GlobalTIS, tako da kliknite ikono GDS.<!--j-->&nbsp;<!--j-->Poleg tega lahko GDS zaženete tudi v samostojnem načinu z uporabo menija Start v Windowsih.</p><ol><li>Za zagon kliknite na simbol GDS v glavnem meniju TIS2Web/GlobalTIS.<!--j-->.<!--j-->&nbsp;<!--j-->Pri zagonu GDS v samostojnem načinu kliknite START/PROGRAMI/GDS</li><li>Ob zagonu GDS Smart Start se bo izvedel prikazani postopek posodabljanja.<!--j-->&nbsp;<!--j-->Če je na strežniku na voljo nova različica GDS ali MDI Manager, se bo pojavil poziv za prenos in namestitev na računalniku.<!--j-->&nbsp;<!--j-->Kliknite  <b>Nadaljujte,</b> za začetek prenosa ali namestitve.<!--j-->&nbsp;<!--j-->[IV]<!--j-->.<!--j-->&nbsp;<!--j-->Če je GDS zagnan v samostojnem načinu, posodabljanje ni mogoče.</li>
+ 	 <li>Prijavna stran GDS je naložena.</li></ol>
+ <hr />
+ <h1><a name="navigation"></a>5.<!--j-->&nbsp;<!--j-->Splošna navigacija</h1>
+ <h2>Spustni meniji<!--j-->&nbsp;<!--j--><img src="../../images/gds_menu.png" alt="gds_menu.png" width="57" height="38" /></h2>
+ <p>Iz GDS je na voljo pet spustnih menijev<!--j-->&nbsp;<!--j-->[VII]</p> <p>Opomba<!--j-->:<!--j-->&nbsp;<!--j-->Ti meniji bodo predstavljali menijske izbire le za računalniške različice GDS<!--j-->.<!--j-->&nbsp;<!--j-->Izdana bo tudi oblika za zaslone na dotik, v kateri bodo meniji dostopni s pojavnim gumbom.</p> <ul>
+ <li>Meni  <b>Datoteka</b> vsebuje vnos  <b>Izhod</b> za zapiranje GDS.</li>
+ <li>Meni  <b>Seja</b> vsebuje dve izbiri:<!--j-->&nbsp;<!--j--><b>Shrani trenutno beležko seje</b> in  <b>Dodaj komentarje seji...</b><br /><b>Dodaj komentarje seji...</b>: podatke je mogoče vnesti z vašo računalniško tipkovnico in jih shraniti v upravitelju beležk sej.</li>
+ <li>Izbor  <b>Orodja</b> ima pet možnosti:<!--j-->&nbsp;<!--j-->Začni slediti<!--j-->,<!--j-->&nbsp;<!--j-->Predvajanje posnetka<!--j-->,<!--j-->&nbsp;<!--j-->Ustvari poročilo<!--j-->,<!--j-->&nbsp;<!--j-->Prikaži stanje prenosov...<!--j-->,<!--j-->&nbsp;<!--j-->Skrbništvo uporabnikov<br />Nove uporabnike je mogoče ustvariti s klikom na simbol na strani  <b>Skrbništvo uporabnikov</b><!--j-->&nbsp;<!--j-->
+ <img src="../../images/gds_add-user.png" alt="gds_add-user.png" width="27" height="26" />
+ <!--j-->.</li>
+ <li><b>Okno</b>: V meniju </b>Nastavitve</b> je mogoče izbrati konfiguracijo zaslona, npr. celozaslonski način, način za osebni računalnik ali za zaslon na dotik.</li>
+ <li><b>Izbira pomoči</b> ima tri možnosti:<br /><b>Vsebina pomoči</b> prikazuje vse datoteke s pomočjo, ki so na voljo v GDS.<!--j-->&nbsp;<!--j-->
+<b>O GDS</b> prikazuje različico GDS in identifikator graditve.<!--j-->&nbsp;<!--j-->
+<b>Prikaži različico MDI</b> prikazuje programsko opremo in različico strojne opreme MDI.<!--j-->&nbsp;<!--j-->
+Te podatke boste morda potrebovali, če se boste obrnili na naš Customer Support Center.</li></ul><p></p>
+ <p><img src="../../images/gds_vii_slv.gif" alt="gds_vii.gif" width="120px"/><br />
+[VII]</p>
+ <hr />
+ <h2>Orodna vrstica diagnostičnega programa</h2>
+ <p>Po vstopu v pogled navigacije po sistemu je na voljo več izbir orodnih vrstic.<!--j-->&nbsp;<!--j-->[VIII]</p>
+ <ul>
+ <li><b>Snemanje posnetka</b> (rdeči krog) je na voljo le po vstopu pogled navigacije po sistemu in se uporablja za snemanje posnetkov vozila.<!--j-->&nbsp;<!--j-->Med snemanjem posnetka ta možnost ni na voljo.</li>
+ <li><b>Zaustavitev snemanja posnetka</b> (modri kvadrat) se pojavi med snemanjem posnetka vozila.<!--j-->&nbsp;<!--j-->To možnost izberete, če želite zaustaviti snemanje posnetka in shraniti datoteko.</li>
+ <li>Simbol  <b>Posnetek</b> izberete, da bi zajeli prikazano vsebino zaslona in jo shranili na lokacijo v računalniku.</li>
+ <li><b>Pomanjšaj</b> poveča velikost pisave.<!--j-->&nbsp;<!--j-->Prikazana slika se pomanjša vsakič, ko kliknete z miško.</li>
+ <li>Izbira  <b> Povečaj</b> poveča velikost pisave.<!--j-->&nbsp;<!--j-->Prikazana slika se poveča pomanjša vsakič, ko kliknete z miško.</li>
+ <li>Gumb  <b>Izhod</b> zapre aktivni diagnostični program.</li>
+ </ul>
+ <p><img src="../../images/gds_viii_slv.gif" alt="gds_viii.gif" width="400px"/><br />
+[VIII]</p>
+ <hr />
+ <h2>Puščične tipke</h2>
+ <p>Puščične tipke se nahajajo na dnu seznama parametrov<!--j-->&nbsp;<!--j-->Puščične tipke je mogoče uporabljati pri navigaciji, kot sledi:</p>
+ <p><img src="../../images/gds_ix_slv.gif" alt="gds_ix.gif" width="600px"/><br />
+[IX]<!--j-->:</p>
+ <ul>
+ <li>Puščica  <b>Pomik navzgor</b> se uporablja za pomik za eno mapo navzgor v seznamu parametrov vsakič, ko jo pritisnete.</li>
+ <li>Puščica  <b>Pomik navzdol</b> se uporablja za pomik za eno mapo navzdol v seznamu parametrov vsakič, ko jo pritisnete.</li>
+ <li>Puščica  <b>Pomik desno</b> se uporablja za odpiranje nivoja v navigacijskem drevesu.</li>
+ <li>Puščica  <b>Pomik levo</b> se uporablja za zapiranje nivoja v navigacijskem drevesu.<!--j-->&nbsp;<!--j-->Ta izbira ne bo prikazana, če se nahajate v prvem zaslonu postopka.</li></ul>
+ <hr />
+ <h2>Druge tipke</h2>
+ <p>V spodnjem delu vseh zaslonov se nahajajo tudi tri druge tipke.<!--j-->&nbsp;<!--j-->Te tipke imajo naslednji namen:</p>
+ <ul>
+ <li><b>Zagon</b> vam omogoča zagon programa.</li>
+ <li><b>Predhodno dejanje</b> vam omogoča pomik v predhodni zaslon.<!--j-->&nbsp;<!--j-->Ta izbira bo na voljo le, če obstaja predhodni zaslon, v katerega se je mogoče premakniti.</li>
+ <li><b>Naslednji</b> vam omogoča pomik v naslednji zaslon.<!--j-->&nbsp;<!--j-->Ta izbira bo na voljo le, če so na tem zaslonu bile izbrane vse potrebne možnosti.</li>
+ </ul>
+ <br clear=all />
+ <hr />
+ <h2>Vnašanje podatkov o vozilu/MDI</h2>
+ <p>1.<!--j-->&nbsp;<!--j-->Iz glavnega menija GDS izberite uporabnika za prijavo.<!--j-->&nbsp;<!--j-->Če še ni bil ustvarjen noben uporabnik, je mogoče ustvariti novega uporabnika ali pa izbrati privzetega uporabnika.<!--j-->&nbsp;<!--j-->(Glejte spustne menije oddelkov)<br />
+ </p>
+ <p>2.<!--j-->&nbsp;<!--j-->Ko ste izbrali svoj način dostopa, se bo prikazal zaslon menija za identifikacijo.<!--j-->&nbsp;<!--j-->Na tem zaslonu je na voljo več možnosti:</p>
+ <p><img src="../../images/gds_x_slv.gif" alt="gds_x.gif" width="650px"/><br />
+[X]</p>
+ <ul>
+ 	 <li>[X-1]<!--j-->&nbsp;<!--j--><b><b>Izbira MDI</b></b><!--j-->:<!--j-->&nbsp;<!--j-->Prikazani so vsi MDI-ji, ki so na voljo na različnih omrežjih. Izberete lahko MDI, ki ga uporabljate pri izvajanju diagnostike vozil.<!--j-->&nbsp;<!--j-->Za povezavo z MDI označite MDI, ki je na voljo, tako da nanj kliknete, in izberite  <b>Poveži</b>.<!--j-->&nbsp;<!--j-->Izberite  <b>Prekinitev povezave</b>, da bi prekinili povezavo z MDI.<!--j-->&nbsp;<!--j-->Vozilu dodajte nov MDI in izberite  <b>Poveži</b>.<!--j-->&nbsp;<!--j-->Izberite  <b>Osveži</b>, da bi preverili za novimi MDI-ji na razpoložljivih omrežjih.<!--j-->&nbsp;<!--j-->Da bi nadaljevali v GDS brez povezanih MDI, aktivirajte potrditveno polje  <b>Navigiraj brez MDI</b>.</li>
+ <li>[X-2]<!--j-->&nbsp;<!--j--><b><b>Vnos VIN</b></b><!--j-->:<!--j-->&nbsp;<!--j-->Polje identifikacijske številke vozila za ročno ali samodejno vnašanje identifikacije VIN s krmilnika vozila.<!--j-->&nbsp;<!--j-->(Zahtevana je povezava z MDI).<!--j-->&nbsp;<!--j-->V spodnje polje z besedilom je mogoče vnašati dodatne komentarje, povezane s tem VIN / vozilom.</li>
+ <li>[X-3]<!--j-->&nbsp;<!--j-->Oddelek  <b>Identifikacija vozila</b><!--j-->:<!--j-->&nbsp;<!--j-->pred nadaljevanjem izberite znamko, model in letnik modela.</li>
+ <li>[X-4]<!--j-->&nbsp;<!--j--><b><b>Zgodovina diagnosticiranja vozila</b></b><!--j-->:<!--j-->&nbsp;<!--j-->Če je bilo vozilo predhodno že diagnosticirano s tem sistemom GDS, so VIN in zadevni podatki shranjeni v zgodovini vozila.<!--j-->&nbsp;<!--j-->S seznama izberite vozilo, ki ga želite diagnosticirati, in nadaljujte neposredno z  <b>Domača stran vozila</b>.<!--j-->&nbsp;<!--j-->Na voljo je brezplačna funkcija filtriranja besedila</li>
+ </ul>
+ <p>3.<!--j-->&nbsp;<!--j-->Prikazan bo  <b>Domača stran vozila</b><!--j-->&nbsp;<!--j-->From this screen various vehicle data is displayed including: entered vehicle information, previous vehicle diagnosis, session comments, session log reports, and stored data</p>
+ <hr />
+ <h2><b><b>Domača stran vozila</b></b></h2>
+ <p><b>Domača stran vozila</b> je sestavljen iz več območij:</p>
+ <p>[XI-1]<!--j-->:<!--j-->&nbsp;<!--j--><b>Podatki o vozilu</b> navaja vse podatke o vozilu, vključno z znamko, modelom in letnikom itd.<br />Seznam je posodobljen med diagnosticiranjem vozila in bo shranjen z vsako sejo.<!--j-->&nbsp;<!--j--><b>Izbriši izbor možnosti za vozilo</b> se uporablja za brisanje vsebine izbire predhodnega vozila.<!--j-->&nbsp;<!--j-->Označite vrstico, ki jo želite izbrisati iz seznama vsebine vozila, in izberite možnost Izbris opreme</p>
+ <p>[XI-2]<!--j-->:<!--j-->&nbsp;<!--j--><b>Komentarji o seji</b> se uporablja za dodajanje uporabniških komentarjev v poljubni obliki o diagnostičnih sejah.<!--j-->&nbsp;<!--j-->Kliknite na  <b>Dodaj komentar</b>, da bi vnesli dodatne informacije o seji.<!--j-->&nbsp;<!--j-->Informacije lahko s tipkovnico vnesete preko območij Uporabnik, Podatki ali Komentarji.<!--j-->&nbsp;<!--j-->Da bi izbrisali predhodne komentarje, označite informacije pod območji Uporabnik, Podatki ali Komentarji in kliknite  <b>Brisanje izbranega komentarja</b>.</p>
+ <p>[XI-3]<!--j-->:<!--j-->&nbsp;<!--j--><b>Poročila v beležkah sej</b> je mogoče uporabiti za tiskanje diagnostičnih podatkov o vozilu.<!--j-->&nbsp;<!--j--><b>Celotni pogled</b> nudi celotno poročilo o vseh diagnosticiranjih, ki so bila opravljena za vozilo.<!--j-->&nbsp;<!--j--><b>Enostavno poročilo</b> nudi povzetek diagnosticiranj vozila.</p>
+ <p>[XI-4]<!--j-->:<!--j-->&nbsp;<!--j--><b>Podatki o posnetku</b> navaja seznam vseh shranjenih podatkov o posnetkih vozila.<!--j-->&nbsp;<!--j-->Prikazani bodo uporabniško ime, ime datoteke posnetka, datum zajema posnetka in komentarji.<!--j-->&nbsp;<!--j-->Pogled predvajanja posnetka izvedete tako, da označite predmet in izberete  <b>Pregled</b>.<!--j-->&nbsp;<!--j-->Posamezne predmete je mogoče izbrisati tako, da označite predmet in izberete  <b>Izbriši</b>.<br />[XI-6]<!--j-->:<!--j-->&nbsp;<!--j--><b><a name="export_snap">Izvoz</a></b> shrani posnetek na vaš lokalni osebni računalnik.<!--j-->&nbsp;<!--j-->Nato lahko te podatke posnetka pošljete v nadaljnjo analizo ustrezni osebi.</p>
+ <p>[XI-5]<!--j-->:<!--j-->&nbsp;<!--j-->Meni  <b>Izvedeni programi</b> nudi prikaz zgodovine diagnostičnih sej.</p>
+
+  <p><b>Naslednje dejanje</b> se uporablja za nadaljevanje z diagnosticiranjem izbranega vozila.</p>
+ <p><img src="../../images/gds_xi_slv.gif" alt="gds_xi.gif" width="650px"/><br />
+[XI]</p>
+ <hr />
+ <h2>Sistemska navigacija - izbira diagnostičnega programa</h2>
+ <p>Ko izberete  <b>Naslednje dejanje</b> iz  <b>Domača stran vozila</b>, se bo prikazala sistemska navigacija<!--j-->&nbsp;<!--j-->[XII]<!--j-->.</p>
+ <p>Izberite navigacijsko pot, ki jo želite preiskati na vozilu.<!--j-->&nbsp;<!--j-->Navigacijo je mogoče izvajati z navigacijskimi puščicami; desna/leva puščica odpre/zapre podmapo, gumb za zagon pa zažene izbrani diagnostični program.<!--j-->&nbsp;<!--j-->Navigacija je mogoča tudi s pomočjo miške s klikom na znake + v navigacijskem drevesu ali s puščičnimi tipkami na računalniški tipkovnici.</p>
+ <p>
+Nadaljujte z izbiranjem map za želeno pot, dokler ne najdete diagnostičnega programa, ki ima ikono programa.</p>
+ <p>
+
+Ko zaženete diagnostični program, bo navigacijski pogled izginil in bo ga bo nadomestil diagnostični program.<!--j-->&nbsp;<!--j-->
+Ko ste z delom z diagnostičnim programom končali, v zgornjem desnem kotu pogleda diagnostičnega programa izberite  <b>Izhod</b>.<!--j-->&nbsp;<!--j-->
+S tem boste zaprli diagnostični program in se vrnili v pogled sistemske navigacije.</p>
+ <p><img src="../../images/gds_xii_slv.gif" alt="gds_xii.gif" width="350px"/><br />
+[XII]</p>
+ <hr />
+ <h1><a name="diagnostics"></a>6.<!--j-->&nbsp;<!--j-->Diagnostika</h1>
+ <h2>Zaslon DTC</h2>
+ <p>Ko izberete  <b>Podatki DTC o vozilu</b>, bosta iz  <b>Tanilama Uygulamasi</b> prikazana seznam elektronskih nadzornih enot (ECU-jev) in število DTC-jev, ki sta trenutno shranjena.</p>
+ <p><img src="../../images/gds_xiii_slv.gif" alt="gds_xiii.gif" width="400px"/><br />
+[XIII]</p>
+ <p>
+V prikazanem primeru so za modul instrumentalnih gruč shranjeni 4 DTC-ji.<!--j-->&nbsp;<!--j-->Izberite  <b>Nadaljujte,</b> za prikaz glavne strani DTC.<br />
+
+  <img src="../../images/gds_xiv_slv.gif" alt="gds_xiv.gif" width="650px"/><br />
+[XIV]</p>
+ <p>DTC-ji, ki so na voljo, so prikazani v tabeli.<!--j-->&nbsp;<!--j-->
+Vsebino prikazane tabele je mogoče prilagajati.<!--j-->&nbsp;<!--j-->Kliknite  <b>Izbira stolpca</b>, da bi tabeli dodali ali odvzeli stolpce<!--j-->&nbsp;<!--j-->[XIV-1]<!--j-->.<!--j-->&nbsp;<!--j-->
+Prikazati je mogoče naslednje informacije DTC:</p>
+ <table border=1 cellspacing=0 cellpadding=0>
+ <tr>
+ <td width=158 valign=top><p><b>Izbira</b></p></td>
+ <td width=427 valign=top><p><b>Opis</b></p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>Stanje</p></td>
+ <td width=427 valign=top><p><img src="../../images/gds_status-unknown.png" alt="gds_status-unknown.png" width="16" height="16" /><!--j-->&nbsp;<!--j-->Nov nabor DTC med krogom branja.<!--j-->&nbsp;<!--j-->Besedilo z opisom DTC je označeno s krepkimi črkami.</p>
+ <p><img src="../../images/gds_mail-generic.png" alt="gds_mail-generic.png" /><!--j-->&nbsp;<!--j-->Trenutni DTC, ni sprememb od zadnjega kroga branja.</p>
+ <p><img src="../../images/gds_forward.png" alt="gds_forward.png" /><!--j-->&nbsp;<!--j-->
+Položaj trenutnega DTC je bil od zadnjega kroga branja spremenjen.<!--j-->&nbsp;<!--j-->
+Besedilo z opisom DTC je zapisano poševno.</p>
+ <p><img src="../../images/gds_mail-delete.png" alt="gds_mail-delete.png" /><!--j-->&nbsp;<!--j-->
+DTC je bil v tem krogu branja izbrisan.<!--j-->&nbsp;<!--j-->
+Besedilo z opisom DTC je označeno z rdečim ozadjem.</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>ECU</p></td>
+ <td width=427 valign=top><p>Ime nadzorne enote</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>Funkcijski sistem</p></td>
+ <td width=427 valign=top><p>Ime funkcijskega sistema (nabor ECU)</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>DTC</p></td>
+ <td width=427 valign=top><p>Koda DTC</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>Bajt simptoma</p></td>
+ <td width=427 valign=top><p>Koda bajta simptoma, povezana z DTC</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>Opis</p></td>
+ <td width=427 valign=top><p>Opis besedila DTC</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>Simptom</p></td>
+ <td width=427 valign=top><p>Odkodiran opis simptoma</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>Bajt stanja</p></td>
+ <td width=427 valign=top><p>Za prihodnjo rabo</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>Stanje po dekodiranju</p></td>
+ <td width=427 valign=top><p>Trenutno stanje DTC</p></td>
+ </tr>
+ </table>
+ <p>
+S pomočjo  <b>Možnosti filtriranja</b> je mogoče določene ECU-je nastaviti kot filtre, tako da se prikazujejo le DTC-ji navedenih ECU-jev.<!--j-->&nbsp;<!--j-->[XIV-2]<!--j-->.<!--j-->&nbsp;<!--j-->
+To možnost lahko uporabite, ko se zajemajo DTC-ji vsega vozila, ali s funkcijskim sistemom.<br />
+
+Da bi filtrirali pogled DTC, lahko v spodnjem polju vnesete besedilo, npr. določeno kodo težave ali ključno besedo.<br />
+Podrobno stanje DTC je mogoče prikazati, ko je aktivirano potrditveno polje  <b>Prikaži položaj DTC</b><!--j-->&nbsp;<!--j-->[XIV-3]<!--j-->.</p>
+ <hr />
+ <h3>Počisti DTC-je</h3>
+ <p><!--j-->[XIV-4]<!--j-->&nbsp;<!--j-->
+Če je izbran  <b>Počisti DTC-je</b>, bo prikazan zaslon s podatki o DTC-ju vozila.<!--j-->&nbsp;<!--j-->[XV]<br />
+Da bi izbrali ECU-je, ki jih želite počistiti, uporabite  <b>Dodaj</b> ali  <b>Dodaj vse</b>.<!--j-->&nbsp;<!--j-->
+Nekatere ECU-je je mogoče naenkrat počistiti, pri čemer jih je treba tudi izbrati naenkrat.<!--j-->&nbsp;<!--j-->
+Izbrani ECU-ji bodo prikazani na desni strani zaslona.<!--j-->&nbsp;<!--j-->Izberite  <b>Potrdi</b>, da bi počistili izbrane ECU-je.<!--j-->&nbsp;<!--j-->
+Izberite  <b>Prekliči</b>, če za zdaj ne želite počistiti ECU-jev.<!--j-->&nbsp;<!--j-->
+Če je izbran  <b>Potrdi</b>, se bo pojavilo pojavno okno o napredovanju.<!--j-->&nbsp;<!--j-->
+Izbrisana(-e) koda(-e) se bodo obarvale rdeče in izginile pri naslednjem osveževanju.</p>
+ <p><img src="../../images/gds_xv_slv.gif" alt="gds_xv.gif" width="500px"/><br />
+[XV]</p>
+ <hr />
+ <h3>Osveži DTC-je</h3>
+ <p>Če je izbran gumb  <b>Osveži DTC</b>, bo GDS od krmilnika zahteval posodobitev DTC<!--j-->&nbsp;<!--j-->[XIV-5]<!--j-->.</p>
+ <hr />
+ <h3>Zapusti program DTC</h3>
+ <p>
+Zapusti program DTC z gumbom  <b>Izhod</b><!--j-->&nbsp;<!--j-->[XIV-6]<!--j-->.</p>
+ <table width="80%" border="0">
+ <tr>
+ <td class="important"><b><!--j-->Pomembno<!--j-->:<!--j--></b><!--j-->&nbsp;<!--j-->
+Le izbira  <b>Izhod</b> vam omogoča, da zapustite <b>Tanilama Uygulamasi</b>.<!--j-->&nbsp;<!--j-->
+GDS ni mogoče zapustiti, dokler se izvajajo diagnostični programi.<!--j-->&nbsp;<!--j-->
+Da bi izstopili iz GDS, se vrnite v prijavno stran GDS.</td></tr></table>
+ <hr />
+ <h3>Identifikacijski podatki</h3>
+ <p>
+Program  <b>Prikaz podatkov</b> lahko uporabljate za ogledovanje podatkov krmilnika vozila.<!--j-->&nbsp;<!--j-->
+Prikaz identifikacije krmilnika zagotavlja podatke o programski opremi krmilnika in različicah strojne opreme, kar predstavlja informacije, ki jih lahko zahteva center tehnične pomoči.</p>
+ <hr />
+ <h2>
+Prikaz podatkov</h2>
+ <p>
+Program za prikaz podatkov omogoča prikaz stanja podatkov krmilnika in signalov vozila v realnem času.</p>
+ <p>
+Privzeti pogled izbranih podatkov kontrolnika je prikazan v tabeli  <b>Vsi parametri</b><!--j-->&nbsp;<!--j-->[XVI-1]<!--j-->.<!--j-->&nbsp;<!--j-->
+Prikazane stolpce lahko posamezno nastavite z gumbom  <b>Izbira stolpca</b><!--j-->&nbsp;<!--j-->[XVI-3]<!--j-->.</p>
+ <p>Posamezne parametre si lahko ogledate na preglednem seznamu z izbiro  <b>Dodaj na pregledni seznam</b><!--j-->&nbsp;<!--j-->[XVI-2]<!--j-->.</p>
+
+  <p><img src="../../images/gds_xvi_slv.gif" alt="gds_xvi.gif" width="650px"/><br />
+[XVI]</p>
+
+  <p>
+Parametre, ki so izbrani v preglednem seznamu, si lahko ogledate v pogledu  <b>Vrstični graf</b><!--j-->&nbsp;<!--j-->[XVII-1]<!--j-->.<!--j-->&nbsp;<!--j-->
+
+
+Izberite parameter, ki bo prikazan v padajočem meniju in kliknite gumb Dodaj, da bi vključili pogled  <b>Vrstični graf</b><!--j-->&nbsp;<!--j-->[XVII-2]<!--j-->.<!--j-->&nbsp;<!--j-->
+V vrstičnem grafu je mogoče prikazovati več parametrov.</p>
+ <p>
+Gumbi v spodnji opravilni vrstici omogočajo nastavljanje pogleda vrstičnega grafa.<!--j-->&nbsp;<!--j-->[XVII-3]</p>
+ <ol>
+ <li><b>Premor med drsenjem/Nadaljevanje drsenja</b>: Preklapljanje med statičnim pogledom in dinamičnim osveževanjem zaslona vrstičnega grafa.</li>
+ <li><b>Podatkovne točke</b>: Sprememba grafičnega prikaza med načinom točk in načinom vrstic</li>
+ <li><b>Dodaj zaznamek</b>: Označi določene položaje/dogodke v vrstičnem grafu.</li>
+ <li>Funkcija  <b>Povečaj</b> /  <b>Pomanjšaj</b></li>
+ </ol>
+ <p>
+
+  <img src="../../images/gds_xvii_slv.gif" alt="gds_xvii.gif" width="650px"/><br />
+[XVII]</p>
+ <p>
+Posamezne parametre seznama  <b>Vsi parametri</b> je mogoče grafično prikazati<!--j-->&nbsp;<!--j-->[XVI-1]<!--j-->.<!--j-->&nbsp;<!--j-->
+Izberite posamezne parametre in izberite želeni prikazni način v izbirnem polju<!--j-->&nbsp;<!--j-->[XVIII-1]<!--j-->.<!--j-->&nbsp;<!--j-->Parameter si lahko ogledati v naslednjih načinih:</p>
+ <ul type=square>
+ 	 <li>Prikazni graf<!--j-->&nbsp;<!--j-->[XVIII-2]<!--j-->.</li>
+ 	 <li>Vrstični graf<!--j-->&nbsp;<!--j-->[XVIII-3]<!--j-->.</li>
+ 	 <li>Visoka vidljivost<!--j-->&nbsp;<!--j-->[XVIII-4]<!--j-->.</li>
+ </ul>
+ <p>Naenkrat so lahko prikazani 4 parametri ali načini prikaza.</p>
+
+
+   <p><img src="../../images/gds_xviii_slv.gif" alt="gds_xviii.gif" width="650px"/><br />
+[XVIII]</p>
+ <hr />
+ <h3>Predvajanje posnetka</h3>
+ <p>Funkcija  <b>Predvajanje posnetka</b> omogoča pregledovanje predhodno zajetih podatkov o posnetkih vozil.<!--j-->&nbsp;<!--j-->Te podatke je mogoče uporabiti v analizi težav vozila in odkrivanju vzročnih pogojev napak.<!--j-->&nbsp;<!--j-->Funkcijo grafa je mogoče uporabljati za primerjavo parametrov, da bi videli, ali določena komponenta deluje pravilno.<!--j-->&nbsp;<!--j-->Zajete posnetke je mogoče izbrati za ogled z eno od naslednjih treh metod:</p>
+ <ul>
+ <li>Izbira datoteke posnetka iz  <b>Domača stran vozila</b> in s klikom na izbiro Pregled.</li>
+ <li>Dvoklik na izbrani posnetek v  <b>Domača stran vozila</b>.</li>
+ <li>Vnos izbire  <b>Orodja</b> iz izbire  <b>Meni</b> in izbira  <b>Predvajanje posnetka</b>.<!--j-->&nbsp;<!--j-->Nato odprite  <b>Upravitelj posnetkov</b>.<!--j-->&nbsp;<!--j-->Dvokliknite na datoteko posnetka, ki si ga želite ogledati in kliknite na izbiro Nalaganje posnetkov in izberite datoteko posnetka.</li>
+ </ul>
+ <p>Ne glede na način izbire se bo v pogledu  <b>Predvajanje posnetka</b> pojavilo okno z napisom Datoteka je naložena.<!--j-->&nbsp;<!--j-->V pojavnem oknu kliknite Potrdi.</p>
+ <hr />
+ <h3>Možnosti predvajanja posnetka<!--j-->&nbsp;<!--j-->[XIX-1]</h3>
+ <p>Pri predvajanju posnetka je na voljo več možnosti predvajanja.</p>
+
+
+   <table width="84%" height="80" border="1">
+ <tr>
+ <td width="7%"><img src="../../images/gds_play.png" alt="gds_play.png" width="25" height="23" /></td>
+ <td width="93%">
+Možnost Predvajaj se uporablja za predvajanje posnetka naprej s klikom na to izbiro.<!--j-->
+
+&nbsp;<!--j-->
+
+Ko je izbrana ta možnost, se bo zaznamek premikal po zaslonu.<!--j-->
+
+&nbsp;<!--j-->
+Vse možnosti v tem območju se bodo obarvale sivo, ko bodo aktivirane.</td>
+ </tr>
+ <tr>
+ <td><img src="../../images/gds_pause.png" alt="gds_pause.png" width="24" height="21" /></td>
+ <td>Možnost Premora se uporablja za začasno zaustavitev predvajanja posnetka.<!--j-->&nbsp;<!--j-->Z drugim klikom na to izbiro se predvajanje posnetka nadaljuje na mestu, kjer je bilo zaustavljeno.</td>
+ </tr>
+ <tr>
+ <td><img src="../../images/gds_stop.png" alt="gds_stop.png" width="24" height="19" /></td>
+ <td>Možnost Ustavi se uporablja za zaustavitev predvajanja posnetka.<!--j-->&nbsp;<!--j-->Posnetek se bo nato pričel predvajati od začetka, če izberete Predvajaj po uporabi možnosti Ustavi.</td>
+ </tr>
+ </table>
+ <hr />
+ <h3>Časovni nadzor<!--j-->&nbsp;<!--j-->[XIX-2]</h3>
+ <p><b>Časovni nadzor</b> se uporablja za nadzor nad predvajanjem posnetka.<!--j-->&nbsp;<!--j-->Ta funkcija omogoča izbiro določenega časovnega okvira, prikaz različnih pogledov in nadzor hitrosti predvajanja.<!--j-->&nbsp;<!--j-->Neposredno v  <b>Časovni nadzor</b> lahko izberete naslednje možnosti.</p>
+ <table width="84%" border="1">
+ <tr>
+ <td><img src="../../images/gds_bookmark.png" alt="gds_bookmark.png" width="17" height="24" /></td>
+ <td>Izbira zaznamka vam omogoča dodajanje določenega komentarja v trenutnem prikazu in vračanje k tej točki v prihodnosti.<!--j-->&nbsp;<!--j-->Ko je izbrana ta možnost, bo prikazano pojavno okno.<!--j-->&nbsp;<!--j-->Vnesite ime zaznamka in izberite Potrdi.</td>
+ </tr>
+ <tr>
+ <td><img src="../../images/gds_notepad.png" alt="gds_notepad.png" width="26" height="22" /></td>
+ <td>Za dodajanje komentarjev datoteki za predvajanje posnetka v trenutnem času lahko izberete Beležko.<!--j-->&nbsp;<!--j-->Ko je izbrana ta možnost, bo prikazano pojavno okno.<!--j-->&nbsp;<!--j-->Vnesite komentar za datoteko posnetka in izberite Potrdi.</td>
+ </tr>
+ <tr>
+ <td><img src="../../images/gds_load.png" alt="gds_load.png" width="23" height="23" /></td>
+ <td>Možnost Naloži posnetek (modra mapa) odpre datoteko posnetka in jo pripravi za nadaljnjo analizo.<!--j-->&nbsp;<!--j-->Če si želite ogledati <a href="#export_snap">izvožen posnetek</a>, najprej razširite ustrezni arhiv *.zip.<!--j-->&nbsp;<!--j--><!--j-->&nbsp;<!--j-->Ta možnost je na voljo tudi s klikom na prosto datoteko posnetka v  <b>Upravitelj posnetkov</b>.</td>
+ </tr>
+ <tr>
+ <td><img src="../../images/gds_time-options.png" alt="gds_time-options.png" width="19" height="23" /></td>
+ <td>Puščica navzdol prikaže vse možnosti  <b>Časovni nadzor</b>.<!--j-->&nbsp;<!--j-->Posamezne možnosti lahko izberete tudi s klikom na želeni predmet.</td>
+ </tr>
+ <tr>
+ <td><img src="../../images/gds_speed.png" alt="gds_speed.png" width="57" height="27" /></td>
+ <td>
+Z izbiro te možnosti je mogoče nadzirati hitrost prikaza posnetka.<!--j-->
+
+&nbsp;<!--j-->
+
+Izbirate lahko med upočasnjenimi hitrostmi 1/8X, 1/4X in 1/2X.<!--j-->
+
+&nbsp;<!--j-->
+
+Hitrost v realnem času izberete v 1.<!--j-->
+
+&nbsp;<!--j-->
+Z isto izbiro lahko vključite tudi hitrejše hitrosti 2X, 4X in 8X.</td>
+ </tr>
+ </table>
+
+
+   <hr />
+ <h3>Izbira prikaza<!--j-->&nbsp;<!--j-->[XIX-3]</h3>
+ <p>Vsaka izbira prikaza nudi drugačen način prikaza podatkov o vozilu za analizo.<!--j-->&nbsp;<!--j-->V  <b>Prikazi, ki so na voljo</b> lahko izberete naslednje možnosti.</p>
+ <ul>
+ <li>Pogled seznama parametrov - prikazuje vhodne podatke datoteke prenosa.<!--j-->&nbsp;<!--j-->Trenutna vrednost parametrov se prikazuje na zaslonu.</li>
+ </ul>
+ <table width="80%" border="0">
+ <tr>
+ 	<td class="important"><b>Pomembno</b><br />Ime parametra bo kmalu prikazano v izvornem jeziku, ki je bil uporabljen ob zajemu, če ime ni bilo prevedeno.</td></tr></table>
+ <ul>
+ <li>Pogled beležke - vsebuje vse podatke iz datoteke posnetka.<!--j-->&nbsp;<!--j-->Vse vrednosti parametrov so navedene v vrstnem redu, v katerem so bile zajete.<!--j-->&nbsp;<!--j-->Na seznam opazovanja je mogoče dodajati ali odstranjevati določene parametre s klikom na ustrezni predmet.</li>
+ <li>Pogled stanja<!--j-->&nbsp;<!--j-->Te vrednosti je mogoče uporabiti za primerjavo s Prikazom sprožilca</li>
+ <li>Pogled sprožilca - prikazuje vse sistemske in uporabniško definirane sprožilce.<!--j-->&nbsp;<!--j-->To možnost je mogoče uporabiti, ko je v diagnostični problem vključena kombinacija dejavnikov.<!--j-->&nbsp;<!--j-->
+Ko je pogoj sprožilca izpolnjen, se na zaslonu prikaže opozorilni trikotnik.<ul><li>Naloži sprožilce<!--j-->&nbsp;<!--j-->-<!--j-->&nbsp;<!--j-->Vam omogoča naložiti datoteko, ki vsebuje definicije sprožilcev.</li>
+ 	 <li>Shrani sprožilce<!--j-->&nbsp;<!--j-->-<!--j-->&nbsp;<!--j-->Vam omogoča shraniti sprožilce na trdi disk vašega računalnika.</li>
+ <li>Odstrani sprožilec<!--j-->&nbsp;<!--j-->-<!--j-->&nbsp;<!--j-->Vam omogoča odstraniti trenutni sprožilec. Ta potem ne bo več prisoten.</li>
+ <li>Uredi sprožilec<!--j-->&nbsp;<!--j-->-<!--j-->&nbsp;<!--j-->prikaže pojavno okno, v katerem lahko spreminjate omejitve in parametre, ki jih vsebuje sprožilec.</li>
+ <li>Dodaj sprožilec<!--j-->&nbsp;<!--j-->-<!--j-->&nbsp;<!--j-->prikaže pojavno okno za konfiguracijo sprožilca.</li></ul></li>
+ <li>Pogled DTC<!--j-->&nbsp;<!--j-->-<!--j-->&nbsp;<!--j-->Potem, ko ste izbrali možnost Predvajaj, bo ta možnost odprla seznam posnetih DTC-jev.</li>
+ <li>Pogled vrstičnega grafa - prikazuje podatke, ki jih lahko ponazorimo na časovni osi<!--j-->&nbsp;<!--j-->V tem prikazu je mogoče izbrati določene parametre za izdelavo grafov, tako da označite polje pri Izbrano.<!--j-->&nbsp;<!--j-->Na dnu grafa so štiri možnosti:  <b>Povečaj</b> (povečaj velikost),  <b>Pomanjšaj</b> (pomanjšaj velikost),  <b>Zaznamki</b> in  <b>Premor med drsenjem</b>.<!--j-->&nbsp;<!--j-->Do vseh teh možnosti je mogoče dostopati s klikom nanje.</li>
+ </ul>
+ <p><img src="../../images/gds_xix_slv.gif" alt="gds_xix.gif" width="650px"/><br />
+[XIX]</p>
+ <hr />
+ <h2>Nadzorne funkcije:</h2>
+ <p>Z nadzornimi funkcijami GDS je mogoče posebne funkcije vozila nadzirati s sistemom GDS.<!--j-->&nbsp;<!--j-->Izberite Nazorne funkcije določenega krmilnika v sistemski navigaciji, da bi zagnali program nadzornih funkcij.</p>
+ <p>Nadzorne funkcije so vgrajene v prikaz seznama podatkov.<!--j-->&nbsp;<!--j-->Med izvajanjem kontrolne funkcije lahko spremljate ali zajamete prikazani parameter s funkcijo zajemanja posnetkov GDS.</p>
+ <p>GDS podpira dve vrsti nadzornih funkcij:</p>
+ <p>1.<!--j-->&nbsp;<!--j-->Digitalno nadzorno funkcijo z možnostjo vklopa/izklopa.<!--j-->&nbsp;<!--j-->[XX-1]</p>
+ <p><img src="../../images/gds_xx_slv.gif" alt="gds_xx.gif" width="650px"/><br />
+[XX]</p>
+ <p>2.<!--j-->&nbsp;<!--j-->Analogno nadzorno funkcija z nadzorno zmogljivostjo funkcije.<!--j-->&nbsp;<!--j-->Funkcijo aktivatorja je mogoče nadzorovati z nadzornimi gumbi ali premikanjem kazalca k lestvici ob strani.<!--j-->&nbsp;<!--j-->[XXI-1]<!--j-->&nbsp;<!--j-->ali<!--j-->&nbsp;<!--j-->[XXI-2]<!--j-->.</p>
+ <p><img src="../../images/gds_xxi_slv.gif" alt="gds_xxi.gif" width="650px"/><br />[XXI]</p>
+ <hr />
+ <h2>Funkcije konfiguracije in ponastavitve:</h2>
+ <p>Funkcije konfiguracije in ponastavitve so posebne funkcije krmilnikov, ki jih je treba izvesti med zamenjavo sistemskih aktivatorjev ali ko je potrebna ponastavitev.<!--j-->&nbsp;<!--j-->Za podrobnosti glejte zadevni servisni priročnik sistema.</p>
+ <hr />
+ <h1><a name="troubleshooting"></a>7.<!--j-->&nbsp;<!--j-->ODPRAVLJANJE TEŽAV</h1>
+
+  <h2>Težave s povezovanjem z MDI</h2>
+ <p>Če so povezave zrahljane ali niso pravilno priključene na vozilo/računalnik, se bo prikazalo pojavno okno.<!--j-->&nbsp;<!--j-->Izvedite naslednje korake:</p><ul>
+ <li>Prepričajte se, da med izvajanjem GDS ni zagnana programska oprema MDI Manager.</li>
+ <li>Prepričajte se, da je MDI pravilno priključen na vozilo in na računalnik.</li>
+ <li>Uporabite znan in &quot;dober kabel USB&quot; z druge enote MDI, če je na voljo.<!--j-->&nbsp;<!--j-->Povežite vse priključke in poskusite znova.</li>
+ <li>Uporabite znan in &quot;dober priključni kabel MDI &quot; z druge enote MDI, če je na voljo.<!--j-->&nbsp;<!--j-->Povežite vse priključke in poskusite znova.</li>
+ <li>Če se stanje nadaljuje, se obrnite na Customer Support.</li>
+ <li>Prepričajte se, da požarni zid ne blokira komunikacije z GDS/MDI.</li>
+ </ul>
+ <hr />
+ <h2>Spor programske opreme GDS/MDI Manager</h2>
+ <p>Programska oprema GDS in MDI Manager ne moreta biti zagnani istočasno.<!--j-->&nbsp;<!--j-->Če sta obe vrsti programske opreme zagnani istočasno, lahko pride do spora programske opreme.<!--j-->&nbsp;<!--j-->Izbira Podrobnosti bo prikazala morebitne podatke o napaki.<!--j-->&nbsp;<!--j-->Če težave ne boste uspeli odpraviti, bo te podatke od vas morda zahtevala Customer Support.</p>
+ <p>Če še zmeraj prihaja do spora programske opreme, bo programska oprema MDI Manger sprožila pojavno okno s sporočilom &quot;Prišlo je do resne napake&quot;.<!--j-->&nbsp;<!--j-->Programsko opremo MDI Manager zaprite in se vrnite v program GDS.<!--j-->&nbsp;<!--j-->Če po vstopu v GDS niste uspeli odpraviti težave, se obrnite na Customer Support.</p>
+ <p>&nbsp;</p>
+ <p align="right"><font size="2">&copy; GM Europe, SPO Engineering, International Operations - 08 May 2009 (V3.0)</font></p>
+ </div>
+
+  </body>
+ </html>

@@ -1,0 +1,2287 @@
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style>.T2{    BORDER-TOP: white;}  .T3{    BORDER-BOTTOM: white;} .T4{    BORDER-TOP: white;    BORDER-BOTTOM: white} .I{ padding-left : 10pt}  .Tighten{ padding-left : 7pt} .Arial{ font-family : Arial, Helvetica, sans-serif;margin-left: 10pt;margin-right : 10pt } .TableB{ margin-left : 0pt}</style>
+<TITLE>Manual de servicio técnico2008 Captiva DTC P0461-</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+
+ function FixMenu()
+{
+menuTop = document.body.scrollTop + document.body.clientHeight -40;
+menu.style.top = menuTop;
+menu.style.width = document.body.clientWidth; 
+}
+
+</SCRIPT>
+</HEAD>
+<BODY class="Arial" onLoad="FixMenu()" onScroll="FixMenu()" onResize="FixMenu()">
+<SPAN ID="menu" STYLE="position:absolute; left:0px; top:0px; width:0px"><A border="0" href="7C2_1F2B.es.html"><IMG src="../../../../graphic-pool/Icons/Totop.gif" align="right" halign="Bottom" border="0" alt="Al principio del documento"></A></SPAN><TABLE width="100%" BORDER="1" rules="none" cellspacing="0" cellpadding="0" style="magin-top: 5pt"><TBODY>
+<TR BGCOLOR="cccc99" height="15">
+<TD width="30%"><div style="padding-left: 5pt"><B><FONT face="Arial">Captiva</FONT></B></div></TD>
+<TD width="70%" align="right" colspan="8"></TD>
+</TR>
+<TR BGCOLOR="white" height="60">
+<TD width="35%" align="left"><TABLE><TR>
+<TD width="5%" align="left"><A href="7C2_1F2A.es.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_back.gif" alt="A la página anterior"></A></TD>
+<TD width="5%" align="left"></TD>
+<TD width="5%" align="left"><A href="7C2_1F2C.es.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_next.gif" alt="A la página siguiente"></A></TD>
+</TR></TABLE></TD>
+<TD><TABLE width="65%" align="right"><TR>
+<TD style="font-size:10"><A href="../../../GMDE_TIS_START.html" target="_top"><IMG src="../../code/menu-images/home.gif" border="0" alt="Página de inicio GMDE"></A></TD>
+<TD style="font-size:10"><A href="../toc_Captiva.html" target="menu"><IMG src="../../code/menu-images/static-TOC.gif" border="0" alt="Índice estático"></A></TD>
+<TD style="font-size:10"><A href="../toc_Captiva_code.html" target="code"><IMG src="../../code/menu-images/menu_folder_open.gif" border="0" alt="Índice dinámico"></A></TD>
+<TD style="font-size:10"><A href="../../help/readme_EN.htm" target="top" class="bottom_copyright"><IMG src="../../code/menu-images/help.gif" border="0" alt="¿Ayuda?"></A></TD>
+</TR></TABLE></TD>
+</TR>
+</TBODY></TABLE>
+	
+		<P></P>
+<DIV align="center" id="C1F2P0461"><font size="4"><b>DTC P0461- </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="C1F2FLS1P"><font size="4"><b>Rendimiento del sensor 1 de nivel de combustible</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="C1F2CD"><b>descripción del circuito</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">El módulo de control electrónico del motor (ECM) utiliza la señal procedente del sensor de nivel de combustible para calcular la presión de vapor que se espera que haya dentro del sistema de combustible. Esta presión de vapor cambia a medida que varía el nivel del combustible. La señal de este nivel se utiliza también para determinar si el nivel en cuestión es demasiado alto o demasiado bajo con el objeto de poder detectar los fallos en el sistema de emisiones de vapor (EVAP). Este código de diagnóstico de averías (DTC) indica que el sensor de nivel de combustible está agarrotado.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2CRD"><b>Condiciones para la ejecución del DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>El motor esté en marcha.</Li>
+					<Li>La tensión de la batería está entre 11 V y 16 V.</Li>
+					<Li>Sin error en el sensor de velocidad del vehículo.</Li>
+					<Li>La diferencia entre el consumo de combustible calculado y el cambio de nivel de combustible medido es superior a 1 L.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2CSD2"><b>Condiciones para la activación del DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>El cambio en el nivel de combustible después del repostaje es inferior a 1 L.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2ATWD"><b>Acción realizada cuando se activa el DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Se enciende la luz indicadora de fallo de funcionamiento (MIL).</Li>
+					<Li>El ECM registrará las condiciones de funcionamiento en el momento de la avería. Esta información quedará guardada en las memorias intermedias de registros de averías.</Li>
+					<Li>Se almacena un historial del DTC.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2CCM2"><b>Condiciones para borrar el DTC y apagar la MIL</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>La MIL se apagará después de tres ciclos de encendido consecutivos en los que se efectúe el diagnóstico sin ningún fallo.</Li>
+					<Li>El historial del DTC se borrará después de efectuar 40 ciclos consecutivos de calentamiento sin ninguna avería.</Li>
+					<Li>El(los) DTC(s) puede(n) borrarse empleando un escáner.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2DA2"><b>Asistencia en el diagnóstico</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Un fallo intermitente puede deberse a una mala conexión, a la rotura del aislamiento del cable o a un cable roto dentro de su aislamiento.</div>
+				<div class="T1" align="left">Compruebe si hay alguna conexión defectuosa o daños en el cableado del ECM. Compruebe el terminal del circuito del sensor de nivel de combustible en cuanto a lo siguiente:</div>
+				<UL>
+					<Li>Acoplamiento defectuoso.</Li>
+					<Li>Cierres rotos.</Li>
+					<Li>Conformación indebida.</Li>
+					<Li>Terminales dañados.</Li>
+					<Li>Conexión defectuosa - entre- el cable y el terminal.</Li>
+					<Li>Cableado dañado.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="C1F2P04611"><font size="4"><b>DTC P0461 - Rendimiento del sensor 1 de nivel de combustible</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Paso</B></TD>
+<TD align="center"><B>Medida</B></TD>
+<TD align="center"><B>Valor(es)</B></TD>
+<TD align="center"><B>Sí</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Efectúe la comprobación del sistema de diagnóstico.</div>
+								<div>¿Se ha efectuado la comprobación?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Ir a   <A target="_blank" href="7C2_1F22.es.html#C1F2DSC">"Comprobación del sistema de diagnóstico"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Conecte un scanner al conector de diagnóstico (DLC).</Li>
+									<Li>Ponga en marcha el motor y conduzca el vehículo los kilómetros especificados.</Li>
+								</OL>
+								<div>¿Se activa alguno de los códigos de diagnóstico de averías (DTCs) P0462 o P0463?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Ir a la tabla de DTCs específica</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 3</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Gire la llave de contacto a la posición OFF.</Li>
+									<Li>Desenchufe el conector de la bomba de combustible.</Li>
+									<Li>Gire la llave de contacto a la posición ON.</Li>
+									<Li>Utilizando un voltímetro, mida la tensión de señal del nivel de combustible en el terminal 3 del conector del sensor de nivel de combustible.</Li>
+								</OL>
+								<div>¿Está la tensión dentro de los valores especificados?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>4-5 V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Desconecte el módulo de control electrónico el motor (ECM).</Li>
+									<Li>Compruebe si hay algún circuito de conexión a masa del sensor de nivel de combustible abierto, entre el terminal 2 del conector de dicho sensor y el terminal 76 del ECM, y repárelo si fuera necesario.</Li>
+								</OL>
+								<div>¿Se ha realizado la reparación? </div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 10</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 6</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Utilizando un voltímetro, mida la tensión en el terminal 76 del conector J1 del ECM, haciendo la medición por la parte trasera del ECM.</div>
+								<div>¿Está la tensión dentro de los valores especificados?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>4-5 V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 8</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 9</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Desmonte la bomba del depósito de combustible.</Li>
+									<Li>Enchufe de nuevo el conector de la bomba de combustible.</Li>
+									<Li>Gire la llave de contacto a la posición ON.</Li>
+									<Li>Observe en el scanner el parámetro del sensor de nivel de combustible mientras mueve el flotador del sensor de la posición de depósito vacío a la de depósito lleno.</Li>
+									<Li>Repita este proceso 4 veces.</Li>
+								</OL>
+								<div>¿Aumenta y disminuye de manera estable el valor del sensor de nivel de combustible que se visualiza en el scanner a medida que se mueve el flotador?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Ir a   <A target="_blank" href="7C2_1F22.es.html#C1F2DA">"Ayudas para el diagnóstico"</A>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 7</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Gire la llave de contacto a la posición OFF.</Li>
+									<Li>Sustituya el conjunto de la bomba de combustible.</Li>
+								</OL>
+								<div>¿Se ha realizado la reparación? </div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 10</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Gire la llave de contacto a la posición OFF.</Li>
+									<Li>Desenchufe el conector del ECM.</Li>
+									<Li>Compruebe si hay alguna interrupción o derivación a masa en el circuito de señal del nivel del combustible, entre el terminal 36 y el terminal 3 del conector del cableado de la bomba de combustible, y repárela si fuera necesario.</Li>
+								</OL>
+								<div>¿Se ha realizado la reparación?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 10</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Gire la llave de contacto a la posición OFF.</Li>
+									<Li>Sustituya el ECM.</Li>
+								</OL>
+								<div>¿Se ha realizado la reparación?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 10</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Borre los DTCs utilizando el scanner.</Li>
+									<Li>Ponga en marcha el motor y déjelo en ralentí hasta que alcance la temperatura normal de funcionamiento.</Li>
+									<Li>Haga funcionar el vehículo en las condiciones requeridas para activar este DTC, según se especifica en esta sección.</Li>
+								</OL>
+								<div>¿Indica el scanner que este diagnóstico se ha realizado y superado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 11</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 2</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">11</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Compruebe si se activa algún otro DTC.</div>
+								<div>¿Se activa algún DTC no diagnosticado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Ir a la tabla de DTCs específica</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Sistema OK</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<P></P>
+<DIV align="center" id="C1F2P0462"><font size="4"><b>DTC P0462 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="C1F2FLS1C"><font size="4"><b>Baja tensión del circuito del sensor 1 de nivel de combustible</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="C1F2CD3"><b>descripción del circuito</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">El módulo de control electrónico del motor (ECM) utiliza la entrada de nivel de combustible del sensor de nivel de combustible para calcular las presiones de vapor dentro del sistema de combustible. La presión del vapor varía a medida que cambia el nivel de combustible. La presión del vapor es vital para determinar el sistema de emisiones de vapor (EVAP) está funcionando correctamente. El sensor de nivel de combustible se utiliza también para determinar si el nivel de combustible es demasiado alto o demasiado bajo para poder detectar con exactitud los fallos del sistema EVAP. Este código de diagnóstico de averías (DTC) detecta si el transmisor de nivel de combustible está agarrotado.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2CRD1"><b>Condiciones para la ejecución del DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>El motor esté en marcha.</Li>
+					<Li>La tensión de la batería está entre 11 V y 16 V.</Li>
+					<Li>Sin error en el sensor de velocidad del vehículo.</Li>
+					<Li>La diferencia entre el consumo de combustible calculado y el cambio de nivel de combustible medido es superior a 1 L.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2CSD3"><b>Condiciones para la activación del DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>La señal de nivel del depósito de combustible es inferior a 0,25 V.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2ATWD3"><b>Acción realizada cuando se activa el DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>La luz testigo de fallo (MIL) se encenderá después de 3 ciclos de conducción válidos.</Li>
+					<Li>El ECM registrará las condiciones de funcionamiento en el momento de la avería. Esta información se almacenará en las memorias intermedias de datos instantáneos y registros de averías.</Li>
+					<Li>Se almacena un historial del DTC.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2CCM3"><b>Condiciones para borrar el DTC y apagar la MIL</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>La MIL se apagará después de tres o cuatro ciclos de conducción consecutivos en los que se efectúe el diagnóstico sin ningún fallo.</Li>
+					<Li>El historial del DTC se borrará después de efectuar 40 ciclos consecutivos de calentamiento sin ninguna avería.</Li>
+					<Li>El(los) DTC(s) puede(n) borrarse empleando un scanner.</Li>
+					<Li>Desconectando la alimentación de la batería del ECM durante 10 segundos.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2DA3"><b>Asistencia en el diagnóstico</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Revise los conectores de cableado para verificar si hay terminales desconectados-, mal acoplamiento, cierres rotos, terminales mal conformados o dañados y mala conexión entre el terminal - y- el cable.</div>
+				<div class="T1" align="left">Compruebe si el cableado está dañado.</div>
+				<div class="T1" align="left">Un sensor de nivel de combustible agarrotado puede hacer que se active el DTC. Si el DTC P0462 no puede reproducirse, la información incluida en los datos instantáneos puede resultar útil al determinar las condiciones de funcionamiento del vehículo cuando se activó el DTC por primera vez.</div>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="C1F2P04621"><font size="4"><b>DTC P0462 - Baja tensión del circuito del sensor 1 de nivel de combustible</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Paso</B></TD>
+<TD align="center"><B>Medida</B></TD>
+<TD align="center"><B>Valor(es)</B></TD>
+<TD align="center"><B>Sí</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Efectúe la comprobación del sistema de diagnóstico.</div>
+								<div>¿Se ha efectuado la comprobación?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Ir a   <A target="_blank" href="7C2_1F22.es.html#C1F2DSC">"Comprobación del sistema de diagnóstico"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Gire la llave de contacto a la posición ON.</Li>
+									<Li>Instale un scanner.</Li>
+									<Li>Haga funcionar el vehículo dentro de las condiciones de los datos instantáneos como se indica de esta sección.</Li>
+								</OL>
+								<div>¿Se activa el código de diagnostico de averías (DTC) P0462?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Ir a   <A target="_blank" href="7C2_1F22.es.html#C1F2DA">"Ayudas para el diagnóstico"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Desenchufe el conector eléctrico del transmisor de combustible de la bomba de combustible.</Li>
+									<Li>Mida con un polímetro (DVM) la tensión en el terminal 3 del circuito de señal.</Li>
+								</OL>
+								<div>¿Está la tensión dentro de los valores especificados?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>0,2 - 4,8 V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 6</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Compruebe si hay alguna conexión a masa incorrecta en el depósito de combustible y repárela si fuera necesario.</div>
+								<div>¿Es necesaria la reparación?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 11</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Retire el transmisor de combustible del depósito de combustible.</Li>
+									<Li>Vuelva a enchufar el conector eléctrico del transmisor de combustible.</Li>
+									<Li>Supervise con el scanner el parámetro del sensor de nivel de combustible mientras mueve el flotador del sensor de nivel de combustible de la posición de vacío a la posición de lleno.</Li>
+									<Li>Repita el procedimiento varias veces.</Li>
+								</OL>
+								<div>¿Aumenta el valor del sensor de nivel de combustible que se visualiza en el scanner y luego disminuye progresivamente cuando se mueve el flotador?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Ir a   <A target="_blank" href="7C2_1F22.es.html#C1F2DA">"Ayudas para el diagnóstico"</A>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Compruebe si hay alguna interrupción o derivación a masa en el circuito del sensor de nivel de combustible y repárela si fuera necesario.</div>
+								<div>¿Es necesaria la reparación?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 9</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repare la interrupción o la derivación a masa en el circuito del sensor de nivel de combustible entre el conector del cableado del sensor de nivel de combustible y el sensor.</div>
+								<div>¿Se ha realizado la reparación?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 11</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Sustituya el conjunto del transmisor de combustible.</div>
+								<div>¿Se ha realizado la sustitución?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 11</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Vuelva a enchufar el conector eléctrico del transmisor de combustible.</Li>
+									<Li>Desenchufe el conector del módulo de control electrónico del motor (ECM).</Li>
+									<Li>Mida con un voltímetro (DVM) la tensión en el terminal 36 del circuito de señal.</Li>
+								</OL>
+								<div>¿Está la lectura del DVM dentro del valor especificado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>0,2 - 4,8 V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 10</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Consulte la   <I><A target="_blank" href="7C2_9E0.es.html#C9E0II">Sección 9E, Instrumentación/Información al conductor</A></I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Sustituya el ECM.</div>
+								<div>¿Se ha realizado la reparación?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 11</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">11</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Borre los DTCs utilizando el scanner.</Li>
+									<Li>Ponga en marcha el motor y déjelo en ralentí hasta que alcance la temperatura normal de funcionamiento.</Li>
+									<Li>Haga funcionar el vehículo en las condiciones requeridas para activar este DTC, según se especifica en esta sección.</Li>
+								</OL>
+								<div>¿Indica el scanner que este diagnóstico se ha realizado y superado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 12</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 2</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">12</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Compruebe si se activa algún otro DTC.</div>
+								<div>¿Se activa algún DTC no diagnosticado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Ir a la tabla de DTCs específica</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Sistema OK</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<P></P>
+<DIV align="center" id="C1F2P0463"><font size="4"><b>DTC P0463 - </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="C1F2FLSCH"><font size="4"><b>Alta tensión del circuito del sensor 1 de nivel de combustible</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="C1F2CD4"><b>descripción del circuito</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">El módulo de control electrónico del motor (ECM) utiliza la entrada de nivel de combustible del sensor de nivel de combustible para calcular las presiones de vapor dentro del sistema de combustible. La presión del vapor varía a medida que cambia el nivel de combustible. La presión del vapor es vital para determinar el sistema de emisiones de vapor (EVAP) está funcionando correctamente. El sensor de nivel de combustible se utiliza también para determinar si el nivel de combustible es demasiado alto o demasiado bajo para poder detectar con exactitud los fallos del sistema EVAP. Este código de diagnóstico de averías (DTC) detecta si el transmisor de nivel de combustible está agarrotado.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2CRD2"><b>Condiciones para la ejecución del DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>El motor esté en marcha.</Li>
+					<Li>La tensión de la batería está entre 11 V y 16 V.</Li>
+					<Li>Sin error en el sensor de velocidad del vehículo.</Li>
+					<Li>La diferencia entre el consumo de combustible calculado y el cambio de nivel de combustible medido es superior a 1 L.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2CSD4"><b>Condiciones para la activación del DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>La señal de nivel del depósito de combustible es superior a 4,2 V.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2ATWD4"><b>Acción realizada cuando se activa el DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>La luz testigo de fallo (MIL) se encenderá después de 3 ciclos de conducción válidos.</Li>
+					<Li>El ECM registrará las condiciones de funcionamiento en el momento de la avería. Esta información se almacenará en las memorias intermedias de datos instantáneos y registros de averías.</Li>
+					<Li>Se almacena un historial del DTC.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2CCM4"><b>Condiciones para borrar el DTC y apagar la MIL</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>La MIL se apagará después de tres o cuatro ciclos de conducción consecutivos en los que se efectúe el diagnóstico sin ningún fallo.</Li>
+					<Li>El historial del DTC se borrará después de efectuar 40 ciclos consecutivos de calentamiento sin ninguna avería.</Li>
+					<Li>El(los) DTC(s) puede(n) borrarse empleando un scanner.</Li>
+					<Li>Desconectando la alimentación de la batería del ECM durante 10 segundos.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2DA4"><b>Asistencia en el diagnóstico</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Revise los conectores de cableado para verificar si hay terminales desconectados-, mal acoplamiento, cierres rotos, terminales mal conformados o dañados y mala conexión entre el terminal - y- el cable.</div>
+				<div class="T1" align="left">Compruebe si el cableado está dañado.</div>
+				<div class="T1" align="left">Un sensor de nivel de combustible agarrotado puede hacer que se active el DTC. Si el DTC P0463 no puede reproducirse, la información incluida en los datos instantáneos puede resultar útil a la hora de determinar las condiciones de funcionamiento del vehículo cuando se activó el DTC por primera vez.</div>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="C1F2P04631"><font size="4"><b>DTC P0463 - Alta tensión del circuito del sensor 1 de nivel de combustible</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Paso</B></TD>
+<TD align="center"><B>Medida</B></TD>
+<TD align="center"><B>Valor(es)</B></TD>
+<TD align="center"><B>Sí</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Efectúe la comprobación del sistema de diagnóstico.</div>
+								<div>¿Se ha efectuado la comprobación?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Ir a   <A target="_blank" href="7C2_1F22.es.html#C1F2DSC">"Comprobación del sistema de diagnóstico"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Gire la llave de contacto a la posición ON.</Li>
+									<Li>Instale un scanner.</Li>
+									<Li>Haga funcionar el vehículo dentro de las condiciones de los datos instantáneos como se indica de esta sección.</Li>
+								</OL>
+								<div>¿Se activa el código de diagnostico de averías (DTC) P0463?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Ir a   <A target="_blank" href="7C2_1F22.es.html#C1F2DA">"Ayudas para el diagnóstico"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Desenchufe el conector eléctrico del transmisor de combustible de la bomba de combustible.</Li>
+									<Li>Mida con un polímetro (DVM) la tensión en el terminal 3 del circuito de señal.</Li>
+								</OL>
+								<div>¿Está la tensión dentro de los valores especificados?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>0,2 - 4,8 V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 6</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Compruebe si hay alguna conexión a masa incorrecta en el depósito de combustible y repárela si fuera necesario.</div>
+								<div>¿Es necesaria la reparación?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 11</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Retire el transmisor de combustible del depósito de combustible.</Li>
+									<Li>Vuelva a enchufar el conector eléctrico de la bomba de combustible.</Li>
+									<Li>Supervise con el scanner el parámetro del sensor de nivel de combustible mientras mueve el flotador del sensor de nivel de combustible de la posición de vacío a la posición de lleno.</Li>
+									<Li>Repita el procedimiento varias veces.</Li>
+								</OL>
+								<div>¿Aumenta el valor del sensor de nivel de combustible que se visualiza en el scanner y luego disminuye progresivamente cuando se mueve el flotador?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Ir a   <A target="_blank" href="7C2_1F22.es.html#C1F2DA">"Ayudas para el diagnóstico"</A>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Compruebe si hay alguna interrupción o cortocircuito con la tensión de la batería en el circuito del sensor de nivel de combustible y repárelo si fuera necesario.</div>
+								<div>¿Es necesaria la reparación?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 9</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repare la interrupción o el cortocircuito con la tensión de la batería en el circuito del sensor de nivel de combustible entre el conector del cableado del sensor de nivel de combustible y el sensor.</div>
+								<div>¿Se ha realizado la reparación?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 11</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Sustituya el conjunto del transmisor de combustible.</div>
+								<div>¿Se ha realizado la sustitución?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 11</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Vuelva a enchufar el conector eléctrico del transmisor de combustible.</Li>
+									<Li>Desenchufe el conector del módulo de control electrónico del motor (ECM).</Li>
+									<Li>Mida con un voltímetro (DVM) la tensión en el terminal 36 del circuito de señal.</Li>
+								</OL>
+								<div>¿Está la lectura del DVM dentro del valor especificado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>0,2 - 4,8 V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 10</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Consulte la   <I><A target="_blank" href="7C2_9E0.es.html#C9E0II">Sección 9E, Instrumentación/Información al conductor</A></I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Sustituya el ECM.</div>
+								<div>¿Se ha realizado la reparación?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 11</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">11</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Borre los DTCs utilizando el scanner.</Li>
+									<Li>Ponga en marcha el motor y déjelo en ralentí hasta que alcance la temperatura normal de funcionamiento.</Li>
+									<Li>Haga funcionar el vehículo en las condiciones requeridas para activar este DTC, según se especifica en esta sección.</Li>
+								</OL>
+								<div>¿Indica el scanner que este diagnóstico se ha realizado y superado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 12</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 2</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">12</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Compruebe si se activa algún otro DTC.</div>
+								<div>¿Se activa algún DTC no diagnosticado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Ir a la tabla de DTCs específica</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Sistema OK</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<P></P>
+<DIV align="center" id="C1F2P046C"><font size="4"><b>DTC P046C, P049D - </b></font></DIV>
+<P></P>
+		
+			<P></P>
+<DIV align="left" id="C1F2DD"><b>Descripción del DTC</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">  <B>DTC P046C: </B> Rendimiento del sensor de posición de recirculación de gases de escape (EGR)</div>
+				<div class="T1" align="left">  <B>DTC P049D: </B> Posición no memorizada de recirculación de gases de escape (EGR)</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2CD1"><b>descripción del circuito</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">El módulo de control del motor (ECM) utiliza el sensor de posición de recirculación de gases de escape (EGR) para determinar la posición de la válvula EGR. El ECM envía una tensión de referencia a través del circuito de referencia de 5 voltios al sensor de posición de EGR. El ECM suministra una vía de retorno de tensión para el sensor a través del circuito de referencia baja. Se envía una señal de tensión variable, basándose en la posición de la válvula EGR, desde el sensor hasta el ECM a través del circuito de señal del sensor de posición EGR. El ECM compara la posición real de EGR con la posición de EGR deseada cuando se ordena la apertura o el cierre de la válvula EGR.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2CRD5"><b>Condiciones para la ejecución del DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>La temperatura del motor se sitúa entre -0,15 °C y 8,85 °C.</Li>
+					<Li>La temperatura del aire de admisión es superior a -0,15°C.</Li>
+					<Li>La tensión de la batería está entre 10 y 16 V.</Li>
+					<Li>Sin errores en la fase de potencia de EGR, en el circuito eléctrico del sensor de posición de EGR, en la tensión de batería, el sensor ECT y el sensor IAT.</Li>
+					<Li>Llave de contacto en la posición ON con el motor apagado.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2CSD"><b>Condiciones para la activación del DTC</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">  <B>(P046C)</B>
+				</div>
+				<UL>
+					<Li>La diferencia entre la desviación de tensión para la señal de realimentación de posición de la válvula y la desviación de tensión tras finalizar el ciclo de calentamiento es superior a 0,249 V. O,</Li>
+					<Li>La diferencia entre la desviación de tensión para la señal de realimentación de posición de la válvula y el valor de desviación para la adaptación de funcionamiento es superior a 0,5 V.</Li>
+				</UL>
+				<div class="T1" align="left">  <B>(P049D)</B>
+				</div>
+				<UL>
+					<Li>El valor de desviación para adaptación de funcionamiento es superior a 2 V o inferior a 0,5 V.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2ATWD1"><b>Acción realizada cuando se activa el DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>La Luz SVS (Servicio de aviso del vehículo) se iluminará en cuanto se produzca un error.</Li>
+					<Li>El ECM registrará las condiciones de funcionamiento en el momento de la avería. Esta información quedará guardada en las memorias intermedias de registros de averías.</Li>
+					<Li>Se almacena un historial del DTC.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2CCM1"><b>Condiciones para borrar el DTC y apagar la MIL</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>El indicador de SVS se apagará después del ciclo de conducción actual en el que el diagnóstico se realice sin fallos.</Li>
+					<Li>El historial del DTC se borrará después de efectuar 20 ciclos consecutivos de calentamiento sin ninguna avería.</Li>
+					<Li>El(los) DTC(s) puede(n) borrarse empleando un scanner.</Li>
+					<Li>Desconectando la alimentación de la batería del ECM durante 10 segundos.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="C1F2P046C1"><font size="4"><b>DTC P046C, P049D</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Paso</B></TD>
+<TD align="center"><B>Medida</B></TD>
+<TD align="center"><B>Valor(es)</B></TD>
+<TD align="center"><B>Sí</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>¿Se ha realizado la comprobación del sistema de diagnóstico?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Ir a   <A target="_blank" href="7C2_1F22.es.html#C1F2DSC">"Comprobación del sistema de diagnóstico"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Observe con un scanner la información del DTC.</div>
+								<div>¿Se ha activado algún otro DTC?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Consulte la tabla de DTCs específica</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 3</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Compruebe si la válvula EGR presenta algún fallo mecánico.</div>
+								<div>¿Encontró y corrigió la anomalía?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 5</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Sustituya la válvula de EGR.</div>
+								<div>¿Se ha realizado la sustitución?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 5</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Borre con un scanner los DTCs.</Li>
+									<Li>Gire la llave de contacto a la posición OFF durante 30 segundos.</Li>
+									<Li>Haga funcionar el vehículo en las condiciones requeridas para la ejecución de este DTC. También puede hacer funcionar el vehículo en las condiciones observadas en los datos instantáneos/registros de averías.</Li>
+								</OL>
+								<div>¿No superó el DTC el encendido?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 6</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Compruebe si se activa algún otro DTC.</div>
+								<div>¿Se activa algún DTC no diagnosticado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Ir a la tabla de DTCs específica</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Sistema OK</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<P></P>
+<DIV align="center" id="C1F2P0489"><font size="4"><b>DTC P0489 - </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="C1F2EGRSC"><font size="4"><b>Baja tensión del circuito de control del solenoide de recirculación de gases de escape (EGR)</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="C1F2CD2"><b>descripción del circuito</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Se emplea un sistema de recirculación de gases -de escape (EGR) para reducir los niveles de las emisiones de óxidos de nitrógeno (NOx) que se producen debido a las altas temperaturas de combustión. Esto se consigue enviando de retorno pequeñas cantidades de gases de escape a la cámara de combustión. Cuando la mezcla de aire/combustible se diluye con los gases de escape, se reducen las temperaturas de la combustión.</div>
+				<div class="T1" align="left">Este sistema utiliza una válvula eléctrica de EGR. La válvula de EGR eléctrica está diseñada para suministrarle, con precisión, gases de escape al motor sin utilizar el vacío del colector de admisión. La válvula controla el flujo de escape que entra en el colector de admisión, procedente del colector de escape, a través de un orificio con una aguja que es controlada por el módulo de control electrónico del motor (ECM). El ECM controla la posición de la aguja mediante entradas procedentes de los sensores de posición del acelerador (TP) y de presión absoluta del colector de admisión (MAP). Entonces, el ECM le ordena a la válvula de EGR que funcione cuando sea necesario, mediante una señal de encendido por medio del ECM. Esto puede visualizarse en el scanner como posición de EGR deseada.</div>
+				<div class="T1" align="left">El ECM verifica el resultado de su orden mediante una señal de retroalimentación. Mediante el envío de una tensión de referencia de 5 voltios y la conexión a masa de la válvula de EGR se envía al ECM una señal de tensión que representa la posición de la aguja de dicha válvula. Esta señal de retroalimentación también puede observarse en el scanner y representa la posición real de la aguja de la válvula de EGR. La posición de EGR real debe estar siempre cerca de la posición de EGR asignada o deseada.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2CSDT2"><b>Condiciones para la activación del DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>El controlador IC comprueba la corriente y la tensión de la fase de salida.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2ATWD2"><b>Acción realizada cuando se activa el DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>La luz testigo de fallo (MIL) se encenderá después de 3 ciclos de conducción válidos.</Li>
+					<Li>El ECM registrará las condiciones de funcionamiento en el momento de la avería. Esta información se almacenará en las memorias intermedias de datos instantáneos y registros de averías.</Li>
+					<Li>Se almacena un historial del DTC.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2CCMD2"><b>Condiciones para borrar el DTC y apagar la MIL</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>La MIL se apagará después de tres o cuatro ciclos de conducción consecutivos en los que se efectúe el diagnóstico sin ningún fallo.</Li>
+					<Li>El historial del DTC se borrará después de efectuar 40 ciclos consecutivos de calentamiento sin ninguna avería.</Li>
+					<Li>El(los) DTC(s) puede(n) borrarse empleando un scanner.</Li>
+					<Li>Desconectando la alimentación de la batería del ECM durante 10 segundos.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="C1F2P04891"><font size="4"><b>DTC P0489 - Baja tensión del circuito de control del solenoide de recirculación de los gases de escape (EGR)</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Paso</B></TD>
+<TD align="center"><B>Medida</B></TD>
+<TD align="center"><B>Valor(es)</B></TD>
+<TD align="center"><B>Sí</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Efectúe la comprobación del sistema de diagnóstico.</div>
+								<div>¿Se ha efectuado la comprobación?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Ir a   <A target="_blank" href="7C2_1F22.es.html#C1F2DSC">"Comprobación del sistema de diagnóstico"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Gire la llave de contacto a la posición LOCK.</Li>
+									<Li>Desenchufe el conector de solenoide del EGR.</Li>
+									<Li>Compruebe si hay una interrupción o una derivación a masa en el cable entre el terminal E del conector EGR y el terminal 87 del relé principal.</Li>
+									<Li>Compruebe si hay alguna interrupción o derivación a masa en el cable entre el terminal A del conector del EGR y el terminal 37 del conector J2 del ECM.</Li>
+								</OL>
+								<div>¿Se ha encontrado la avería?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Repare el cable o el terminal del conector si fuera necesario.</Li>
+									<Li>Borre los DTCs utilizando el scanner.</Li>
+									<Li>Efectúe la comprobación del sistema de diagnóstico.</Li>
+								</OL>
+								<div>¿Se ha realizado la reparación?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Sistema OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Enchufe el conector de solenoide del VGIS.</Li>
+									<Li>Gire la llave de contacto a la posición ON.</Li>
+									<Li>Utilizando el voltímetro digital (DVM), mida la tensión entre el terminal A del conector EGR y el borne positivo de la batería.</Li>
+								</OL>
+								<div>¿Está la tensión dentro de los valores especificados?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>12~13V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Sustituya la válvula de EGR.</Li>
+									<Li>Borre los DTCs utilizando el scanner.</Li>
+									<Li>Efectúe la comprobación del sistema de diagnóstico.</Li>
+								</OL>
+								<div>¿Se ha realizado la reparación?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Sistema OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Sustituya el ECM.</Li>
+									<Li>Efectúe la comprobación del sistema de diagnóstico.</Li>
+								</OL>
+								<div>¿Se ha realizado la reparación?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Sistema OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<P></P>
+<DIV align="center" id="C1F2P0490"><font size="4"><b>DTC P0490 - </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="C1F2EGRSC1"><font size="4"><b>Alta tensión del circuito de control del solenoide de recirculación de gases de escape (EGR)</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="C1F2CD5"><b>descripción del circuito</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Se emplea un sistema de recirculación de gases -de escape (EGR) para reducir los niveles de las emisiones de óxidos de nitrógeno (NOx) que se producen debido a las altas temperaturas de combustión. Esto se consigue enviando de retorno pequeñas cantidades de gases de escape a la cámara de combustión. Cuando la mezcla de aire/combustible se diluye con los gases de escape, se reducen las temperaturas de la combustión.</div>
+				<div class="T1" align="left">Este sistema utiliza una válvula eléctrica de EGR. La válvula de EGR eléctrica está diseñada para suministrarle, con precisión, gases de escape al motor sin utilizar el vacío del colector de admisión. La válvula controla el flujo de escape que entra en el colector de admisión, procedente del colector de escape, a través de un orificio con una aguja que es controlada por el módulo de control electrónico del motor (ECM). El ECM controla la posición de la aguja mediante entradas procedentes de los sensores de posición del acelerador (TP) y de presión absoluta del colector de admisión (MAP). Entonces, el ECM le ordena a la válvula de EGR que funcione cuando sea necesario, mediante una señal de encendido por medio del ECM. Esto puede visualizarse en el scanner como posición de EGR deseada.</div>
+				<div class="T1" align="left">El ECM verifica el resultado de su orden mediante una señal de retroalimentación. Mediante el envío de una tensión de referencia de 5 voltios y la conexión a masa de la válvula de EGR se envía al ECM una señal de tensión que representa la posición de la aguja de dicha válvula. Esta señal de retroalimentación también puede observarse en el scanner y representa la posición real de la aguja de la válvula de EGR. La posición de EGR real debe estar siempre cerca de la posición de EGR asignada o deseada.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2CSDT5"><b>Condiciones para la activación del DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>El controlador IC comprueba la corriente y la tensión de la fase de salida.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2ATWD5"><b>Acción realizada cuando se activa el DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>La luz testigo de fallo (MIL) se encenderá después de 3 ciclos de conducción válidos.</Li>
+					<Li>El ECM registrará las condiciones de funcionamiento en el momento de la avería. Esta información se almacenará en las memorias intermedias de datos instantáneos y registros de averías.</Li>
+					<Li>Se almacena un historial del DTC.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2CCMD5"><b>Condiciones para borrar el DTC y apagar la MIL</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>La MIL se apagará después de tres o cuatro ciclos de conducción consecutivos en los que se efectúe el diagnóstico sin ningún fallo.</Li>
+					<Li>El historial del DTC se borrará después de efectuar 40 ciclos consecutivos de calentamiento sin ninguna avería.</Li>
+					<Li>El(los) DTC(s) puede(n) borrarse empleando un scanner.</Li>
+					<Li>Desconectando la alimentación de la batería del ECM durante 10 segundos.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="C1F2P04901"><font size="4"><b>DTC P0490 - Tensión alta en el circuito de control del solenoide de recirculación de los gases de escape (EGR)</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Paso</B></TD>
+<TD align="center"><B>Medida</B></TD>
+<TD align="center"><B>Valor(es)</B></TD>
+<TD align="center"><B>Sí</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Efectúe la comprobación del sistema de diagnóstico.</div>
+								<div>¿Se ha efectuado la comprobación?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Ir a   <A target="_blank" href="7C2_1F22.es.html#C1F2DSC">"Comprobación del sistema de diagnóstico"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Gire la llave de contacto a la posición LOCK.</Li>
+									<Li>Desenchufe el conector de solenoide del EGR.</Li>
+									<Li>Compruebe si hay un cortocircuito con tensión en el cable entre el terminal E del conector EGR y el terminal 87 del relé principal.</Li>
+									<Li>Compruebe si hay un cortocircuito con la batería en el cable entre el terminal A del conector del EGR y el terminal 37 del conector J2 del ECM.</Li>
+								</OL>
+								<div>¿Se ha encontrado la avería?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Repare el cable o el terminal del conector si fuera necesario.</Li>
+									<Li>Borre los DTCs utilizando el scanner.</Li>
+									<Li>Efectúe la comprobación del sistema de diagnóstico.</Li>
+								</OL>
+								<div>¿Se ha realizado la reparación?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Sistema OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Enchufe el conector de solenoide del VGIS.</Li>
+									<Li>Gire la llave de contacto a la posición ON.</Li>
+									<Li>Utilizando el voltímetro digital (DVM), mida la tensión entre el terminal A del conector EGR y el borne positivo de la batería.</Li>
+								</OL>
+								<div>¿Está la tensión dentro de los valores especificados?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>12~13V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Sustituya la válvula de EGR.</Li>
+									<Li>Borre los DTCs utilizando el scanner.</Li>
+									<Li>Efectúe la comprobación del sistema de diagnóstico.</Li>
+								</OL>
+								<div>¿Se ha realizado la reparación?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Sistema OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Sustituya el ECM.</Li>
+									<Li>Efectúe la comprobación del sistema de diagnóstico.</Li>
+								</OL>
+								<div>¿Se ha realizado la reparación?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Sistema OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<P></P>
+<DIV align="center" id="C1F2P0506"><font size="4"><b>DTC P0506 - </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="C1F2ISL"><font size="4"><b>Velocidad de ralentí baja</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="C1F2CD6"><b>descripción del circuito</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">El motor de control del actuador de la mariposa (TAC) es un motor CC que forma parte del conjunto del cuerpo de la mariposa. El motor TAC impulsa la válvula de la mariposa. El módulo de control del motor (ECM) controla el motor TAC basándose en la entrada del sensor de posición de la mariposa. La velocidad de ralentí se controla mediante el ECM, basándose en diferentes entradas. El ECM ordena al motor TAC que abra o cierre la válvula de la mariposa para mantener la velocidad de ralentí deseada. Si el ECM detecta que la velocidad de ralentí real y la velocidad de ralentí deseada no están dentro de unos valores predeterminados, se activa este DTC.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2CRD3"><b>Condiciones para la ejecución del DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>La condición de ralentí de flujo de aire es igual al valor máximo.</Li>
+					<Li>La carga del motor es inferior al 35%.</Li>
+					<Li>La temperatura del refrigerante del motor es superior a 70°C.</Li>
+					<Li>La temperatura del aire de admisión es superior a -7,5°C.</Li>
+					<Li>La velocidad del vehículo es de 0 km/h.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2CSDT14"><b>Condiciones para la activación del DTC</b></DIV>
+<P></P>
+			
+				<UL>
+<Li>El valor de RPM de ralentí objetivo menos las RPM reales es inferior a 100 rpm.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2ATWD14"><b>Acción realizada cuando se activa el DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>La luz testigo de fallo (MIL) se encenderá después de 3 ciclos de conducción válidos.</Li>
+					<Li>El ECM registrará las condiciones de funcionamiento en el momento de la avería. Esta información se almacenará en las memorias intermedias de datos instantáneos y registros de averías.</Li>
+					<Li>Se almacena un historial del DTC.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2CCM"><b>Condiciones para borrar el DTC y apagar la MIL</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>La MIL se apagará después de tres o cuatro ciclos de conducción consecutivos en los que se efectúe el diagnóstico sin ningún fallo.</Li>
+					<Li>El historial del DTC se borrará después de efectuar 40 ciclos consecutivos de calentamiento sin ninguna avería.</Li>
+					<Li>El(los) DTC(s) puede(n) borrarse empleando un scanner.</Li>
+					<Li>Desconectando la alimentación de la batería del ECM durante 10 segundos.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2DA14"><b>Asistencia en el diagnóstico</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Para un problema intermitente, consulte   <A target="_blank" href="7C2_1F2O.es.html#C1F2INTER">"Averías intermitentes".</A>
+				</div>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="C1F2P05061"><font size="4"><b>DTC P0506 - Velocidad de ralentí baja</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Paso</B></TD>
+<TD align="center"><B>Medida</B></TD>
+<TD align="center"><B>Valor(es)</B></TD>
+<TD align="center"><B>Sí</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>¿Se ha realizado la comprobación del sistema de diagnóstico?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Ir a   <A target="_blank" href="7C2_1F2.es.html#C1F2DSC">"Comprobación del sistema de diagnóstico"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<div>¿Hay algún DTC activado para el control del actuador de la mariposa (TAC), sensor de posición de la mariposa (TP) o del sensor de posición del pedal acelerador?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Consulte la tabla de DTCs específica</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 3</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Ponga el motor en marcha.</Li>
+									<Li>Ordene al motor que suba su régimen hasta 1.400 RPM, baje a 600 RPM, suba a 1.400 RPM y después salga utilizando el scanner.</Li>
+								</OL>
+								<div>¿El régimen real del motor está dentro del valor especificado del régimen de motor ordenado con cada comando?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>100 RPM</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Observe los datos instantáneos/registros de averías para este DTC.</Li>
+									<Li>Gire la llave de contacto a la posición OFF durante 30 segundos.</Li>
+									<Li>Ponga el motor en marcha.</Li>
+									<Li>Haga funcionar el vehículo en las condiciones requeridas para establece este DTC. También puede hacer funcionar el vehículo en las condiciones observadas en los datos instantáneos/registros de averías.</Li>
+								</OL>
+								<div>¿No superó el DTC el encendido?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 5</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Ir a   <A target="_blank" href="7C2_1F2O.es.html#C1F2INTER">"Averías intermitentes".</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<div>¿El régimen del motor es superior al valor especificado por encima de las RPM deseadas?</div>
+								<div>¿Encontró y corrigió la anomalía?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>100 RPM</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 7</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li value="1">Inspeccione o compruebe las siguientes anomalías:</Li>
+									<UL>
+<Li>Fugas de vacío en el motor.</Li>
+										<Li>La válvula de la mariposa para su correcto funcionamiento - Una válvula de mariposa que no se cierre correctamente activará este DTC.</Li>
+										<Li>El correcto funcionamiento del sistema de ventilación de la caja del cigüeñal.</Li>
+									</UL>
+									<Li value="5">Repare la avería si fuera necesario.</Li>
+								</OL>
+								<div>¿Se ha realizado la reparación?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 8</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li value="1">Compruebe las siguientes anomalías:</Li>
+									<UL>
+<Li>Depósitos excesivos en el cuerpo de la mariposa.</Li>
+										<Li>Una carga parásita del motor - Por ejemplo, un problema de transmisión o un problema de accesorio controlado por la correa.</Li>
+									</UL>
+									<Li value="3">Repare la avería si fuera necesario.</Li>
+								</OL>
+								<div>¿Se ha realizado la reparación?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 8</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Borre con un scanner los DTCs.</Li>
+									<Li>Gire la llave de contacto a la posición OFF durante 30 segundos.</Li>
+									<Li>Ponga el motor en marcha.</Li>
+									<Li>Haga funcionar el vehículo en las condiciones requeridas para establece este DTC. También puede hacer funcionar el vehículo en las condiciones observadas en los datos instantáneos/registros de averías.</Li>
+								</OL>
+								<div>¿No superó el DTC el encendido?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 9</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Compruebe si se activa algún otro DTC.</div>
+								<div>¿Se activa algún DTC no diagnosticado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Ir a la tabla de DTCs específica</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Sistema OK</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<P></P>
+<DIV align="center" id="C1F2P0507"><font size="4"><b>DTC P0507 - </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="C1F2ISH"><font size="4"><b>Velocidad de ralentí alta</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="C1F2CD15"><b>descripción del circuito</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">El motor de control del actuador de la mariposa (TAC) es un motor CC que forma parte del conjunto del cuerpo de la mariposa. El motor TAC impulsa la válvula de la mariposa. El módulo de control del motor (ECM) controla el motor TAC basándose en la entrada del sensor de posición de la mariposa. La velocidad de ralentí se controla mediante el ECM, basándose en diferentes entradas. El ECM ordena al motor TAC que abra o cierre la válvula de la mariposa para mantener la velocidad de ralentí deseada. Si el ECM detecta que la velocidad de ralentí real y la velocidad de ralentí deseada no están dentro de unos valores predeterminados, se activa este DTC.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2CRD4"><b>Condiciones para la ejecución del DTC</b></DIV>
+<P></P>
+			
+				<UL>
+<Li>El flujo de aire de la condición de ralentí es igual al valor mínimo.</Li>
+					<Li>La temperatura del refrigerante del motor es superior a 70°C.</Li>
+					<Li>La temperatura del aire de admisión es superior a -7,5°C.</Li>
+					<Li>La velocidad del vehículo es de 0 km/h.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2CSDT15"><b>Condiciones para la activación del DTC</b></DIV>
+<P></P>
+			
+				<UL>
+<Li>El valor de RPM de ralentí objetivo menos las RPM reales es inferior a -200 rpm.</Li>
+					<Li>Se produce un corte de combustible en más de 3 ocasiones.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2ATWD15"><b>Acción realizada cuando se activa el DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>La luz testigo de fallo (MIL) se encenderá después de 3 ciclos de conducción válidos.</Li>
+					<Li>El ECM registrará las condiciones de funcionamiento en el momento de la avería. Esta información se almacenará en las memorias intermedias de datos instantáneos y registros de averías.</Li>
+					<Li>Se almacena un historial del DTC.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2CCMD15"><b>Condiciones para borrar el DTC y apagar la MIL</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>La MIL se apagará después de tres o cuatro ciclos de conducción consecutivos en los que se efectúe el diagnóstico sin ningún fallo.</Li>
+					<Li>El historial del DTC se borrará después de efectuar 40 ciclos consecutivos de calentamiento sin ninguna avería.</Li>
+					<Li>El(los) DTC(s) puede(n) borrarse empleando un scanner.</Li>
+					<Li>Desconectando la alimentación de la batería del ECM durante 10 segundos.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="C1F2DA15"><b>Asistencia en el diagnóstico</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Para un problema intermitente, consulte   <A target="_blank" href="7C2_1F2O.es.html#C1F2INTER">"Averías intermitentes".</A>
+				</div>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="C1F2P05071"><font size="4"><b>DTC P0507 - Velocidad de ralentí alta</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Paso</B></TD>
+<TD align="center"><B>Medida</B></TD>
+<TD align="center"><B>Valor(es)</B></TD>
+<TD align="center"><B>Sí</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>¿Se ha realizado la comprobación del sistema de diagnóstico?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Ir a   <A target="_blank" href="7C2_1F22.es.html#C1F2DSC">"Comprobación del sistema de diagnóstico"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<div>¿Hay algún DTC activado para el control del actuador de la mariposa (TAC), sensor de posición de la mariposa (TP) o del sensor de posición del pedal acelerador?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Consulte la tabla de DTCs específica</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 3</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Ponga el motor en marcha.</Li>
+									<Li>Ordene al motor que suba su régimen hasta 1.400 RPM, baje a 600 RPM, suba a 1.400 RPM y después salga utilizando el scanner.</Li>
+								</OL>
+								<div>¿El régimen real del motor está dentro del valor especificado del régimen de motor ordenado con cada comando?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>100 RPM</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Observe los datos instantáneos/registros de averías para este DTC.</Li>
+									<Li>Gire la llave de contacto a la posición OFF durante 30 segundos.</Li>
+									<Li>Ponga el motor en marcha.</Li>
+									<Li>Haga funcionar el vehículo en las condiciones requeridas para establece este DTC. También puede hacer funcionar el vehículo en las condiciones observadas en los datos instantáneos/registros de averías.</Li>
+								</OL>
+								<div>¿No superó el DTC el encendido?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 5</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Ir a   <A target="_blank" href="7C2_1F2O.es.html#C1F2INTER">"Averías intermitentes".</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<div>¿El régimen del motor es superior al valor especificado por encima de las RPM deseadas?</div>
+								<div>¿Encontró y corrigió la anomalía?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>100 RPM</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 7</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li value="1">Inspeccione o compruebe las siguientes anomalías:</Li>
+									<UL>
+<Li>Fugas de vacío en el motor.</Li>
+										<Li>La válvula de la mariposa para su correcto funcionamiento - Una válvula de mariposa que no se cierre correctamente activará este DTC.</Li>
+										<Li>El correcto funcionamiento del sistema de ventilación de la caja del cigüeñal.</Li>
+									</UL>
+									<Li value="5">Repare la avería si fuera necesario.</Li>
+								</OL>
+								<div>¿Se ha realizado la reparación?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 8</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li value="1">Compruebe las siguientes anomalías:</Li>
+									<UL>
+<Li>Depósitos excesivos en el cuerpo de la mariposa.</Li>
+										<Li>Una carga parásita del motor - Por ejemplo, un problema de transmisión o un problema de accesorio controlado por la correa.</Li>
+									</UL>
+									<Li value="3">Repare la avería si fuera necesario.</Li>
+								</OL>
+								<div>¿Se ha realizado la reparación?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 8</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Borre con un scanner los DTCs.</Li>
+									<Li>Gire la llave de contacto a la posición OFF durante 30 segundos.</Li>
+									<Li>Ponga el motor en marcha.</Li>
+									<Li>Haga funcionar el vehículo en las condiciones requeridas para establece este DTC. También puede hacer funcionar el vehículo en las condiciones observadas en los datos instantáneos/registros de averías.</Li>
+								</OL>
+								<div>¿No superó el DTC el encendido?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Vaya al   <I>Paso 9</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Compruebe si se activa algún otro DTC.</div>
+								<div>¿Se activa algún DTC no diagnosticado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Ir a la tabla de DTCs específica</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Sistema OK</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+<BR><BR><TABLE align="center"><TR>
+<TD align="left"><A href="7C2_1F2A.es.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_back.gif" alt="A la página anterior"></A></TD>
+<TD align="left"></TD>
+<TD align="left"><A href="7C2_1F2C.es.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_next.gif" alt="A la página siguiente"></A></TD>
+<TD></TD>
+</TR></TABLE>
+<TABLE width="100%"><TBODY><TR BGCOLOR="DarkSlateBlue" align="center"><TD><FONT color="white"><B>© Copyright Chevrolet Europe. Reservados todos los derechos</B></FONT></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>

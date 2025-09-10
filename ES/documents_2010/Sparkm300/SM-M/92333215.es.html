@@ -1,0 +1,146 @@
+<HTML>
+<head><link rel="stylesheet" type="text/css" href="si-style.css"/><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><TITLE>Información de servicio</TITLE><STYLE>
+	.ListIndentBul2Refer{margin-left : 40pt}  ..ListIndentBul2{margin-left : -20pt}
+	.SubListIndent{margin-left : -15pt}
+	.UpNo{border-top : white}  .DownNo{border-bottom : white}  ..BothNo{border-top : white; border-bottom : white}
+	.UpBold{border-top : thin double ridge}  .DownBold{border-bottom : thin double ridge}  .BothBold{border-top : thin double ridge; border-bottom : thin double ridge}
+	.ImageIndent{margin-left : 0%}  .ImageTitleIndent{margin-left : 5%}  .ParagraphIndent{margin-left : 20pt}
+	.Arial{font-family : Arial, Helvetica, sans-serif; margin-left : 10pt; margin-right : 10pt}
+</STYLE>
+<SCRIPT LANGUAGE="JavaScript">
+	function FixMenu()
+	{
+		menuTop = document.body.scrollTop + document.body.clientHeight -40;
+		menu.style.top = menuTop;
+		menu.style.width = document.body.clientWidth; 
+	}
+</SCRIPT>
+</HEAD>
+<BODY class="Arial" onLoad="FixMenu()" onScroll="FixMenu()" onResize="FixMenu()" BGCOLOR="#FFFFFF">
+<SPAN ID="menu" STYLE="position:absolute; left:0px; top:0px; width:0px">
+	<A border="0" href="92333215.es.html">
+	<IMG src="../../../../graphic-pool/Icons/Totop.gif" align="right" halign="Bottom" border="0" alt="Volver arriba"></A>
+</SPAN>
+<TABLE CELLSPACING="0"  width="100%" BORDER="1" rules="none" cellspacing="0" cellpadding="0" style="magin-top: 5pt">
+<TBODY>
+<TR BGCOLOR="cccc99" height="15">
+<TD width="30%"><div style="padding-left: 5pt"><B><FONT face="Arial">Spark</FONT></B></div></TD>
+<TD width="70%" align="right" colspan="8"></TD>
+</TR>
+<TR BGCOLOR="white" height="60">
+<TD width="35%" align="left">
+<TABLE CELLSPACING="0" >
+<TR>
+<TD width="5%" align="left">&nbsp;</TD>
+<TD width="5%" align="left"></TD>
+<TD width="5%" align="left">&nbsp;</TD>
+</TR>
+</TABLE>
+</TD>
+<TD>
+<TABLE CELLSPACING="0"  width="65%" align="right">
+<TR>
+<TD style="font-size:10">
+	<A href="../../../GMDE_TIS_START.html" target="_top">
+	<IMG src="../../code/menu-images/home.gif" border="0" alt="Página de inicio de GMDE">
+</A></TD>
+<TD style="font-size:10">
+	<A href="../toc_Spark.html" target="menu"><IMG src="../../code/menu-images/static-TOC.gif" border="0" alt="Subir estadísticas TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../toc_Spark_code.html" target="code"><IMG src="../../code/menu-images/menu_folder_open.gif" border="0" alt="Subir dinámica TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../../help/readme_EN.htm" target="top" class="bottom_copyright"><IMG src="../../code/menu-images/help.gif" border="0" alt="¿Ayuda?"></A>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+<H2>DTC U0001</H2>
+
+
+<A NAME="ss1-2333215">
+<A HREF="#ss1-2333215">
+<H3>Instrucciones de diagnóstico</H3></A>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Lleve a cabo <a href="92336379.es.html">Comprobación del sistema de diagnóstico - Vehículo</a> antes de usar el procedimiento de diagnóstico.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Revise <a href="92336368.es.html">Diagnosis basada en estrategia</a> para tener una panorámica del enfoque de diagnóstico.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top"> <a href="92336371.es.html">Instrucciones del procedimiento de diagnóstico</a> proporciona una panorámica de cada categoría de diagnóstico.</td></tr></table></div>
+
+
+<A NAME="ss2-2333215">
+<A HREF="#ss2-2333215">
+<H3>Descripción de DTC</H3></A><B>Códigos de avería&nbsp;U0001:&nbsp;</B>Mal funcionamiento del bus CAN de alta velocidad<br><br>
+<A NAME="ss3-2333215">
+<A HREF="#ss3-2333215">
+<H3>Descripción de circuito</H3></A><p>Módulos conectados a los circuitos de datos de serie GMLAN controlan comunicaciones de datos de serie en la red GMLAN durante el funcionamiento normal del vehículo. Entre los módulos se intercambian comandos e información operativa. Cada módulo de la red GMLAN mantiene un contador de errores de transmisión (TEC) y un contador de errores de recepción (REC). Los valores de contador aumentan con errores detectados y se reducen con mensajes sin errores. Si el valor TEC es superior a 255, el controlador se retira de la red y se activará un DTC&nbsp;U0001.</p>
+
+<A NAME="ss4-2333215">
+<A HREF="#ss4-2333215">
+<H3>Condiciones para la activación de DTC</H3></A>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">La tensión alimentada al módulo está dentro del intervalo de tensión operativa normal.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">El modo de potencia del vehículo requiere que se produzca la comunicación de datos serie.</td></tr></table></div>
+
+
+<A NAME="ss5-2333215">
+<A HREF="#ss5-2333215">
+<H3>Condiciones para ajustar el DTC</H3></A><p>El módulo ha detectado un determinado número de mensajes inválidos transmitidos en los circuitos de datos de serie GMLAN.</p>
+
+<A NAME="ss6-2333215">
+<A HREF="#ss6-2333215">
+<H3>Acción realizada cuando el DTC se ajusta</H3></A>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">El módulo suspende la transmisión de todos los mensajes.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">El módulo utiliza valores por defecto para todos los parámetros recibidos en los circuitos de datos de serie GMLAN.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">El módulo impide que se activen todos los demás códigos de avería de comunicación GMLAN.</td></tr></table></div>
+
+
+<A NAME="ss7-2333215">
+<A HREF="#ss7-2333215">
+<H3>Condiciones para el borrar el DTC</H3></A>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Un DTC actual se borra cuando ya no existe la avería.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Un DTC del historial se borra cuando el contador del ciclo de encendido del módulo alcanza el umbral de reinicio sin que se repita una avería.</td></tr></table></div>
+
+
+<A NAME="ss8-2333215">
+<A HREF="#ss8-2333215">
+<H3>Ayuda al diagnóstico</H3></A>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Este DTC no puede recuperarse con un estado actual. El diagnóstico del DTC actual se realiza a través del síntoma &quot;la herramienta de diagnóstico no se comunica con el dispositivo GMLAN&quot;. Consultar <a href="92333351.es.html">La herramienta de diagnóstico no se comunica con el dispositivo GMLAN de alta velocidad</a> .</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Es probable que un estado intermitente se deba a un cortocircuito en los circuitos de datos de serie GMLAN. Utilice el procedimiento &quot;la herramienta de diagnóstico no se comunica con el dispositivo GMLAN&quot; para aislar un estado intermitente. Consultar <a href="92333351.es.html">La herramienta de diagnóstico no se comunica con el dispositivo GMLAN de alta velocidad</a> .</td></tr></table></div>
+
+
+<A NAME="ss9-2333215">
+<A HREF="#ss9-2333215">
+<H3>Información de referencia</H3></A><h4>Referencia esquemática</h4><p>
+<a href="92260233.es.html">Esquemas de comunicación de datos</a></p>
+<h4>Referencia de vista del extremo del conector</h4><p>
+<a href="92264997.es.html">Vista del extremo del conector del componente</a></p>
+<h4>Descripción y funcionamiento</h4><p>
+<a href="92333384.es.html">Descripción y funcionamiento de las comunicaciones de enlace de datos</a></p>
+<h4>Referencia de información eléctrica</h4>
+<p><div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a href="91506352.es.html">Prueba del circuito</a> </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a href="91465833.es.html">Reparaciones del conector</a> </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a href="92161319.es.html">Compruebe si hay problemas intermitentes o conexiones deficientes</a> </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a href="92160816.es.html">Reparaciones de los cableados</a> </td></tr></table></div>
+</p>
+<h4>Referencias de herramienta de diagnóstico</h4><p> <a href="92334085.es.html">Referencias del módulo de control</a> para información de herramienta de diagnóstico</p>
+
+
+
+
+<TABLE CELLSPACING="0"  align="center"><TR>
+<TD align="left">&nbsp;</TD>
+<TD align="left"></TD>
+<TD align="left">&nbsp;</TD>
+<TD></TD>
+</TR></TABLE>
+<BR><BR><TABLE CELLSPACING="0"  width="100%"><TBODY><TR BGCOLOR="DarkSlateBlue" align="center"><TD><FONT color="white"><B>© Copyright Chevrolet Europe. All rights reserved</B></FONT></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>

@@ -1,0 +1,735 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8" />
+<title>Globales Diagnose System</title>
+<link rel="stylesheet" type="text/css" href="mdiprint.css" media="print" />
+<!-- Version 2.0.16 with all screenshots and Export Function explanation (Snapshot) -->
+
+<style type="text/css">
+	  <!--
+	div.all { margin-top:2px; margin-left:2px; margin-right:auto }
+	  
+.style1 { text-align: center;
+}
+.style2 {
+	border-style: solid;
+	border-color: black;
+	border-width: 1px;
+}
+.style3 {
+	border: 1px solid black;
+}
+.tableinsert {
+	vertical-align: top;
+	text-indent: 20px;
+}
+.caution {
+	padding: 10px;
+	margin: 0px;
+	border-color: #0000FF;
+	border-style: outset;
+	border-width: 1px 4px 4px 4px;
+	border-left: 1px solid #808080;
+	border-top: 1px solid #808080;
+	background-color: #FFCCCC;
+}
+.important {
+	padding: 10px;
+	margin: 0px;
+	border-color: #0000FF;
+	border-style: outset;
+	border-width: 1px 4px 4px 4px;
+	border-left: 1px solid #808080;
+	border-top: 1px solid #808080;
+	background-color: #FFCCCF;
+}
+.note {
+	padding: 10px;
+	margin: 0px;
+	border-color: #0000FF;
+	border-style: outset;
+	border-width: 1px 4px 4px 4px;
+	border-left: 1px solid #808080;
+	border-top: 1px solid #808080;
+	background-color: #99CCFF;
+}
+.notice {
+	padding: 10px;
+	margin: 0px;
+	border-color: #808080 #666666 #666666 #808080;
+	border-style: solid outset outset solid;
+	border-width: 1px 4px 4px 4px;
+	border-left: 1px solid #808080;
+	border-top: 1px solid #808080;
+	background-color: #C0C0C0;}
+
+* {
+	font-family:arial,sans-serif;}
+
+
+
+-->
+</style>
+</head>
+<body><div class="all">
+
+ <h1 align="center">Globales Diagnose System</h1>
+ <h1>Inhaltsverzeichnis</h1>
+ <ol>
+ <li><a href="#intro">Einleitung</a></li>
+ <li><a href="#product_description">Produktbeschreibung</a></li>
+ <li><a href="#installation">GDS Installation</a></li>
+ <li><a href="#getting_started">Inbetriebnahme</a></li>
+ <li><a href="#navigation">Allgemeine Bedienung</a></li>
+ <li><a href="#diagnostics">Diagnoseanwendungen</a></li>
+ <li><a href="#troubleshooting">Fehlersuche</a></li>
+ </ol>
+ <hr />
+
+  <h1><a name="intro"></a>Einleitung</h1>
+ <h2>GDS Benutzerhandbuch</h2>
+ <p>Das Benutzerhandbuch bietet eine Übersicht über das Globale Diagnose System (GDS).</p>
+ <p>Der Inhalt dieses Handbuchs beruht auf den zum Zeitpunkt der Drucklegung zur Verfügung stehenden, neuesten Produktinformationen.<!--j-->&nbsp;<!--j-->Das Recht auf Änderungen ohne Vorankündigung bleibt jederzeit vorbehalten.</p>
+ <p>Kein Bestandteil dieser Publikation darf in irgendeiner Form vervielfältigt, in einem Abfragesystem gespeichert oder übertragen werden, sei es auf elektronische oder mechanische Weise oder durch Fotokopie, Aufnahme oder sonstige Art ohne die vorherige schriftliche Zustimmung der General Motors Europe.<!--j-->&nbsp;<!--j-->Dies gilt für auch für den Text, die Illustrationen und die Tabellen in dieser Publikation.</p>
+ <p>Genehmigungen sind zu beantragen bei:</p>
+ <p>General Motors Corporation<br />
+Service and Parts Operations<br />
+Product Engineering <br />
+37350 Ecorse Road <br />
+Romulus, MI 48174-1376 <br />
+USA</p>
+ <p>© 2008 GM Service and Parts Operation.<!--j-->&nbsp;<!--j-->Made in the U.S.A.<!--j-->&nbsp;<!--j-->Alle Rechte vorbehalten.</p>
+ <hr />
+
+  <h2>Allgemein </h2>
+ <p>
+Das GDS dient zur Diagnose und Reparatur von Kfz-Elektroniksystemen durch geschulte Servicemitarbeiter.<!--j-->&nbsp;<!--j-->
+
+Es wurden alle Anstrengungen unternommen, um die vorliegenden technischen Informationen auf Grundlage der zum Zeitpunkt der Drucklegung werkseitig verfügbaren Daten so vollständig und exakt wie möglich wiederzugeben.<!--j-->&nbsp;<!--j-->
+Dennoch bleibt das Recht auf Änderungen ohne Vorankündigung jederzeit vorbehalten.</p>
+ <p>
+Bevor Sie das GDS in Betrieb nehmen, machen Sie sich bitte mit dem GDS sowie dessen Möglichkeiten vertraut, indem Sie dieses Benutzerhandbuch durchlesen.</p>
+ <p>GDS bietet die folgenden Hauptfunktionen:</p>
+ <ul>
+ <li>Fehlercode auslesen</li>
+ <li>Steuergerätekennung auslesen</li>
+ <li>Datenlistenparameter auslesen und grafisch anzeigen</li>
+ <li>Schnappschuss aufzeichnen und speichern</li>
+ <li>Stellgliedtests</li>
+ <li>Konfiguration und Zurücksetzen von Steuergeräten</li>
+ <li>Aufzeichnung von Diagnoseprotokollen</li>
+ <li>Speichern von Daten aus Diagnosesitzungen</li>
+ </ul>
+
+  <table width="80%" border="0">
+ <tr>
+ <td class="important">
+ <b><!--j-->Wichtig<!--j-->:<!--j--></b><br />
+Die SPS Programmierung von Fahrzeugsteuergeräten erfolgt nicht mit GDS.<!--j-->&nbsp;<!--j-->Die Steuergeräte Programmierung und Konfiguration erfolgt mittels MDI und TIS2Web/GlobalTIS SPS. </td>
+ </tr>
+ </table>
+ <hr />
+
+  <h2>Kundendienst - Übersicht</h2>
+ <p>
+
+Wenn Sie Fragen zur Anwendung Ihres GM Produkts, zum Zubehör oder zu Garantiereparaturen oder anderen Reparaturen haben, wenden Sie sich bitte an das zuständige Kundendienst-Center.<!--j-->&nbsp;<!--j-->Ersatzteile können bei GM Dealer Equipment (nur Nordamerika) bestellt werden.</p>
+ <h3>Bevor Sie anrufen</h3>
+ <p>Bitte halten Sie für Ihren Anruf beim Helpdesk folgende Informationen bereit:</p>
+ <ul>
+ <li>Name, Adresse und Codenummer des Händlers</li>
+ <li>Seriennummer des MDI oder gegebenenfalls Notebook</li>
+ <li>Name, Teilenummer und Anzahl des zu bestellenden Artikels</li>
+ <li>Telefonnummer, unter der der Techniker zu erreichen ist.</li>
+ </ul>
+ <p>Eine kurze Beschreibung des Problems:</p>
+ <ul>
+ <li>Wann ist das Problem aufgetreten?</li>
+ <li>Welche Fehlercodes wurden angezeigt?</li>
+ <li>Welches Zubehör wurde beim Auftreten des Problems verwendet und wie lauten die Fahrzeugdaten?</li>
+ </ul>
+
+  <h4>IDENTIFIZIERUNG DES MDI</h4>
+ <p>Der MDI Produktionsaufkleber mit der MDI Seriennummer ist auf der Rückseite des MDIs angebracht. <!--j-->&nbsp;<!--j-->
+
+Die Seriennummer besteht aus zwei Abschnitten: dem Produktionscode sowie der Seriennummer des Gerätes.<!--j-->&nbsp;<!--j-->
+Die Seriennummer wird verwendet, um das MDI in den Anwendungen SPS und GDS zu identifizieren. </p>
+
+  <h3>Anruf beim Kundendienst</h3>
+
+  <h4>Europäische Anwender</h4>
+ <h5>Unterstützung bei GDS Software Installation/ System Kommunikation:</h5>
+ <p><b>DAC - Dealer Assistance Center:</b><br />
+
+
+Es bietet Anwenderunterstützung für GDS Software, für GDS Kommunikation mit TIS2Web/Global TIS und dem MDI.<br />
+
+Die für das entsprechende Land gültige Telefonnummer bitte der Anmeldeseite des Channel 21 Portals entnehmen.</p>
+ <h5>
+Unterstützung bei GDS Fahrzeugdiagnose:</h5>
+ <p><b>European Technical Assistance Center:</b><br />
+
+Unterstützung bei Fahrzeugdiagnose mit GDS.<!--j-->&nbsp;<!--j-->
+Die für das entsprechende Land gültige Telefonnummer können Sie über Ihre zuständige General Motors Europe Organisation erfragen.</p>
+ <h5>
+Unterstützung für freie Werkstätten:</h5>
+ <p><b>European Customer Assistance Center</b><br />
+Freie Werkstätten erhalten hier Unterstützung für TIS und GDS. <!--j-->&nbsp;<!--j-->
+Die Kontaktinformationen sind dem GME Info Tech Portal zu entnehmen.</p>
+ <hr />
+ <h3>Software-Lizenzvertrag</h3>
+ <p>Bitte lesen Sie diesen Software-Lizenzvertrag sorgfältig durch, bevor Sie die Software verwenden.<!--j-->&nbsp;<!--j-->
+Durch die weitere Verwendung dieser Software akzeptieren Sie alle Bestimmungen dieses Vertrags.</p>
+ <p>EIGENTUMSRECHTE<!--j-->:<!--j-->&nbsp;<!--j-->
+
+
+Die Urheberrechte für die Software liegen bei der General Motors Corporation, und Sie erkennen an, dass die General Motors Corporation Eigentümer sämtlicher Urheberrechte und sonstiger Rechte, Titel und Interessen an und bezüglich der Software ist.<!--j-->&nbsp;<!--j-->
+Die General Motors Corporation behält sich alle Rechte an dieser Software vor, die in diesem Vertrag nicht ausdrücklich gewährt werden. </p>
+ <p>NUTZUNG<!--j-->:<!--j-->&nbsp;<!--j-->
+Die Lizenz umfasst die nicht exklusive, nicht übertragbare Nutzung der Software auf mehreren Computersystemen.<!--j-->&nbsp;<!--j-->
+
+Sie dürfen die Software oder Teile davon weder zurückentwickeln, dekompilieren, modifizieren, reproduzieren noch verkaufen.<!--j-->&nbsp;<!--j-->
+Diese Lizenz gilt für Sie persönlich und unterliegt dem Vorbehalt der strikten Einhaltung aller Bestimmungen dieses Vertrags.</p>
+ <p>BEENDIGUNG<!--j-->:<!--j-->&nbsp;<!--j-->
+
+Die General Motors Corporation kann diesen Software-Lizenzvertrag kündigen, wenn die Bestimmungen des Vertrags durch Sie nicht eingehalten werden.<!--j-->&nbsp;<!--j-->
+
+Nach der Kündigung sind Sie verpflichtet, die Verwendung der Software unverzüglich einzustellen und sämtliche Kopien der Software einschließlich der Kopien auf Ihren Computersystemen zu vernichten.</p>
+ <hr />
+ <h1><a name="product_description"></a>2.<!--j-->&nbsp;<!--j-->Produktbeschreibung</h1>
+ <h2>Händler PC Anforderungen<!--j-->&nbsp;<!--j-->(<!--j-->Europa<!--j-->)</h2>
+ <p>PC-Mindestanforderungen zum Betreiben von GDS in Verbindung mit TIS2Web/GlobalTIS:</p>
+ <ul>
+ <li>Prozessor<br />
+Intel Pentium M, 1,5GHz</li>
+ <li>Systemspeicher (RAM)<br />
+1GB für GDS und TIS2Web/Global TIS Client; 2GB für GDS und GlobalTIS Standalone</li>
+ <li>Mindestkapazität der Festplatte:<br />
+40 GB</li>
+ <li>Betriebssystem<!--j-->:<br />Windows XP Professional (SP2)</li>
+ <li>Weitere Softwarekomponenten:<br />
+Java Web Start 1.5x oder höhere Version<br />
+ </li>
+ </ul>
+ <p>
+Für weitere Informationen bitte die aktuell gültigen GME EDV Spezifikationen beachten.</p>
+ <hr />
+ <h1><a name="installation"></a>3.<!--j-->&nbsp;<!--j-->GDS Installation</h1>
+ <h2>Übersicht über die GDS Komponenten:</h2>
+ <p>Die GDS Software besteht aus folgenden Modulen, welche installiert und in regelmäßigen Abständen aktualisiert werden.<!--j-->&nbsp;<!--j-->[I]</p>
+ <ul>
+ <li><b>GDS Basissystem</b><br />
+Installierte GDS Basissoftware auf dem PC</li>
+ <li><!--j--><b><!--j-->GDS Applikationspakete<!--j--></b><!--j-->:<br />
+Diagnosedatenpakete für Fahrzeugmodelle, welche die Diagnoseroutinen mit den Steuergeräten ausführen</li>
+ <li><!--j--><b><!--j-->GDS Smart Start<!--j--></b><!--j-->:<!--j--><br />Dienstprogramm welches neue GDS Basissystemversionen, neue GDS Applikationspakete sowie neue MDI Manager Versionen auf TIS2Web/Global TIS ermittelt und dem Anwender zum Herunterladen anbietet.<!--j-->&nbsp;<!--j-->Liegen neue Versionen vor, werden diese dem Anwender zum Herunterladen angeboten.</li>
+ <li><!--j--><b><!--j-->MDI Manager Software (separate Anwendung)<!--j--></b><!--j-->:<br />
+Anwendung zur Aktualisierung und Konfiguration des MDI (Multiple Diagnostic Interface)</li>
+ </ul>
+ <p><img src="../../images/gds_i_deu.gif" alt="gds_i.gif" width="650px"/><br />
+[I]</p>
+ <hr />
+ <h2>Neuinstallation:</h2>
+ <p>GDS kann von einer separaten Installations-DVD installiert werden oder direkt aus TIS2Web/Global TIS.</p>
+ <h3>Installation von GDS DVD:</h3>
+ <ul>
+ <li>Das Betriebssystem muss mit Administrator Rechten gestartet sein</li>
+ <li>Installation über Auswahlmenü starten</li>
+ <li>Sprache auswählen</li>
+ <li>Sollte GDS bereits zuvor installiert gewesen sein, können die vorhandenen Einstellungen übernommen werden</li>
+ <li>Lizenzvereinbarungen bestätigen</li>
+ <li>Installationsverzeichnis wählen</li>
+ <li>GDS Installation beginnt</li>
+ <li>Falls keine oder eine ältere MDI Manager Software installiert ist, wird diese durch eine neue Installation erstellt bzw. ersetzt. <!--j-->&nbsp;<!--j-->Bei einer Neuinstallation muss ein MDI bereitgehalten und nach Aufforderung angeschlossen werden.<!--j-->&nbsp;<!--j-->Für weitere Informationen zur MDI Installation bitte das MDI Handbuch verwenden.</li>
+ <li>Nach Abschluss der Installation kann GDS direkt über das Desktop Symbol oder über START/PROGRAMME/GDS gestartet werden.<!--j-->&nbsp;<!--j--><img src="../../images/gds_icon.png" alt="gds_icon.png" /></li>
+ <li>Gegebenenfalls die Firewall konfigurieren, damit die GDS Kommunikation nicht blockiert wird.</li>
+ <li>GDS Smart Start wird gestartet, die angezeigten Aktualisierungsschritte werden durchlaufen und GDS wird abschließend gestartet.</li>
+ </ul>
+ <hr />
+ <h3>Installation über TIS2Web/Global TIS<!--j-->:</h3>
+ <p><img src="../../images/gds_ii_deu.gif" alt="gds_ii.gif" width="600px"/><br />
+[II]</p>
+ <table width="80%" border="0">
+ <tr>
+ <td class="important"><b><!--j-->Wichtig<!--j-->:<!--j--></b><!--j-->&nbsp;<!--j-->Bei der Installation über TIS2Web werden ca. 140 MB Daten über das Internet heruntergeladen.</td></tr></table>
+ <ul>
+ <li>Das Betriebssystem muss mit Administratorrechten gestartet sein.</li>
+ <li>GDS in TIS2Web/Global TIS Startseite aufrufen.<!--j-->&nbsp;<!--j-->[II]</li>
+ <li>GDS Smart Start wird vom Server geladen, dieses kann abhängig von der Internetverbindung längere Zeit dauern.</li>
+ <li>Installationsverzeichnis für GDS wählen.</li>
+ <li>Eingabe des Internetzugangspasswortes (nur bei Verwendung eines Proxyservers).</li>
+ <li>Gegebenenfalls die Firewall konfigurieren, damit die GDS Kommunikation nicht blockiert wird.</li>
+ <li>GDS Smart Start wird installiert, dieser Vorgang dauert einen Augenblick.</li>
+ <li>GDS Smart Start wird gestartet, die angezeigten Aktualisierungsschritte werden durchlaufen .<!--j-->&nbsp;<!--j-->[III]</li>
+ <li>Nach dem Herunterladen der Dateien wird die Installation einer neuen GDS Version und ggf. einer neuen MDI Manager Software angeboten. Diese kann durch Bestätigen der angebotenen Dialogbox heruntergeladen werden.<!--j-->&nbsp;<!--j-->Über die untere Schaltfläche <b>Herunterladen anzeigen</b> kann jeweils der Fortschritt angezeigt werden.</li>
+ <li>Falls keine oder eine ältere MDI Manager Software installiert ist, wird diese durch eine neue Installation erstellt bzw. ersetzt.<!--j-->&nbsp;<!--j-->Bei einer Neuinstallation muss ein MDI bereitgehalten und nach Aufforderung angeschlossen werden.<!--j-->&nbsp;<!--j-->Für weitere Informationen zur MDI Installation bitte das MDI Handbuch verwenden.</li>
+ </ul>
+
+  <table width="200" border="0">
+ <tr>
+ <td><img src="../../images/gds_iii_deu.gif" alt="gds_III.gif" width="200px"/></td>
+ <td><img src="../../images/gds_iv_deu.gif" alt="gds_IV.gif" width="150px" /></td>
+ </tr>
+ <tr>
+ <td>[III]</td>
+ <td>[IV]</td>
+ </tr>
+ </table>
+ <hr />
+ <h3>GDS Aktualisierung über Smart Start<!--j-->:</h3>
+GDS entweder über TIS2Web/GlobalTIS oder als Standalone über das Windows Start Menü starten.<!--j-->&nbsp;<!--j-->Bevor GDS geladen wird, vergleicht der gestartete SmartStart Agent die folgenden Versionen der GDS Installation auf dem PC mit dem entsprechenden Inhalt auf TIS2Web/GlobalTIS:</p>
+ <ul>
+ <li>GDS Smart Start</li>
+ <li>GDS Basissystem</li>
+ <li>MDI Manager</li>
+ </ul>
+ <p>Liegen neue Versionen vor, werden diese dem Anwender zum Herunterladen angeboten.<!--j-->&nbsp;<!--j-->[IV]</p>
+ <!--<p>Der Smart Start Aktualisierungsprozess des GDS Basissystems, der GDS Lieferungen sowie des MDI-Managers werden nur dann ausgeführt, wenn GDS aus TIS2Web/GlobalTIS heraus gestartet wird; nicht jedoch aus dem Standalone Modus.<!--j-->&nbsp;<!--j--><!--The update capability of standalone started GDS will be available in a future version.</p>
+--> <table width="80%" border="0">
+ <tr>
+ 	 <td class="important"><!--j--><b><!--j-->Wichtig<!--j--><!--j-->:<!--j--></b><!--j-->&nbsp;<!--j-->Die Ausführung beschriebener Aktualisierungsprozesse erfordert stets, dass der PC mit Administrator Rechten gestartet wird.</td></tr></table>
+ <hr />
+ <h3>GDS Basissysteminstallation zurücknehmen</h3>
+ <p>Sollte eine GDS Aktualisierung zu Problemen führen, kann bei Bedarf eine GDS Aktualisierung zurückgenommen werden.</p>
+ <p>Dieses erfolgt unter dem Menüpunkt START -&gt; PROGRAMME -&gt; GDS -&gt; GDS ROLLBACK.<!--j-->&nbsp;<!--j-->Voraussetzung für diese Funktion ist, dass zuvor eine ältere GDS Version installiert war.</p>
+ <h3>GDS Lizenz- und Nutzungsberechtigungssystem</h3>
+ <p>GDS ist mit einem Lizenzsystem versehen, welches die nicht autorisierte Verwendung von GDS verhindert.<!--j-->&nbsp;<!--j-->Zur Erneuerung der GDS Nutzungsberechtigung ist das Starten der GDS Anwendung von TIS2Web oder GlobalTIS aus erforderlich.<!--j-->&nbsp;<!--j-->Die GDS Nutzungsberechtigung muß nach spätestens 7 Tagen erneuert werden, sofern die Anwendung während dieser Zeit nur im Standalone Modus gestartet wurde.<!--j-->&nbsp;<!--j--><br>Ist die GDS Nutzungsberechtigung erloschen, fordert eine Fehlermeldung den Nutzer auf, diese durch den Start der GDS Anwendung von TIS2Web/GlobalTIS aus zu erneuern.</p>
+ <hr />
+ <h3>Diagnose Applikationspakete laden und aktualisieren</h3>
+ <p>Applikationspakete sind die GDS Diagnoseanwendungen, welche für die Kommunikation mit den Fahrzeugsteuergeräten benötigt werden.<!--j-->.<!--j-->&nbsp;<!--j-->Die Applikationspakete werden pro Modell freigegeben und auf TIS2Web/Global TIS aktualisiert.</p>
+ <p>Im Gegensatz zur Tech2 Aktualisierung überprüft GDS Smart Start automatisch, ob neue oder aktualisierte Versionen vorliegen.<!--j-->.<!--j-->&nbsp;<!--j-->Neue Diagnosepakete (z.B. bei Neueinführung eines Fahrzeuges) müssen zunächst in ein lokales Verzeichnis geladen werden und anschließend in GDS installiert werden.<!--j-->&nbsp;<!--j-->Aktualisierungen von bereits installierten Diagnosepaketen werden automatisch heruntergeladen und zur Installation angeboten.</p>
+ <br clear=all />
+ <hr />
+ <h3>Neue Diagnosepakete erstmalig laden</h3>
+ <ul><li>GDS entweder über TIS2Web/GlobalTIS oder als Standalone über das Windows Start Menü starten.</li>
+ <li>Im GDS Anmeldebildschirm <b>Neue Diagnosepakete hinzufügen</b> wählen</li>
+ <li>Schaltfläche <b>Liste der Diagnosepakete aktualisieren</b> wählen.<!--j-->&nbsp;<!--j-->[V-1]<!--j-->.<!--j-->&nbsp;<!--j-->Auf dem Server vorhandene aber noch nicht heruntergeladene Pakete werden mit dem Symbol angezeigt.<!--j-->&nbsp;<!--j-->
+ <img src="../../images/gds_server.png" alt="gds_server.png" width="36" height="34" /></li>
+ <li>Applikationspakete markieren und herunterladen<!--j-->&nbsp;<!--j-->[V-2]<!--j-->.<!--j-->&nbsp;<!--j-->Unter dem Menüpunkt <b>Suchfilter</b> können hierzu spezifische Suchkriterien eingegeben werden. <!--j-->&nbsp;<!--j-->Heruntergeladene Pakete werden mit dem Symbol angezeigt.<!--j-->&nbsp;<!--j--><img src="../../images/gds_pc.png" alt="gds_pc.png" /></li>
+ <li>Heruntergeladene Diagnosepakete in GDS installieren bis die Daten in dem rechten Fenster unter Hauptdatenbank angezeigt werden<!--j-->&nbsp;<!--j-->[V-3]<!--j-->.</li>
+ </ul>
+ <p><img src="../../images/gds_v_deu.gif" alt="gds_v.gif" width="650px"/><br />
+[V]</p>
+ <hr />
+ <h2>Vorhandene Diagnosepakete aktualisieren<!--j-->:</h2>
+ <ul>
+ 	 <li>Im GDS Anmeldebildschirm die Schaltfläche <b>Diagnosepakete aktualisieren</b> betätigen.<!--j-->&nbsp;<!--j-->[VI-1]<!--j-->.<!--j-->&nbsp;<!--j-->GDS vergleicht nun die vorhandenen Daten mit den Daten auf dem Server und lädt ggf. Aktualisierungen zur Installation herunter.</li>
+ 	 <li>Die heruntergeladenen Datenpakete werden im unteren Fenster zur Installation in GDS angezeigt.<!--j-->&nbsp;<!--j-->Zur Installation die Schaltfläche <b>Installieren</b> oder ggf. <b>Alles Installieren</b> betätigen<!--j-->&nbsp;<!--j-->[VI-2]<!--j-->.</li>
+ </ul>
+ <p><img src="../../images/gds_vi_deu.gif" alt="gds_vi.gif" width="650px"/><br />
+[VI]<!--j-->:</p>
+ <hr />
+ <h2>
+Aktualisierung von Diagnosepaketen zurücknehmen</h2>
+ <p>
+
+Die grundsätzliche Vorgehensweise entspricht den Schritten wie unter Punkt <b>Neue Diagnosepakete erstmalig laden</b> beschrieben.</p>
+ <ul>
+ 	 <li>Im GDS Anmeldebildschirm <b>Neue Diagnosepakete hinzufügen</b> wählen</li>
+ 	 <li>Schaltfläche <b>Liste der Diagnosepakete aktualisieren</b> wählen.<!--j-->&nbsp;<!--j-->[V-1]<!--j--></li>
+ <li>Gewünschte ältere Diagnosepakete markieren und herunterladen.<!--j-->&nbsp;<!--j-->Unter dem Menüpunkt <b>Suchfilter</b> können hierzu spezifische Suchkriterien eingegeben werden. </li>
+ <li>Installieren der heruntergeladenen Pakete in die GDS Hauptdatenbank.</li>
+ </ul>
+ <hr />
+ <h2>Deinstallation von GDS<!--j-->:</h2>
+ <p>GDS kann unter folgenden Punkt deinstalliert werden:</p>
+ <p>
+START -&gt; PROGRAMME -&gt; GDS -&gt;GDS DEINSTALLATION</p>
+ <hr />
+ <h2>
+Umstellung der GDS Sprache<!--j-->&nbsp;<!--j-->/<!--j-->&nbsp;<!--j-->Regionsoptionen<!--j-->:</h2>
+ <p>GDS nutzt die Spracheinstellungen des PC-Betriebssystems.<!--j-->&nbsp;<!--j-->GDS selbst verfügt über kein Menü zum Ändern der Spracheinstellung.<!--j-->&nbsp;<!--j-->Folgende Schritte sind durchzuführen, um die Sprache für GDS zu wechseln.</p>
+ <ul>
+ <li>Öffnen des Fensters SYSTEMSTEUERUNG:<!--j-->&nbsp;<!--j-->START -&gt; EINSTELLUNGEN -&gt; SYSTEMSTEUERUNG</li>
+ <li>Menü REGIONS- UND SPRACHOPTIONEN öffnen</li>
+ <li>Unter <b>STANDARDS UND FORMATE</b> das gewünschte Land wählen.</li>
+ <li>Öffnen des Menüs ERWEITERT.<!--j-->&nbsp;<!--j-->Die gewünschte Sprache in der Auswahlbox <b>SPRACHE FÜR PROGRAMME, DIE UNICODE NICHT UNTERSTÜTZEN</b> auswählen.</li>
+ <li>Zum Einstellen der angezeigten Einheiten bitte mit <b>Anpassen...</b> ändern.</li>
+ </ul>
+ <hr />
+ <h1><a name="getting_started"></a>4.<!--j-->&nbsp;<!--j-->Inbetriebnahme</h1>
+ <p><b><!--j-->ACHTUNG<!--j-->:<br />
+Vor Ausführung von GDS ist es wichtig folgende Punkte zu beachten:<!--j--></b></p>
+ <ul>
+ <li>Die Verwendung einer veralteten GDS Version kann Schäden an den Fahrzeugsteuergeräten verursachen. <!--j-->&nbsp;<!--j-->Es ist sicherzustellen, dass das GDS und MDI stets aktualisiert wird.</li>
+ <li>Es ist sicherzustellen, dass die Fahrzeugbatterie voll aufgeladen ist.<!--j-->&nbsp;<!--j-->Die Fahrzeugnetzspannung sollte 12-14V betragen.</li>
+ <li>Während des Betriebes eines Batterieladegeräts darf kein MDI angeschlossen sein.</li>
+ <li>Überprüfen Sie die Kabelverbindungen.<!--j-->&nbsp;<!--j-->Ein lockeres Kabel KANN Schäden am Steuergerät verursachen.</li>
+ <li>Wenn ein Notebook Computer für GDS verwendet wird, ist sicherzustellen, dass das Notebook Netzgerät permanent verbunden ist.<!--j-->&nbsp;<!--j-->Ein Verlust der Spannungsversorgung des Notebooks über das Netzteil während einer Programmierung kann Schäden am Steuergerät verursachen. <!--j-->&nbsp;<!--j-->Falls das Notebook über Akku betrieben wird, ist sicherzustellen, dass der Akku ausreichend geladen ist, um den GDS Arbeitsvorgang durchzuführen.</li>
+ </ul>
+ <table width="80%" border="0">
+ <tr>
+ <td class="note"><b>ACHTUNG</b><br />
+
+Die zu programmierenden Steuergeräte müssen im Fahrzeug eingebaut sein bevor sie mit GDS verbunden werden.<!--j-->&nbsp;<!--j-->Es ist sicherzustellen, dass die Fahrzeugbatterie voll aufgeladen ist. </td></tr></table>
+ <table width="80%" border="0">
+ <tr>
+ <td class="important"><b>Wichtig</b><br />
+Um die Gefahr eines Signalverlustes zu minimieren ist sicherzustellen, dass mit dem MDI mit einer stabilen Verbindung kommuniziert wird.<!--j--><!--j-->Das MDI kann mit USB, Ethernet oder Wireless Ethernet verbunden werden.</td></tr></table>
+ <hr />
+ <h2>GDS Inbetriebnahme<!--j-->:</h2>
+ <p>GDS wird durch die GDS Schaltfläche in TIS2Web/Global TIS gestartet.<!--j-->&nbsp;<!--j-->Alternativ kann GDS auch als Standalone Applikation durch das Windows Startmenü aufgerufen werden.</p><ol><li>Zum Starten des Programms die GDS Schaltfläche in TIS2Web/Global TIS betätigen<!--j-->.<!--j-->&nbsp;<!--j-->Zum Starten von GDS als Standalone Anwendung das Windows Start Menü START/PROGRAMME/GDS ausführen.</li><li>GDS Smart Start wird gestartet, der angezeigte Aktualisierungsprozess wird ausgeführt.<!--j-->&nbsp;<!--j-->Falls eine neue GDS oder MDI Version auf dem TIS2Web Server oder der GlobalTIS Installation verfügbar ist, wird diese zum Download angeboten.<!--j-->&nbsp;<!--j-->Zum Fortfahren und Installieren der Software die Schaltfläche <b>OK</b> betätigen.<!--j-->&nbsp;<!--j-->[IV]<!--j-->.<!--j-->&nbsp;<!--j-->Falls GDS als Standalone Anwendung gestartet wird, kann keine Überprüfung nach neuen Softwareversionen erfolgen.</li>
+ 	 <li>GDS Anmeldeseite wird geladen.</li></ol>
+ <hr />
+ <h1><a name="navigation"></a>5.<!--j-->&nbsp;<!--j-->Allgemeine Bedienung</h1>
+ <h2>Menüleiste<!--j-->&nbsp;<!--j--><img src="../../images/gds_menu.png" alt="gds_menu.png" width="57" height="38" /></h2>
+ <p>Die GDS Menüleiste besteht aus fünf Bereichen.<!--j-->&nbsp;<!--j-->[VII]</p> <p>Hinweis<!--j-->:<!--j-->&nbsp;<!--j-->Die Menüleiste wird nur in der PC-Darstellung angezeigt<!--j-->.<!--j-->&nbsp;<!--j-->Die Anzeige kann auch in den Touchscreenbetrieb umgeschaltet werden, die Menüanzeige erscheint dann in einem hervorgehobenen Fenster.</p> <ul>
+ <li>Über das Menü <b>Datei</b> kann GDS über den Befehl <b>Exit</b> geschlossen werden.</li>
+ <li>Das Menü Diagnosesitzung besitzt 2 Einträge:<!--j-->&nbsp;<!--j--><b>Speichern der Diagnosesitzung</b> und <b>Kommentar zur Diagnosesitzung zufügen</b>.<br />Kommentar zur Diagnosesitzung zufügen: Information können über die Tastatur eingegeben und im Session Log Manager gespeichert werden.</li>
+ <li>Das Menü <b>Werkzeuge</b> enthält die fünf Einträge:<!--j-->&nbsp;<!--j-->Report erzeugen<!--j-->,<!--j-->&nbsp;<!--j-->Aufzeichnung starten<!--j-->,<!--j-->&nbsp;<!--j-->Datenaufzeichnungsansicht<!--j-->,<!--j-->&nbsp;<!--j-->Aktualisierungsstatus anzeigen<!--j-->,<!--j-->&nbsp;<!--j-->Benutzerverwaltung.<br />Neue Nutzer können in der Benutzerverwaltung durch betätigen der   Schaltfläche	eingerichtet werden<!--j-->&nbsp;<!--j-->
+ <img src="../../images/gds_add-user.png" alt="gds_add-user.png" width="27" height="26" />
+ <!--j-->.</li>
+ <li>Im Menü <b>Fenster/Einstellungen</b> können die Bildschirmeinstellungen wie Vollbildschirm oder Touchscreen sowie PC-Ansicht konfiguriert werden.</li>
+ <li>Das <b>Hilfe</b> Menü enthält drei Einträge: Hilfe Inhalt, Über GDS sowie MDI-Versionsinformation.<br />Das Menü <b>Hilfe Inhalt</b> führt zu den GDS Hilfe Dateien.<!--j-->&nbsp;<!--j-->
+<b>Über GDS</b> zeigt die GDS Version und Produktnummer an.<!--j-->&nbsp;<!--j-->
+Die <b>MDI-Versionsinformationen</b> zeigt die MDI Softwareversion sowie die Hardwareversion des MDI an.<!--j-->&nbsp;<!--j-->
+Die Informationen werden gegebenenfalls bei einem Anruf im Helpdesk benötigt.</li></ul><p></p>
+ <p><img src="../../images/gds_vii_deu.gif" alt="gds_vii.gif" width="120px"/><br />
+[VII]</p>
+ <hr />
+ <h2>Diagnose Anwendungen - Werkzeugmenüleiste</h2>
+ <p>Sobald die Diagnoseanwendungen gestartet werden, erscheint im oberen Bildschirmbereich eine Werkzeugauswahlliste.<!--j-->&nbsp;<!--j-->[VIII]</p>
+ <ul>
+ <li>Die Schnappschussaufnahme kann über die Schaltfläche mit dem roten Kreis gestartet werden.<!--j-->&nbsp;<!--j-->Während einer Schnappschussaufnahme ist die Schaltfläche inaktiv.</li>
+ <li>Die Schnappschussaufnahme kann über das blaue Quadrat gestoppt werden. Die Schaltfläche wird aktiv, sobald eine Aufzeichnung gestartet wird.<!--j-->&nbsp;<!--j-->Mit der Anwahl kann eine Aufzeichnung angehalten und gespeichert werden.</li>
+ <li>Mit dem <b>Datenaufzeichnungssymbol</b> kann der aktuelle Bildschirm aufgenommen werden und in einem beliebigen Verzeichnis auf dem PC gespeichert werden.</li>
+ <li>Mit der <b>Verkleinerungsfunktion</b> wird die Schriftgröße reduziert.<!--j-->&nbsp;<!--j-->Jeder Mausklick bewirkt eine verkleinerte Darstellung.</li>
+ <li>Die <b>Vergrößerungsfunktion</b> vergrößert die Schriftgröße.<!--j-->&nbsp;<!--j-->Das Bild wird mit jedem Mausklick größer dargestellt.</li>
+ <li>Mit der Schaltfläche <b>Beenden</b> wird die jeweilige Diagnoseanwendung geschlossen.</li>
+ </ul>
+ <p><img src="../../images/gds_viii_deu.gif" alt="gds_viii.gif" width="400px"/><br />
+[VIII]</p>
+ <hr />
+ <h2>Pfeil Schaltflächen</h2>
+ <p>Die Pfeilschaltflächen sind am unteren Bildschirmrand positioniert. <!--j-->&nbsp;<!--j-->Die Pfeilschaltflächen können für folgende Navigation verwendet werden. </p>
+ <p><img src="../../images/gds_ix_deu.gif" alt="gds_ix.gif" width="600px"/><br />
+[IX]<!--j-->:</p>
+ <ul>
+ <li>Mit der Schaltfläche <b>Hoch</b> kann in der Parameterliste eine Ebene hoch gegangen werden.</li>
+ <li>Mit der Schaltfläche <b>Runter</b> kann in der Parameterliste eine Ebene nach unten gegangen werden.</li>
+ <li>Mit der Schaltfläche <b>Rechts</b> kann eine aktive Navigationsebene geöffnet werden.</li>
+ <li>Mit der Schaltfläche <b>Links</b> kann eine aktive Navigationsebene geschlossen werden.<!--j-->&nbsp;<!--j-->Diese Schaltfäche ist deaktiviert, wenn Sie sich am Anfangsbildschirm einer Prozedur befinden.</li></ul>
+ <hr />
+ <h2>Weitere Schaltflächen</h2>
+ <p>Drei weitere Schaltflächen werden am unteren Rand aller Seiten angezeigt.<!--j-->&nbsp;<!--j-->Diese werden für folgende Funktionen genutzt:</p>
+ <ul>
+ <li>Die Schaltfläche <b>Starten</b> startet eine in der Systemnavigation markierte Diagnoseanwendung.</li>
+ <li>Die Schaltfläche <b>Zurück</b> wird verwendet, um in GDS eine Ebene zurück zu navigieren.<!--j-->&nbsp;<!--j-->Die Schaltfläche ist nur aktiv, wenn eine Zurücknavigation möglich ist.</li>
+ <li>Die Schaltfläche <b>Weiter</b> wird verwendet um in GDS eine Ebene weiter zu navigieren.<!--j-->&nbsp;<!--j-->Die Schaltfläche ist nur aktiv, wenn alle notwendigen Angaben innerhalb eines Bildschirms gemacht wurden.</li>
+ </ul>
+ <br clear=all />
+ <hr />
+ <h2>Eingabe der Fahrzeug / MDI Information</h2>
+ <p>1.<!--j-->&nbsp;<!--j-->Auswahl eines Benutzers im GDS Anmeldebildschirm.<!--j-->&nbsp;<!--j-->Falls noch kein eigener Nutzer angelegt wurde, kann mit dem <b>user, default</b> die Anmeldung durchgeführt werden.<!--j-->&nbsp;<!--j-->(Siehe auch zuvor die Beschreibung <b>Menü</b>)<br />
+ </p>
+ <p>2.<!--j-->&nbsp;<!--j-->Nach Bestätigen mit <b>WEITER</b> erscheint der Identifizierungsbildschirm in der nächsten GDS Ebene.<!--j-->&nbsp;<!--j-->Die folgenden Eingabemöglichkeiten können hier durchgeführt werden:</p>
+ <p><img src="../../images/gds_x_deu.gif" alt="gds_x.gif" width="650px"/><br />
+[X]</p>
+ <ul>
+ 	 <li>[X-1]<!--j-->&nbsp;<!--j--><b>MDI Auswahl</b><!--j-->:<!--j-->&nbsp;<!--j-->Im MDI Auswahlfenster werden die zur Verbindung verfügbaren MDI über die bestehenden Netzwerkverbindungen aufgelistet.<!--j-->&nbsp;<!--j-->Um GDS mit dem MDI zu verbinden, ist das entsprechende Gerät im Fenster zu markieren und die Schaltfläche <b>Verbinden</b> zu betätigen.<!--j-->&nbsp;<!--j-->Über die Schaltfläche <b>Trennen</b> kann die Verbindung zum MDI unterbrochen werden und ggf. ein anderes MDI verbunden werden.<!--j-->&nbsp;<!--j-->Verbinden Sie ein anderes MDI mit dem Fahrzeug und wählen <b>Verbinden</b>.<!--j-->&nbsp;<!--j-->Mit der Schaltfläche <b>Aktualisieren</b> können neu im Netzwerk angemeldete MDIs angezeigt werden.<!--j-->&nbsp;<!--j-->Um GDS ohne MDI Verbindung zu betreiben, das Feld <b>Ohne MDI-Verbindung navigieren</b> markieren.</li>
+ <li>[X-2]<!--j-->&nbsp;<!--j--><b>Eingabe der Fahrzeugidentifikationsnummer (FIN)</b><!--j-->:<!--j-->&nbsp;<!--j-->Manuelle Eingabe oder automatisches Lesen der Fahrzeugidentifikationsnummer (FIN).<!--j-->&nbsp;<!--j-->(Verbindung zum MDI erforderlich).<!--j-->&nbsp;<!--j-->Zusätzliche Kommentare zu dem Fahrzeug können im darunterliegenden Feld eingetragen werden, so z.B. das Kennzeichen.</li>
+ <li>[X-3]<!--j-->&nbsp;<!--j--><b>Fahrzeugidentifikation</b><!--j-->:<!--j-->&nbsp;<!--j-->Auswahl der Marke, des Modells und des Modelljahres.</li>
+ <li>[X-4]<!--j-->&nbsp;<!--j--><b>Diagnosesitzungen</b><!--j-->:<!--j-->&nbsp;<!--j-->Falls ein Fahrzeug zuvor mit diesem GDS System diagnostiziert worden ist, werden die Fahrgestellnummer und die dazugehörigen Informationen der Diagnosesitzungen gespeichert.<!--j-->&nbsp;<!--j-->Nach Auswahl des gewünschten Fahrzeuges kann direkt die nächste GDS Ebene aufgerufen werden, da die Fahrzeugkonfiguration mit übernommen wird.<!--j-->&nbsp;<!--j-->Ein Textfilter kann bei der Suche des Fahrzeuges verwendet werden.</li>
+ </ul>
+ <p>3.<!--j-->&nbsp;<!--j-->Die <b>Fahrzeugstartseite</b> wird in der nächsten Ebene angezeigt. <!--j-->&nbsp;<!--j-->Auf diesem Bildschirm werden verschiedene fahrzeugspezifische Informationen, wie im folgenden Kapitel beschrieben, angezeigt. </p>
+ <hr />
+ <h2><b>Fahrzeugstartseite</b></h2>
+ <p>Die <b>Fahrzeugstartseite</b> enthält folgende Bereiche:</p>
+ <p>[XI-1]<!--j-->:<!--j-->&nbsp;<!--j-->Die <b>Fahrzeugübersicht</b> enthält die spezifischen Ausstattungsmerkmale des Fahrzeugs.<br />Die Liste wird mit jeder Diagnosesitzung aktualisiert.<!--j-->&nbsp;<!--j-->Mit der Schaltfläche <b>Löscht gewählte Fahrzeugkonfiguration</b> können Ausstattungsmerkmale gelöscht werden.<!--j-->&nbsp;<!--j-->Zu löschende Zeile markieren und Schaltfläche wählen.</p>
+ <p>[XI-2]<!--j-->:<!--j-->&nbsp;<!--j-->In dem Feld <b>Kommentare</b> können beliebige Informationen zur Diagnosesitzung eingegeben werden.<!--j-->&nbsp;<!--j-->Diese können über die Schaltfläche <b>Kommentar hinzufügen</b> eingegeben werden. <!--j-->&nbsp;<!--j-->Informationenen können in den Rubriken Nutzer, Daten oder Kommentar über die Tastatur eingegeben werden.<!--j-->&nbsp;<!--j-->Einmal eingegebene Kommentare können markiert und mit der Schaltfläche <b>Markierten Kommentar löschen</b> gelöscht werden.</p>
+ <p>[XI-3]<!--j-->:<!--j-->&nbsp;<!--j-->Über <b>Druck der Diagnosesitzung</b> können Diagnoseberichte erzeugt und ausgedruckt werden.<!--j-->&nbsp;<!--j--><b>Komplettbericht</b> erzeugt einen umfassenden Diagnosebericht des Fahrzeugs.<!--j-->&nbsp;<!--j--><b>Kurzbericht</b> erzeugt einen zusammenfassenden Diagnosebericht des Fahrzeugs.</p>
+ <p>[XI-4]<!--j-->:<!--j-->&nbsp;<!--j-->Im Bereich <b>Schnappschussaufzeichnungen</b> werden die für dieses Fahrzeug aufgenommenen Schnappschüsse angezeigt.<!--j-->&nbsp;<!--j-->Nutzername, Schnappschussdatei, Datum des Schnappschusses und Kommentare werden angezeigt.<!--j-->&nbsp;<!--j-->Ein markierter Schnappschuss kann mit <b>Abspielen</b> angezeigt werden.<!--j-->&nbsp;<!--j-->Einzelne Teile können mit <b>Löschen</b> markiert und gelöscht werden.<br />[XI-6]<!--j-->:<!--j-->&nbsp;<!--j--><b><a name="export_snap">Export</a></b> speichert einen Schnappschuss auf Ihrem PC.<!--j-->&nbsp;<!--j-->Diesen Schnappschuss können Sie zur weiteren Analyse per E-Mail an die entsprechende Person versenden.</p>
+ <p>[XI-5]<!--j-->:<!--j-->&nbsp;<!--j-->Der Bereich <b>Ausgeführte Diagnoseapplikation</b> enthält eine Übersicht der bereits ausgeführten Diagnoseanwendungen zu diesem Fahrzeug.</p>
+
+  <p>Mit der Schaltfläche <b>WEITER</b> geht es zur nächsten GDS Ebene <b>SYSTEMNAVIGATION</b>.</p>
+ <p><img src="../../images/gds_xi_deu.gif" alt="gds_xi.gif" width="650px"/><br />
+[XI]</p>
+ <hr />
+ <h2>Systemnavigation - Auswahl der Diagnoseapplikationen</h2>
+ <p>Die Systemnavigation wird Ihnen angezeigt, sobald Sie auf der <b>Fahrzeughauptseite</b> <b>Weiter</b> gewählt haben<!--j-->&nbsp;<!--j-->[XII]<!--j-->.</p>
+ <p>Wählen Sie den Startpunkt der Diagnose aus.<!--j-->&nbsp;<!--j-->Die Navigation kann entweder direkt über den Navigationsbaum oder über die Pfeilschaltflächen erfolgen; die Pfeiltasten rechts/links öffnen bzw. schließen ein Unterverzeichnis, die Schaltfläche Start beginnt die ausgewählte Diagnoseanwendung.<!--j-->&nbsp;<!--j-->Sie können sowohl mit der Maus navigieren indem Sie auf das + Zeichen des Navigationsbaumes klicken als auch mit der Tastatur über die Pfeiltasten.</p>
+ <p>
+Fahren Sie mit der Navigation so lange fort, bis eine Diagnoseanwendung mit Anwendungsicon erscheint.</p>
+ <p>
+
+Sobald Sie eine Diagnoseanwendung starten, wird die Systemnavigation durch die Diagnoseanwendung ersetzt.<!--j-->&nbsp;<!--j-->
+Nach Beenden der Diagnoseanwendung, wählen Sie <b>Beenden</b> rechts oben in der Diagnoseansicht.<!--j-->&nbsp;<!--j-->
+Die Diagnoseanwendung wird geschlossen und Sie kehren zur Navigationsübersicht zurück.</p>
+ <p><img src="../../images/gds_xii_deu.gif" alt="gds_xii.gif" width="350px"/><br />
+[XII]</p>
+ <hr />
+ <h1><a name="diagnostics"></a>6.<!--j-->&nbsp;<!--j-->Diagnoseanwendungen</h1>
+ <h2>Fehlercodeanzeige</h2>
+ <p>Nach Auswahl der Applikation <b>Fehlercodeanzeige</b> in der Systemnavigationsebene wird eine Übersicht der gespeicherten Fehlercodes im Fahrzeug oder des gewählten Systems angezeigt.</p>
+ <p><img src="../../images/gds_xiii_deu.gif" alt="gds_xiii.gif" width="400px"/><br />
+[XIII]</p>
+ <p>
+In dem dargestellten Beispiel sind 4 Fehlercodes im System Instrument gespeichert.<!--j-->&nbsp;<!--j-->Über die Schaltfläche <b>Fortfahren</b> wird die Fehlercode Hauptseite geladen.<br />
+
+  <img src="../../images/gds_xiv_deu.gif" alt="gds_xiv.gif" width="650px"/><br />
+[XIV]</p>
+ <p>Die erfassten Fehlercodes werden in einer Tabelle angezeigt.<!--j-->&nbsp;<!--j-->
+Der Inhalt der Tabelle ist konfigurierbar.<!--j-->&nbsp;<!--j-->Betätigen der Schaltfläche <b>Spaltenauswahl</b> kann Tabellenspalten aus- oder einblenden.<!--j-->&nbsp;<!--j-->[XIV-1]<!--j-->.<!--j-->&nbsp;<!--j-->
+Die folgenden Informationen können in den Spalten angezeigt werden:</p>
+ <table border=1 cellspacing=0 cellpadding=0>
+ <tr>
+ <td width=158 valign=top><p><b>Spaltentitel</b></p></td>
+ <td width=427 valign=top><p><b>Beschreibung</b></p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>Status</p></td>
+ <td width=427 valign=top><p><img src="../../images/gds_status-unknown.png" alt="gds_status-unknown.png" width="16" height="16" /><!--j-->&nbsp;<!--j-->Neu gesetzter Fehlercode während der GDS Diagnosesitzung.<!--j-->&nbsp;<!--j-->DTC Beschreibungstext wird fett dargestellt.</p>
+ <p><img src="../../images/gds_mail-generic.png" alt="gds_mail-generic.png" /><!--j-->&nbsp;<!--j-->Vorhandener Fehlercode ohne geänderten Status während der GDS Diagnosesitzung.</p>
+ <p><img src="../../images/gds_forward.png" alt="gds_forward.png" /><!--j-->&nbsp;<!--j-->
+Vorhandener Fehlercode mit Statuswechsel während der GDS Diagnosesitzung.<!--j-->&nbsp;<!--j-->
+Die Fehlercodebeschreibung wird bis zum nächsten Aktualisierungszyklus kursiv dargestellt.</p>
+ <p><img src="../../images/gds_mail-delete.png" alt="gds_mail-delete.png" /><!--j-->&nbsp;<!--j-->
+Gelöschter Fehlercode im letzten Aktualisierungszyklus.<!--j-->&nbsp;<!--j-->
+Die Fehlercodebeschreibung wird bis zum nächsten Aktualisierungszyklus rot hinterlegt dargestellt.</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>ECU</p></td>
+ <td width=427 valign=top><p>Name des Steuergerätes</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>Funktionales System</p></td>
+ <td width=427 valign=top><p>Name des Funktionalen Systems (Steuergerätesatz)</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>DTC</p></td>
+ <td width=427 valign=top><p>Diagnose Fehlercode</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>Symptom Byte</p></td>
+ <td width=427 valign=top><p>Symptom Byte Kode des Fehlercodes</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>Beschreibung</p></td>
+ <td width=427 valign=top><p>Fehlercode Beschreibung</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>Symptom</p></td>
+ <td width=427 valign=top><p>Symptombeschreibung</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>Status Byte</p></td>
+ <td width=427 valign=top><p>Derzeit nicht verwendet</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>Decoded Status</p></td>
+ <td width=427 valign=top><p>Status des Fehlercodes</p></td>
+ </tr>
+ </table>
+ <p>
+In der <b>Filteroption</b> kann nach bestimmten ECUs gefiltert werden, um nur deren Fehlercodes anzuzeigen.<!--j-->&nbsp;<!--j-->[XIV-2]<!--j-->.<!--j-->&nbsp;<!--j-->
+Diese Funktion kann genutzt werden, wenn Fehlercodes für ein Funktionales System oder auch fahrzeugweit abgefragt werden.<br />
+
+In dem Texteingabefeld darunter kann ein Freitext als Filter eingegeben werden, z.B. ein spezieller Fehlercode.<br />
+Eine detaillierte Fehlercodeanzeige des markierten Fehlercodes kann aufgerufen werden, wenn die Auswahlbox <b>Status Fehlercode anzeigen</b> aktiviert ist <!--j-->&nbsp;<!--j-->[XIV-3]<!--j-->.</p>
+ <hr />
+ <h3>Löschen von Fehlercodes</h3>
+ <p><!--j-->[XIV-4]<!--j-->&nbsp;<!--j-->
+Nach Auswahl der Schaltfläche <b>Fehlercodes löschen</b> wird eine Anzeige mit einer Liste von Steuergeräten angezeigt.<!--j-->&nbsp;<!--j-->[XV]<br />
+Das gewählte Steuergerät zum Löschen der Fehlercodes mit <b>Hinzufügen</b> oder <b>Alle hinzufügen</b> der rechten Seite hinzufügen.<!--j-->&nbsp;<!--j-->
+Einige ECUs können nur gemeinsam zurückgesetzt werden, so daß sie auch zusammen ausgewählt werden.<!--j-->&nbsp;<!--j-->
+Die ausgewählten Steuergeräte werden auf der rechten Bildschirmseite angezeigt.<!--j-->&nbsp;<!--j-->Das Löschen der Fehlercodes mit <b>OK</b> bestätigen.<!--j-->&nbsp;<!--j-->
+Über die Schaltfläche <b>Abbrechen</b> kann der Vorgang ohne Aktion beendet werden.<!--j-->&nbsp;<!--j-->
+Ein Statusfenster zeigt den Fortschritt des Löschvorganges an.<!--j-->&nbsp;<!--j-->
+In der Fehlercodeübersicht werden die gelöschten Fehlercodes für einen Abfragezyklus rot hinterlegt angezeigt.</p>
+ <p><img src="../../images/gds_xv_deu.gif" alt="gds_xv.gif" width="500px"/><br />
+[XV]</p>
+ <hr />
+ <h3>Fehlercodes aktualisieren</h3>
+ <p>Mit der Schaltfläche <b>Fehlercode aktualisieren</b> wird eine manuelle Fehlercodeabfrage zum Steuergerät durchgeführt.<!--j-->&nbsp;<!--j-->[XIV-5]<!--j-->.</p>
+ <hr />
+ <h3>Verlassen der Fehlercode Anwendung</h3>
+ <p>
+Die Fehlercode Anwendung wird über die Schaltfläche <b>Beenden</b> geschlossen<!--j-->&nbsp;<!--j-->[XIV-6]<!--j-->.</p>
+ <table width="80%" border="0">
+ <tr>
+ <td class="important"><b><!--j-->Wichtig<!--j-->:<!--j--></b><!--j-->&nbsp;<!--j-->
+Die <b>Diagnoseapplikation</b> kann nur über die Schaltfläche <b>Beenden</b> geschlossen werden.<!--j-->&nbsp;<!--j-->
+Es ist nicht möglich GDS bei laufender GDS Applikation zu beenden.<!--j-->&nbsp;<!--j-->
+Um GDS zu schließen, ist es erforderlich bis zum Anmeldebildschirm zurückzunavigieren.</td></tr></table>
+ <hr />
+ <h3>Identifizierungsdaten</h3>
+ <p>
+Die Anwendung <b>Datenanzeige</b> zeigt die Daten eines Steuergerätes an.<!--j-->&nbsp;<!--j-->
+Die Diagnoseapplikation Identifizierungsdaten zeigt spezifische Informationen der Software- Hardwareversion des gewählten Steuergerätes an. Diese Informationen können bei einer Anfrage im Technischen Assistance Center erforderlich sein.</p>
+ <hr />
+ <h2>
+Datenansicht</h2>
+ <p>
+Die Anwendung Datenanzeige zeigt in Echtzeit die Daten und Signalwerte des gewählten Steuergerätes oder des Steuergeräteverbundes an.</p>
+ <p>
+In der Spalte <b>Alle Parameter</b> werden alle Werte des Steuergerätes oder des Verbundes angezeigt<!--j-->&nbsp;<!--j-->[XVI-1]<!--j-->.<!--j-->&nbsp;<!--j-->
+Die angezeigten Spalten können über die Schaltfläche <b>Spaltenauswahl</b> konfiguriert werden <!--j-->&nbsp;<!--j-->[XVI-3]<!--j-->.</p>
+ <p>Individuell ausgewählte Parameter können in einer Überwachungsliste angezeigt und analysiert werden. Hierzu den zu überwachenden Wert markieren und die Schaltfläche <b>Zur Überwachungsliste hinzufügen</b> betätigen <!--j-->&nbsp;<!--j-->[XVI-2]<!--j-->.</p>
+
+  <p><img src="../../images/gds_xvi_deu.gif" alt="gds_xvi.gif" width="650px"/><br />
+[XVI]</p>
+
+  <p>
+Der Überwachungsliste hinzugefügte Parameter können über einen Liniengraph angezeigt werden <!--j-->&nbsp;<!--j-->[XVII-1]<!--j-->.<!--j-->&nbsp;<!--j-->
+
+
+Hierzu den Parameter in der Liste markieren und über die Schaltfläche <b>Hinzufügen</b> die Anzeige Liniengraph starten <!--j-->&nbsp;<!--j-->[XVII-2]<!--j-->.<!--j-->&nbsp;<!--j-->
+Es ist möglich, mehrere Parameter in der Anzeige darzustellen.</p>
+ <p>
+Mit den Funktionsschaltflächen in der unteren Leiste kann die Anzeige Liniengraph konfiguriert werden.<!--j-->&nbsp;<!--j-->[XVII-3]</p>
+ <ol>
+ <li><b>Zeitachsenausgleich anhalten /Zeitachsenausgleich starten</b>: Wechseln zwischen einer statischen Anzeige oder einer mitlaufenden Anzeige.</li>
+ <li><b>Datenpunkt</b>: Wechseln der Graphanzeige zwischen Punktansicht und Linienanzeige.</li>
+ <li><b>Marker hinzufügen</b>: Hiermit können bestimmte Abschnitte in der Anzeige zur späteren Analyse markiert werden</li>
+ <li><b>Vergrößern</b> / <b>Verkleinern</b></li>
+ </ol>
+ <p>
+
+  <img src="../../images/gds_xvii_deu.gif" alt="gds_xvii.gif" width="650px"/><br />
+[XVII]</p>
+ <p>
+Individuell ausgewählte Signalparameter der Tabelle <b>Alle Parameter</b> können neben der Tabellenansicht auch grafisch dargestellt werden.<!--j-->&nbsp;<!--j-->[XVI-1]<!--j-->.<!--j-->&nbsp;<!--j-->
+Hierzu den Parameter markieren und die Ansichtsoption mit der Schaltfläche <b>Parameter wählen</b> auswählen.<!--j-->&nbsp;<!--j-->[XVIII-1]<!--j-->.<!--j-->&nbsp;<!--j-->Die Parameter können in folgenden Ansichten dargestellt werden:</p>
+ <ul type=square>
+ 	 <li>Zeigerdiagramm<!--j-->&nbsp;<!--j-->[XVIII-2]<!--j-->.</li>
+ 	 <li>Balkendiagramm<!--j-->&nbsp;<!--j-->[XVIII-3]<!--j-->.</li>
+ 	 <li>Expertenansicht<!--j-->&nbsp;<!--j-->[XVIII-4]<!--j-->.</li>
+ </ul>
+ <p>Bis zu vier Parameter können parallel in der grafischen Anzeigen dargestellt werden.</p>
+
+
+   <p><img src="../../images/gds_xviii_deu.gif" alt="gds_xviii.gif" width="650px"/><br />
+[XVIII]</p>
+ <hr />
+ <h3>Datenaufzeichnung</h3>
+ <p>Die <b>Datenaufzeichnungsfunktion</b> ermöglicht die Wiedergabe von zuvor aufgezeichneten Daten z.B. zur Weitergabe an das Technische Assistance Center.<!--j-->&nbsp;<!--j-->Die Dateninformationen können zur Analyse von Fahrzeugproblemen sowie Setzbedingungen von Fehlercodes verwendet werden.<!--j-->&nbsp;<!--j-->Die grafische Anzeige kann verwendet werden, um bei der Analyse von Komponenten Parameter zu vergleichen.<!--j-->&nbsp;<!--j-->Aufgenommene Datenaufzeichnungen können über die folgenden zwei Möglichkeiten geöffnet werden:</p>
+ <ul>
+ <li>Auswahl der Datenaufzeichnungsdatei in der <b>Fahrzeugstartseite</b> im Bereich <b>Gespeicherte Dateien</b> durch Markieren der Aufzeichnung.</li>
+ <li>Mit der Schaltfläche <b>Überprüfen</b> bzw. Doppelklick auf die Datei wird die Datenaufzeichnungsanwendung gestartet.</li>
+ <li>In der Menüleiste <b>Werkzeuge</b> <b>Datenaufzeichnungsansicht</b> bzw. <b>Start Aufzeichnung</b> wählen.<!--j-->&nbsp;<!--j-->Anschliessend den <b>Datenaufzeichnungsmanager</b> öffnen.<!--j-->&nbsp;<!--j-->Den gewünschten Schnappschuss doppelklicken oder <b>Lade Schnappschussauswahl</b> mit anschließender Schnappschusswahl betätigen.</li>
+ </ul>
+ <p>Unabhängig von der Auswahlmethode erscheint ein Bestätigungsfenster, sobald die Datei vollständig geladen ist.<!--j-->&nbsp;<!--j-->Bitte mit <b>OK</b> bestätigen.</p>
+ <hr />
+ <h3>Wiedergabe der Datenaufzeichnung<!--j-->&nbsp;<!--j-->[XIX-1]</h3>
+ <p>Die Daten können in verschiedenen Anzeigefunktionen wiedergegeben werden</p>
+
+
+   <table width="84%" height="80" border="1">
+ <tr>
+ <td width="7%"><img src="../../images/gds_play.png" alt="gds_play.png" width="25" height="23" /></td>
+ <td width="93%">
+Die Wiedergabe wird mit der WIEDERGABE Schaltfläche gestartet. Der graue Positionsbalken zeigt den Abspielfortschritt.<!--j-->
+
+&nbsp;<!--j-->
+
+Der graue Positionsbalken zeigt den Abspielfortschritt.<!--j-->
+
+&nbsp;<!--j-->
+Alle aktiven Schaltflächen werden grau dargestellt.</td>
+ </tr>
+ <tr>
+ <td><img src="../../images/gds_pause.png" alt="gds_pause.png" width="24" height="21" /></td>
+ <td>Mit der Pausenschaltfläche kann die Wiedergabe der Datenanzeige gestoppt werden.<!--j-->&nbsp;<!--j-->Die Datenanzeige kann von der Position direkt wieder gestartet werden.</td>
+ </tr>
+ <tr>
+ <td><img src="../../images/gds_stop.png" alt="gds_stop.png" width="24" height="19" /></td>
+ <td>Mit der <b>Stop</b> Schaltfläche wird die Datenaufzeichnung komplett angehalten.<!--j-->&nbsp;<!--j-->Mit <b>Start</b> beginnt erneut die Wiedergabe der Datenaufzeichnung.</td>
+ </tr>
+ </table>
+ <hr />
+ <h3>Zeitsteuerung <!--j-->&nbsp;<!--j-->[XIX-2]</h3>
+ <p>Im Menü <b>Zeitsteuerung</b> wird die Wiedergabe der Datenaufzeichnungen gesteuert.<!--j-->&nbsp;<!--j-->Die verfügbaren Funktionen erlauben die Wiedergabe von bestimmten Abschnitten der Aufzeichnung, die Auswahl bestimmter Darstellungsoptionen sowie die Veränderung der Geschwindigkeit der Wiedergabe.<!--j-->&nbsp;<!--j-->Die folgenden Funktionen können ausgewählt werden:</p>
+ <table width="84%" border="1">
+ <tr>
+ <td><img src="../../images/gds_bookmark.png" alt="gds_bookmark.png" width="17" height="24" /></td>
+ <td>Mit der Lesezeichenfunktion können in der Datenaufzeichnung Lesezeichen mit Kommentar gesetzt werden, welche später wieder aufgerufen werden können. <!--j-->&nbsp;<!--j-->Wenn die Funktion gewählt wird, erscheint ein Eingabefenster für den Lesezeichenkommentar, in das ein beliebiger Text eingegeben werden kann.<!--j-->&nbsp;<!--j-->Einen Lesezeichennamen vergeben und mit <b>OK</> bestätigen.</td>
+ </tr>
+ <tr>
+ <td><img src="../../images/gds_notepad.png" alt="gds_notepad.png" width="26" height="22" /></td>
+ <td>Mit der Kommentarfunktion kann eine Aufzeichnungsdatei mit einem Kommentar versehen werden.<!--j-->&nbsp;<!--j-->Wenn die Funktion gewählt wird, erscheint ein Eingabefenster für den Lesezeichenkommentar, in das ein beliebiger Text eingegeben werden kann.<!--j-->&nbsp;<!--j-->Geben Sie einen Kommentar ein und bestätigen mit <b>OK</b>.</td>
+ </tr>
+ <tr>
+ <td><img src="../../images/gds_load.png" alt="gds_load.png" width="23" height="23" /></td>
+ <td>Mit <b>Dateiaufzeichnung laden</b> (blauer Ordner) wird eine Datei zur weiteren Betrachtung geladen.<!--j-->&nbsp;<!--j-->Wenn Sie einen zuvor <a href="#export_snap">exportierten Schnappschuss</a> ansehen möchten, entpacken Sie zuvor das entsprechende Archiv *.zip.<!--j-->&nbsp;<!--j--><!--j-->&nbsp;<!--j-->Die Dateien können auch durch Doppelklicken auf die Datei im <b>Datenaufzeichnungsmanager</b> geladen werden.</td>
+ </tr>
+ <tr>
+ <td><img src="../../images/gds_time-options.png" alt="gds_time-options.png" width="19" height="23" /></td>
+ <td>Mit der Taste <b>Pfeil nach unten</b> können alle Optionen zur <b>Zeitanzeige</b> angezeigt werden.<!--j-->&nbsp;<!--j-->Eigene Optionen können durch Klick auf den entsprechenden Eintrag gewählt werden.</td>
+ </tr>
+ <tr>
+ <td><img src="../../images/gds_speed.png" alt="gds_speed.png" width="57" height="27" /></td>
+ <td>
+Die Wiedergabegeschwindigkeit der Datenaufzeichnung kann mit dieser Funktion geändert werden. <!--j-->
+
+&nbsp;<!--j-->
+
+Für Zeitlupenwiedergabe stehen die Wiedergabegeschwindigkeiten 1/8x, 1/4x, und 1/2x zur Verfügung.<!--j-->
+
+&nbsp;<!--j-->
+
+Der Wert für die Echtzeitwiedergabe beträgt 1.<!--j-->
+
+&nbsp;<!--j-->
+Zeitraffer wird mit 2x, 4x, und 8x ausgewählt.</td>
+ </tr>
+ </table>
+
+
+   <hr />
+ <h3>Ansichtsoptionen<!--j-->&nbsp;<!--j-->[XIX-3]</h3>
+ <p>Die Datenaufzeichnungen können in verschiedenen Ansichten dargestellt werden.<!--j-->&nbsp;<!--j-->Die folgenden Ansichtsoptionen stehen zur Verfügung:</p>
+ <ul>
+ <li>Messwertlistenansicht - Anzeige der Schnappschusswerte in einer Tabelle.<!--j-->&nbsp;<!--j-->Die aktuellen Werte der Parameter werden dargestellt.</li>
+ </ul>
+ <table width="80%" border="0">
+ <tr>
+ 	<td class="important"><b>Wichtig</b><br />Der Parametername wird in der zur Zeitpunkt der Erzeugung eingestellten Sprache angezeigt, sofern keine entsprechende Übersetzung vorliegt.</td></tr></table>
+ <ul>
+ <li>Protokollansicht - enthält alle Informationen der Datenaufzeichnung.<!--j-->&nbsp;<!--j-->Alle Daten sind	in der aufgezeichneten Reihenfolge aufgelistet.<!--j-->&nbsp;<!--j-->Parameter können durch Mausclick von der Anzeigeliste entfernt oder hinzugefügt werden.</li>
+ <li>Statusansicht - Zeigt die aktuellen Werte von allen Daten in einem bestimmten Zeitrahmen.<!--j-->&nbsp;<!--j-->Diese Werte können mit der Überwachungsansicht verglichen werden.</li>
+ <li>Überwachungsansicht - System- und benutzerdefinierte Überwachungsgrenzwerte können gesetzt werden. <!--j-->&nbsp;<!--j-->Diese Funktion kann verwendet werden, wenn mehrere Faktoren dieses Diagnoseproblem beeinflussen.<!--j-->&nbsp;<!--j-->
+Bei Erreichen eines Grenzwertes wird eine entsprechende Meldung eingeblendet.<ul><li>Überwachungsbedingungen laden<!--j-->&nbsp;<!--j-->-<!--j-->&nbsp;<!--j-->Laden einer Datei mit Überwachungsbedingungen.</li>
+ 	 <li>Überwachungen speichern<!--j-->&nbsp;<!--j-->-<!--j-->&nbsp;<!--j-->Speichern von konfigurierten Überwachungsbedingungen.</li>
+ <li>Überwachungen entfernen<!--j-->&nbsp;<!--j-->-<!--j-->&nbsp;<!--j-->Entfernen von Überwachungsbedingungen. Dieser steht dann nicht mehr zur Verfügung.</li>
+ <li>Bearbeiten der Triggeüberwachungsbedingungen.<!--j-->&nbsp;<!--j-->-<!--j-->&nbsp;<!--j-->Konfiguration der Grenzwerte und Parameter von gespeicherten	Überwachungsbedingungen.</li>
+ <li>Überwachung hinzufügen<!--j-->&nbsp;<!--j-->-<!--j-->&nbsp;<!--j-->Eingabe von Überwachungsbedingungen.</li></ul></li>
+ <li>Liniendiagramm<!--j-->&nbsp;<!--j-->-<!--j-->&nbsp;<!--j-->Anzeige der Fehlercodes während der Wiedergabe der Dateiaufzeichnung.</li>
+ <li>Liniendiagramm - Darstellung der Daten in Diagrammformat über die Zeitachse.<!--j-->&nbsp;<!--j-->In dieser Anzeige können bestimmte Parameter zur Anzeige ausgewählt werden, indem das jeweilige Kästchen in der Spalte <b>Ausgewählt</b> angeklickt wird.<!--j-->&nbsp;<!--j-->Unter der Grafik erscheinen 4 Schaltflächen: <b>Vergrößern In</b>, <b>Verkleinern</b>, <b>Lesezeichen</b> und <b>Zeitachsenausgleich anhalten</b>.<!--j-->&nbsp;<!--j-->Jede dieser Funktionen kann durch jeweiliges Anklicken aktiviert werden.</li>
+ </ul>
+ <p><img src="../../images/gds_xix_deu.gif" alt="gds_xix.gif" width="650px"/><br />
+[XIX]</p>
+ <hr />
+ <h2>Stellgliedtests:</h2>
+ <p>Mit den Steuerfunktionen (Stellgliedtests) können spezifische Steuergerätefunktionen durch GDS ferngesteuert ausgeführt werden.<!--j-->&nbsp;<!--j-->Die Funktion wird in der Systemnavigationsseite durch Auswahl des Systems gestartet.</p>
+ <p>Die Stellgliedtests sind in der Datenlistenansicht eingebettet.<!--j-->&nbsp;<!--j-->Während der Ausführung des Stellgliedtests können die Daten in der Liste überwacht werden und mit der Datenaufzeichnung aufgenommen werden.</p>
+ <p>GDS unterstützt zwei Varianten von Stellgliedtest:</p>
+ <p>1.<!--j-->&nbsp;<!--j-->Digitale Stellgliedtests mit AN/AUS Funktion<!--j-->&nbsp;<!--j-->[XX-1]</p>
+ <p><img src="../../images/gds_xx_deu.gif" alt="gds_xx.gif" width="650px"/><br />
+[XX]</p>
+ <p>2.<!--j-->&nbsp;<!--j-->Analoge Stellgliedtests mit Steuerfunktion.<!--j-->&nbsp;<!--j-->Der Stellgliedtest wird gesteuert durch die Schaltflächen oder durch Ziehen des Zeigers.<!--j-->&nbsp;<!--j-->[XXI-1]<!--j-->&nbsp;<!--j-->oder<!--j-->&nbsp;<!--j-->[XXI-2]<!--j-->.</p>
+ <p><img src="../../images/gds_xxi_deu.gif" alt="gds_xxi.gif" width="650px"/><br />[XXI]</p>
+ <hr />
+ <h2>Konfiguration- und Rücksetzfunktionen:</h2>
+ <p>Die Konfiguration- und Rücksetzfunktionen sind spezifische Steuergerätefunktionen, wenn Systemkomponenten ersetzt oder neu konfiguriert werden müssen. (z.B. Einspritzdüsenkennwert IMA).<!--j-->&nbsp;<!--j-->Weitere Details sind in der jeweiligen Aus/Einbauanweisung der Serviceanleitung beschrieben.</p>
+ <hr />
+ <h1><a name="troubleshooting"></a>7.<!--j-->&nbsp;<!--j-->FEHLERSUCHE</h1>
+
+  <h2>MDI Verbindungsprobleme</h2>
+ <p>Falls das MDI nicht mit GDS kommunizieren kann, wird ein Warnhinweis angezeigt.<!--j-->&nbsp;<!--j-->Zur Fehlerbehebung folgende Schritte ausführen:</p><ul>
+ <li>Es ist sicherzustellen, dass die MDI Manager Software nicht zeitgleich mit GDS betrieben wird.</li>
+ <li>Überprüfen Sie die korrekte Verbindung des MDI zwischen Fahrzeug und Computer.</li>
+ <li>Das USB-Kabel durch Quertausch mit funktionierenden MDI-Einheiten überprüfen.<!--j-->&nbsp;<!--j-->Überprüfen Sie alle Verbindungen und versuchen es erneut.</li>
+ <li>Das MDI DLC Verbindungskabel durch Quertausch mit funktionierenden MDI-Einheiten überprüfen.<!--j-->&nbsp;<!--j-->Überprüfen Sie alle Verbindungen und versuchen es erneut.</li>
+ <li>Falls der Fehler weiterhin besteht, wenden Sie sich an das Technische Assistance Center.</li>
+ <li>Überprüfen Sie, daß die Firewall die GDS-/MDI-Kommunikation nicht behindert.</li>
+ </ul>
+ <hr />
+ <h2>Konflikt zwischen GDS/MDI Manager</h2>
+ <p>GDS Software und MDI Manager Software können nicht gleichzeitig laufen/gestartet sein.<!--j-->&nbsp;<!--j-->Bei gleichzeitiger Benutzung beider Programme kann ein Konflikt auftreten.<!--j-->&nbsp;<!--j-->Über die Schaltfläche <b>Details</b> können Sie mögliche Fehlerursachen anzeigen.<!--j-->&nbsp;<!--j-->Sollte dieses Problem weiterhin bestehen, werden diese Information gegebenenfalls vom Technical Assistance Center angefordert.</p>
+ <p>Bei Fortbestehen dieses Softwarekonflikts wird die Meldung &quot;Fatal error has occured&quot; von der MDI Manager Software ausgegeben.<!--j-->&nbsp;<!--j-->Beenden Sie die MDI Manager Software und wechseln Sie zur GDS Anwendung.<!--j-->&nbsp;<!--j-->Sollte das Problem auch nach dem Wechseln ins GDS bestehen, wenden Sie sich an das Technical Assistance Center.</p>
+ <p>&nbsp;</p>
+ <p align="right"><font size="2">&copy; GM Europe, SPO Engineering, International Operations - 08 May 2009 (V3.0)</font></p>
+ </div>
+
+  </body>
+ </html>

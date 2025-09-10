@@ -1,0 +1,735 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8" />
+<title>Global Diagnostic System</title>
+<link rel="stylesheet" type="text/css" href="mdiprint.css" media="print" />
+<!-- Version 2.0.16 with all screenshots and Export Function explanation (Snapshot) -->
+
+<style type="text/css">
+	  <!--
+	div.all { margin-top:2px; margin-left:2px; margin-right:auto }
+	  
+.style1 { text-align: center;
+}
+.style2 {
+	border-style: solid;
+	border-color: black;
+	border-width: 1px;
+}
+.style3 {
+	border: 1px solid black;
+}
+.tableinsert {
+	vertical-align: top;
+	text-indent: 20px;
+}
+.caution {
+	padding: 10px;
+	margin: 0px;
+	border-color: #0000FF;
+	border-style: outset;
+	border-width: 1px 4px 4px 4px;
+	border-left: 1px solid #808080;
+	border-top: 1px solid #808080;
+	background-color: #FFCCCC;
+}
+.important {
+	padding: 10px;
+	margin: 0px;
+	border-color: #0000FF;
+	border-style: outset;
+	border-width: 1px 4px 4px 4px;
+	border-left: 1px solid #808080;
+	border-top: 1px solid #808080;
+	background-color: #FFCCCF;
+}
+.note {
+	padding: 10px;
+	margin: 0px;
+	border-color: #0000FF;
+	border-style: outset;
+	border-width: 1px 4px 4px 4px;
+	border-left: 1px solid #808080;
+	border-top: 1px solid #808080;
+	background-color: #99CCFF;
+}
+.notice {
+	padding: 10px;
+	margin: 0px;
+	border-color: #808080 #666666 #666666 #808080;
+	border-style: solid outset outset solid;
+	border-width: 1px 4px 4px 4px;
+	border-left: 1px solid #808080;
+	border-top: 1px solid #808080;
+	background-color: #C0C0C0;}
+
+* {
+	font-family:arial,sans-serif;}
+
+
+
+-->
+</style>
+</head>
+<body><div class="all">
+
+ <h1 align="center">Global Diagnostic System</h1>
+ <h1>Inhoudsopgave</h1>
+ <ol>
+ <li><a href="#intro">Inleiding</a></li>
+ <li><a href="#product_description">Productbeschrijving</a></li>
+ <li><a href="#installation">GDS Installatie</a></li>
+ <li><a href="#getting_started">Aan de slag</a></li>
+ <li><a href="#navigation">Algemene Navigatie</a></li>
+ <li><a href="#diagnostics">Diagnostische gegevens</a></li>
+ <li><a href="#troubleshooting">Troubleshooting</a></li>
+ </ol>
+ <hr />
+
+  <h1><a name="intro"></a>Inleiding</h1>
+ <h2>GDS Naslaggids</h2>
+ <p>De Global Diagnostic System (GDS) Snelle Naslaggids biedt een overzicht van de GDS.</p>
+ <p>Alle informatie in deze handleiding is gebaseerd op de meest recente productinformatie die beschikbaar is op het tijdstip van publicatie.<!--j-->&nbsp;<!--j-->Het recht wordt voorbehouden om wanneer dan ook wijzigingen aan te brengen zonder kennisgeving.</p>
+ <p>Geen enkel deel van deze publicatie mag worden gereproduceerd, opgeslagen in een retrieval systeem of overgedragen in welke vorm en op welke wijze dan ook, inclusief maar niet beperkt tot elektronische wijze, mechanische wijze, door te fotokopiëren, op te nemen of op andere wijze, zonder voorafgaande schriftelijke toestemming van GM Service and Parts Operations.<!--j-->&nbsp;<!--j-->Dit geldt voor alle teksten, tabellen, illustraties en grafieken.</p>
+ <p>Verzoeken voor toestemming moeten worden verzonden naar:</p>
+ <p>General Motors Corporation<br />
+Service and Parts Operations<br />
+Product Engineering<br />
+37350 Ecorse Road<br />
+Romulus, MI 48174-1376<br />
+U.S.A.</p>
+ <p>© 2008 GM Service and Parts Operation.<!--j-->&nbsp;<!--j-->Made in the U.S.A.<!--j-->&nbsp;<!--j-->Alle rechten voorbehouden.</p>
+ <hr />
+
+  <h2>Algemene gegevens</h2>
+ <p>
+De GDS is bestemd voor gebruik door opgeleid servicepersoneel voor het diagnosticeren en repareren van elektronische systemen in auto's.<!--j-->&nbsp;<!--j-->
+
+Alles is in het werk gesteld om te voorzien in volledige en juiste technische informatie gebaseerd op fabrieksservice-informatie die op het tijdstip van publicatie beschikbaar was.<!--j-->&nbsp;<!--j-->
+Het recht wordt echter voorbehouden om wanneer dan ook wijzigingen aan te brengen zonder kennisgeving.</p>
+ <p>
+Als u zich vertrouwd wilt maken met GDS alsmede de mogelijkheden en het gebruik ervan, lees dan de Gebruikershandleiding alvorens GDS aan het werk te zetten.</p>
+ <p>GDS biedt de volgende mogelijkheden:</p>
+ <ul>
+ <li>Lezen van Diagnostische Defectcode (DTC)</li>
+ <li>Lezen van informatie ECU-identificatie</li>
+ <li>Lezen en grafisch weergeven van Gegevenslijstparameter</li>
+ <li>Maken en opslaan van snapshot-gegevens</li>
+ <li>Besturingsfuncties</li>
+ <li>Configuratiefunctie en functie voor opnieuw instellen</li>
+ <li>Maken en opslaan van diagnostisch protocol</li>
+ <li>Opslag van diagnostische sessies per voertuig</li>
+ </ul>
+
+  <table width="80%" border="0">
+ <tr>
+ <td class="important">
+ <b><!--j-->Belangrijk<!--j-->:<!--j--></b><br />
+SPS programmering van controllers van het voertuig wordt niet ondersteund in GDS.<!--j-->&nbsp;<!--j-->Voor SPS Pass Through-programmering met de MDI gebruikt u de toepassing TIS2Web / GlobalTIS SPS.</td>
+ </tr>
+ </table>
+ <hr />
+
+  <h2>Overzicht klantenondersteuning</h2>
+ <p>
+
+Voor assistentie met vragen of problemen met betrekking tot de werking van uw GM-Techline product en toebehorende producten of voor regeling van reparaties tijdens of na de garantieperiode, neemt u contact op met uw plaatselijke Customer Support Center.<!--j-->&nbsp;<!--j-->Als u vervangingsonderdelen wilt bestellen, neemt u contact op met GM Dealer Equipment.</p>
+ <h3>Voordat u belt</h3>
+ <p>Voordat u de helpdesk belt, dient u de volgende gegevens bij de hand te hebben:</p>
+ <ul>
+ <li>Naam dealervestiging, adres en dealercodenummer</li>
+ <li>Serienummer van MDI of notebook, indien van toepassing</li>
+ <li>Naam, onderdeelnummer en het aantal items dat wordt aangevraagd</li>
+ <li>Telefoonnummer waar de monteur kan worden bereikt.</li>
+ </ul>
+ <p>Noteer een bondige beschrijving van het probleem:</p>
+ <ul>
+ <li>Vertel wanneer het probleem optrad</li>
+ <li>Noteer eventuele foutcodes die worden weergegeven</li>
+ <li>Vermeld welke accessoires werden gebruikt toen het probleem zich voordeed en deel voertuiginformatie mee</li>
+ </ul>
+
+  <h4>UW MDI IDENTIFICEREN</h4>
+ <p>Het GM MDI fabricagelabel zit achter aan de eenheid.<!--j-->&nbsp;<!--j-->
+
+Het fabricage-identificatienummer bestaat uit twee delen: een fabricagecode voor tracering en een uniek serienummer.<!--j-->&nbsp;<!--j-->
+Het serienummer wordt gebruikt ter identificatie van de MDI in de software.</p>
+
+  <h3>Het telefoongesprek voeren</h3>
+
+  <h4>Europese gebruikers</h4>
+ <h5>GDS Software-installatie &amp; Systeemcommunicatieondersteuning:</h5>
+ <p><b>DAC - Dealer Assistance Center:</b><br />
+
+
+Er wordt ondersteuning voor gebruikers van GDS software, voor GDS communicatie met TIS2Web / GlobalTIS en de MDI gegeven door het Dealer Assistance Center.<br />
+
+Het telefoonnummer voor het betreffende land vindt u op de inlogpagina van het portaal Kanaal 21.</p>
+ <h5>
+GDS Diagnostische ondersteuning Voertuig:</h5>
+ <p><b>Europees Centrum voor Technische Assistentie:</b><br />
+
+Het Europees Centrum voor Technische Assistentie biedt gebruikersondersteuning voor problemen met voertuigcommunicatie bij op GDS gebaseerde diagnostische activiteiten.<!--j-->&nbsp;<!--j-->
+Het telefoonnummer voor het betreffende land kan door uw plaatselijke organisatie van General Motors Europe worden verkregen.</p>
+ <h5>
+Ondersteuning voor Onafhankelijke Reparatiecentra en Aftermarket bedrijven:</h5>
+ <p><b>European Customer Assistance Center</b><br />
+Onafhankelijke reparatiecentra kunnen voor bovenstaande ondersteuningsservices contact opnemen met European Customer Assistance Center.<!--j-->&nbsp;<!--j-->
+De contactinformatie vindt u op het GME InfoTech Portal.</p>
+ <hr />
+ <h3>Softwarelicentieovereenkomst</h3>
+ <p>Lees deze software licentieovereenkomst zorgvuldig alvorens de software te gebruiken.<!--j-->&nbsp;<!--j-->
+Gebruik van de software houdt in dat u akkoord gaat met de voorwaarden en condities in deze overeenkomst.</p>
+ <p>EIGENDOM<!--j-->:<!--j-->&nbsp;<!--j-->
+
+
+De software is een auteursrechtelijk beschermd werk van General Motors Corporation. U gaat ermee akkoord dat General Motors Corporation alle auteursrechtelijke en andere eigendomsrechten, titel en belangen in en met betrekking tot de software bezit.<!--j-->&nbsp;<!--j-->
+Alle rechten met betrekking tot de software die hieronder niet duidelijk in licentie zijn gegeven, zijn uitdrukkelijk voorbehouden aan General Motors Corporation.</p>
+ <p>GEBRUIK<!--j-->:<!--j-->&nbsp;<!--j-->
+Er wordt u een niet-exclusieve, niet-overdraagbare licentie toegekend voor het gebruik van de software op meerdere computersystemen.<!--j-->&nbsp;<!--j-->
+
+U mag de software niet geheel of gedeeltelijk onderwerpen aan reverse engineering, decompileren, aanpassen, vermenigvuldigen, distribueren of verkopen.<!--j-->&nbsp;<!--j-->
+Deze licentie is persoonlijk. Toekenning is onderworpen aan de voorwaarde dat u alle voorwaarden en condities hierin uiteengezet strikt naleeft.</p>
+ <p>Beëindiging<!--j-->:<!--j-->&nbsp;<!--j-->
+
+General Motors Corporation kan deze software licentieovereenkomst beëindigen als u de voorwaarden en condities hierin uiteengezet niet naleeft.<!--j-->&nbsp;<!--j-->
+
+Bij beëindiging van de overeenkomst moet u onmiddellijk ophouden de software te gebruiken en moet u alle kopieën van de software vernietigen inclusief, maar niet beperkt tot de kopieën op uw computersystemen.</p>
+ <hr />
+ <h1><a name="product_description"></a>2.<!--j-->&nbsp;<!--j-->Productbeschrijving</h1>
+ <h2>Vereisten voor Dealer pc's<!--j-->&nbsp;<!--j-->(<!--j-->Europa<!--j-->)</h2>
+ <p>Minimale pc-vereisten om GDS te gebruiken samen met TIS2Web en GlobalTIS:</p>
+ <ul>
+ <li>Processor:<br />
+Intel Pentium M, 1,5GHz</li>
+ <li>Systeemgeheugen (RAM)<br />
+1GB voor GDS en TIS2Web / GlobalTIS-client; 2GB voor GDS en GlobalTIS onafhankelijk</li>
+ <li>Vasteschijfstation Minimum:<br />
+40 GB</li>
+ <li>Besturingssysteem<!--j-->:<br />Windows XP Professional (SP2)</li>
+ <li>Overige Softwarecomponenten:<br />
+Java Web Start 1.5x of hoger<br />
+ </li>
+ </ul>
+ <p>
+Voor verdere informatie raadpleegt u de hardware- en softwarespecificaties van de GME IT. Deze zijn beschikbaar via uw plaatselijke GME-organisatie.</p>
+ <hr />
+ <h1><a name="installation"></a>3.<!--j-->&nbsp;<!--j-->GDS Installatie</h1>
+ <h2>GDS Overzicht Componenten:</h2>
+ <p>De GDS software bevat de volgende modules die eerst worden geïnstalleerd en tijdens bepaalde periodes regelmatig worden geupdatet.<!--j-->&nbsp;<!--j-->[I]</p>
+ <ul>
+ <li><b>GDS Base System</b><br />
+Geïnstalleerde GDS basissoftware op de pc</li>
+ <li><!--j--><b><!--j-->GDS Modules<!--j--></b><!--j-->:<br />
+Pakketten diagnostische gegevens voor voertuigmodellen waarmee de diagnostische procedures worden uitgevoerd in communicatie met de controllers van het voertuig.</li>
+ <li><!--j--><b><!--j-->GDS Smart Start<!--j--></b><!--j-->:<!--j--><br />Toepassingsagent die de versies GDS Base System, GDS Modules en MDI Manager software Server vergelijkt tussen TIS2Web/GlobalTIS en de plaatselijke installatie.<!--j-->&nbsp;<!--j-->Wanneer nieuwe updates beschikbaar zijn, ontvangt u een waarschuwing om te downloaden.</li>
+ <li><!--j--><b><!--j-->MDI Manager Software (aparte Toepassing)<!--j--></b><!--j-->:<br />
+Toepassing voor het updaten en configureren van het MDI Apparaat (Multiple Diagnostic Interface)</li>
+ </ul>
+ <p><img src="../../images/gds_i_nld.gif" alt="gds_i.gif" width="650px"/><br />
+[I]</p>
+ <hr />
+ <h2>Installatie:</h2>
+ <p>GDS kan worden geïnstalleerd met een aparte installatie-dvd of rechtstreeks als een download van TIS2Web / GlobalTIS.</p>
+ <h3>Installatie vanaf de GDS dvd:</h3>
+ <ul>
+ <li>De pc moet worden gestart in Admin-privileges</li>
+ <li>Start het uitvoeringsbestand voor de installatie in het startmenu van de dvd</li>
+ <li>Selecteer de taal voor het installatieprogramma</li>
+ <li>Bestaande configuratie en gegevens voor GDS kunnen opnieuw worden gebruikt als er een voorgaande versie van GDS op de pc wordt gedetecteerd.</li>
+ <li>Accepteer de licentieovereenkomst (vereist om door te gaan)</li>
+ <li>Selecteer de installatiedirectory voor GDS</li>
+ <li>De installatieprocedure voor GDS wordt gestart</li>
+ <li>De MDI Manager software wordt geïnstalleerd ingeval er geen of geen oudere MDI Manager software op de pc geïnstalleerd is.<!--j-->&nbsp;<!--j-->Bij de eerste installatie van de MDI Manager software moet de MDI hardware tijdens de installatieprocedure aangesloten zijn.<!--j-->&nbsp;<!--j-->Raadpleeg voor verdere informatie de MDI handleiding.</li>
+ <li>GDS kan na de installatieprocedure worden gestart via het pictogram op het bureaublad of via Start/Programma's/GDS.<!--j-->&nbsp;<!--j--><img src="../../images/gds_icon.png" alt="gds_icon.png" /></li>
+ <li>Configureer indien nodig de firewall om GDS communicatie mogelijk te maken met het MDI apparaat.</li>
+ <li>GDS Smart Start wordt gestart, de weergegeven update-procedure wordt uitgevoerd alvorens GDS wordt gestart.</li>
+ </ul>
+ <hr />
+ <h3>Installatie vanaf TIS2Web / GlobalTIS<!--j-->:</h3>
+ <p><img src="../../images/gds_ii_nld.gif" alt="gds_ii.gif" width="600px"/><br />
+[II]</p>
+ <table width="80%" border="0">
+ <tr>
+ <td class="important"><b><!--j-->Belangrijk<!--j-->:<!--j--></b><!--j-->&nbsp;<!--j-->Tijdens het installeren van TIS2Web worden ongeveer 140 MB gedownload via het internet.</td></tr></table>
+ <ul>
+ <li>De pc moet in Admin-privileges draaien</li>
+ <li>Start GDS via de Homepage TIS2Web / GlobalTIS<!--j-->&nbsp;<!--j-->[II]</li>
+ <li>GDS Smart Start wordt gedownload vanaf de TIS2Web-server. Afhankelijk van de internetverbinding kan dit enige tijd duren.</li>
+ <li>Selecteer de installatiedirectory voor GDS.</li>
+ <li>Typ het Internetwachtwoord (alleen als er voor toegang tot het internet een proxyserver wordt gebruikt)</li>
+ <li>Configureer indien nodig de firewall om GDS communicatie mogelijk te maken met het MDI apparaat.</li>
+ <li>Wanneer het installeren van GDS Smart Start begint, kan dit enige tijd duren.</li>
+ <li>Start GDS Smart Start en de update-procedure voor GDS wordt uitgevoerd.<!--j-->&nbsp;<!--j-->[III]</li>
+ <li>Wanneer het downloaden van de installatiebestanden beëindigd is, worden de GDS Versie en de MDI Manager softwareversie weergegeven en kunnen deze worden gedownload door het dialoogvenster te accepteren.<!--j-->&nbsp;<!--j-->Met de knop  <b>Downloadvoortgang weergeven</b> kan de statusbalk voor de voortgang van de update worden weergegeven.</li>
+ <li>De MDI Manager software wordt geïnstalleerd ingeval er geen MDI Manager software op de pc geïnstalleerd is of als de bestaande versie van de MDI Manager software ouder is.<!--j-->&nbsp;<!--j-->Bij de eerste installatie van de MDI Manager software moet de MDI hardware tijdens de installatieprocedure aangesloten zijn.<!--j-->&nbsp;<!--j-->Raadpleeg voor verdere informatie de MDI handleiding.</li>
+ </ul>
+
+  <table width="200" border="0">
+ <tr>
+ <td><img src="../../images/gds_iii_nld.gif" alt="gds_III.gif" width="200px"/></td>
+ <td><img src="../../images/gds_iv_nld.gif" alt="gds_IV.gif" width="150px" /></td>
+ </tr>
+ <tr>
+ <td>[III]</td>
+ <td>[IV]</td>
+ </tr>
+ </table>
+ <hr />
+ <h3>GDS Update via Smart Start<!--j-->:</h3>
+Start GDS vanuit TIS2Web/GlobalTIS of als zelfstandige toepassing via het startmenu van Windows.<!--j-->&nbsp;<!--j-->Voordat GDS wordt geladen, wordt de Smart Start-agent gestart, die de volgende versies van de GDS-installatie op de pc vergelijkt met de inhoud van de TIS2Web/GlobalTIS-server:</p>
+ <ul>
+ <li>GDS Smart Start</li>
+ <li>GDS Base System</li>
+ <li>MDI Manager</li>
+ </ul>
+ <p>Smart Start brengt nieuwe updates ter attentie van de gebruiker indien er nieuwe versies beschikbaar zijn op de server.<!--j-->&nbsp;<!--j-->[IV]</p>
+ <!--<p>De Smart Start update-procedure van GDS Base System, GDS Modules en MDI Manager worden alleen uitgevoerd als GDS wordt gestart vanaf TIS2Web/GlobalTIS Server en niet in de onafhankelijke modus.<!--j-->&nbsp;<!--j--><!--The update capability of standalone started GDS will be available in a future version.</p>
+--> <table width="80%" border="0">
+ <tr>
+ 	 <td class="important"><!--j--><b><!--j-->Belangrijk<!--j--><!--j-->:<!--j--></b><!--j-->&nbsp;<!--j-->De beschreven update-procedures vereisen dat de pc wordt gestart in Admin-privileges.</td></tr></table>
+ <hr />
+ <h3>Terugdraaien van de installatie van GDS Base System</h3>
+ <p>Het installeren van GDS kan worden teruggedraaid naar de vorig geïnstalleerde versie ingeval dat een update van GDS niet naar behoren werkt.</p>
+ <p>Om de terugdraaifunctie te starten, gaat u naar START -&gt;PROGRAMMA'S -&gt; GDS -&gt; GDS TERUGDRAAIEN.<!--j-->&nbsp;<!--j-->Als u de terugdraaifunctie wilt gebruiken, moet een oudere versie van GDS op de pc geïnstalleerd zijn.</p>
+ <h3>GDS-licentiecontrolesysteem (lease)</h3>
+ <p>Het licentiecontrolesysteem GDS dient ter voorkoming van onbevoegd gebruik van GDS.<!--j-->&nbsp;<!--j-->Om de GDS-lease te vernieuwen, moet GDS vanuit TIS2Web of GlobalTIS worden gestart.<!--j-->&nbsp;<!--j-->De GDS-lease moet na 7 dagen worden vernieuwd wanneer de toepassing in die periode alleen in de zelfstandige modus is gestart.<!--j-->&nbsp;<!--j--><br>Wanneer de GDS-lease verlopen is, wijst een foutmelding de gebruiker erop dat hij de GDS-toepassing vanuit TIS2Web/GlobalTIS moet starten om de lease te vernieuwen.</p>
+ <hr />
+ <h3>GDS Modules downloaden en updaten</h3>
+ <p>GDS Modules zijn diagnostische toepassingen die de communicatie en de diagnostische diensten regelen tussen GDS en de controllers van het voertuig<!--j-->.<!--j-->&nbsp;<!--j-->GDS modules worden per model vrijgegeven en worden op TIS2Web / GlobalTIS permanent bijgewerkt.</p>
+ <p>GDS Smart Start identificeert automatisch of er op TIS2Web / GlobalTIS nieuwe of bijgewerkte versies van de modules beschikbaar zijn wanneer de update-procedure in gang wordt gezet<!--j-->.<!--j-->&nbsp;<!--j-->Nieuwe modules moeten eerst naar een plaatselijke directory op de pc worden gedownload alvorens ze in GDS kunnen worden geïnstalleerd.<!--j-->&nbsp;<!--j-->Updates van reeds eerder geïnstalleerde modules worden automatisch gedownload en moeten alleen maar in de GDS Hoofddatabase worden geïnstalleerd.</p>
+ <br clear=all />
+ <hr />
+ <h3>Eerste maal downloaden en installeren van GDS Modules</h3>
+ <ul><li>Start GDS vanuit TIS2Web/GlobalTIS of als zelfstandige toepassing via het startmenu van Windows.</li>
+ <li>Selecteer de knop  <b>Nieuw Diagnostisch Pakket toevoegen</b> in het GDS Inlogscherm.</li>
+ <li>Druk op de knop  <b>Modulelijst updaten vanaf server</b>.<!--j-->&nbsp;<!--j-->[V-1]<!--j-->.<!--j-->&nbsp;<!--j-->Pakketten die op de server beschikbaar zijn maar nog niet zijn gedownload, worden weergegeven met dit symbool.<!--j-->&nbsp;<!--j-->
+ <img src="../../images/gds_server.png" alt="gds_server.png" width="36" height="34" /></li>
+ <li>Modulepakketten markeren en downloaden<!--j-->&nbsp;<!--j-->[V-2]<!--j-->.<!--j-->&nbsp;<!--j-->De filterfunctie dient voor het zoeken naar bepaalde modules.<!--j-->&nbsp;<!--j-->Gedownloade modulepakketten worden weergegeven met dit symbool.<!--j-->&nbsp;<!--j--><img src="../../images/gds_pc.png" alt="gds_pc.png" /></li>
+ <li>Installeer de gedownloade pakketten in de GDS Hoofddatabase. De geïnstalleerde pakketten worden weergegeven in het rechter toepassingsvenster<!--j-->&nbsp;<!--j-->[V-3]<!--j-->.</li>
+ </ul>
+ <p><img src="../../images/gds_v_nld.gif" alt="gds_v.gif" width="650px"/><br />
+[V]</p>
+ <hr />
+ <h2>Via update geïnstalleerde GDS Modules in Hoofddatabase<!--j-->:</h2>
+ <ul>
+ 	 <li>Klik op de knop  <b>Diagnostisch Pakket bijwerken</b> in het GDS Inlogscherm<!--j-->&nbsp;<!--j-->[VI-1]<!--j-->.<!--j-->&nbsp;<!--j-->GDS vergelijkt de versies van de geïnstalleerde GDS modules met de modules die beschikbaar zijn op de server en downloadt geüpdatete pakketten.</li>
+ 	 <li>De gedownloade pakketten worden in het venster linksonder weergegeven om te worden geïnstalleerd.<!--j-->&nbsp;<!--j-->Selecteer de knop  <b>Installeren</b> of  <b>Alles installeren</b> om te beginnen met installeren.<!--j-->&nbsp;<!--j-->[VI-2]<!--j-->.</li>
+ </ul>
+ <p><img src="../../images/gds_vi_nld.gif" alt="gds_vi.gif" width="650px"/><br />
+[VI]<!--j-->:</p>
+ <hr />
+ <h2>
+Update Module terugdraaien</h2>
+ <p>
+
+De terugdraaiprocedure is over het algemeen dezelfde procedure als beschreven in het hoofdstuk Eerste maal downloaden en installeren van GDS Modules</p>
+ <ul>
+ 	 <li>Selecteer de knop  <b>Nieuw Diagnostisch Pakket toevoegen</b> in het GDS Inlogscherm.</li>
+ 	 <li>Druk op de knop  <b>Modulelijst updaten vanaf server</b>.<!--j-->&nbsp;<!--j-->[V-1]<!--j--></li>
+ <li>Markeer en download de gewenste oudere modulepakketten.<!--j-->&nbsp;<!--j-->De filterfunctie dient voor het zoeken naar bepaalde modules.</li>
+ <li>Installeer de gedownloade pakketten in de GDS Hoofddatabase.</li>
+ </ul>
+ <hr />
+ <h2>Installatie van GDS ongedaan maken<!--j-->:</h2>
+ <p>Installatie van GDS kan ongedaan gemaakt worden door het volgende programma te starten:</p>
+ <p>
+START -&gt; PROGRAMMA'S -&gt; GDS -&gt;GDS INSTALLATIE ONGEDAAN MAKEN</p>
+ <hr />
+ <h2>
+Wijzig de taal van GDS<!--j-->&nbsp;<!--j-->/<!--j-->&nbsp;<!--j-->Regionale instellingen<!--j-->:</h2>
+ <p>GDS gebruikt de taalinstelling van het pc-besturingssysteem.<!--j-->&nbsp;<!--j-->Er is geen menu in GDS om de taalinstelling te wijzigen.<!--j-->&nbsp;<!--j-->Voer de volgende stappen uit om de taal van GDS te wijzigen.</p>
+ <ul>
+ <li>Ga als volgt naar het CONFIGURATIESCHERM van Windows:<!--j-->&nbsp;<!--j-->START -&gt; INSTELLINGEN -&gt; CONFIGURATIESCHERM</li>
+ <li>Open het menu REGIONALE EN TAALOPTIES</li>
+ <li>Selecteer het gewenste land in  <b>STANDAARDEN EN NOTATIES</b></li>
+ <li>Open het tabblad GEAVANCEERD.<!--j-->&nbsp;<!--j-->Selecteer de gewenste taalinstelling in de drop down box voor NIET-UNICODE-PROGRAMMA'S</li>
+ <li>Configureer de REGIONALE OPTIES om de weergegeven eenheden in GDS te wijzigen.</li>
+ </ul>
+ <hr />
+ <h1><a name="getting_started"></a>4.<!--j-->&nbsp;<!--j-->Aan de slag</h1>
+ <p><b><!--j-->NOTITIE<!--j-->:<br />
+Alvorens GDS uit te voeren is het belangrijk dat u de volgende voorzorgsmaatregelen neemt:<!--j--></b></p>
+ <ul>
+ <li>Gebruik van een verouderde versie kan voertuigmodules beschadigen.<!--j-->&nbsp;<!--j-->De GDS en de MDI (Multiple Diagnostic Interface) moeten over de meest recente software beschikken.</li>
+ <li>Zorg ervoor dat de accu van het voertuig volledig geladen is<!--j-->&nbsp;<!--j-->Accuvoltage voor GDS moet tussen de 12 en 14 volt liggen.</li>
+ <li>De acculader mag echter niet op het voertuig aangesloten zijn wanneer u de MDI gebruikt.</li>
+ <li>Zorg ervoor dat de kabels goed zijn aangesloten.<!--j-->&nbsp;<!--j-->Als er een kabel niet goed is aangesloten, KAN dit ertoe leiden dat de controller wordt beschadigd.</li>
+ <li>Als u een laptopcomputer of ander weergaveapparaat (bijv. een pda) voor GDS gebruikt, zorg er dan voor dat de voeding goed is aangesloten.<!--j-->&nbsp;<!--j-->Als lichtnetvoeding wordt gebruikt en het voedingssnoer losraakt, kan dit het programmeren onderbreken en kan de besturingsmodule worden beschadigd.<!--j-->&nbsp;<!--j-->Als de laptop op zijn eigen interne stroombron (batterijen) draait, dient u ervoor te zorgen dat deze voldoende is opgeladen om de GDS procedure te voltooien.</li>
+ </ul>
+ <table width="80%" border="0">
+ <tr>
+ <td class="note"><b>NOTITIE</b><br />
+
+Als er een ECU geprogrammeerd moet worden, moet het in het voertuig geïnstalleerd zijn alvorens deze procedure te starten.<!--j-->&nbsp;<!--j-->Zorg ervoor dat de accu van het voertuig volledig geladen is</td></tr></table>
+ <table width="80%" border="0">
+ <tr>
+ <td class="important"><b>Belangrijk</b><br />
+Om de kans op signaalverlies te beperken, dient u MDI te configureren voor de meest stabiele communicatieoptie die in uw omgeving voorhanden is.<!--j--><!--j-->U kunt kiezen uit USB, Ethernet of Draadloos Ethernet.</td></tr></table>
+ <hr />
+ <h2>GDS Opstartprocedure<!--j-->:</h2>
+ <p>GDS kan worden gestart via TIS2Web/GlobalTIS door te klikken op het pictogram GDS.<!--j-->&nbsp;<!--j-->Daarnaast kan GDS ook in de onafhankelijke modus worden gestart via het Startmenu van Windows.</p><ol><li>Om te starten, klikt u op het GDS pictogram in het TIS2Web/GlobalTIS hoofdmenu<!--j-->.<!--j-->&nbsp;<!--j-->Als u GDS in de onafhankelijke modus start, klikt u op START/PROGRAMMA'S/GDS</li><li>Start GDS Smart Start en de weergegeven update-procedure wordt uitgevoerd.<!--j-->&nbsp;<!--j-->Als er voor GDS of MDI Manager op de server een nieuwe versie beschikbaar is, wordt u gevraagd deze te downloaden en op de pc te installeren.<!--j-->&nbsp;<!--j-->Klik op  <b>Doorgaan,</b> om het downloaden of installeren te starten<!--j-->&nbsp;<!--j-->[IV]<!--j-->.<!--j-->&nbsp;<!--j-->Als GDS in de onafhankelijke modus is gestart, is het updaten niet mogelijk.</li>
+ 	 <li>GDS Inlogpagina is geladen.</li></ol>
+ <hr />
+ <h1><a name="navigation"></a>5.<!--j-->&nbsp;<!--j-->Algemene Navigatie</h1>
+ <h2>Pulldown-menu's<!--j-->&nbsp;<!--j--><img src="../../images/gds_menu.png" alt="gds_menu.png" width="57" height="38" /></h2>
+ <p>Er zijn in GDS vijf pulldown-menu's beschikbaar<!--j-->&nbsp;<!--j-->[VII]</p> <p>Notitie<!--j-->:<!--j-->&nbsp;<!--j-->Deze menu's zijn uitsluitend menuselecties voor de pc-versies van GDS<!--j-->.<!--j-->&nbsp;<!--j-->Er zal ook een opmaak voor drukgevoelig beeldscherm beschikbaar zijn waarin de menu's toegankelijk zijn via een popup-knop.</p> <ul>
+ <li>Het  <b>Bestand</b> Menu beschikt over de optie  <b>Afsluiten</b> om GDS te sluiten.</li>
+ <li>Het  <b>Sessie</b> Menu biedt twee opties:<!--j-->&nbsp;<!--j--><b>Huidig Sessielogboek opslaan</b> en  <b>Opmerkingen aan sessie toevoegen...</b><br /><b>Opmerkingen aan sessie toevoegen...</b>: informatie kan via het toetsenbord van de computer worden ingevoerd en opgeslagen in Sessielogboekbeheer.</li>
+ <li>De  <b>Extra</b> Selectie biedt vijf opties:<!--j-->&nbsp;<!--j-->Tracering starten<!--j-->,<!--j-->&nbsp;<!--j-->Snapshot-replay<!--j-->,<!--j-->&nbsp;<!--j-->Rapport aanmaken<!--j-->,<!--j-->&nbsp;<!--j-->Downloadstatus Weergeven...<!--j-->,<!--j-->&nbsp;<!--j-->Gebruikersadministratie<br />Nieuwe gebruikers worden aangemaakt door te klikken op het symbool op de pagina  <b>Gebruikersadministratie</b><!--j-->&nbsp;<!--j-->
+ <img src="../../images/gds_add-user.png" alt="gds_add-user.png" width="27" height="26" />
+ <!--j-->.</li>
+ <li><b>Venster</b>: In het menu </b>Voorkeuren</b> kan de schermconfiguratie worden geselecteerd, bijv. volledig scherm, pc of de modus drukgevoelig beeldscherm.</li>
+ <li>De  <b>Help-selectie</b> biedt drie opties:<br /><b>Help-inhoud</b> toont alle beschikbare GDS Help-bestanden.<!--j-->&nbsp;<!--j-->
+<b>Info GDS</b> toont de versie en Build-ID van GDS.<!--j-->&nbsp;<!--j-->
+<b>MDI Versie tonen</b> toont de versies van de MDI software en hardware.<!--j-->&nbsp;<!--j-->
+Het is mogelijk dat u naar deze informatie wordt gevraagd wanneer u contact opneemt met ons Customer Support Center.</li></ul><p></p>
+ <p><img src="../../images/gds_vii_nld.gif" alt="gds_vii.gif" width="120px"/><br />
+[VII]</p>
+ <hr />
+ <h2>Werkbalk Diagnostische Toepassing</h2>
+ <p>Er worden verschillende werkbalkselecties beschikbaar nadat u de weergave systeemnavigatie hebt bereikt.<!--j-->&nbsp;<!--j-->[VIII]</p>
+ <ul>
+ <li><b>Snapshot maken</b> (Rode Cirkel) is alleen beschikbaar nadat u de weergave systeemnavigatie hebt bereikt en wordt gebruikt voor het maken van een snapshot van het voertuig.<!--j-->&nbsp;<!--j-->Terwijl er een snapshot wordt gemaakt, is deze optie niet beschikbaar.</li>
+ <li><b>Snapshot maken stoppen</b> (Blauw Vierkant) verschijnt terwijl er een snapshot van het voertuig wordt gemaakt.<!--j-->&nbsp;<!--j-->Deze optie wordt geselecteerd om het maken van de snapshot te stoppen en het bestand op te slaan.</li>
+ <li>Het  <b>Screenshot</b> symbool wordt geselecteerd om de inhoud van het weergegeven scherm vast te leggen en het op de computer op te slaan.</li>
+ <li>De  <b>Uitzoomen</b> vergroot het lettertype.<!--j-->&nbsp;<!--j-->De weergegeven afbeelding wordt verkleind telkens wanneer u op de muis klikt.</li>
+ <li>De  <b> Inzoomen</b> optie vergroot het lettertype.<!--j-->&nbsp;<!--j-->De weergegeven afbeelding wordt vergroot telkens wanneer u op de muis klikt.</li>
+ <li>De knop  <b>Afsluiten</b> dient voor het sluiten van de actieve diagnostische toepassing.</li>
+ </ul>
+ <p><img src="../../images/gds_viii_nld.gif" alt="gds_viii.gif" width="400px"/><br />
+[VIII]</p>
+ <hr />
+ <h2>Pijltoetsen</h2>
+ <p>Onder aan de parameterlijst staan pijltoetsen.<!--j-->&nbsp;<!--j-->De pijltoetsen kunnen worden gebruikt voor de volgende navigatiefuncties:</p>
+ <p><img src="../../images/gds_ix_nld.gif" alt="gds_ix.gif" width="600px"/><br />
+[IX]<!--j-->:</p>
+ <ul>
+ <li>De  <b>Omhoog</b> Pijl kan worden gebruikt om naar een hogergelegen map in de parameterlijst te gaan telkens wanneer u op de pijl drukt.</li>
+ <li>De  <b>Omlaag</b> Pijl kan worden gebruikt om naar een lagergelegen map in de parameterlijst te gaan telkens wanneer u op de pijl drukt.</li>
+ <li>De  <b>Rechts</b> Pijl kan worden gebruikt om een niveau in de Navigatiestructuur te openen.</li>
+ <li>De  <b>Links</b> Pijl kan worden gebruikt om een niveau in de navigatiestructuur te sluiten.<!--j-->&nbsp;<!--j-->Deze optie wordt niet weergegeven in het eerste scherm van een procedure.</li></ul>
+ <hr />
+ <h2>Overige toetsen</h2>
+ <p>Alle schermen beschikken onderaan ook over drie andere toetsen.<!--j-->&nbsp;<!--j-->Deze toetsen kunnen voor het volgende worden gebruikt:</p>
+ <ul>
+ <li><b>Start</b> dient voor het starten van een toepassing.</li>
+ <li><b>Vorige Actie</b> kan worden gebruikt om naar het voorgaande scherm te gaan.<!--j-->&nbsp;<!--j-->Deze optie is alleen beschikbaar als er een scherm is waarnaar u kunt teruggaan.</li>
+ <li><b>Volgende Actie</b> kan worden gebruikt om naar het volgende scherm te gaan.<!--j-->&nbsp;<!--j-->Deze opties is alleen beschikbaar als alle nodige selecties in het huidige scherm zijn gemaakt.</li>
+ </ul>
+ <br clear=all />
+ <hr />
+ <h2>Voertuig/MDI Informatie invoeren</h2>
+ <p>1.<!--j-->&nbsp;<!--j-->Ga naar het GDS Hoofdmenu en kies een gebruiker om in te loggen.<!--j-->&nbsp;<!--j-->Als er geen gebruiker is aangemaakt, kunt u een nieuwe gebruiker aanmaken of kan de standaardgebruiker worden geselecteerd.<!--j-->&nbsp;<!--j-->(Zie het hoofdstuk over pulldown-menu's)<br />
+ </p>
+ <p>2.<!--j-->&nbsp;<!--j-->Nadat u een gebruiker hebt geselecteerd, wordt het scherm Identificatiemenu weergegeven.<!--j-->&nbsp;<!--j-->In dit scherm zijn diverse opties beschikbaar:</p>
+ <p><img src="../../images/gds_x_nld.gif" alt="gds_x.gif" width="650px"/><br />
+[X]</p>
+ <ul>
+ 	 <li>[X-1]<!--j-->&nbsp;<!--j--><b><b>MDI Selectie</b></b><!--j-->:<!--j-->&nbsp;<!--j-->Alle MDI's die beschikbaar zijn op de diverse netwerken van de dealer, worden weergegeven. U kunt de MDI selecteren die u gebruikt om de diagnose van het voertuig uit te voeren.<!--j-->&nbsp;<!--j-->Voor verbinding met MDI markeert u een beschikbare MDI door erop te klikken en  <b>Verbinden</b> te selecteren.<!--j-->&nbsp;<!--j-->Selecteer  <b>Verbinding verbreken</b> om de verbinding met MDI te verbreken.<!--j-->&nbsp;<!--j-->Bevestig een nieuwe MDI aan het voertuig en selecteer  <b>Verbinden</b>.<!--j-->&nbsp;<!--j-->Selecteer  <b>Vernieuwen</b> om te controleren op nieuwe MDI's op de beschikbare netwerken.<!--j-->&nbsp;<!--j-->Als u in GDS wilt verdergaan zonder dat een MDI is verbonden, markeert u het aankruisvakje  <b>Navigeren zonder MDI</b>.</li>
+ <li>[X-2]<!--j-->&nbsp;<!--j--><b><b>VIN-nr. leeg</b></b><!--j-->:<!--j-->&nbsp;<!--j-->Veld voor het Voertuigidentificatienummer waarin u handmatig of automatisch vanaf de controller van het voertuig het VIN-nr. kunt invoeren.<!--j-->&nbsp;<!--j-->(Verbinding met MDI vereist).<!--j-->&nbsp;<!--j-->Overige opmerkingen voor dit VIN-nr. / Voertuig kunnen worden ingevoerd in het onderstaande tekstveld.</li>
+ <li>[X-3]<!--j-->&nbsp;<!--j--><b>Voertuigidentificatie</b> Hoofdstuk<!--j-->:<!--j-->&nbsp;<!--j-->Selecteer type, model en modeljaar alvorens verder te gaan.</li>
+ <li>[X-4]<!--j-->&nbsp;<!--j--><b><b>Diagnostische Geschiedenis Voertuig</b></b><!--j-->:<!--j-->&nbsp;<!--j-->Als het voertuig eerder een diagnose heeft ondergaan met dit GDS systeem, zijn het VIN-nr. en geassocieerde informatie opgeslagen in de voertuiggeschiedenis.<!--j-->&nbsp;<!--j-->Selecteer in de lijst het voertuig waaraan u wilt werken en ga onmiddellijk verder naar  <b>Introductiepagina Voertuig</b>.<!--j-->&nbsp;<!--j-->Er is een gratis tekstfilterfunctie beschikbaar</li>
+ </ul>
+ <p>3.<!--j-->&nbsp;<!--j--><b>Introductiepagina Voertuig</b> wordt weergegeven.<!--j-->&nbsp;<!--j-->From this screen various vehicle data is displayed including: entered vehicle information, previous vehicle diagnosis, session comments, session log reports, and stored data</p>
+ <hr />
+ <h2><b><b>Introductiepagina Voertuig</b></b></h2>
+ <p><b>Introductiepagina Voertuig</b> bestaat uit diverse gedeelten:</p>
+ <p>[XI-1]<!--j-->:<!--j-->&nbsp;<!--j--><b>Voertuiginformatie</b> toont een lijst met alle voertuiginformatie inclusief type, model, modeljaar, enz.<br />Deze lijst wordt bijgewerkt terwijl het voertuig wordt onderzocht en wordt bij iedere sessie opgeslagen.<!--j-->&nbsp;<!--j--><b>Deze selectie van voertuigopties verwijderen</b> wordt gebruikt voor het verwijderen van een vorige inhoud voertuig.<!--j-->&nbsp;<!--j-->Markeer de rij die u wilt verwijderen uit de Lijst Inhoud Voertuig en selecteer Apparatuur verwijderen.</p>
+ <p>[XI-2]<!--j-->:<!--j-->&nbsp;<!--j--><b>Opmerkingen over Sessie</b> wordt gebruikt om vrije opmerkingen van de gebruiker over de diagnostische sessie toe te voegen.<!--j-->&nbsp;<!--j-->Klik op  <b>Opmerking toevoegen</b> om extra informatie over een sessie toe te voegen.<!--j-->&nbsp;<!--j-->Met behulp van het toetsenbord kunt u informatie invoeren onder Gebruiker, Gegevens of Opmerking.<!--j-->&nbsp;<!--j-->Als u vorige opmerkingen wilt verwijderen, markeert u de informatie onder Gebruiker, Gegevens of Opmerking en klikt u op  <b>Geselecteerde opmerking verwijderen</b>.</p>
+ <p>[XI-3]<!--j-->:<!--j-->&nbsp;<!--j--><b>Rapporten Sessielogboek</b> kan worden gebruikt voor het afdrukken van de diagnostische informatie van het voertuig.<!--j-->&nbsp;<!--j--><b>Volledige Weergave</b> biedt een volledig rapport over het hele onderzoek dat op het voertuig is uitgevoerd.<!--j-->&nbsp;<!--j--><b>Eenvoudig Rapport</b> biedt een samenvatting van het onderzoek van het voertuig.</p>
+ <p>[XI-4]<!--j-->:<!--j-->&nbsp;<!--j--><b>Snapshot-gegevens</b> toont alle opgeslagen snapshot-gegevens van het voertuig.<!--j-->&nbsp;<!--j-->Gebruikersnaam, bestandsnaam van de snapshot, datum waarop de snapshot is gemaakt en opmerkingen worden weergegeven.<!--j-->&nbsp;<!--j-->De snapshot-replay kan worden weergegeven door het item te markeren en  <b>Overzicht</b> te selecteren.<!--j-->&nbsp;<!--j-->Aparte items kunnen worden verwijderd door het item te markeren en  <b>Verwijderen</b> te selecteren.<br />[XI-6]<!--j-->:<!--j-->&nbsp;<!--j--><b><a name="export_snap">Export</a></b> slaat een snapshot op uw lokale pc op.<!--j-->&nbsp;<!--j-->U kunt deze snapshotgegevens vervolgens voor verdere analyse naar de juiste persoon sturen.</p>
+ <p>[XI-5]<!--j-->:<!--j-->&nbsp;<!--j-->Het menu  <b>Uitgevoerde toepassingen</b> biedt een geschiedenis van diagnostische sessies.</p>
+
+  <p><b>Volgende Actie</b> wordt gebruikt om het onderzoek van het geselecteerde voertuig voort te zetten.</p>
+ <p><img src="../../images/gds_xi_nld.gif" alt="gds_xi.gif" width="650px"/><br />
+[XI]</p>
+ <hr />
+ <h2>Systeemnavigatie - Selectie Diagnostische Toepassing</h2>
+ <p>Zodra u  <b>Volgende Actie</b> in  <b>Introductiepagina Voertuig</b> hebt geselecteerd, wordt de weergave Systeemnavigatie weergegeven.<!--j-->&nbsp;<!--j-->[XII]<!--j-->.</p>
+ <p>Selecteer het navigatiepad dat u voor het voertuig wilt onderzoeken.<!--j-->&nbsp;<!--j-->U kunt navigeren met de navigatiepijlen: rechts/links opent/sluit een submap, de Start-knop start de geselecteerde diagnostische toepassing.<!--j-->&nbsp;<!--j-->U kunt ook navigeren met de muis door te klikken op de +-tekens in de navigatiestructuur of met de pijltoetsen op het toetsenbord.</p>
+ <p>
+Ga verder met het selecteren van mappen voor het gewenste pad totdat u een diagnostische toepassing bereikt die met een toepassingspictogram wordt weergegeven.</p>
+ <p>
+
+Zodra u een diagnostische toepassing start, verdwijnt de weergave systeemnavigatie en verschijnt een diagnostische toepassing.<!--j-->&nbsp;<!--j-->
+Na voltooiing van de diagnostische toepassing selecteert u  <b>Afsluiten</b> rechtsboven in de weergave diagnostische toepassing.<!--j-->&nbsp;<!--j-->
+Hierdoor wordt de diagnostische toepassing gesloten en keert u terug naar de weergave systeemnavigatie.</p>
+ <p><img src="../../images/gds_xii_nld.gif" alt="gds_xii.gif" width="350px"/><br />
+[XII]</p>
+ <hr />
+ <h1><a name="diagnostics"></a>6.<!--j-->&nbsp;<!--j-->Diagnostische gegevens</h1>
+ <h2>DTC-Weergave</h2>
+ <p>Wanneer  <b>DTC-Informatie Voertuig</b> wordt geselecteerd, wordt een lijst van ECU's (Electronic Control Units) en het aantal opgeslagen DTC's weergegeven vanaf de  <b>Diagnostische toepassing</b>.</p>
+ <p><img src="../../images/gds_xiii_nld.gif" alt="gds_xiii.gif" width="400px"/><br />
+[XIII]</p>
+ <p>
+Er zijn 4 opgeslagen DTC's voor de Instrument Cluster Module in het weergegeven voorbeeld.<!--j-->&nbsp;<!--j-->Selecteer  <b>Doorgaan,</b> om de DTC-Hoofdpagina weer te geven.<br />
+
+  <img src="../../images/gds_xiv_nld.gif" alt="gds_xiv.gif" width="650px"/><br />
+[XIV]</p>
+ <p>De beschikbare DTC's worden in een tabel weergegeven.<!--j-->&nbsp;<!--j-->
+De inhoud van de weergegeven tabel kan worden geconfigureerd.<!--j-->&nbsp;<!--j-->Klik op  <b>Kolomselectie</b> om kolommen in de tabel toe te voegen of te verwijderen<!--j-->&nbsp;<!--j-->[XIV-1]<!--j-->.<!--j-->&nbsp;<!--j-->
+De volgende DTC-informatie kan worden weergegeven:</p>
+ <table border=1 cellspacing=0 cellpadding=0>
+ <tr>
+ <td width=158 valign=top><p><b>Selectie</b></p></td>
+ <td width=427 valign=top><p><b>Beschrijving</b></p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>Status</p></td>
+ <td width=427 valign=top><p><img src="../../images/gds_status-unknown.png" alt="gds_status-unknown.png" width="16" height="16" /><!--j-->&nbsp;<!--j-->Nieuwe DTC opgeslagen tijdens leescyclus.<!--j-->&nbsp;<!--j-->Tekst van DTC-beschrijving is ingesteld op vetdruk.</p>
+ <p><img src="../../images/gds_mail-generic.png" alt="gds_mail-generic.png" /><!--j-->&nbsp;<!--j-->Huidige DTC: geen wijziging sinds laatst gelezen cyclus.</p>
+ <p><img src="../../images/gds_forward.png" alt="gds_forward.png" /><!--j-->&nbsp;<!--j-->
+Huidige DTC met statuswijziging sinds laatst gelezen cyclus.<!--j-->&nbsp;<!--j-->
+Tekst van DTC-beschrijving is ingesteld op cursief.</p>
+ <p><img src="../../images/gds_mail-delete.png" alt="gds_mail-delete.png" /><!--j-->&nbsp;<!--j-->
+DTC verwijderd in huidige leescyclus.<!--j-->&nbsp;<!--j-->
+Tekst van DTC-beschrijving is ingesteld met rode achtergrond.</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>ECU</p></td>
+ <td width=427 valign=top><p>Naam Controle-eenheid</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>Functioneel Systeem</p></td>
+ <td width=427 valign=top><p>Naam Functioneel Systeem (ECU-serie)</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>DTC</p></td>
+ <td width=427 valign=top><p>DTC-Code</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>Symptoombyte</p></td>
+ <td width=427 valign=top><p>Symptoombyte-code geassocieerd met DTC</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>Beschrijving</p></td>
+ <td width=427 valign=top><p>DTC-tekstbeschrijving</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>Symptoom</p></td>
+ <td width=427 valign=top><p>Beschrijving Gedecodeerd Symptoom</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>Statusbyte</p></td>
+ <td width=427 valign=top><p>Voor toekomstig gebruik</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>Gedecodeerde Status</p></td>
+ <td width=427 valign=top><p>Huidige status DTC</p></td>
+ </tr>
+ </table>
+ <p>
+Met de  <b>Filteropties</b> kunnen bepaalde ECU's worden ingesteld als een filter met als resultaat dat alleen de DTC's van de weergegeven ECU's te zien zijn<!--j-->&nbsp;<!--j-->[XIV-2]<!--j-->.<!--j-->&nbsp;<!--j-->
+Deze functie kan worden gebruikt wanneer DTC's worden gelezen voor het hele voertuig of per functioneel systeem.<br />
+
+In het onderste veld kan vrije tekst worden ingevoerd om de DTC-weergave te filteren, bijv. een bepaalde probleemcode of een trefwoord.<br />
+De gedetailleerde DTC-Status kan worden weergegeven door het aankruisvakje  <b>DTC-Status weergeven</b> te activeren<!--j-->&nbsp;<!--j-->[XIV-3]<!--j-->.</p>
+ <hr />
+ <h3>DTC's wissen</h3>
+ <p><!--j-->[XIV-4]<!--j-->&nbsp;<!--j-->
+Als  <b>Storingscodes wissen</b> wordt geselecteerd, verschijnt een scherm met de DTC-Informatie van het voertuig.<!--j-->&nbsp;<!--j-->[XV]<br />
+Gebruik de pijl  <b>Toevoegen</b> of  <b>Alles toevoegen</b> om de ECU's te selecteren die u wilt wissen.<!--j-->&nbsp;<!--j-->
+Bepaalde ECU's kunnen uitsluitend samen worden gewist, in welk geval ze samen worden geselecteerd.<!--j-->&nbsp;<!--j-->
+De geselecteerde ECU's worden rechts op het scherm weergegeven.<!--j-->&nbsp;<!--j-->Selecteer  <b>OK</b> om de geselecteerde ECU's te wissen.<!--j-->&nbsp;<!--j-->
+Selecteer  <b>Annuleren</b> als u de ECU's niet op dit moment wilt wissen.<!--j-->&nbsp;<!--j-->
+Als  <b>OK</b> wordt geselecteerd, verschijnt er een voortgangsvenster.<!--j-->&nbsp;<!--j-->
+De verwijderde code(s) worden rood weergegeven en worden tijdens het vernieuwen van het scherm verwijderd.</p>
+ <p><img src="../../images/gds_xv_nld.gif" alt="gds_xv.gif" width="500px"/><br />
+[XV]</p>
+ <hr />
+ <h3>DTC's vernieuwen</h3>
+ <p>Als de knop  <b>Storingscodes vernieuwen</b> wordt geselecteerd, verzoekt GDS de controller om een DTC-update<!--j-->&nbsp;<!--j-->[XIV-5]<!--j-->.</p>
+ <hr />
+ <h3>DTC-Toepassing afsluiten</h3>
+ <p>
+Sluit de DTC-Toepassing af met behulp van de  <b>Afsluiten</b> knop<!--j-->&nbsp;<!--j-->[XIV-6]<!--j-->.</p>
+ <table width="80%" border="0">
+ <tr>
+ <td class="important"><b><!--j-->Belangrijk<!--j-->:<!--j--></b><!--j-->&nbsp;<!--j-->
+De <b>Diagnostische toepassing</b> kan alleen worden afgesloten door  <b>Afsluiten</b> te selecteren.<!--j-->&nbsp;<!--j-->
+Het is niet mogelijk om GDS af te sluiten terwijl er diagnostische toepassingen worden uitgevoerd.<!--j-->&nbsp;<!--j-->
+Als u GDS wilt afsluiten, gaat u terug naar de GDS Inlogpagina .</td></tr></table>
+ <hr />
+ <h3>Identificatie-informatie</h3>
+ <p>
+De toepassing  <b>Gegevensweergave</b> kan worden gebruikt om de controller-gegevens van het voertuig te bekijken.<!--j-->&nbsp;<!--j-->
+De weergave controller-identificatie biedt informatie over de controller-software en -hardware die u nodig kan hebben voor ons Centrum voor Technische Assistentie.</p>
+ <hr />
+ <h2>
+Gegevensweergave</h2>
+ <p>
+De toepassing Gegevensweergave toont de real-time status van de gegevens en signalen van de controller van het voertuig.</p>
+ <p>
+De standaardweergave van de geselecteerde controller-gegevens wordt weergegeven in een tabel  <b>Alle Parameters</b><!--j-->&nbsp;<!--j-->[XVI-1]<!--j-->.<!--j-->&nbsp;<!--j-->
+Gebruik de knop  <b>Kolomselectie</b> om de weergegeven kolommen apart te configureren<!--j-->&nbsp;<!--j-->[XVI-3]<!--j-->.</p>
+ <p>Aparte parameters kunnen in een watchlist worden bekeken door  <b>Aan Watchlist toevoegen</b> te selecteren<!--j-->&nbsp;<!--j-->[XVI-2]<!--j-->.</p>
+
+  <p><img src="../../images/gds_xvi_nld.gif" alt="gds_xvi.gif" width="650px"/><br />
+[XVI]</p>
+
+  <p>
+Parameters die zijn geselecteerd in de watchlist, kunnen worden bekeken in de  <b>Lijngrafiek</b> weergave<!--j-->&nbsp;<!--j-->[XVII-1]<!--j-->.<!--j-->&nbsp;<!--j-->
+
+
+Selecteer in de drop down box de parameter die moet worden weergeven en klik op de knop Toevoegen om de  <b>Lijngrafiek</b> weergave te starten<!--j-->&nbsp;<!--j-->[XVII-2]<!--j-->.<!--j-->&nbsp;<!--j-->
+Het is mogelijk om in de lijngrafiek meerdere parameters weer te geven.</p>
+ <p>
+De weergave lijngrafiek kan worden geconfigureerd met behulp van de knoppen op de onderste taakbalk.<!--j-->&nbsp;<!--j-->[XVII-3]</p>
+ <ol>
+ <li><b>Schuiven pauseren/hervatten</b>: Wisselen tussen een statische weergave en dynamische correctie van de lijngrafiek.</li>
+ <li><b>Gegevenspunten</b>: De grafiekweergave wisselt tussen punt- en lijnmodus</li>
+ <li><b>Markering toevoegen</b>: Markeer bepaalde punten/gebeurtenissen in de lijngrafiek.</li>
+ <li><b>Inzoomen</b> /  <b>Uitzoomen</b> Functie</li>
+ </ol>
+ <p>
+
+  <img src="../../images/gds_xvii_nld.gif" alt="gds_xvii.gif" width="650px"/><br />
+[XVII]</p>
+ <p>
+Aparte parameters van de  <b>Alle Parameters</b> lijst kunnen grafisch worden weergegeven<!--j-->&nbsp;<!--j-->[XVI-1]<!--j-->.<!--j-->&nbsp;<!--j-->
+Selecteer de aparte parameters en selecteer de gewenste weergavemodus in het selectievak<!--j-->&nbsp;<!--j-->[XVIII-1]<!--j-->.<!--j-->&nbsp;<!--j-->De parameter kan in de volgende modi worden bekeken:</p>
+ <ul type=square>
+ 	 <li>Metergrafiek<!--j-->&nbsp;<!--j-->[XVIII-2]<!--j-->.</li>
+ 	 <li>Staafgrafiek<!--j-->&nbsp;<!--j-->[XVIII-3]<!--j-->.</li>
+ 	 <li>Hoge Zichtbaarheid<!--j-->&nbsp;<!--j-->[XVIII-4]<!--j-->.</li>
+ </ul>
+ <p>Max. 4 parameters of weergavemodi kunnen tegelijk worden getoond.</p>
+
+
+   <p><img src="../../images/gds_xviii_nld.gif" alt="gds_xviii.gif" width="650px"/><br />
+[XVIII]</p>
+ <hr />
+ <h3>Snapshot-Replay</h3>
+ <p>De functie  <b>Snapshot-Replay</b> biedt een overzicht van eerder gemaakte snapshot-gegevens van het voertuig.<!--j-->&nbsp;<!--j-->Deze informatie kan worden gebruikt voor analyse van problemen met het voertuig en opsporing van trigger-foutcondities.<!--j-->&nbsp;<!--j-->De grafiekfunctie kan worden gebruikt om parameters te vergelijken om te controleren of een component goed werkt.<!--j-->&nbsp;<!--j-->Gemaakte snapshots kunnen voor weergave worden geselecteerd op de volgende drie manieren:</p>
+ <ul>
+ <li>Selecteer een snapshot-bestand vanaf  <b>Introductiepagina Voertuig</b> en klik op de selectie Overzicht</li>
+ <li>Dubbelklik op de geselecteerde snapshot vanaf  <b>Introductiepagina Voertuig</b>.</li>
+ <li>De  <b>Extra</b> selectie vanaf  <b>Menu</b> invoeren en  <b>Snapshot-replay</b> selecteren.<!--j-->&nbsp;<!--j-->Open vervolgens  <b>Snapshot-Beheer</b>.<!--j-->&nbsp;<!--j-->Dubbelklik op het snapshot-bestand dat u wilt bekijken of klik op de optie Snapshot laden en selecteer een snapshot-bestand.</li>
+ </ul>
+ <p>Ongeacht de selectiemethode wordt een pop-upvenster Bestand Geladen weergegeven via het  <b>Snapshot-Replay</b> beeldscherm.<!--j-->&nbsp;<!--j-->Selecteer OK in het pop-upvenster.</p>
+ <hr />
+ <h3>Snapshot-Afspeelfuncties<!--j-->&nbsp;<!--j-->[XIX-1]</h3>
+ <p>Er zijn diverse afspeelfuncties voor snapshots waarmee u de gemaakte snapshots opnieuw kunt afspelen</p>
+
+
+   <table width="84%" height="80" border="1">
+ <tr>
+ <td width="7%"><img src="../../images/gds_play.png" alt="gds_play.png" width="25" height="23" /></td>
+ <td width="93%">
+De functie Afspelen wordt gebruikt om de snapshot voorwaarts te spelen door op deze optie te klikken.<!--j-->
+
+&nbsp;<!--j-->
+
+Wanneer deze optie wordt gebruikt, ziet u een markering over het scherm bewegen.<!--j-->
+
+&nbsp;<!--j-->
+Alle opties in dit gedeelte worden grijs weergegeven wanneer ze actief zijn.</td>
+ </tr>
+ <tr>
+ <td><img src="../../images/gds_pause.png" alt="gds_pause.png" width="24" height="21" /></td>
+ <td>De Pauze-functie wordt gebuikt het afspelen van de snapshot tijdelijk stil te zetten.<!--j-->&nbsp;<!--j-->Wanneer een tweede maal op deze optie wordt geklikt, gaat het afspelen van de snapshot verder.</td>
+ </tr>
+ <tr>
+ <td><img src="../../images/gds_stop.png" alt="gds_stop.png" width="24" height="19" /></td>
+ <td>De Stop-functie  wordt gebruikt om de snapshot te stoppen.<!--j-->&nbsp;<!--j-->De snapshot wordt vanaf het begin afgespeeld als Afspelen wordt geselecteerd nadat eerst op Stop is gedrukt.</td>
+ </tr>
+ </table>
+ <hr />
+ <h3>Tijdbesturing<!--j-->&nbsp;<!--j-->[XIX-2]</h3>
+ <p><b>Tijdbesturing</b> wordt gebruikt om de snapshot-replay te regelen.<!--j-->&nbsp;<!--j-->Deze functie dient voor het selecteren van een bepaald moment, weergeven van verschillende beelden en het regelen van de afspeelsnelheid.<!--j-->&nbsp;<!--j-->De volgende functies kunnen rechtstreeks onder  <b>Tijdbesturing</b> worden geselecteerd.</p>
+ <table width="84%" border="1">
+ <tr>
+ <td><img src="../../images/gds_bookmark.png" alt="gds_bookmark.png" width="17" height="24" /></td>
+ <td>De Bladwijzeroptie dient voor het toevoegen van een specifieke opmerking in het huidige beeld zodat u dit punt in de toekomst kunt terugvinden.<!--j-->&nbsp;<!--j-->Wanneer deze optie wordt geselecteerd, wordt een pop-upvenster weergegeven.<!--j-->&nbsp;<!--j-->Typ voor de bladwijzer een naam en selecteer OK.</td>
+ </tr>
+ <tr>
+ <td><img src="../../images/gds_notepad.png" alt="gds_notepad.png" width="26" height="22" /></td>
+ <td>U kunt Notepad selecteren om aan het bestand snapshot-replay opmerkingen toe te voegen op het huidige tijdspunt.<!--j-->&nbsp;<!--j-->Wanneer deze optie wordt geselecteerd, wordt een pop-upvenster weergegeven.<!--j-->&nbsp;<!--j-->Typ een opmerking voor het snapshot-bestand en selecteer OK.</td>
+ </tr>
+ <tr>
+ <td><img src="../../images/gds_load.png" alt="gds_load.png" width="23" height="23" /></td>
+ <td>Snapshot Laden (blauwe map) opent een snapshot-bestand en bereidt het voor op verdere analyse.<!--j-->&nbsp;<!--j-->Wanneer u een <a href="#export_snap">geëxporteerde snapshot</a> wilt bekijken, dient u eerst de overeenkomstige *.zip-archiefbestand uit te pakken.<!--j-->&nbsp;<!--j--><!--j-->&nbsp;<!--j-->Deze functie is ook beschikbaar door te klikken op een van de beschikbare snapshot-bestanden vanaf  <b>Snapshot-Beheer</b>.</td>
+ </tr>
+ <tr>
+ <td><img src="../../images/gds_time-options.png" alt="gds_time-options.png" width="19" height="23" /></td>
+ <td>Pijl Omlaag toont alle  <b>Tijdbesturing</b> opties indien geselecteerd.<!--j-->&nbsp;<!--j-->Verder kunnen aparte opties worden geselecteerd door te klikken op het gewenste item.</td>
+ </tr>
+ <tr>
+ <td><img src="../../images/gds_speed.png" alt="gds_speed.png" width="57" height="27" /></td>
+ <td>
+De Weergavesnelheid  Snapshot kan met deze optie worden geregeld.<!--j-->
+
+&nbsp;<!--j-->
+
+Als snelheden kunnen 1/8X, 1/4X en 1/2X worden geselecteerd<!--j-->
+
+&nbsp;<!--j-->
+
+De echte snelheid kan eveneens worden geselecteerd op 1.<!--j-->
+
+&nbsp;<!--j-->
+Verder biedt deze optie eveneens hogere snelheden van 2X, 4X en 8X.</td>
+ </tr>
+ </table>
+
+
+   <hr />
+ <h3>Selecties bekijken<!--j-->&nbsp;<!--j-->[XIX-3]</h3>
+ <p>Iedere optie Selectie Bekijken biedt een andere manier om voertuiggegevens weer te geven voor analyse.<!--j-->&nbsp;<!--j-->De volgende functies kunnen onder  <b>Beschikbare Weergaven</b> worden geselecteerd.</p>
+ <ul>
+ <li>Weergave Parameterlijst - toont binnenkomende informatie vanaf het snapshot-bestand.<!--j-->&nbsp;<!--j-->De huidige waarde van de parameters wordt op het scherm weergegeven.</li>
+ </ul>
+ <table width="80%" border="0">
+ <tr>
+ 	<td class="important"><b>Belangrijk</b><br />De naam van de parameter wordt weergegeven in de originele taal voor vastlegging als er voor de naam geen vertaling voorhanden is.</td></tr></table>
+ <ul>
+ <li>Weergave Logboek - bevat alle informatie vanaf het snapshot-bestand.<!--j-->&nbsp;<!--j-->Alle parameterwaarden worden weergegeven in de volgorde waarin ze zijn opgenomen.<!--j-->&nbsp;<!--j-->Specifieke parameters kunnen aan een watchlist worden toegevoegd of eruit verwijderd worden door op het betreffende item te klikken.</li>
+ <li>Statusweergave - toont de waarden van alle parameters over een bepaalde tijdsperiode.<!--j-->&nbsp;<!--j-->Deze waarden kunnen worden gebruikt voor vergelijking met de trigger-weergave.</li>
+ <li>Weergave Trigger - toont alle door het systeem en de gebruiker gedefinieerde triggers.<!--j-->&nbsp;<!--j-->Deze functie kan worden gebruikt als er een combinatie van factoren aan de grondslag ligt van een diagnostisch probleem.<!--j-->&nbsp;<!--j-->
+Wanneer aan een Trigger-conditie wordt voldaan, wordt een waarschuwingsdriehoek op het scherm weergegeven.<ul><li>Triggers laden<!--j-->&nbsp;<!--j-->-<!--j-->&nbsp;<!--j-->Dient voor het laden van een bestand met definities van triggers.</li>
+ 	 <li>Triggers opslaan<!--j-->&nbsp;<!--j-->-<!--j-->&nbsp;<!--j-->Dient voor het opslaan van de trigger op de vaste schijf van uw computer.</li>
+ <li>Trigger verwijderen<!--j-->&nbsp;<!--j-->-<!--j-->&nbsp;<!--j-->Dient voor het verwijderen van de huidige trigger. De trigger zal niet meer aanwezig zijn.</li>
+ <li>Trigger bewerken<!--j-->&nbsp;<!--j-->-<!--j-->&nbsp;<!--j-->toont een pop-upvenster waarin u de limieten en parameters van een trigger kunt aanpassen.</li>
+ <li>Trigger toevoegen<!--j-->&nbsp;<!--j-->-<!--j-->&nbsp;<!--j-->toont een pop-upvenster voor het configureren van een trigger.</li></ul></li>
+ <li>DTC-Weergave<!--j-->&nbsp;<!--j-->-<!--j-->&nbsp;<!--j-->Nadat de functie Afspelen is geselecteerd en deze optie wordt geselecteerd, wordt door deze functie de lijst met opgenomen DTC's geopend.</li>
+ <li>Weergave Lijngrafiek - toont gegevens die tegen de tijdas kunnen worden weergegeven.<!--j-->&nbsp;<!--j-->Vanaf deze weergave kunt u specifieke parameters selecteren om in een grafiek weer te geven door het vakje onder Geselecteerd aan te kruisen.<!--j-->&nbsp;<!--j-->Onder aan de grafiek staan vier functies:  <b>Inzoomen</b> (groter),  <b>Uitzoomen</b> (kleiner),  <b>Bladwijzers</b> en  <b>Schuiven pauseren</b>.<!--j-->&nbsp;<!--j-->Alle functies zijn beschikbaar door erop te klikken.</li>
+ </ul>
+ <p><img src="../../images/gds_xix_nld.gif" alt="gds_xix.gif" width="650px"/><br />
+[XIX]</p>
+ <hr />
+ <h2>Besturingsfuncties:</h2>
+ <p>Aan de hand van de besturingsfuncties van GDS kunnen specifieke voertuigfuncties worden geregeld vanaf het GDS systeem.<!--j-->&nbsp;<!--j-->Selecteer in de Systeemnavigatie Besturingsfuncties van een bepaalde controller om de Toepassing Besturingsfunctie te starten.</p>
+ <p>De besturingsfuncties zijn ingebed in de gegevenslijst.<!--j-->&nbsp;<!--j-->Tijdens uitvoering van de besturingsfunctie kan de weergegeven parameter worden bekeken of worden opgenomen met de snapshot-functie van GDS.</p>
+ <p>GDS ondersteunt twee types Besturingsfuncties:</p>
+ <p>1.<!--j-->&nbsp;<!--j-->Digitale Besturingsfunctie met AAN/UIT-mogelijkheid<!--j-->&nbsp;<!--j-->[XX-1]</p>
+ <p><img src="../../images/gds_xx_nld.gif" alt="gds_xx.gif" width="650px"/><br />
+[XX]</p>
+ <p>2.<!--j-->&nbsp;<!--j-->Analoge Besturingsfunctie met de mogelijkheid de functie te regelen.<!--j-->&nbsp;<!--j-->De actuator-functie kan worden geregeld met de regelknoppen of door de aanwijzer te verplaatsen op de schaal aan de zijkant.<!--j-->&nbsp;<!--j-->[XXI-1]<!--j-->&nbsp;<!--j-->of<!--j-->&nbsp;<!--j-->[XXI-2]<!--j-->.</p>
+ <p><img src="../../images/gds_xxi_nld.gif" alt="gds_xxi.gif" width="650px"/><br />[XXI]</p>
+ <hr />
+ <h2>Configuratiefunctie en functie voor opnieuw instellen:</h2>
+ <p>De configuratie- en opnieuw instellen-functie zijn specifieke controller-functies die moeten worden uitgevoerd wanneer systeemactuators worden vervangen of opnieuw moeten worden ingesteld.<!--j-->&nbsp;<!--j-->Raadpleeg voor verdere bijzonderheden de betreffende Servicehandleiding van het systeem.</p>
+ <hr />
+ <h1><a name="troubleshooting"></a>7.<!--j-->&nbsp;<!--j-->PROBLEMEN OPLOSSEN</h1>
+
+  <h2>Verbindingsproblemen met MDI</h2>
+ <p>Als de MDI-verbindingen los zijn of niet juist zijn aangesloten op het voertuig of de computer, wordt een pop-upvenster weergegeven.<!--j-->&nbsp;<!--j-->Voer de volgende stappen uit:</p><ul>
+ <li>Zorg ervoor dat de software van MDI Manager niet wordt uitgevoerd op hetzelfde moment dat GDS wordt uitgevoerd.</li>
+ <li>Zorg ervoor dat de MDI juist is aangesloten op het voertuig en de computer</li>
+ <li>Gebruik een bekende en &quot;deugdelijke USB-kabel&quot; van een andere MDI eenheid, indien voorhanden.<!--j-->&nbsp;<!--j-->Breng alle verbindingen tot stand en probeer opnieuw.</li>
+ <li>Gebruik een bekende en &quot;deugdelijke MDI DLC verbindingskabel&quot; van een andere MDI eenheid, indien voorhanden.<!--j-->&nbsp;<!--j-->Breng alle verbindingen tot stand en probeer opnieuw.</li>
+ <li>Als het probleem aanhoudt, neemt u contact op met Customer Support.</li>
+ <li>Zorg ervoor dat de GDS/MDI communicatie niet door een firewall wordt geblokkeerd.</li>
+ </ul>
+ <hr />
+ <h2>Conflict tussen GDS/MDI Manager Software</h2>
+ <p>De GDS software en de MDI Manager software kunnen niet tegelijk worden uitgevoerd.<!--j-->&nbsp;<!--j-->Als beide softwareprogramma's tegelijk worden uitgevoerd, kan een softwareconflict optreden.<!--j-->&nbsp;<!--j-->Onder Details vindt u wellicht informatie over de fout.<!--j-->&nbsp;<!--j-->Als het probleem aanhoudt, kan Customer Support naar deze informatie vragen.</p>
+ <p>Als het softwareconflict zich blijft voordoen, kan een pop-upvenster met de tekst &quot;Er is een fatale fout opgetreden&quot; worden weergegeven in MDI Beheer.<!--j-->&nbsp;<!--j-->Sluit MDI Beheer af en ga terug naar GDS.<!--j-->&nbsp;<!--j-->Als het probleem aanhoudt nadat u naar GDS bent gegaan, neemt u contact op met Customer Support.</p>
+ <p>&nbsp;</p>
+ <p align="right"><font size="2">&copy; GM Europe, SPO Engineering, International Operations - 08 May 2009 (V3.0)</font></p>
+ </div>
+
+  </body>
+ </html>

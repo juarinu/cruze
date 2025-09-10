@@ -1,0 +1,163 @@
+<HTML>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><TITLE>Información de servicio</TITLE><STYLE>
+	.ListIndentBul2Refer{margin-left : 40pt}  ..ListIndentBul2{margin-left : -20pt}
+	.SubListIndent{margin-left : -15pt}
+	.UpNo{border-top : white}  .DownNo{border-bottom : white}  ..BothNo{border-top : white; border-bottom : white}
+	.UpBold{border-top : thin double ridge}  .DownBold{border-bottom : thin double ridge}  .BothBold{border-top : thin double ridge; border-bottom : thin double ridge}
+	.ImageIndent{margin-left : 0%}  .ImageTitleIndent{margin-left : 5%}  .ParagraphIndent{margin-left : 20pt}
+	.Arial{font-family : Arial, Helvetica, sans-serif; margin-left : 10pt; margin-right : 10pt}
+</STYLE>
+<SCRIPT LANGUAGE="JavaScript">
+	function FixMenu()
+	{
+		menuTop = document.body.scrollTop + document.body.clientHeight -40;
+		menu.style.top = menuTop;
+		menu.style.width = document.body.clientWidth; 
+	}
+</SCRIPT>
+</HEAD>
+<BODY class="Arial" onLoad="FixMenu()" onScroll="FixMenu()" onResize="FixMenu()" BGCOLOR="#FFFFFF">
+<SPAN ID="menu" STYLE="position:absolute; left:0px; top:0px; width:0px">
+	<A border="0" HREF="92328912.es.html">
+	<IMG src="../../../../graphic-pool/Icons/Totop.gif" align="right" halign="Bottom" border="0" alt="A la parte superior del documento"></A>
+</SPAN>
+<TABLE CELLSPACING="0"  width="100%" BORDER="1" rules="none" cellspacing="0" cellpadding="0" style="magin-top: 5pt">
+<TBODY>
+<TR BGCOLOR="cccc99" height="15">
+<TD width="30%"><div style="padding-left: 5pt"><B><FONT face="Arial">Spark</FONT></B></div></TD>
+<TD width="70%" align="right" colspan="8"></TD>
+</TR>
+<TR BGCOLOR="white" height="60">
+<TD width="35%" align="left">
+<TABLE CELLSPACING="0" >
+<TR>
+<TD width="5%" align="left">&nbsp;</TD>
+<TD width="5%" align="left"></TD>
+<TD width="5%" align="left">&nbsp;</TD>
+</TR>
+</TABLE>
+</TD>
+<TD>
+<TABLE CELLSPACING="0"  width="65%" align="right">
+<TR>
+<TD style="font-size:10">
+	<A href="../../../GMDE_TIS_START.html" target="_top">
+	<IMG src="../../code/menu-images/home.gif" border="0" alt="Página de inicio de GMDE">
+</A></TD>
+<TD style="font-size:10">
+	<A href="../toc_Spark.html" target="menu"><IMG src="../../code/menu-images/static-TOC.gif" border="0" alt="Cargue el TOC estático"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../toc_Spark_code.html" target="code"><IMG src="../../code/menu-images/menu_folder_open.gif" border="0" alt="Cargue el TOC dinámico"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../../help/readme_EN.htm" target="top" class="bottom_copyright"><IMG src="../../code/menu-images/help.gif" border="0" alt="¿Necesita ayuda?"></A>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+<H2>Fallo de funcionamiento del aparcamiento asistido trasero</H2>
+
+
+<A NAME="ss1-2328912">
+<A HREF="#ss1-2328912">
+<H3>Instrucciones de diagnóstico</H3></A>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Lleve a cabo <a HREF="92336379.es.html">Comprobación del sistema de diagnóstico - Vehículo</a> antes de usar el procedimiento de diagnóstico.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Revise <a HREF="92336368.es.html">Diagnosis basada en estrategia</a> para tener una panorámica del enfoque de diagnóstico.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top"><a HREF="92336371.es.html">Instrucciones del procedimiento de diagnóstico</a> proporciona una panorámica de cada categoría de diagnóstico.</td></tr></table></div>
+
+
+<A NAME="ss2-2328912">
+<A HREF="#ss2-2328912">
+<H3>Descripción del circuito/sistema</H3></A><p>El módulo de control del sensor de objetos traseros recibe tensión de encendido desde el bloque de fusibles del panel de instrumentos. Cuando la transmisión está en marca atrás se activa el sistema, se suministra tensión de encendido a través del interruptor de las luces de marcha atrás. Los sensores de alarma de objetos se alimentan con circuitos de señal referenciados a partir de 8 voltios por los circuitos de referencia baja y de módulo de control del sensor de objetos traseros. El módulo de alarma de objetos se alimenta con una fuente de 8 voltios y con referencia baja desde el módulo. El circuito de control de alarma es un circuito de 8 voltios que se modula mediante ancho de pulsos de forma baja para activar la alarma.</p>
+
+<A NAME="ss3-2328912">
+<A HREF="#ss3-2328912">
+<H3>Ayuda al diagnóstico</H3></A><p>El sistema de estacionamiento asistido puede realizar una autoprueba del sensor de detección de objetos. Mientras que está en el modo de autoprueba del sensor el módulo de estacionamiento asistido verificará las entradas de datos de los sensores de detección de objetos. El módulo de estacionamiento asistido indica el estado del sensor usando la alarma del sistema. Si ambas señales del sensor están siendo recibidas por el módulo de estacionamiento asistido trasero&nbsp;1 se activará un tono único breve. Cuando una o ambas de las señales del sensor no están siendo recibidas, el módulo responderá activando la alarma con 1&nbsp;tono repetido para un fallo del sensor izquierdo y 2&nbsp;tonos repetidos para un fallo del sensor derecho. Si ambos sensores fallan el módulo responderá activando la alarma con 1&nbsp;tono repetido 3&nbsp;veces, después 2&nbsp;tonos repetidos 3&nbsp;veces y luego se repite la secuencia.</p>
+<p>Para solicitar la autoprueba del sensor de objetos complete los siguientes pasos:</p>
+
+<OL><LI TYPE="1">Conecte el encendido.</LI>
+<LI TYPE="1">Aplique y libere el freno de estacionamiento 3&nbsp;veces en un plazo de 10&nbsp;segundos tras conectar el encendido.</LI>
+<LI TYPE="1">El sistema estará en el modo de autoprueba del sensor de objetos.</LI>
+<LI TYPE="1">Para salir del modo de autoprueba del sensor de detección de objetos desconecte el encendido.</LI>
+</OL>
+
+<A NAME="ss4-2328912">
+<A HREF="#ss4-2328912">
+<H3>Verificación del circuito/sistema</H3></A>
+<OL><LI TYPE="1">Con el encendido activado, y el área detrás del vehículo limpia de cualquier objeto que pudiera activar la alarma de estacionamiento asistido, ponga la marcha atrás. La alarma de objetos debería emitir 1&nbsp;tono&nbsp;breve.</LI>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">⇒</td><td valign="top">Si no es el valor especificado, consulte Prueba del circuito del sistema de la alarma de objetos.</td></tr></table></div>
+<LI TYPE="1">Realice el procedimiento de autoprueba del sensor de detección de objetos para verificar los datos que el sensor envía al módulo. Consulte Ayuda al diagnóstico.</LI>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">⇒</td><td valign="top"> Si el modo de autoprueba indica que cualquier entrada del sensor ha fallado, consulte Prueba del circuito del sensor de alarma de objetos.</td></tr></table></div>
+</OL>
+
+<A NAME="ss5-2328912">
+<A HREF="#ss5-2328912">
+<H3>Comprobación del circuito/sistema</H3></A>
+<OL>
+</ol><h4>Prueba del circuito del sistema de alarma de objetos</h4><ol>
+<LI TYPE="1">Con el encendido desconectado, desconecte el enchufe del mazo de cables del módulo de control del sensor de objetos traseros.</LI>
+<LI TYPE="1">Compruebe que haya menos de 1,0&nbsp;Ω entre el terminal&nbsp;16 de circuito de toma de tierra y masa.</LI>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">⇒</td><td valign="top">Si es mayor que el valor especificado, compruebe si el circuito de toma de tierra tiene una resistencia abierta/alta.</td></tr></table></div>
+<LI TYPE="1">Con el encendido conectado, verifique que una luz de comprobación se ilumina entre el terminal&nbsp;8 del circuito de encendido y masa.</LI>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">⇒</td><td valign="top">Si la luz de prueba no se ilumina, pruebe el circuito de encendido para ver si hay un cortocircuito a tierra o una resistencia abierta/alta.</td></tr></table></div>
+<LI TYPE="1">Con el freno de mano puesto y el vehículo en REVERSE (Marcha atrás), verifique que una luz de comprobación se enciende entre el terminal&nbsp;5 del circuito de control de las luces de marcha atrás y masa.</LI>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">⇒</td><td valign="top">Si la luz de prueba no se ilumina, compruebe si en el circuito de control de las luces de marcha atrás hay un cortocircuito a masa o una resistencia abierta/alta. </td></tr></table></div>
+<LI TYPE="1">Con el encendido desconectado, desconecte el enchufe del mazo de cables del módulo de control del sensor de objetos traseros.</LI>
+<LI TYPE="1">Desemborne el conector del mazo de cables en el módulo de alarma de objetos. </LI>
+<LI TYPE="1">Compruebe si hay menos de 1,0&nbsp;Ω entre el terminal&nbsp;3 del circuito referencia baja y la masa. </LI>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">⇒</td><td valign="top">Si es mayor que el valor especificado, compruebe si el circuito de referencia baja tiene una resistencia abierta/alta.</td></tr></table></div>
+<LI TYPE="1">Con el encendido conectado, compruebe si hay de 7,5 a 8,2 V entre el terminal&nbsp;1 del circuito de referencia de 8 V y masa.</LI>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">⇒</td><td valign="top">Si es inferior al intervalo especificado, compruebe si el circuito de referencia de 8V tiene un cortocircuito a masa o una resistencia abierta/alta. Si según la comprobación el circuito está bien, sustituya el módulo de control del sensor de objetos traseros. </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">⇒</td><td valign="top">Si el valor es superior al margen especificado, compruebe si el circuito de referencia de 8V tiene un cortocircuito a voltaje. Si según la comprobación el circuito está bien, sustituya el módulo de control del sensor de objetos traseros.</td></tr></table></div>
+<LI TYPE="1">Conecte una luz de comprobación entre el terminal&nbsp;2 del circuito de señal y masa. La lámpara de pruebas no debería encenderse.</LI>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">⇒</td><td valign="top">Si se enciende la luz de comprobación, compruebe si el circuito de señal tiene un cortocircuito a voltaje. Si según la comprobación el circuito está bien, sustituya el módulo de control del sensor de objetos traseros.</td></tr></table></div>
+<LI TYPE="1">Compruebe la resistencia infinita entre el terminal 2 del circuito de señal y la toma de tierra.</LI>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">⇒</td><td valign="top">Si es inferior al valor especificado, compruebe si el circuito de señal tiene un cortocircuito a tierra. Si según la comprobación el circuito está bien, sustituya el módulo de control del sensor de objetos traseros.</td></tr></table></div>
+<LI TYPE="1">Con el encendido desconectado, coloque un objeto a menos de 0,4 m del parachoques trasero. </LI>
+<LI TYPE="1">Conecte una luz de comprobación entre el terminal&nbsp;1 del circuito de referencia de 8 V y el terminal&nbsp;2 del circuito de señal. </LI>
+<LI TYPE="1">Con el encendido conectado y el freno de mano aplicado, y con la marcha atrás puesta, la luz de comprobación debería iluminarse.</LI>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">⇒</td><td valign="top">Si la luz de comprobación no se enciende, compruebe si hay un circuito abierto/resistencia alta en el circuito de señal. Si según la comprobación el circuito está bien, sustituya el módulo de control del sensor de objetos traseros. </td></tr></table></div>
+<LI TYPE="1">Si tras la comprobación todos los circuitos están normales, sustituya el módulo de alarma de objetos.</LI>
+</OL>
+
+<OL>
+</ol><h4>Prueba del circuito del sensor de alarma de objetos</h4><ol>
+<LI TYPE="1">Con el encendido desconectado, desconecte el enchufe del mazo de cables del sensor de alarma de objetos. </LI>
+<LI TYPE="1">Compruebe si hay menos de 1,0&nbsp;Ω entre el terminal&nbsp;2 del circuito referencia baja y la masa. </LI>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">⇒</td><td valign="top">Si es mayor que el valor especificado, compruebe si el circuito de referencia baja correspondiente tiene una resistencia abierta/alta.</td></tr></table></div>
+<LI TYPE="1">Con el encendido conectado, el freno de mano aplicado y la marcha atrás puesta, compruebe si hay 7,5-8,2 V entre el terminal&nbsp;1 del circuito de señal del sensor de alarma de objetos y masa.</LI>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">⇒</td><td valign="top">Si el valor es inferior al margen especificado, compruebe si el circuito de señal tiene un cortocircuito a masa o un circuito abierto/resistencia alta. Si según la comprobación el circuito está bien, sustituya el módulo de control del sensor de objetos traseros.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">⇒</td><td valign="top">Si es superior al margen especificado, compruebe si el circuito de señal tiene un cortocircuito a voltaje. Si según la comprobación el circuito está bien, sustituya el módulo de control del sensor de objetos traseros.</td></tr></table></div>
+<LI TYPE="1">Si tras la comprobación todos los circuitos están normales, sustituya el sensor de alarma de objetos correspondiente. </LI>
+</OL>
+
+<A NAME="ss6-2328912">
+<A HREF="#ss6-2328912">
+<H3>Instrucciones de reparación</H3></A><p>Realice <a HREF="92336403.es.html">Verificación de la reparación por diagnóstico</a> después de completar el procedimiento de diagnóstico. </p>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a HREF="92328921.es.html">Sustitución del módulo de alarma de objeto posterior</a> </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a HREF="92328933.es.html">Sustitución de la alarma por objeto posterior</a> </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a HREF="92328936.es.html">Sustitución del sensor de objeto posterior</a> </td></tr></table></div>
+
+
+
+
+
+<TABLE CELLSPACING="0"  align="center"><TR>
+<TD align="left">&nbsp;</TD>
+<TD align="left"></TD>
+<TD align="left">&nbsp;</TD>
+<TD></TD>
+</TR></TABLE>
+<BR><BR><TABLE CELLSPACING="0"  width="100%"><TBODY><TR BGCOLOR="DarkSlateBlue" align="center"><TD><FONT color="white"><B>© Copyright Chevrolet Europe. Reservados todos los derechos</B></FONT></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>

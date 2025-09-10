@@ -1,0 +1,2699 @@
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style>.T2{    BORDER-TOP: white;}  .T3{    BORDER-BOTTOM: white;} .T4{    BORDER-TOP: white;    BORDER-BOTTOM: white} .I{ padding-left : 10pt}  .Tighten{ padding-left : 7pt} .Arial{ font-family : Arial, Helvetica, sans-serif;margin-left: 10pt;margin-right : 10pt } .TableB{ margin-left : 0pt}</style>
+<TITLE>Manual de servicio técnico2009 Epica INFORMACIÓN Y PROCEDIMIENTOS DE DIAGNÓSTICO</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+
+ function FixMenu()
+{
+menuTop = document.body.scrollTop + document.body.clientHeight -40;
+menu.style.top = menuTop;
+menu.style.width = document.body.clientWidth; 
+}
+
+</SCRIPT>
+</HEAD>
+<BODY class="Arial" onLoad="FixMenu()" onScroll="FixMenu()" onResize="FixMenu()">
+<SPAN ID="menu" STYLE="position:absolute; left:0px; top:0px; width:0px"><A border="0" href="7L2_5A02.es.html"><IMG src="../../../../graphic-pool/Icons/Totop.gif" align="right" halign="Bottom" border="0" alt="Al principio del documento"></A></SPAN><TABLE width="100%" BORDER="1" rules="none" cellspacing="0" cellpadding="0" style="magin-top: 5pt"><TBODY>
+<TR BGCOLOR="cccc99" height="15">
+<TD width="30%"><div style="padding-left: 5pt"><B><FONT face="Arial">Epica</FONT></B></div></TD>
+<TD width="70%" align="right" colspan="8"></TD>
+</TR>
+<TR BGCOLOR="white" height="60">
+<TD width="35%" align="left"><TABLE><TR>
+<TD width="5%" align="left"><A href="7L2_5A01.es.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_back.gif" alt="A la página anterior"></A></TD>
+<TD width="5%" align="left"></TD>
+<TD width="5%" align="left"><A href="7L2_5A03.es.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_next.gif" alt="A la página siguiente"></A></TD>
+</TR></TABLE></TD>
+<TD><TABLE width="65%" align="right"><TR>
+<TD style="font-size:10"><A href="../../../GMDE_TIS_START.html" target="_top"><IMG src="../../code/menu-images/home.gif" border="0" alt="Página de inicio GMDE"></A></TD>
+<TD style="font-size:10"><A href="../toc_Epica.html" target="menu"><IMG src="../../code/menu-images/static-TOC.gif" border="0" alt="Índice estático"></A></TD>
+<TD style="font-size:10"><A href="../toc_Epica_code.html" target="code"><IMG src="../../code/menu-images/menu_folder_open.gif" border="0" alt="Índice dinámico"></A></TD>
+<TD style="font-size:10"><A href="../../help/readme_EN.htm" target="top" class="bottom_copyright"><IMG src="../../code/menu-images/help.gif" border="0" alt="¿Ayuda?"></A></TD>
+</TR></TABLE></TD>
+</TR>
+</TBODY></TABLE>
+	<P></P>
+<DIV align="left" id="L5A0DIP"><B><FONT size="5">INFORMACIÓN Y PROCEDIMIENTOS DE DIAGNÓSTICO</FONT></B></DIV>
+<P></P>
+	<P></P>
+<DIV align="left" id="L5A0STOC"><font size="4"><b>Controles de salida del scanner </b></font></DIV>
+<P></P>
+		<Table border="1" width="100%" cellspacing="0">
+<Thead bgcolor="eeeeee">
+<tr>
+<td align="center" valign="middle" width="20%" class="T1"><b><div>Control de salida del scanner</div>
+							
+						</b></td>
+						<td align="center" valign="middle" width="20%" class="T1"><b><div>Otras selecciones del menú</div>
+							
+						</b></td>
+						<td align="center" valign="middle" width="60%" class="T1"><b><div>Descripción</div>
+							
+						</b></td>
+					</tr>
+				</Thead>
+				<Tbody align="center" valign="middle">
+<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>Solenoide de control del TCC (Embrague del convertidor de par)</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>—</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<UL>
+<Li>El módulo de control de transmisión (TCM) solicita a la solenoide de control de presión del embrague del convertidor de par (TCC PC) presión para aplicar y soltar el TCC.</Li>
+									<Li>Cuando el contacto está dado y el motor está apagado, este control no tiene límites. La solenoide permanece conectada hasta que recibe la orden de desactivarse y viceversa.</Li>
+									<Li>Cuando el motor está en funcionamiento, se aplican los siguientes límites de control:</Li>
+									<ul type="square" style="list-style-image:url(../../../../Graphic-Pool/Icons/compass.gif)">
+<li style="margin-top:0.1em; margin-bottom:0.1em">Si la palanca selectora se encuentra en la posición de estacionamiento y la transmisión está en modo caliente, no es posible solicitar la desconexión de la solenoide de PC del TCC. Si se solicita dicha desconexión, aparecerá en la pantalla del scanner el mensaje "TCC OFF command disabled in Hot Mode" (Opción de desconexión de la TCC deshabilitada en modo caliente).</li>
+										<li style="margin-top:0.1em; margin-bottom:0.1em">La solenoide de PC del TCC no puede desconectarse durante más tiempo del calibrado. Se se solicita la desconexión de la solenoide durante un intervalo de tiempo determinado, aparecerá en la pantalla del scanner el mensaje "TCC OFF time has been exceeded" (se ha superado el tiempo de desconexión del TCC).</li>
+									</ul>
+								</UL>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>Solenoide de cambio</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>Solenoide de cambio 1</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<UL>
+<Li>El módulo de control de la transmisión controla la conexión y desconexión de la solenoide de cambio 1.</Li>
+									<Li>Cuando el contacto está dado y el motor está apagado, este control no tiene límites. La solenoide permanece conectada hasta que recibe la orden de desactivarse y viceversa. Cuando se abandona el control de salida, el TCM determina el estado de la solenoide.</Li>
+									<Li>Cuando el motor está en funcionamiento, se aplican los siguientes límites de control:</Li>
+									<ul type="square" style="list-style-image:url(../../../../Graphic-Pool/Icons/compass.gif)">
+<li style="margin-top:0.1em; margin-bottom:0.1em">La caja de cambios debe estar en estacionamiento o punto muerto. Si la caja de cambios no se encuentra en estacionamiento o punto muerto, en la pantalla del scanner aparece el mensaje "Engine running and transmission range is not Park/Neutral" (Motor en funcionamiento y la caja de cambios no está en estacionamiento/punto muerto).</li>
+										<li style="margin-top:0.1em; margin-bottom:0.1em">La solenoide permanece conectada hasta que recibe la orden de desactivarse y viceversa. Cuando se abandona el control de salida, el TCM determina el estado de la solenoide.</li>
+										<li style="margin-top:0.1em; margin-bottom:0.1em">Los códigos de diagnóstico de averías (DTC) de la caja de cambios no deben estar activos. Si hay activo algún DTC de la caja de cambios, en la pantalla del scanner aparece el mensaje "Engine running with transmission DTC present" (Motor en funcionamiento con DTC de transmisión presente).</li>
+									</ul>
+								</UL>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>Solenoide de PC de conducto</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>—</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<UL>
+<Li>Se utiliza el scanner para solicitar incrementos de presión de 207 kPa (30 psi) desde 0-1.862 kPa (0-270 psi). El TCM ordenará entonces a la solenoide que alcance la presión solicitada.</Li>
+									<Li>Cuando el contacto está dado y el motor está apagado, la solicitud de presión puede controlarse dentro de unos límites calibrados. No hay límites para el control de salida cuando el motor está apagado.</Li>
+									<Li>Cuando el motor está en funcionamiento, se aplican los siguientes límites de control:</Li>
+									<ul type="square" style="list-style-image:url(../../../../Graphic-Pool/Icons/compass.gif)">
+<li style="margin-top:0.1em; margin-bottom:0.1em">Cuando la caja de cambios está en estacionamiento o punto muerto, la solicitud de presión puede controlarse dentro de unos límites calibrados. El régimen del motor debe ser inferior a 1.500 RPM. Si la velocidad del motor supera las 1.500 RPM, en la pantalla del scanner aparece el mensaje "TR in park/neutral and engine speed over 1,500RPM" (Caja de cambios en estacionamiento/punto muerto y régimen del motor por encima de 1.500 RPM).</li>
+										<li style="margin-top:0.1em; margin-bottom:0.1em">Cuando la caja de cambios no se encuentra en estacionamiento o punto muerto, la presión solicitada solo puede igualarse o superar la presión determinada por el TCM. El TCM no permite seleccionar una presión que pueda dañar la transmisión. Si la presión solicitada es inferior a la permitida por el TCM, en la pantalla del scanner aparece el mensaje "Requested pressure for the Line PC Solenoid is too low" (La presión solicitada para la solenoide de PC del conducto es demasiado baja).</li>
+										<li style="margin-top:0.1em; margin-bottom:0.1em">Los códigos de diagnóstico de averías (DTC) de la caja de cambios no deben estar activos. Si hay activo algún DTC de la caja de cambios, en la pantalla del scanner aparece el mensaje "Engine running with transmission DTC present" (Motor en funcionamiento con DTC de transmisión presente).</li>
+									</ul>
+								</UL>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>Solenoides de PC del embrague</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>Solenoide de PC 2</div>
+								<div>Solenoide de PC 3</div>
+								<div>Solenoide de PC 4</div>
+								<div>Solenoide de PC 5</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<UL>
+<Li>El TCM controla las solenoides de control de presión para aplicar y soltar los embragues.</Li>
+									<Li>Cuando el contacto está dado y el motor está apagado, este control no tiene límites. La solenoide permanece conectada hasta que recibe la orden de desactivarse y viceversa. Cuando se abandona el control de salida, el TCM determina el estado de la solenoide.</Li>
+									<Li>Cuando el motor está en funcionamiento, se aplican los siguientes límites de control:</Li>
+									<ul type="square" style="list-style-image:url(../../../../Graphic-Pool/Icons/compass.gif)">
+<li style="margin-top:0.1em; margin-bottom:0.1em">La caja de cambios debe estar en estacionamiento o punto muerto. Si la caja de cambios no se encuentra en estacionamiento o punto muerto, en la pantalla del scanner aparece el mensaje "Engine running and transmission range is not Park/Neutral" (Motor en funcionamiento y la caja de cambios no está en estacionamiento/punto muerto).</li>
+										<li style="margin-top:0.1em; margin-bottom:0.1em">La solenoide permanece conectada hasta que recibe la orden de desactivarse y viceversa. Cuando se abandona el control de salida, el TCM determina el estado de la solenoide.</li>
+										<li style="margin-top:0.1em; margin-bottom:0.1em">Los códigos de diagnóstico de averías (DTC) de la caja de cambios no deben estar activos. Si hay activo algún DTC de la caja de cambios, en la pantalla del scanner aparece el mensaje "Engine running with transmission DTC present" (Motor en funcionamiento con DTC de transmisión presente).</li>
+									</ul>
+								</UL>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>Caja de cambios</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>—</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<UL>
+<Li>El TCM controla cambios a velocidad superior e inferior. El parámetro de marcha solicitada del scanner debería corresponderse con la combinación de la solenoide de transmisión. Consulte la tabla de relación de cambio y solenoide de cambio.</Li>
+									<Li>Cuando el contacto está dado y el motor está apagado, este control no tiene límites. Los estados de la solenoide de cambio del scanner cambian para coincidir con la marcha solicitada seleccionada.</Li>
+									<Li>Cuando el motor está en funcionamiento, se aplican los siguientes límites de control:</Li>
+									<ul type="square" style="list-style-image:url(../../../../Graphic-Pool/Icons/compass.gif)">
+<li style="margin-top:0.1em; margin-bottom:0.1em">El TCM no permite un cambio si este provoca que las RPM del motor sobrepasen un límite calibrado. Si se solicita una marcha y el régimen del motor es demasiado alto, en la pantalla del scanner aparece el mensaje "Engine speed too high" (Régimen del motor demasiado alto).</li>
+										<li style="margin-top:0.1em; margin-bottom:0.1em">El TCM no permite un cambio a velocidad inferior de 3ª a 2ª o de 2ª a 1ª si la velocidad del vehículo sobrepasa un límite calibrado. Si se solicita cualquiera de estos cambios a velocidad inferior y la velocidad del vehículo es demasiado alta, en la pantalla del scanner aparece el mensaje "Eng. is on and veh. speed too hi for 3-2 or 2-1 downshift" (Motor encendido y velocidad del vehículo demasiado alta para cambios a velocidad inferior de 3ª a 2ª o de 2ª a 1ª).</li>
+										<li style="margin-top:0.1em; margin-bottom:0.1em">El TCM no permite un cambio a velocidad inferior de 4ª a 3ª si la velocidad del vehículo sobrepasa un límite calibrado. Si se solicita un cambio a velocidad inferior de 4ª a 3ª y la velocidad del vehículo es demasiado alta, en la pantalla del scanner aparece el mensaje "Vehicle speed too high" (Velocidad del vehículo demasiado alta).</li>
+										<li style="margin-top:0.1em; margin-bottom:0.1em">El TCM no permite un cambio a velocidad superior si la velocidad del vehículo sobrepasa un límite calibrado. Si se solicita un cambio a velocidad superior y la velocidad del vehículo es demasiado alta, en la pantalla del scanner aparece el mensaje "Vehicle speed too high" (Velocidad del vehículo demasiado alta).</li>
+										<li style="margin-top:0.1em; margin-bottom:0.1em">El TCM no permite un cambio a velocidad superior mayor que el seleccionado por la caja de cambios (PRNDL). Por ejemplo, no se permite la 3ª marcha si la caja de cambios se encuentra en 2ª. Si se solicita un cambio de velocidad superior mayor que el seleccionado por la caja de cambios, en la pantalla del scanner aparece el mensaje "Eng. running and gear request is greater than the current TR" (Motor en funcionamiento y marcha solicitada mayor que la seleccionada actualmente en la caja de cambios (TR)).</li>
+									</ul>
+								</UL>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>Conductor 2 del lado superior</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>—</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<UL>
+<Li>El TCM controla la conexión y desconexión de tensión de la solenoide del conductor.</Li>
+									<Li>Cuando el contacto está dado y el motor está apagado, este control no tiene límites.</Li>
+									<Li>No es posible solicitar la conexión o desconexión de los conductores del lado superior con el scanner si el motor se encuentra en marcha.</Li>
+								</UL>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>Procedimiento de limpieza de servicio</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>—</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>Los límites de control no se definen en este momento</div>
+							
+						</td>
+					</tr>
+				</Tbody>
+			</Table>
+		
+	
+	<P></P>
+<DIV align="left" id="L5A0STDL"><font size="4"><b>Lista de datos del scanner </b></font></DIV>
+<P></P>
+		<div class="T1" align="left">Utilice la lista de datos del scanner si se dan las siguientes condiciones:</div>
+			<UL>
+<Li>Los diagnósticos de a bordo funcionan correctamente.</Li>
+				<Li>No aparecen códigos de diagnóstico de avería (DTC).</Li>
+			</UL>
+			<div class="T1" align="left">Los siguientes valores representan un ejemplo típico obtenido de un sistema que funciona correctamente.</div>
+			<P></P>
+<DIV><B><FONT color="navy">Importante: No utilice un scanner que muestre datos erróneos. Informe de su estado al fabricante del scanner. El uso de un scanner defectuoso puede generar diagnósticos incorrectos y la sustitución innecesaria de piezas.</FONT></B></DIV>
+<P></P>
+			
+			<div class="T1" align="left">Solo los siguientes parámetros se utilizan en este manual para el diagnóstico.</div>
+			<div class="T1" align="left">Se obtuvieron los siguientes valores del scanner bajo las siguientes condiciones:</div>
+			<UL>
+<Li>Motor a ralentí</Li>
+				<Li>Manguito superior del radiador caliente</Li>
+				<Li>acelerador cerrado</Li>
+				<Li>Caja de cambios en ESTACIONAMIENTO</Li>
+				<Li>Funcionamiento de bucle cerrado</Li>
+				<Li>Accesorios desconectados</Li>
+				<Li>Pedal de freno no pisado</Li>
+			</UL>
+			<Table border="1" width="100%" cellspacing="0">
+<Thead bgcolor="eeeeee">
+<tr>
+<td align="center" valign="middle" class="T1"><b><div>Parámetro del scanner</div>
+							
+						</b></td>
+						<td align="center" valign="middle" class="T1"><b><div>Lista* de datos</div>
+							
+						</b></td>
+						<td align="center" valign="middle" class="T1"><b><div>unidades (de medida) representadas</div>
+							
+						</b></td>
+						<td align="center" valign="middle" class="T1"><b><div>valores de lectura normales</div>
+							
+						</b></td>
+					</tr>
+				</Thead>
+				<Tbody align="center" valign="middle">
+<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>Tiempo de cambio 1ª a 2ª</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>F0, F2</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>Segundos</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>Otros</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>Tiempo de cambio 2ª a 3ª</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>F0, F2</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>Segundos</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>Otros</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>Tiempo de cambio 3ª a 4ª</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>F0, F2</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>Segundos</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>Otros</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>Tiempo de cambio 4ª a 5ª</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>F0, F2</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>Segundos</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>Otros</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>Tiempo de cambio 5ª a 6ª</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>F0, F2</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>Segundos</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>Otros</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>Interruptor de las luces de freno</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>F0, F1, F2</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>Pisado/Soltado</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>Soltado</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>Posición del acelerador calc.</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>F0, F1, F2</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>%</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>Otros</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>Marcha solicitada</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>F0, F1, F2, F3</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>1ª,2ª,3ª,4ª, 5ª o 6ª</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>1</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>Control de cambios del conductor</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>F0</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>Activo/Inactivo</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>Inactivo</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>Solicitud de cambio de conductor</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>F0</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>Cambio a velocidad superior/cambio a velocidad inferior/ninguno/no válido</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>Ninguno</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>Temperatura del refrigerante del motor (ECT)</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>F0, F1, F2</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>°C (°F)</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>Otros</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>Velocidad del motor</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>F0, F1, F2</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>RPM</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>Otros</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>par motor</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>F0, F1, F2</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>N•m (lb-pie)</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>Otros</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>Relación de cambio</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>F0, F1, F2, F3</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>Relación</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>Otros</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>Conductor 2 del lado superior</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>F1, F2, F3</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>Activado/Desactivado</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>Activado</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>Estado del circuito del conductor 2 del lado superior</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>F1, F2, F3</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>OK, circuito abierto/cortocircuito a batería, cortocircuito a tierra, indeterminado</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>OK</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>Tensión de encendido</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>F0, F2, F3</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>Voltios</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>12–14</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>Interruptor de modo interno (IMS)</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>F0, F2</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>Estacionamiento-Marcha 1ª, Circuito abierto, No válido</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>Estacionamiento</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>Interruptor de modo interno (IMS) A/B/C/P</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>F0, F2</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>Alto/Bajo</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>Otros</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>Tensión de suministro de la velocidad del eje de entrada (ISS)/velocidad del eje de salida (OSS)</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>F0, F1, F2</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>2 OK, fuera de rango</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>OK</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>Último tiempo de cambio</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>F0, F2</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>Segundos</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>Otros</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>Estado del circuito de la solenoide de PC del conducto</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>F3</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>OK, circuito abierto/cortocircuito a tierra, cortocircuito a batería, indeterminado</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>OK</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>Sol. de PC del conducto Solicitud de presión</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>F0, F3</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>kPa (psi)</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>Otros</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>Estado del circuito de la sol. de PC 2</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>F3</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>OK, circuito abierto/cortocircuito a tierra, cortocircuito a batería, indeterminado</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>OK</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>Solicitud de presión de la sol. de PC 2</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>F0, F3</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>kPa (psi)</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>Otros</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>Estado de circuito de la sol. de PC 3</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>F3</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>OK, circuito abierto/cortocircuito a tierra, cortocircuito a batería, indeterminado</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>OK</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>Solicitud de presión de la sol. de PC 3</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>F0, F3</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>kPa (psi)</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>Otros</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>Estado de circuito de la sol. de PC 4</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>F3</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>OK, circuito abierto/cortocircuito a tierra, cortocircuito a batería, indeterminado</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>OK</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>Solicitud de presión de la sol. de PC 4</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>F0, F3</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>kPa (psi)</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>Otros</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>Estado de circuito de la sol. de PC 5</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>F3</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>OK, circuito abierto/cortocircuito a tierra, cortocircuito a batería, indeterminado</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>OK</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>Solicitud de presión de la sol. de PC 5</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>F0, F3</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>kPa (psi)</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>Otros</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>Estado del circuito de OSS replicado</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>F0</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>OK, circuito abierto/cortocircuito a tierra, cortocircuito a batería, indeterminado</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>OK</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>Estado del circuito de la sol. de cambio 1</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>F3</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>OK, circuito abierto/cortocircuito a tierra, cortocircuito a batería, indeterminado</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>OK</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>Solenoide de cambio 1</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>F3</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>ON/OFF</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>On</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>Solenoide de PC TCC Solicitud de presión</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>F0, F1, F3</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>kPa (psi)</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>Otros</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>Velocidad de deslizamiento del TCC</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>F0, F1, F2</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>RPM</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>Otros</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>Temperatura del TCM</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>F0, F1, F2</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>°C (°F)</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>Otros</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>Interruptor A de TFP</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>F0</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>Alto/Bajo</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>Alto/Bajo</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>Interruptor C de TFP</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>F0</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>Alto/Bajo</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>Alto/Bajo</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>Interruptor D de TFP</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>F0</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>Alto/Bajo</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>Alto/Bajo</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>Interruptor E de TFP</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>F0</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>Alto/Bajo</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>Alto/Bajo</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>Temperatura del líquido de la transmisión</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>F0, F1, F2</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>°C (°F)</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>Otros</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>ISS de transmisión</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>F0, F1, F2</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>RPM</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>Otros</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>Sensor de la velocidad de salida (OSS) de la transmisión</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>F0, F1, F2</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>RPM</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>Otros</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+<td class="T1" width="" colspan="4" rowspan="" align="left" valign="middle">
+<div>*Leyenda de la lista de datos</div>
+								<UL>
+<Li>F0: Datos de transmisión</Li>
+									<Li>F1: Datos de TCC</Li>
+									<Li>F2: Datos de cambio</Li>
+									<Li>F3: Datos de solenoide</Li>
+								</UL>
+							
+						</td>
+					</tr>
+				</Tbody>
+			</Table>
+		
+	
+	<P></P>
+<DIV align="left" id="L5A0STDD"><font size="4"><b>Definiciones de datos del scanner </b></font></DIV>
+<P></P>
+		<div class="T1" align="left">  <B>Tiempo de cambio 1-2 </B>Este parámetro muestra el tiempo real del último cambio 1-2 adaptable. El tiempo de cambio se basa en el cambio de la relación de engranajes después del cambio 1-2 solicitado.</div>
+			<div class="T1" align="left">  <B>Tiempo de cambio 2-3 </B>Este parámetro muestra el tiempo real del último cambio 2-3 adaptable. El tiempo de cambio se basa en el cambio de la relación de engranajes después del cambio 2-3 solicitado.</div>
+			<div class="T1" align="left">  <B>Tiempo de cambio 3-4 </B>Este parámetro muestra el tiempo real del último cambio 3-4 adaptable. El tiempo de cambio se basa en el cambio de la relación de engranajes después del cambio 3-4 solicitado.</div>
+			<div class="T1" align="left">  <B>Tiempo de cambio 4-5 </B>Este parámetro muestra el tiempo real del último cambio 4-5 adaptable. El tiempo de cambio real se obtiene midiendo el tiempo necesario para que el eje de entrada decelere de la relación anterior a la actual.</div>
+			<div class="T1" align="left">  <B>Tiempo de cambio 5-6 </B> Este parámetro muestra el tiempo real del último cambio 5-6. El tiempo de cambio se basa en el cambio de la relación de engranajes después del cambio 5-6 solicitado.</div>
+			<div class="T1" align="left">  <B>Interruptor de las luces de freno</B> Este parámetro muestra el estado de la entrada del circuito del interruptor de las luces de freno. Pisado indica una entrada de tensión cero, pedal de freno pisado. Soltado indica una entrada de tensión, pedal de freno soltado. El scanner muestra Pisado o Soltado.</div>
+			<div class="T1" align="left">  <B>Posición calc. del acelerador </B>Este parámetro muestra una valor calculado, que viene determinado por la posición del pedal acelerador y la posición real del acelerador, que se utiliza para optimizar los controles de la transmisión. El parámetro representa la solicitud prevista del conductor de par motor o aceleración. La gama va de 0% a 100%, donde 0% representa una solicitud de ralentí o de inercia y 100% representa una solicitud de acelerador abierto al máximo (WOT).</div>
+			<div class="T1" align="left">  <B>Marcha solicitada </B>Este parámetro muestra el estado solicitado actual de las válvulas solenoides de cambio. El scanner muestra 1, 2, 3, 4 o 5.</div>
+			<div class="T1" align="left">  <B>Control de cambios del conductor </B>Este parámetro se muestra Activo o Inactivo. El scanner muestra Activo cuando el selector de velocidades está en posición manual (M), lo que permite el cambio de la presión adaptativa de la transmisión (TAP). El scanner muestra Inactivo cuando el selector de velocidades no está en posición M, cambio TAP desactivado.</div>
+			<div class="T1" align="left">  <B>Solicitud de cambio de conductor </B>Este parámetro muestra la solicitud actual del sistema de cambio TAP. Este parámetro mostrará cambio a velocidad superior, a velocidad inferior o no válido, dependiendo de la cantidad de tensión medida en la entrada del palanca de cambios remota y no mostrará nada cuando no haya ninguna solicitud.</div>
+			<div class="T1" align="left">  <B>ECT (Temperatura del refrigerante del motor) </B>Este parámetro muestra la señal de entrada procedente del sensor de temperatura del refrigerante del motor (ECT). La ECT es elevada a 151°C (304°F) cuando la tensión de la señal es baja, 0 voltios. La ECT es baja a 40°C (104°F) cuando la tensión de la señal es alta, 5 voltios.</div>
+			<div class="T1" align="left">  <B>Régimen del motor </B>Este parámetro muestra el régimen rotacional del motor expresado en revoluciones por minuto.</div>
+			<div class="T1" align="left">  <B>Par motor </B>Este parámetro muestra la velocidad rotacional del motor expresada en revoluciones por minuto. Par motor Este parámetro muestra un valor calculado en función de la carga del motor, la posición del acelerador, el flujo de la masa de aire y otras entradas del motor. Este parámetro es preciso en un rango de 20 N·m (15 pie lb) del par motor medido real.</div>
+			<div class="T1" align="left">  <B>Relación de cambio </B>Este parámetro muestra la relación de cambio de la transmisión real. El scanner muestra la relación de cambio calculada a partir de las entradas del sensor de velocidad del eje de entrada de la transmisión automática (AT ISS) y del sensor de velocidad del eje de salida de la transmisión automática (AT OSS).</div>
+			<div class="T1" align="left">  <B>Conductor 2 del lado superior </B>Este parámetro muestra el estado del conductor 2 del lado superior en el scanner. Cuando se solicita la conexión del conductor 2 del lado superior, se muestra Desactivado; cuando se solicita la conexión del conductor 2 del lado superior, se muestra Activado.</div>
+			<div class="T1" align="left">  <B>Estado del circuito del conductor 2 del lado superior </B>Este parámetro muestra el estado del circuito del conductor 2 del lado superior en el scanner. Si la tensión es baja cuando se solicita la desactivación de la solenoide, en el scanner aparece Circuito abierto/cortocircuito a tierra. Si la tensión es alta cuando se solicita la activación de la solenoide, en el scanner aparecerá Cortocircuito a batería. Si no hay ningún fallo en el circuito en el scanner aparecerá OK o Indeterminado.</div>
+			<div class="T1" align="left">  <B>Tensión de encendido </B>Este parámetro muestra la medición de la tensión del sistema en la alimentación de encendido.</div>
+			<div class="T1" align="left">  <B>IMS (Interruptor de modo interno) </B>Este parámetro muestra ESTACIONAMIENTO, ESTACIONAMIENTO/MARCHA ATRÁS, MARCHA ATRÁS, MARCHA ATRÁS/PUNTO MUERTO, PUNTO MUERTO, PUNTO MUERTO/MARCHA 4, MARCHA4, MARCHA4/MARCHA3, MARCHA3, MARCHA 3/MARCHA 2, MARCHA 2, MARCHA 2/MARCHA 1, MARCHA1 o NO VÁLIDO. El indicador de gama del IMS representa un estado descodificado de las cuatro entradas del IMS. La combinación de las entradas del IMS se utiliza para determinar en que posición se encuentra la válvula manual en cualquier momento.</div>
+			<div class="T1" align="left">  <B>IMS A/B/C/P </B>Este parámetro muestra el estado de las cuatro entradas A/B/C/P del interruptor de modo interno de la caja de cambios automática. "Alto" indica una señal de tensión de encendido. "Bajo" indica una señal de tensión 0. El scanner mostrará "Alto/Bajo, Alto/Bajo, Alto/Bajo, Alto/Bajo".</div>
+			<div class="T1" align="left">  <B>Tensión de suministro de ISS/OSS </B>Este parámetro muestra OK, Fuera de rango.</div>
+			<div class="T1" align="left">  <B>Tiempo del último cambio </B>Este parámetro muestra el tiempo real del último cambio a velocidad superior. Esta válvula solo es precisa si el cambio fue adaptable.</div>
+			<div class="T1" align="left">  <B>Estado del circuito sol. de PC del conducto </B>Este parámetro muestra si existe un circuito abierto, un cortocircuito a batería/a tierra en el circuito de la señal de realimentación de la válvula solenoide de control de presión (PC) de línea. En el scanner aparece OK, Circuito abierto/Cortocircuito a batería, Cortocircuito a tierra o Indeterminado.</div>
+			<div class="T1" align="left">  <B>Comando de presión de sol. PC de línea </B> Este parámetro muestra los resultados en KPa (psi).</div>
+			<div class="T1" align="left">  <B>Estado del circuito de la sol. de PC 2 </B>Este parámetro muestra OK, Circuito abierto/Cortocircuito a tierra, Cortocircuito a batería o Indeterminado.</div>
+			<div class="T1" align="left">  <B>Solicitud de presión de la sol. de PC 2 </B>Este parámetro muestra KPa (psi).</div>
+			<div class="T1" align="left">  <B>Estado del circuito de la sol. de PC 3 </B>Este parámetro muestra OK, Circuito abierto/Cortocircuito a tierra, Cortocircuito a batería o Indeterminado.</div>
+			<div class="T1" align="left">  <B>Solicitud de presión de la sol. de PC 3 </B>Este parámetro muestra KPa (psi).</div>
+			<div class="T1" align="left">  <B>Estado del circuito de la sol. 4 de PC </B>Este parámetro muestra OK, Circuito abierto/Cortocircuito a tierra, Cortocircuito a batería o Indeterminado.</div>
+			<div class="T1" align="left">  <B>Solicitud de presión de la sol. 4 de PC </B>Este parámetro muestra KPa (psi).</div>
+			<div class="T1" align="left">  <B>Estado del circuito de la sol. 5 de PC </B>Este parámetro muestra OK, Circuito abierto/Cortocircuito a tierra, Cortocircuito a batería o Indeterminado.</div>
+			<div class="T1" align="left">  <B>Solicitud de presión de la sol. 5 de PC </B>Este parámetro muestra KPa (psi).</div>
+			<div class="T1" align="left">  <B>Estado del circuito de OSS replicado </B>Este parámetro muestra OK, Circuito abierto/Cortocircuito a tierra, Cortocircuito a batería, Indeterminado.</div>
+			<div class="T1" align="left">  <B>Estado del circuito de la sol. 1 de cambio </B>Este parámetro muestra OK, Circuito abierto/Cortocircuito a tierra, Cortocircuito a batería o Indeterminado.</div>
+			<div class="T1" align="left">  <B>Solenoide 1 de cambio </B>Este parámetro muestra es estado de solicitud de la marcha atrás, válvula solenoide de cambio 1ª (S1). El scanner muestra On/Off.</div>
+			<div class="T1" align="left">  <B>Estado del circuito de la sol. 2 de cambio </B>Este parámetro muestra OK, Circuito abierto/Cortocircuito a tierra, Cortocircuito a batería o Indeterminado.</div>
+			<div class="T1" align="left">  <B>Solenoide 2 de cambio </B>Este parámetro muestra el estado de solicitud de la válvula solenoide de cambio 2-3, 3-4 (S2). El scanner muestra Activada/Desactivada.</div>
+			<div class="T1" align="left">  <B>Comando de presión de sol. PC de TCC </B> Este parámetro muestra los resultados en kPa (psi).</div>
+			<div class="T1" align="left">  <B>Velocidad de deslizamiento del TCC </B>Este parámetro muestra la diferencia entre la velocidad de entrada de la transmisión y el régimen del motor. Un valor negativo indica que el régimen del motor es menor que la velocidad de entrada, desaceleración. Un valor positivo indica que el régimen del motor es mayor que la velocidad de entrada, aceleración. Valor 0 indica que el régimen del motor es igual a la velocidad de entrada, TCC aplicado.</div>
+			<div class="T1" align="left">  <B>Temperatura del TCM </B>Este parámetro muestra los resultados en °C (°F).</div>
+			<div class="T1" align="left">  <B>Interruptor A de la TFP </B>Este parámetro muestra el estado del primer interruptor de presión de aceite del embrague. El scanner muestra ALTO/BAJO.</div>
+			<div class="T1" align="left">  <B>Interruptor C de la TFP </B>Este parámetro muestra el estado del tercer interruptor de presión de aceite del embrague. El scanner muestra ALTO/BAJO.</div>
+			<div class="T1" align="left">  <B>Interruptor D de la TFP </B>Este parámetro muestra el estado del cuarto interruptor de presión de aceite del embrague. El scanner muestra ALTO/BAJO.</div>
+			<div class="T1" align="left">  <B>Interruptor E de la TFP </B>Este parámetro muestra el estado del quinto interruptor de presión de aceite del embrague. El scanner muestra ALTO/BAJO.</div>
+			<div class="T1" align="left">  <B>Temp. líquido de la transmisión </B> Este parámetro muestra la señal de entrada del sensor de temperatura del líquido de la transmisión. La temperatura del líquido de la transmisión es alta 151°C (304°F), cuando la tensión es baja, 0 voltios. La temperatura del líquido de la transmisión es baja 40°C (104°F), cuando la tensión es alta, 5 voltios.</div>
+			<div class="T1" align="left">  <B>ISS de transmisión </B>Este parámetro muestra la velocidad rotacional del eje de entrada de la caja de cambios. El scanner muestra la velocidad del eje de entrada en revoluciones por minuto (RPM).</div>
+			<div class="T1" align="left">  <B>OSS de la transmisión </B>Este parámetro muestra la velocidad rotacional del eje de salida de la caja de cambios. El scanner muestra la velocidad del eje de salida en revoluciones por minuto (RPM).</div>
+		
+	
+	<P></P>
+<DIV align="left" id="L5A0DTCTD"><font size="4"><b>Definiciones del tipo de códigos de avería (DTC) </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="left" id="L5A0ERD"><font size="4"><b>DTC relacionados con emisiones</b></font></DIV>
+<P></P>
+			<P></P>
+<DIV align="left" id="L5A0ATWDS"><b>Acción realizada cuando se registra el DTC - Tipo A</b></DIV>
+<P></P>
+				<div class="T1" align="left">El módulo de control enciende el testigo de avería (MIL) cuando se ejecuta la rutina de diagnóstico y este falla.</div>
+				
+			
+			<P></P>
+<DIV align="left" id="L5A0ATWDS1"><b>Acción realizada cuando se registra el DTC - Tipo B</b></DIV>
+<P></P>
+				<div class="T1" align="left">El módulo de control enciende el MIL en el segundo ciclo de encendido consecutivo en el que se ejecuta la rutina de diagnóstico y esta falla.</div>
+				
+			
+			<P></P>
+<DIV align="left" id="L5A0CCM"><b>Condiciones para que se apague el MIL y desaparezca el DTC - Tipo A o Tipo B</b></DIV>
+<P></P>
+				<UL>
+<Li>El módulo de control apaga el MIL después de 3 ciclos de encendido consecutivos en los que se ejecuta la rutina de diagnóstico y esta no falla.</Li>
+						<Li>Un DTC almacenado "Última prueba fallida" desaparece cuando se ejecuta la rutina de diagnóstico y se supera.</Li>
+						<Li>Utilice un scanner para apagar el MIL y hacer desaparecer el DTC.</Li>
+					</UL>
+				
+			
+		
+		<P></P>
+<DIV align="left" id="L5A0NERD"><font size="4"><b>DTC no relacionados con emisiones</b></font></DIV>
+<P></P>
+			<P></P>
+<DIV align="left" id="L5A0ATWDS2"><b>Acción realizada cuando se registra el DTC - Tipo C</b></DIV>
+<P></P>
+				<UL>
+<Li>El módulo de control almacena la información de DTC en la memoria cuando se ejecuta la rutina de diagnóstico y esta falla.</Li>
+						<Li>El MIL no se encenderá.</Li>
+					</UL>
+				
+			
+			<P></P>
+<DIV align="left" id="L5A0CCD"><b>Condiciones para que desaparezca el DTC - Tipo C</b></DIV>
+<P></P>
+				<UL>
+<Li>Última prueba fallida, o el DTC actual, desaparece cuando la rutina de diagnóstico se ejecuta y se supera.</Li>
+						<Li>Utilice un scanner para hacer desaparecer el DTC.</Li>
+					</UL>
+				
+			
+			<P></P>
+<DIV align="left" id="L5A0CCD1"><b>Condiciones para que desaparezca el DTC - Tipo X</b></DIV>
+<P></P>
+				<div class="T1" align="left">Este DTC está disponible en el software del módulo de control de potencia (PCM), pero ha sido desconectado o desactivado. En ese caso, la rutina de diagnóstico no se ejecuta, no se almacenan DTC y el MIL no se ilumina. Los DTC de Tipo X se usan principalmente para vehículos de exportación que no requieren la iluminación del MIL o el almacenamiento de DTC.</div>
+				
+			
+		
+	
+	<P></P>
+<DIV align="center" id="L5A0DTCL"><font size="4"><b>Lista/Tipo de códigos de avería (DTC) </b></font></DIV>
+<P></P>
+		<Table border="1" width="100%" cellspacing="0">
+<Thead bgcolor="eeeeee">
+<tr>
+<td align="center" valign="middle" class="T1" width="80%"><b><div>DTC</div>
+							
+						</b></td>
+						<td align="center" valign="middle" class="T1" width="20%"><b><div>Tipo de DTC</div>
+							
+						</b></td>
+					</tr>
+				</Thead>
+				<Tbody align="center" valign="middle">
+<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>DTC P0218</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>C</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>DTC P0562 o P0563</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>C</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>DTC P0601, P0602, P0603, P0604 o P062F</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>A</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>DTC P0634</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>A</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>DTC P0658 o P0659</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>A, C</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>DTC P0667, P0668, o P0669</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>C</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>DTC P06AC, P06AD o P06AE</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>C</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>DTC P0711, P0712 o P0713</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>C</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>DTC P0716 o P0717</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>A</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>DTC P0722 o P0723</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>A</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>DTC P0741 o P0742</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>A</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>DTC P0751</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>B</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>DTC P0752</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>A</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>DTC P0776 o P0777</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>A</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>DTC P0796 o P0797</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>A</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>DTC P0815, P0816, P0826 o P1876</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>C</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>DTC P0842, P0843, P0872, P0873, P0877, P0878, P0989 o P0990</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>C</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>DTC P0961, P0962 o P0963</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>C, A, C</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>DTC P0965, P0966 o P0967</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>C, A, A</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>DTC P0969, P0970 o P0971</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>C, A, A</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>DTC P0973 o P0974</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>A, B</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>DTC P1751</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>B</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>DTC P1761 o P1762</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>C</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>DTC P1763</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>C</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>DTC P1825 o P1915</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>A</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>DTC P2534</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>A</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>DTC P2714 o P2715</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>A</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>DTC P2719, P2720 o P2721</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>C, A, A</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>DTC P2723 o P2724</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>A</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>DTC P2728, P2729 o P2730</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>C, A, A</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>DTC P2762, P2763 o P2764</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>C, A, A</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>DTC U0073</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>A</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>DTC U0100 o U0140</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>A, C</div>
+							
+						</td>
+					</tr>
+				</Tbody>
+			</Table>
+		
+	
+	<P></P>
+<DIV align="left" id="L5A0P0218"><font size="4"><b>DTC P0218 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="left" id="L5A0DD"><b>Descriptor del DTC</b></DIV>
+<P></P>
+			<div class="T1" align="left">  <B>DTC P0218: </B>Temperatura excesiva del aceite de la transmisión</div>
+			
+		
+		<P></P>
+<DIV align="left" id="L5A0DFI"><b>Información de fallo de la rutina de diagnóstico</b></DIV>
+<P></P>
+			<Table border="1" width="100%" cellspacing="0">
+<Thead bgcolor="eeeeee">
+<tr>
+<td align="center" valign="middle" class="T1" width="15%"><b><div>Componente</div>
+								
+							</b></td>
+							<td align="center" valign="middle" class="T1" width="70%"><b><div>Causa</div>
+								
+							</b></td>
+							<td align="center" valign="middle" class="T1" width="15%"><b><div>DTC</div>
+								
+							</b></td>
+						</tr>
+					</Thead>
+					<Tbody align="center" valign="middle">
+<tr colspan="">
+<td class="T1" width="" colspan="3" rowspan="" align="left" valign="middle">
+<div>DTC P0218 detecta una temperatura del líquido de la transmisión (TFT) muy elevada sin que se detecte ningún fallo del sensor de la TFT.</div>
+								
+							</td>
+						</tr>
+						<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>motor</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<UL>
+<Li>Nivel bajo de refrigerante del motor</Li>
+										<Li>Refrigerante del motor incorrecto</Li>
+										<Li>Nivel de concentración incorrecto o refrigerante viejo</Li>
+										<Li>Fuga en el sistema de refrigeración</Li>
+										<Li>Manguito del radiador doblado o pinzado</Li>
+										<Li>Juntas de aire o deflector del radiador sueltos, ausentes o dañados - flujo de aire escaso</Li>
+										<Li>El condensador del radiador y el aire acondicionado (A/C) tienen el flujo de aire obstruido y puede incluir un gran número de aletas dobladas</Li>
+										<Li>Los ventiladores no funcionan</Li>
+										<Li>Compruebe los componentes mecánicos del motor para verificar si las culatas o el bloque del motor están desgastados, presentan fugas o grietas</Li>
+									</UL>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>P0116</div>
+								
+							</td>
+						</tr>
+						<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="4" align="" valign="middle">
+<div>Caja de cambios, transmisión</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>Sobrecarga del vehículo o capacidad de remolque excedida:</div>
+									<UL>
+<Li>Vehículo sobrecargado</Li>
+										<Li>Vehículo remolcando por encima de su capacidad</Li>
+										<Li>Remolcando en marcha incorrecta</Li>
+										<Li>Modificaciones del vehículo</Li>
+									</UL>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>P0218</div>
+								
+							</td>
+						</tr>
+						<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>Transferencia de calor:</div>
+									<UL>
+<Li>Sobrecalentamiento del motor</Li>
+										<Li>Limitaciones del paso del refrigerante - el radiador tiene el paso obstruido/ una obstrucción</Li>
+										<Li>Restricción de flujo de aire</Li>
+										<Li>Modificaciones del vehículo</Li>
+										<Li>El refrigerante auxiliar no se instaló correctamente, dirección de flujo incorrecta - flujo invertido</Li>
+										<Li>Conductos del refrigerador de transmisión pinzados, bloqueados u obstruidos.</Li>
+									</UL>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>P0218</div>
+								
+							</td>
+						</tr>
+						<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>Uso incorrecto de la caja de cambios:</div>
+									<UL>
+<Li>Sobrecalentamiento del motor</Li>
+										<Li>Maniobras del par motor del freno excesivas</Li>
+										<Li>Vehículo sobrecargado</Li>
+										<Li>Vehículo remolcando por encima de su capacidad</Li>
+										<Li>Modificaciones del vehículo</Li>
+									</UL>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>P0218</div>
+								
+							</td>
+						</tr>
+						<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>Daños en el vehículo:</div>
+									<UL>
+<Li>Daños en los bajos del vehículo</Li>
+										<Li>Daños en el cárter inferior de la transmisión</Li>
+										<Li>Restricción de flujo de aire</Li>
+									</UL>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>P0218</div>
+								
+							</td>
+						</tr>
+						<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="4" align="left" valign="middle">
+<div><font color="white">.</font></div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>Líquido de la transmisión:</div>
+									<UL>
+<Li>Fugas de líquido</Li>
+										<Li>Nivel bajo del líquido</Li>
+										<Li>Líquido contaminado o de baja calidad</Li>
+									</UL>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>P0218</div>
+								
+							</td>
+						</tr>
+						<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>Convertidor de par:</div>
+									<UL>
+<Li>Bomba ineficaz</Li>
+										<Li>Fallo del convertidor de par - Estátor, bomba, embrague, daño por abombamiento o calor</Li>
+										<Li>Agarrotado o bloqueado</Li>
+										<Li>Daños en el convertidor</Li>
+									</UL>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>P0218</div>
+								
+							</td>
+						</tr>
+						<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>Salida de la bomba baja:</div>
+									<UL>
+<Li>Nivel bajo del líquido</Li>
+										<Li>Filtro bloqueado, dañado o suelto</Li>
+										<Li>Conductos del refrigerador pinzados u obstruidos</Li>
+										<Li>Refrigerante obstruido - daños o residuos</Li>
+										<Li>Bomba ineficaz - desgastada</Li>
+									</UL>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>P0218</div>
+								
+							</td>
+						</tr>
+						<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>Deslizamiento del embrague:</div>
+									<UL>
+<Li>Nivel bajo del líquido</Li>
+										<Li>Salida de la bomba baja</Li>
+									</UL>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>P0218</div>
+								
+							</td>
+						</tr>
+					</Tbody>
+				</Table>
+			
+		
+		<P></P>
+<DIV align="left" id="L5A0CD"><b>Descripción del circuito/sistema</b></DIV>
+<P></P>
+			<div class="T1" align="left">El líquido de la transmisión se extrae del cárter inferior a través del filtro, conjunto de la carcasa, conjunto de plato de canal, conjunto del cuerpo de la válvula de control hacia el conjunto de la bomba de aceite. La bomba se monta sobre el conjunto del cuerpo de la válvula de control. La válvula reguladora de presión controla la presión del líquido que sale de la bomba y se convierte en el principal suministro de presión de línea a los diferentes componentes y circuitos hidráulicos. El líquido caliente procedente del convertidor de par, la principal fuente de calor en la transmisión, pasa a través de la válvula de control del embrague del convertidor de par (TCC) al conducto de suministro del refrigerante de aceite. El conducto de suministro del refrigerante de aceite se conecta al refrigerador de aceite, que se encuentra en el radiador del vehículo y el refrigerador de aceite auxiliar (si está instalado). El líquido frío vuelve a través del conducto de retorno del refrigerante de aceite para lubricar el conjunto de la transmisión final y otros componentes a lo largo del eje de salida. Después de lubricar los componentes internos, el aceite vuele al cárter de aceite. El sensor de TFT, instalado en la parte inferior del cuerpo de la válvula, forma parte del cableado de conexión de la transmisión interna y no se puede reparar por separado. La temperatura normal de funcionamiento de TFT está entre -40 y +151°C (-40 y +304°F).</div>
+			
+		
+		<P></P>
+<DIV align="left" id="L5A0CRD"><b>Condiciones para activar el DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>La tensión del encendido esté entre 9 y 19 voltios.</Li>
+					<Li>La TFT esté entre -39 y +149 °C (-38 y +300 °F) durante 5 segundos.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="L5A0CSD"><b>Condiciones para la activación del DTC</b></DIV>
+<P></P>
+			<div class="T1" align="left">La TFT esté a 135 °C (275 °F) o más durante 4 minutos.</div>
+			
+		
+		<P></P>
+<DIV align="left" id="L5A0ATWDS3"><b>Acción realizada cuando se activa el DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>DTC P0218 es un Tipo C de DTC.</Li>
+					<Li>El TCM congela las funciones adaptativas de la caja de cambios.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="L5A0CCMD"><b>Condiciones para borrar el DTC</b></DIV>
+<P></P>
+			<div class="T1" align="left">DTC P0218 es un Tipo C de DTC.</div>
+			
+		
+		<P></P>
+<DIV align="left" id="L5A0DA"><b>Ayudas para el diagnóstico</b></DIV>
+<P></P>
+			<UL>
+<Li>El código P0218 detecta una temperatura alta del líquido de la transmisión durante un periodo largo de tiempo.</Li>
+					<Li>La TFT en el escáner debería aumentar de forma continuada hasta alcanzar una temperatura de funcionamiento normal para estabilizarse a continuación. Pregunte acerca de los hábitos de conducción del cliente, arrastre del remolque, etc. El arrastre del remolque debería llevarse a cabo en MARCHA (D). Asegúrese de que el sistema de refrigeración del motor funciona correctamente.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="L5A0RI"><b>Información de referencia</b></DIV>
+<P></P>
+			<div class="T1" align="left">Descripción y referencia de funcionamiento</div>
+				<UL>
+<Li>Descripción general de la transmisión</Li>
+					<Li>Descripción del sistema y los componentes de la transmisión</Li>
+				</UL>
+				<div class="T1" align="left">Referencia del scanner</div>
+				<UL>
+<Li>Controles de salida del scanner</Li>
+					<Li>Lista de datos del scanner</Li>
+					<Li>Definiciones de datos del scanner</Li>
+				</UL>
+				<div class="T1" align="left">Referencia del tipo de DTC</div>
+				<UL>
+<Li>Definiciones del tipo de códigos de avería (DTC)</Li>
+					<Li>Lista/Tipo de códigos de avería (DTC)</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="L5A0CV"><b>Verificación del circuito/sistema</b></DIV>
+<P></P>
+			<OL>
+<Li>Asegúrese de que el líquido de la trasmisión está en un nivel correcto realizando la comprobación del líquido de la transmisión.</Li>
+					<Li>Pregunte acerca de los hábitos de conducción del cliente, arrastre del remolque, etc. El arrastre del remolque debería realizarse en D.</Li>
+					<Li>Revise los registros de avería cuando haya DTC almacenados. Compruebe que la temperatura del refrigerante del motor sea menor de 125°C (257°F).</Li>
+					<ul type="square" style="list-style-image:url(../../../../Graphic-Pool/Icons/compass.gif)">
+<li style="margin-top:0.1em; margin-bottom:0.1em">Si es mayor que el valor especificado, consulte Sobrecalentamiento del motor en la sección 1D, Refrigeración del motor.</li>
+					</ul>
+					<Li>Asegúrese de que el sistema de refrigeración del motor funciona correctamente. La TFT en el scanner debería aumentar hasta alcanzar una temperatura de funcionamiento normal y luego estabilizarse.</Li>
+					<Li>Revise el sistema de refrigeración de la transmisión asegurándose de que no haya obstrucciones o esté dañado.</Li>
+					<Li>Conduzca el vehículo en las condiciones necesarias para que se registre el DTC y comprobar que el DTC no se vuelve a almacenar. También puede conducir el vehículo bajo las condiciones observadas en los datos de los registros de avería/contexto de congelación.</Li>
+					<Li>Compruebe que no haya obstrucciones del flujo de aire al radiador y/o al refrigerador auxiliar (si está in talado) causadas por residuos o aletas dañadas.</Li>
+					<ul type="square" style="list-style-image:url(../../../../Graphic-Pool/Icons/compass.gif)">
+<li style="margin-top:0.1em; margin-bottom:0.1em">Si detecta alguna anomalía, repare o sustituya los componentes dañados según convenga.</li>
+					</ul>
+					<Li>Compruebe si en el sistema de refrigeración de la transmisión y/o el refrigerador auxiliar (si está in talado) hay conductos del refrigerador de la transmisión dañados o doblados.</Li>
+					<ul type="square" style="list-style-image:url(../../../../Graphic-Pool/Icons/compass.gif)">
+<li style="margin-top:0.1em; margin-bottom:0.1em">Si detecta alguna anomalía, repare o sustituya los componentes dañados según convenga.</li>
+					</ul>
+					<Li>Lleve a cabo la prueba de descarga y flujo de refrigerante del líquido de la transmisión para comprobar que el flujo del refrigerante de aceite de la transmisión es correcto.</Li>
+					<ul type="square" style="list-style-image:url(../../../../Graphic-Pool/Icons/compass.gif)">
+<li style="margin-top:0.1em; margin-bottom:0.1em">Si detecta alguna anomalía, repare o sustituya los componentes dañados según convenga.</li>
+					</ul>
+					<Li>Realice la comprobación de presión de línea para verificar que la presión de línea de la transmisión es correcta.</Li>
+					<ul type="square" style="list-style-image:url(../../../../Graphic-Pool/Icons/compass.gif)">
+<li style="margin-top:0.1em; margin-bottom:0.1em">Si la presión de línea es baja, consulte el apartado   <A target="_blank" href="7L2_5A0.es.html#V5A0FPHL">"Presión de líquido alta y baja" </A> en esta sección.</li>
+					</ul>
+				</OL>
+			
+		
+		<P></P>
+<DIV align="left" id="L5A0RI1"><b>INSTRUCCIONES DE REPARACIÓN</b></DIV>
+<P></P>
+			<OL>
+<Li>Ejecute las adaptaciones de aprendizaje rápido de servicio después de todas las reparaciones relacionadas con la transmisión.</Li>
+					<Li>Lleve a cabo la verificación de la reparación del diagnóstico después de finalizar el procedimiento de diagnóstico.</Li>
+				</OL>
+			
+		
+	
+	<P></P>
+<DIV align="left" id="L5A0P0562"><font size="4"><b>DTC P0562 o P0563 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="left" id="L5A0DD1"><b>Descriptores de DTC</b></DIV>
+<P></P>
+			<div class="T1" align="left">  <B>DTC P0562: </B>Bajo voltaje en el sistema</div>
+				<div class="T1" align="left">  <B>DTC P0563: </B>Alto voltaje en el sistema</div>
+			
+		
+		<P></P>
+<DIV align="left" id="L5A0DFI3"><b>Información de fallo de la rutina de diagnóstico</b></DIV>
+<P></P>
+			<Table border="1" width="100%" cellspacing="0">
+<Thead bgcolor="eeeeee">
+<tr>
+<td align="center" valign="middle" class="T1"><b><div>Circuito</div>
+								
+							</b></td>
+							<td align="center" valign="middle" class="T1"><b><div>Derivación a masa</div>
+								
+							</b></td>
+							<td align="center" valign="middle" class="T1"><b><div>Resistencia alta</div>
+								
+							</b></td>
+							<td align="center" valign="middle" class="T1"><b><div>cortocircuito con la tensión</div>
+								
+							</b></td>
+							<td align="center" valign="middle" class="T1"><b><div>Rendimiento de la señal</div>
+								
+							</b></td>
+						</tr>
+					</Thead>
+					<Tbody align="center" valign="middle">
+<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>Tensión de la batería</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>P2534</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>P0562, P2534</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>-</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>P0562, P0563</div>
+								
+							</td>
+						</tr>
+						<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>Masa</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>-</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>P0562, P2534</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>-</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>P0722, P0723</div>
+								
+							</td>
+						</tr>
+						<tr colspan="">
+<td class="T1" width="" colspan="5" rowspan="" align="left" valign="middle">
+<div>Una tensión más baja de lo normal puede resultar inadecuada para hacer funcionar las solenoides de control de la transmisión correctamente. Un funcionamiento inapropiado de la solenoide puede provocar el funcionamiento incorrecto de la transmisión y este, a su vez, puede causar daños internos.</div>
+								
+							</td>
+						</tr>
+					</Tbody>
+				</Table>
+			
+		
+		<P></P>
+<DIV align="left" id="L5A0CD1"><b>Descripción del circuito/sistema</b></DIV>
+<P></P>
+			<div class="T1" align="left">El TCM monitoriza continuamente la tensión del sistema en los circuitos de tensión de encendido 1.</div>
+			
+		
+		<P></P>
+<DIV align="left" id="L5A0CRD3"><b>Condiciones para activar el DTC</b></DIV>
+<P></P>
+			<div class="p" align="left">  <B>DTC P0562</B>
+</div>
+				<UL>
+<Li>La tensión de encendido esté entre 9 y 19 voltios.</Li>
+					<Li>El régimen del motor sea de 1.200 rpm o superior.</Li>
+				</UL>
+				<div class="p" align="left">  <B>DTC P0563</B>
+</div>
+				<div class="T1" align="left">La tensión de encendido esté entre 9 y 19 voltios.</div>
+			
+		
+		<P></P>
+<DIV align="left" id="L5A0CSD3"><b>Condiciones para la activación del DTC</b></DIV>
+<P></P>
+			<div class="p" align="left">  <B>DTC P0562</B>
+</div>
+				<div class="T1" align="left">El TCM detecte que la tensión del sistema es menor o igual a 11 voltios durante 4 segundos.</div>
+				<div class="p" align="left">  <B>DTC P0563</B>
+</div>
+				<div class="T1" align="left">El TCM detecte que la tensión del sistema es de 18 voltios o mayor durante 10 segundos.</div>
+			
+		
+		<P></P>
+<DIV align="left" id="L5A0ATWDS4"><b>Acción realizada cuando se activa el DTC</b></DIV>
+<P></P>
+			<div class="T1" align="left">Los DTC P0562 y P0563 son DTC de tipo C.</div>
+			
+		
+		<P></P>
+<DIV align="left" id="L5A0CCMD1"><b>Condiciones para borrar el DTC</b></DIV>
+<P></P>
+			<div class="T1" align="left">Los DTC P0562 y P0563 son DTC de tipo C.</div>
+			
+		
+		<P></P>
+<DIV align="left" id="L5A0DA1"><b>Ayudas para el diagnóstico</b></DIV>
+<P></P>
+			<UL>
+<Li>El DTC P0562 detecta una tensión baja del sistema durante un determinado periodo de tiempo.</Li>
+					<Li>El DTC P0563 detecta una tensión alta del sistema durante un determinado periodo de tiempo.</Li>
+					<Li>Compruebe si se detectan las siguientes anomalías:</Li>
+					<ul type="square" style="list-style-image:url(../../../../Graphic-Pool/Icons/compass.gif)">
+<li style="margin-top:0.1em; margin-bottom:0.1em">Terminales sueltos o dañados en el alternador</li>
+						<li style="margin-top:0.1em; margin-bottom:0.1em">Correa de accionamiento del generador suelta o desgastada</li>
+					</ul>
+					<Li>Utilice el scanner para inspeccionar todos los módulos restantes en busca de DTC relacionados con la tensión.</Li>
+					<Li>Poner en marcha el motor con un cargador de baterías puede generar el almacenamiento del DTC P0563.</Li>
+					<Li>Compruebe si el circuito de carga muestra una alta resistencia.</Li>
+					<Li>Compruebe si hay células sulfatadas o abiertas en la batería del vehículo.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="L5A0RI2"><b>Información de referencia</b></DIV>
+<P></P>
+			<div class="T1" align="left">Referencia del scanner</div>
+				<UL>
+<Li>Controles de salida del scanner</Li>
+					<Li>Lista de datos del scanner</Li>
+					<Li>Definiciones de datos del scanner</Li>
+				</UL>
+				<div class="T1" align="left">Referencia del tipo de DTC</div>
+				<UL>
+<Li>Definiciones del tipo de códigos de avería (DTC)</Li>
+					<Li>Lista/Tipo de códigos de avería (DTC)</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="L5A0CV1"><b>Verificación del circuito/sistema</b></DIV>
+<P></P>
+			<OL>
+<Li>Motor encendido, accesorios desconectados, mida y anote el la tensión de la batería en los bornes de esta. La tensión debería estar entre 12 y 15 voltios.</Li>
+					<ul type="square" style="list-style-image:url(../../../../Graphic-Pool/Icons/compass.gif)">
+<li style="margin-top:0.1em; margin-bottom:0.1em">Si la tensión no se encuentra en el rango especificado, compruebe el sistema de carga.</li>
+					</ul>
+					<Li>Contacto dado, motor apagado, accesorios desconectados, observe el parámetro de tensión de la batería en el scanner. La tensión de la batería debería estar entre 12 y 14,5 voltios.</Li>
+					<ul type="square" style="list-style-image:url(../../../../Graphic-Pool/Icons/compass.gif)">
+<li style="margin-top:0.1em; margin-bottom:0.1em">Si la tensión no se encuentra en el rango especificado, compruebe el sistema de carga.</li>
+					</ul>
+					<Li>Motor encendido, accesorios desconectados, observe el parámetro de tensión de encendido en el scanner. La tensión de encendido debería estar entre 12 y 14,5 voltios.</Li>
+					<ul type="square" style="list-style-image:url(../../../../Graphic-Pool/Icons/compass.gif)">
+<li style="margin-top:0.1em; margin-bottom:0.1em">Si la tensión no se encuentra en el rango especificado, compruebe el sistema de carga.</li>
+					</ul>
+					<Li>Aumente el régimen del motor a 1.500 rpm. El parámetro de tensión de encendido debería mantenerse entre 12 y 14,5 voltios.</Li>
+					<ul type="square" style="list-style-image:url(../../../../Graphic-Pool/Icons/compass.gif)">
+<li style="margin-top:0.1em; margin-bottom:0.1em">Si la tensión no se encuentra en el rango especificado cuando aumenta el régimen del motor, compruebe el sistema de carga.</li>
+					</ul>
+					<Li>Conduzca el vehículo en las condiciones necesarias para que se registre el DTC y comprobar que el DTC no se vuelve a almacenar. También puede conducir el vehículo bajo las condiciones observadas en los datos de los registros de avería/contexto de congelación.</Li>
+				</OL>
+			
+		
+		<P></P>
+<DIV align="left" id="L5A0CT1"><b>Comprobación del circuito/sistema</b></DIV>
+<P></P>
+			<P></P>
+<DIV><B><FONT color="navy">Importante: Debe realizar la verificación del circuito/sistema antes de realizar la Comprobación del circuito/sistema.</FONT></B></DIV>
+<P></P>
+				
+				<OL>
+<Li>Motor apagado, desconecte el conector del TCM. Conecte la sonda negativa del multimedidor digital (DMM) a una toma de tierra adecuada. Dé el contacto y con el motor apagado, compruebe el circuito de tensión positivo de la batería, terminal 1 del conector del TCM y el circuito de tensión 1 de encendido, terminal 12 del conector del TCM, del lado del cableado del conector TCM con la sonda positiva del DMM. Mida la tensión de cada circuito. La tensión debería estar entre 11 y 14,5 voltios.</Li>
+					<ul type="square" style="list-style-image:url(../../../../Graphic-Pool/Icons/compass.gif)">
+<li style="margin-top:0.1em; margin-bottom:0.1em">Si la tensión es 0 voltios, compruebe los fusibles Ef27, F11 y el fusible F17 por si hubiera una interrupción. De estar en circuito abierto, compruebe si el circuito afectado presenta un cortocircuito a tierra.</li>
+						<li style="margin-top:0.1em; margin-bottom:0.1em">Si el fusible no está en circuito abierto, compruebe si el circuito afectado presenta un circuito abierto.</li>
+					</ul>
+					<Li>Compare el valor de tensión positiva de la batería con el valor de tensión de encendido 1 anterior. La caída de tensión entre los circuitos debería ser inferior a 0,5 voltios.</Li>
+					<ul type="square" style="list-style-image:url(../../../../Graphic-Pool/Icons/compass.gif)">
+<li style="margin-top:0.1em; margin-bottom:0.1em">Si la caída de tensión es mayor de 0,2 voltios, repare el circuito abierto o resistencia alta en el circuito afectado.</li>
+					</ul>
+					<Li>Si todos los circuitos y conexiones funcionan correctamente, sustituya el conjunto de válvulas solenoide de control (en carrocería y TCM).</Li>
+				</OL>
+			
+		
+		<P></P>
+<DIV align="left" id="L5A0RI3"><b>INSTRUCCIONES DE REPARACIÓN</b></DIV>
+<P></P>
+			<P></P>
+<DIV><B><FONT color="navy">Importante: Antes de sustituir el TCM, realice una comprobación del conjunto de módulo de control de la transmisión y la válvula solenoide de control.</FONT></B></DIV>
+<P></P>
+				
+				<UL>
+<Li>Sustitución del conjunto de válvulas solenoide de control (en carrocería y TCM).</Li>
+					<Li>Ejecute las adaptaciones de aprendizaje rápido de servicio después de todas las reparaciones relacionadas con la transmisión.</Li>
+					<Li>Lleve a cabo la verificación de la reparación del diagnóstico después de finalizar el procedimiento de diagnóstico.</Li>
+				</UL>
+			
+		
+	
+	<P></P>
+<DIV align="left" id="L5A0P0601"><font size="4"><b>DTC P0601, P0602, P0603, P0604 o P062F </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="left" id="L5A0DD2"><b>Descriptores de DTC</b></DIV>
+<P></P>
+			<div class="T1" align="left">  <B>DTC P0601: </B>Memoria de solo lectura (ROM) del módulo de control de la transmisión (TCM)</div>
+				<div class="T1" align="left">  <B>DTC P0602: </B> Módulo de control de transmisión (TCM) no programado</div>
+				<div class="T1" align="left">  <B>DTC P0603: </B>Restauración de la memoria de largo plazo del módulo de control de la transmisión (TCM)</div>
+				<div class="T1" align="left">  <B>DTC P0604: </B> Memoria de acceso aleatorio (RAM) del módulo de control de la transmisión (TCM)</div>
+				<div class="T1" align="left">  <B>DTC P062F: </B> Rendimiento de la memoria de largo plazo del módulo de control de la transmisión (TCM)</div>
+			
+		
+		<P></P>
+<DIV align="left" id="L5A0CD2"><b>Descripción del circuito/sistema</b></DIV>
+<P></P>
+			<div class="T1" align="left">Esto es una detección de avería interna del conjunto de válvulas solenoide de control (en carrocería y TCM). Esta avería se localiza en el conjunto de válvulas solenoide de control (en carrocería y TCM) y no hay circuitos externos implicados.</div>
+			
+		
+		<P></P>
+<DIV align="left" id="L5A0CRD4"><b>Condiciones para activar el DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>El conjunto de válvulas solenoide de control (en carrocería y TCM) ejecuta el programa para detectar una condición interna con el contacto dado. Tan solo es necesario tensión y una conexión a tierra. Este programa se ejecuta incluso si la tensión está fuera del intervalo operativo válido.</Li>
+					<Li>La tensión de encendido esté entre 8 y 18 voltios - solo DTC P062F.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="L5A0CSD4"><b>Condiciones para la activación del DTC</b></DIV>
+<P></P>
+			<div class="p" align="left">  <B>P0601</B>
+</div>
+				<div class="T1" align="left">La prueba de memoria de solo lectura (ROM) ha fallado 5 o más veces.</div>
+				<div class="p" align="left">  <B>P0602</B>
+</div>
+				<div class="T1" align="left">El TCM no ha podido detectar el inicio del programa.</div>
+				<div class="p" align="left">  <B>P0603</B>
+</div>
+				<div class="T1" align="left">El TCM ha detectado un error de suma de control de memoria.</div>
+				<div class="p" align="left">  <B>P0604</B>
+</div>
+				<div class="T1" align="left">La prueba de memoria de acceso aleatorio (RAM) ha fallado 5 o más veces.</div>
+				<div class="p" align="left">  <B>P062F</B>
+</div>
+				<div class="T1" align="left">El TCM ha detectado un error en la memoria no volátil durante el apagado.</div>
+			
+		
+		<P></P>
+<DIV align="left" id="L5A0ATWDS5"><b>Acción realizada cuando se activa el DTC</b></DIV>
+<P></P>
+			<div class="p" align="left">  <B>P0601, P0603, P0604 y P062F</B>
+</div>
+				<UL>
+<Li>Los DTC P0601, P0603, P0604 y P062F son DTC de tipo A.</Li>
+					<Li>El TCM solicita la máxima presión de línea.</Li>
+					<Li>El TCM fuerza la liberación del embrague del convertidor de par (TCC).</Li>
+					<Li>El TCM inhibe el acoplamiento del TCC.</Li>
+					<Li>El TCM congela las funciones adaptativas de la caja de cambios.</Li>
+					<Li>El TCM solicita pasar inmediatamente a 2ª velocidad.</Li>
+				</UL>
+				<div class="p" align="left">  <B>P0602</B>
+</div>
+				<UL>
+<Li>El DTC P0602 es un DTC de tipo A.</Li>
+					<Li>El TCM solicita la máxima presión de línea.</Li>
+					<Li>El TCM fuerza la liberación del embrague del convertidor de par (TCC).</Li>
+					<Li>El TCM inhibe el acoplamiento del TCC.</Li>
+					<Li>El TCM congela las funciones adaptativas de la caja de cambios.</Li>
+					<Li>El TCM solicita pasar inmediatamente a 2ª velocidad.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="L5A0CCMD2"><b>Condiciones para borrar el DTC</b></DIV>
+<P></P>
+			<div class="T1" align="left">Los DTC P0601, P0602, P0603, P0604, y P062F son DTC de tipo A.</div>
+			
+		
+		<P></P>
+<DIV align="left" id="L5A0DA2"><b>Ayudas para el diagnóstico</b></DIV>
+<P></P>
+			<UL>
+<Li>El DTC P0601 detecta una corrupción de la memoria EPROM/Flash.</Li>
+					<Li>El DTC P0602 detecta un módulo de control de la transmisión no programado.</Li>
+					<Li>El DTC P0603 detecta una copia errónea de la memoria no volátil en la RAM.</Li>
+					<Li>El DTC P0604 detecta un fallo de lectura/escritura en la Memoria de acceso aleatorio (RAM).</Li>
+					<Li>El DTC P062F detecta un error de escritura en la memoria no volátil al extraer al apagar el vehículo.</Li>
+					<Li>Cuando trate de activar los DTC internos del TCM deje en marcha el motor durante al menos 1 minuto y luego apáguelo durante 30 segundos. Este procedimiento permite apagar completamente el TCM. Reprograme el TCM y vuelva a comprobar el DTC para ver si este se vuelve a almacenar.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="L5A0RI4"><b>Información de referencia</b></DIV>
+<P></P>
+			<div class="T1" align="left">Descripción y referencia de funcionamiento</div>
+				<div class="T1" align="left">Consulte la descripción de los componentes electrónicos del conjunto de válvulas solenoide de control (en carrocería y TCM).</div>
+				<div class="T1" align="left">Referencia del scanner</div>
+				<UL>
+<Li>Controles de salida del scanner</Li>
+					<Li>Lista de datos del scanner</Li>
+					<Li>Definiciones de datos del scanner</Li>
+				</UL>
+				<div class="T1" align="left">Referencia del tipo de DTC</div>
+				<UL>
+<Li>Definiciones del tipo de códigos de avería (DTC)</Li>
+					<Li>Lista/Tipo de códigos de avería (DTC)</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="L5A0CV2"><b>Verificación del circuito/sistema</b></DIV>
+<P></P>
+			<OL>
+<Li>Motor en funcionamiento. Deje funcionar el motor durante al menos 1 minuto.</Li>
+					<Li>Quite el contacto durante al menos 30 segundos para permitir que el TCM se apague por completo.</Li>
+					<Li>Con el contacto dado, compruebe que no se haya almacenado el DTC P0602.</Li>
+					<ul type="square" style="list-style-image:url(../../../../Graphic-Pool/Icons/compass.gif)">
+<li style="margin-top:0.1em; margin-bottom:0.1em">Si el DTC P0602 está almacenado, reprograme el TCM. Si se vuelve a registrar el DTC, sustituya el conjunto de válvulas solenoide de control (en carrocería y TCM).</li>
+					</ul>
+					<Li>Observe la información de DTCs con un scanner. Si los DTCs P0601, P0603, P0604 o P062F están activados, sustituya el conjunto de válvulas de solenoide de control (en carrocería y TCM).</Li>
+				</OL>
+			
+		
+		<P></P>
+<DIV align="left" id="L5A0RI5"><b>INSTRUCCIONES DE REPARACIÓN</b></DIV>
+<P></P>
+			<OL>
+<Li>Sustitución del conjunto de válvulas solenoide de control (en carrocería y TCM).</Li>
+					<Li>Ejecute las adaptaciones de aprendizaje rápido de servicio después de todas las reparaciones relacionadas con la transmisión.</Li>
+					<Li>Lleve a cabo la verificación de la reparación del diagnóstico después de finalizar el procedimiento de diagnóstico.</Li>
+				</OL>
+			
+		
+	
+	<P></P>
+<DIV align="left" id="L5A0P0634"><font size="4"><b>DTC P0634 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="left" id="L5A0DD3"><b>Descriptor del DTC</b></DIV>
+<P></P>
+			<div class="T1" align="left">  <B>DTC P0634: </B>Temperatura excesiva del módulo de control de la transmisión (TCM).</div>
+			
+		
+		<P></P>
+<DIV align="left" id="L5A0CD3"><b>Descripción del circuito/sistema</b></DIV>
+<P></P>
+			<div class="T1" align="left">El sensor de temperatura del TCM se encuentra dentro del conjunto de válvulas solenoide de control (en carrocería y TCM). Ninguna de las piezas del conjunto de válvulas solenoide de control (en carrocería y TCM) se puede reparar por separado. Este fallo indica que el TCM tiene un problema de sobrecalentamiento y que ha dejado de funcionar para protegerse contra posibles daños a causa de dicho sobrecalentamiento. El TCM permanecerá apagado hasta que pase la condición de temperatura excesiva.</div>
+			
+		
+		<P></P>
+<DIV align="left" id="L5A0CRD6"><b>Condiciones para activar el DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>La tensión del encendido esté entre 9 y 19 voltios.</Li>
+					<Li>El motor esté funcionando.</Li>
+					<Li>La temperatura esté entre 0 °C (32 °F) y 240 °C (464 °F) durante 0,25 segundos o más.</Li>
+					<Li>El DTC P0634 no se haya registrado en este ciclo de encendido.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="L5A0CSD5"><b>Condiciones para la activación del DTC</b></DIV>
+<P></P>
+			<div class="p" align="left">  <B>Caso de fallo 1</B>
+</div>
+				<UL>
+<Li>El TCM ha detectado un condición de temperatura excesiva superior a 144 °C (291 °F) durante al menos 5 segundos.</Li>
+				</UL>
+				<div class="p" align="left">  <B>O</B>
+</div>
+				<div class="p" align="left">  <B>Caso de fallo 2</B>
+</div>
+				<UL>
+<Li>La tensión de encendido sea de al menos 18 voltios y la temperatura del TCM sea mayor de 50 °C (122 °F) durante 2 segundos.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="L5A0ATWDS6"><b>Acción realizada cuando se activa el DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>El DTC P0634 es un DTC de tipo A.</Li>
+					<Li>El TCM cambia a la marcha predeterminada, se desconecta y se apaga.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="L5A0CCMD3"><b>Condiciones para borrar el DTC</b></DIV>
+<P></P>
+			<div class="T1" align="left">El DTC P0634 es un DTC de tipo A.</div>
+			
+		
+		<P></P>
+<DIV align="left" id="L5A0DA3"><b>Ayudas para el diagnóstico</b></DIV>
+<P></P>
+			<UL>
+<Li>El DTC P0634 detecta que la circuitería electrónica en el interior de la transmisión tiene una temperatura de funcionamiento alta.</Li>
+					<Li>Compruebe el refrigerador de la transmisión, los conductos del líquido de la transmisión, el sistema de refrigeración del motor y el nivel del líquido de la transmisión. Compruebe si hay obstrucciones en el flujo de aire del sistema de refrigeración que puedan causar una condición de sobrecalentamiento. El mal funcionamiento del sistema de refrigeración del motor o del sistema de refrigeración de la transmisión puede provocar que se almacene este diagnóstico. Pregunte acerca de condiciones de conducción extrema o de arrastre del cliente. Realice la inspección del conjunto del módulo de control de la transmisión y la válvula solenoide de control antes de sustituir el conjunto de válvulas solenoide de control (en carrocería y TCM).</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="L5A0RI6"><b>Información de referencia</b></DIV>
+<P></P>
+			<div class="T1" align="left">Descripción y referencia de funcionamiento</div>
+				<div class="T1" align="left">Consulte la   <A target="_blank" href="7L2_5A10.es.html#5A0ECD">Descripción de componentes electrónicos </A>del conjunto de válvulas solenoide de control (en carrocería y TCM).</div>
+				<div class="T1" align="left">Referencia del scanner</div>
+				<UL>
+<Li>Controles de salida del scanner</Li>
+					<Li>Lista de datos del scanner</Li>
+					<Li>Definiciones de datos del scanner</Li>
+				</UL>
+				<div class="T1" align="left">Referencia del tipo de DTC</div>
+				<UL>
+<Li>Definiciones del tipo de códigos de avería (DTC)</Li>
+					<Li>Lista/Tipo de códigos de avería (DTC)</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="L5A0CV3"><b>Verificación del circuito/sistema</b></DIV>
+<P></P>
+			<OL>
+<Li>Con el contacto dado, revise los registros de avería cuando haya DTC almacenados. Compruebe que el parámetro del sensor del ECT del scanner sea menor de 125°C (257°F).</Li>
+					<ul type="square" style="list-style-image:url(../../../../Graphic-Pool/Icons/compass.gif)">
+<li style="margin-top:0.1em; margin-bottom:0.1em">Si es mayor que el rango especificado, consulte Sobrecalentamiento del motor   <A target="_blank" href="7L2_1D0.es.html#1D0EC"> en la sección 1D, Refrigeración del motor.</A>
+						</li>
+					</ul>
+					<Li>Realice la comprobación del líquido de la transmisión para asegurarse de que el nivel del líquido y su estado es correcto. El nivel del líquido de la transmisión debería encontrarse dentro de la banda de rayado cruzado y debería ser de color rojo o marrón oscuro.</Li>
+					<ul type="square" style="list-style-image:url(../../../../Graphic-Pool/Icons/compass.gif)">
+<li style="margin-top:0.1em; margin-bottom:0.1em">Si nivel del líquido de la transmisión es bajo o está descolorido, consulte   <A target="_blank" href="7L2_5A06.es.html#5A0TFR">Cambio del líquido de la transmisión.</A>
+						</li>
+					</ul>
+					<Li>Conduzca el vehículo según las condiciones necesarias para registrar el DTC. Compruebe que el parámetro de la temperatura del TCM del scanner sea menor de 146°C (295°F).</Li>
+					<ul type="square" style="list-style-image:url(../../../../Graphic-Pool/Icons/compass.gif)">
+<li style="margin-top:0.1em; margin-bottom:0.1em">Si es mayor que el rango especificado, compruebe el estado de los componentes del sistema de refrigeración de la transmisión que se mencionan a continuación y repárelos según convenga. Si todos los componentes funcionan correctamente, sustituya el conjunto de válvulas solenoide de control (en carrocería y TCM):</li>
+					</ul>
+					<UL>
+<Li>Obstrucciones en el flujo de aire del radiador o en la transmisión debidas a residuos.</Li>
+						<Li>Conductos de líquido de la transmisión dañados o doblados.</Li>
+						<Li>Daños en el refrigerador de la transmisión.</Li>
+					</UL>
+					<Li>Lleve a cabo la prueba de descarga y flujo de refrigerante del líquido de la transmisión para comprobar que el flujo del refrigerante de aceite de la transmisión es correcto.</Li>
+					<Li>Si todos los componentes funcionan correctamente, compruebe o sustituya el conjunto de válvulas solenoide de control (en carrocería y TCM).</Li>
+				</OL>
+			
+		
+		<P></P>
+<DIV align="left" id="L5A0CT5"><b>Comprobación de los componentes</b></DIV>
+<P></P>
+			<div class="T1" align="left">Realice la comprobación del conjunto del módulo de control de la transmisión y la válvula solenoide de control.</div>
+			
+		
+		<P></P>
+<DIV align="left" id="L5A0RI7"><b>INSTRUCCIONES DE REPARACIÓN</b></DIV>
+<P></P>
+			<P></P>
+<DIV><B><FONT color="navy">Importante: Antes de sustituir el TCM, realice una comprobación del conjunto de módulo de control de la transmisión y la válvula solenoide de control.</FONT></B></DIV>
+<P></P>
+				
+				<UL>
+<Li>Sustitución del conjunto de válvulas solenoide de control (en carrocería y TCM).</Li>
+					<Li>Ejecute las adaptaciones de aprendizaje rápido de servicio después de todas las reparaciones relacionadas con la transmisión.</Li>
+					<Li>Lleve a cabo la verificación de la reparación del diagnóstico después de finalizar el procedimiento de diagnóstico.</Li>
+				</UL>
+			
+		
+	
+	<P></P>
+<DIV align="left" id="L5A0P0658"><font size="4"><b>DTC P0658 o P0659 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="left" id="L5A0DD4"><b>Descriptores de DTC</b></DIV>
+<P></P>
+			<div class="T1" align="left">  <B>DTC P0658: </B>Baja tensión del circuito de control de la solenoide de bloqueo de cambio/control de presión (PC)</div>
+				<div class="T1" align="left">  <B>DTC P0659: </B>Alta tensión del circuito de control de la solenoide de bloqueo de cambio/control de presión (PC)</div>
+			
+		
+		<P></P>
+<DIV align="left" id="L5A0DFI1"><b>Información de fallo de la rutina de diagnóstico</b></DIV>
+<P></P>
+			<Table border="1" width="100%" cellspacing="0">
+<Thead bgcolor="eeeeee">
+<tr>
+<td align="center" valign="middle" class="T1"><b><div>Circuito</div>
+								
+							</b></td>
+							<td align="center" valign="middle" class="T1"><b><div>Derivación a masa</div>
+								
+							</b></td>
+							<td align="center" valign="middle" class="T1"><b><div>Abierto/Resistencia alta</div>
+								
+							</b></td>
+							<td align="center" valign="middle" class="T1"><b><div>cortocircuito con la tensión</div>
+								
+							</b></td>
+						</tr>
+					</Thead>
+					<Tbody align="center" valign="middle">
+<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>Conductor nº 1 del lado superior</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>P0658</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>P0658</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>P0659</div>
+								
+							</td>
+						</tr>
+					</Tbody>
+				</Table>
+			
+		
+		<P></P>
+<DIV align="left" id="L5A0CD4"><b>Descripción del circuito/sistema</b></DIV>
+<P></P>
+			<div class="T1" align="left">El conductor 1 del lado superior del TCM se encuentra dentro del conjunto de válvulas solenoide de control (en carrocería y TCM). Ninguna de las piezas del conjunto de válvulas solenoide de control (en carrocería y TCM) se puede reparar por separado. El conductor 1 del lado superior proporciona la tensión a las solenoides de control de presión del TCM y las solenoides de cambio. Esta avería se localiza dentro del TCM y no hay circuitos externos implicados.</div>
+			
+		
+		<P></P>
+<DIV align="left" id="L5A0CRD5"><b>Condiciones para activar el DTC</b></DIV>
+<P></P>
+			<div class="p" align="left">  <B>P0658</B>
+</div>
+				<UL>
+<Li>El régimen del motor sea mayor de 500 RPM durante 5 segundos.</Li>
+					<Li>La tensión de encendido esté entre 9 y 19 voltios.</Li>
+					<Li>El conductor 1 del lado superior esté activado.</Li>
+					<Li>El DTC P0658 no ha fallado en este ciclo de encendido.</Li>
+				</UL>
+				<div class="p" align="left">  <B>P0659</B>
+</div>
+				<div class="T1" align="left">El DTC P0659 no se haya registrado en este ciclo de encendido.</div>
+			
+		
+		<P></P>
+<DIV align="left" id="L5A0CSD6"><b>Condiciones para la activación del DTC</b></DIV>
+<P></P>
+			<div class="p" align="left">  <B>P0658</B>
+</div>
+				<div class="T1" align="left">El TCM detecte un circuito abierto o cortocircuito a tierra interno en el conductor 1 del lado superior durante al menos 0,3 segundos.</div>
+				<div class="p" align="left">  <B>P0659</B>
+</div>
+				<div class="T1" align="left">El TCM detecte un cortocircuito a batería interno en el circuito del conductor 1 del lado superior durante al menos 0,3 segundos.</div>
+			
+		
+		<P></P>
+<DIV align="left" id="L5A0ATWDS7"><b>Acción realizada cuando se activa el DTC</b></DIV>
+<P></P>
+			<div class="p" align="left">  <B>P0658</B>
+</div>
+				<UL>
+<Li>El DTC P0658 es un DTC de tipo A.</Li>
+					<Li>El TCM desconecta todos los conductores del lado superior.</Li>
+					<Li>El TCM desconecta todas las solenoides.</Li>
+					<Li>El TCM ordena la desconexión del TCC.</Li>
+					<Li>El TCM solicita la máxima presión de línea.</Li>
+					<Li>El TCM congela las funciones adaptativas de la caja de cambios.</Li>
+					<Li>El TCM permite que el vehículo siga funcionando en modo de protección de la transmisión.</Li>
+				</UL>
+				<div class="p" align="left">  <B>P0659</B>
+</div>
+				<div class="T1" align="left">El DTC P0659 es un DTC de Tipo C.</div>
+			
+		
+		<P></P>
+<DIV align="left" id="L5A0CCMD7"><b>Condiciones para borrar el DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>El DTC P0658 es un DTC de tipo A.</Li>
+					<Li>El DTC P0659 es un DTC de Tipo C.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="L5A0RI8"><b>Información de referencia</b></DIV>
+<P></P>
+			<div class="T1" align="left">Descripción y referencia de funcionamiento</div>
+				<UL>
+<Li>Descripción general de la transmisión</Li>
+					<Li>Descripción del sistema y los componentes de la transmisión</Li>
+					<Li>Descripción de componentes electrónicos</Li>
+				</UL>
+				<div class="T1" align="left">Referencia del scanner</div>
+				<UL>
+<Li>Controles de salida del scanner</Li>
+					<Li>Lista de datos del scanner</Li>
+					<Li>Definiciones de datos del scanner</Li>
+				</UL>
+				<div class="T1" align="left">Referencia del tipo de DTC</div>
+				<UL>
+<Li>Definiciones del tipo de códigos de avería (DTC)</Li>
+					<Li>Lista/Tipo de códigos de avería (DTC)</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="L5A0CV4"><b>Verificación del circuito/sistema</b></DIV>
+<P></P>
+			<OL>
+<Li>Observe el parámetro del estado del circuito del conductor del lado superior. Este parámetro debería mostrar OK.</Li>
+					<ul type="square" style="list-style-image:url(../../../../Graphic-Pool/Icons/compass.gif)">
+<li style="margin-top:0.1em; margin-bottom:0.1em">Si el parámetro muestra Circuito abierto, Cortocircuito a tierra, Cortocircuito a batería o el DTC se vuelve a registrar, sustituya el conjunto de válvulas solenoide de control (en carrocería y TCM).</li>
+					</ul>
+				</OL>
+			
+		
+		<P></P>
+<DIV align="left" id="L5A0RI9"><b>INSTRUCCIONES DE REPARACIÓN</b></DIV>
+<P></P>
+			<UL>
+<Li>Sustitución del conjunto de válvulas solenoide de control (en carrocería y TCM)</Li>
+					<Li>Ejecute las adaptaciones de aprendizaje rápido de servicio después de todas las reparaciones relacionadas con la transmisión.</Li>
+					<Li>Lleve a cabo la verificación de la reparación del diagnóstico después de finalizar el procedimiento de diagnóstico.</Li>
+				</UL>
+			
+		
+	
+	<P></P>
+<DIV align="left" id="L5A0P0667"><font size="4"><b>DTC P0667, P0668, o P0669 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="left" id="L5A0DD6"><b>Descriptores de DTC</b></DIV>
+<P></P>
+			<div class="T1" align="left">  <B>DTC P0667: </B>Rendimiento del sensor de temperatura del módulo de control de la transmisión (TCM).</div>
+				<div class="T1" align="left">  <B>DTC P0668: </B>Tensión baja del circuito del sensor de temperatura del módulo de control de la transmisión (TCM)</div>
+				<div class="T1" align="left">  <B>DTC P0669: </B>Tensión alta del circuito del sensor de temperatura del módulo de control de la transmisión (TCM)</div>
+			
+		
+		<P></P>
+<DIV align="left" id="L5A0DFI2"><b>Información de fallo de la rutina de diagnóstico</b></DIV>
+<P></P>
+			<Table border="1" width="100%" cellspacing="0">
+<Thead bgcolor="eeeeee">
+<tr>
+<td align="center" valign="middle" class="T1"><b><div>Circuito</div>
+								
+							</b></td>
+							<td align="center" valign="middle" class="T1"><b><div>Derivación a masa</div>
+								
+							</b></td>
+							<td align="center" valign="middle" class="T1"><b><div>Abierto/Resistencia alta</div>
+								
+							</b></td>
+							<td align="center" valign="middle" class="T1"><b><div>cortocircuito con la tensión</div>
+								
+							</b></td>
+							<td align="center" valign="middle" class="T1"><b><div>Rendimiento de la señal</div>
+								
+							</b></td>
+						</tr>
+					</Thead>
+					<Tbody align="center" valign="middle">
+<tr colspan="">
+<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+<div>Sensor de temperatura del TCM</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>P0668</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>P0669</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>-</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>P0667</div>
+								
+							</td>
+						</tr>
+					</Tbody>
+				</Table>
+			
+		
+		<P></P>
+<DIV align="left" id="L5A0CD6"><b>Descripción del circuito/sistema</b></DIV>
+<P></P>
+			<div class="T1" align="left">El sensor de temperatura del TCM se encuentra dentro del conjunto de válvulas solenoide de control (en carrocería y TCM). Ninguna de las piezas del conjunto de válvulas solenoide de control (en carrocería y TCM) se puede reparar por separado. El sensor de temperatura del TCM mide la temperatura del TCM. La lectura de esta temperatura se usa en varias rutinas de diagnóstico y de cambio en el software del TCM. Esta avería se localiza dentro del TCM y no hay circuitos externos implicados.</div>
+			
+		
+		<P></P>
+<DIV align="left" id="L5A0CRD1"><b>Condiciones para activar el DTC</b></DIV>
+<P></P>
+			<div class="p" align="left">  <B>P0667</B>
+</div>
+				<UL>
+<Li>La tensión del encendido esté entre 9 y 19 voltios.</Li>
+					<Li>El régimen del motor sea mayor de 500 RPM durante al menos 5 segundos.</Li>
+					<Li>El DTC P0667 no ha superado este ciclo de encendido.</Li>
+					<Li>No haya DTC de TFT P0711, P0712, o P0713.</Li>
+					<Li>No haya DTC de ISS P0716 o P0717.</Li>
+					<Li>No haya DTC de OSS P0722 o P0723.</Li>
+					<Li>La temperatura del TCM esté entre -40 y +150 °C (-40 y +302 °F).</Li>
+				</UL>
+				<div class="p" align="left">  <B>P0668</B>
+</div>
+				<UL>
+<Li>La tensión del encendido esté entre 9 y 19 voltios.</Li>
+					<Li>El régimen del motor sea mayor de 500 RPM durante al menos 5 segundos.</Li>
+					<Li>El DTC P0668 no se haya registrado en este ciclo de encendido.</Li>
+				</UL>
+				<div class="p" align="left">  <B>P0669</B>
+</div>
+				<UL>
+<Li>La tensión del encendido esté entre 9 y 19 voltios.</Li>
+					<Li>El régimen del motor sea mayor de 500 RPM durante al menos 5 segundos.</Li>
+					<Li>El DTC P0669 no ha ha provocado fallos en este ciclo de encendido.</Li>
+					<Li>No haya DTC de ISS P0716 o P0717.</Li>
+					<Li>No haya DTC de OSS P0722 o P0723.</Li>
+					<Li>La velocidad del eje de salida de la transmisión sea de 200 rpm o mayor durante al menos 200 segundos.</Li>
+					<Li>La velocidad de deslizamiento del TCC sea de 120 RPM o mayor durante al menos 200 segundos.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="L5A0CSD1"><b>Condiciones para la activación del DTC</b></DIV>
+<P></P>
+			<div class="p" align="left">  <B>P0667 - Caso de avería 1</B>
+</div>
+				<UL>
+<Li>La velocidad del vehículo sea de 8 Km/h (5 mph) o mayor durante 300 segundos seguidos.</Li>
+					<Li>La velocidad de deslizamiento del TCC sea mayor de 150 rpm durante 300 segundos seguidos.</Li>
+					<Li>La temperatura interna del TCM esté entre -40 y +76 °C (-40 y +169 °F).</Li>
+					<Li>La temperatura del líquido de la transmisión (TFT) sea de al menos 70 °C (158 °F).</Li>
+					<Li>La temperatura interna del TCM ha cambiado en menos de 2,0 °C (3,6 °F) en 300 segundos.</Li>
+					<Li>La TFT se haya incrementado en 55 °C (99 °F) desde el arranque.</Li>
+				</UL>
+				<div class="p" align="left">  <B>O</B>
+</div>
+				<div class="p" align="left">  <B>P0667 - Caso de avería 2</B>
+</div>
+				<UL>
+<Li>La velocidad del vehículo sea de 8 Km/h (5 mph) o mayor durante 300 segundos seguidos.</Li>
+					<Li>La velocidad de deslizamiento del TCC sea mayor de 150 RPM durante 300 segundos seguidos.</Li>
+					<Li>La temperatura interna del TCM se encuentra entre 76-150 °C (168-302 °F).</Li>
+					<Li>La temperatura interna del TCM ha cambiado en menos de 2,0 °C (3,6 °F) en 300 segundos.</Li>
+					<Li>La TFT sea de al menos 70 °C (158 °F).</Li>
+					<Li>La TFT se haya incrementado en 55 °C (99 °F) desde el arranque.</Li>
+				</UL>
+				<div class="p" align="left">  <B>O</B>
+</div>
+				<div class="p" align="left">  <B>P0667 - Caso de avería 3</B>
+</div>
+				<div class="T1" align="left">La temperatura interna del TCM cambia en 20 °C (36 °F) o más 5 veces durante 7 segundos.</div>
+				<div class="p" align="left">  <B>P0668</B>
+</div>
+				<div class="T1" align="left">La temperatura interna del TCM es de 254 °C (489 °F) o superior durante 12,75 segundos o más.</div>
+				<div class="p" align="left">  <B>P0669</B>
+</div>
+				<div class="T1" align="left">La temperatura interna del TCM es de -254 °C (-425 °F) o inferior durante 12,75 segundos o más.</div>
+			
+		
+		<P></P>
+<DIV align="left" id="L5A0ATWDS8"><b>Acción realizada cuando se activa el DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>Los DTC P0667, P0668, y P0669 son DTC del tipo C.</Li>
+					<Li>El TCM permite que el vehículo siga funcionando en modo de protección de la transmisión.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="L5A0CCMD8"><b>Condiciones para borrar el DTC</b></DIV>
+<P></P>
+			<div class="T1" align="left">Los DTC P0667, P0668, y P0669 son DTC del tipo C.</div>
+			
+		
+		<P></P>
+<DIV align="left" id="L5A0DA8"><b>Ayudas para el diagnóstico</b></DIV>
+<P></P>
+			<div class="T1" align="left">Reprograme el TCM y realice las pruebas oportunas para verificar si se registra de nuevo el DTC.</div>
+			
+		
+		<P></P>
+<DIV align="left" id="L5A0RI11"><b>Información de referencia</b></DIV>
+<P></P>
+			<div class="T1" align="left">Descripción y referencia de funcionamiento</div>
+				<UL>
+<Li>Descripción general de la transmisión</Li>
+					<Li>Descripción del sistema y los componentes de la transmisión</Li>
+					<Li>Descripción de componentes electrónicos</Li>
+				</UL>
+				<div class="T1" align="left">Referencia del scanner</div>
+				<UL>
+<Li>Controles de salida del scanner</Li>
+					<Li>Lista de datos del scanner</Li>
+					<Li>Definiciones de datos del scanner</Li>
+				</UL>
+				<div class="T1" align="left">Referencia del tipo de DTC</div>
+				<UL>
+<Li>Definiciones del tipo de códigos de avería (DTC)</Li>
+					<Li>Lista/Tipo de códigos de avería (DTC)</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="L5A0CV11"><b>Verificación del circuito/sistema</b></DIV>
+<P></P>
+			<OL>
+<Li>Motor en funcionamiento. Compruebe que el parámetro de temperatura del TCM del scanner se encuentra entre -254 y +254°C (-425 y +489°F).</Li>
+					<ul type="square" style="list-style-image:url(../../../../Graphic-Pool/Icons/compass.gif)">
+<li style="margin-top:0.1em; margin-bottom:0.1em">Si no se encuentra en el rango especificado, sustituya el conjunto de válvulas solenoide de control (en carrocería y TCM).</li>
+					</ul>
+					<Li>Conduzca el vehículo a 64 Km/h (40 mph) durante al menos 5 minutos mientras observa el sensor de temperatura de encendido del TCM y el sensor de temperatura del TCM. Compruebe que la TFT esté en un margen de 10°C (18°F) del valor mostrado por el sensor de temperatura del TCM.</Li>
+					<ul type="square" style="list-style-image:url(../../../../Graphic-Pool/Icons/compass.gif)">
+<li style="margin-top:0.1em; margin-bottom:0.1em">Si no se encuentra en el rango especificado, sustituya el conjunto de válvulas solenoide de control (en carrocería y TCM).</li>
+					</ul>
+					<Li>Conduzca el vehículo en las condiciones necesarias para que se registre el DTC y comprobar que el DTC no se vuelve a almacenar. También puede conducir el vehículo bajo las condiciones observadas en los datos de los registros de avería/contexto de congelación.</Li>
+				</OL>
+			
+		
+		<P></P>
+<DIV align="left" id="L5A0RI13"><b>INSTRUCCIONES DE REPARACIÓN</b></DIV>
+<P></P>
+			<P></P>
+<DIV><B><FONT color="navy">Importante: Antes de sustituir el TCM, realice una comprobación del conjunto de módulo de control de la transmisión y la válvula solenoide de control.</FONT></B></DIV>
+<P></P>
+				
+				<UL>
+<Li>Sustitución del conjunto de válvulas solenoide de control (en carrocería y TCM)</Li>
+					<Li>Ejecute las adaptaciones de aprendizaje rápido de servicio después de todas las reparaciones relacionadas con la transmisión.</Li>
+					<Li>Lleve a cabo la verificación de la reparación del diagnóstico después de finalizar el procedimiento de diagnóstico.</Li>
+				</UL>
+			
+		
+	
+<BR><BR><TABLE align="center"><TR>
+<TD align="left"><A href="7L2_5A01.es.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_back.gif" alt="A la página anterior"></A></TD>
+<TD align="left"></TD>
+<TD align="left"><A href="7L2_5A03.es.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_next.gif" alt="A la página siguiente"></A></TD>
+<TD></TD>
+</TR></TABLE>
+<TABLE width="100%"><TBODY><TR BGCOLOR="DarkSlateBlue" align="center"><TD><FONT color="white"><B>© Copyright Chevrolet Europe. Reservados todos los derechos</B></FONT></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>

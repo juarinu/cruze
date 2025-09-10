@@ -1,0 +1,2767 @@
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style>.T2{    BORDER-TOP: white;}  .T3{    BORDER-BOTTOM: white;} .T4{    BORDER-TOP: white;    BORDER-BOTTOM: white} .I{ padding-left : 10pt}  .Tighten{ padding-left : 7pt} .Arial{ font-family : Arial, Helvetica, sans-serif;margin-left: 10pt;margin-right : 10pt } .TableB{ margin-left : 0pt}</style>
+<TITLE>Manual de servicio técnico2011 Aveo DTC P0741 -</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+
+ function FixMenu()
+{
+menuTop = document.body.scrollTop + document.body.clientHeight -40;
+menu.style.top = menuTop;
+menu.style.width = document.body.clientWidth; 
+}
+
+</SCRIPT>
+</HEAD>
+<BODY class="Arial" onLoad="FixMenu()" onScroll="FixMenu()" onResize="FixMenu()">
+<SPAN ID="menu" STYLE="position:absolute; left:0px; top:0px; width:0px"><A border="0" href="9T2_5A04.es.html"><IMG src="../../../../graphic-pool/Icons/Totop.gif" align="right" halign="Bottom" border="0" alt="Al principio del documento"></A></SPAN><TABLE width="100%" BORDER="1" rules="none" cellspacing="0" cellpadding="0" style="magin-top: 5pt"><TBODY>
+<TR BGCOLOR="cccc99" height="15">
+<TD width="30%"><div style="padding-left: 5pt"><B><FONT face="Arial">Aveo</FONT></B></div></TD>
+<TD width="70%" align="right" colspan="8"></TD>
+</TR>
+<TR BGCOLOR="white" height="60">
+<TD width="35%" align="left"><TABLE><TR>
+<TD width="5%" align="left"><A href="9T2_5A03.es.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_back.gif" alt="A la página anterior"></A></TD>
+<TD width="5%" align="left"></TD>
+<TD width="5%" align="left"><A href="9T2_5A05.es.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_next.gif" alt="A la página siguiente"></A></TD>
+</TR></TABLE></TD>
+<TD><TABLE width="65%" align="right"><TR>
+<TD style="font-size:10"><A href="../../../GMDE_TIS_START.html" target="_top"><IMG src="../../code/menu-images/home.gif" border="0" alt="Página de inicio GMDE"></A></TD>
+<TD style="font-size:10"><A href="../toc_Aveo.html" target="menu"><IMG src="../../code/menu-images/static-TOC.gif" border="0" alt="Índice estático"></A></TD>
+<TD style="font-size:10"><A href="../toc_Aveo_code.html" target="code"><IMG src="../../code/menu-images/menu_folder_open.gif" border="0" alt="Índice dinámico"></A></TD>
+<TD style="font-size:10"><A href="../../help/readme_EN.htm" target="top" class="bottom_copyright"><IMG src="../../code/menu-images/help.gif" border="0" alt="¿Ayuda?"></A></TD>
+</TR></TABLE></TD>
+</TR>
+</TBODY></TABLE>
+	<BR><IMG alt="S6B15A15" src="../../../../graphic-pool/S/6B/1/S6B15A15.png"><BR><A target="_blank" href="../../../../graphic-pool/S/6B/1/S6B15A15.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Gráfico de visualización"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Traducciones de texto en gráficos"></A><p style="font-size:9pt; border:1pt outset"></p>
+<BR>
+		<P></P>
+<DIV align="center" id="T5A0P0741"><font size="4"><b>DTC P0741 - </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="T5A0TCCCP"><font size="4"><b>Gama/rendimiento Circuito del embrague del convertidor de par (TCC) o agarrotado al desconectarse</b></font></DIV>
+		<P></P>
+<DIV align="left" id="T5A0CRD1"><b>Condiciones para activar el DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>Revoluciones del motor superiores a 600 rpm.</Li>
+					<Li>Sin modo de emergencia.</Li>
+					<Li>Han pasado 5 segundos después de P, R, N, 2, L→D.</Li>
+					<Li>Han pasado 2 segundos después de cambiar de posición el selector de velocidades.</Li>
+					<Li>Bloque activado.</Li>
+					<Li>Han pasado 4,5 segundos desde el paso de desbloqueo a bloqueo.</Li>
+					<Li>La temperatura del aceite es de 20°C (68°F) o superior.</Li>
+					<Li>Sin fallo en sensor de velocidad de entrada/sensor de velocidad de salida/interruptor de TR/sensor de temperatura del refrigerante del motor/sensor de posición de la mariposa/solenoide de cambio A, B/revoluciones del motor.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0CSDTC1"><b>Condiciones para la activación del DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>La detección anterior se da de forma continuada 1 vez.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0ATDTC1"><b>Acción realizada cuando se activa el DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>El TCM hará que se encienda la MIL y almacenará el DTC cuando detecte fallos en dos ciclos de encendido consecutivos.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0CCDTC1"><b>Condiciones para borrar el DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>El TCM apagará la MIL cuando no se detecten más fallos en tres ciclos de encendido consecutivos.</Li>
+					<Li>El DTC puede borrarse del historial del TCM con un scanner.</Li>
+					<Li>El TCM borra el DTC de la memoria del historial del TCM después de cuarenta ciclos consecutivos de calentamiento sin fallo.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0CF1"><b>Causa de la avería</b></DIV>
+<P></P>
+			<UL>
+<Li>Solenoide de bloqueo</Li>
+					<Li>Interior de caja de cambios automática
+</Li>
+					<Li>Interior de caja de válvulas</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="center" id="T5A0P07411"><font size="4"><b>DTC P0741 - Gama/rendimiento Circuito del embrague del convertidor de par (TCC) o agarrotado al desconectarse</b></font></DIV>
+<P></P>
+			<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Paso</B></TD>
+<TD align="center"><B>Medida</B></TD>
+<TD align="center"><B>Valor(es)</B></TD>
+<TD align="center"><B>Sí</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+<TR>
+<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Gire la llave de contacto a la posición OFF.</Li>
+									<Li>Instale el scanner.</Li>
+									<Li>Gire la llave de contacto a la posición ON, sin encender el motor.</Li>
+									<Li>Seleccione Almacenar datos instantáneos/registros de averías en el menú de información de los códigos de diagnóstico de averías.</Li>
+									<Li>Almacene los datos instantáneos/registros de averías.</Li>
+									<Li>Seleccione Borrar información de DTC en el menú de información de los códigos de diagnóstico de averías.</Li>
+									<Li>Borre la información del DTC.</Li>
+									<Li>Complete dos ciclos de conducción con el vehículo.</Li>
+								</OL>
+								<div>¿Está encendida la luz indicadora de fallo (MIL)/retención?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Compruebe el fallo de conexión temporal del conector y repárelo si fuese necesario. Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0WHCI">"Inspección de conectores y cableado" </A> de esta sección.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Seleccione Solicitar DTC por estado en el menú de información de los códigos de diagnóstico de averías.</Li>
+									<Li>Solicite el DTC por estado.</Li>
+								</OL>
+								<div>¿Se visualiza el DTC P0741?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Caliente el motor (temperatura del refrigerante: por encima de 60°C (140°F)).</Li>
+									<Li>Conecte el scanner para comprobar la velocidad del vehículo, las revoluciones del motor y la velocidad de entrada de la transmisión.</Li>
+									<Li>Acelere hasta los 100 km/h (62 mph).</Li>
+									<Li>Realice la activación del acelerador en rango D.</Li>
+									<Li>Mida la diferencia giratoria de las revoluciones del motor y la velocidad de entrada de la transmisión.</Li>
+								</OL>
+								<div>¿Es la diferencia giratoria superior a 100 rpm en comparación con el valor especificado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>3 segundos</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+<div>Compruebe el estado del ATF.</div>
+								<div>¿Es correcto el estado del ATF?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Sustituya el ATF.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+<div>Inspeccione el solenoide de bloqueo. Consulte el apartado "Inspección de componentes" de esta sección.</div>
+								<div>¿Muestra la inspección que todo está bien?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Sustituya el solenoide de bloqueo.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+<div>Limpie los conectores.</div>
+								<div>¿Ha finalizado la acción?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Realice el procedimiento de memorización adaptativa de la transmisión. Consulte   <A target="_blank" href="9T2_5A02.es.html#T5A0TALP">"Procedimiento de memorización adaptativa de la transmisión" </A> en esta sección.</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+<div>Sustituya el cuerpo de la válvula o el conjunto de la transmisión.</div>
+								<div>¿Se ha realizado la sustitución?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Realice el procedimiento de memorización adaptativa de la transmisión. Consulte   <A target="_blank" href="9T2_5A02.es.html#T5A0TALP">"Procedimiento de memorización adaptativa de la transmisión" </A> en esta sección.</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	<BR><IMG alt="S6B15A15" src="../../../../graphic-pool/S/6B/1/S6B15A15.png"><BR><A target="_blank" href="../../../../graphic-pool/S/6B/1/S6B15A15.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Gráfico de visualización"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Traducciones de texto en gráficos"></A><p style="font-size:9pt; border:1pt outset"></p>
+<BR>
+		<P></P>
+<DIV align="center" id="T5A0P0742"><font size="4"><b>DTC P0742 - </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="T5A0TCCCS1"><font size="4"><b>Circuito del embrague del convertidor de par (TCC) agarrotado al conectarse</b></font></DIV>
+		<P></P>
+<DIV align="left" id="T5A0CRD2"><b>Condiciones para activar el DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>Revoluciones del motor superiores a 600 rpm.</Li>
+					<Li>Sin modo de emergencia.</Li>
+					<Li>Han pasado 5 segundos después de P, R, N, 2, L→D.</Li>
+					<Li>Han pasado 2 segundos después de cambiar de posición el selector de velocidades.</Li>
+					<Li>Bloque desactivado.</Li>
+					<Li>Han pasado 4,5 segundos desde el paso de bloqueo a desbloqueo.</Li>
+					<Li>La temperatura del aceite es de 20°C (68°F) o superior.</Li>
+					<Li>Sin fallo en sensor de velocidad de entrada/sensor de velocidad de salida/interruptor de TR/sensor de temperatura del refrigerante del motor/sensor de posición de la mariposa/solenoide de cambio A, B/revoluciones del motor.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0CSDTC2"><b>Condiciones para la activación del DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>La detección anterior se da de forma continuada 1 vez.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0ATDTC2"><b>Acción realizada cuando se activa el DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>El TCM hará que se encienda la MIL y almacenará el DTC cuando detecte fallos en dos ciclos de encendido consecutivos.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0CCDTC2"><b>Condiciones para borrar el DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>El TCM apagará la MIL cuando no se detecten más fallos en tres ciclos de encendido consecutivos.</Li>
+					<Li>El DTC puede borrarse del historial del TCM con un scanner.</Li>
+					<Li>El TCM borra el DTC de la memoria del historial del TCM después de cuarenta ciclos consecutivos de calentamiento sin fallo.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0CF2"><b>Causa de la avería</b></DIV>
+<P></P>
+			<UL>
+<Li>Solenoide de bloqueo</Li>
+					<Li>Interior de caja de cambios automática
+</Li>
+					<Li>Interior de caja de válvulas</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="center" id="T5A0P07421"><font size="4"><b>DTC P0742 - Circuito del embrague del convertidor de par agarrotado al conectarse</b></font></DIV>
+<P></P>
+			<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Paso</B></TD>
+<TD align="center"><B>Medida</B></TD>
+<TD align="center"><B>Valor(es)</B></TD>
+<TD align="center"><B>Sí</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+<TR>
+<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Gire la llave de contacto a la posición OFF.</Li>
+									<Li>Instale el scanner.</Li>
+									<Li>Gire la llave de contacto a la posición ON, sin encender el motor.</Li>
+									<Li>Seleccione Almacenar datos instantáneos/registros de averías en el menú de información de los códigos de diagnóstico de averías.</Li>
+									<Li>Almacene los datos instantáneos/registros de averías.</Li>
+									<Li>Seleccione Borrar información de DTC en el menú de información de los códigos de diagnóstico de averías.</Li>
+									<Li>Borre la información del DTC.</Li>
+									<Li>Complete dos ciclos de conducción con el vehículo.</Li>
+								</OL>
+								<div>¿Está encendida la luz indicadora de fallo (MIL)/retención?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Compruebe el fallo de conexión temporal del conector y repárelo si fuese necesario. Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0WHCI">"Inspección de conectores y cableado" </A> de esta sección.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Seleccione Solicitar DTC por estado en el menú de información de los códigos de diagnóstico de averías.</Li>
+									<Li>Solicite el DTC por estado.</Li>
+								</OL>
+								<div>¿Se visualiza el DTC P0742?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Caliente el motor (temperatura del refrigerante: por encima de 60°C (140°F)).</Li>
+									<Li>Conecte el scanner para comprobar la velocidad del vehículo, las revoluciones del motor y la velocidad de entrada de la transmisión.</Li>
+									<Li>Acelere hasta los 40 km/h (25 mph).</Li>
+									<Li>Realice la activación/desactivación del acelerador manteniendo el rango 2.</Li>
+									<Li>Mida la diferencia giratoria de las revoluciones del motor y la velocidad de entrada de la transmisión.</Li>
+								</OL>
+								<div>¿Es la diferencia giratoria inferior al valor especificado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>50 r.p.m.</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 5</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+<div>Compruebe el estado del ATF.</div>
+								<div>¿Es correcto el estado del ATF?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Sustituya el ATF.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+<div>Inspeccione el solenoide de bloqueo. Consulte el apartado "Inspección de componentes" de esta sección.</div>
+								<div>¿Muestra la inspección que todo está bien?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Sustituya el solenoide de bloqueo.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+<div>Limpie los conectores.</div>
+								<div>¿Ha finalizado la acción?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Realice el procedimiento de memorización adaptativa de la transmisión. Consulte   <A target="_blank" href="9T2_5A02.es.html#T5A0TALP">"Procedimiento de memorización adaptativa de la transmisión" </A> en esta sección.</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+<div>Sustituya el cuerpo de la válvula o el conjunto de la transmisión.</div>
+								<div>¿Se ha realizado la sustitución?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Realice el procedimiento de memorización adaptativa de la transmisión. Consulte   <A target="_blank" href="9T2_5A02.es.html#T5A0TALP">"Procedimiento de memorización adaptativa de la transmisión" </A> en esta sección.</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	<BR><IMG alt="S6B15A16" src="../../../../graphic-pool/S/6B/1/S6B15A16.png"><BR><A target="_blank" href="../../../../graphic-pool/S/6B/1/S6B15A16.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Gráfico de visualización"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Traducciones de texto en gráficos"></A><p style="font-size:9pt; border:1pt outset"></p>
+<BR>
+		<P></P>
+<DIV align="center" id="T5A0P0751"><font size="4"><b>DTC P0751 - </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="T5A0SSPSS"><font size="4"><b>Rendimiento del solenoide de cambio 1 (SS1) o agarrotado al desconectarse</b></font></DIV>
+		<P></P>
+<DIV align="left" id="T5A0CRD3"><b>Condiciones para activar el DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>La velocidad del motor sea igual o superior a 600 rpm.</Li>
+					<Li>Sin modo de emergencia.</Li>
+					<Li>Han pasado 5 segundos después de P, R, N, 2, L→D.</Li>
+					<Li>Han pasado 2 segundos después de cambiar de posición el selector de velocidades.</Li>
+					<Li>La velocidad del vehículo es de 15 km/h (9 mph) o superior.</Li>
+					<Li>La temperatura del refrigerante del motor es 60°C (140°F) o superior.</Li>
+					<Li>La temperatura del aceite es de 20°C (68°F) o superior.</Li>
+					<Li>Sin fallo en sensor de velocidad de entrada/sensor de velocidad de salida/interruptor de TR/sensor de temperatura del refrigerante del motor/sensor de posición de la mariposa/solenoide de cambio A, B/revoluciones del motor.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0CSDTC3"><b>Condiciones para la activación del DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>La detección anterior se da de forma continuada 1 vez.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0ATDTC3"><b>Acción realizada cuando se activa el DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>El TCM hará que se encienda la MIL y almacenará el DTC cuando detecte fallos en dos ciclos de encendido consecutivos.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0CCDTC3"><b>Condiciones para borrar el DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>El TCM apagará la MIL cuando no se detecten más fallos en tres ciclos de encendido consecutivos.</Li>
+					<Li>El DTC puede borrarse del historial del TCM con un scanner.</Li>
+					<Li>El TCM borra el DTC de la memoria del historial del TCM después de cuarenta ciclos consecutivos de calentamiento sin fallo.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0DA2"><b>Ayudas para el diagnóstico</b></DIV>
+<P></P>
+			<Table border="1" width="100%" cellspacing="0">
+<Thead bgcolor="eeeeee">
+<tr>
+<td align="center" valign="middle" colspan="2" class="T1"><b><div>Estado</div>
+								
+							</b></td>
+							<td align="center" valign="middle" colspan="4" class="T1"><b><div>Detección física según la pantalla del scanner</div>
+								
+							</b></td>
+						</tr>
+					</Thead>
+					<Tbody align="center" valign="middle">
+<tr colspan="">
+<td class="T1" width="" colspan="2" rowspan="" align="" valign="middle">
+<div>Indicación del scanner</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>1ª</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>2ª</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>3ª</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>4ª</div>
+								
+							</td>
+						</tr>
+						<tr colspan="">
+<td class="T1" width="" colspan="2" rowspan="" align="" valign="middle">
+<div>Gama de marchas del vehículo (anómala)</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>4ª</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>3ª</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>3ª</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>4ª</div>
+								
+							</td>
+						</tr>
+					</Tbody>
+				</Table>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0CF3"><b>Causa de la avería</b></DIV>
+<P></P>
+			<UL>
+<Li>Solenoide de cambio 1 (SS1)</Li>
+					<Li>Interior de caja de válvulas</Li>
+					<Li>Interior de caja de cambios automática</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="center" id="T5A0P07511"><font size="4"><b>DTC P0751 Rendimiento del solenoide de cambio 1 (SS1) o agarrotado al desconectarse</b></font></DIV>
+<P></P>
+			<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Paso</B></TD>
+<TD align="center"><B>Medida</B></TD>
+<TD align="center"><B>Valor(es)</B></TD>
+<TD align="center"><B>Sí</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+<TR>
+<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Gire la llave de contacto a la posición OFF.</Li>
+									<Li>Instale el scanner.</Li>
+									<Li>Gire la llave de contacto a la posición ON, sin encender el motor.</Li>
+									<Li>Seleccione Almacenar datos instantáneos/registros de averías en el menú de información de los códigos de diagnóstico de averías.</Li>
+									<Li>Almacene los datos instantáneos/registros de averías.</Li>
+									<Li>Seleccione Borrar información de DTC en el menú de información de los códigos de diagnóstico de averías.</Li>
+									<Li>Borre la información del DTC.</Li>
+									<Li>Complete dos ciclos de conducción con el vehículo.</Li>
+								</OL>
+								<div>¿Está encendida la luz indicadora de fallo (MIL)/retención?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Compruebe el fallo de conexión temporal del conector y repárelo si fuese necesario. Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0WHCI">"Inspección de conectores y cableado" </A> de esta sección.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Seleccione Solicitar DTC por estado en el menú de información de los códigos de diagnóstico de averías.</Li>
+									<Li>Solicite el DTC por estado.</Li>
+								</OL>
+								<div>¿Se visualiza el DTC P0751?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Caliente el motor (temperatura del refrigerante: por encima de 60°C (140°F)).</Li>
+									<Li>Conecte el scanner para comprobar la velocidad del vehículo, la apertura del acelerador y la gama de marchas.</Li>
+									<Li>Confirme el estado del cambio al acelerar hasta los 80 km/h (50 mph) entre la apertura del acelerador del 20 al 50%. Consulte "Ayudas para el diagnóstico".</Li>
+								</OL>
+								<div>¿Es el estado del cambio de marchas normal?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+<div>Compruebe el estado del ATF.</div>
+								<div>¿Es correcto el estado del ATF?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Sustituya el ATF.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+<div>Inspeccione el solenoide de cambio (SS) 1. Consulte   <A target="_blank" href="9T2_5A02.es.html#T5A0UI">"Inspección de componentes"</A> en esta sección.</div>
+								<div>¿Muestra la inspección que todo está bien?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Sustituya el SS1.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+<div>Limpie los conectores.</div>
+								<div>¿Ha finalizado la acción?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Realice el procedimiento de memorización adaptativa de la transmisión. Consulte   <A target="_blank" href="9T2_5A02.es.html#T5A0TALP">"Procedimiento de memorización adaptativa de la transmisión" </A> en esta sección.</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+<div>Sustituya el cuerpo de la válvula o el conjunto de la transmisión.</div>
+								<div>¿Se ha realizado la sustitución?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Realice el procedimiento de memorización adaptativa de la transmisión. Consulte   <A target="_blank" href="9T2_5A02.es.html#T5A0TALP">"Procedimiento de memorización adaptativa de la transmisión" </A> en esta sección.</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	<BR><IMG alt="S6B15A16" src="../../../../graphic-pool/S/6B/1/S6B15A16.png"><BR><A target="_blank" href="../../../../graphic-pool/S/6B/1/S6B15A16.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Gráfico de visualización"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Traducciones de texto en gráficos"></A><p style="font-size:9pt; border:1pt outset"></p>
+<BR>
+		<P></P>
+<DIV align="center" id="T5A0P0752"><font size="4"><b>DTC P0752 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="T5A0SSPSS1"><font size="4"><b>Rendimiento del solenoide de cambio 1 (SS1) o agarrotado al conectarse</b></font></DIV>
+		<P></P>
+<DIV align="left" id="T5A0CRD"><b>Condiciones para activar el DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>La velocidad del motor sea igual o superior a 600 rpm.</Li>
+					<Li>Sin modo de emergencia.</Li>
+					<Li>Han pasado 5 segundos después de P, R, N, 2, L→D.</Li>
+					<Li>Han pasado 2 segundos después de cambiar de posición el selector de velocidades.</Li>
+					<Li>La velocidad del vehículo es de 15 km/h (9 mph) o superior.</Li>
+					<Li>La temperatura del refrigerante del motor es 60°C (140°F) o superior.</Li>
+					<Li>La temperatura del aceite es de 20°C (68°F) o superior.</Li>
+					<Li>Sin fallo en sensor de velocidad de entrada/sensor de velocidad de salida/interruptor de TR/sensor de temperatura del refrigerante del motor/sensor de posición de la mariposa/solenoide de cambio A, B/revoluciones del motor.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0CSDTC"><b>Condiciones para la activación del DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>La detección anterior se da de forma continuada 1 vez.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0ATDTC"><b>Acción realizada cuando se activa el DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>El TCM hará que se encienda la MIL y almacenará el DTC cuando detecte fallos en dos ciclos de encendido consecutivos.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0CCDTC"><b>Condiciones para borrar el DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>El TCM apagará la MIL cuando no se detecten más fallos en tres ciclos de encendido consecutivos.</Li>
+					<Li>El DTC puede borrarse del historial del TCM con un scanner.</Li>
+					<Li>El TCM borra el DTC de la memoria del historial del TCM después de cuarenta ciclos consecutivos de calentamiento sin fallo.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0DA3"><b>Ayudas para el diagnóstico</b></DIV>
+<P></P>
+			<Table border="1" width="100%" cellspacing="0">
+<Thead bgcolor="eeeeee">
+<tr>
+<td align="center" valign="middle" colspan="2" class="T1"><b><div>Estado</div>
+								
+							</b></td>
+							<td align="center" valign="middle" colspan="4" class="T1"><b><div>Detección física según la pantalla del scanner</div>
+								
+							</b></td>
+						</tr>
+					</Thead>
+					<Tbody align="center" valign="middle">
+<tr colspan="">
+<td class="T1" width="" colspan="2" rowspan="" align="" valign="middle">
+<div>Indicación del scanner</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>1ª</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>2ª</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>3ª</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>4ª</div>
+								
+							</td>
+						</tr>
+						<tr colspan="">
+<td class="T1" width="" colspan="2" rowspan="" align="" valign="middle">
+<div>Gama de marchas del vehículo (anómala)</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>1ª</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>2ª</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>2ª</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>1ª</div>
+								
+							</td>
+						</tr>
+					</Tbody>
+				</Table>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0CF"><b>Causa de la avería</b></DIV>
+<P></P>
+			<UL>
+<Li>Solenoide de cambio 1 (SS1)</Li>
+					<Li>Interior de caja de válvulas</Li>
+					<Li>Interior de caja de cambios automática</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="center" id="T5A0P07521"><font size="4"><b>DTC P0752 - Rendimiento del solenoide de cambio 1 (SS1) o agarrotado al conectarse</b></font></DIV>
+<P></P>
+			<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Paso</B></TD>
+<TD align="center"><B>Medida</B></TD>
+<TD align="center"><B>Valor(es)</B></TD>
+<TD align="center"><B>Sí</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+<TR>
+<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Gire la llave de contacto a la posición OFF.</Li>
+									<Li>Instale el scanner.</Li>
+									<Li>Gire la llave de contacto a la posición ON, sin encender el motor.</Li>
+									<Li>Seleccione Almacenar datos instantáneos/registros de averías en el menú de información de los códigos de diagnóstico de averías.</Li>
+									<Li>Almacene los datos instantáneos/registros de averías.</Li>
+									<Li>Seleccione Borrar información de DTC en el menú de información de los códigos de diagnóstico de averías.</Li>
+									<Li>Borre la información del DTC.</Li>
+									<Li>Complete dos ciclos de conducción con el vehículo.</Li>
+								</OL>
+								<div>¿Está encendida la luz indicadora de fallo (MIL)/retención?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Compruebe el fallo de conexión temporal del conector y repárelo si fuese necesario. Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0WHCI">"Inspección de conectores y cableado" </A> de esta sección.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Seleccione Solicitar DTC por estado en el menú de información de los códigos de diagnóstico de averías.</Li>
+									<Li>Solicite el DTC por estado.</Li>
+								</OL>
+								<div>¿Se visualiza el DTC P0752?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Caliente el motor (temperatura del refrigerante: por encima de 60°C (140°F)).</Li>
+									<Li>Conecte el scanner para comprobar la velocidad del vehículo, la apertura del acelerador y la gama de marchas.</Li>
+									<Li>Confirme el estado del cambio al acelerar hasta los 80 km/h (50 mph) entre la apertura del acelerador del 20 al 50%. Consulte "Ayudas para el diagnóstico".</Li>
+								</OL>
+								<div>¿Es el estado del cambio de marchas normal?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+<div>Compruebe el estado del ATF.</div>
+								<div>¿Es correcto el estado del ATF?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Sustituya el ATF.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+<div>Inspeccione el solenoide de cambio (SS) 1. Consulte   <A target="_blank" href="9T2_5A02.es.html#T5A0UI">"Inspección de componentes"</A> en esta sección.</div>
+								<div>¿Muestra la inspección que todo está bien?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Sustituya el SS1.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+<div>Limpie los conectores.</div>
+								<div>¿Ha finalizado la acción?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Realice el procedimiento de memorización adaptativa de la transmisión. Consulte   <A target="_blank" href="9T2_5A02.es.html#T5A0TALP">"Procedimiento de memorización adaptativa de la transmisión" </A> en esta sección.</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+<div>Sustituya el cuerpo de la válvula o el conjunto de la transmisión.</div>
+								<div>¿Se ha realizado la sustitución?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Realice el procedimiento de memorización adaptativa de la transmisión. Consulte   <A target="_blank" href="9T2_5A02.es.html#T5A0TALP">"Procedimiento de memorización adaptativa de la transmisión" </A> en esta sección.</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	<BR><IMG alt="S6B15A16" src="../../../../graphic-pool/S/6B/1/S6B15A16.png"><BR><A target="_blank" href="../../../../graphic-pool/S/6B/1/S6B15A16.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Gráfico de visualización"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Traducciones de texto en gráficos"></A><p style="font-size:9pt; border:1pt outset"></p>
+<BR>
+		<P></P>
+<DIV align="center" id="T5A0P0756"><font size="4"><b>DTC P0756 - </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="T5A0SSPSO"><font size="4"><b>Rendimiento del solenoide de cambio 2 (SS2) o agarrotado al desconectarse</b></font></DIV>
+		<P></P>
+<DIV align="left" id="T5A0CRD4"><b>Condiciones para activar el DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>La velocidad del motor sea igual o superior a 600 rpm.</Li>
+					<Li>Sin modo de emergencia.</Li>
+					<Li>Han pasado 5 segundos después de P, R, N, 2, L→D.</Li>
+					<Li>Han pasado 2 segundos después de cambiar de posición el selector de velocidades.</Li>
+					<Li>La velocidad del vehículo es de 15 km/h (9 mph) o superior.</Li>
+					<Li>La temperatura del refrigerante del motor es 60°C (140°F) o superior.</Li>
+					<Li>La temperatura del aceite es de 20°C (68°F) o superior.</Li>
+					<Li>Sin fallo en sensor de velocidad de entrada/sensor de velocidad de salida/interruptor de TR/sensor de temperatura del refrigerante del motor/sensor de posición de la mariposa/solenoide de cambio A, B/revoluciones del motor.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0CSDTC4"><b>Condiciones para la activación del DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>La detección anterior se da de forma continuada 1 vez.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0ATDTC4"><b>Acción realizada cuando se activa el DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>El TCM hará que se encienda la MIL y almacenará el DTC cuando detecte fallos en dos ciclos de encendido consecutivos.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0CCDTC4"><b>Condiciones para borrar el DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>El TCM apagará la MIL cuando no se detecten más fallos en tres ciclos de encendido consecutivos.</Li>
+					<Li>El DTC puede borrarse del historial del TCM con un scanner.</Li>
+					<Li>El TCM borra el DTC de la memoria del historial del TCM después de cuarenta ciclos consecutivos de calentamiento sin fallo.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0DA4"><b>Ayudas para el diagnóstico</b></DIV>
+<P></P>
+			<Table border="1" width="100%" cellspacing="0">
+<Thead bgcolor="eeeeee">
+<tr>
+<td align="center" valign="middle" colspan="2" class="T1"><b><div>Estado</div>
+								
+							</b></td>
+							<td align="center" valign="middle" colspan="4" class="T1"><b><div>Detección física según la pantalla del scanner</div>
+								
+							</b></td>
+						</tr>
+					</Thead>
+					<Tbody align="center" valign="middle">
+<tr colspan="">
+<td class="T1" width="" colspan="2" rowspan="" align="" valign="middle">
+<div>Indicación del scanner</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>1ª</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>2ª</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>3ª</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>4ª</div>
+								
+							</td>
+						</tr>
+						<tr colspan="">
+<td class="T1" width="" colspan="2" rowspan="" align="" valign="middle">
+<div>Gama de marchas del vehículo (anómala)</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>2ª</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>2ª</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>3ª</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>3ª</div>
+								
+							</td>
+						</tr>
+					</Tbody>
+				</Table>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0CF4"><b>Causa de la avería</b></DIV>
+<P></P>
+			<UL>
+<Li>Solenoide de cambio 2 (SS2)</Li>
+					<Li>Interior de caja de válvulas</Li>
+					<Li>Interior de caja de cambios automática</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="center" id="T5A0P07561"><font size="4"><b>DTC P0756 - Rendimiento del solenoide de cambio 2 (SS2) o agarrotado al desconectarse</b></font></DIV>
+<P></P>
+			<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Paso</B></TD>
+<TD align="center"><B>Medida</B></TD>
+<TD align="center"><B>Valor(es)</B></TD>
+<TD align="center"><B>Sí</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+<TR>
+<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Gire la llave de contacto a la posición OFF.</Li>
+									<Li>Instale el scanner.</Li>
+									<Li>Gire la llave de contacto a la posición ON, sin encender el motor.</Li>
+									<Li>Seleccione Almacenar datos instantáneos/registros de averías en el menú de información de los códigos de diagnóstico de averías.</Li>
+									<Li>Almacene los datos instantáneos/registros de averías.</Li>
+									<Li>Seleccione Borrar información de DTC en el menú de información de los códigos de diagnóstico de averías.</Li>
+									<Li>Borre la información del DTC.</Li>
+									<Li>Complete dos ciclos de conducción con el vehículo.</Li>
+								</OL>
+								<div>¿Está encendida la luz indicadora de fallo (MIL)/retención?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Compruebe el fallo de conexión temporal del conector y repárelo si fuese necesario. Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0WHCI">"Inspección de conectores y cableado" </A> de esta sección.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Seleccione Solicitar DTC por estado en el menú de información de los códigos de diagnóstico de averías.</Li>
+									<Li>Solicite el DTC por estado.</Li>
+								</OL>
+								<div>¿Se visualiza el DTC P0756?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Caliente el motor (temperatura del refrigerante: por encima de 60°C (140°F)).</Li>
+									<Li>Conecte el scanner para comprobar la velocidad del vehículo, la apertura del acelerador y la gama de marchas.</Li>
+									<Li>Confirme el estado del cambio al acelerar hasta los 80 km/h (50 mph) entre la apertura del acelerador del 20 al 50%. Consulte "Ayudas para el diagnóstico".</Li>
+								</OL>
+								<div>¿Es el estado del cambio de marchas normal?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+<div>Compruebe el estado del ATF.</div>
+								<div>¿Es correcto el estado del ATF?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Sustituya el ATF.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+<div>Inspeccione el solenoide de cambio (SS) 2. Consulte   <A target="_blank" href="9T2_5A02.es.html#T5A0UI">"Inspección de componentes"</A> en esta sección.</div>
+								<div>¿Muestra la inspección que todo está bien?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Sustituya el SS2.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+<div>Limpie los conectores.</div>
+								<div>¿Ha finalizado la acción?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Realice el procedimiento de memorización adaptativa de la transmisión. Consulte   <A target="_blank" href="9T2_5A02.es.html#T5A0TALP">"Procedimiento de memorización adaptativa de la transmisión" </A> en esta sección.</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+<div>Sustituya el cuerpo de la válvula o el conjunto de la transmisión.</div>
+								<div>¿Se ha realizado la sustitución?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Realice el procedimiento de memorización adaptativa de la transmisión. Consulte   <A target="_blank" href="9T2_5A02.es.html#T5A0TALP">"Procedimiento de memorización adaptativa de la transmisión" </A> en esta sección.</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	<BR><IMG alt="S6B15A16" src="../../../../graphic-pool/S/6B/1/S6B15A16.png"><BR><A target="_blank" href="../../../../graphic-pool/S/6B/1/S6B15A16.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Gráfico de visualización"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Traducciones de texto en gráficos"></A><p style="font-size:9pt; border:1pt outset"></p>
+<BR>
+		<P></P>
+<DIV align="center" id="T5A0P0757"><font size="4"><b>DTC P0757 - </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="T5A0SSPSO1"><font size="4"><b>Rendimiento del solenoide de cambio 2 (SS2) o agarrotado al conectarse</b></font></DIV>
+		<P></P>
+<DIV align="left" id="T5A0CRD9"><b>Condiciones para activar el DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>La velocidad del motor sea igual o superior a 600 rpm.</Li>
+					<Li>Sin modo de emergencia.</Li>
+					<Li>Han pasado 5 segundos después de P, R, N, 2, L→D.</Li>
+					<Li>Han pasado 2 segundos después de cambiar de posición el selector de velocidades.</Li>
+					<Li>La velocidad del vehículo es de 15 km/h (9 mph) o superior.</Li>
+					<Li>La temperatura del refrigerante del motor es 60°C (140°F) o superior.</Li>
+					<Li>La temperatura del aceite es de 20°C (68°F) o superior.</Li>
+					<Li>Sin fallo en sensor de velocidad de entrada/sensor de velocidad de salida/interruptor de TR/sensor de temperatura del refrigerante del motor/sensor de posición de la mariposa/solenoide de cambio A, B/revoluciones del motor.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0CSDTC9"><b>Condiciones para la activación del DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>La detección anterior se da de forma continuada 1 vez.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0ATDTC9"><b>Acción realizada cuando se activa el DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>El TCM hará que se encienda la MIL y almacenará el DTC cuando detecte fallos en dos ciclos de encendido consecutivos.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0CCDTC9"><b>Condiciones para borrar el DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>El TCM apagará la MIL cuando no se detecten más fallos en tres ciclos de encendido consecutivos.</Li>
+					<Li>El DTC puede borrarse del historial del TCM con un scanner.</Li>
+					<Li>El TCM borra el DTC de la memoria del historial del TCM después de cuarenta ciclos consecutivos de calentamiento sin fallo.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0DA5"><b>Ayudas para el diagnóstico</b></DIV>
+<P></P>
+			<Table border="1" width="100%" cellspacing="0">
+<Thead bgcolor="eeeeee">
+<tr>
+<td align="center" valign="middle" colspan="2" class="T1"><b><div>Estado</div>
+								
+							</b></td>
+							<td align="center" valign="middle" colspan="4" class="T1"><b><div>Detección física según la pantalla del scanner</div>
+								
+							</b></td>
+						</tr>
+					</Thead>
+					<Tbody align="center" valign="middle">
+<tr colspan="">
+<td class="T1" width="" colspan="2" rowspan="" align="" valign="middle">
+<div>Indicación del scanner</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>1ª</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>2ª</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>3ª</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>4ª</div>
+								
+							</td>
+						</tr>
+						<tr colspan="">
+<td class="T1" width="" colspan="2" rowspan="" align="" valign="middle">
+<div>Gama de marchas del vehículo (anómala)</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>1ª</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>1ª</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>4ª</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+<div>4ª</div>
+								
+							</td>
+						</tr>
+					</Tbody>
+				</Table>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0CF9"><b>Causa de la avería</b></DIV>
+<P></P>
+			<UL>
+<Li>Solenoide de cambio 2 (SS2)</Li>
+					<Li>Interior de caja de válvulas</Li>
+					<Li>Interior de caja de cambios automática</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="center" id="T5A0P07571"><font size="4"><b>DTC P0757 - Rendimiento del solenoide de cambio 2 (SS2) o agarrotado al conectarse</b></font></DIV>
+<P></P>
+			<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Paso</B></TD>
+<TD align="center"><B>Medida</B></TD>
+<TD align="center"><B>Valor(es)</B></TD>
+<TD align="center"><B>Sí</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+<TR>
+<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Gire la llave de contacto a la posición OFF.</Li>
+									<Li>Instale el scanner.</Li>
+									<Li>Gire la llave de contacto a la posición ON, sin encender el motor.</Li>
+									<Li>Seleccione Almacenar datos instantáneos/registros de averías en el menú de información de los códigos de diagnóstico de averías.</Li>
+									<Li>Almacene los datos instantáneos/registros de averías.</Li>
+									<Li>Seleccione Borrar información de DTC en el menú de información de los códigos de diagnóstico de averías.</Li>
+									<Li>Borre la información del DTC.</Li>
+									<Li>Complete dos ciclos de conducción con el vehículo.</Li>
+								</OL>
+								<div>¿Está encendida la luz indicadora de fallo (MIL)/retención?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Compruebe el fallo de conexión temporal del conector y repárelo si fuese necesario. Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0WHCI">"Inspección de conectores y cableado" </A> de esta sección.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Seleccione Solicitar DTC por estado en el menú de información de los códigos de diagnóstico de averías.</Li>
+									<Li>Solicite el DTC por estado.</Li>
+								</OL>
+								<div>¿Se visualiza el DTC P0757?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Caliente el motor (temperatura del refrigerante: por encima de 60°C (140°F)).</Li>
+									<Li>Conecte el scanner para comprobar la velocidad del vehículo, la apertura del acelerador y la gama de marchas.</Li>
+									<Li>Confirme el estado del cambio al acelerar hasta los 80 km/h (50 mph) entre la apertura del acelerador del 20 al 50%. Consulte "Ayudas para el diagnóstico".</Li>
+								</OL>
+								<div>¿Es el estado del cambio de marchas normal?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+<div>Compruebe el estado del ATF.</div>
+								<div>¿Es correcto el estado del ATF?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Sustituya el ATF.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+<div>Inspeccione el solenoide de cambio (SS) 2. Consulte   <A target="_blank" href="9T2_5A02.es.html#T5A0UI">"Inspección de componentes"</A> en esta sección.</div>
+								<div>¿Muestra la inspección que todo está bien?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Sustituya el SS2.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+<div>Limpie los conectores.</div>
+								<div>¿Ha finalizado la acción?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Realice el procedimiento de memorización adaptativa de la transmisión. Consulte   <A target="_blank" href="9T2_5A02.es.html#T5A0TALP">"Procedimiento de memorización adaptativa de la transmisión" </A> en esta sección.</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+<div>Sustituya el cuerpo de la válvula o el conjunto de la transmisión.</div>
+								<div>¿Se ha realizado la sustitución?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Realice el procedimiento de memorización adaptativa de la transmisión. Consulte   <A target="_blank" href="9T2_5A02.es.html#T5A0TALP">"Procedimiento de memorización adaptativa de la transmisión" </A> en esta sección.</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	<BR><IMG alt="S6B15A17" src="../../../../graphic-pool/S/6B/1/S6B15A17.png"><BR><A target="_blank" href="../../../../graphic-pool/S/6B/1/S6B15A17.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Gráfico de visualización"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Traducciones de texto en gráficos"></A><p style="font-size:9pt; border:1pt outset"></p>
+<BR>
+		<P></P>
+<DIV align="center" id="T5A0P0787"><font size="4"><b>DTC P0787 - </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="T5A0TSE"><font size="4"><b>Fallo eléctrico (cortocircuito a masa) del solenoide de distribución (ST)</b></font></DIV>
+		<P></P>
+<DIV align="left" id="T5A0CRD5"><b>Condiciones para activar el DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>Sin modo de emergencia.</Li>
+					<Li>El TCM detecta la señal OFF del controlador del solenoide de distribución (ST), cuando el accionador de ST emite la señal (0V) durante 0,1 segundos de forma continuada.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0CSDTC5"><b>Condiciones para la activación del DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>La detección anterior se da de forma continuada 3 veces.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0ATDTC5"><b>Acción realizada cuando se activa el DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>El TCM hará que se encienda la MIL y almacenará el DTC cuando detecte un fallo en el primer ciclo de encendido.</Li>
+					<Li>Decisión tras fallo: modo de emergencia</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0CCDTC5"><b>Condiciones para borrar el DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>El TCM apagará la MIL cuando no se detecten más fallos en tres ciclos de encendido consecutivos.</Li>
+					<Li>El DTC puede borrarse del historial del TCM con un scanner.</Li>
+					<Li>El TCM borra el DTC de la memoria del historial del TCM después de cuarenta ciclos consecutivos de calentamiento sin fallo.</Li>
+					<Li>El TCM detecta la señal ON del controlador de ST cuando el accionador de ST emite la señal ON durante 100 ms.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0CF5"><b>Causa de la avería</b></DIV>
+<P></P>
+			<UL>
+<Li>Cableado o conector entre el solenoide de sincronización (ST) y el TCM</Li>
+					<Li>ST</Li>
+					<Li>TCM</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="center" id="T5A0P07871"><font size="4"><b>DTC P0787 - Fallo eléctrico (cortocircuito a masa) del solenoide de distribución (ST)</b></font></DIV>
+<P></P>
+			<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Paso</B></TD>
+<TD align="center"><B>Medida</B></TD>
+<TD align="center"><B>Valor(es)</B></TD>
+<TD align="center"><B>Sí</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+<TR>
+<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Gire la llave de contacto a la posición OFF.</Li>
+									<Li>Instale el scanner.</Li>
+									<Li>Gire la llave de contacto a la posición ON, sin encender el motor.</Li>
+									<Li>Seleccione Almacenar datos instantáneos/registros de averías en el menú de información de los códigos de diagnóstico de averías.</Li>
+									<Li>Almacene los datos instantáneos/registros de averías.</Li>
+									<Li>Seleccione Borrar información de DTC en el menú de información de los códigos de diagnóstico de averías.</Li>
+									<Li>Borre la información del DTC.</Li>
+									<Li>Complete un ciclo de conducción con el vehículo.</Li>
+								</OL>
+								<div>¿Está encendida la luz indicadora de fallo (MIL)/retención?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Compruebe el fallo de conexión temporal del conector y repárelo si fuese necesario. Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0WHCI">"Inspección de conectores y cableado" </A> de esta sección.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Seleccione Solicitar DTC por estado en el menú de información de los códigos de diagnóstico de averías.</Li>
+									<Li>Solicite el DTC por estado.</Li>
+								</OL>
+								<div>¿Se visualiza el DTC P0787?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Compruebe el fallo de conexión temporal del conector y repárelo si fuese necesario. Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0WHCI">"Inspección de conectores y cableado" </A> de esta sección.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Gire la llave de contacto a la posición OFF.</Li>
+									<Li>Compruebe la resistencia entre el cableado del vehículo y el solenoide de sincronización (ST). Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0UI">"Inspección de componentes" </A> de esta sección.</Li>
+									<Li>Desenchufe el conector del TCM (X-1) y compruebe la resistencia entre los terminales A14 y A23. </Li>
+								</OL>
+								<div>¿La resistencia está dentro del valor especificado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>20°C (68°F) 11-16 Ω</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Compruebe el mazo de cables y el conector del lado del vehículo.</Li>
+									<Li>Compruebe la continuidad y la presencia de cortocircuitos en los correspondientes mazos de cables. Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0WHCI">"Inspección de conectores y cableado" </A> de esta sección.</Li>
+									<Li>Compruebe el estado de las conexiones entre los correspondientes conectores. Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0WHCI">"Inspección de conectores y cableado" </A> de esta sección.</Li>
+								</OL>
+								<div>¿Muestra la inspección que todo está bien?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Sustituya el cableado del vehículo o corrija el ajuste entre los conectores.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Compruebe la resistencia entre el cable T/M y el solenoide ST.</Li>
+									<Li>Desenchufe el conector (X-3) del cable del T/M y compruebe la resistencia entre el terminal 2 del conector del solenoide ST y masa.</Li>
+								</OL>
+								<div>¿La resistencia está dentro del valor especificado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>20°C (68°F) 11-16 Ω</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+<div>Limpie el conector.</div>
+								<div>¿Está resuelto el fallo?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Sistema OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 10</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Compruebe la continuidad y la presencia de cortocircuitos en los correspondientes mazos de cables. Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0WHCI">"Inspección de conectores y cableado" </A> de esta sección.</Li>
+									<Li>Compruebe el estado de las conexiones entre los correspondientes conectores. Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0WHCI">"Inspección de conectores y cableado" </A> de esta sección.</Li>
+								</OL>
+								<div>¿Está todo en buen estado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Limpie los conectores.</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Sustituya el cableado del vehículo o corrija el ajuste entre los conectores.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+<div>Inspeccione el solenoide ST. Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0UI">"Inspección de componentes" </A> de esta sección.</div>
+								<div>¿Muestra la inspección que todo está bien?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 9</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Sustituya el solenoide ST.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Compruebe la continuidad y presencia de cortocircuitos en el cable T/M. Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0WHCI">"Inspección de conectores y cableado" </A> de esta sección.</Li>
+									<Li>Compruebe el estado de la conexión entre los conectores (C-6). Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0WHCI">"Inspección de conectores y cableado" </A> de esta sección.</Li>
+								</OL>
+								<div>¿Está todo en buen estado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Limpie los conectores.</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Sustituya el cable T/M.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+<div>Sustituya el TCM.</div>
+								<div>¿Se ha realizado la sustitución?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Realice el procedimiento de memorización adaptativa de la transmisión. Consulte   <A target="_blank" href="9T2_5A02.es.html#T5A0TALP">"Procedimiento de memorización adaptativa de la transmisión" </A> en esta sección.</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	<BR><IMG alt="S6B15A17" src="../../../../graphic-pool/S/6B/1/S6B15A17.png"><BR><A target="_blank" href="../../../../graphic-pool/S/6B/1/S6B15A17.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Gráfico de visualización"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Traducciones de texto en gráficos"></A><p style="font-size:9pt; border:1pt outset"></p>
+<BR>
+		<P></P>
+<DIV align="center" id="T5A0P0788"><font size="4"><b>DTC P0788 - </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="T5A0TSE1"><font size="4"><b>Fallo eléctrico (circuito abierto o cortocircuito a alimentación) del solenoide de distribución (ST)</b></font></DIV>
+		<P></P>
+<DIV align="left" id="T5A0CRD6"><b>Condiciones para activar el DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>Sin modo de emergencia.</Li>
+					<Li>El TCM detecta la señal ON (12V) del controlador del solenoide de distribución (ST) cuando el accionador ST emite la señal OFF (0V) durante 0,5 segundos de forma continuada.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0CSDTC6"><b>Condiciones para la activación del DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>La detección anterior se da de forma continuada 3 veces.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0ATDTC6"><b>Acción realizada cuando se activa el DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>El TCM hará que se encienda la MIL y almacenará el DTC cuando detecte un fallo en el primer ciclo de encendido.</Li>
+					<Li>Decisión tras fallo: modo de emergencia</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0CCDTC6"><b>Condiciones para borrar el DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>El TCM apagará la MIL cuando no se detecten más fallos en tres ciclos de encendido consecutivos.</Li>
+					<Li>El DTC puede borrarse del historial del TCM con un scanner.</Li>
+					<Li>El TCM borra el DTC de la memoria del historial del TCM después de cuarenta ciclos consecutivos de calentamiento sin fallo.</Li>
+					<Li>El TCM detecta la señal OFF del controlador ST cuando el accionador ST emite la señal OFF durante 100 ms de forma continuada.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0CF6"><b>Causa de la avería</b></DIV>
+<P></P>
+			<UL>
+<Li>Cableado o conector entre el solenoide de sincronización (ST) y el TCM</Li>
+					<Li>ST</Li>
+					<Li>TCM</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="center" id="T5A0P07881"><font size="4"><b>DTC P0788 - Fallo eléctrico (circuito abierto o cortocircuito a alimentación) del solenoide de distribución (ST)</b></font></DIV>
+<P></P>
+			<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Paso</B></TD>
+<TD align="center"><B>Medida</B></TD>
+<TD align="center"><B>Valor(es)</B></TD>
+<TD align="center"><B>Sí</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+<TR>
+<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Gire la llave de contacto a la posición OFF.</Li>
+									<Li>Instale el scanner.</Li>
+									<Li>Gire la llave de contacto a la posición ON, sin encender el motor.</Li>
+									<Li>Seleccione Almacenar datos instantáneos/registros de averías en el menú de información de los códigos de diagnóstico de averías.</Li>
+									<Li>Almacene los datos instantáneos/registros de averías.</Li>
+									<Li>Seleccione Borrar información de DTC en el menú de información de los códigos de diagnóstico de averías.</Li>
+									<Li>Borre la información del DTC.</Li>
+									<Li>Complete un ciclo de conducción con el vehículo.</Li>
+								</OL>
+								<div>¿Está encendida la luz indicadora de fallo (MIL)/retención?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Compruebe el fallo de conexión temporal del conector y repárelo si fuese necesario. Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0WHCI">"Inspección de conectores y cableado" </A> de esta sección.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Seleccione Solicitar DTC por estado en el menú de información de los códigos de diagnóstico de averías.</Li>
+									<Li>Solicite el DTC por estado.</Li>
+								</OL>
+								<div>¿Se visualiza el DTC P0788?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Compruebe el fallo de conexión temporal del conector y repárelo si fuese necesario. Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0WHCI">"Inspección de conectores y cableado" </A> de esta sección.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Gire la llave de contacto a la posición OFF.</Li>
+									<Li>Compruebe la resistencia entre el cableado del vehículo y el solenoide de sincronización (ST). Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0UI">"Inspección de componentes" </A> de esta sección.</Li>
+									<Li>Desenchufe el conector del TCM (X-1) y compruebe la resistencia entre los terminales A14 y A23. </Li>
+								</OL>
+								<div>¿La resistencia está dentro del valor especificado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>20°C (68°F) 11-16 Ω</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Compruebe el mazo de cables y el conector del lado del vehículo.</Li>
+									<Li>Compruebe la continuidad y la presencia de cortocircuitos en los correspondientes mazos de cables. Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0WHCI">"Inspección de conectores y cableado" </A> de esta sección.</Li>
+									<Li>Compruebe el estado de las conexiones entre los correspondientes conectores. Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0WHCI">"Inspección de conectores y cableado" </A> de esta sección.</Li>
+								</OL>
+								<div>¿Muestra la inspección que todo está bien?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Sustituya el cableado del vehículo o corrija el ajuste entre los conectores.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Compruebe la resistencia entre el cable T/M y el solenoide ST.</Li>
+									<Li>Desenchufe el conector (X-3) del cable del T/M y compruebe la resistencia entre el terminal 2 del conector del solenoide ST y masa.</Li>
+								</OL>
+								<div>¿La resistencia está dentro del valor especificado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>20°C (68°F) 11-16 Ω</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+<div>Limpie el conector.</div>
+								<div>¿Está resuelto el fallo?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Sistema OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 10</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Compruebe la continuidad y la presencia de cortocircuitos en los correspondientes mazos de cables. Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0WHCI">"Inspección de conectores y cableado" </A> de esta sección.</Li>
+									<Li>Compruebe el estado de las conexiones entre los correspondientes conectores. Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0WHCI">"Inspección de conectores y cableado" </A> de esta sección.</Li>
+								</OL>
+								<div>¿Está todo en buen estado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Limpie los conectores.</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Sustituya el cableado del vehículo o corrija el ajuste entre los conectores.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+<div>Inspeccione el solenoide ST. Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0UI">"Inspección de componentes" </A> de esta sección.</div>
+								<div>¿Muestra la inspección que todo está bien?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 9</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Sustituya el solenoide ST.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Compruebe la continuidad y presencia de cortocircuitos en el cable T/M. Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0WHCI">"Inspección de conectores y cableado" </A> de esta sección.</Li>
+									<Li>Compruebe el estado de la conexión entre los conectores (C-6). Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0WHCI">"Inspección de conectores y cableado" </A> de esta sección.</Li>
+								</OL>
+								<div>¿Está todo en buen estado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Limpie los conectores.</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Sustituya el cable T/M.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+<div>Sustituya el TCM.</div>
+								<div>¿Se ha realizado la sustitución?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Realice el procedimiento de memorización adaptativa de la transmisión. Consulte   <A target="_blank" href="9T2_5A02.es.html#T5A0TALP">"Procedimiento de memorización adaptativa de la transmisión" </A> en esta sección.</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	<BR><IMG alt="S6B15A18" src="../../../../graphic-pool/S/6B/1/S6B15A18.png"><BR><A target="_blank" href="../../../../graphic-pool/S/6B/1/S6B15A18.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Gráfico de visualización"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Traducciones de texto en gráficos"></A><p style="font-size:9pt; border:1pt outset"></p>
+<BR>
+		<P></P>
+<DIV align="center" id="T5A0P0962"><font size="4"><b>DTC P0962 - </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="T5A0PCSE"><font size="4"><b>Fallo eléctrico (baja) del solenoide de control de presión (PCS)</b></font></DIV>
+		<P></P>
+<DIV align="left" id="T5A0CRD7"><b>Condiciones para activar el DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>Sin modo de emergencia.</Li>
+					<Li>El valor A/D de entrada es 68 (0,018 V) o inferior durante 0,5 segundos de forma continuada.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0CSDTC7"><b>Condiciones para la activación del DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>La detección anterior se da de forma continuada 25 veces.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0ATDTC7"><b>Acción realizada cuando se activa el DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>El TCM hará que se encienda la MIL y almacenará el DTC cuando detecte un fallo en el primer ciclo de encendido.</Li>
+					<Li>No hay control de bloqueo</Li>
+					<Li>No se controla la reducción del par motor</Li>
+					<Li>No hay control de presión de engrane</Li>
+					<Li>No se selecciona la 4ª marcha</Li>
+					<Li>No hay control de automemorización</Li>
+					<Li>Decisión tras fallo: modo de emergencia</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0CCDTC7"><b>Condiciones para borrar el DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>El TCM apagará la MIL cuando no se detecten más fallos en tres ciclos de encendido consecutivos.</Li>
+					<Li>El DTC puede borrarse del historial del TCM con un scanner.</Li>
+					<Li>El TCM borra el DTC de la memoria del historial del TCM después de cuarenta ciclos consecutivos de calentamiento sin fallo.</Li>
+					<Li>El TCM detecta el valor A/D de entrada entre 0,02 V y 0,22 V durante 12,5 segundos de forma continuada.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0CF7"><b>Causa de la avería</b></DIV>
+<P></P>
+			<UL>
+<Li>Cableado o conector entre el solenoide de control de presión (PCS) y el TCM</Li>
+					<Li>PCS</Li>
+					<Li>TCM</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="center" id="T5A0P09621"><font size="4"><b>DTC P0962 - Fallo eléctrico (baja) del solenoide de control de presión (PCS)</b></font></DIV>
+<P></P>
+			<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Paso</B></TD>
+<TD align="center"><B>Medida</B></TD>
+<TD align="center"><B>Valor(es)</B></TD>
+<TD align="center"><B>Sí</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+<TR>
+<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Gire la llave de contacto a la posición OFF.</Li>
+									<Li>Instale el scanner.</Li>
+									<Li>Gire la llave de contacto a la posición ON, sin encender el motor.</Li>
+									<Li>Seleccione Almacenar datos instantáneos/registros de averías en el menú de información de los códigos de diagnóstico de averías.</Li>
+									<Li>Almacene los datos instantáneos/registros de averías.</Li>
+									<Li>Seleccione Borrar información de DTC en el menú de información de los códigos de diagnóstico de averías.</Li>
+									<Li>Borre la información del DTC.</Li>
+									<Li>Complete un ciclo de conducción con el vehículo.</Li>
+								</OL>
+								<div>¿Está encendida la luz indicadora de fallo (MIL)/retención?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Compruebe el fallo de conexión temporal del conector y repárelo si fuese necesario. Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0WHCI">"Inspección de conectores y cableado" </A> de esta sección.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Seleccione Solicitar DTC por estado en el menú de información de los códigos de diagnóstico de averías.</Li>
+									<Li>Solicite el DTC por estado.</Li>
+								</OL>
+								<div>¿Se visualiza el DTC P0962?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Compruebe el fallo de conexión temporal del conector y repárelo si fuese necesario. Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0WHCI">"Inspección de conectores y cableado" </A> de esta sección.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Gire la llave de contacto a la posición OFF.</Li>
+									<Li>Compruebe la resistencia entre el cableado del vehículo y el solenoide de control de presión (PCS). Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0UI">"Inspección de componentes" </A> de esta sección.</Li>
+									<Li>Desenchufe el conector del TCM (X-1) y compruebe la resistencia entre los terminales A4 y A2. </Li>
+								</OL>
+								<div>¿La resistencia está dentro del valor especificado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>20°C (68°F) 5,0-5,6 Ω</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Compruebe el mazo de cables y el conector del lado del vehículo.</Li>
+									<Li>Compruebe la continuidad y la presencia de cortocircuitos en los correspondientes mazos de cables. Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0WHCI">"Inspección de conectores y cableado" </A> de esta sección.</Li>
+									<Li>Compruebe el estado de las conexiones entre los correspondientes conectores. Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0WHCI">"Inspección de conectores y cableado" </A> de esta sección.</Li>
+								</OL>
+								<div>¿Muestra la inspección que todo está bien?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Sustituya el cableado del vehículo o corrija el ajuste entre los conectores.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Compruebe la resistencia entre el cable T/M y el PCS.</Li>
+									<Li>Desenchufe el conector (X-3) del cable del T/M y compruebe la resistencia entre los terminales 3 y 8 del conector del PCS.</Li>
+								</OL>
+								<div>¿La resistencia está dentro del valor especificado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>20°C (68°F) 5,0-5,6 Ω</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+<div>Limpie el conector.</div>
+								<div>¿Está resuelto el fallo?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Sistema OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 11</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Compruebe la continuidad y la presencia de cortocircuitos en los correspondientes mazos de cables. Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0WHCI">"Inspección de conectores y cableado" </A> de esta sección.</Li>
+									<Li>Compruebe el estado de las conexiones entre los correspondientes conectores. Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0WHCI">"Inspección de conectores y cableado" </A> de esta sección.</Li>
+								</OL>
+								<div>¿Está todo en buen estado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Limpie los conectores.</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Sustituya el cableado del vehículo o corrija el ajuste entre los conectores.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+<div>Inspeccione el PCS. Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0UI">"Inspección de componentes"</A> de esta sección).</div>
+								<div>¿Muestra la inspección que todo está bien?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 9</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 10</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Compruebe la continuidad y presencia de cortocircuitos en el cable T/M. Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0WHCI">"Inspección de conectores y cableado" </A> de esta sección.</Li>
+									<Li> Compruebe el estado de la conexión entre los conectores (C-6). Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0WHCI">"Inspección de conectores y cableado" </A> de esta sección.</Li>
+								</OL>
+								<div>¿Está todo en buen estado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Limpie los conectores.</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Sustituya el cable T/M.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+<div>Sustituya el conjunto del cuerpo de válvula (no sustituya el PCS por sí solo).</div>
+								<div>¿Se ha realizado la sustitución?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Realice el procedimiento de memorización adaptativa de la transmisión. Consulte   <A target="_blank" href="9T2_5A02.es.html#T5A0TALP">"Procedimiento de memorización adaptativa de la transmisión" </A> en esta sección.</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">11</TD>
+						<TD width="49%" valign="top">
+<div>Sustituya el TCM.</div>
+								<div>¿Se ha realizado la sustitución?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Realice el procedimiento de memorización adaptativa de la transmisión. Consulte   <A target="_blank" href="9T2_5A02.es.html#T5A0TALP">"Procedimiento de memorización adaptativa de la transmisión" </A> en esta sección.</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	<BR><IMG alt="S6B15A18" src="../../../../graphic-pool/S/6B/1/S6B15A18.png"><BR><A target="_blank" href="../../../../graphic-pool/S/6B/1/S6B15A18.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Gráfico de visualización"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Traducciones de texto en gráficos"></A><p style="font-size:9pt; border:1pt outset"></p>
+<BR>
+		<P></P>
+<DIV align="center" id="T5A0P0963"><font size="4"><b>DTC P0963 - </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="T5A0PCSE1"><font size="4"><b>Fallo eléctrico (alta) del solenoide de control de presión (PCS)</b></font></DIV>
+		<P></P>
+<DIV align="left" id="T5A0CRD8"><b>Condiciones para activar el DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>Sin modo de emergencia.</Li>
+					<Li>El valor A/D de entrada es 1.000 (0,257 V) o superior durante 0,5 segundos de forma continuada.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0CSDTC8"><b>Condiciones para la activación del DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>La detección anterior se da de forma continuada 1 vez.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0ATDTC8"><b>Acción realizada cuando se activa el DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>El TCM hará que se encienda la MIL y almacenará el DTC cuando detecte un fallo en el primer ciclo de encendido.</Li>
+					<Li>No hay control de bloqueo</Li>
+					<Li>No se controla la reducción del par motor</Li>
+					<Li>No hay control de presión de engrane</Li>
+					<Li>No se selecciona la 4ª marcha</Li>
+					<Li>No hay control de automemorización</Li>
+					<Li>Decisión tras fallo: modo de emergencia</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0CCDTC8"><b>Condiciones para borrar el DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>El TCM apagará la MIL cuando no se detecten más fallos en tres ciclos de encendido consecutivos.</Li>
+					<Li>El DTC puede borrarse del historial del TCM con un scanner.</Li>
+					<Li>El TCM borra el DTC de la memoria del historial del TCM después de cuarenta ciclos consecutivos de calentamiento sin fallo.</Li>
+					<Li>El TCM detecta el valor A/D de entrada entre 0,02 V y 0,22 V durante 12,5 segundos de forma continuada.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0CF8"><b>Causa de la avería</b></DIV>
+<P></P>
+			<UL>
+<Li>Cableado o conector entre el solenoide de control de presión (PCS) y el TCM</Li>
+					<Li>PCS</Li>
+					<Li>TCM</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="center" id="T5A0P09631"><font size="4"><b>DTC P0963 - Fallo eléctrico (alta) del solenoide de control de presión (PCS)</b></font></DIV>
+<P></P>
+			<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Paso</B></TD>
+<TD align="center"><B>Medida</B></TD>
+<TD align="center"><B>Valor(es)</B></TD>
+<TD align="center"><B>Sí</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+<TR>
+<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Gire la llave de contacto a la posición OFF.</Li>
+									<Li>Instale el scanner.</Li>
+									<Li>Gire la llave de contacto a la posición ON, sin encender el motor.</Li>
+									<Li>Seleccione Almacenar datos instantáneos/registros de averías en el menú de información de los códigos de diagnóstico de averías.</Li>
+									<Li>Almacene los datos instantáneos/registros de averías.</Li>
+									<Li>Seleccione Borrar información de DTC en el menú de información de los códigos de diagnóstico de averías.</Li>
+									<Li>Borre la información del DTC.</Li>
+									<Li>Complete un ciclo de conducción con el vehículo.</Li>
+								</OL>
+								<div>¿Está encendida la luz indicadora de fallo (MIL)/retención?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Compruebe el fallo de conexión temporal del conector y repárelo si fuese necesario. Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0WHCI">"Inspección de conectores y cableado" </A> de esta sección.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Seleccione Solicitar DTC por estado en el menú de información de los códigos de diagnóstico de averías.</Li>
+									<Li>Solicite el DTC por estado.</Li>
+								</OL>
+								<div>¿Se visualiza el DTC P0963?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Compruebe el fallo de conexión temporal del conector y repárelo si fuese necesario. Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0WHCI">"Inspección de conectores y cableado" </A> de esta sección.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Gire la llave de contacto a la posición OFF.</Li>
+									<Li>Compruebe la resistencia entre el cableado del vehículo y el solenoide de control de presión (PCS). Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0UI">"Inspección de componentes" </A> de esta sección.</Li>
+									<Li>Desenchufe el conector del TCM (X-1) y compruebe la resistencia entre los terminales A4 y A2. </Li>
+								</OL>
+								<div>¿La resistencia está dentro del valor especificado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>20°C (68°F) 5,0-5,6 Ω</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Compruebe el mazo de cables y el conector del lado del vehículo.</Li>
+									<Li>Compruebe la continuidad y la presencia de cortocircuitos en los correspondientes mazos de cables. Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0WHCI">"Inspección de conectores y cableado" </A> de esta sección.</Li>
+									<Li>Compruebe el estado de las conexiones entre los correspondientes conectores. Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0WHCI">"Inspección de conectores y cableado" </A> de esta sección.</Li>
+								</OL>
+								<div>¿Muestra la inspección que todo está bien?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Sustituya el cableado del vehículo o corrija el ajuste entre los conectores.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Compruebe la resistencia entre el cable T/M y el PCS.</Li>
+									<Li>Desenchufe el conector (X-3) del cable del T/M y compruebe la resistencia entre los terminales 3 y 8 del conector del PCS.</Li>
+								</OL>
+								<div>¿La resistencia está dentro del valor especificado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>20°C (68°F) 5,0-5,6 Ω</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+<div>Limpie el conector.</div>
+								<div>¿Está resuelto el fallo?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Sistema OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 11</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Compruebe la continuidad y la presencia de cortocircuitos en los correspondientes mazos de cables. Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0WHCI">"Inspección de conectores y cableado" </A> de esta sección.</Li>
+									<Li>Compruebe el estado de las conexiones entre los correspondientes conectores. Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0WHCI">"Inspección de conectores y cableado" </A> de esta sección.</Li>
+								</OL>
+								<div>¿Está todo en buen estado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Limpie los conectores.</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Sustituya el cableado del vehículo o corrija el ajuste entre los conectores.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+<div>Inspeccione el PCS. Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0UI">"Inspección de componentes"</A> de esta sección).</div>
+								<div>¿Muestra la inspección que todo está bien?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 9</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 10</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Compruebe la continuidad y presencia de cortocircuitos en el cable T/M. Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0WHCI">"Inspección de conectores y cableado" </A> de esta sección.</Li>
+									<Li> Compruebe el estado de la conexión entre los conectores (C-6). Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0WHCI">"Inspección de conectores y cableado" </A> de esta sección.</Li>
+								</OL>
+								<div>¿Está todo en buen estado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Limpie los conectores.</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Sustituya el cable T/M.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+<div>Sustituya el conjunto del cuerpo de válvula (no sustituya el PCS por sí solo).</div>
+								<div>¿Se ha realizado la sustitución?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Realice el procedimiento de memorización adaptativa de la transmisión. Consulte   <A target="_blank" href="9T2_5A02.es.html#T5A0TALP">"Procedimiento de memorización adaptativa de la transmisión" </A> en esta sección.</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">11</TD>
+						<TD width="49%" valign="top">
+<div>Sustituya el TCM.</div>
+								<div>¿Se ha realizado la sustitución?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Realice el procedimiento de memorización adaptativa de la transmisión. Consulte   <A target="_blank" href="9T2_5A02.es.html#T5A0TALP">"Procedimiento de memorización adaptativa de la transmisión" </A> en esta sección.</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+<BR><BR><TABLE align="center"><TR>
+<TD align="left"><A href="9T2_5A03.es.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_back.gif" alt="A la página anterior"></A></TD>
+<TD align="left"></TD>
+<TD align="left"><A href="9T2_5A05.es.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_next.gif" alt="A la página siguiente"></A></TD>
+<TD></TD>
+</TR></TABLE>
+<TABLE width="100%"><TBODY><TR BGCOLOR="DarkSlateBlue" align="center"><TD><FONT color="white"><B>© Copyright Chevrolet Europe. Reservados todos los derechos</B></FONT></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>

@@ -1,0 +1,735 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8" />
+<title>Global Diagnostic System</title>
+<link rel="stylesheet" type="text/css" href="mdiprint.css" media="print" />
+<!-- Version 2.0.16 with all screenshots and Export Function explanation (Snapshot) -->
+
+<style type="text/css">
+	  <!--
+	div.all { margin-top:2px; margin-left:2px; margin-right:auto }
+	  
+.style1 { text-align: center;
+}
+.style2 {
+	border-style: solid;
+	border-color: black;
+	border-width: 1px;
+}
+.style3 {
+	border: 1px solid black;
+}
+.tableinsert {
+	vertical-align: top;
+	text-indent: 20px;
+}
+.caution {
+	padding: 10px;
+	margin: 0px;
+	border-color: #0000FF;
+	border-style: outset;
+	border-width: 1px 4px 4px 4px;
+	border-left: 1px solid #808080;
+	border-top: 1px solid #808080;
+	background-color: #FFCCCC;
+}
+.important {
+	padding: 10px;
+	margin: 0px;
+	border-color: #0000FF;
+	border-style: outset;
+	border-width: 1px 4px 4px 4px;
+	border-left: 1px solid #808080;
+	border-top: 1px solid #808080;
+	background-color: #FFCCCF;
+}
+.note {
+	padding: 10px;
+	margin: 0px;
+	border-color: #0000FF;
+	border-style: outset;
+	border-width: 1px 4px 4px 4px;
+	border-left: 1px solid #808080;
+	border-top: 1px solid #808080;
+	background-color: #99CCFF;
+}
+.notice {
+	padding: 10px;
+	margin: 0px;
+	border-color: #808080 #666666 #666666 #808080;
+	border-style: solid outset outset solid;
+	border-width: 1px 4px 4px 4px;
+	border-left: 1px solid #808080;
+	border-top: 1px solid #808080;
+	background-color: #C0C0C0;}
+
+* {
+	font-family:arial,sans-serif;}
+
+
+
+-->
+</style>
+</head>
+<body><div class="all">
+
+ <h1 align="center">Global Diagnostic System</h1>
+ <h1>Cuprins</h1>
+ <ol>
+ <li><a href="#intro">Introducere</a></li>
+ <li><a href="#product_description">Descriere produs</a></li>
+ <li><a href="#installation">Instalare GDS</a></li>
+ <li><a href="#getting_started">Pornirea</a></li>
+ <li><a href="#navigation">Navigare generală</a></li>
+ <li><a href="#diagnostics">Diagnostic</a></li>
+ <li><a href="#troubleshooting">Depanarea</a></li>
+ </ol>
+ <hr />
+
+  <h1><a name="intro"></a>Introducere</h1>
+ <h2>Ghid de referinţă GDS</h2>
+ <p>Ghidul de referinţă rapidă Global Diagnostic System (GDS) oferă o prezentare generală a GDS</p>
+ <p>Întregul conţinut al acestui manual se bazează pe ultimele informaţii despre produs disponibile la momentul publicării.<!--j-->&nbsp;<!--j-->Se rezervă dreptul de a face oricând modificări, fără notificare prealabilă.</p>
+ <p>Nicio parte a acestei publicaţii nu poate fi reprodusă, stocată în orice sistem de extragere sau transmisă în orice formă prin orice mijloace, incluzând dar fără a se limita la mijloace electronice, mecanice, fotocopiere, înregistrare sau alte mijloace, fără consimţământul prealabil în scris din partea GM Service and Parts Operations.<!--j-->&nbsp;<!--j-->Acestea includ toate textele, tabelele, ilustraţiile şi diagramele.</p>
+ <p>Solicitările de permisiune se vor trimite la:</p>
+ <p>General Motors Corporation<br />
+Service and Parts Operations<br />
+Product Engineering<br />
+37350 Ecorse Road<br />
+Romulus, MI 48174-1376<br />
+U.S.A.</p>
+ <p>© 2008 GM Divizia Service şi Piese.<!--j-->&nbsp;<!--j-->Fabricat în S.U.A.<!--j-->&nbsp;<!--j-->Toate drepturile rezervate.</p>
+ <hr />
+
+  <h2>Informaţii generale</h2>
+ <p>
+GDS este conceput pentru a fi utilizat de către personalul de service instruit pentru diagnosticul şi repararea sistemelor electronice din domeniul auto.<!--j-->&nbsp;<!--j-->
+
+S-a făcut tot posibilul pentru a oferi informaţii tehnice complete şi precise, bazate pe informaţiile de service din fabrică disponibile în momentul publicării.<!--j-->&nbsp;<!--j-->
+În orice caz, se rezervă dreptul de a face oricând modificări, fără notificare prealabilă.</p>
+ <p>
+Pentru a vă familiariza cu GDS, funcţionalităţile şi modul său de utilizare, vă rugăm să citiţi în întregime Ghidurile utilizatorului înainte de a lucra cu GDS.</p>
+ <p>GDS oferă următoarele funcţionalităţi:</p>
+ <ul>
+ <li>Citire coduri de eroare</li>
+ <li>Citire informaţii de identificare ECU</li>
+ <li>Citire şi afişare grafică listă de parametri</li>
+ <li>Înregistrare şi memorare date instantaneu</li>
+ <li>Funcţii de control</li>
+ <li>Funcţii de configurare şi resetare</li>
+ <li>Înregistrare şi memorare protocol diagnostic</li>
+ <li>Memorare sesiuni de diagnostic per vehicul</li>
+ </ul>
+
+  <table width="80%" border="0">
+ <tr>
+ <td class="important">
+ <b><!--j-->Important<!--j-->:<!--j--></b><br />
+Programarea SPS pentru controlerele vehiculelor nu este suportată în GDS.<!--j-->&nbsp;<!--j-->Pentru programarea SPS Pass Through cu MDI utilizaţi aplicaţia TIS2Web / GlobalTIS SPS.</td>
+ </tr>
+ </table>
+ <hr />
+
+  <h2>Prezentarea generală a asistenţei pentru client</h2>
+ <p>
+
+Pentru a primi asistenţă la o întrebare sau problemă privind operarea produsului GM-Techline şi a produselor sale ataşate sau pentru a fixa reparaţii în perioada de garanţie sau în afara acesteia, telefonaţi la Customer Support Center local.<!--j-->&nbsp;<!--j-->Pentru a comanda piese de schimb, contactaţi GM Dealer Equipment.</p>
+ <h3>Înainte de a ne apela</h3>
+ <p>Înainte de a suna la Asistenţa tehnică asiguraţi-vă că aţi pregătit următoarele informaţii:</p>
+ <ul>
+ <li>Numele unităţii comerciale, adresa şi numărul de cod al comerciantului</li>
+ <li>Numărul de serie al dispozitivului MDI sau al computerului portabil, dacă este cazul</li>
+ <li>Denumirea, reperul piesei şi cantitatea solicitată</li>
+ <li>Numărul de telefon la care poate fi apelat tehnicianul.</li>
+ </ul>
+ <p>Pregătiţi o scurtă descriere a problemei:</p>
+ <ul>
+ <li>Relataţi momentul apariţiei problemei</li>
+ <li>Faceţi o listă cu toate codurile de eroare afişate</li>
+ <li>Comunicaţi ce fel de accesorii s-au utilizat în momentul în care a apărut problema şi informaţiile despre vehicul</li>
+ </ul>
+
+  <h4>IDENTIFICAREA DISPOZITIVULUI MDI</h4>
+ <p>Eticheta ansamblului GM MDI se află pe spatele unităţii.<!--j-->&nbsp;<!--j-->
+
+Numărul de identificare al ansamblului are două părţi: un cod de producţie pentru trasabilitate şi un număr de serie unic.<!--j-->&nbsp;<!--j-->
+Numărul de serie este utilizat pentru a identifica MDI în aplicaţia software.</p>
+
+  <h3>Efectuarea apelului</h3>
+
+  <h4>Utilizatorii din Europa</h4>
+ <h5>Asistenţă Instalare software GDS &amp; Comunicare sistem</h5>
+ <p><b>DAC - Dealer Assistance Center:</b><br />
+
+
+Asistenţă utilizatori pentru aplicaţia software GDS, pentru comunicarea GDS cu TIS2Web / GlobalTIS şi MDI este oferită de Centrul de asistenţă pentru dealeri.<br />
+
+Numărul de telefon corespunzător pentru ţara respectivă poate fi obţinut din pagina de autentificare portal Channel 21.</p>
+ <h5>
+Suport GDS Diagnoză vehicul:</h5>
+ <p><b>Centrul european de asistenţă tehnică:</b><br />
+
+Asistenţa pentru utilizatori privind problemele de comunicare cu vehiculele în timpul evenimentelor de diagnostic pe baza GDS este oferită de Centrul european de asistenţă tehnică.<!--j-->&nbsp;<!--j-->
+Numărul de telefon corespunzător pentru ţara respectivă poate fi obţinut de la organizaţia locală General Motors Europe.</p>
+ <h5>
+Asistenţă pentru reparatori independenţi/postvânzare:</h5>
+ <p><b>European Customer Assistance Center</b><br />
+Reparatorii independenţi pot contacta European Customer Assistance Center pentru serviciile de asistenţă de mai sus.<!--j-->&nbsp;<!--j-->
+Detaliile de contact sunt furnizate în portalul GME InfoTech.</p>
+ <hr />
+ <h3>Acord de licenţă pentru software</h3>
+ <p>Vă rugăm să citiţi cu atenţie aceste acord de licenţiere software înainte de a continua cu utilizarea acestui software.<!--j-->&nbsp;<!--j-->
+Continuarea cu utilizarea acestui software va constitui acceptul dumneavoastră privind termenii şi condiţiile conţinute în acesta.</p>
+ <p>DREPT DE PROPRIETATE<!--j-->:<!--j-->&nbsp;<!--j-->
+
+
+Aplicaţia software este un material protejat de legea drepturilor de autor a Corporaţiei General Motors şi luaţi la cunoştinţă că Corporaţia General Motors deţine toate drepturile de copyright şi alte drepturi proprietare, titlul de proprietate şi drepturile de autor asupra aplicaţiei software.<!--j-->&nbsp;<!--j-->
+Toate drepturile asupra aplicaţiei software care nu sunt licenţiate în mod specific tot aici sunt rezervate în mod expres de Corporaţia General Motors.</p>
+ <p>UTILIZARE<!--j-->:<!--j-->&nbsp;<!--j-->
+Vi se acordă o licenţă non-exclusivă, netransferabilă pentru utilizarea acestei aplicaţii software pe mai multe sisteme de computere.<!--j-->&nbsp;<!--j-->
+
+Nu aveţi dreptul de decompilare, de obţinere a codului sursă prin dezasamblare, modificare, reproducere, distribuire sau vânzare a software-ului, ca întreg sau ca parte.<!--j-->&nbsp;<!--j-->
+Această licenţă este personal pentru dumneavoastră şi este condiţionată de respectarea strictă a tuturor termenilor şi condiţiilor conţinute tot aici.</p>
+ <p>Terminarea<!--j-->:<!--j-->&nbsp;<!--j-->
+
+Corporaţia General Motors poate termina acest acord de licenţiere software din cauza nerespectării de către dumneavoastră a termenilor şi condiţiilor stipulate aici.<!--j-->&nbsp;<!--j-->
+
+După terminare, aveţi obligaţia de a înceta utilizarea acestui software şi de a distruge toate copiile acestui software incluzând, dar fără a se limita la acelea existente pe computerele dumneavoastră.</p>
+ <hr />
+ <h1><a name="product_description"></a>2.<!--j-->&nbsp;<!--j-->Descriere produs</h1>
+ <h2>Cerinţe PC pentru dealeri<!--j-->&nbsp;<!--j-->(<!--j-->Europa<!--j-->)</h2>
+ <p>Cerinţe minime PC pentru funcţionarea GDS împreună cu TIS2Web şi GlobalTIS:</p>
+ <ul>
+ <li>Procesor:<br />
+Intel Pentium M, 1,5GHz</li>
+ <li>Memorie sistem (RAM)<br />
+1GB pentru clientul GDS şi TIS2Web / GlobalTIS; 2GB pentru versiunea independentă GDS şi GlobalTIS</li>
+ <li>Minimum unitate hard disk:<br />
+40 GB</li>
+ <li>Sistem de operare<!--j-->:<br />Windows XP Professional (SP2)</li>
+ <li>Alte componente software:<br />
+Java Web Start 1.5x sau mai mare<br />
+ </li>
+ </ul>
+ <p>
+Pentru mai multe informaţii vă rugăm să consultaţi specificaţiile software şi hardware GME IT disponibile în organizaţia dumneavoastră locală GME.</p>
+ <hr />
+ <h1><a name="installation"></a>3.<!--j-->&nbsp;<!--j-->Instalare GDS</h1>
+ <h2>Prezentare generală GDS:</h2>
+ <p>Aplicaţia software GDS conţine următoarele module care vor fi instalate iniţial şi actualizate frecvent în anumite perioade.<!--j-->&nbsp;<!--j-->[I]</p>
+ <ul>
+ <li><b>GDS Base System</b><br />
+Software-ul de bază GDS instalat pe computer</li>
+ <li><!--j--><b><!--j-->Produse finale GDS<!--j--></b><!--j-->:<br />
+Pachete de date de diagnostic pentru modelele de vehicule care execută rutinele de diagnostic împreună cu controlerele vehiculelor.</li>
+ <li><!--j--><b><!--j-->GDS Smart Start<!--j--></b><!--j-->:<!--j--><br />Agentul aplicaţiei care compară versiunile de software Server pentru GDS Base System, Produse finale GDS şi MDI Manager între TIS2Web/GlobalTIS şi instalarea locală.<!--j-->&nbsp;<!--j-->În cazul în care sunt disponibile actualizări noi, veţi fi anunţat să le descărcaţi.</li>
+ <li><!--j--><b><!--j-->Software-ul MDI Manager (aplicaţie separată)<!--j--></b><!--j-->:<br />
+Aplicaţia pentru actualizare şi configurare MDI Device (Interfaţă de diagnostic multiplă)</li>
+ </ul>
+ <p><img src="../../images/gds_i_rom.gif" alt="gds_i.gif" width="650px"/><br />
+[I]</p>
+ <hr />
+ <h2>Instalare:</h2>
+ <p>GDS poate fi instalat de pe un DVD de instalare separat sau direct descărcat din TIS2Web / GlobalTIS.</p>
+ <h3>Instalarea de pe DVD-ul GDS:</h3>
+ <ul>
+ <li>Computerul trebuie pornit în modul Admin</li>
+ <li>Lansaţi executabilul de instalare din meniul de pornire al DVD-ului</li>
+ <li>Alegeţi limba pentru agentul de instalare</li>
+ <li>Datele şi configurarea GDS existente pot fi reutilizate în cazul în care este detectată o instalare GDS anterioară pe computer.</li>
+ <li>Acceptaţi acordul de licenţiere (obligatoriu pentru a continua)</li>
+ <li>Alegeţi directorul de instalare pentru GDS</li>
+ <li>Procesul de instalare GDS începe</li>
+ <li>Software-ul MDI Manager va fi instalat în cazul în care pe computer nu este instalat un software MDI Manager mai vechi.<!--j-->&nbsp;<!--j-->Pentru instalarea iniţială a software-ului MDI Manager, componenta hardware MDI trebuie să fie conectată în timpul procesului de instalare.<!--j-->&nbsp;<!--j-->Pentru mai multe detalii, consultaţi manualul MDI.</li>
+ <li>După terminarea procesului de instalare, GDS poate fi lansat în execuţie de la simbolul de pe ecran sau din Start/Programe/GDS.<!--j-->&nbsp;<!--j--><img src="../../images/gds_icon.png" alt="gds_icon.png" /></li>
+ <li>Dacă este necesar, configuraţi firewall-ul pentru a permite comunicarea GDS cu dispozitivul MDI.</li>
+ <li>La pornirea GDS Smart Start, procesul de actualizare afişat va fi executat înainte ca GDS să fie lansat în execuţie.</li>
+ </ul>
+ <hr />
+ <h3>Instalarea din TIS2Web / GlobalTIS<!--j-->:</h3>
+ <p><img src="../../images/gds_ii_rom.gif" alt="gds_ii.gif" width="600px"/><br />
+[II]</p>
+ <table width="80%" border="0">
+ <tr>
+ <td class="important"><b><!--j-->Important<!--j-->:<!--j--></b><!--j-->&nbsp;<!--j-->În timpul instalării din TIS2Web, aproximativ 140 MB de date vor fi descărcate prin Internet.</td></tr></table>
+ <ul>
+ <li>Computerul trebuie să ruleze în modul Admin</li>
+ <li>Porniţi GDS din Pagina de pornire TIS2Web / GlobalTIS<!--j-->&nbsp;<!--j-->[II]</li>
+ <li>GDS Smart Start este descărcat de pe serverul TIS2Web, în funcţie de viteza conexiunii la Internet, acest lucru poate dura.</li>
+ <li>Alegeţi directorul de instalare pentru GDS.</li>
+ <li>Introduceţi parola de Internet (numai dacă pentru accesul la internet este utilizat un proxy server)</li>
+ <li>Dacă este necesar, configuraţi firewall-ul pentru a permite comunicarea GDS cu dispozitivul MDI.</li>
+ <li>Când începe instalarea GDS Smart Start, poate dura.</li>
+ <li>La lansarea GDS Smart Start, va fi executat procesul de actualizare GDS.<!--j-->&nbsp;<!--j-->[III]</li>
+ <li>Când descărcarea fişierelor de instalare este încheiată, se afişează versiunea de software GDS şi versiunea MDI Manager şi pot fi descărcate prin acordarea acceptului în dialogul respectiv.<!--j-->&nbsp;<!--j-->Prin intermediul butonului  <b>Arată progres descărcare</b> se poate afişa bara de stare pentru progresul actualizării.</li>
+ <li>Software-ul MDI Manager va fi instalat în cazul în care nu există un software MDI Manager instalat pe computer sau dacă există o versiune mai veche a MDI Manager.<!--j-->&nbsp;<!--j-->Pentru instalarea iniţială a software-ului MDI Manager, componenta hardware MDI trebuie să fie conectată în timpul procesului de instalare.<!--j-->&nbsp;<!--j-->Pentru mai multe detalii, consultaţi manualul MDI.</li>
+ </ul>
+
+  <table width="200" border="0">
+ <tr>
+ <td><img src="../../images/gds_iii_rom.gif" alt="gds_III.gif" width="200px"/></td>
+ <td><img src="../../images/gds_iv_rom.gif" alt="gds_IV.gif" width="150px" /></td>
+ </tr>
+ <tr>
+ <td>[III]</td>
+ <td>[IV]</td>
+ </tr>
+ </table>
+ <hr />
+ <h3>Actualizare GDS prin Smart Start<!--j-->:</h3>
+Lansaţi aplicaţia GDS din TIS2Web/GlobalTIS sau ca aplicaţie independentă cu ajutorul meniului de pornire din Windows.<!--j-->&nbsp;<!--j-->Înainte de încărcarea aplicaţiei GDS, se lansează agentul de pornire inteligentă care compară următoarele versiuni ale instalării aplicaţiei GDS pe PC cu conţinutul serverului TIS2Web /GlobalTIS:</p>
+ <ul>
+ <li>GDS Smart Start</li>
+ <li>GDS Base System</li>
+ <li>MDI Manager</li>
+ </ul>
+ <p>Smart Start anunţă utilizatorul că noi actualizări trebuie descărcate, dacă pe server sunt disponibile versiuni noi.<!--j-->&nbsp;<!--j-->[IV]</p>
+ <!--<p>Procesul de actualizare Smart Start pentru GDS Base System, Produse finale GDS şi MDI Manager va fi executat numai dacă GDS este lansat din TIS2Web / GlobalTIS şi nu în modul independent.<!--j-->&nbsp;<!--j--><!--The update capability of standalone started GDS will be available in a future version.</p>
+--> <table width="80%" border="0">
+ <tr>
+ 	 <td class="important"><!--j--><b><!--j-->Important<!--j--><!--j-->:<!--j--></b><!--j-->&nbsp;<!--j-->Procesele de actualizare descrise necesită întotdeauna funcţionarea computerului în modul Admin.</td></tr></table>
+ <hr />
+ <h3>Derularea înapoi a instalării GDS Base System</h3>
+ <p>Instalarea GDS poate fi derulată înapoi până la versiunea instalată anterior, în cazul în care o actualizare GDS produce probleme operaţionale.</p>
+ <p>Pentru a executa funcţia de derulare înapoi, mergeţi la START -&gt;PROGRAME -&gt;GDS -&gt; DERULARE ÎNAPOI GDS<!--j-->&nbsp;<!--j-->O cerinţă obligatorie a funcţiei de derulare înapoi este existenţa unei versiuni GDS mai vechi instalate pe computer.</p>
+ <h3>Sistem control licenţă GDS (Licenţă)</h3>
+ <p>Sistemul de control al licenţei GDS previne utilizarea neautorizată a GDS.<!--j-->&nbsp;<!--j-->Pentru a reînnoi licenţa aplicaţiei GDS trebuie să lansaţi aplicaţia din TIS2Web sau din GlobalTIS.<!--j-->&nbsp;<!--j-->Aplicaţia GDS necesită reînnoirea licenţei după 7 zile dacă în această perioadă s-a lansat numai în modul independent.<!--j-->&nbsp;<!--j--><br>Dacă licenţa GDS a expirat, un mesaj de eroare solicită utilizatorului lansarea aplicaţiei GDS din TIS2Web/GlobalTIS pentru reînnoirea licenţei.</p>
+ <hr />
+ <h3>Descărcare şi actualizare Produse finale GDS</h3>
+ <p>Produsele finale GDS sunt aplicaţii de diagnostic care controlează serviciile de comunicare şi diagnostic dintre GDS şi controlerul vehiculului<!--j-->.<!--j-->&nbsp;<!--j-->Produsele finale GDS au versiuni per model şi vor fi permanent actualizate în TIS2Web / GlobalTIS.</p>
+ <p>GDS Smart Start identifică automat dacă versiuni noi sau actualizate la produsele finale sunt disponibile pe TIS2Web / GlobalTIS când este declanşat procesul de actualizare<!--j-->.<!--j-->&nbsp;<!--j-->Produsele finale noi trebuie descărcate mai întâi în directorul local de pe computer înainte de a putea fi instalate în GDS.<!--j-->&nbsp;<!--j-->Actualizările produselor finale deja instalate vor fi descărcate automat şi trebuie doar să fie instalate în baza de date master GDS.</p>
+ <br clear=all />
+ <hr />
+ <h3>Descărcarea iniţială şi actualizarea produselor finale GDS</h3>
+ <ul><li>Lansaţi aplicaţia GDS din TIS2Web/GlobalTIS sau ca aplicaţie independentă cu ajutorul meniului de pornire din Windows.</li>
+ <li>Alegeţi butonul  <b>Adăugare pachet diagnostic nou</b> din ecranul de autentificare GDS.</li>
+ <li>Apăsaţi butonul  <b>Actualizare listă produse finale de pe server</b>.<!--j-->&nbsp;<!--j-->[V-1]<!--j-->.<!--j-->&nbsp;<!--j-->Pachetele disponibile pe server şi care nu au fost descărcate încă sunt afişate cu simbolul.<!--j-->&nbsp;<!--j-->
+ <img src="../../images/gds_server.png" alt="gds_server.png" width="36" height="34" /></li>
+ <li>Marcaţi şi descărcaţi pachetele de produse finale<!--j-->&nbsp;<!--j-->[V-2]<!--j-->.<!--j-->&nbsp;<!--j-->Funcţia de filtrare ajută la căutarea unor anumite produse finale.<!--j-->&nbsp;<!--j-->Pachetele de produse finale descărcate sunt afişate cu simbolul.<!--j-->&nbsp;<!--j--><img src="../../images/gds_pc.png" alt="gds_pc.png" /></li>
+ <li>Instalaţi pachetele descărcate în baza de date master GDS; pachetele instalate sunt afişate în fereastra din dreapta a aplicaţiei<!--j-->&nbsp;<!--j-->[V-3]<!--j-->.</li>
+ </ul>
+ <p><img src="../../images/gds_v_rom.gif" alt="gds_v.gif" width="650px"/><br />
+[V]</p>
+ <hr />
+ <h2>Actualizare produse finale GDS instalate în baza de date master<!--j-->:</h2>
+ <ul>
+ 	 <li>Faceţi clic pe butonul  <b>Actualizare pachet diagnostic</b> din ecranul de autentificare GDS<!--j-->&nbsp;<!--j-->[VI-1]<!--j-->.<!--j-->&nbsp;<!--j-->GDS compară versiunile produselor finale GDS instalate cu produsele finale disponibile pe server şi descarcă pachetele actualizate.</li>
+ 	 <li>Pachetele descărcate sunt afişate pentru instalare în fereastra din stânga jos.<!--j-->&nbsp;<!--j-->Selectaţi butonul  <b>Instalare</b> sau  <b>Instalare toate</b> pentru a începe instalarea.<!--j-->&nbsp;<!--j-->[VI-2]<!--j-->.</li>
+ </ul>
+ <p><img src="../../images/gds_vi_rom.gif" alt="gds_vi.gif" width="650px"/><br />
+[VI]<!--j-->:</p>
+ <hr />
+ <h2>
+Derulare înapoi actualizare produs final</h2>
+ <p>
+
+Procesul de derulare înapoi este în general acelaşi proces descris în capitolul Descărcarea iniţială şi actualizarea produselor finale GDS</p>
+ <ul>
+ 	 <li>Alegeţi butonul  <b>Adăugare pachet diagnostic nou</b> din ecranul de autentificare GDS.</li>
+ 	 <li>Apăsaţi butonul  <b>Actualizare listă produse finale de pe server</b>.<!--j-->&nbsp;<!--j-->[V-1]<!--j--></li>
+ <li>Marcaţi şi descărcaţi versiunile dorite de pachete de produse finale mai vechi.<!--j-->&nbsp;<!--j-->Funcţia de filtrare ajută la căutarea unor anumite produse finale.</li>
+ <li>Instalaţi pachetele descărcate în baza de date master GDS.</li>
+ </ul>
+ <hr />
+ <h2>Dezinstalarea GDS<!--j-->:</h2>
+ <p>GDS poate fi dezinstalat prin pornirea următorului program:</p>
+ <p>
+START -&gt; PROGRAME -&gt; GDS -&gt;DEZINSTALARE GDS</p>
+ <hr />
+ <h2>
+Modificarea limbii GDS<!--j-->&nbsp;<!--j-->/<!--j-->&nbsp;<!--j-->Setărilor regionale<!--j-->:</h2>
+ <p>GDS utilizează setările de limbă ale sistemului de operare din computer.<!--j-->&nbsp;<!--j-->Nu există un meniu în GDS pentru modificarea setărilor de limbă.<!--j-->&nbsp;<!--j-->Pentru a modifica limba utilizată în GDS, efectuaţi următorii paşi.</p>
+ <ul>
+ <li>Deschideţi PANOUL DE CONTROL Windows cu următoarea secvenţă:<!--j-->&nbsp;<!--j-->START -&gt; SETTINGS (SETĂRI)-&gt; CONTROL PANEL (PANOU DE CONTROL)</li>
+ <li>Deschideţi meniul OPŢIUNI REGIONALE ŞI DE LIMBĂ</li>
+ <li>Selectaţi ţara dorită în  <b>STANDARDE ŞI FORMATE</b></li>
+ <li>Deschideţi meniul ADVANCED (AVANSAT).<!--j-->&nbsp;<!--j-->Selectaţi limba dorită din caseta derulantă pentru PROGRAME NON UNICODE</li>
+ <li>Configuraţi OPŢIUNI REGIONALE pentru a modifica unităţile de măsură afişate în GDS.</li>
+ </ul>
+ <hr />
+ <h1><a name="getting_started"></a>4.<!--j-->&nbsp;<!--j-->Pornirea</h1>
+ <p><b><!--j-->AVERTISMENT<!--j-->:<br />
+Înainte de utilizarea GDS, este important să luaţi următoarele măsuri de precauţie:<!--j--></b></p>
+ <ul>
+ <li>Utilizarea unei versiuni învechite poate deteriora modulele vehiculului.<!--j-->&nbsp;<!--j-->GDS şi Interfaţa de diagnostic multiplă trebuie să aibă ultima versiune de software.</li>
+ <li>Asiguraţi-vă că bateria vehiculului este complet încărcată<!--j-->&nbsp;<!--j-->Tensiunea bateriei pentru GDS trebuie să fie între 12 şi 14 volţi.</li>
+ <li>În orice caz, la vehicul nu trebuie să fie conectat un încărcător de baterie când utilizaţi MDI.</li>
+ <li>Asiguraţi-vă că sunt bine fixate conexiunile cablului.<!--j-->&nbsp;<!--j-->Un cablu deconectat POATE duce la defectarea controlerului.</li>
+ <li>La utilizarea unui laptop/alt dispozitiv de afişare (PDA etc) pentru GDS, asiguraţi-vă că sursa de alimentare este corect conectată.<!--j-->&nbsp;<!--j-->Dacă alimentarea se face cu un adaptor şi un cablu de alimentare se deconectează, este posibil sa ducă la întreruperea programului şi la deteriorarea modulului de control.<!--j-->&nbsp;<!--j-->Dacă laptopul funcţionează de la sursa de alimentare internă (baterii), asiguraţi-vă că sunt corespunzător încărcate pentru a încheia procesul GDS.</li>
+ </ul>
+ <table width="80%" border="0">
+ <tr>
+ <td class="note"><b>AVERTISMENT</b><br />
+
+Dacă trebuie programată o unitate ECU, aceasta trebuie instalată în vehicul înainte de începerea acestui proces.<!--j-->&nbsp;<!--j-->Asiguraţi-vă că bateria vehiculului este complet încărcată.</td></tr></table>
+ <table width="80%" border="0">
+ <tr>
+ <td class="important"><b>Important</b><br />
+Pentru a reduce riscul pierderii de semnal, MDI trebuie configurat pe opţiunea pentru cea mai stabilă comunicare în locaţia dumneavoastră.<!--j--><!--j-->Puteţi alege dintre variantele USB, Ethernet sau Ethernet fără fir.</td></tr></table>
+ <hr />
+ <h2>Procedura de pornire GDS<!--j-->:</h2>
+ <p>GDS poate fi pornit din TIS2Web / GlobalTIS făcând clic pe pictograma GDS.<!--j-->&nbsp;<!--j-->Alternativ, GDS poate fi lansat în modul independent din meniul Start din Windows.</p><ol><li>Pentru a începe, faceţi clic pe simbolul GDS din meniul principal TIS2Web / GlobalTIS<!--j-->.<!--j-->&nbsp;<!--j-->Dacă porniţi GDS în modul independent, faceţi clic pe START/PROGRAME/GDS</li><li>La lansarea GDS Smart Start, va fi executat procesul de actualizare afişat.<!--j-->&nbsp;<!--j-->Dacă pe server este disponibilă o nouă versiune GDS sau MDI Manager, veţi fi anunţat să o descărcaţi şi să o instalaţi în computer.<!--j-->&nbsp;<!--j-->Faceţi clic pe  <b>Continuare,</b> pentru a începe descărcarea sau instalarea<!--j-->&nbsp;<!--j-->[IV]<!--j-->.<!--j-->&nbsp;<!--j-->Dacă GDS este lansat în modul independent, nu este posibilă nicio actualizare.</li>
+ 	 <li>Pagina de autentificare GDS este încărcată.</li></ol>
+ <hr />
+ <h1><a name="navigation"></a>5.<!--j-->&nbsp;<!--j-->Navigare generală</h1>
+ <h2>Meniuri derulante<!--j-->&nbsp;<!--j--><img src="../../images/gds_menu.png" alt="gds_menu.png" width="57" height="38" /></h2>
+ <p>Există cinci meniuri derulante disponibile din GDS<!--j-->&nbsp;<!--j-->[VII]</p> <p>Notă<!--j-->:<!--j-->&nbsp;<!--j-->Aceste meniuri vor fi doar selecţii de meniu pentru versiunile pentru PC a GDS<!--j-->.<!--j-->&nbsp;<!--j-->Va fi disponibil şi un format de ecran cu atingere, în care meniurile vor fi accesate de un buton pop-up</p> <ul>
+ <li>Meniul  <b>Fişier</b> are opţiunea  <b>Ieşire</b> pentru a închide GDS.</li>
+ <li>Meniul  <b>Sesiune</b> are două opţiuni:<!--j-->&nbsp;<!--j--><b>Salvare jurnal sesiune curentă</b> ŞI  <b>Adăugare comentarii la sesiune...</b><br />Informaţia  <b>Adăugare comentarii la sesiune...</b> poate fi introdusă de la tastatura computerului şi salvată în Manager jurnal sesiune.</li>
+ <li>Opţiunea  <b>Instrumente</b> are cinci opţiuni:<!--j-->&nbsp;<!--j-->Porneşte urmărire<!--j-->,<!--j-->&nbsp;<!--j-->Redare instantaneu<!--j-->,<!--j-->&nbsp;<!--j-->Creare raport<!--j-->,<!--j-->&nbsp;<!--j-->Arată stare descărcare...<!--j-->,<!--j-->&nbsp;<!--j-->Administrare utilizatori<br />Utilizatorii noi pot fi creaţi făcând clic pe simbolul de la pagina  <b>Administrare utilizatori</b><!--j-->&nbsp;<!--j-->
+ <img src="../../images/gds_add-user.png" alt="gds_add-user.png" width="27" height="26" />
+ <!--j-->.</li>
+ <li><b>Fereastră</b>: În meniul </b>Preferinţe</b> poate fi selectată configurarea ecranului, de ex. modul ecran complet, modul PC sau ecran cu atingere.</li>
+ <li>Opţiunea  <b>Selecţie Ajutor</b> are trei opţiuni:<br /><b>Cuprins Ajutor</b> afişează toate fişierele de ajutor GDS disponibile.<!--j-->&nbsp;<!--j-->
+<b>Despre GDS</b> afişează versiunea GDS şi ID-ul de generare.<!--j-->&nbsp;<!--j-->
+<b>Arată versiunea MDI</b> afişează versiunile software şi hardware MDI.<!--j-->&nbsp;<!--j-->
+Este posibil să vi se solicite această informaţie când contactaţi Customer Support Center.</li></ul><p></p>
+ <p><img src="../../images/gds_vii_rom.gif" alt="gds_vii.gif" width="120px"/><br />
+[VII]</p>
+ <hr />
+ <h2>Bara de instrumente aplicaţie diagnostic</h2>
+ <p>Există câteva selecţii din bara de instrumente care devin disponibile după ce se ajunge în vizualizarea de navigare în sistem.<!--j-->&nbsp;<!--j-->[VIII]</p>
+ <ul>
+ <li>Opţiunea  <b>Înregistrare instantaneu</b> (Cercul roşu) este disponibilă numai după ce se ajunge în vizualizarea de navigare în sistem şi este utilizată pentru a înregistra un instantaneu vehicul.<!--j-->&nbsp;<!--j-->În timpul înregistrării unui instantaneu, această opţiune nu este disponibilă.</li>
+ <li>Opţiunea  <b>Opreşte înregistrare instantaneului</b> (pătratul albastru) apare în timpul înregistrării unui instantaneu vehicul.<!--j-->&nbsp;<!--j-->Această opţiune este selectată pentru a opri înregistrarea instantaneului şi a salva fişierul.</li>
+ <li>Simbolul  <b>Captură ecran</b> este selectat pentru a captura conţinutul ecranului afişat şi pentru a-l memora într-o locaţie în computer.</li>
+ <li>Opţiunea  <b>Transfocare spre exterior</b> măreşte dimensiunea fontului.<!--j-->&nbsp;<!--j-->Imaginea afişată este redusă la fiecare clic de mouse.</li>
+ <li>Opţiunea  <b> Transfocare spre interior</b> măreşte dimensiunea fontului.<!--j-->&nbsp;<!--j-->Imaginea afişată este mărită la fiecare clic de mouse.</li>
+ <li>Butonul  <b>Ieşire (Exit)</b> închide aplicaţia de diagnostic activă</li>
+ </ul>
+ <p><img src="../../images/gds_viii_rom.gif" alt="gds_viii.gif" width="400px"/><br />
+[VIII]</p>
+ <hr />
+ <h2>Taste săgeţi</h2>
+ <p>Tastele săgeţi sunt poziţionate în partea de jos a listei de parametri.<!--j-->&nbsp;<!--j-->Tastele săgeţi pot fi utilizate pentru navigare în modul următor:</p>
+ <p><img src="../../images/gds_ix_rom.gif" alt="gds_ix.gif" width="600px"/><br />
+[IX]<!--j-->:</p>
+ <ul>
+ <li>Săgeata  <b>Mutare în sus</b> poate fi utilizată pentru a vă muta în sus un folder în lista de parametri de fiecare dată când este selectată.</li>
+ <li>Săgeata  <b>Mutare în jos</b> poate fi utilizată pentru a vă muta în jos un folder în lista de parametri de fiecare dată când este selectată.</li>
+ <li>Săgeata  <b>Mutare la dreapta</b> poate fi utilizată pentru a deschide un nivel în arborele de navigare.</li>
+ <li>Săgeata  <b>Mutare la stânga</b> poate fi utilizată pentru a închide un nivel în arborele de navigare.<!--j-->&nbsp;<!--j-->Această opţiune nu va fi afişată dacă sunteţi în primul ecran al unei proceduri.</li></ul>
+ <hr />
+ <h2>Alte taste</h2>
+ <p>De asemenea, alte trei taste sunt poziţionate în partea de jos a ecranelor.<!--j-->&nbsp;<!--j-->Aceste taste pot fi folosite pentru următoarele:</p>
+ <ul>
+ <li><b>Lansare</b> vă permite să lansaţi o aplicaţie.</li>
+ <li><b>Acţiunea anterioară</b> poate fi utilizat pentru a vă muta la ecranul anterior.<!--j-->&nbsp;<!--j-->Această opţiune va fi disponibilă numai atunci când există un ecran anterior.</li>
+ <li><b>Acţiunea Următoare</b> poate fi utilizată pentru a vă muta la ecranul următor.<!--j-->&nbsp;<!--j-->Această opţiune va fi disponibilă numai dacă în ecranul curent au fost făcute toate selecţiile necesare.</li>
+ </ul>
+ <br clear=all />
+ <hr />
+ <h2>Introducerea informaţiilor MDI/Vehicul</h2>
+ <p>1.<!--j-->&nbsp;<!--j-->Din meniul principal GDS, alegeţi un utilizator pentru autentificare.<!--j-->&nbsp;<!--j-->Dacă nu a fost creat niciun utilizator, poate fi creat un utilizator nou sau poate fi ales utilizatorul implicit.<!--j-->&nbsp;<!--j-->(Consultaţi secţiunea de meniuri derulante)<br />
+ </p>
+ <p>2.<!--j-->&nbsp;<!--j-->După ce a fost selectată opţiunea dvs. de acces, va fi afişat ecranul Meniu identificare.<!--j-->&nbsp;<!--j-->Din acest ecran sunt disponibile câteva opţiuni:</p>
+ <p><img src="../../images/gds_x_rom.gif" alt="gds_x.gif" width="650px"/><br />
+[X]</p>
+ <ul>
+ 	 <li>[X-1]<!--j-->&nbsp;<!--j--><b><b>Selecţie MDI</b></b><!--j-->:<!--j-->&nbsp;<!--j-->Sunt afişate toate MDI-urile disponibile în diferitele reţele de la dealeri. Puteţi selecta MDI pe care o folosiţi pentru a efectua diagnosticul vehiculului.<!--j-->&nbsp;<!--j-->Pentru conectarea MDI, evidenţiaţi o MDI disponibilă făcând clic pe aceasta şi selectaţi  <b>Conectare</b>.<!--j-->&nbsp;<!--j-->Selectaţi  <b>Deconectare</b> pentru a deconecta MDI.<!--j-->&nbsp;<!--j-->Ataşaţi o MDI nouă la vehicul şi selectaţi  <b>Conectare</b>.<!--j-->&nbsp;<!--j-->Selectaţi  <b>Reîmprospătare</b> pentru a verifica dacă există MDI-uri noi în reţelele disponibile.<!--j-->&nbsp;<!--j-->Pentru a continua în GDS fără nicio MDI conectată, activaţi caseta de validare  <b>Navigare fără MDI</b>.</li>
+ <li>[X-2]<!--j-->&nbsp;<!--j--><b><b>Introducere NIV</b></b><!--j-->:<!--j-->&nbsp;<!--j-->Câmpul Număr identificare vehicul pentru introducere manuală sau identificare automată NIV de la controlerul vehiculului.<!--j-->&nbsp;<!--j-->(Conexiune MDI necesară).<!--j-->&nbsp;<!--j-->Comentarii suplimentare asociate la acest NIV / Vehicul pot fi adăugate în câmpul text de dedesubt.</li>
+ <li>[X-3]<!--j-->&nbsp;<!--j-->Secţiunea  <b>Identificare vehicul</b><!--j-->:<!--j-->&nbsp;<!--j-->selectaţi marca, modelul şi anul modelului înainte de a continua.</li>
+ <li>[X-4]<!--j-->&nbsp;<!--j--><b><b>Istoric diagnostic vehicul</b></b><!--j-->:<!--j-->&nbsp;<!--j-->Dacă un vehicul a avut anterior diagnosticul efectuat cu acest sistem GDS, NIV-ul şi informaţiile asociate vor fi memorate în istoricul vehiculului.<!--j-->&nbsp;<!--j-->Selectaţi din listă vehiculul la care urmează a fi efectuat diagnosticul şi continuaţi direct la  <b>Pagina de pornire vehicul</b>.<!--j-->&nbsp;<!--j-->Este disponibilă o funcţie de filtrare după un text liber.</li>
+ </ul>
+ <p>3.<!--j-->&nbsp;<!--j-->Va fi afişată  <b>Pagina de pornire vehicul</b>.<!--j-->&nbsp;<!--j-->From this screen various vehicle data is displayed including: entered vehicle information, previous vehicle diagnosis, session comments, session log reports, and stored data</p>
+ <hr />
+ <h2><b><b>Pagina de pornire vehicul</b></b></h2>
+ <p><b>Pagina de pornire vehicul</b> este alcătuită din câteva zone:</p>
+ <p>[XI-1]<!--j-->:<!--j-->&nbsp;<!--j--><b>Informaţii despre autovehicul</b> listează toate informaţiile despre vehicul, inclusiv marca, modelul şi anul modelului etc.<br />Această listă este actualizată pe măsură ce se efectuează diagnosticul vehiculului şi va fi salvată la fiecare sesiune.<!--j-->&nbsp;<!--j--><b>Ştergeţi selecţia opţiunii autovehiculului</b> este utilizată pentru a şterge o selecţie anterioară conţinut vehicul.<!--j-->&nbsp;<!--j-->Evidenţiaţi rândul ce trebuie şters din Lista conţinut vehicul şi selectaţi Ştergere echipament.</p>
+ <p>[XI-2]<!--j-->:<!--j-->&nbsp;<!--j--><b>Comentarii sesiune</b> este utilizat pentru a adăuga comentarii utilizator libere despre o sesiune de diagnostic.<!--j-->&nbsp;<!--j-->Faceţi clic pe  <b>Adăugare comentariu</b> pentru a adăuga informaţii suplimentare despre o sesiune.<!--j-->&nbsp;<!--j-->Informaţiile pot fi introduse de la tastatură în zonele Utilizator, Date sau Comentariu.<!--j-->&nbsp;<!--j-->Pentru a şterge comentariile anterioare, evidenţiaţi informaţiile de sub zonele Utilizator, Date sau Comentariu şi faceţi clic pe  <b>Ştergere comentariu selectat</b>.</p>
+ <p>[XI-3]<!--j-->:<!--j-->&nbsp;<!--j--><b>Rapoarte jurnal sesiune</b> poate fi utilizat pentru o listare a informaţiilor de diagnostic vehicul.<!--j-->&nbsp;<!--j--><b>Vizualizare completă</b> oferă un raport complet a tuturor diagnozelor efectuate la vehicul.<!--j-->&nbsp;<!--j--><b>Raport simplu</b> oferă un rezumat al diagnosticului vehiculului.</p>
+ <p>[XI-4]<!--j-->:<!--j-->&nbsp;<!--j--><b>Date instantaneu</b> listează toate datele instantaneu memorate.<!--j-->&nbsp;<!--j-->Vor fi afişate numele utilizatorului, data în care a fost luat instantaneul şi comentariile.<!--j-->&nbsp;<!--j-->O redare instantaneu poate fi afişată prin evidenţierea elementului şi selectarea  <b>Examinare</b>.<!--j-->&nbsp;<!--j-->Elementele individuale pot fi şterse prin evidenţierea elementului şi selectarea  <b>Ştergere</b>.<br />[XI-6]<!--j-->:<!--j-->&nbsp;<!--j--><b><a name="export_snap">Export</a></b> salvează un snapshot pe PC-ul local.<!--j-->&nbsp;<!--j-->Apoi puteţi trimite acest snapshot persoanei corespunzătoare pentru analiză suplimentară.</p>
+ <p>[XI-5]<!--j-->:<!--j-->&nbsp;<!--j-->Meniul  <b>Aplicaţii executate</b> oferă un istoric al sesiunii de diagnostic.</p>
+
+  <p><b>Acţiunea următoare</b> este utilizat pentru a continua diagnosticul la vehiculul selectat.</p>
+ <p><img src="../../images/gds_xi_rom.gif" alt="gds_xi.gif" width="650px"/><br />
+[XI]</p>
+ <hr />
+ <h2>Navigare sistem - Selecţie aplicaţie diagnostic</h2>
+ <p>După ce aţi selectat  <b>Acţiunea următoare</b> din  <b>Pagina de pornire vehicul</b>, va fi afişată vizualizarea Navigare sistem<!--j-->&nbsp;<!--j-->[XII]<!--j-->.</p>
+ <p>Selectaţi calea de navigare pe care doriţi să o investigaţi la vehicul.<!--j-->&nbsp;<!--j-->Navigarea poate fie efectuată cu săgeţile de navigare; săgeţile dreapta/stânga deschid/închid un subfolder, butonul Lansare porneşte aplicaţia de diagnostic selectată.<!--j-->&nbsp;<!--j-->Navigaţia este posibilă şi cu ajutorul mouse-ului, făcând clic pe simbolurile + din arborele de navigare sau cu tastele săgeţi de la tastatura computerului.</p>
+ <p>
+Continuaţi selectarea folderelor pe calea dorită până când ajungeţi la o aplicaţie de diagnostic, care are o pictogramă de aplicaţie.</p>
+ <p>
+
+După ce aţi lansat aplicaţia de diagnostic, vizualizarea de navigare sistem va dispare şi va fi înlocuită de o aplicaţie de diagnostic.<!--j-->&nbsp;<!--j-->
+După ce aţi încheiat aplicaţia de diagnostic, selectaţi  <b>Ieşire (Exit)</b> din partea dreaptă sus a vizualizării aplicaţiei de diagnostic.<!--j-->&nbsp;<!--j-->
+Aceasta va închide aplicaţia de diagnostic şi vă va aduce înapoi la vizualizarea navigare sistem.</p>
+ <p><img src="../../images/gds_xii_rom.gif" alt="gds_xii.gif" width="350px"/><br />
+[XII]</p>
+ <hr />
+ <h1><a name="diagnostics"></a>6.<!--j-->&nbsp;<!--j-->Diagnostic</h1>
+ <h2>Afişaj coduri de eroare</h2>
+ <p>Când este selectată  <b>Informaţii coduri de eroare vehicul</b>, va fi afişată din  <b>Diagnostikprogram</b> o listă a unităţilor de control electronice (ECU-uri) şi numărul de coduri de eroare memorate curent.</p>
+ <p><img src="../../images/gds_xiii_rom.gif" alt="gds_xiii.gif" width="400px"/><br />
+[XIII]</p>
+ <p>
+În exemplul afişat există patru coduri de eroare memorate pentru modulul Cluster instrumente.<!--j-->&nbsp;<!--j-->Selectaţi  <b>Continuare,</b> pentru a afişa Pagina principală coduri de eroare.<br />
+
+  <img src="../../images/gds_xiv_rom.gif" alt="gds_xiv.gif" width="650px"/><br />
+[XIV]</p>
+ <p>Codurile de eroare disponibile sunt afişate într-un tabel.<!--j-->&nbsp;<!--j-->
+Conţinutul tabelului afişat este configurabil.<!--j-->&nbsp;<!--j-->Faceţi clic pe  <b>Selecţie coloană</b> pentru a adăuga sau elimina coloane în/din tabel.<!--j-->&nbsp;<!--j-->[XIV-1]<!--j-->.<!--j-->&nbsp;<!--j-->
+Pot fi afişate următoarele informaţii despre codurile de eroare:</p>
+ <table border=1 cellspacing=0 cellpadding=0>
+ <tr>
+ <td width=158 valign=top><p><b>Selecţie</b></p></td>
+ <td width=427 valign=top><p><b>Descriere</b></p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>Stare</p></td>
+ <td width=427 valign=top><p><img src="../../images/gds_status-unknown.png" alt="gds_status-unknown.png" width="16" height="16" /><!--j-->&nbsp;<!--j-->Set nou coduri de eroare în timpul ciclului de citire.<!--j-->&nbsp;<!--j-->Textul descrierii codului de eroare este cu litere aldine.</p>
+ <p><img src="../../images/gds_mail-generic.png" alt="gds_mail-generic.png" /><!--j-->&nbsp;<!--j-->Cod de eroare prezent, nicio modificare de la ultimul ciclu de citire.</p>
+ <p><img src="../../images/gds_forward.png" alt="gds_forward.png" /><!--j-->&nbsp;<!--j-->
+Cod de eroare curent cu modificare de stare de la ultimul ciclu de citire.<!--j-->&nbsp;<!--j-->
+Textul descrierii codului de eroare este cu litere cursive.</p>
+ <p><img src="../../images/gds_mail-delete.png" alt="gds_mail-delete.png" /><!--j-->&nbsp;<!--j-->
+Cod de eroare şters în ciclul curent de citire.<!--j-->&nbsp;<!--j-->
+Textul descrierii codului de eroare are un fundal roşu.</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>ECU</p></td>
+ <td width=427 valign=top><p>Numele unităţii de control</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>Sistem funcţional</p></td>
+ <td width=427 valign=top><p>Numele sistemului funcţional (Set de ECU)</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>Cod de eroare</p></td>
+ <td width=427 valign=top><p>Cod de eroare</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>Bit simptom</p></td>
+ <td width=427 valign=top><p>Cod bit simptom asociat cu codul de eroare</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>Descriere</p></td>
+ <td width=427 valign=top><p>Descriere text cod de eroare</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>Simptom</p></td>
+ <td width=427 valign=top><p>Descriere simptom decodat</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>Bit stare</p></td>
+ <td width=427 valign=top><p>Pentru utilizare viitoare</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>Stare decodată</p></td>
+ <td width=427 valign=top><p>Stare curentă cod de eroare</p></td>
+ </tr>
+ </table>
+ <p>
+Cu  <b>Opţiuni de filtrare</b>, pot fi setate ca filtre anumite ECU-uri care vor avea ca rezultat afişarea numai acelor coduri de eroare pentru ECU-urile listate.<!--j-->&nbsp;<!--j-->[XIV-2]<!--j-->.<!--j-->&nbsp;<!--j-->
+Această funcţie poate fi utilizată când sunt citite codurile de eroare de la tot vehiculul sau de la anumite sisteme funcţionale.<br />
+
+În câmpul de mai jos poate fi introdus text liber pentru a filtra afişarea codurilor de eroare, de exemplu după un anumit cod de eroare sau după un cuvânt cheie.<br />
+Starea detaliată a codului de eroare poate fi afişată când este activată caseta de validare  <b>Arată stare cod de eroare</b><!--j-->&nbsp;<!--j-->[XIV-3]<!--j-->.</p>
+ <hr />
+ <h3>Ştergere coduri de eroare</h3>
+ <p><!--j-->[XIV-4]<!--j-->&nbsp;<!--j-->
+Dacă este selectat  <b>Ştergere coduri de eroare</b>, va fi afişat un ecran de Informaţii coduri de eroare vehicul.<!--j-->&nbsp;<!--j-->[XV]<br />
+Utilizaţi săgeţile  <b>Adăugare</b> sau  <b>Adăugare toate</b> pentru a selecta ECU-urile pe care doriţi să le ştergeţi.<!--j-->&nbsp;<!--j-->
+Anumite ECU-uri pot fi şterse numai împreună, caz în care vor fi selectate împreună.<!--j-->&nbsp;<!--j-->
+ECU-urile selectate vor fi afişate în partea dreaptă a ecranului.<!--j-->&nbsp;<!--j-->Selectaţi  <b>OK</b> pentru a şterge ECU-urile selectate.<!--j-->&nbsp;<!--j-->
+Selectaţi  <b>Anulare</b> dacă nu doriţi să ştergeţi ECU-urile în acest moment.<!--j-->&nbsp;<!--j-->
+Dacă este selectat  <b>OK</b>, va apare o fereastră pop-up care va afişa progresul operaţiei.<!--j-->&nbsp;<!--j-->
+Codul(urile) şterse se vor colora în roşu şi vor dispărea la următoarea reîmprospătare.</p>
+ <p><img src="../../images/gds_xv_rom.gif" alt="gds_xv.gif" width="500px"/><br />
+[XV]</p>
+ <hr />
+ <h3>Reîmprospătare coduri de eroare</h3>
+ <p>Dacă este selectat butonul  <b>Reîmprospătare cod de eroare</b>, GDS va solicita o actualizare a codurilor de eroare de la controler.<!--j-->&nbsp;<!--j-->[XIV-5]<!--j-->.</p>
+ <hr />
+ <h3>Părăsire aplicaţie Coduri de eroare</h3>
+ <p>
+Părăsiţi aplicaţia Coduri de eroare prin intermediul butonului  <b>Ieşire</b><!--j-->&nbsp;<!--j-->[XIV-6]<!--j-->.</p>
+ <table width="80%" border="0">
+ <tr>
+ <td class="important"><b><!--j-->Important<!--j-->:<!--j--></b><!--j-->&nbsp;<!--j-->
+Numai selecţia  <b>Ieşire</b> vă permite să părăsiţi <b>Diagnostikprogram</b>.<!--j-->&nbsp;<!--j-->
+Nu este posibilă părăsirea aplicaţiei GDS în timp ce se efectuează aplicaţii de diagnostic.<!--j-->&nbsp;<!--j-->
+Pentru a ieşi din GDS navigaţi înapoi la Pagina de autentificare GDS.</td></tr></table>
+ <hr />
+ <h3>Informaţii identificare</h3>
+ <p>
+Aplicaţia  <b>Afişare date</b> poate fi utilizată pentru a vizualiza datele controlerului vehiculului.<!--j-->&nbsp;<!--j-->
+Afişajul identificării controlerului oferă informaţii despre versiunile de software şi hardware ale controlerului care pot fi informaţii obligatorii pentru Centrul de asistenţă tehnică.</p>
+ <hr />
+ <h2>
+Afişare date</h2>
+ <p>
+Aplicaţia Afişare date furnizează starea  în timp real a datelor şi semnalelor de la controlerul vehiculului.</p>
+ <p>
+Vizualizarea implicită a datelor controlerului selectat este afişată într-un tabel  <b>Toţi parametrii</b><!--j-->&nbsp;<!--j-->[XVI-1]<!--j-->.<!--j-->&nbsp;<!--j-->
+Configuraţi individual coloanele afişate cu butonul  <b>Selecţie coloană</b><!--j-->&nbsp;<!--j-->[XVI-3]<!--j-->.</p>
+ <p>Parametrii individuali pot fi vizualizaţi într-o listă de urmărire selectând  <b>Adăugare la lista de urmărire</b><!--j-->&nbsp;<!--j-->[XVI-2]<!--j-->.</p>
+
+  <p><img src="../../images/gds_xvi_rom.gif" alt="gds_xvi.gif" width="650px"/><br />
+[XVI]</p>
+
+  <p>
+Parametrii selectaţi în lista de urmărire pot fi vizualizaţi în vizualizarea  <b>Grafic linie</b><!--j-->&nbsp;<!--j-->[XVII-1]<!--j-->.<!--j-->&nbsp;<!--j-->
+
+
+Selectaţi parametrii de afişat din caseta derulantă şi faceţi clic pe butonul Adăugare pentru a porni vizualizarea  <b>Grafic linie</b><!--j-->&nbsp;<!--j-->[XVII-2]<!--j-->.<!--j-->&nbsp;<!--j-->
+Este posibilă afişarea mai multor parametri în graficul linie.</p>
+ <p>
+Butoanele din bara de instrumente inferioară permit configurarea vizualizării graficului linie.<!--j-->&nbsp;<!--j-->[XVII-3]</p>
+ <ol>
+ <li><b>Pauză defilare/Reluare defilare</b>: Modifică între o vizualizare statică sau o corecţie dinamică a ecranului grafic linie.</li>
+ <li><b>Puncte date</b>: Modifică afişarea graficului între modul punctual şi modul liniar.</li>
+ <li><b>Adăugare marker</b>: Evidenţiază anumite poziţii/evenimente ale graficului linie.</li>
+ <li>Funcţia  <b>Transfocare spre interior</b> /  <b>Transfocare spre exterior</b></li>
+ </ol>
+ <p>
+
+  <img src="../../images/gds_xvii_rom.gif" alt="gds_xvii.gif" width="650px"/><br />
+[XVII]</p>
+ <p>
+Parametri individuali din lista  <b>Toţi parametrii</b> pot fi afişaţi în mod grafic<!--j-->&nbsp;<!--j-->[XVI-1]<!--j-->.<!--j-->&nbsp;<!--j-->
+Selectaţi parametrul individual şi selectaţi modul de afişare dorit din caseta de selecţie<!--j-->&nbsp;<!--j-->[XVIII-1]<!--j-->.<!--j-->&nbsp;<!--j-->Parametrul poate fi vizualizat în următoarele moduri:</p>
+ <ul type=square>
+ 	 <li>Grafic cadran<!--j-->&nbsp;<!--j-->[XVIII-2]<!--j-->.</li>
+ 	 <li>Grafic cu bare<!--j-->&nbsp;<!--j-->[XVIII-3]<!--j-->.</li>
+ 	 <li>Vizibilitate mare<!--j-->&nbsp;<!--j-->[XVIII-4]<!--j-->.</li>
+ </ul>
+ <p>Până la 4 parametri sau moduri de afişare pot fi afişate simultan.</p>
+
+
+   <p><img src="../../images/gds_xviii_rom.gif" alt="gds_xviii.gif" width="650px"/><br />
+[XVIII]</p>
+ <hr />
+ <h3>Redare instantaneu</h3>
+ <p>Funcţia  <b>Redare instantaneu</b> permite examinarea datelor instantaneu vehicul înregistrare anterior.<!--j-->&nbsp;<!--j-->Această informaţie poate fi folosită la analiza problemelor vehiculului şi detectarea condiţiilor de eroare declanşator.<!--j-->&nbsp;<!--j-->Funcţia grafică poate fi utilizată pentru a compara parametrii pentru a vedea dacă o componentă funcţionează corespunzător.<!--j-->&nbsp;<!--j-->Instantaneele înregistrate pot fi selectate pentru vizualizare prin următoarele trei metode:</p>
+ <ul>
+ <li>Selectarea unui fişier instantaneu din  <b>Pagina de pornire vehicul</b> şi făcând clic pe opţiunea Examinare.</li>
+ <li>Faceţi dublu clic pe instantaneul selectat din  <b>Pagina de pornire vehicul</b>.</li>
+ <li>Intrarea în opţiunea  <b>Instrumente</b> din opţiunea  <b>Meniu</b> şi selectând  <b>Redare instantaneu</b>.<!--j-->&nbsp;<!--j-->Apoi, deschideţi  <b>Manager instantaneu</b>.<!--j-->&nbsp;<!--j-->Faceţi dublu clic pe fişierul instantaneu pe care doriţi să-l vizualizaţi sau faceţi clic pe opţiunea Încărcare instantaneu şi alegeţi un fişier instantaneu.</li>
+ </ul>
+ <p>Indiferent de metoda de selecţie, din ecranul  <b>Redare instantaneu</b> va fi afişată o fereastră pop-up Fişier încărcat.<!--j-->&nbsp;<!--j-->Selectaţi OK în fereastra pop-up.</p>
+ <hr />
+ <h3>Funcţii de redare instantaneu<!--j-->&nbsp;<!--j-->[XIX-1]</h3>
+ <p>Există câteva funcţii de redare instantaneu care sunt utilizate pentru a reda instantaneele înregistrate</p>
+
+
+   <table width="84%" height="80" border="1">
+ <tr>
+ <td width="7%"><img src="../../images/gds_play.png" alt="gds_play.png" width="25" height="23" /></td>
+ <td width="93%">
+Funcţia Redare este utilizată pentru a reda instantaneul în faţă făcând clic pe această opţiune.<!--j-->
+
+&nbsp;<!--j-->
+
+Când este utilizată această opţiune, pe ecran se va mişca transversal un marker.<!--j-->
+
+&nbsp;<!--j-->
+Toate opţiunile din această zonă devin gri atunci când sunt active.</td>
+ </tr>
+ <tr>
+ <td><img src="../../images/gds_pause.png" alt="gds_pause.png" width="24" height="21" /></td>
+ <td>Funcţia Pauză este utilizată pentru a face o pauză la redarea unui instantaneu.<!--j-->&nbsp;<!--j-->Când se face clic a doua oară pe acestă opţiune, redarea instantaneului va porni din locul în care a rămas.</td>
+ </tr>
+ <tr>
+ <td><img src="../../images/gds_stop.png" alt="gds_stop.png" width="24" height="19" /></td>
+ <td>Funcţia Stop este utilizată pentru a opri redarea unui instantaneu.<!--j-->&nbsp;<!--j-->Instantaneul va porni de la început dacă după utilizarea funcţiei Stop se selectează din nou funcţia Redare.</td>
+ </tr>
+ </table>
+ <hr />
+ <h3>Control timp<!--j-->&nbsp;<!--j-->[XIX-2]</h3>
+ <p><b>Control timp</b> este utilizată pentru a controla redarea instantaneului.<!--j-->&nbsp;<!--j-->Această funcţie permite selecţia unui anumit cadru de timp, afişarea diferitelor vizualizări şi controlul vitezei de afişare.<!--j-->&nbsp;<!--j-->Următoarele funcţii pot fi selectate direct din  <b>Control timp</b>.</p>
+ <table width="84%" border="1">
+ <tr>
+ <td><img src="../../images/gds_bookmark.png" alt="gds_bookmark.png" width="17" height="24" /></td>
+ <td>Opţiunea Semn de carte vă permite să adăugaţi un anumit comentariu în afişajul curent şi să reveniţi la acest punct în viitor.<!--j-->&nbsp;<!--j-->Când este selectată această opţiune, este afişată o fereastră pop-up.<!--j-->&nbsp;<!--j-->Introduceţi un nume pentru semnul de carte şi selectaţi OK.</td>
+ </tr>
+ <tr>
+ <td><img src="../../images/gds_notepad.png" alt="gds_notepad.png" width="26" height="22" /></td>
+ <td>Notepad poate fi selectat pentru a adăuga comentarii la fişierul de redare instantaneu în momentul curent de timp.<!--j-->&nbsp;<!--j-->Când este selectată această opţiune, este afişată o fereastră pop-up.<!--j-->&nbsp;<!--j-->Introduceţi un comentariu pentru fişierul instantaneu şi selectaţi OK.</td>
+ </tr>
+ <tr>
+ <td><img src="../../images/gds_load.png" alt="gds_load.png" width="23" height="23" /></td>
+ <td>Încărcare instantaneu (folderul albastru) deschide un fişier instantaneu şi îl pregăteşte pentru analize ulterioare.<!--j-->&nbsp;<!--j-->Dacă doriţi să vedeţi un <a href="#export_snap">snapshot exportat</a>, mai întâi dezarhivaţi arhiva corespunzătoare *.zip.<!--j-->&nbsp;<!--j--><!--j-->&nbsp;<!--j-->Acestă funcţie este disponibilă şi făcând clic pe fişierul instantaneu disponibil din  <b>Manager instantaneu</b>.</td>
+ </tr>
+ <tr>
+ <td><img src="../../images/gds_time-options.png" alt="gds_time-options.png" width="19" height="23" /></td>
+ <td>Când este selectată săgeata jos, se afişează toate opţiunile  <b>Control timp</b>.<!--j-->&nbsp;<!--j-->De asemenea, pot fi selectate opţiuni individuale făcând clic pe elementul dorit.</td>
+ </tr>
+ <tr>
+ <td><img src="../../images/gds_speed.png" alt="gds_speed.png" width="57" height="27" /></td>
+ <td>
+Viteza de afişare instantaneu poate fi controlată prin selectarea acestei opţiuni.<!--j-->
+
+&nbsp;<!--j-->
+
+Pot fi selectate viteze mai mici de 1/8X, 1/4X şi 1/2X.<!--j-->
+
+&nbsp;<!--j-->
+
+De asemenea, poate fi selectată viteza în timp real la 1.<!--j-->
+
+&nbsp;<!--j-->
+Cu ajutorul acestei selecţii pot fi atinse şi viteze mai mari de 2X, 4X şi 8X.</td>
+ </tr>
+ </table>
+
+
+   <hr />
+ <h3>Selecţie vizualizare<!--j-->&nbsp;<!--j-->[XIX-3]</h3>
+ <p>Fiecare Selecţie vizualizare oferă un mod diferit de afişare a datelor vehiculului pentru analiză.<!--j-->&nbsp;<!--j-->Următoarele funcţii pot fi selectate din  <b>Vizualizări disponibile</b>.</p>
+ <ul>
+ <li>Vizualizare listă parametri - afişează informaţiile ce sosesc din fişierul instantaneu.<!--j-->&nbsp;<!--j-->Valoarea curentă a parametrilor este afişată pe ecran.</li>
+ </ul>
+ <table width="80%" border="0">
+ <tr>
+ 	<td class="important"><b>Important</b><br />Numele parametrului va fi afişat în limba originală utilizată pentru captură dacă nu există o traducere disponibilă pentru acel nume.</td></tr></table>
+ <ul>
+ <li>Vizualizarea Jurnal, care conţine toate informaţiile din fişierul instantaneu.<!--j-->&nbsp;<!--j-->Toate valorile parametrilor sunt listate în ordinea în care au fost înregistrate.<!--j-->&nbsp;<!--j-->Anumiţi parametri pot fi adăugaţi sau eliminaţi dintr-o listă de urmărire făcând clic pe elementul corespunzător.</li>
+ <li>Vizualizarea Stare - arată valorile tuturor parametrilor într-un anumit cadru de timp.<!--j-->&nbsp;<!--j-->Aceste valori pot fi utilizate pentru compararea cu vizualizarea declanşator.</li>
+ <li>Vizualizarea Declanşator - afişează toţi declanşatorii de sistem şi pe cei definiţi de utilizator.<!--j-->&nbsp;<!--j-->Această funcţie poate fi utilizată când există o combinaţie de factori implicaţi într-o problemă de diagnostic.<!--j-->&nbsp;<!--j-->
+Când este îndeplinită o condiţie de declanşare, pe ecran va fi afişat un triunghi de atenţionare.<ul><li>Încărcare declanşatori<!--j-->&nbsp;<!--j-->-<!--j-->&nbsp;<!--j-->Vă permit să încărcaţi un fişier care conţine definiţiile de declanşare.</li>
+ 	 <li>Salvare declanşatori<!--j-->&nbsp;<!--j-->-<!--j-->&nbsp;<!--j-->Vă permite salvarea declanşatorului pe unitatea de stocare informaţii a computerului.</li>
+ <li>Eliminare declanşator<!--j-->&nbsp;<!--j-->-<!--j-->&nbsp;<!--j-->Vă permite să eliminaţi declanşatorul curent. Acesta nu va mai fi prezent.</li>
+ <li>Editare declanşator<!--j-->&nbsp;<!--j-->-<!--j-->&nbsp;<!--j-->afişează o fereastră pop-up unde puteţi modifica limitele şi parametrii conţinuţi într-un declanşator.</li>
+ <li>Adăugare declanşator<!--j-->&nbsp;<!--j-->-<!--j-->&nbsp;<!--j-->afişează o fereastră pop-up pentru a configura un declanşator.</li></ul></li>
+ <li>Vizualizare cod de eroare<!--j-->&nbsp;<!--j-->-<!--j-->&nbsp;<!--j-->După selectarea funcţiei Redare şi alegere acestei opţiuni, această funcţie deschide lista codurilor de eroare înregistrate.</li>
+ <li>Vizualizare grafic linie - afişează date care pot fi vizualizate pe axa timpului.<!--j-->&nbsp;<!--j-->Din această vizualizare, pot fi selectaţi anumiţi parametri pentru reprezentare grafică prin bifarea casetei de sub Selectate.<!--j-->&nbsp;<!--j-->În partea de jos a graficului există patru funcţii:  <b>Transfocare spre interior</b> (măreşte dimensiunea),  <b>Transfocare spre exterior</b> (micşorează dimensiunea),  <b>Semne de carte</b> şi  <b>Pauză defilare</b>.<!--j-->&nbsp;<!--j-->Fiecare din aceste funcţii poate fi accesată făcând clic pe ea.</li>
+ </ul>
+ <p><img src="../../images/gds_xix_rom.gif" alt="gds_xix.gif" width="650px"/><br />
+[XIX]</p>
+ <hr />
+ <h2>Funcţii de control:</h2>
+ <p>Cu funcţiile de control GDS, anumite funcţii specifice pentru vehicule pot fi controlate din sistemul GDS.<!--j-->&nbsp;<!--j-->Selectaţi Funcţii de control pentru controlerul specific din Navigare sistem pentru a porni aplicaţia Funcţii de control.</p>
+ <p>Funcţiile de control sunt înglobate în afişajul listei de date.<!--j-->&nbsp;<!--j-->În timpul execuţiei funcţiei de control parametrul afişat poate fi monitorizat sau înregistrat cu funcţia instantaneu GDS.</p>
+ <p>GDS suportă două tipuri de funcţii de control:</p>
+ <p>1.<!--j-->&nbsp;<!--j-->Funcţia de control digital cu posibilitate ON/OFF<!--j-->&nbsp;<!--j-->[XX-1]</p>
+ <p><img src="../../images/gds_xx_rom.gif" alt="gds_xx.gif" width="650px"/><br />
+[XX]</p>
+ <p>2.<!--j-->&nbsp;<!--j-->Funcţia de control analogic cu posibilitatea de control a funcţiei.<!--j-->&nbsp;<!--j-->Funcţia actuator poate fi controlată cu ajutorul butoanelor de control sau mutând pointerul pe scala din lateral.<!--j-->&nbsp;<!--j-->[XXI-1]<!--j-->&nbsp;<!--j-->sau<!--j-->&nbsp;<!--j-->[XXI-2]<!--j-->.</p>
+ <p><img src="../../images/gds_xxi_rom.gif" alt="gds_xxi.gif" width="650px"/><br />[XXI]</p>
+ <hr />
+ <h2>Funcţii de configurare şi resetare:</h2>
+ <p>Funcţiile de configurare şi resetare sunt funcţii specifice de controler care trebuie să fie executate când actuatorii sistemului sunt înlocuiţi sau când este nevoie de o resetare.<!--j-->&nbsp;<!--j-->Pentru mai multe detalii consultaţi Manualul de service aplicabil al sistemului.</p>
+ <hr />
+ <h1><a name="troubleshooting"></a>7.<!--j-->&nbsp;<!--j-->DEPANAREA</h1>
+
+  <h2>Probleme de conexiune MDI</h2>
+ <p>Dacă conexiunile MDI se pierd sau nu sunt corect conectate la vehicul/computer, va fi afişată o fereastră pop-up.<!--j-->&nbsp;<!--j-->Efectuaţi următorii paşi:</p><ul>
+ <li>Asiguraţi-vă că aplicaţia software MDI Manager nu rulează în acelaşi timp când este efectuată GDS.</li>
+ <li>Asiguraţi-vă că MDI este corect conectată la vehicul şi la computer.</li>
+ <li>Utilizaţi un &quot;cablu USB&quot; despre care sunteţi sigur că este bun de la altă unitate MDI dacă este disponibil.<!--j-->&nbsp;<!--j-->Efectuaţi toate conexiunile şi încercaţi din nou.</li>
+ <li>Utilizaţi un &quot;cablu de conexiune DLC MDI&quot; cunoscut ca fiind bun de la altă unitate MDI dacă este disponibil.<!--j-->&nbsp;<!--j-->Efectuaţi toate conexiunile şi încercaţi din nou.</li>
+ <li>Dacă condiţiile sunt încă prezente, contactaţi Customer Support.</li>
+ <li>Asiguraţi-vă că firewall-ul nu blochează comunicarea GDS/MDI.</li>
+ </ul>
+ <hr />
+ <h2>Conflict software GDS/MDI Manager</h2>
+ <p>Aplicaţia software GDS şi aplicaţia software MDI Manager nu pot rula în acelaşi timp.<!--j-->&nbsp;<!--j-->Dacă ambele programe software sunt rulate în acelaşi timp, poate rezulta un conflict software.<!--j-->&nbsp;<!--j-->Opţiunea Detalii va oferi informaţiile posibile privitor la eroare.<!--j-->&nbsp;<!--j-->Dacă problema persistă, vi se poate solicita de la Customer Support să furnizaţi aceste informaţii.</p>
+ <p>Dacă se continuă apariţia conflictului software, poate fi afişată o fereastră pop-up &quot;A apărut o eroare fatală&quot; de aplicaţia software MDI Manager.<!--j-->&nbsp;<!--j-->Închideţi aplicaţia software MDI Manager şi reveniţi în programul GDS.<!--j-->&nbsp;<!--j-->Dacă problema este încă prezentă după intrarea în GDS, contactaţi Customer Support.</p>
+ <p>&nbsp;</p>
+ <p align="right"><font size="2">&copy; GM Europe, SPO Engineering, International Operations - 08 May 2009 (V3.0)</font></p>
+ </div>
+
+  </body>
+ </html>

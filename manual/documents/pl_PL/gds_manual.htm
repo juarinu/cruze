@@ -1,0 +1,735 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8" />
+<title>Global Diagnostic System</title>
+<link rel="stylesheet" type="text/css" href="mdiprint.css" media="print" />
+<!-- Version 2.0.16 with all screenshots and Export Function explanation (Snapshot) -->
+
+<style type="text/css">
+	  <!--
+	div.all { margin-top:2px; margin-left:2px; margin-right:auto }
+	  
+.style1 { text-align: center;
+}
+.style2 {
+	border-style: solid;
+	border-color: black;
+	border-width: 1px;
+}
+.style3 {
+	border: 1px solid black;
+}
+.tableinsert {
+	vertical-align: top;
+	text-indent: 20px;
+}
+.caution {
+	padding: 10px;
+	margin: 0px;
+	border-color: #0000FF;
+	border-style: outset;
+	border-width: 1px 4px 4px 4px;
+	border-left: 1px solid #808080;
+	border-top: 1px solid #808080;
+	background-color: #FFCCCC;
+}
+.important {
+	padding: 10px;
+	margin: 0px;
+	border-color: #0000FF;
+	border-style: outset;
+	border-width: 1px 4px 4px 4px;
+	border-left: 1px solid #808080;
+	border-top: 1px solid #808080;
+	background-color: #FFCCCF;
+}
+.note {
+	padding: 10px;
+	margin: 0px;
+	border-color: #0000FF;
+	border-style: outset;
+	border-width: 1px 4px 4px 4px;
+	border-left: 1px solid #808080;
+	border-top: 1px solid #808080;
+	background-color: #99CCFF;
+}
+.notice {
+	padding: 10px;
+	margin: 0px;
+	border-color: #808080 #666666 #666666 #808080;
+	border-style: solid outset outset solid;
+	border-width: 1px 4px 4px 4px;
+	border-left: 1px solid #808080;
+	border-top: 1px solid #808080;
+	background-color: #C0C0C0;}
+
+* {
+	font-family:arial,sans-serif;}
+
+
+
+-->
+</style>
+</head>
+<body><div class="all">
+
+ <h1 align="center">Global Diagnostic System</h1>
+ <h1>Spis treści</h1>
+ <ol>
+ <li><a href="#intro">Wprowadzenie</a></li>
+ <li><a href="#product_description">Opis produktu</a></li>
+ <li><a href="#installation">Instalacja GDS</a></li>
+ <li><a href="#getting_started">Wprowadzenie</a></li>
+ <li><a href="#navigation">Ogólna nawigacja</a></li>
+ <li><a href="#diagnostics">Diagnostyka</a></li>
+ <li><a href="#troubleshooting">Wykrywanie i usuwanie usterek</a></li>
+ </ol>
+ <hr />
+
+  <h1><a name="intro"></a>Wprowadzenie</h1>
+ <h2>Przewodnik użytkownika GDS</h2>
+ <p>Skrócony przewodnik użytkownika Global Diagnostic System (GDS) zawiera omówienie GDS.</p>
+ <p>Treść przewodnika oparta jest na najbardziej aktualnych informacjach dostępnych w chwili jego publikacji.<!--j-->&nbsp;<!--j-->Zastrzega się prawo do dokonywania zmian w każdej chwili i bez uprzedzenia.</p>
+ <p>Żadna z części niniejszej publikacji nie może być reprodukowana, przechowywana w jakimkolwiek systemie odtwarzania treści lub przekazywana w jakiejkolwiek formie i za pośrednictwem jakichkolwiek środków, w tym również elektronicznie, mechanicznie, za pośrednictwem fotokopiowania, nagrywania lub w inny sposób, bez uprzedniej pisemnej zgody wyrażonej przez GM Service and Parts Operations.<!--j-->&nbsp;<!--j-->Dotyczy to całości tekstu, wszystkich tabel, ilustracji i wykresów.</p>
+ <p>Prośby o udzielenie zezwolenia należy przesyłać na adres:</p>
+ <p>General Motors Corporation<br />
+Service and Parts Operations<br />
+Product Engineering<br />
+37350 Ecorse Road<br />
+Romulus, MI 48174-1376<br />
+U.S.A.</p>
+ <p>© 2008 GM Service and Parts Operation.<!--j-->&nbsp;<!--j-->Wyprodukowano w USA<!--j-->&nbsp;<!--j-->Wszelkie prawa zastrzeżone.</p>
+ <hr />
+
+  <h2>Informacje ogólne</h2>
+ <p>
+GDS został zaprojektowany do wykorzystania przez przeszkolony personel serwisowy w celu diagnostyki i naprawy systemów elektroniki pojazdowej.<!--j-->&nbsp;<!--j-->
+
+Dołożono wszelkich starań, by zapewnić pełne i dokładne informacje techniczne oparte na informacjach serwisowych producenta dostępnych w momencie publikacji.<!--j-->&nbsp;<!--j-->
+Jednakże, zastrzega się prawo do dokonywania zmian w każdej chwili i bez uprzedzenia.</p>
+ <p>
+W celu zapoznania się z GDS i jego możliwościami oraz zasadami użycia, przed przystąpieniem do pracy z GDS proszę przeczytać Przewodnik użytkownika.</p>
+ <p>GDS zapewnia następujące możliwości:</p>
+ <ul>
+ <li>Odczyt diagnostycznych kodów usterek (DTC)</li>
+ <li>Odczyt informacji identyfikacyjnych z układów sterowania ECU</li>
+ <li>Odczyt i graficzne odwzorowanie parametru listy danych</li>
+ <li>Zapisywanie i przechowywanie danych migawkowych</li>
+ <li>Funkcje sterowania</li>
+ <li>Funkcje konfiguracji i resetowania</li>
+ <li>Zapisywanie i przechowywanie protokołu diagnostycznego</li>
+ <li>Przechowywanie sesji diagnostycznych z podziałem na pojazdy</li>
+ </ul>
+
+  <table width="80%" border="0">
+ <tr>
+ <td class="important">
+ <b><!--j-->Ważne<!--j-->:<!--j--></b><br />
+Programowanie SPS układów sterowania pojazdu nie jest obsługiwane przez GDS.<!--j-->&nbsp;<!--j-->Do programowania SPS za pomocą bezpośredniego połączenia z producentem (Pass Through) z użyciem MDI, należy wykorzystać aplikację SPS TIS2Web/GlobalTIS.</td>
+ </tr>
+ </table>
+ <hr />
+
+  <h2>Informacje na temat pomocy technicznej dla klientów</h2>
+ <p>
+
+W celu uzyskania odpowiedzi na pytania lub rozwiązania napotkanych problemów dotyczących działania produktu GM-Techline oraz dołączonych produktów, a także w celu dokonania napraw gwarancyjnych i nieobjętych gwarancją należy się skontaktować telefonicznie z lokalnym Customer Support Center.<!--j-->&nbsp;<!--j-->W celu zamówienia części zamiennych należy się skontaktować z GM Dealer Equipment.</p>
+ <h3>Zanim zadzwonisz</h3>
+ <p>Zanim zadzwonisz do działu pomocy technicznej Helpdesk, przygotuj następujące informacje:</p>
+ <ul>
+ <li>Nazwa punktu dealerskiego, adres i numer kodu dealera</li>
+ <li>Numer seryjny modułu MDI lub komputera przenośnego, jeżeli go posiadasz</li>
+ <li>Nazwa, numer części i liczba potrzebnych części</li>
+ <li>Numer telefonu, pod który można dzwonić, żeby skontaktować się z technikiem.</li>
+ </ul>
+ <p>Przygotuj krótki opis problemu:</p>
+ <ul>
+ <li>Powiedz, kiedy wystąpił problem</li>
+ <li>Wymień wszelkie wyświetlone kody błędów</li>
+ <li>Należy przekazać informacje o rodzaju akcesoriów używanych w momencie wystąpienia problemu oraz o pojeździe.</li>
+ </ul>
+
+  <h4>IDENTYFIKACJA MODUŁU MDI</h4>
+ <p>Etykieta produkcyjna GM MDI jest umieszczona z tyłu urządzenia.<!--j-->&nbsp;<!--j-->
+
+Identyfikacyjny numer fabryczny składa się z dwóch części: kodu produkcyjnego umieszczonego w celu identyfikacji partii produkcyjnej oraz unikalnego numeru seryjnego.<!--j-->&nbsp;<!--j-->
+Numer seryjny jest wykorzystywany do identyfikacji MDI w oprogramowaniu.</p>
+
+  <h3>Uzyskiwanie połączenia</h3>
+
+  <h4>Użytkownicy z Europy</h4>
+ <h5>Pomoc techniczna dotycząca instalacji oprogramowania GDS i komunikacji systemu:</h5>
+ <p><b>DAC - Dealer Assistance Center:</b><br />
+
+
+Pomoc techniczna dla użytkowników oprogramowania GDS, dotycząca komunikacji GDS z TIS2Web/GlobalTIS oraz MDI, jest udzielana przez Dealer Assistance Center.<br />
+
+Numer telefonu właściwy dla danego kraju można znaleźć na stronie logowania do portalu Channel 21.</p>
+ <h5>
+Pomoc techniczna dotycząca diagnostyki pojazdów za pomocą GDS:</h5>
+ <p><b>European Technical Assistance Center:</b><br />
+
+Pomoc techniczna dla użytkowników w zakresie kwestii związanych z komunikacją z pojazdem w trakcie prowadzenia diagnostyki pojazdu przy użyciu GDS jest udzielana przez European Technical Assistance Center.<!--j-->&nbsp;<!--j-->
+Numer telefonu właściwy dla danego kraju można uzyskać w lokalnym oddziale General Motors Europe.</p>
+ <h5>
+Pomoc techniczna dla niezależnych warsztatów naprawczych/rynku wtórnego:</h5>
+ <p><b>European Customer Assistance Center</b><br />
+Niezależne zakłady naprawcze mogą kontaktować się z European Customer Assistance Center w celu uzyskania wyżej wymienionej pomocy technicznej.<!--j-->&nbsp;<!--j-->
+Szczegóły kontaktowe podane są na portalu GME InfoTech Portal.</p>
+ <hr />
+ <h3>Umowa licencyjna na oprogramowanie</h3>
+ <p>Przed przejściem do użycia oprogramowania proszę dokładnie przeczytać niniejszą umowę licencyjną.<!--j-->&nbsp;<!--j-->
+Rozpoczęcie użytkowania oprogramowania będzie oznaczać wyrażenie zgody na warunki i zasady zawarte w niniejszej umowie licencyjnej.</p>
+ <p>WŁASNOŚĆ<!--j-->:<!--j-->&nbsp;<!--j-->
+
+
+Niniejsze oprogramowanie jest chronionym prawami autorskimi dziełem General Motors Corporation i użytkownik uznaje, że General Motors Corporation jest właścicielem wszystkich praw autorskich oraz wszelkich innych praw związanych z własnością tego oprogramowania.<!--j-->&nbsp;<!--j-->
+Wszelkie prawa do tego oprogramowania, na które w sposób wyraźny nie została udzielona licencja w ramach niniejszej umowy, są w sposób jednoznaczny zastrzeżone przez General Motors Corporation.</p>
+ <p>UŻYCIE<!--j-->:<!--j-->&nbsp;<!--j-->
+Użytkownik otrzymuje niewyłączną i nieprzenoszalną licencję do użycia oprogramowania na wielu stanowiskach komputerowych.<!--j-->&nbsp;<!--j-->
+
+Użytkownik nie może stosować metod inżynierii wstecznej w stosunku do oprogramowania, dokonywać jego dekompilacji, modyfikacji, reprodukcji, ani też dystrybuować lub sprzedawać oprogramowania w całości lub częściowo.<!--j-->&nbsp;<!--j-->
+Niniejsza licencja jest licencją osobistą użytkownika i jest ona uwarunkowana ścisłym przestrzeganiem przez użytkownika wszystkich zasad i warunków w niej zawartych.</p>
+ <p>Rozwiązanie umowy<!--j-->:<!--j-->&nbsp;<!--j-->
+
+General Motors Corporation może rozwiązać niniejszą umowę licencyjną oprogramowania z powodu nieprzestrzegania przez użytkownika zasad i warunków w niej zawartych.<!--j-->&nbsp;<!--j-->
+
+W przypadku rozwiązania umowy użytkownik musi natychmiast zaprzestać używania oprogramowania i zniszczyć wszystkie kopie oprogramowania, a w szczególności kopie znajdujące się w komputerach użytkownika.</p>
+ <hr />
+ <h1><a name="product_description"></a>2.<!--j-->&nbsp;<!--j-->Opis produktu</h1>
+ <h2>Wymagania dotyczące komputera posiadanego przez dealera<!--j-->&nbsp;<!--j-->(<!--j-->Europa<!--j-->)</h2>
+ <p>Minimalne wymagania dla komputera do pracy z GDS w połączeniu z TIS2Web i GlobalTIS:</p>
+ <ul>
+ <li>Procesor:<br />
+Intel Pentium M, 1,5GHz</li>
+ <li>Pamięć operacyjna (RAM)<br />
+1GB dla GDS i klienta TIS2Web/GlobalTIS; 2 GB dla GDS i GlobalTIS w wersji autonomicznej</li>
+ <li>Minimalna wielkość twardego dysku:<br />
+40 GB</li>
+ <li>System operacyjny<!--j-->:<br />Windows XP Professional (SP2)</li>
+ <li>Inne komponenty oprogramowania:<br />
+Java Web Start 1.5x lub wyższa wersja<br />
+ </li>
+ </ul>
+ <p>
+W celu zasięgnięcia dalszych informacji proszę zapoznać się ze specyfikacją GME w zakresie sprzętu komputerowego i oprogramowania dostępną w lokalnym oddziale GME.</p>
+ <hr />
+ <h1><a name="installation"></a>3.<!--j-->&nbsp;<!--j-->Instalacja GDS</h1>
+ <h2>Przegląd części składowych GDS:</h2>
+ <p>Oprogramowanie GDS zawiera następujące moduły, które zostaną na początku zainstalowane a później będą często aktualizowane w określonych odstępach czasowych.<!--j-->&nbsp;<!--j-->[I]</p>
+ <ul>
+ <li><b>GDS Base System</b><br />
+Podstawowe oprogramowanie GDS zainstalowane na komputerze</li>
+ <li><!--j--><b><!--j-->Pakiety danych GDS<!--j--></b><!--j-->:<br />
+Pakiety danych diagnostycznych dla modeli pojazdów, które wykonują standardowe procedury diagnostyczne na układach sterowania pojazdu.</li>
+ <li><!--j--><b><!--j-->GDS Smart Start<!--j--></b><!--j-->:<!--j--><br />Agent aplikacji, który porównuje wersje GDS Base System, pakietów danych GDS oraz oprogramowania MDI Manager na serwerze pomiędzy TIS2Web/GlobalTIS a lokalną instalacją.<!--j-->&nbsp;<!--j-->W przypadku pojawienia się nowych aktualizacji pojawiają się komunikaty o możliwości ich pobrania.</li>
+ <li><!--j--><b><!--j-->Oprogramowanie MDI Manager (oddzielna aplikacja)<!--j--></b><!--j-->:<br />
+Aplikacja do aktualizacji i konfiguracji urządzenia MDI (równoległy interfejs diagnostyczny)</li>
+ </ul>
+ <p><img src="../../images/gds_i_plk.gif" alt="gds_i.gif" width="650px"/><br />
+[I]</p>
+ <hr />
+ <h2>Instalacja:</h2>
+ <p>Oprogramowanie GDS może być zainstalowane z oddzielnej płyty instalacyjnej DVD lub bezpośrednio po pobraniu z TIS2Web/GlobalTIS.</p>
+ <h3>Instalacja z płyty DVD GDS:</h3>
+ <ul>
+ <li>Komputer musi być uruchomiony w trybie Administratora</li>
+ <li>W menu startowym DVD należy uruchomić plik wykonywalny instalacji</li>
+ <li>Wybrać język dla agenta instalacji</li>
+ <li>Istniejące dane i konfiguracja GDS mogą być ponownie wykorzystane przy instalacji, w przypadku wykrycia poprzedniej instalacji GDS w komputerze.</li>
+ <li>Zatwierdzić umowę licencyjną (jest to wymagane, żeby przejść dalej)</li>
+ <li>Wybrać katalog instalacyjny dla GDS</li>
+ <li>Zaczyna się proces instalacji GDS</li>
+ <li>W przypadku gdy na komputerze nie zainstalowano oprogramowania MDI Manager lub jest zainstalowana starsza wersja MDI Manager, oprogramowanie to zostanie zainstalowane.<!--j-->&nbsp;<!--j-->Pierwsza instalacja oprogramowania MDI Manager wymaga podłączenia urządzenia MDI w trakcie instalacji.<!--j-->&nbsp;<!--j-->Więcej szczegółowych informacji znajduje się w instrukcji do MDI.</li>
+ <li>Po ukończeniu procesu instalacji oprogramowanie GDS może być uruchamiane przez ikonę na pulpicie lub przez menu Start/Programy/GDS.<!--j-->&nbsp;<!--j--><img src="../../images/gds_icon.png" alt="gds_icon.png" /></li>
+ <li>Jeżeli jest to koniecznie, należy skonfigurować zaporę systemową w celu umożliwienia komunikacji GDS z urządzeniem MDI.</li>
+ <li>Uruchamia się GDS Smart Start, wyświetlony proces aktualizacji zostanie przeprowadzony przed uruchomieniem GDS.</li>
+ </ul>
+ <hr />
+ <h3>Instalacja z TIS2Web/GlobalTIS<!--j-->:</h3>
+ <p><img src="../../images/gds_ii_plk.gif" alt="gds_ii.gif" width="600px"/><br />
+[II]</p>
+ <table width="80%" border="0">
+ <tr>
+ <td class="important"><b><!--j-->Ważne<!--j-->:<!--j--></b><!--j-->&nbsp;<!--j-->Podczas instalacji z TIS2Web pobieranych jest przez Internet około 140 MB danych.</td></tr></table>
+ <ul>
+ <li>Komputer musi pracować w trybie Administratora</li>
+ <li>Na stronie głównej TIS2Web/GlobalTIS należy uruchomić GDS<!--j-->&nbsp;<!--j-->[II]</li>
+ <li>Z serwera TIS2Web pobierany jest GDS Smart Start. Może to chwilę potrwać, w zależności od szybkości połączenia.</li>
+ <li>Wybrać katalog instalacyjny dla GDS.</li>
+ <li>Wprowadzić hasło do połączenia internetowego (tylko w przypadku wykorzystywania serwera pośredniczącego do łączenia się z Internetem)</li>
+ <li>Jeżeli jest to koniecznie, należy skonfigurować zaporę systemową w celu umożliwienia komunikacji GDS z urządzeniem MDI.</li>
+ <li>Instalacja GDS Smart Start może chwilę potrwać.</li>
+ <li>Uruchomić GDS Smart Start, rozpocznie się proces aktualizacji GDS.<!--j-->&nbsp;<!--j-->[III]</li>
+ <li>Po zakończeniu pobierania plików instalacyjnych wyświetlone zostaną wersje oprogramowania GDS oraz MDI Manager i mogą one zostać pobrane po zatwierdzeniu wyświetlonego okna dialogowego.<!--j-->&nbsp;<!--j-->Za pomocą przycisku  <b>Pokaż postęp pobierania</b> można wyświetlić pasek stanu postępu aktualizacji.</li>
+ <li>Zainstalowane zostanie oprogramowanie MDI Manager, w przypadku gdy na komputerze nie ma zainstalowanego programu MDI Manager, lub jeżeli jest zainstalowana starsza wersja MDI Manager.<!--j-->&nbsp;<!--j-->Pierwsza instalacja oprogramowania MDI Manager wymaga podłączenia urządzenia MDI w trakcie instalacji.<!--j-->&nbsp;<!--j-->Więcej szczegółowych informacji znajduje się w instrukcji do MDI.</li>
+ </ul>
+
+  <table width="200" border="0">
+ <tr>
+ <td><img src="../../images/gds_iii_plk.gif" alt="gds_III.gif" width="200px"/></td>
+ <td><img src="../../images/gds_iv_plk.gif" alt="gds_IV.gif" width="150px" /></td>
+ </tr>
+ <tr>
+ <td>[III]</td>
+ <td>[IV]</td>
+ </tr>
+ </table>
+ <hr />
+ <h3>Aktualizacja GDS przez Smart Start<!--j-->:</h3>
+Uruchom GDS używając TIS2Web/GlobalTIS lub jako aplikację samodzielną poprzez menu Start systemu Windows.<!--j-->&nbsp;<!--j-->Przed załadowaniem GDS, uruchomi się narzędzie Smart Start, które porówna poniższe wersje instalacji GDS na komputerze PC z zawartością serwera TIS2Web / GlobalTIS:</p>
+ <ul>
+ <li>GDS Smart Start</li>
+ <li>GDS Base System</li>
+ <li>MDI Manager</li>
+ </ul>
+ <p>Jeżeli na serwerze dostępne są nowe wersje, Smart Start wyświetli komunikat zachęcający użytkownika do aktualizacji oprogramowania.<!--j-->&nbsp;<!--j-->[IV]</p>
+ <!--<p>Proces aktualizacji GDS Base System, pakietów danych GDS i MDI Manager poprzez Smart Start zostanie przeprowadzony tylko w przypadku, gdy GDS został uruchomiony z TIS2Web/GlobalTIS, a nie w wersji autonomicznej.<!--j-->&nbsp;<!--j--><!--The update capability of standalone started GDS will be available in a future version.</p>
+--> <table width="80%" border="0">
+ <tr>
+ 	 <td class="important"><!--j--><b><!--j-->Ważne<!--j--><!--j-->:<!--j--></b><!--j-->&nbsp;<!--j-->Opisywane procesy aktualizacji zawsze wymagają pracy komputera w trybie Administratora.</td></tr></table>
+ <hr />
+ <h3>Przywrócenie instalacji GDS Base System</h3>
+ <p>Instalacja GDS może być przywrócona do poprzedniej wersji w przypadku, gdy aktualizacja GDS powoduje problemy w działaniu.</p>
+ <p>W celu uruchomienia funkcji przywracania należy przejść do menu START -&gt; PROGRAMY -&gt; GDS -&gt; PRZYWRACANIE GDS.<!--j-->&nbsp;<!--j-->Warunkiem zasadniczym dla funkcji przywracania jest posiadanie na komputerze zainstalowanej starszej wersji GDS.</p>
+ <h3>System kontroli licencji GDS (Leasing)</h3>
+ <p>System kontroli licencji GDS zapobiega nielegalnemu użyciu GDS.<!--j-->&nbsp;<!--j-->Aby odnowić leasing GDS, wymagane jest uruchomienie GDS z TIS2Web lub GlobalTIS.<!--j-->&nbsp;<!--j-->Leasing GDS wymaga odnowienia po 7 dniach, jeśli w tym okresie aplikację uruchamiano wyłącznie w trybie samodzielnym.<!--j-->&nbsp;<!--j--><br>Gdy wygaśnie leasing GDS, pojawi się komunikat błędu, który poleci użytkownikowi uruchomić aplikację GDS z TIS2Web/GlobalTIS w celu odnowienia leasingu.</p>
+ <hr />
+ <h3>Pobieranie i aktualizacja pakietów danych GDS</h3>
+ <p>Pakiety danych GDS są to aplikacje diagnostyczne, które kontrolują usługi komunikacyjne i diagnostyczne pomiędzy GDS a układami sterowania pojazdu.<!--j-->.<!--j-->&nbsp;<!--j-->Pakiety danych GDS są publikowane według modeli pojazdów i będą one stale aktualizowane w sieci TIS2Web/GlobalTIS.</p>
+ <p>Po uruchomieniu procesu aktualizacji GDS Smart Start automatycznie określa, czy na TIS2Web/GlobalTIS są dostępne nowe bądź zaktualizowane wersje pakietów danych.<!--j-->.<!--j-->&nbsp;<!--j-->Przed zainstalowaniem w GDS nowe pakiety danych muszą zostać pobrane do lokalnego katalogu na komputerze.<!--j-->&nbsp;<!--j-->Aktualizacje dla już zainstalowanych pakietów danych zostaną pobrane automatycznie i należy je tylko zainstalować w głównej bazie danych GDS.</p>
+ <br clear=all />
+ <hr />
+ <h3>Pierwsze pobranie i aktualizacja pakietów danych GDS</h3>
+ <ul><li>Uruchom GDS używając TIS2Web/GlobalTIS lub jako aplikację samodzielną poprzez menu Start systemu Windows.</li>
+ <li>Wybierz przycisk <b>Dodaj nowy pakiet diagnostyczny</b> na ekranie logowania GDS.</li>
+ <li>Naciśnij przycisk  <b>Aktualizuj listę pakietów danych z serwera</b>.<!--j-->&nbsp;<!--j-->[V-1]<!--j-->.<!--j-->&nbsp;<!--j-->Pakiety dostępne na serwerze, które jeszcze nie zostały pobrane, są oznaczone symbolem.<!--j-->&nbsp;<!--j-->
+ <img src="../../images/gds_server.png" alt="gds_server.png" width="36" height="34" /></li>
+ <li>Zaznacz i pobierz pakiety danych<!--j-->&nbsp;<!--j-->[V-2]<!--j-->.<!--j-->&nbsp;<!--j-->Funkcja filtrowania wspomaga wyszukiwanie określonych pakietów danych.<!--j-->&nbsp;<!--j-->Pobrane pakiety danych są oznaczone symbolem.<!--j-->&nbsp;<!--j--><img src="../../images/gds_pc.png" alt="gds_pc.png" /></li>
+ <li>Zainstaluj pobrane pakiety w głównej bazie danych GDS; zainstalowane pakiety są wyświetlane w prawym oknie aplikacji<!--j-->&nbsp;<!--j-->[V-3]<!--j-->.</li>
+ </ul>
+ <p><img src="../../images/gds_v_plk.gif" alt="gds_v.gif" width="650px"/><br />
+[V]</p>
+ <hr />
+ <h2>Aktualizacja w głównej bazie danych zainstalowanych pakietów danych GDS<!--j-->:</h2>
+ <ul>
+ 	 <li>Kliknij przycisk <b>Aktualizuj pakiet diagnostyczny</b> na ekranie logowania GDS<!--j-->&nbsp;<!--j-->[VI-1]<!--j-->.<!--j-->&nbsp;<!--j-->GDS porównuje wersje zainstalowanych pakietów danych GDS z pakietami dostępnymi na serwerze i pobiera zaktualizowane pakiety.</li>
+ 	 <li>Pobrane pakiety są wyświetlane do instalacji w dolnym lewym oknie.<!--j-->&nbsp;<!--j-->W celu rozpoczęcia instalacji wybierz przycisk  <b>Instaluj</b> lub  <b>Instaluj wszystko</b>.<!--j-->&nbsp;<!--j-->[VI-2]<!--j-->.</li>
+ </ul>
+ <p><img src="../../images/gds_vi_plk.gif" alt="gds_vi.gif" width="650px"/><br />
+[VI]<!--j-->:</p>
+ <hr />
+ <h2>
+Cofnięcie aktualizacji pakietów danych</h2>
+ <p>
+
+Proces cofnięcia przebiega ogólnie tak samo jak proces opisany w rozdziale Pierwsze pobranie i aktualizacja pakietów danych GDS</p>
+ <ul>
+ 	 <li>Wybierz przycisk <b>Dodaj nowy pakiet diagnostyczny</b> na ekranie logowania GDS.</li>
+ 	 <li>Naciśnij przycisk  <b>Aktualizuj listę pakietów danych z serwera</b>.<!--j-->&nbsp;<!--j-->[V-1]<!--j--></li>
+ <li>Zaznacz i pobierz żądane starsze wersje pakietów danych.<!--j-->&nbsp;<!--j-->Funkcja filtrowania wspomaga wyszukiwanie określonych pakietów danych.</li>
+ <li>Zainstaluj pobrane pakiety w głównej bazie danych GDS.</li>
+ </ul>
+ <hr />
+ <h2>Odinstalowanie GDS<!--j-->:</h2>
+ <p>GDS może zostać odinstalowany poprzez uruchomienie następującego programu:</p>
+ <p>
+START -&gt; PROGRAMY -&gt; GDS -&gt; ODINSTALOWANIE GDS</p>
+ <hr />
+ <h2>
+Zmień język GDS<!--j-->&nbsp;<!--j-->/<!--j-->&nbsp;<!--j-->Ustawienia regionalne<!--j-->:</h2>
+ <p>GDS wykorzystuje ustawienia języka systemu operacyjnego komputera.<!--j-->&nbsp;<!--j-->W GDS nie ma menu do zmiany ustawień języka.<!--j-->&nbsp;<!--j-->W celu zmiany języka GDS proszę wykonać następujące kroki.</p>
+ <ul>
+ <li>Otwórz PANEL STEROWANIA Windows i wykonaj następujące czynności:<!--j-->&nbsp;<!--j-->START (Start) -&gt; SETTINGS (Ustawienia) -&gt; CONTROL PANEL (Panel sterowania)</li>
+ <li>Otwórz menu OPCJE REGIONALNE I JĘZYKOWE</li>
+ <li>Wybierz żądany kraj w  <b>STANDARDY I FORMATY</b></li>
+ <li>Wybierz zakładkę ADVANCED (Zaawansowane).<!--j-->&nbsp;<!--j-->Wybierz żądany język na liście rozwijanej PROGRAMÓW NIE OBSŁUGUJĄCYCH KODU UNICODE</li>
+ <li>W celu zmiany jednostek wyświetlanych w GDS skonfiguruj OPCJE REGIONALNE.</li>
+ </ul>
+ <hr />
+ <h1><a name="getting_started"></a>4.<!--j-->&nbsp;<!--j-->Wprowadzenie</h1>
+ <p><b><!--j-->NOTATKA<!--j-->:<br />
+Przed użyciem GDS ważne jest, by przestrzegać następujących środków ostrożności:<!--j--></b></p>
+ <ul>
+ <li>Użycie przestarzałej wersji może uszkodzić moduły pojazdu.<!--j-->&nbsp;<!--j-->GDS i równoległy interfejs diagnostyczny MDI muszą mieć najnowsze oprogramowanie.</li>
+ <li>Upewnij się, że akumulator pojazdu jest w pełni naładowany.<!--j-->&nbsp;<!--j-->Napięcie akumulatora podczas korzystania z GDS powinno być w granicach od 12 do 14 woltów.</li>
+ <li>Jednakże, podczas korzystania z MDI do pojazdu nie może być podłączony prostownik do ładowania akumulatora.</li>
+ <li>Upewnij się, że połączenia kablowe są zabezpieczone.<!--j-->&nbsp;<!--j-->Odłączenie kabla MOŻE spowodować uszkodzenie układu sterowania pojazdu.</li>
+ <li>Używając laptopa lub innego urządzenia wyświetlającego dane (palmtopa, itp.) z GDS, należy się upewnić, czy do tego urządzenia w sposób właściwy podłączone zostało źródło zasilania.<!--j-->&nbsp;<!--j-->Jeżeli urządzenie zasilane jest z sieci i kabel zasilający zostanie odłączony może to przerwać programowanie i spowodować uszkodzenie modułu sterującego pojazdu.<!--j-->&nbsp;<!--j-->Jeżeli laptop pracuje na zasilaniu wewnętrznym (bateria), należy się upewnić, czy jest ona dostatecznie dobrze naładowana by ukończyć proces GDS.</li>
+ </ul>
+ <table width="80%" border="0">
+ <tr>
+ <td class="note"><b>NOTATKA</b><br />
+
+Jeżeli ma być programowana elektroniczna jednostka sterująca (ECU), przed rozpoczęciem tego procesu należy ją zamontować w pojeździe.<!--j-->&nbsp;<!--j-->Upewnij się, że akumulator pojazdu jest w pełni naładowany.</td></tr></table>
+ <table width="80%" border="0">
+ <tr>
+ <td class="important"><b>Ważne</b><br />
+W celu ograniczenia możliwości utraty sygnału urządzenie MDI powinno być skonfigurowane w najbardziej stabilnej opcji komunikacji dostępnej w danej lokalizacji.<!--j--><!--j-->Do wyboru jest USB, Ethernet lub Ethernet bezprzewodowy.</td></tr></table>
+ <hr />
+ <h2>Procedura uruchomienia GDS<!--j-->:</h2>
+ <p>GDS można uruchomić przez TIS2Web/GlobalTIS poprzez kliknięcie ikony GDS.<!--j-->&nbsp;<!--j-->Alternatywnie GDS może być uruchomiony w trybie autonomicznym przez menu Start systemu Windows.</p><ol><li>By rozpocząć, kliknij symbol GDS w głównym menu TIS2Web/GlobalTIS.<!--j-->.<!--j-->&nbsp;<!--j-->Jeżeli GDS uruchamiany jest w trybie autonomicznym, kliknij START -> PROGRAMY -> GDS</li><li>Uruchom GDS Smart Start, rozpocznie się wyświetlany proces aktualizacji.<!--j-->&nbsp;<!--j-->Jeżeli na serwerze dostępna jest nowa wersja GDS lub MDI Manager, pojawi się wtedy komunikat zachęty do jej pobrania i zainstalowania na komputerze.<!--j-->&nbsp;<!--j-->W celu rozpoczęcia pobierania lub instalacji kliknij  <b>Dalej,</b><!--j-->&nbsp;<!--j-->[IV]<!--j-->.<!--j-->&nbsp;<!--j-->Jeżeli GDS jest uruchomiony w trybie autonomicznym, niemożliwa jest żadna aktualizacja.</li>
+ 	 <li>Załadowana zostaje strona logowania GDS.</li></ol>
+ <hr />
+ <h1><a name="navigation"></a>5.<!--j-->&nbsp;<!--j-->Ogólna nawigacja</h1>
+ <h2>Menu rozwijane<!--j-->&nbsp;<!--j--><img src="../../images/gds_menu.png" alt="gds_menu.png" width="57" height="38" /></h2>
+ <p>W GDS dostępnych jest pięć menu rozwijanych.<!--j-->&nbsp;<!--j-->[VII]</p> <p>Uwaga<!--j-->:<!--j-->&nbsp;<!--j-->Te menu występują wyłącznie w wersji GDS na komputer osobisty.<!--j-->.<!--j-->&nbsp;<!--j-->Będzie również dostępna wersja z ekranem dotykowym, w której dostęp do menu będzie możliwy za pośrednictwem przycisku pojawiającego się na ekranie.</p> <ul>
+ <li>Menu  <b>Plik</b> posiada opcję  <b>Wyjdź</b> do zamykania GDS.</li>
+ <li>Menu  <b>Sesja</b> ma dwie opcje do wyboru:<!--j-->&nbsp;<!--j--><b>Zapisz bieżący dziennik sesji</b> i  <b>Dodaj komentarze do sesji...</b><br /><b>Dodaj komentarze do sesji...</b>: informacje mogą być wprowadzane za pomocą klawiatury komputera i zapisywane w Menedżerze dziennika sesji.</li>
+ <li>Lista  <b>Narzędzia</b> ma pięć opcji do wyboru:<!--j-->&nbsp;<!--j-->Uruchom śledzenie<!--j-->,<!--j-->&nbsp;<!--j-->Odtwarzanie migawki<!--j-->,<!--j-->&nbsp;<!--j-->Utwórz raport<!--j-->,<!--j-->&nbsp;<!--j-->Pokaż stan pobierania...<!--j-->,<!--j-->&nbsp;<!--j-->Administrowanie użytkownikami<br />Nowych użytkowników można utworzyć poprzez kliknięcie symbolu na stronie  <b>Administrowanie użytkownikami</b><!--j-->&nbsp;<!--j-->
+ <img src="../../images/gds_add-user.png" alt="gds_add-user.png" width="27" height="26" />
+ <!--j-->.</li>
+ <li><b>Okno</b>: W menu </b>Ustawienia</b> można wybrać konfigurację ekranu, np. tryb pełnoekranowy, tryb komputera lub ekranu dotykowego.</li>
+ <li>Lista  <b>Wybór pomocy</b> ma trzy opcje do wyboru:<br /><b>Treść pomocy</b> wyświetla wszystkie pliki pomocy dostępne w GDS.<!--j-->&nbsp;<!--j-->
+<b>O programie GDS</b> wyświetla wersję i nr kompilacji GDS.<!--j-->&nbsp;<!--j-->
+<b>Pokaż wersję MDI</b> wyświetla wersje oprogramowania i urządzenia MDI.<!--j-->&nbsp;<!--j-->
+Użytkownik może zostać poproszony o te informacje podczas kontaktowania się z Customer Support Center.</li></ul><p></p>
+ <p><img src="../../images/gds_vii_plk.gif" alt="gds_vii.gif" width="120px"/><br />
+[VII]</p>
+ <hr />
+ <h2>Pasek narzędziowy aplikacji diagnostycznej</h2>
+ <p>Istnieje kilka opcji paska narzędziowego, które stają się dostępne po dojściu do widoku nawigacji w systemie.<!--j-->&nbsp;<!--j-->[VIII]</p>
+ <ul>
+ <li>Opcja  <b>Zarejestruj migawkę</b> (czerwone kółko) jest dostępna dopiero po osiągnięciu widoku nawigacji w systemie i jest wykorzystywana do nagrania migawki pojazdu.<!--j-->&nbsp;<!--j-->Podczas nagrywania migawki ta opcja jest niedostępna.</li>
+ <li>Opcja  <b>Zatrzymaj nagrywanie migawki</b> (niebieski kwadrat) pojawia się podczas nagrywania migawki pojazdu.<!--j-->&nbsp;<!--j-->Tę opcję należy wybrać w celu zatrzymania nagrywania i zapisania pliku.</li>
+ <li>Symbol  <b>Zrzut ekranowy</b> jest wybierany w celu przechwycenia zawartości wyświetlanej na ekranie i zapisania jej na komputerze.</li>
+ <li><b>Pomniejszanie</b> zwiększa wielkość czcionki.<!--j-->&nbsp;<!--j-->Każde kliknięcie myszki powoduje zmniejszenie wyświetlanego obrazu.</li>
+ <li>Opcja  <b> Powiększanie</b> zwiększa wielkość czcionki.<!--j-->&nbsp;<!--j-->Każde kliknięcie myszki powoduje powiększenie wyświetlanego obrazu.</li>
+ <li>Przycisk  <b>Wyjdź</b> zamyka aktywną aplikację diagnostyczną.</li>
+ </ul>
+ <p><img src="../../images/gds_viii_plk.gif" alt="gds_viii.gif" width="400px"/><br />
+[VIII]</p>
+ <hr />
+ <h2>Przyciski ze strzałkami</h2>
+ <p>Przyciski ze strzałkami są umieszczone na dole listy parametrów.<!--j-->&nbsp;<!--j-->Przyciski ze strzałkami mogą być wykorzystane do nawigacji w następujący sposób:</p>
+ <p><img src="../../images/gds_ix_plk.gif" alt="gds_ix.gif" width="600px"/><br />
+[IX]<!--j-->:</p>
+ <ul>
+ <li>Strzałką  <b>Przejdź w górę</b> po każdym jej naciśnięciu można przesuwać się w górę o jeden folder na liście parametrów.</li>
+ <li>Strzałką  <b>Przejdź w dół</b> po każdym jej naciśnięciu można przesuwać się w dół o jeden folder na liście parametrów.</li>
+ <li>Strzałka  <b>Przejdź w prawo</b> może być użyta do otwarcia jednego poziomu w drzewie nawigacji.</li>
+ <li>Strzałka  <b>Przejdź w lewo</b> może być użyta do zamknięcia jednego poziomu w drzewie nawigacji.<!--j-->&nbsp;<!--j-->Ta opcja nie będzie wyświetlana na pierwszym ekranie procedury.</li></ul>
+ <hr />
+ <h2>Inne przyciski</h2>
+ <p>Na dole ekranów są również umieszczone trzy inne przyciski.<!--j-->&nbsp;<!--j-->Te przyciski mogą być użyte w następujących celach:</p>
+ <ul>
+ <li><b>Uruchom</b> umożliwia uruchomienie aplikacji.</li>
+ <li>Przycisk  <b>Cofnij działanie</b> może być wykorzystany do cofnięcia się do poprzedniego ekranu.<!--j-->&nbsp;<!--j-->Ten wybór będzie dostępny tylko w przypadku, gdy istnieje poprzedni ekran, do którego można się cofnąć.</li>
+ <li>Przycisk  <b>Następne działanie</b> może być wykorzystany do przejścia do następnego ekranu.<!--j-->&nbsp;<!--j-->Ta opcja będzie dostępna tylko wtedy, gdy na bieżącym ekranie dokonano wszystkich niezbędnych wyborów.</li>
+ </ul>
+ <br clear=all />
+ <hr />
+ <h2>Wprowadzanie informacji o pojeździe/MDI</h2>
+ <p>1.<!--j-->&nbsp;<!--j-->Z głównego menu GDS wybierz użytkownika do zalogowania.<!--j-->&nbsp;<!--j-->Jeżeli nie utworzono żadnego użytkownika, można utworzyć nowego użytkownika lub wybrać użytkownika domyślnego.<!--j-->&nbsp;<!--j-->(Patrz punkt dotyczący menu rozwijanych)<br />
+ </p>
+ <p>2.<!--j-->&nbsp;<!--j-->Po wybraniu sposobu dostępu do aplikacji wyświetlony zostanie ekran z menu identyfikacji.<!--j-->&nbsp;<!--j-->Na tym ekranie dostępnych jest kilka opcji do wyboru:</p>
+ <p><img src="../../images/gds_x_plk.gif" alt="gds_x.gif" width="650px"/><br />
+[X]</p>
+ <ul>
+ 	 <li>[X-1]<!--j-->&nbsp;<!--j--><b><b>Wybór MDI</b></b><!--j-->:<!--j-->&nbsp;<!--j-->Wyświetlone zostaną wszystkie MDI podłączone w różnych miejscach sieci w danym punkcie dealerskim. Możesz więc wybrać używany przez siebie MDI w celu przeprowadzenia diagnostyki pojazdu.<!--j-->&nbsp;<!--j-->Do nawiązania połączenia z MDI należy podświetlić dostępny MDI, klikając go i wybrać  <b>Połącz</b>.<!--j-->&nbsp;<!--j-->Wybierz  <b>Rozłącz</b> w celu odłączenia MDI.<!--j-->&nbsp;<!--j-->Podłącz nowy MDI do pojazdu i wybierz  <b>Połącz</b>.<!--j-->&nbsp;<!--j-->Wybierz  <b>Odśwież</b> w celu wyszukania nowego MDI w dostępnych sieciach.<!--j-->&nbsp;<!--j-->Aby kontynuować pracę w GDS bez podłączania żadnego MDI, zaznacz pole wyboru  <b>Nawiguj bez MDI</b>.</li>
+ <li>[X-2]<!--j-->&nbsp;<!--j--><b><b>Wprowadzanie nr VIN</b></b><!--j-->:<!--j-->&nbsp;<!--j-->Pole numeru identyfikacji pojazdu do ręcznego wprowadzenia numeru lub do automatycznego wprowadzenia nr VIN z układu sterowania pojazdu.<!--j-->&nbsp;<!--j-->(Wymagane jest połączenie z MDI).<!--j-->&nbsp;<!--j-->Dodatkowe komentarze związane z tym nr VIN/pojazdem można dodawać w polu tekstowym poniżej.</li>
+ <li>[X-3]<!--j-->&nbsp;<!--j-->Sekcja  <b>Identyfikacja pojazdu</b><!--j-->:<!--j-->&nbsp;<!--j-->Zanim przejdziesz dalej, wybierz markę, model i rok modelowy.</li>
+ <li>[X-4]<!--j-->&nbsp;<!--j--><b><b>Historia diagnostyczna pojazdu</b></b><!--j-->:<!--j-->&nbsp;<!--j-->Jeżeli pojazd był uprzednio poddany badaniu diagnostycznemu z użyciem tego systemu GDS, nr VIN oraz powiązane informacje będą zapisane w historii pojazdu.<!--j-->&nbsp;<!--j-->Wybierz z listy pojazd, który ma być poddany badaniu diagnostycznemu i przejdź bezpośrednio do  <b>Strona główna pojazdu</b>.<!--j-->&nbsp;<!--j-->Dostępna jest funkcja dowolnego filtrowania tekstu</li>
+ </ul>
+ <p>3.<!--j-->&nbsp;<!--j-->Wyświetlona zostanie  <b>Strona główna pojazdu</b>.<!--j-->&nbsp;<!--j-->From this screen various vehicle data is displayed including: entered vehicle information, previous vehicle diagnosis, session comments, session log reports, and stored data</p>
+ <hr />
+ <h2><b><b>Strona główna pojazdu</b></b></h2>
+ <p><b>Strona główna pojazdu</b> składa się z kilku obszarów:</p>
+ <p>[XI-1]<!--j-->:<!--j-->&nbsp;<!--j--><b>Informacje o pojeździe</b> podaje wszystkie informacje o pojeździe łącznie z marką, modelem, rokiem modelowym, itd.<br />Ta lista jest aktualizowana w miarę postępu badania diagnostycznego i będzie zapisywana wraz z każdą sesją.<!--j-->&nbsp;<!--j-->Opcja <b>Usuń wybór opcji pojazdu</b> jest wykorzystywana do usuwania poprzedniego wyboru zawartości wyposażenia pojazdu.<!--j-->&nbsp;<!--j-->Należy podświetlić wiersz do usunięcia na liście zawartości wyposażenia pojazdu i wybrać Usuń wybrane wyposażenie.</p>
+ <p>[XI-2]<!--j-->:<!--j-->&nbsp;<!--j-->Opcja  <b>Komentarze do sesji</b> jest wykorzystywana do dodawania dowolnych uwag użytkownika na temat sesji diagnostycznej.<!--j-->&nbsp;<!--j-->Kliknij  <b>Dodaj komentarz</b>, aby dodać dodatkowe informacje dotyczące sesji.<!--j-->&nbsp;<!--j-->Informacje można wprowadzać za pomocą klawiatury w obszarach Użytkownik, Dane lub Komentarz.<!--j-->&nbsp;<!--j-->W celu usunięcia poprzednich komentarzy należy podświetlić informacje w obszarach Użytkownik, Dane lub Komentarz i kliknąć  <b>Usuń wybrany komentarz</b>.</p>
+ <p>[XI-3]<!--j-->:<!--j-->&nbsp;<!--j-->Opcja  <b>Raporty dziennika sesji</b> może być użyta do wydrukowania informacji diagnostycznych o pojeździe.<!--j-->&nbsp;<!--j-->Opcja  <b>Pełny widok</b> dostarcza pełny raport o wszystkich badaniach diagnostycznych przeprowadzonych w danym pojeździe.<!--j-->&nbsp;<!--j-->Opcja  <b>Raport uproszczony</b> dostarcza podsumowanie badań diagnostycznych pojazdu.</p>
+ <p>[XI-4]<!--j-->:<!--j-->&nbsp;<!--j-->Opcja <b>Dane migawki</b> wyświetla listę wszystkich danych migawkowych przechowywanych dla pojazdu.<!--j-->&nbsp;<!--j-->Wyświetlana jest nazwa użytkownika, nazwa pliku migawkowego, data rejestracji migawki i komentarze.<!--j-->&nbsp;<!--j-->Odtworzenie migawki może zostać wyświetlone poprzez podświetlenie pozycji i wybranie opcji  <b>Przegląd</b>.<!--j-->&nbsp;<!--j-->Poszczególne pozycje mogą być usuwane poprzez podświetlenie danej pozycji i wybranie opcji  <b>Usuń</b>.<br />[XI-6]<!--j-->:<!--j-->&nbsp;<!--j--><b><a name="export_snap">Eksportuj</a></b> zachowuje migawkę w Twoim lokalnym komputerze PC.<!--j-->&nbsp;<!--j-->Możesz następnie przesłać dane tej migawki odpowiedniej osobie do dalszej analizy.</p>
+ <p>[XI-5]<!--j-->:<!--j-->&nbsp;<!--j-->Menu  <b>Wykonane aplikacje</b> zawiera historię sesji diagnostycznych.</p>
+
+  <p>Opcja  <b>Następne działanie</b> służy do kontynuowania diagnostyki wybranego pojazdu.</p>
+ <p><img src="../../images/gds_xi_plk.gif" alt="gds_xi.gif" width="650px"/><br />
+[XI]</p>
+ <hr />
+ <h2>Nawigacja w systemie - wybór aplikacji diagnostycznej</h2>
+ <p>Po wybraniu pozycji  <b>Następne działanie</b> z  <b>Strona główna pojazdu</b> zostanie wyświetlony widok Nawigacja w systemie<!--j-->&nbsp;<!--j-->[XII]<!--j-->.</p>
+ <p>Wybierz ścieżkę nawigacyjną, którą chcesz zbadać w pojeździe.<!--j-->&nbsp;<!--j-->Nawigację można prowadzić za pośrednictwem strzałek nawigacyjnych; strzałki w prawo/lewo otwierają/zamykają podfolder, przycisk Uruchom uruchamia wybraną aplikację.<!--j-->&nbsp;<!--j-->Nawigacja jest również możliwa za pomocą myszki przez klikanie symboli + drzewa nawigacyjnego lub za pośrednictwem klawiszy ze strzałkami na klawiaturze komputera.</p>
+ <p>
+Należy kontynuować wybieranie folderów dla żądanej ścieżki do momentu osiągnięcia aplikacji diagnostycznej posiadającej ikonę aplikacji.</p>
+ <p>
+
+Po uruchomieniu aplikacji diagnostycznej zniknie widok nawigacji w systemie i zostanie on zastąpiony przez aplikację diagnostyczną.<!--j-->&nbsp;<!--j-->
+Po zakończeniu aplikacji diagnostycznej należy wybrać  <b>Wyjdź</b> po prawej stronie górnej części widoku aplikacji.<!--j-->&nbsp;<!--j-->
+To spowoduje zamknięcie aplikacji diagnostycznej i powrót do widoku nawigacji w systemie.</p>
+ <p><img src="../../images/gds_xii_plk.gif" alt="gds_xii.gif" width="350px"/><br />
+[XII]</p>
+ <hr />
+ <h1><a name="diagnostics"></a>6.<!--j-->&nbsp;<!--j-->Diagnostyka</h1>
+ <h2>Wyświetlanie DTC</h2>
+ <p>Po wybraniu opcji  <b>Informacje o DTC pojazdu</b> zostanie wyświetlona lista elektronicznych jednostek sterujących (ECU) oraz liczba aktualnie zapisanych DTC, które zawiera  <b>Aplikacja diagnostyczna</b>.</p>
+ <p><img src="../../images/gds_xiii_plk.gif" alt="gds_xiii.gif" width="400px"/><br />
+[XIII]</p>
+ <p>
+Na pokazanym przykładzie zapisane zostały 4 DTC dla modułu zestawu wskaźników.<!--j-->&nbsp;<!--j-->Wybierz  <b>Dalej,</b> aby wyświetlić stronę główną DTC.<br />
+
+  <img src="../../images/gds_xiv_plk.gif" alt="gds_xiv.gif" width="650px"/><br />
+[XIV]</p>
+ <p>Dostępne DTC są wyświetlone w tabeli.<!--j-->&nbsp;<!--j-->
+Zawartość wyświetlanej tabeli można konfigurować.<!--j-->&nbsp;<!--j-->W celu dodania lub usunięcia kolumn z tabeli należy kliknąć  <b>Wybór kolumny</b><!--j-->&nbsp;<!--j-->[XIV-1]<!--j-->.<!--j-->&nbsp;<!--j-->
+Można wyświetlić następujące informacje o DTC:</p>
+ <table border=1 cellspacing=0 cellpadding=0>
+ <tr>
+ <td width=158 valign=top><p><b>Wybór</b></p></td>
+ <td width=427 valign=top><p><b>Opis</b></p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>Stan</p></td>
+ <td width=427 valign=top><p><img src="../../images/gds_status-unknown.png" alt="gds_status-unknown.png" width="16" height="16" /><!--j-->&nbsp;<!--j-->Nowy DTC zapisany podczas cyklu odczytu.<!--j-->&nbsp;<!--j-->Tekst opisu DTC jest wyświetlony tłustym drukiem.</p>
+ <p><img src="../../images/gds_mail-generic.png" alt="gds_mail-generic.png" /><!--j-->&nbsp;<!--j-->Obecny DTC, bez zmian od ostatniego cyklu odczytu.</p>
+ <p><img src="../../images/gds_forward.png" alt="gds_forward.png" /><!--j-->&nbsp;<!--j-->
+Bieżący DTC ze statusem zmiany od ostatniego cyklu odczytu.<!--j-->&nbsp;<!--j-->
+Tekst opisu DTC jest wyświetlony kursywą.</p>
+ <p><img src="../../images/gds_mail-delete.png" alt="gds_mail-delete.png" /><!--j-->&nbsp;<!--j-->
+DTC usunięte w bieżącym cyklu odczytu.<!--j-->&nbsp;<!--j-->
+Tekst opisu DTC jest wyświetlony na czerwonym tle.</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>ECU</p></td>
+ <td width=427 valign=top><p>Nazwa jednostki sterującej</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>System funkcjonalny</p></td>
+ <td width=427 valign=top><p>Nazwa systemu funkcjonalnego (zespół ECU)</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>DTC</p></td>
+ <td width=427 valign=top><p>Kod DTC</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>Bajt symptomu</p></td>
+ <td width=427 valign=top><p>Kod bajtu symptomu związany z DTC</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>Opis</p></td>
+ <td width=427 valign=top><p>Opis tekstowy DTC</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>Symptom</p></td>
+ <td width=427 valign=top><p>Opis zdekodowanego symptomu</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>Bajt stanu</p></td>
+ <td width=427 valign=top><p>Do wykorzystania w przyszłości</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>Status po zdekodowaniu</p></td>
+ <td width=427 valign=top><p>Bieżący stan DTC</p></td>
+ </tr>
+ </table>
+ <p>
+Za pomocą polecenia  <b>Opcje filtrowania</b> określone ECU mogą być ustawione jako filtr, co spowoduje wyświetlanie tylko DTC pochodzących z ECU umieszczonych na liście<!--j-->&nbsp;<!--j-->[XIV-2]<!--j-->.<!--j-->&nbsp;<!--j-->
+Ta funkcja może być użyta w przypadku, gdy DTC odczytywane są z całego pojazdu lub według systemów funkcjonalnych.<br />
+
+W dolnym polu można wpisywać dowolny tekst w celu filtrowania wyświetlanych DTC, np. określony kod usterki lub słowo kluczowe.<br />
+Szczegółowy status DTC można wyświetlić po uaktywnieniu pola wyboru  <b>Pokaż status DTC</b>.<!--j-->&nbsp;<!--j-->[XIV-3]<!--j-->.</p>
+ <hr />
+ <h3>Skasuj DTC</h3>
+ <p><!--j-->[XIV-4]<!--j-->&nbsp;<!--j-->
+Po wybraniu opcji  <b>Usuń kody DTC</b> wyświetli się ekran informacji o DTC pojazdu.<!--j-->&nbsp;<!--j-->[XV]<br />
+Do wybrania jednostki ECU, która ma zostać wyczyszczona należy użyć strzałek  <b>Dodaj</b> lub  <b>Dodaj wszystko</b>.<!--j-->&nbsp;<!--j-->
+Niektóre jednostki ECU mogą być czyszczone z kodów tylko razem i w takiej sytuacji zostaną one wybrane razem.<!--j-->&nbsp;<!--j-->
+Wybrane ECU będą wyświetlone po prawej stronie ekranu.<!--j-->&nbsp;<!--j-->W celu oczyszczenia wybranych ECU wybierz  <b>OK</b>.<!--j-->&nbsp;<!--j-->
+Jeżeli w chwili obecnej nie chcesz czyścić jednostek ECU, wybierz  <b>Uniewaźznienie</b>.<!--j-->&nbsp;<!--j-->
+Jeżeli wybrano  <b>OK</b>, wyświetlone zostanie wyskakujące okno postępu.<!--j-->&nbsp;<!--j-->
+Usunięte kody będą wyświetlane w kolorze czerwonym i znikną przy następnym odświeżeniu.</p>
+ <p><img src="../../images/gds_xv_plk.gif" alt="gds_xv.gif" width="500px"/><br />
+[XV]</p>
+ <hr />
+ <h3>Odśwież DTC</h3>
+ <p>Jeżeli zostanie wybrany przycisk  <b>Odśwież kody DTC</b>, GDS zażąda aktualizacji DTC z układu sterowania<!--j-->&nbsp;<!--j-->[XIV-5]<!--j-->.</p>
+ <hr />
+ <h3>Wyjdź z aplikacji DTC</h3>
+ <p>
+Wyjdź z aplikacji DTC za pomocą przycisku  <b>Wyjdź</b><!--j-->&nbsp;<!--j-->[XIV-6]<!--j-->.</p>
+ <table width="80%" border="0">
+ <tr>
+ <td class="important"><b><!--j-->Ważne<!--j-->:<!--j--></b><!--j-->&nbsp;<!--j-->
+Tylko wybór opcji  <b>Wyjdź</b> umożliwia wyjście z diagnostycznego <b>Aplikacja diagnostyczna</b>.<!--j-->&nbsp;<!--j-->
+Nie można wyjść z GDS w czasie, gdy uruchomione są aplikacje diagnostyczne.<!--j-->&nbsp;<!--j-->
+W celu wyjścia z GDS należy powrócić na stronę logowania GDS.</td></tr></table>
+ <hr />
+ <h3>Informacje identyfikacyjne</h3>
+ <p>
+Aplikacja  <b>Wyświetlanie danych</b> może być wykorzystana do przeglądania danych układu sterowania pojazdu.<!--j-->&nbsp;<!--j-->
+Wyświetlanie danych identyfikacyjnych układu sterowania dostarcza informacji o oprogramowaniu układu sterowania oraz wariantach sprzętowych. Informacje te mogą być wymagane w kontaktach z Technical Assistance Center.</p>
+ <hr />
+ <h2>
+Wyświetlanie danych</h2>
+ <p>
+Aplikacja wyświetlania danych podaje w czasie rzeczywistym stan danych i sygnałów z układu sterowania pojazdu.</p>
+ <p>
+Domyślny widok wybranych danych z układu sterowania jest wyświetlany w tabeli  <b>Wszystkie parametry</b><!--j-->&nbsp;<!--j-->[XVI-1]<!--j-->.<!--j-->&nbsp;<!--j-->
+Poszczególne kolumny mogą być oddzielnie konfigurowane za pomocą przycisku  <b>Wybór kolumny</b><!--j-->&nbsp;<!--j-->[XVI-3]<!--j-->.</p>
+ <p>Indywidualne parametry można przeglądać na liście obserwowanych poprzez wybranie opcji  <b>Dodaj do listy obserwowanych</b><!--j-->&nbsp;<!--j-->[XVI-2]<!--j-->.</p>
+
+  <p><img src="../../images/gds_xvi_plk.gif" alt="gds_xvi.gif" width="650px"/><br />
+[XVI]</p>
+
+  <p>
+Parametry wybrane na liście obserwowanych można przeglądać w widoku  <b>Wykres liniowy</b><!--j-->&nbsp;<!--j-->[XVII-1]<!--j-->.<!--j-->&nbsp;<!--j-->
+
+
+Wybierz parametr do wyświetlenia na liście rozwijanej i kliknij przycisk Dodaj, by uruchomić widok  <b>Wykres liniowy</b><!--j-->&nbsp;<!--j-->[XVII-2]<!--j-->.<!--j-->&nbsp;<!--j-->
+Istnieje możliwość równoległego wyświetlania parametrów na wykresie liniowym.</p>
+ <p>
+Przyciski na dolnym pasku narzędziowym umożliwiają konfigurację widoku wykresu liniowego.<!--j-->&nbsp;<!--j-->[XVII-3]</p>
+ <ol>
+ <li><b>Wstrzymaj przewijanie/Wznów przewijanie</b>: Daje możliwość przełączania pomiędzy widokiem statycznym a dynamiczną korekcją ekranu wykresu liniowego.</li>
+ <li><b>Punkty danych</b>: Daje możliwość przełączania wyświetlania wykresu z trybu punktowego na tryb liniowy</li>
+ <li><b>Dodaj znacznik</b>: Podświetla określone pozycje/zdarzenia wykresu liniowego.</li>
+ <li>Funkcja  <b>Powiększanie</b> /  <b>Pomniejszanie</b></li>
+ </ol>
+ <p>
+
+  <img src="../../images/gds_xvii_plk.gif" alt="gds_xvii.gif" width="650px"/><br />
+[XVII]</p>
+ <p>
+Indywidualne parametry listy  <b>Wszystkie parametry</b> mogą być wyświetlane graficznie<!--j-->&nbsp;<!--j-->[XVI-1]<!--j-->.<!--j-->&nbsp;<!--j-->
+Wybierz osobny parametr i wybierz żądany tryb wyświetlania w polu wyboru.<!--j-->&nbsp;<!--j-->[XVIII-1]<!--j-->.<!--j-->&nbsp;<!--j-->Parametr może być oglądany w następujących trybach:</p>
+ <ul type=square>
+ 	 <li>Wykres zegarowy<!--j-->&nbsp;<!--j-->[XVIII-2]<!--j-->.</li>
+ 	 <li>Wykres słupkowy<!--j-->&nbsp;<!--j-->[XVIII-3]<!--j-->.</li>
+ 	 <li>Wysoka widoczność<!--j-->&nbsp;<!--j-->[XVIII-4]<!--j-->.</li>
+ </ul>
+ <p>Jednocześnie można wyświetlać do 4 parametrów lub trybów wyświetlania.</p>
+
+
+   <p><img src="../../images/gds_xviii_plk.gif" alt="gds_xviii.gif" width="650px"/><br />
+[XVIII]</p>
+ <hr />
+ <h3>Odtwarzanie migawki</h3>
+ <p>Funkcja  <b>Odtwarzanie migawki</b> umożliwia przegląd uprzednio zarejestrowanych danych migawkowych pojazdu.<!--j-->&nbsp;<!--j-->Te informacje mogą być wykorzystane do analizy problemów występujących w pojeździe i do wykrycia warunków wyzwalających błędne funkcjonowanie.<!--j-->&nbsp;<!--j-->Funkcja wykresu może być wykorzystana do porównania parametrów w celu sprawdzenia, czy dany komponent prawidłowo funkcjonuje.<!--j-->&nbsp;<!--j-->Zarejestrowane migawki mogą być wybrane do przeglądania przy użyciu następujących trzech metod:</p>
+ <ul>
+ <li>Wybranie pliku migawki z okna  <b>Strona główna pojazdu</b> i kliknięcie opcji Przegląd.</li>
+ <li>Podwójne kliknięcie wybranej migawki w oknie  <b>Strona główna pojazdu</b>.</li>
+ <li>Wybranie opcji  <b>Narzędzia</b> z  <b>Menu</b> i wybranie polecenia  <b>Odtwarzanie migawki</b>.<!--j-->&nbsp;<!--j-->Następnie należy otworzyć  <b>Menedżer migawek</b>.<!--j-->&nbsp;<!--j-->Kliknij dwukrotnie plik migawki, który chcesz przejrzeć lub kliknij opcję Ładuj migawkę i wybierz plik migawki.</li>
+ </ul>
+ <p>Bez względu na zastosowaną metodę z wyświetlone zostanie wyskakujące okno Plik załadowany z ekranu  <b>Odtwarzanie migawki</b>.<!--j-->&nbsp;<!--j-->W wyskakującym oknie wybierz OK.</p>
+ <hr />
+ <h3>Funkcje odtwarzania migawki<!--j-->&nbsp;<!--j-->[XIX-1]</h3>
+ <p>Istnieje kilka funkcji odtwarzania migawki, które są wykorzystywane do odtwarzania zarejestrowanych migawek.</p>
+
+
+   <table width="84%" height="80" border="1">
+ <tr>
+ <td width="7%"><img src="../../images/gds_play.png" alt="gds_play.png" width="25" height="23" /></td>
+ <td width="93%">
+Funkcja Odtwórz jest wykorzystywana do odtwarzania migawki do przodu, co następuje po kliknięciu tej opcji.<!--j-->
+
+&nbsp;<!--j-->
+
+W przypadku użycia tej funkcji na ekranie przesuwać się będzie znacznik.<!--j-->
+
+&nbsp;<!--j-->
+Wszystkie opcje dostępne w tym obszarze zmieniają swój kolor na szary, gdy są aktywne.</td>
+ </tr>
+ <tr>
+ <td><img src="../../images/gds_pause.png" alt="gds_pause.png" width="24" height="21" /></td>
+ <td>Funkcja Wstrzymaj jest wykorzystywana do wstrzymania odtwarzania migawki.<!--j-->&nbsp;<!--j-->Po powtórnym kliknięciu tego elementu migawka będzie odtwarzana od momentu, w którym jej odtwarzanie zostało wstrzymane.</td>
+ </tr>
+ <tr>
+ <td><img src="../../images/gds_stop.png" alt="gds_stop.png" width="24" height="19" /></td>
+ <td>Funkcja Zatrzymaj jest wykorzystywana do zatrzymania odtwarzania migawki.<!--j-->&nbsp;<!--j-->Odtwarzanie migawki rozpocznie się od początku, jeżeli wybrana zostanie opcja Odtwórz po użyciu funkcji Zatrzymaj.</td>
+ </tr>
+ </table>
+ <hr />
+ <h3>Sterowanie czasowe<!--j-->&nbsp;<!--j-->[XIX-2]</h3>
+ <p>Opcja  <b>Sterowanie czasowe</b> jest wykorzystywana do sterowania odtwarzaniem migawki.<!--j-->&nbsp;<!--j-->Ta funkcja umożliwia wybór określonego przedziału czasowego, wyświetlanie różnych widoków i kontrolę prędkości odtwarzania.<!--j-->&nbsp;<!--j-->Bezpośrednio pod elementem  <b>Sterowanie czasowe</b> można wybrać następujące funkcje:</p>
+ <table width="84%" border="1">
+ <tr>
+ <td><img src="../../images/gds_bookmark.png" alt="gds_bookmark.png" width="17" height="24" /></td>
+ <td>Opcja Zakładki umożliwia dodanie specjalnego komentarza w bieżącym widoku i powrót do tego punktu w przyszłości.<!--j-->&nbsp;<!--j-->Po wybraniu tej opcji pojawia się wyskakujące okno.<!--j-->&nbsp;<!--j-->Należy wprowadzić nazwę zakładki i wybrać OK.</td>
+ </tr>
+ <tr>
+ <td><img src="../../images/gds_notepad.png" alt="gds_notepad.png" width="26" height="22" /></td>
+ <td>W celu dodania komentarzy do pliku odtwarzania migawki w bieżącym punkcie czasowym można wybrać Notatnik.<!--j-->&nbsp;<!--j-->Po wybraniu tej opcji pojawia się wyskakujące okno.<!--j-->&nbsp;<!--j-->Wprowadź komentarz do pliku migawki i wybierz OK.</td>
+ </tr>
+ <tr>
+ <td><img src="../../images/gds_load.png" alt="gds_load.png" width="23" height="23" /></td>
+ <td>Polecenie Załaduj migawkę (niebieski folder) otwiera plik migawki i przygotowuje go do dalszej analizy.<!--j-->&nbsp;<!--j-->Jeśli chcesz przejrzeć <a href="#export_snap">eksportowaną migawkę</a>, rozpakuj najpierw odnośne archiwum *.zip.<!--j-->&nbsp;<!--j--><!--j-->&nbsp;<!--j-->Ta funkcja jest również dostępna po kliknięciu dostępnego pliku migawki w oknie  <b>Menedżer migawek</b>.</td>
+ </tr>
+ <tr>
+ <td><img src="../../images/gds_time-options.png" alt="gds_time-options.png" width="19" height="23" /></td>
+ <td>Strzałka w dół wyświetla wszystkie opcje dla polecenia  <b>Sterowanie czasowe</b>.<!--j-->&nbsp;<!--j-->Opcje indywidualne mogą również zostać wybrane po kliknięciu żądanego elementu.</td>
+ </tr>
+ <tr>
+ <td><img src="../../images/gds_speed.png" alt="gds_speed.png" width="57" height="27" /></td>
+ <td>
+Prędkość wyświetlania migawki może być kontrolowana poprzez wybór tej opcji.<!--j-->
+
+&nbsp;<!--j-->
+
+Można wybrać zwolnione tempo odtwarzania wynoszące 1/8 x, 1/4 x i 1/2 x.<!--j-->
+
+&nbsp;<!--j-->
+
+Można również wybrać prędkość odtwarzania w czasie rzeczywistym równą 1.<!--j-->
+
+&nbsp;<!--j-->
+Przy użyciu tej funkcji można również wybrać przyspieszone tempo odtwarzania wynoszące 2 x, 4 x i 8 x.</td>
+ </tr>
+ </table>
+
+
+   <hr />
+ <h3>Opcje widoku<!--j-->&nbsp;<!--j-->[XIX-3]</h3>
+ <p>Każda opcja widoku zapewnia inny sposób wyświetlania danych pojazdu do analizy.<!--j-->&nbsp;<!--j-->Pod pozycją  <b>Dostępne widoki</b> można wybrać następujące funkcje:</p>
+ <ul>
+ <li>Widok listy parametrów - wyświetla informacje napływające z pliku migawki.<!--j-->&nbsp;<!--j-->Bieżąca wartość parametrów jest wyświetlana na ekranie.</li>
+ </ul>
+ <table width="80%" border="0">
+ <tr>
+ 	<td class="important"><b>Ważne</b><br />Nazwa parametru będzie pokazana w języku pierwotnie użytym do przechwycenia parametru, jeżeli dla nazwy tej nie jest dostępne tłumaczenie.</td></tr></table>
+ <ul>
+ <li>Widok dziennika - zawiera wszystkie informacje z pliku migawki.<!--j-->&nbsp;<!--j-->Wszystkie wartości parametrów są podawane w kolejności ich rejestrowania.<!--j-->&nbsp;<!--j-->Poszczególne parametry mogą być dodawane lub usuwane z listy obserwowanych parametrów poprzez kliknięcie właściwego elementu.</li>
+ <li>Widok stanu - pokazuje wartości wszystkich parametrów w określonym przedziale czasowym.<!--j-->&nbsp;<!--j-->Te wartości mogą być wykorzystane do porównania z widokiem sygnałów wyzwalających.</li>
+ <li>Widok sygnałów wyzwalających - pokazuje wszystkie systemowe i zdefiniowane przez użytkownika sygnały wyzwalające.<!--j-->&nbsp;<!--j-->Tę funkcję można wykorzystać, gdy występuje kombinacja czynników powiązanych z problemem diagnostycznym.<!--j-->&nbsp;<!--j-->
+Po spełnieniu warunków sygnału wyzwalającego na ekranie wyświetlony zostanie trójkąt ostrzegawczy.<ul><li>Załaduj sygnały wyzwalające<!--j-->&nbsp;<!--j-->-<!--j-->&nbsp;<!--j-->Umożliwia załadowanie pliku zawierającego definicje sygnałów wyzwalających.</li>
+ 	 <li>Zapisz sygnały wyzwalające<!--j-->&nbsp;<!--j-->-<!--j-->&nbsp;<!--j-->Umożliwia zapisanie sygnałów wyzwalających na twardym dysku komputera.</li>
+ <li>Usuń sygnał wyzwalający<!--j-->&nbsp;<!--j-->-<!--j-->&nbsp;<!--j-->Umożliwia usunięcie bieżącego sygnału wyzwalającego. Zostanie on usunięty.</li>
+ <li>Edytuj sygnał wyzwalający<!--j-->&nbsp;<!--j-->-<!--j-->&nbsp;<!--j-->Wyświetla wyskakujące okno, w którym można zmodyfikować wartości graniczne i parametry zawarte w sygnale wyzwalającym.</li>
+ <li>Dodaj sygnał wyzwalający<!--j-->&nbsp;<!--j-->-<!--j-->&nbsp;<!--j-->Wyświetla wyskakujące okno w celu konfiguracji sygnału wyzwalającego.</li></ul></li>
+ <li>Widok DTC<!--j-->&nbsp;<!--j-->-<!--j-->&nbsp;<!--j-->Po wybraniu funkcji Odtwórz i tej funkcji otwiera się lista zarejestrowanych DTC.</li>
+ <li>Widok wykresu liniowego - wyświetla dane, które mogą być przedstawione w formie wizualnej na osi czasowej.<!--j-->&nbsp;<!--j-->Z tego widoku można wybrać poszczególne parametry do odwzorowania graficznego, zaznaczając pole wyboru pod pozycją Wybrano.<!--j-->&nbsp;<!--j-->Na dole wykresu umieszczone są cztery funkcje:  <b>Powiększanie</b> (powiększ rozmiary),  <b>Pomniejszanie</b> (zmniejsz rozmiary)  <b>Zakładki</b> i  <b>Wstrzymaj przewijanie</b>.<!--j-->&nbsp;<!--j-->Kliknięcie każdej z tych funkcji umożliwia dostęp do niej.</li>
+ </ul>
+ <p><img src="../../images/gds_xix_plk.gif" alt="gds_xix.gif" width="650px"/><br />
+[XIX]</p>
+ <hr />
+ <h2>Funkcje sterowania:</h2>
+ <p>Przy pomocy funkcji sterowania GDS można sterować poszczególnymi funkcjami pojazdu z poziomu systemu GDS.<!--j-->&nbsp;<!--j-->W celu uruchomienia aplikacji funkcji sterowania należy wybrać funkcje sterowania określonego układu sterowania pojazdu w Nawigacji w systemie.</p>
+ <p>Funkcje sterowania są zintegrowane z opcją wyświetlania listy danych.<!--j-->&nbsp;<!--j-->Podczas wykonywania funkcji sterowania wyświetlany parametr może być monitorowany lub rejestrowany przy użyciu funkcji migawki GDS.</p>
+ <p>GDS obsługuje dwa rodzaje funkcji sterowania:</p>
+ <p>1.<!--j-->&nbsp;<!--j-->Cyfrową funkcję sterowania z możliwością włączania/wyłączania<!--j-->&nbsp;<!--j-->[XX-1]</p>
+ <p><img src="../../images/gds_xx_plk.gif" alt="gds_xx.gif" width="650px"/><br />
+[XX]</p>
+ <p>2.<!--j-->&nbsp;<!--j-->Analogową funkcję sterowania z możliwością sterowania tą funkcją.<!--j-->&nbsp;<!--j-->Funkcja aktywacji może być sterowana przez przyciski sterujące lub poprzez przesuwanie wskaźnika na skali umieszczonej z boku.<!--j-->&nbsp;<!--j-->[XXI-1]<!--j-->&nbsp;<!--j-->lub<!--j-->&nbsp;<!--j-->[XXI-2]<!--j-->.</p>
+ <p><img src="../../images/gds_xxi_plk.gif" alt="gds_xxi.gif" width="650px"/><br />[XXI]</p>
+ <hr />
+ <h2>Funkcje konfiguracji i resetowania:</h2>
+ <p>Funkcje konfiguracji i resetowania są to funkcje charakterystyczne dla danego układu sterującego, które muszą być wykonywane po wymianie elementów uruchamiających układu lub jeżeli wymagają one zresetowania.<!--j-->&nbsp;<!--j-->Bardziej szczegółowe informacje zawarte są w instrukcjach serwisowych właściwych dla danego układu.</p>
+ <hr />
+ <h1><a name="troubleshooting"></a>7.<!--j-->&nbsp;<!--j-->WYKRYWANIE I USUWANIE USTEREK</h1>
+
+  <h2>Problemy z połączeniem MDI</h2>
+ <p>Jeżeli połączenia MDI są poluzowane lub niewłaściwie podłączone do komputera lub pojazdu, zostanie wyświetlone wyskakujące okno.<!--j-->&nbsp;<!--j-->Należy podjąć następujące kroki:</p><ul>
+ <li>Upewnij się, że oprogramowanie MDI Manager nie jest uruchomione jednocześnie z pracującym oprogramowaniem GDS.</li>
+ <li>Upewnij się, że urządzenie MDI jest odpowiednio podłączone do pojazdu i do komputera.</li>
+ <li>Użyj sprawdzonego &quot;dobrego kabla USB&quot; z innego urządzenia MDI, jeżeli istnieje taka możliwość.<!--j-->&nbsp;<!--j-->Wykonaj wszystkie podłączenia i spróbuj ponownie.</li>
+ <li>Użyj sprawdzonego &quot; dobrego kabla połączeniowego DLC do MDI &quot; z innego urządzenia MDI, jeżeli istnieje taka możliwość.<!--j-->&nbsp;<!--j-->Wykonaj wszystkie podłączenia i spróbuj ponownie.</li>
+ <li>Jeżeli problem nadal występuje, skontaktuj się z Customer Support</li>
+ <li>Upewnij się, że zapora systemowa komputera nie blokuje komunikacji pomiędzy GDS a MDI.</li>
+ </ul>
+ <hr />
+ <h2>Konflikt oprogramowania GDS/MDI Manager</h2>
+ <p>Oprogramowanie GDS i oprogramowanie MDI Manager nie mogą być jednocześnie uruchomione.<!--j-->&nbsp;<!--j-->Jeżeli obydwa programy są jednocześnie uruchomione, może wystąpić konflikt oprogramowania.<!--j-->&nbsp;<!--j-->Wybranie pozycji Szczegóły dostarczy ewentualnych informacji dotyczących danego błędu.<!--j-->&nbsp;<!--j-->Jeżeli problem będzie się powtarzał, możesz zostać poproszony przez Customer Support o te informacje.</p>
+ <p>Jeżeli konflikt będzie nadal występować może pojawić się wyskakujące okno z komunikatem &quot;Wystąpił błąd krytyczny&quot; w oprogramowaniu MDI Manager.<!--j-->&nbsp;<!--j-->Zamknij program MDI Manager i wróć do programu GDS.<!--j-->&nbsp;<!--j-->Jeżeli problem nadal występuje po przejściu do GDS, skontaktuj się z Customer Support.</p>
+ <p>&nbsp;</p>
+ <p align="right"><font size="2">&copy; GM Europe, SPO Engineering, International Operations - 08 May 2009 (V3.0)</font></p>
+ </div>
+
+  </body>
+ </html>

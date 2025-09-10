@@ -1,0 +1,86 @@
+<HTML>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><TITLE>Información de servicio</TITLE><STYLE>
+	.ListIndentBul2Refer{margin-left : 40pt}  ..ListIndentBul2{margin-left : -20pt}
+	.SubListIndent{margin-left : -15pt}
+	.UpNo{border-top : white}  .DownNo{border-bottom : white}  ..BothNo{border-top : white; border-bottom : white}
+	.UpBold{border-top : thin double ridge}  .DownBold{border-bottom : thin double ridge}  .BothBold{border-top : thin double ridge; border-bottom : thin double ridge}
+	.ImageIndent{margin-left : 0%}  .ImageTitleIndent{margin-left : 5%}  .ParagraphIndent{margin-left : 20pt}
+	.Arial{font-family : Arial, Helvetica, sans-serif; margin-left : 10pt; margin-right : 10pt}
+</STYLE>
+<SCRIPT LANGUAGE="JavaScript">
+	function FixMenu()
+	{
+		menuTop = document.body.scrollTop + document.body.clientHeight -40;
+		menu.style.top = menuTop;
+		menu.style.width = document.body.clientWidth; 
+	}
+</SCRIPT>
+</HEAD>
+<BODY class="Arial" onLoad="FixMenu()" onScroll="FixMenu()" onResize="FixMenu()" BGCOLOR="#FFFFFF">
+<SPAN ID="menu" STYLE="position:absolute; left:0px; top:0px; width:0px">
+	<A border="0" href="92176407.es.html">
+	<IMG src="../../../../graphic-pool/Icons/Totop.gif" align="right" halign="Bottom" border="0" alt="Al principio del documento"></A>
+</SPAN>
+<TABLE CELLSPACING="0"  width="100%" BORDER="1" rules="none" cellspacing="0" cellpadding="0" style="magin-top: 5pt">
+<TBODY>
+<TR BGCOLOR="cccc99" height="15">
+<TD width="30%"><div style="padding-left: 5pt"><B><FONT face="Arial">Cruze</FONT></B></div></TD>
+<TD width="70%" align="right" colspan="8"></TD>
+</TR>
+<TR BGCOLOR="white" height="60">
+<TD width="35%" align="left">
+<TABLE CELLSPACING="0" >
+<TR>
+<TD width="5%" align="left">&nbsp;</TD>
+<TD width="5%" align="left"></TD>
+<TD width="5%" align="left">&nbsp;</TD>
+</TR>
+</TABLE>
+</TD>
+<TD>
+<TABLE CELLSPACING="0"  width="65%" align="right">
+<TR>
+<TD style="font-size:10">
+	<A href="../../../GMDE_TIS_START.html" target="_top">
+	<IMG src="../../code/menu-images/home.gif" border="0" alt="Página de inicio de GMDE">
+</A></TD>
+<TD style="font-size:10">
+	<A href="../toc_Cruze.html" target="menu"><IMG src="../../code/menu-images/static-TOC.gif" border="0" alt="Cargue el TOC estático"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../toc_Cruze_code.html" target="code"><IMG src="../../code/menu-images/menu_folder_open.gif" border="0" alt="Cargue el TOC dinámico"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../../help/readme_EN.htm" target="top" class="bottom_copyright"><IMG src="../../code/menu-images/help.gif" border="0" alt="¿Necesita ayuda?"></A>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+<H2>Descripción y funcionamiento del sistema de arranque</H2>
+
+<p>Los motores de arranque no pueden repararse. Disponen de piezas magnéticas que están dispuestas alrededor del inducido. Los dos bobinados de solenoide están energizados. El circuito de bobinado de entrada termina en masa a través del motor de arranque. Los bobinados interactúan magnéticamente para arrastrar y sujetar la espiga palpadora. La espiga palpadora desplaza la palanca de cambio. Esta acción hace que el conjunto de accionamiento del motor de arranque gire en la ranura del eje del inducido mientras se acopla con el mecanismo de anillo del volante motor en el motor. Al desplazarse al mismo tiempo, la espiga palpadora también cierra los contactos del interruptor magnético en el solenoide del motor de arranque. Todo el voltaje de la batería se aplica directamente al motor de arranque y éste arranca el motor.</p>
+<p>En cuanto se cierran los contactos del interruptor de solenoide, la corriente deja de fluir a través del bobinado de entrada dado que se aplica voltaje de la batería a los dos extremos de los bobinados. El bobinado de retención permanece energizado. Su campo magnético es suficientemente fuerte para sujetar en su lugar la espiga palpadora, la palanca de cambio, el conjunto de accionamiento del motor de arranque y contactos de conexión de solenoide para continuar girando el motor. Cuando arranca el motor, la marcha de rueda libre del piñón protege al inducido de una velocidad excesiva hasta que se abre el interruptor.</p>
+<p>Cuando el interruptor de encendido se cambia de la posición START, el relé START se abre y se elimina el voltaje de batería del&nbsp;terminal&nbsp;S de solenoide de motor de arranque. La corriente fluye desde los contactos del motor, a través de los dos bobinados, hasta la conexión a masa en el extremo del bobinado de sujeción. Sin embargo, la dirección del flujo de corriente a través del bobinado de tracción es ahora opuesta al sentido del flujo de corriente cuando se energizó por primera vez el bobinado.</p>
+<p>Ahora los campos magnéticos de los bobinados de tracción y sujeción son opuestos entre sí. Esta acción de los bobinados, junto con la ayuda del muelle de retorno, hace que el conjunto de accionamiento del motor de arranque se desacople y los contactos de conexión de solenoide se abran de forma simultánea. En cuanto se abren los contactos, se apaga el circuito del motor de arranque.</p>
+
+<A NAME="ss1-2176407">
+<A HREF="#ss1-2176407">
+<H3>Descrición del circuito (llave en Start)</H3></A><p>Cuando el interruptor de encendido está situado en la posición Start, se suministra una señal discreta al módulo electrónico de control de la carrocería (BCM) indicándole así que el encendido está en la posición Start. El BCM envía entonces un mensaje al módulo electrónico de control del motor (ECM) indicándole que se ha solicitado el ARRANQUE. El ECM comprueba que la caja de cambios está en la posición de estacionamiento o punto muerto. Si es así, el ECM suministra entonces 12 voltios al circuito de control del relé de cigüeñal. Cuando esto sucede, se suministra voltaje positivo de la batería, a través del lado de conexión del relé de cigüeñal, al terminal&nbsp;S del solenoide del motor de arranque.</p>
+
+
+
+
+<TABLE CELLSPACING="0"  align="center"><TR>
+<TD align="left">&nbsp;</TD>
+<TD align="left"></TD>
+<TD align="left">&nbsp;</TD>
+<TD></TD>
+</TR></TABLE>
+<BR><BR><TABLE CELLSPACING="0"  width="100%"><TBODY><TR BGCOLOR="DarkSlateBlue" align="center"><TD><FONT color="white"><B>© Copyright Chevrolet. Reservados todos los derechos</B></FONT></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>

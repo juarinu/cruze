@@ -1,0 +1,103 @@
+<HTML>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><TITLE>Información de servicio</TITLE><STYLE>
+	.ListIndentBul2Refer{margin-left : 40pt}  ..ListIndentBul2{margin-left : -20pt}
+	.SubListIndent{margin-left : -15pt}
+	.UpNo{border-top : white}  .DownNo{border-bottom : white}  ..BothNo{border-top : white; border-bottom : white}
+	.UpBold{border-top : thin double ridge}  .DownBold{border-bottom : thin double ridge}  .BothBold{border-top : thin double ridge; border-bottom : thin double ridge}
+	.ImageIndent{margin-left : 0%}  .ImageTitleIndent{margin-left : 5%}  .ParagraphIndent{margin-left : 20pt}
+	.Arial{font-family : Arial, Helvetica, sans-serif; margin-left : 10pt; margin-right : 10pt}
+</STYLE>
+<SCRIPT LANGUAGE="JavaScript">
+	function FixMenu()
+	{
+		menuTop = document.body.scrollTop + document.body.clientHeight -40;
+		menu.style.top = menuTop;
+		menu.style.width = document.body.clientWidth; 
+	}
+</SCRIPT>
+</HEAD>
+<BODY class="Arial" onLoad="FixMenu()" onScroll="FixMenu()" onResize="FixMenu()" BGCOLOR="#FFFFFF">
+<SPAN ID="menu" STYLE="position:absolute; left:0px; top:0px; width:0px">
+	<A border="0" href="92155931.es.html">
+	<IMG src="../../../../graphic-pool/Icons/Totop.gif" align="right" halign="Bottom" border="0" alt="Volver arriba"></A>
+</SPAN>
+<TABLE CELLSPACING="0"  width="100%" BORDER="1" rules="none" cellspacing="0" cellpadding="0" style="magin-top: 5pt">
+<TBODY>
+<TR BGCOLOR="cccc99" height="15">
+<TD width="30%"><div style="padding-left: 5pt"><B><FONT face="Arial">Orlando</FONT></B></div></TD>
+<TD width="70%" align="right" colspan="8"></TD>
+</TR>
+<TR BGCOLOR="white" height="60">
+<TD width="35%" align="left">
+<TABLE CELLSPACING="0" >
+<TR>
+<TD width="5%" align="left">&nbsp;</TD>
+<TD width="5%" align="left"></TD>
+<TD width="5%" align="left">&nbsp;</TD>
+</TR>
+</TABLE>
+</TD>
+<TD>
+<TABLE CELLSPACING="0"  width="65%" align="right">
+<TR>
+<TD style="font-size:10">
+	<A href="../../../GMDE_TIS_START.html" target="_top">
+	<IMG src="../../code/menu-images/home.gif" border="0" alt="Página de inicio de GMDE">
+</A></TD>
+<TD style="font-size:10">
+	<A href="../toc_Orlando.html" target="menu"><IMG src="../../code/menu-images/static-TOC.gif" border="0" alt="Cargar TOC estática"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../toc_Orlando_code.html" target="code"><IMG src="../../code/menu-images/menu_folder_open.gif" border="0" alt="Carga TOC dinámica"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../../help/readme_EN.htm" target="top" class="bottom_copyright"><IMG src="../../code/menu-images/help.gif" border="0" alt="¿Ayuda?"></A>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+<H2>Descripción y funcionamiento de la potencia de accesorio retenida</H2>
+
+
+<A NAME="ss1-2155931">
+<A HREF="#ss1-2155931">
+<H3>Potencia de accesorio retenida</H3></A><p>El módulo de control de la carrocería (BCM) vigila la posición del interruptor de encendido, el estado de la batería y cada interruptor de puerta entornada/abierta para determinar si la potencia de accesorio retenida se debería iniciar o terminar. La potencia de accesorio retenida se controla mediante dos métodos diferentes; control de relé y datos de serie. Algunos módulos reciben un mensaje de potencia de accesorio retenida del BCM a través de los circuitos de datos de serie. La potencia de accesorio retenida controlada por datos de serie está desactivada como se requiere por el modo de funcionamiento del módulo de potencia de accesorio retenida. Otros subsistemas están desactivados directamente por el BCM a través de un relé. Los componentes y sistemas que están activos en la potencia de accesorio retenida también se desactivan en el momento en que el encendido está en cualquier posición que no sea OFF independientemente de las señales del interruptor de puerta.</p>
+
+<A NAME="ss2-2155931">
+<A HREF="#ss2-2155931">
+<H3>Potencia de accesorio retenida controlada por relé</H3></A><p>El BCM mantiene el relé energizado durante todos los modos de potencia, excepto No-Despierto y Manivela. El relé también está energizado durante unos 10 minutos después de apagar el encendido y retirar la llave, siempre que no haya una puerta abierta. </p>
+<p>La potencia de accesorio retenida controlada por relé terminará cuando se cumpla una de las siguientes condiciones:</p>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">El BCM recibe una entrada de cualquier interruptor de puerta entornada o abierta indicando la apertura de cualquier puerta después de que la llave de encendido no está en el encendido. </td></tr></table></div>
+
+<p><div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td valign="top"><font color=brown><b>Nota:&nbsp;</b>Si el BCM está recibiendo cualquier señal de puerta entornada o abierta de aquellos interruptores cuando la llave de encendido esté apagada, la potencia de accesorio retenida no se iniciará.</font></td></tr></table></div></font></p><div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">El cronómetro interno del BCM de la potencia de accesorio retenida expira después de unos 10 minutos.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">El BCM detecta una reducción de la capacidad de la batería por debajo del límite prescrito.</td></tr></table></div>
+
+<p>Los sistemas impulsados por el relé accesorio durante el modo de potencia de accesorio retenida son los siguientes:</p>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Compartimento de la consola central de salida de potencia accesoria</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Encendedor</td></tr></table></div>
+
+
+<A NAME="ss3-2155931">
+<A HREF="#ss3-2155931">
+<H3>Potencia de accesorio retenida controlada por datos de serie</H3></A><p>Los sistemas de potencia de accesorio retenida controlados por datos de serie son los siguientes:</p>
+<h4>Radio</h4><p>La activación / terminación de potencia de accesorio retenida de radio es la misma que el funcionamiento del relé con una excepción; el único interruptor de puerta que apagará la radio durante la potencia de accesorio retenida es el interruptor de puerta abierta del conductor.</p>
+
+
+
+
+<TABLE CELLSPACING="0"  align="center"><TR>
+<TD align="left">&nbsp;</TD>
+<TD align="left"></TD>
+<TD align="left">&nbsp;</TD>
+<TD></TD>
+</TR></TABLE>
+<BR><BR><TABLE CELLSPACING="0"  width="100%"><TBODY><TR BGCOLOR="DarkSlateBlue" align="center"><TD><FONT color="white"><B>© Copyright Chevrolet. All rights reserved</B></FONT></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>

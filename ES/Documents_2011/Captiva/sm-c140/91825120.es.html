@@ -1,0 +1,189 @@
+<HTML>
+<head><link rel="stylesheet" type="text/css" href="si-style.css"/><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><TITLE>Información de servicio</TITLE><STYLE>
+	.ListIndentBul2Refer{margin-left : 40pt}  ..ListIndentBul2{margin-left : -20pt}
+	.SubListIndent{margin-left : -15pt}
+	.UpNo{border-top : white}  .DownNo{border-bottom : white}  ..BothNo{border-top : white; border-bottom : white}
+	.UpBold{border-top : thin double ridge}  .DownBold{border-bottom : thin double ridge}  .BothBold{border-top : thin double ridge; border-bottom : thin double ridge}
+	.ImageIndent{margin-left : 0%}  .ImageTitleIndent{margin-left : 5%}  .ParagraphIndent{margin-left : 20pt}
+	.Arial{font-family : Arial, Helvetica, sans-serif; margin-left : 10pt; margin-right : 10pt}
+</STYLE>
+<SCRIPT LANGUAGE="JavaScript">
+	function FixMenu()
+	{
+		menuTop = document.body.scrollTop + document.body.clientHeight -40;
+		menu.style.top = menuTop;
+		menu.style.width = document.body.clientWidth; 
+	}
+</SCRIPT>
+</HEAD>
+<BODY class="Arial" onLoad="FixMenu()" onScroll="FixMenu()" onResize="FixMenu()" BGCOLOR="#FFFFFF">
+<SPAN ID="menu" STYLE="position:absolute; left:0px; top:0px; width:0px">
+	<A border="0" href="91825120.es.html">
+	<IMG src="../../../../graphic-pool/Icons/Totop.gif" align="right" halign="Bottom" border="0" alt="To the top of the document"></A>
+</SPAN>
+<TABLE width="100%" BORDER="1" rules="none" cellspacing="0" cellpadding="0" style="magin-top: 5pt">
+<TBODY>
+<TR BGCOLOR="cccc99" height="15">
+<TD width="30%"><div style="padding-left: 5pt"><B><FONT face="Arial">Captiva</FONT></B></div></TD>
+<TD width="70%" align="right" colspan="8"></TD>
+</TR>
+<TR BGCOLOR="white" height="60">
+<TD width="35%" align="left">
+<TABLE>
+<TR>
+<TD width="5%" align="left">&nbsp;</TD>
+<TD width="5%" align="left"></TD>
+<TD width="5%" align="left">&nbsp;</TD>
+</TR>
+</TABLE>
+</TD>
+<TD>
+<TABLE width="65%" align="right">
+<TR>
+<TD style="font-size:10">
+	<A href="../../../GMDE_TIS_START.html" target="_top">
+	<IMG src="../../code/menu-images/home.gif" border="0" alt="GMDE Start Page">
+</A></TD>
+<TD style="font-size:10">
+	<A href="../toc_Captiva.html" target="menu"><IMG src="../../code/menu-images/static-TOC.gif" border="0" alt="Load static TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../toc_Captiva_code.html" target="code"><IMG src="../../code/menu-images/menu_folder_open.gif" border="0" alt="Load dynamic TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../../help/readme_EN.htm" target="top" class="bottom_copyright"><IMG src="../../code/menu-images/help.gif" border="0" alt="Help?"></A>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<H2>Descripción y funcionamiento del ABS</H2>
+
+<A NAME="ss1-1825120">
+<A HREF="#ss1-1825120">
+<H3>Descripción general del sistema </H3></A><p>Los sistemas ABS/TCS/ESP integran varias unidades funcionales y proporcionan el flujo de volumen de presión necesario para la modulación del par de freno en respuesta a la información de deslizamiento suministrada por los sensores de velocidad de las ruedas. El sistema TCS sirve para producir un par de estabilización en la rueda no motriz con el mayor índice de deslizamiento, o para reducir el deslizamiento en las dos ruedas no motrices, optimizando así el uso de la adherencia de la(s) otra(s) rueda(s) no motrices. El sistema ESP estabiliza el vehículo en caso de un movimiento de oscilación que no se corresponda con el ángulo detectado en el volante. Sirve para hacer coincidir el movimiento de oscilación del vehículo con las intenciones del conductor. Como variables de entrada para el control ESP se utilizan las señales del sensor de aceleración lateral, un sensor de índice de oscilación, un sensor de ángulo del volante y un sensor de presión, además de las señales proporcionadas por los sensores de velocidad de las ruedas disponibles para el control del ABS/TCS. Además, estos sistemas pueden integrar un sistema de distribución electrónica de fuerzas de frenado (EBD) que regula la fuerza de frenado efectiva en las ruedas traseras en lugar de la tradicional válvula proporcional. </p>
+<p>El MK25E está basado en una carcasa con electroválvulas, una bomba integrada y una ECU. Cada circuito de frenado incorpora pares de válvulas (válvula de entrada normalmente abierta (NO)/válvula de salida normalmente cerrada (NC)), que permiten la modulación de la presión de frenado en las ruedas delanteras (control individual de las ruedas) y en las traseras (se puede seleccionar un control bajo o un control de estabilidad con ABS plus) en respuesta a las señales eléctricas adecuadas. </p>
+<p>La TCS ICU se basa en el ABS MK25E con componentes adicionales en el bloque de la válvula que intervienen en el frenado durante el funcionamiento del TCS y el control activo de la velocidad de derrape. Las válvulas de aislamiento con válvula de descarga de presión integrada en el bloque del TCS permiten la acumulación de presión de frenado para el control del TCS/ESP por medio de una bomba, derivando la unidad de actuación. Las válvulas selectoras (ESV) cambian la conexión de aspiración de la bomba desde los acumuladores de baja presión hacia el TMC. Los amortiguadores de aspiración optimizan el rendimiento de aspiración de la bomba y minimizan el impacto del corte al finalizar el ciclo de control del TCS. </p>
+
+<A NAME="ss2-1825120">
+<A HREF="#ss2-1825120">
+<H3>Conocimientos básicos necesarios</H3></A><p>Antes de hacer uso de esta sección, es importante que posea los conocimientos básicos sobre los elementos descritos a continuación. Sin estos conocimientos básicos le resultará difícil utilizar los procedimientos de diagnóstico descritos en esta sección. </p>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Circuitos eléctricos básicos: Debería comprender los aspectos teóricos básicos de la electricidad y conocer el significado de los términos potencial (voltaje), corriente (amperios) y resistencia (ohmios). Debería conocer qué sucede en un circuito abierto o que presenta un cortocircuito. Debe ser capaz de leer y entender un esquema eléctrico. </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Uso de las herramientas de comprobación de circuitos: Debería estar familiarizado con el DMM (multímetro digital) y con los mandos de dicho medidor, y saber cómo utilizarlos de manera correcta. Debe ser capaz de medir la tensión, la resistencia y la intensidad de corriente. Debe saber cómo se usa un puente para derivar componentes a la hora de comprobar circuitos. </td></tr></table></div>
+
+
+<A NAME="ss3-1825120">
+<A HREF="#ss3-1825120">
+<H3>Componentes del sistema de ABS </H3></A><p>El sistema antibloqueo de frenos (ABS) MK25E está formado por un sistema de frenos hidráulicos convencional y componentes antibloqueo. En el sistema de frenos convencional se incluye un servofreno, un cilindro maestro, los frenos de disco delanteros, los frenos de tambor traseros, los manguitos y tubos de freno hidráulicos de interconexión, el sensor de nivel del líquido de frenos y la luz de aviso de los frenos. </p>
+<p>Entre los componentes del ABS se incluyen una unidad hidráulica, una unidad de control electrónico hidráulico (HECU), el fusible del sistema, cuatro sensores de velocidad de las ruedas (uno en cada rueda), el cableado de interconexión, el indicador del ABS, el indicador de dosificación dinámica trasera desacoplada (DDRP) (conectado a la luz de posición) y los frenos de tambor traseros.</p>
+<p>La unidad hidráulica, con el módulo de control del freno electrónico (EBCM) unido a ella, se encuentra situada entre la cámara de compensación y el tabique cortafuegos del lado izquierdo del vehículo. </p>
+<p>La configuración básica de la unidad hidráulica consta de las válvulas de retención hidráulicas, dos válvulas de solenoide (electroválvulas) para cada rueda, una bomba hidráulica y dos acumuladores. Esta unidad hidráulica controla la presión que llega a las pinzas de freno delanteras y a los cilindros de rueda traseros mediante la modulación de dicha presión para evitar el bloqueo de las ruedas.</p>
+
+<A NAME="ss4-1825120">
+<A HREF="#ss4-1825120">
+<H3>Disposición de las unidades funcionales</H3></A>
+<BR><IMG src="../../../../graphic-pool/1/76/4/1764764.png" alt="1764764">
+<BR><h4>Control de las válvulas </h4><p>Únicamente se deberán accionar la válvula de aislamiento y la válvula selectora (ESV) de la rueda controlada. Si se encuentran controladas ambas ruedas del mismo lado del vehículo, en ese caso ambas válvulas de aislamiento/ESV se deberán accionar. Las válvulas de aislamiento se deberán accionar continuamente. Consulte la tabla para obtener datos sobre el control de las válvulas durante las fases de aumento, mantenimiento y reducción de presión. </p>
+<TABLE CELLSPACING="0"  WIDTH="100%" BORDER=1>
+<TR>
+<TH BGCOLOR="#C0C0C0" VALIGN="top" ROWSPAN=1><P>Descripción</P>
+</TH><TH BGCOLOR="#C0C0C0" VALIGN="top" ROWSPAN=1><P>Válvula normalmente abierta (NO)</P>
+</TH><TH BGCOLOR="#C0C0C0" VALIGN="top" ROWSPAN=1><P>Válvula normalmente cerrada (NC)</P>
+</TH><TH BGCOLOR="#C0C0C0" VALIGN="top" ROWSPAN=1><P>Válvula de aislamiento</P>
+</TH><TH BGCOLOR="#C0C0C0" VALIGN="top" ROWSPAN=1><P>ESV </P>
+</TH></TR>
+<TR>
+<TD ROWSPAN=1><P>Fase de mantenimiento de presión</P>
+</TD><TD ROWSPAN=1><P>Cerrado</P>
+</TD><TD ROWSPAN=1><P>Cerrado</P>
+</TD><TD ROWSPAN=1><P>Cerrado</P>
+</TD><TD ROWSPAN=1><P>Cerrado</P>
+</TD></TR>
+<TR>
+<TD ROWSPAN=1><P>Fase de aumento de presión</P>
+</TD><TD ROWSPAN=1><P>Abierto</P>
+</TD><TD ROWSPAN=1><P>Cerrado</P>
+</TD><TD ROWSPAN=1><P>Cerrado</P>
+</TD><TD ROWSPAN=1><P>Abierto (1)</P>
+</TD></TR>
+<TR>
+<TD ROWSPAN=1><P>Fase de reducción de presión</P>
+</TD><TD ROWSPAN=1><P>Cerrado</P>
+</TD><TD ROWSPAN=1><P>Abierto</P>
+</TD><TD ROWSPAN=1><P>Cerrado</P>
+</TD><TD ROWSPAN=1><P>Cerrado</P>
+</TD></TR>
+<TR>
+<TD ROWSPAN=1 COLSPAN=5><P>(1) La ESV de la rueda controlada deberá abrirse al mismo tiempo que la válvula NO, pero permanece abierta durante 14&nbsp;ms más que la válvula NO.</P>
+</TD></TR>
+</TABLE>
+<A NAME="ss5-1825120">
+<A HREF="#ss5-1825120">
+<H3>Unidad de control electrónico hidráulico (HECU)</H3></A><p>La HECU lleva a cabo las siguientes funciones principales:</p>
+<p>Proporcionar una frenada eficaz y estabilidad al vehículo. En el sistema de dosificación dinámica trasera desacoplada (DDRP), el encendido proporciona suministro eléctrico al solenoide de la válvula de retención trasera. Si se dan las siguientes condiciones de fallo, se iluminará el testigo rojo del sistema de frenos. </p>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Controlar las entradas de los sensores de velocidad de las ruedas. </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Detectar las tendencias de deslizamiento de la rueda.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Controlar el sistema de frenos mientras se encuentre activo el modo de control antibloqueo.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Controlar que el funcionamiento eléctrico del sistema sea correcto.</td></tr></table></div>
+
+<p>La HECU comprueba continuamente la velocidad de cada rueda para determinar si alguna rueda está comenzando a deslizar. Si se detecta cualquier tendencia de deslizamiento de las ruedas, la HECU dará las órdenes necesarias para situar las válvulas en las posiciones adecuadas para modular la presión del líquido de frenos en algunos o todos los circuitos hidráulicos, para evitar el deslizamiento de las ruedas y conseguir una frenada óptima. La HECU seguirá controlando la presión en cada uno de los circuitos hidráulicos hasta que deje de detectar la tendencia de deslizamiento. Del mismo modo, la HECU controla continuamente el correcto funcionamiento del sistema ABS. Si la HECU detecta un error, puede desactivar la función ABS y encender el testigo del ABS en el cuadro de instrumentos. La HECU también controla la indicación de los DTC (códigos de diagnóstico de averías) del ABS mientras se encuentra en el modo de diagnóstico. </p>
+
+<A NAME="ss6-1825120">
+<A HREF="#ss6-1825120">
+<H3>Relé del solenoide </H3></A><p>El relé del solenoide proporciona suministro eléctrico al motor y a los solenoides de la bomba. El interruptor del relé está normalmente abierto, pero recibe la orden de cerrarse durante la inicialización. El interruptor del relé permanecerá cerrado durante el resto del ciclo de conducción, mientras no exista ningún DTC activo que exija la apertura del interruptor. Si se activa algún DTC que requiera la desconexión del relé, se cortará el suministro de tensión de la batería al motor y los solenoides de la bomba durante el resto del ciclo de conducción en curso y el sistema ABS no podrá funcionar. El relé es una parte integral de la HECU y no puede someterse a operaciones de servicio de forma independiente. </p>
+
+<A NAME="ss7-1825120">
+<A HREF="#ss7-1825120">
+<H3>Sensores de velocidad y anillos de las ruedas. </H3></A><p>Cada rueda lleva integrado un sensor de velocidad. Los sensores transmiten la información sobre la velocidad de las ruedas a la HECU mediante una pequeña tensión de CA. La señal se transmite a la HECU a través de la interfaz, lo que puede generar entradas de los sensores de velocidad de las ruedas a la HECU falsas o con interferencias. </p>
+
+<A NAME="ss8-1825120">
+<A HREF="#ss8-1825120">
+<H3>Testigo del ABS </H3></A><p>El testigo del ABS se encuentra situado en el cuadro de instrumentos, y se iluminará si la HECU detecta que existe un fallo de funcionamiento en el sistema ABS. El testigo del ABS informa al conductor de que existe alguna situación que provoca la desactivación de la función antibloqueo de los frenos. Si únicamente se encuentra encendido el testigo del ABS, aún se podrá utilizar el sistema de frenos normal y se dispondrá íntegramente de la servoayuda. </p>
+<p>Las situaciones que provocan que se encienda el testigo del ABS son las siguientes: </p>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Detección de un fallo de funcionamiento del ABS. Tal como se ha indicado anteriormente, el testigo del ABS se enciende cuando se detecta un problema en el ABS. </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Comprobación de la bombilla del cuadro de instrumentos. Al conectar el encendido, el testigo del ABS se encenderá durante aproximadamente 3 segundos y a continuación se apagará. </td></tr></table></div>
+
+
+<A NAME="ss9-1825120">
+<A HREF="#ss9-1825120">
+<H3>Testigo del sistema de frenos </H3></A><p>El testigo rojo del sistema de frenos se encuentra situado en el cuadro de instrumentos y se iluminará para indicar que existe alguna situación anormal en el sistema de frenos, lo que puede provocar una reducción de la capacidad de frenado. El testigo se iluminará cuando el freno de mano se encuentre aplicado o no se haya desbloqueado completamente, o si el interruptor de nivel del líquido de frenos se encuentra cerrado (cuando el nivel del líquido de frenos en el depósito del cilindro maestro esté bajo). Cuando el interruptor de nivel del líquido de frenos esté cerrado (nivel bajo), el testigo del sistema de frenos permanecerá iluminado hasta que esta situación se subsane. Del mismo modo, algunos modos de fallo del sistema también provocarán que se ilumine el testigo para indicar al conductor que el sistema de dosificación dinámica trasera desacoplada (DDRP) se encuentra desactivado. </p>
+
+<A NAME="ss10-1825120">
+<A HREF="#ss10-1825120">
+<H3>ESP </H3></A><p>Para el control, las fuerzas de frenado se aplican en las ruedas correspondientes del vehículo de forma que se genere un par en sentido opuesto al del movimiento de guiñada. Esto significa que se ejercerá una determinada presión sobre una o ambas ruedas del lado izquierdo del vehículo si el movimiento de guiñada se produce hacia la derecha, o una presión sobre los circuitos de las ruedas del lado derecho del vehículo si el movimiento de guiñada se produce hacia la izquierda. </p>
+<p>Si los frenos se aplican mientras actúa el control ESP, los circuitos de las ruedas en los que las válvulas NO se encuentren cerradas para mantener las ruedas despresurizadas pasarán a aumentar la presión hasta alcanzar el nivel correspondiente al del cilindro maestro en tándem (TMC), haciendo que el EBCM abra las válvulas de entrada correspondientes (NO) según sea necesario (freno electrónico). El nivel de presión de las ruedas controladas también aumenta dentro de los límites físicos para mantener el momento de guiñada a pesar de la acumulación de presión de frenado. </p>
+<p>La presión de los frenos en el TMC provoca el correspondiente aumento de la presión de apertura de las válvulas de aislamiento (la presión del TMC actúa en la dirección de cierre de las válvulas de aislamiento, cuya presión no está equilibrada). Debido a esto la bomba aumenta la presión del sistema un valor idéntico a la presión del TMC, lo que puede provocar niveles de presión excesivamente elevados en la unidad de control hidráulico (HCU) salvo que se apliquen las medidas oportunas.</p>
+<p>Por este motivo, el EBCM abre las válvulas de aislamiento cuando la presión del TMC alcanza los 100&nbsp;bar, para limitar la presión. Eso imposibilita que la bomba produzca acumulaciones de presión superiores en el sistema. En ese momento, la presión para el control del ESP será suministrada exclusivamente por el TMC. Al igual que durante el control del ABS/TCS, la presión en los circuitos de las ruedas se modula a través de las válvulas de entrada y salida. Durante las fases de reducción de presión del ciclo de control, las ESV permanecen cerradas de forma que el líquido de frenos evacuado pueda volver al sistema de frenos desde los acumuladores de baja presión. </p>
+
+<A NAME="ss11-1825120">
+<A HREF="#ss11-1825120">
+<H3>Distribución electrónica de la fuerza de frenado (EBD) </H3></A><p>El sistema EBD permite aumentar la eficacia del sistema ABS controlando el deslizamiento de las ruedas traseras en el intervalo de frenado parcial y, por tanto, optimizando las características de conducción durante el funcionamiento del frenado parcial. La fuerza de frenado aumenta hasta cerca de la utilización máxima de la fuerza de frenado del eje trasero, y se controla electrónicamente. </p>
+<p>Tras su entrada en el EBD, el suministro de presión al eje trasero se corta a través de las válvulas NO cuando el deslizamiento de al menos una de las ruedas traseras supera un límite preestablecido. En función del deslizamiento real de las ruedas, esto podría ir seguido por pulsos adicionales controlados de aumento de presión. Las válvulas de salida únicamente se utilizan para reducir la presión si se detecta una tendencia de bloqueo en el eje trasero. En general, el algoritmo de control intenta alcanzar una utilización máxima de la fuerza de frenado con una actividad mínima de las válvulas (ruido, reacción del pedal). Dado que los volúmenes evacuados habitualmente son muy pequeños y pueden almacenarse temporalmente en el acumulador de baja presión, la bomba de la HCU no resulta necesaria para la función EBD. Una vez termina de aplicarse la función de control EBD, el líquido de frenos se evacúa desde los acumuladores de baja presión al depósito del líquido de frenos mediante un breve accionamiento de la bomba. </p>
+
+<A NAME="ss12-1825120">
+<A HREF="#ss12-1825120">
+<H3>Asistencia hidráulica a la frenada (HBA)</H3></A><p>En el caso de que se produzca un aumento muy rápido de presión en el cilindro maestro, se determinará una situación de frenada de emergencia y se activará la función de asistencia hidráulica a la frenada (HBA). La bomba hidráulica y las válvulas de aislamiento de ambos circuitos hidráulicos se activarán. A continuación, las presiones sobre las ruedas aumentarán por encima de la presión del cilindro maestro. La función de compensación de presión activada en la configuración de la HBA permite un determinado aumento de la acción de los frenos aplicando una compensación de presión adicional durante el funcionamiento de la HBA, en lugar de obligar al sistema a utilizar el ABS en todos los casos. Esta compensación de presión depende del gradiente de presión que se produzca durante la activación de la HBA y sigue esta sencilla regla: cuanto mayor sea la fuerza con la que frene el conductor mayor ayuda (es decir, mayor compensación) se proporcionará. </p>
+<p>Si las presiones sobre las ruedas alcanzan la presión de bloqueo, la función ABS convencional controla la estabilidad de las ruedas accionando las válvulas de entrada (NO) y de salida (NC). Por tanto, la activación de la HBA tiene el mismo efecto que si el conductor pisara el pedal de freno con una fuerza mayor, suficiente para alcanzar la presión de bloqueo. </p>
+<p>Si la fuerza aplicada sobre el pedal disminuye significativamente, la función HBA interpretará esto como que el conductor pretende finalizar el frenado a fondo. Por tanto, al finalizar la situación que provocó la activación de la HBA, se producirá una compensación entre las presiones de los frenos de las ruedas y la presión del cilindro maestro. Esto se consigue realizando una apertura en pulsos de las válvulas de aislamiento. </p>
+
+<A NAME="ss13-1825120">
+<A HREF="#ss13-1825120">
+<H3>Sistema de control de descenso de pendientes (DCS) </H3></A><p>El sistema de control de descenso de pendientes (DCS) es un ciclo de control de velocidad para vehículos todoterreno que se emplea habitualmente en pendientes pronunciadas. Su activación únicamente puede producirse cuando el vehículo se encuentra en primera marcha o marcha atrás y el pedal del acelerador no se está pisando. La velocidad de control programada es fija y el conductor no puede modificarla. El control de presión en las cuatro ruedas se consigue mediante las válvulas de regulación electrónicas (ESV), las válvulas de aislamiento y el funcionamiento de la bomba.</p>
+
+
+
+<TABLE align="center"><TR>
+<TD align="left">&nbsp;</TD>
+<TD align="left"></TD>
+<TD align="left">&nbsp;</TD>
+<TD></TD>
+</TR></TABLE>
+<BR><BR><TABLE width="100%"><TBODY><TR BGCOLOR="DarkSlateBlue" align="center"><TD><FONT color="white"><B>© Copyright Chevrolet Europe. All rights reserved</B></FONT></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>

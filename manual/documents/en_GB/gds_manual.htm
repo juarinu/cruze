@@ -1,0 +1,735 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8" />
+<title>Global Diagnostic System</title>
+<link rel="stylesheet" type="text/css" href="mdiprint.css" media="print" />
+<!-- Version 2.0.16 with all screenshots and Export Function explanation (Snapshot) -->
+
+<style type="text/css">
+	  <!--
+	div.all { margin-top:2px; margin-left:2px; margin-right:auto }
+	  
+.style1 { text-align: center;
+}
+.style2 {
+	border-style: solid;
+	border-color: black;
+	border-width: 1px;
+}
+.style3 {
+	border: 1px solid black;
+}
+.tableinsert {
+	vertical-align: top;
+	text-indent: 20px;
+}
+.caution {
+	padding: 10px;
+	margin: 0px;
+	border-color: #0000FF;
+	border-style: outset;
+	border-width: 1px 4px 4px 4px;
+	border-left: 1px solid #808080;
+	border-top: 1px solid #808080;
+	background-color: #FFCCCC;
+}
+.important {
+	padding: 10px;
+	margin: 0px;
+	border-color: #0000FF;
+	border-style: outset;
+	border-width: 1px 4px 4px 4px;
+	border-left: 1px solid #808080;
+	border-top: 1px solid #808080;
+	background-color: #FFCCCF;
+}
+.note {
+	padding: 10px;
+	margin: 0px;
+	border-color: #0000FF;
+	border-style: outset;
+	border-width: 1px 4px 4px 4px;
+	border-left: 1px solid #808080;
+	border-top: 1px solid #808080;
+	background-color: #99CCFF;
+}
+.notice {
+	padding: 10px;
+	margin: 0px;
+	border-color: #808080 #666666 #666666 #808080;
+	border-style: solid outset outset solid;
+	border-width: 1px 4px 4px 4px;
+	border-left: 1px solid #808080;
+	border-top: 1px solid #808080;
+	background-color: #C0C0C0;}
+
+* {
+	font-family:arial,sans-serif;}
+
+
+
+-->
+</style>
+</head>
+<body><div class="all">
+
+ <h1 align="center">Global Diagnostic System</h1>
+ <h1>Table of Contents</h1>
+ <ol>
+ <li><a href="#intro">Introduction</a></li>
+ <li><a href="#product_description">Product Description</a></li>
+ <li><a href="#installation">GDS Installation</a></li>
+ <li><a href="#getting_started">Getting Started</a></li>
+ <li><a href="#navigation">General Navigation</a></li>
+ <li><a href="#diagnostics">Diagnostics</a></li>
+ <li><a href="#troubleshooting">Troubleshooting</a></li>
+ </ol>
+ <hr />
+
+  <h1><a name="intro"></a>Introduction</h1>
+ <h2>GDS Reference Guide</h2>
+ <p>The Global Diagnostic System (GDS) Quick Reference Guide provides an overview of the GDS.</p>
+ <p>Everything contained in this manual is based on the latest product information available at the time of publication.<!--j-->&nbsp;<!--j-->The right is reserved to make changes at any time without notice.</p>
+ <p>No part of this publication may be reproduced, stored in any retrieval system, or transmitted in any form by any means, including but not limited to electronic, mechanical, photocopying, recording, or otherwise, without the prior written permission of GM Service and Parts Operations.<!--j-->&nbsp;<!--j-->This includes all text, tables, illustrations, and charts.</p>
+ <p>Requests for permission should be sent to:</p>
+ <p>General Motors Corporation<br />
+Service and Parts Operations<br />
+Product Engineering<br />
+37350 Ecorse Road<br />
+Romulus, MI 48174-1376<br />
+U.S.A.</p>
+ <p>&copy; 2008 GM Service and Parts Operation.<!--j-->&nbsp;<!--j-->Made in the U.S.A.<!--j-->&nbsp;<!--j-->All rights reserved.</p>
+ <hr />
+
+  <h2>General Information</h2>
+ <p>
+The GDS is designed for use by trained service personnel to diagnose and repair automotive electronic systems.<!--j-->&nbsp;<!--j-->
+
+Every attempt has been made to provide complete and accurate technical information based on factory service information available at the time of publication.<!--j-->&nbsp;<!--j-->
+However, the right is reserved to make changes at any time without notice.</p>
+ <p>
+To familiarize with GDS and its capability, and how to use it, please read through the User's Guide before putting the GDS to work.</p>
+ <p>GDS provides the following capabilities:</p>
+ <ul>
+ <li>Read out Diagnostic Trouble Code</li>
+ <li>Read out ECU identification information</li>
+ <li>Read out and graphical display of Data List Parameter</li>
+ <li>Record and store snapshot data</li>
+ <li>Control Functions</li>
+ <li>Configuration and Reset Functions</li>
+ <li>Record and store diagnostic protocol</li>
+ <li>Storage of diagnostic sessions per vehicle</li>
+ </ul>
+
+  <table width="80%" border="0">
+ <tr>
+ <td class="important">
+ <b><!--j-->Important<!--j-->:<!--j--></b><br />
+SPS programming of vehicle controllers is not supported in GDS.<!--j-->&nbsp;<!--j-->For SPS Pass Through programming with the MDI use the TIS2Web / GlobalTIS SPS application.</td>
+ </tr>
+ </table>
+ <hr />
+
+  <h2>Customer Support Overview</h2>
+ <p>
+
+To obtain assistance with a question or problem concerning the operation of your GM-Techline product and its attached products, or to arrange for warranty and non-warranty repairs, telephone your local Customer Support Center.<!--j-->&nbsp;<!--j-->To order replacement parts, contact GM Dealer Equipment.</p>
+ <h3>Before Calling</h3>
+ <p>Before making a call to the Helpdesk, be sure to have the following information ready:</p>
+ <ul>
+ <li>Dealership name, address and dealer code number</li>
+ <li>Serial number of MDI or Notebook if applicable</li>
+ <li>Name, part number, and quantity of the item to be requested</li>
+ <li>Telephone number where the technician may be reached.</li>
+ </ul>
+ <p>Prepare a brief description of the problem:</p>
+ <ul>
+ <li>Tell when the problem occurred</li>
+ <li>List any error codes displayed</li>
+ <li>Tell what accessories were being used when the problem occurred, and vehicle information</li>
+ </ul>
+
+  <h4>IDENTIFYING YOUR MDI</h4>
+ <p>The GM MDI assembly label is located on the back of the unit.<!--j-->&nbsp;<!--j-->
+
+The assembly identification number has two parts: a manufacturing code for traceability and a unique serial number.<!--j-->&nbsp;<!--j-->
+The serial number is used to identify the MDI in the software.</p>
+
+  <h3>Making the Call</h3>
+
+  <h4>European users</h4>
+ <h5>GDS Software Installation &amp; System Communication Support:</h5>
+ <p><b>DAC - Dealer Assistance Center:</b><br />
+
+
+User support for GDS software, for GDS communication to TIS2Web / GlobalTIS and the MDI is provided by the Dealer Assistance Center.<br />
+
+The applicable telephone number for the country can be obtained from the Channel 21 portal login page.</p>
+ <h5>
+GDS Vehicle Diagnostic support:</h5>
+ <p><b>European Technical Assistance Center:</b><br />
+
+User support for vehicle communication issues during GDS based diagnostic events are provided by the European Technical Assistance Center.<!--j-->&nbsp;<!--j-->
+The applicable telephone number for the country can be obtained by your local General Motors Europe organization.</p>
+ <h5>
+Support for Independent Repairers/Aftermarket:</h5>
+ <p><b>European Customer Assistance Center</b><br />
+Independent repairers may contact the European Customer Assistance Center for above support services.<!--j-->&nbsp;<!--j-->
+The contact details are provided in the GME InfoTech Portal.</p>
+ <hr />
+ <h3>Software License Agreement</h3>
+ <p>Please read this software license agreement carefully before proceeding with use of the software.<!--j-->&nbsp;<!--j-->
+Proceeding with use of the software will constitute your acceptance of the terms and conditions contained herein.</p>
+ <p>OWNERSHIP<!--j-->:<!--j-->&nbsp;<!--j-->
+
+
+The software is a copyrighted work of General Motors Corporation and you acknowledge that General Motors Corporation owns all copyright and other proprietary right, title and interest in and to the software.<!--j-->&nbsp;<!--j-->
+Any rights to the software not specifically licensed hereunder are expressly reserved by General Motors Corporation.</p>
+ <p>USE<!--j-->:<!--j-->&nbsp;<!--j-->
+You are granted a non-exclusive, non-transferable license to use the software on multiple computer systems.<!--j-->&nbsp;<!--j-->
+
+You may not reverse engineer, decompile, modify, reproduce, distribute or sell the software, in whole or in part.<!--j-->&nbsp;<!--j-->
+This license is personal to you and conditioned upon your strict compliance with all of the terms and conditions contained herein.</p>
+ <p>Termination<!--j-->:<!--j-->&nbsp;<!--j-->
+
+General Motors Corporation may terminate this software license agreement for your failure to comply with the terms and conditions contained herein.<!--j-->&nbsp;<!--j-->
+
+Upon termination, you must immediately discontinue your use of the software and destroy any and all copies of the software including, but not limited to, those contained on your computer systems.</p>
+ <hr />
+ <h1><a name="product_description"></a>2.<!--j-->&nbsp;<!--j-->Product Description</h1>
+ <h2>Dealer PC Requirements<!--j-->&nbsp;<!--j-->(<!--j-->Europe<!--j-->)</h2>
+ <p>Minimum PC requirements to operate GDS in conjunction with TIS2Web and GlobalTIS:</p>
+ <ul>
+ <li>Processor:<br />
+Intel Pentium M, 1,5GHz</li>
+ <li>System Memory (RAM)<br />
+1GB for GDS and TIS2Web / GlobalTIS client; 2GB for GDS and GlobalTIS standalone</li>
+ <li>Hard Disk Drive Minimum:<br />
+40 GB</li>
+ <li>Operating System<!--j-->:<br />Windows XP Professional (SP2)</li>
+ <li>Other Software Components:<br />
+Java Web Start 1.5x or higher<br />
+ </li>
+ </ul>
+ <p>
+For further information please refer to the GME IT hardware and software specification available at your local GME organization.</p>
+ <hr />
+ <h1><a name="installation"></a>3.<!--j-->&nbsp;<!--j-->GDS Installation</h1>
+ <h2>GDS Component Overview:</h2>
+ <p>The GDS software contains the following modules which will be initially installed and updated frequently in certain periods.<!--j-->&nbsp;<!--j-->[I]</p>
+ <ul>
+ <li><b>GDS Base System</b><br />
+Installed GDS base software on the PC</li>
+ <li><!--j--><b><!--j-->GDS Deliverables<!--j--></b><!--j-->:<br />
+Diagnostic data packages for vehicle models which executes the diagnostic routines with the vehicle controllers.</li>
+ <li><!--j--><b><!--j-->GDS Smart Start<!--j--></b><!--j-->:<!--j--><br />Application Agent which compares the versions of GDS Base System, GDS Deliverables and MDI Manager software Server between TIS2Web/GlobalTIS and the local installation.<!--j-->&nbsp;<!--j-->In case new updates are available they are prompted for download.</li>
+ <li><!--j--><b><!--j-->MDI Manager Software (separate Application)<!--j--></b><!--j-->:<br />
+Application for update and configuration of the MDI Device (Multiple Diagnostic Interface)</li>
+ </ul>
+ <p><img src="../../images/gds_i_enu.gif" alt="gds_i.gif" width="650px"/><br />
+[I]</p>
+ <hr />
+ <h2>Installation:</h2>
+ <p>GDS can be installed from a separate installation DVD or directly as a download from TIS2Web / GlobalTIS.</p>
+ <h3>Installation from GDS DVD:</h3>
+ <ul>
+ <li>PC must be started in Admin mode</li>
+ <li>Launch installation executable in the DVD start menu</li>
+ <li>Select the language for the install agent</li>
+ <li>Existing GDS configuration and data can be re-used in case a previous GDS installation is detected on the PC.</li>
+ <li>Accept the license agreement (required to proceed)</li>
+ <li>Select the installation directory for GDS</li>
+ <li>GDS Installation process starts</li>
+ <li>The MDI Manager software will be installed in case there is no or an older MDI Manager software installed on the PC.<!--j-->&nbsp;<!--j-->For the initial MDI Manager software installation, the MDI hardware needs to be connected during the installation process.<!--j-->&nbsp;<!--j-->For more details refer to the MDI manual.</li>
+ <li>GDS can be launched by the desktop symbol or via Start/Programs/GDS after completion of the installation process.<!--j-->&nbsp;<!--j--><img src="../../images/gds_icon.png" alt="gds_icon.png" /></li>
+ <li>If required configure the firewall to allow GDS communication with the MDI device.</li>
+ <li>GDS Smart Start starts, the displayed update process will be executed before GDS is launched.</li>
+ </ul>
+ <hr />
+ <h3>Installation from TIS2Web / GlobalTIS<!--j-->:</h3>
+ <p><img src="../../images/gds_ii_enu.gif" alt="gds_ii.gif" width="600px"/><br />
+[II]</p>
+ <table width="80%" border="0">
+ <tr>
+ <td class="important"><b><!--j-->Important<!--j-->:<!--j--></b><!--j-->&nbsp;<!--j-->During installation from TIS2Web approximately 140 MB of data is downloaded via the internet.</td></tr></table>
+ <ul>
+ <li>PC must run in Admin mode</li>
+ <li>Start GDS in TIS2Web / GlobalTIS Home Page<!--j-->&nbsp;<!--j-->[II]</li>
+ <li>GDS Smart Start is downloaded from the TIS2Web server, depending of the internet connectivity this may take a moment.</li>
+ <li>Select the installation directory for GDS.</li>
+ <li>Enter the Internet Password (only if a proxy server is used for internet access)</li>
+ <li>If required configure the firewall to allow GDS communication with the MDI device.</li>
+ <li>When the GDS Smart Start installation begins, it may take a moment.</li>
+ <li>Launch of GDS Smart Start, the GDS update process will be executed.<!--j-->&nbsp;<!--j-->[III]</li>
+ <li>When the download of the installation files is finished, the GDS Version and the MDI Manager software version is displayed and can be downloaded by accepting the prompted dialogue.<!--j-->&nbsp;<!--j-->Via the button <b>Show Download Progress</b> the status bar of the update progress can be displayed.</li>
+ <li>The MDI Manager software will be installed in case there isn't an MDI Manager software installed on the PC or if an older version of MDI Manager software exists.<!--j-->&nbsp;<!--j-->For the initial MDI Manager software installation the MDI hardware needs to be connected during the installation process.<!--j-->&nbsp;<!--j-->For more details refer to the MDI manual.</li>
+ </ul>
+
+  <table width="200" border="0">
+ <tr>
+ <td><img src="../../images/gds_iii_enu.gif" alt="gds_III.gif" width="200px"/></td>
+ <td><img src="../../images/gds_iv_enu.gif" alt="gds_IV.gif" width="150px" /></td>
+ </tr>
+ <tr>
+ <td>[III]</td>
+ <td>[IV]</td>
+ </tr>
+ </table>
+ <hr />
+ <h3>GDS Update via Smart Start<!--j-->:</h3>
+Launch GDS either from TIS2Web/GlobalTIS or as standalone application via the Windows start menu.<!--j-->&nbsp;<!--j-->Before GDS is loaded, the Smart Start agent is launched and compares the following versions of the PC GDS installation with the TIS2Web / GlobalTIS Server content:</p>
+ <ul>
+ <li>GDS Smart Start</li>
+ <li>GDS Base System</li>
+ <li>MDI Manager</li>
+ </ul>
+ <p>Smart Start prompts new updates to the user for download, if new versions are available on the server.<!--j-->&nbsp;<!--j-->[IV]</p>
+ <!--<p>The Smart Start update process of GDS Base System, GDS Deliverables and MDI Manager will be executed only if GDS is launched from TIS2Web/GlobalTIS and not in standalone mode.<!--j-->&nbsp;<!--j--><!--The update capability of standalone started GDS will be available in a future version.</p>
+--> <table width="80%" border="0">
+ <tr>
+ 	 <td class="important"><!--j--><b><!--j-->Important<!--j--><!--j-->:<!--j--></b><!--j-->&nbsp;<!--j-->The described update processes require that the PC is running always in Admin mode.</td></tr></table>
+ <hr />
+ <h3>Rollback of GDS Base System Installation</h3>
+ <p>The GDS installation can be rolled back to the previous installed version, in case a GDS update causes operational problems.</p>
+ <p>To execute the rollback function, go to START -&gt;PROGRAMS -&gt; GDS -&gt; GDS ROLLBACK.<!--j-->&nbsp;<!--j-->A prerequisite of the rollback function is that an older GDS version must be installed on the PC.</p>
+ <h3>GDS License Control System (Lease)</h3>
+ <p>The GDS lease prevents the unauthorized use of GDS.<!--j-->&nbsp;<!--j-->To renew the GDS lease it is required to launch GDS from TIS2Web or GlobalTIS.<!--j-->&nbsp;<!--j-->The GDS lease requires renewal after 7 days if the application was launched during that time in standalone mode only.<!--j-->&nbsp;<!--j--><br>If the GDS lease is expired, an error message prompts the user to launch the GDS application from TIS2Web/GlobalTIS for lease renewal.</p>
+ <hr />
+ <h3>Download and Update GDS Deliverables</h3>
+ <p>GDS Deliverables are diagnostic applications, which control the communication and diagnostic services between GDS and the vehicle controller<!--j-->.<!--j-->&nbsp;<!--j-->GDS deliverables are released per model and will be permanently updated on TIS2Web / GlobalTIS.</p>
+ <p>GDS Smart Start identifies automatically if new or updated deliverable versions are available on TIS2Web / GlobalTIS when the update process is triggered<!--j-->.<!--j-->&nbsp;<!--j-->New deliverables need to be downloaded into a local directory on the PC at first before they can be installed in GDS.<!--j-->&nbsp;<!--j-->Updates of already installed deliverables will be automatically downloaded and just need to be installed in the GDS Master Database.</p>
+ <br clear=all />
+ <hr />
+ <h3>Initial Download and Update of GDS Deliverables</h3>
+ <ul><li>Launch GDS either from TIS2Web/GlobalTIS or as standalone application via the Windows start menu.</li>
+ <li>Select the button <b>Add New Diagnostic Package</b> from the GDS Login Screen.</li>
+ <li>Press the button <b>Update Deliverable list from Server</b>.<!--j-->&nbsp;<!--j-->[V-1]<!--j-->.<!--j-->&nbsp;<!--j-->On the server available but not yet downloaded packages are displayed with the symbol.<!--j-->&nbsp;<!--j-->
+ <img src="../../images/gds_server.png" alt="gds_server.png" width="36" height="34" /></li>
+ <li>Mark and download the deliverable packages<!--j-->&nbsp;<!--j-->[V-2]<!--j-->.<!--j-->&nbsp;<!--j-->The filter function helps to search for specific deliverables.<!--j-->&nbsp;<!--j-->Downloaded deliverable packages are displayed with the symbol.<!--j-->&nbsp;<!--j--><img src="../../images/gds_pc.png" alt="gds_pc.png" /></li>
+ <li>Install the downloaded packages into the GDS Master Database; installed packages are displayed in the right application window<!--j-->&nbsp;<!--j-->[V-3]<!--j-->.</li>
+ </ul>
+ <p><img src="../../images/gds_v_enu.gif" alt="gds_v.gif" width="650px"/><br />
+[V]</p>
+ <hr />
+ <h2>Update Installed GDS Deliverables in Master Database<!--j-->:</h2>
+ <ul>
+ 	 <li>Click on the button <b>Update Diagnostic Package</b> in the GDS Login screen<!--j-->&nbsp;<!--j-->[VI-1]<!--j-->.<!--j-->&nbsp;<!--j-->GDS compares the versions of the installed GDS deliverables with the deliverables available on the server and downloads updated packages.</li>
+ 	 <li>The downloaded packages are displayed for installation in the lower left window.<!--j-->&nbsp;<!--j-->Select the button <b>Install</b> or <b>Install all</b> to begin with the installation.<!--j-->&nbsp;<!--j-->[VI-2]<!--j-->.</li>
+ </ul>
+ <p><img src="../../images/gds_vi_enu.gif" alt="gds_vi.gif" width="650px"/><br />
+[VI]<!--j-->:</p>
+ <hr />
+ <h2>
+Rollback Deliverable Update</h2>
+ <p>
+
+The rollback process is in general the same process as described in chapter Initial Download and Update of GDS Deliverables</p>
+ <ul>
+ 	 <li>Select the button <b>Add New Diagnostic Package</b> from the GDS Login Screen.</li>
+ 	 <li>Press the button <b>Update Deliverable list from Server</b>.<!--j-->&nbsp;<!--j-->[V-1]<!--j--></li>
+ <li>Mark and download the desired older deliverable package versions.<!--j-->&nbsp;<!--j-->The filter function helps to search for specific deliverables.</li>
+ <li>Install the downloaded packages into the GDS Master Database.</li>
+ </ul>
+ <hr />
+ <h2>De-installation of GDS<!--j-->:</h2>
+ <p>GDS can be de-installed by starting the following program:</p>
+ <p>
+START -&gt; PROGRAMS -&gt; GDS -&gt;GDS DE-INSTALLATION</p>
+ <hr />
+ <h2>
+Change the GDS Language<!--j-->&nbsp;<!--j-->/<!--j-->&nbsp;<!--j-->Regional Settings<!--j-->:</h2>
+ <p>GDS uses the language setting of the PC operating system.<!--j-->&nbsp;<!--j-->There is no menu in GDS to change the language setting.<!--j-->&nbsp;<!--j-->Please perform the following steps to change the language of the GDS.</p>
+ <ul>
+ <li>Open the Windows CONTROL PANEL by the following sequence:<!--j-->&nbsp;<!--j-->START -&gt; SETTINGS -&gt; CONTROL PANEL</li>
+ <li>Open the menu REGIONAL AND LANGUAGE OPTIONS</li>
+ <li>Select the desired country in <b>STANDARDS AND FORMATS</b></li>
+ <li>Open the ADVANCED menu.<!--j-->&nbsp;<!--j-->Select the desired language setting in the drop down box for NON UNICODE PROGRAMS</li>
+ <li>Configure the REGIONAL OPTIONS to change the displayed units in GDS.</li>
+ </ul>
+ <hr />
+ <h1><a name="getting_started"></a>4.<!--j-->&nbsp;<!--j-->Getting Started</h1>
+ <p><b><!--j-->NOTICE<!--j-->:<br />
+Prior to performing GDS, it is important to observe the following precautions:<!--j--></b></p>
+ <ul>
+ <li>Using an outdated version could damage vehicle modules.<!--j-->&nbsp;<!--j-->The GDS and Multiple Diagnostic Interface must have the latest software.</li>
+ <li>Make sure the vehicle battery is fully charged<!--j-->&nbsp;<!--j-->Battery voltage for GDS should be between 12 and 14 volts.</li>
+ <li>However, a battery charger must not be connected to the vehicle when using the MDI.</li>
+ <li>Make sure the cable connections are secured.<!--j-->&nbsp;<!--j-->A disconnected cable MAY cause controller failure.</li>
+ <li>In using a laptop computer/other display device (PDA etc.) for GDS, ensure that the power supply is properly connected.<!--j-->&nbsp;<!--j-->If powered by AC and the power cord becomes disconnected, it could interrupt programming and cause damage to the control module.<!--j-->&nbsp;<!--j-->If the laptop is operating from its internal power source (batteries), then make sure it is adequately charged to complete the GDS process.</li>
+ </ul>
+ <table width="80%" border="0">
+ <tr>
+ <td class="note"><b>NOTICE</b><br />
+
+If an ECU is to be programmed it must be installed in the vehicle before beginning this process.<!--j-->&nbsp;<!--j-->Make sure the vehicle battery is fully charged.</td></tr></table>
+ <table width="80%" border="0">
+ <tr>
+ <td class="important"><b>Important</b><br />
+In order to reduce the potential for signal loss, the MDI should be configured for the most stable communication option at your location.<!--j--><!--j-->You can choose from USB, Ethernet, or Wireless Ethernet.</td></tr></table>
+ <hr />
+ <h2>GDS Start - Up Procedure<!--j-->:</h2>
+ <p>GDS can be started through TIS2Web/GlobalTIS by clicking to the GDS icon.<!--j-->&nbsp;<!--j-->Alternatively GDS can be launched in standalone mode through the Windows Start menu.</p><ol><li>To start click on the GDS symbol from TIS2Web/GlobalTIS main menu<!--j-->.<!--j-->&nbsp;<!--j-->If starting GDS in standalone mode, click on START/PROGRAMS/GDS</li><li>Launch of GDS Smart Start, the displayed update process will be executed.<!--j-->&nbsp;<!--j-->If a new GDS or MDI Manager version is available on the server it will be prompted for download and installation for the PC.<!--j-->&nbsp;<!--j-->Click <b>Continue</b> to start the download or installation<!--j-->&nbsp;<!--j-->[IV]<!--j-->.<!--j-->&nbsp;<!--j-->If GDS is launched in standalone mode no update is possible.</li>
+ 	 <li>GDS Login Page is loaded.</li></ol>
+ <hr />
+ <h1><a name="navigation"></a>5.<!--j-->&nbsp;<!--j-->General Navigation</h1>
+ <h2>Pull Down Menus<!--j-->&nbsp;<!--j--><img src="../../images/gds_menu.png" alt="gds_menu.png" width="57" height="38" /></h2>
+ <p>There are five pull-down Menus available from GDS<!--j-->&nbsp;<!--j-->[VII]</p> <p>Note<!--j-->:<!--j-->&nbsp;<!--j-->These menus will only be menu selections for the PC Versions of GDS<!--j-->.<!--j-->&nbsp;<!--j-->There will also be a touch screen format, in which the menus will be accessed by a pop up button.</p> <ul>
+ <li>The <b>File</b> Menu has the entry <b>Exit</b> to close GDS.</li>
+ <li>The <b>Session</b> Menu has two selections:<!--j-->&nbsp;<!--j--><b>Save current Session Log</b> and <b>Add comments to session...</b><br /><b>Add comments to session...</b>: information can be entered from your computer's keyboard and saved in the Session Log Manager.</li>
+ <li>The <b>Tools</b> Selection has five selections:<!--j-->&nbsp;<!--j-->Start Trace<!--j-->,<!--j-->&nbsp;<!--j-->Snapshot replay<!--j-->,<!--j-->&nbsp;<!--j-->Create report<!--j-->,<!--j-->&nbsp;<!--j-->Show Download Status...<!--j-->,<!--j-->&nbsp;<!--j-->User Administration<br />New users can be created by clicking on the symbol in the page <b>User Administration</b><!--j-->&nbsp;<!--j-->
+ <img src="../../images/gds_add-user.png" alt="gds_add-user.png" width="27" height="26" />
+ <!--j-->.</li>
+ <li><b>Window</b>: In the menu </b>Preferences</b>, the screen configuration can be selected, e.g. full screen mode, PC or touch screen mode.</li>
+ <li>The <b>Help</b> Section has three selections:<br /><b>Help Contents</b> displays all available GDS help files.<!--j-->&nbsp;<!--j-->
+<b>About GDS</b> displays the GDS version and Build ID.<!--j-->&nbsp;<!--j-->
+<b>Show MDI Version</b> displays MDI software and hardware versions.<!--j-->&nbsp;<!--j-->
+You may be asked for this information when you contact our Customer Support Center.</li></ul><p></p>
+ <p><img src="../../images/gds_vii_enu.gif" alt="gds_vii.gif" width="120px"/><br />
+[VII]</p>
+ <hr />
+ <h2>Diagnostic Application Tool Bar</h2>
+ <p>There are several tool bar selections that become available after reaching the system navigation view.<!--j-->&nbsp;<!--j-->[VIII]</p>
+ <ul>
+ <li>The <b>Record Snapshot</b> (Red Circle), is available only after reaching the system navigation view, and is used to record a vehicle snapshot.<!--j-->&nbsp;<!--j-->While a snapshot is being recorded, this selection is unavailable.</li>
+ <li>The <b>Stop Snapshot recording</b> (Blue Square) appears while a vehicle snapshot is being recorded.<!--j-->&nbsp;<!--j-->This option is selected to stop recording the snapshot and save the file.</li>
+ <li>The <b>Screenshot</b> symbol is selected to capture the content of the screen displayed and store it to a location on the computer.</li>
+ <li>The <b>Zoom Out</b> increases the font size.<!--j-->&nbsp;<!--j-->The displayed image is reduced each time the mouse is clicked.</li>
+ <li>The <b> Zoom In</b> selection increases the font size.<!--j-->&nbsp;<!--j-->The displayed image is increased each time the mouse is clicked.</li>
+ <li>The <b>Exit</b> button closes the active diagnostic application.</li>
+ </ul>
+ <p><img src="../../images/gds_viii_enu.gif" alt="gds_viii.gif" width="400px"/><br />
+[VIII]</p>
+ <hr />
+ <h2>Arrow Keys</h2>
+ <p>Arrow keys are located at the bottom of the parameter list.<!--j-->&nbsp;<!--j-->The arrow keys can be used for the following navigation:</p>
+ <p><img src="../../images/gds_ix_enu.gif" alt="gds_ix.gif" width="600px"/><br />
+[IX]<!--j-->:</p>
+ <ul>
+ <li>The <b>Move Up</b> Arrow can be used to move up one folder in the parameter list each time it is selected.</li>
+ <li>The <b>Move Down</b> Arrow can be used to move down one folder in the parameter list each time it is selected.</li>
+ <li>The <b>Move Right</b> Arrow can be used to open one level in the Navigation tree.</li>
+ <li>The <b>Move Left</b> Arrow can be used to close one level in the Navigation tree.<!--j-->&nbsp;<!--j-->This selection will not be displayed if you are at the first screen of a procedure.</li></ul>
+ <hr />
+ <h2>Other keys</h2>
+ <p>Three other keys are also located at the bottom of all screens.<!--j-->&nbsp;<!--j-->These keys can be used for the following:</p>
+ <ul>
+ <li>The <b>Launch</b> allows you to launch an application.</li>
+ <li>The <b>Back Action</b> can be used to move to the previous screen.<!--j-->&nbsp;<!--j-->This selection will only be available when there is a screen to move back to.</li>
+ <li>The <b>Next</b> Action can be used to move to the next screen.<!--j-->&nbsp;<!--j-->This selection will only be available if all necessary selections have been made in the current screen.</li>
+ </ul>
+ <br clear=all />
+ <hr />
+ <h2>Entering Vehicle/MDI Information</h2>
+ <p>1.<!--j-->&nbsp;<!--j-->From the GDS Main Menu, select a user for login.<!--j-->&nbsp;<!--j-->If no user has been created, a new user can be created or the default user can be selected.<!--j-->&nbsp;<!--j-->(See section pull-down menus)<br />
+ </p>
+ <p>2.<!--j-->&nbsp;<!--j-->After your access choice has been selected, the Identification Menu screen will be displayed.<!--j-->&nbsp;<!--j-->Several choices are available from this screen:</p>
+ <p><img src="../../images/gds_x_enu.gif" alt="gds_x.gif" width="650px"/><br />
+[X]</p>
+ <ul>
+ 	 <li>[X-1]<!--j-->&nbsp;<!--j--><b>MDI Selection</b><!--j-->:<!--j-->&nbsp;<!--j-->All MDIs available on the various networks at the dealership are being displayed. You can select the MDI that you are using to perform vehicle diagnostics.<!--j-->&nbsp;<!--j-->For MDI connection, highlight an available MDI by clicking on it and select <b>Connect</b>.<!--j-->&nbsp;<!--j-->Select <b>Disconnect</b> to disconnect the MDI.<!--j-->&nbsp;<!--j-->Attach new MDI to the vehicle and select <b>Connect</b>.<!--j-->&nbsp;<!--j-->Select <b>Refresh</b> to check for new MDIs on the available networks.<!--j-->&nbsp;<!--j-->To continue in GDS without any connected MDI, activate the checkbox <b>Navigate without MDI</b>.</li>
+ <li>[X-2]<!--j-->&nbsp;<!--j--><b>VIN Entry</b><!--j-->:<!--j-->&nbsp;<!--j-->Vehicle Identification number field for manual entry or automatic VIN identification from the vehicle controller.<!--j-->&nbsp;<!--j-->(MDI connection required).<!--j-->&nbsp;<!--j-->Additional comments associated to this VIN / Vehicle can be added in the text field beneath.</li>
+ <li>[X-3]<!--j-->&nbsp;<!--j--><b>Vehicle Identification</b> Section<!--j-->:<!--j-->&nbsp;<!--j-->select Make, Model and Model Year before continue.</li>
+ <li>[X-4]<!--j-->&nbsp;<!--j--><b>Vehicle Diagnostic History</b><!--j-->:<!--j-->&nbsp;<!--j-->If a vehicle has been diagnosed previously with this GDS system, the VIN and associated information will be stored in the vehicle history.<!--j-->&nbsp;<!--j-->Select the vehicle to be diagnosed from the list and continue to the <b>Vehicle Home Page</b> directly.<!--j-->&nbsp;<!--j-->A free text filter function is available</li>
+ </ul>
+ <p>3.<!--j-->&nbsp;<!--j-->The <b>Vehicle Home Page</b> will be displayed.<!--j-->&nbsp;<!--j-->From this screen various vehicle data is displayed including: entered vehicle information, previous vehicle diagnosis, session comments, session log reports, and stored data</p>
+ <hr />
+ <h2><b>Vehicle Home Page</b></h2>
+ <p>The <b>Vehicle Home Page</b> consists of several areas:</p>
+ <p>[XI-1]<!--j-->:<!--j-->&nbsp;<!--j-->The <b>Vehicle Information</b> lists all vehicle information including Make, Model and Model Year etc.<br />This list is updated as the vehicle is diagnosed and will be saved with each session.<!--j-->&nbsp;<!--j-->The <b>Delete vehicle option selection</b> is used to delete a previous vehicle content selection.<!--j-->&nbsp;<!--j-->Highlight the row to be deleted from the Vehicle Content List and select Delete Equipment.</p>
+ <p>[XI-2]<!--j-->:<!--j-->&nbsp;<!--j--><b>Session Comments</b> is used to add freeform user comments about a diagnostic session.<!--j-->&nbsp;<!--j-->Click on <b>Add a Comment</b> to add additional information concerning a session.<!--j-->&nbsp;<!--j-->Information can be entered under the User, Data, or Comment areas from your keyboard.<!--j-->&nbsp;<!--j-->To delete previous comments, highlight the information under the User, Data, or Comment areas and click on <b>Delete Selected Comment</b>.</p>
+ <p>[XI-3]<!--j-->:<!--j-->&nbsp;<!--j--><b>Session Log Reports</b> can be used for a printout of vehicle diagnostic information.<!--j-->&nbsp;<!--j--><b>Full View</b> provides a complete report of all diagnostics performed on the vehicle.<!--j-->&nbsp;<!--j--><b>Simple Report</b> provides a vehicle diagnostic summary.</p>
+ <p>[XI-4]<!--j-->:<!--j-->&nbsp;<!--j--><b>Snapshot Data</b> lists all vehicle stored snapshot data.<!--j-->&nbsp;<!--j-->User name, snapshot file name, the date the snapshot was taken, and comments will be displayed.<!--j-->&nbsp;<!--j-->A snapshot replay can be displayed by highlighting the item and selecting <b>Review</b>.<!--j-->&nbsp;<!--j-->Individual items can be deleted by highlighting the item and selecting <b>Delete</b>.<br />[XI-6]<!--j-->:<!--j-->&nbsp;<!--j--><b><a name="export_snap">Export</a></b> saves a snapshot to your local PC.<!--j-->&nbsp;<!--j-->You can then send this snapshot data for further analysis to the appropriate person.</p>
+ <p>[XI-5]<!--j-->:<!--j-->&nbsp;<!--j-->The menu <b>Executed applications</b> provides a diagnostic session history.</p>
+
+  <p><b>Next Action</b> is used to continue your diagnosis of the selected vehicle.</p>
+ <p><img src="../../images/gds_xi_enu.gif" alt="gds_xi.gif" width="650px"/><br />
+[XI]</p>
+ <hr />
+ <h2>System Navigation - Diagnostic Application Selection</h2>
+ <p>Once you have selected <b>Next Action</b> from the <b>Vehicle Home Page</b>, the System Navigation view will be displayed<!--j-->&nbsp;<!--j-->[XII]<!--j-->.</p>
+ <p>Select the navigation path you wish to investigate on the vehicle.<!--j-->&nbsp;<!--j-->Navigation can be performed either by the navigation arrows; the right/left arrows opens/closes a subfolder, the Launch button starts the selected diagnostic application.<!--j-->&nbsp;<!--j-->Navigation is also possible with mouse navigation by clicking on the + symbols of the navigation tree or with the arrow keys of the PC keyboard.</p>
+ <p>
+Continue selecting folders for the desired path until you reach a diagnostic application, which has an application icon.</p>
+ <p>
+
+Once you launch a diagnostic application, the system navigation view will disappear and be replaced by a diagnostic application.<!--j-->&nbsp;<!--j-->
+When you have completed the diagnostic application, select <b>Exit</b> in the upper right side of the diagnostic application view.<!--j-->&nbsp;<!--j-->
+This will close the diagnostic application and return you to the system navigation view.</p>
+ <p><img src="../../images/gds_xii_enu.gif" alt="gds_xii.gif" width="350px"/><br />
+[XII]</p>
+ <hr />
+ <h1><a name="diagnostics"></a>6.<!--j-->&nbsp;<!--j-->Diagnostics</h1>
+ <h2>DTC Display</h2>
+ <p>When <b>Vehicle DTC Information</b> is selected, a list of Electronic Control Units (ECUs) and the number of DTCs that are currently stored will be displayed from the <b>Diagnostic Application</b>.</p>
+ <p><img src="../../images/gds_xiii_enu.gif" alt="gds_xiii.gif" width="400px"/><br />
+[XIII]</p>
+ <p>
+There are 4 stored DTCs for the Instrument Cluster Module in the displayed example.<!--j-->&nbsp;<!--j-->Select <b>Continue,</b> to display DTC Main Page.<br />
+
+  <img src="../../images/gds_xiv_enu.gif" alt="gds_xiv.gif" width="650px"/><br />
+[XIV]</p>
+ <p>The available DTCs are displayed in a table.<!--j-->&nbsp;<!--j-->
+The content of the displayed table is configurable.<!--j-->&nbsp;<!--j-->Click on <b>Column Selection</b> to add or remove columns of the table<!--j-->&nbsp;<!--j-->[XIV-1]<!--j-->.<!--j-->&nbsp;<!--j-->
+The following DTC information can be displayed:</p>
+ <table border=1 cellspacing=0 cellpadding=0>
+ <tr>
+ <td width=158 valign=top><p><b>Selection</b></p></td>
+ <td width=427 valign=top><p><b>Description</b></p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>Status</p></td>
+ <td width=427 valign=top><p><img src="../../images/gds_status-unknown.png" alt="gds_status-unknown.png" width="16" height="16" /><!--j-->&nbsp;<!--j-->New DTC set during read cycle.<!--j-->&nbsp;<!--j-->DTC description text is set to bold.</p>
+ <p><img src="../../images/gds_mail-generic.png" alt="gds_mail-generic.png" /><!--j-->&nbsp;<!--j-->Present DTC, no change since last read cycle.</p>
+ <p><img src="../../images/gds_forward.png" alt="gds_forward.png" /><!--j-->&nbsp;<!--j-->
+Current DTC with status change since last read cycle.<!--j-->&nbsp;<!--j-->
+DTC description text is set to Italic.</p>
+ <p><img src="../../images/gds_mail-delete.png" alt="gds_mail-delete.png" /><!--j-->&nbsp;<!--j-->
+DTC deleted in current read cycle.<!--j-->&nbsp;<!--j-->
+DTC description text is set with red background.</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>ECU</p></td>
+ <td width=427 valign=top><p>Name of Control Unit</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>Functional System</p></td>
+ <td width=427 valign=top><p>Name of Functional System (Set of ECU)</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>DTC</p></td>
+ <td width=427 valign=top><p>DTC Code</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>Symptom Byte</p></td>
+ <td width=427 valign=top><p>Symptom Byte code associated to DTC</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>Description</p></td>
+ <td width=427 valign=top><p>DTC text description</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>Symptom</p></td>
+ <td width=427 valign=top><p>Decoded Symptom description</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>Status Byte</p></td>
+ <td width=427 valign=top><p>For future use</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>Decoded Status</p></td>
+ <td width=427 valign=top><p>Current status of DTC</p></td>
+ </tr>
+ </table>
+ <p>
+With the <b>Filtering Options</b>, specific ECUs can be set as a filter with the result that only the DTCs of the listed ECUs are displayed<!--j-->&nbsp;<!--j-->[XIV-2]<!--j-->.<!--j-->&nbsp;<!--j-->
+This function may be used when DTCs are read out vehicle wide or by functional system.<br />
+
+In the lower field free text can be entered to filter the DTC display, e.g. a specific trouble code or key word.<br />
+The detailed DTC Status can be displayed when the checkbox <b>Show DTC Status</b> is activated<!--j-->&nbsp;<!--j-->[XIV-3]<!--j-->.</p>
+ <hr />
+ <h3>Clear DTCs</h3>
+ <p><!--j-->[XIV-4]<!--j-->&nbsp;<!--j-->
+If <b>Clear DTCs</b> is selected, a vehicle DTC Information screen will be displayed.<!--j-->&nbsp;<!--j-->[XV]<br />
+Use the <b>Add</b> or <b>Add All</b> arrow to select the ECUs you wish to clear.<!--j-->&nbsp;<!--j-->
+Some ECUs can only be cleared together, in which case they will be selected together.<!--j-->&nbsp;<!--j-->
+The selected ECUs will be displayed on the right side of the screen.<!--j-->&nbsp;<!--j-->Select <b>OK</b> to clear the selected ECUs.<!--j-->&nbsp;<!--j-->
+Select <b>Cancel</b> if you do not wish to clear the ECUs at the current time.<!--j-->&nbsp;<!--j-->
+If <b>OK</b> is selected, a pop-up progress window will appear.<!--j-->&nbsp;<!--j-->
+The deleted code(s) will turn red and disappear with the next refresh.</p>
+ <p><img src="../../images/gds_xv_enu.gif" alt="gds_xv.gif" width="500px"/><br />
+[XV]</p>
+ <hr />
+ <h3>Refresh DTCs</h3>
+ <p>If the button <b>Refresh DTC</b> is selected, GDS will request a DTC update from the controller<!--j-->&nbsp;<!--j-->[XIV-5]<!--j-->.</p>
+ <hr />
+ <h3>Leave the DTC Application</h3>
+ <p>
+Leave the DTC Application via the <b>Exit</b> button<!--j-->&nbsp;<!--j-->[XIV-6]<!--j-->.</p>
+ <table width="80%" border="0">
+ <tr>
+ <td class="important"><b><!--j-->Important<!--j-->:<!--j--></b><!--j-->&nbsp;<!--j-->
+Only the <b>Exit</b> selection allows you to leave the <b>Diagnostic Application</b>.<!--j-->&nbsp;<!--j-->
+It is not possible to exit GDS while diagnostic applications are being performed.<!--j-->&nbsp;<!--j-->
+To Exit GDS navigate back to the GDS Login Page.</td></tr></table>
+ <hr />
+ <h3>Identification Information</h3>
+ <p>
+The application <b>Data Display</b> can be used to view vehicle controller data.<!--j-->&nbsp;<!--j-->
+The controller identification display provides information about the controller software and hardware variants which may be required information for the Technical Assistance Center.</p>
+ <hr />
+ <h2>
+Data Display</h2>
+ <p>
+The Data Display application provides the real-time status of the vehicle controller data and signals.</p>
+ <p>
+The default view of the selected controller data is displayed in a table <b>All Parameters</b><!--j-->&nbsp;<!--j-->[XVI-1]<!--j-->.<!--j-->&nbsp;<!--j-->
+Configure the displayed columns individually with the button <b>Column Selection</b><!--j-->&nbsp;<!--j-->[XVI-3]<!--j-->.</p>
+ <p>Individual parameter can be viewed in a watch list by selecting <b>Add to Watchlist</b><!--j-->&nbsp;<!--j-->[XVI-2]<!--j-->.</p>
+
+  <p><img src="../../images/gds_xvi_enu.gif" alt="gds_xvi.gif" width="650px"/><br />
+[XVI]</p>
+
+  <p>
+Parameters selected in the watchlist can be viewed in the <b>Line Graph</b> view<!--j-->&nbsp;<!--j-->[XVII-1]<!--j-->.<!--j-->&nbsp;<!--j-->
+
+
+Select the parameter to be displayed in the drop down box and click the button <b>Add</b> to start the <b>Line Graph</b> view<!--j-->&nbsp;<!--j-->[XVII-2]<!--j-->.<!--j-->&nbsp;<!--j-->
+It is possible to display multiple parameters in the line graph.</p>
+ <p>
+The buttons on the lower task bar allows configuring the line graph view.<!--j-->&nbsp;<!--j-->[XVII-3]</p>
+ <ol>
+ <li><b>Pause Scrolling/Resume Scrolling</b>: Change between a static view or dynamic correction of the line graph screen.</li>
+ <li><b>Data Points</b>: Change the graph display between point mode or line mode</li>
+ <li><b>Add Marker</b>: Highlight specific positions/events of the line-graph.</li>
+ <li><b>Zoom In</b> / <b>Zoom Out</b> Function</li>
+ </ol>
+ <p>
+
+  <img src="../../images/gds_xvii_enu.gif" alt="gds_xvii.gif" width="650px"/><br />
+[XVII]</p>
+ <p>
+Individual parameters of the <b>All Parameters</b> list can be displayed graphically<!--j-->&nbsp;<!--j-->[XVI-1]<!--j-->.<!--j-->&nbsp;<!--j-->
+Select the individual parameter and select the desired display mode in the selection box<!--j-->&nbsp;<!--j-->[XVIII-1]<!--j-->.<!--j-->&nbsp;<!--j-->The parameter can be viewed in the following modes:</p>
+ <ul type=square>
+ 	 <li>Dial Graph<!--j-->&nbsp;<!--j-->[XVIII-2]<!--j-->.</li>
+ 	 <li>Bar Graph<!--j-->&nbsp;<!--j-->[XVIII-3]<!--j-->.</li>
+ 	 <li>High Visibility<!--j-->&nbsp;<!--j-->[XVIII-4]<!--j-->.</li>
+ </ul>
+ <p>Up to 4 parameter or display mode can be displayed at once.</p>
+
+
+   <p><img src="../../images/gds_xviii_enu.gif" alt="gds_xviii.gif" width="650px"/><br />
+[XVIII]</p>
+ <hr />
+ <h3>Snapshot Replay</h3>
+ <p>The <b>Snapshot Replay</b> function allows reviews of previously recorded vehicle snapshot data.<!--j-->&nbsp;<!--j-->This information can be used in analysis of vehicle problems and detection of trigger error conditions.<!--j-->&nbsp;<!--j-->The graph function can be used to compare parameters to see if a component is functioning properly.<!--j-->&nbsp;<!--j-->Recorded snapshots can be selected for viewing by the following three methods:</p>
+ <ul>
+ <li>Selecting a snapshot file from the <b>Vehicle Home Page</b> and clicking on the Review selection.</li>
+ <li>Double clicking on the selected snapshot from the <b>Vehicle Home Page</b>.</li>
+ <li>Entering the <b>Tools</b> selection from the <b>Menu</b> selection and selecting <b>Snapshot replay</b>.<!--j-->&nbsp;<!--j-->Next, open the <b>Snapshot Manager</b>.<!--j-->&nbsp;<!--j-->Double click on the snapshot file you wish to view or click on the Load Snapshot selection and select a snapshot file.</li>
+ </ul>
+ <p>Regardless of selection method, a File Loaded pop-up window will be displayed from the <b>Snapshot Replay</b> screen.<!--j-->&nbsp;<!--j-->Select OK from the pop-up window.</p>
+ <hr />
+ <h3>Snapshot Play Functions<!--j-->&nbsp;<!--j-->[XIX-1]</h3>
+ <p>There are several snapshot play functions that are used to replay recorded snapshots</p>
+
+
+   <table width="84%" height="80" border="1">
+ <tr>
+ <td width="7%"><img src="../../images/gds_play.png" alt="gds_play.png" width="25" height="23" /></td>
+ <td width="93%">
+The Play function is used to play the snapshot forward by clicking on this selection.<!--j-->
+
+&nbsp;<!--j-->
+
+A marker will move across the screen when this selection is used.<!--j-->
+
+&nbsp;<!--j-->
+All selections in this area turn grey when they are active.</td>
+ </tr>
+ <tr>
+ <td><img src="../../images/gds_pause.png" alt="gds_pause.png" width="24" height="21" /></td>
+ <td>The Pause function is used to pause play of the snapshot.<!--j-->&nbsp;<!--j-->When this selection is clicked a second time the snapshot will start playing where it left off.</td>
+ </tr>
+ <tr>
+ <td><img src="../../images/gds_stop.png" alt="gds_stop.png" width="24" height="19" /></td>
+ <td>The Stop function is used to stop playing the snapshot.<!--j-->&nbsp;<!--j-->The snapshot will start from the beginning, if Play is selected after using the Stop function.</td>
+ </tr>
+ </table>
+ <hr />
+ <h3>Time Control<!--j-->&nbsp;<!--j-->[XIX-2]</h3>
+ <p><b>Time Control</b> is used to control the snapshot replay.<!--j-->&nbsp;<!--j-->This function allows selection of a specific time frame, display of different views, and control of display speed.<!--j-->&nbsp;<!--j-->The following functions can be selected directly under <b>Time Control</b>.</p>
+ <table width="84%" border="1">
+ <tr>
+ <td><img src="../../images/gds_bookmark.png" alt="gds_bookmark.png" width="17" height="24" /></td>
+ <td>The Bookmark selection allows you to add a specific comment in the current display and return to this point in the future.<!--j-->&nbsp;<!--j-->When this option is selected, a pop-up window is displayed.<!--j-->&nbsp;<!--j-->Enter a bookmark name and select OK.</td>
+ </tr>
+ <tr>
+ <td><img src="../../images/gds_notepad.png" alt="gds_notepad.png" width="26" height="22" /></td>
+ <td>The Notepad can be selected to add comments to the snapshot replay file at the current point of time.<!--j-->&nbsp;<!--j-->When this option is selected, a pop-up window is displayed.<!--j-->&nbsp;<!--j-->Enter a comment for the snapshot file and select OK.</td>
+ </tr>
+ <tr>
+ <td><img src="../../images/gds_load.png" alt="gds_load.png" width="23" height="23" /></td>
+ <td>The Load Snapshot (blue folder) opens a snapshot file and makes it ready for further analysis.<!--j-->&nbsp;<!--j-->If you want to view an <a href="#export_snap">exported snapshot</a>, first decompress the corresponding archive *.zip.<!--j-->&nbsp;<!--j--><!--j-->&nbsp;<!--j-->This function is also available by clicking on an available snapshot file from the <b>Snapshot Manager</b>.</td>
+ </tr>
+ <tr>
+ <td><img src="../../images/gds_time-options.png" alt="gds_time-options.png" width="19" height="23" /></td>
+ <td>The Down Arrow displays all <b>Time Control</b> options when selected.<!--j-->&nbsp;<!--j-->Individual options can also be selected by clicking on the item you want.</td>
+ </tr>
+ <tr>
+ <td><img src="../../images/gds_speed.png" alt="gds_speed.png" width="57" height="27" /></td>
+ <td>
+The Snapshot Display Speed can be controlled by selecting this option.<!--j-->
+
+&nbsp;<!--j-->
+
+Slow speeds of 1/8X, 1/4X and 1/2X can be selected.<!--j-->
+
+&nbsp;<!--j-->
+
+The real time speed can also be selected at 1.<!--j-->
+
+&nbsp;<!--j-->
+Faster speeds of 2X, 4X, and 8X can also be obtained by using this selection.</td>
+ </tr>
+ </table>
+
+
+   <hr />
+ <h3>View Selections<!--j-->&nbsp;<!--j-->[XIX-3]</h3>
+ <p>Each View Selection provides a different way of displaying vehicle data for analysis.<!--j-->&nbsp;<!--j-->The following functions can be selected under <b>Available Views</b>:</p>
+ <ul>
+ <li>Parameter List View - displays incoming information from the snapshot file.<!--j-->&nbsp;<!--j-->The current value of the parameters is displayed on the screen.</li>
+ </ul>
+ <table width="80%" border="0">
+ <tr>
+ 	<td class="important"><b>Important</b><br />The parameter name will be shown in the original language used for capture if no translation is available for the name.</td></tr></table>
+ <ul>
+ <li>Log View - contains all the information from the snapshot file.<!--j-->&nbsp;<!--j-->All parameter values are listed in the order they were recorded.<!--j-->&nbsp;<!--j-->Specific parameters can be added or removed from a watchlist by clicking on the appropriate item.</li>
+ <li>State View - shows the values of all parameters in a specific time frame.<!--j-->&nbsp;<!--j-->These values can be used for comparison with the trigger view.</li>
+ <li>Trigger View - displays all system and user defined triggers.<!--j-->&nbsp;<!--j-->This function can be used when there is a combination of factors involved in a diagnostic problem.<!--j-->&nbsp;<!--j-->
+When a Trigger condition is met a caution triangle will be displayed on the screen.<ul><li>Load Triggers<!--j-->&nbsp;<!--j-->-<!--j-->&nbsp;<!--j-->Allows you to load a file containing trigger definitions.</li>
+ 	 <li>Save Triggers<!--j-->&nbsp;<!--j-->-<!--j-->&nbsp;<!--j-->Allows you to save the trigger to your computer's hard drive.</li>
+ <li>Remove Trigger<!--j-->&nbsp;<!--j-->-<!--j-->&nbsp;<!--j-->Allows you to remove the current trigger. It will no longer be present.</li>
+ <li>Edit Trigger<!--j-->&nbsp;<!--j-->-<!--j-->&nbsp;<!--j-->displays a pop-up window where you can modify the limits and parameters contained within a trigger.</li>
+ <li>Add Trigger<!--j-->&nbsp;<!--j-->-<!--j-->&nbsp;<!--j-->displays a pop-up window to configure a trigger.</li></ul></li>
+ <li>DTC View<!--j-->&nbsp;<!--j-->-<!--j-->&nbsp;<!--j-->After the Play function is selected and this option is selected this function opens the list of recorded DTCs.</li>
+ <li>Line Graph View - displays data that can be visualized against the time-axis.<!--j-->&nbsp;<!--j-->From this view, specific parameters can be selected for graphing by checking the box under Selected.<!--j-->&nbsp;<!--j-->At the bottom of the graph there are four functions: <b>Zoom In</b> (increase size), <b>Zoom Out</b> (decrease size), <b>Bookmarks</b>, and <b>Pause Scrolling</b>.<!--j-->&nbsp;<!--j-->Each of these functions can be accessed by clicking on them.</li>
+ </ul>
+ <p><img src="../../images/gds_xix_enu.gif" alt="gds_xix.gif" width="650px"/><br />
+[XIX]</p>
+ <hr />
+ <h2>Control Functions:</h2>
+ <p>With the GDS control functions, specific vehicle functions can be controlled from the GDS system.<!--j-->&nbsp;<!--j-->Select Control Functions of the specific controller in the System Navigation to start the Control Function Application.</p>
+ <p>The control functions are embedded in the data list display.<!--j-->&nbsp;<!--j-->During execution of the control function the displayed parameter can be monitored or recorded with the GDS snapshot function.</p>
+ <p>GDS supports two Control Function types:</p>
+ <p>1.<!--j-->&nbsp;<!--j-->Digital Control Function with ON/OFF capability<!--j-->&nbsp;<!--j-->[XX-1]</p>
+ <p><img src="../../images/gds_xx_enu.gif" alt="gds_xx.gif" width="650px"/><br />
+[XX]</p>
+ <p>2.<!--j-->&nbsp;<!--j-->Analogue Control Function with control capability of the function.<!--j-->&nbsp;<!--j-->The actuator function can be controlled by the control buttons or moving the pointer on the scale at the side.<!--j-->&nbsp;<!--j-->[XXI-1]<!--j-->&nbsp;<!--j-->or<!--j-->&nbsp;<!--j-->[XXI-2]<!--j-->.</p>
+ <p><img src="../../images/gds_xxi_enu.gif" alt="gds_xxi.gif" width="650px"/><br />[XXI]</p>
+ <hr />
+ <h2>Configuration and Reset Functions:</h2>
+ <p>The configuration and reset functions are specific controller functions which need to be executed when system actuators are replaced or when they require a reset.<!--j-->&nbsp;<!--j-->For more details refer to the applicable Service Manual of the system.</p>
+ <hr />
+ <h1><a name="troubleshooting"></a>7.<!--j-->&nbsp;<!--j-->TROUBLESHOOTING</h1>
+
+  <h2>MDI Connection Problems</h2>
+ <p>If the MDl connections are loose or not properly connected to the vehicle/computer, a pop-up window will be displayed.<!--j-->&nbsp;<!--j-->Perform the following steps:</p><ul>
+ <li>Make sure the MDl Manager software is not running at the same time GDS is being performed.</li>
+ <li>Make sure the MDl is properly connected to the vehicle and computer</li>
+ <li>Use a known &quot;good USB cable&quot; from another MDI unit, if available.<!--j-->&nbsp;<!--j-->Perform all connections and try again.</li>
+ <li>Use a known &quot;good MDI DLC connection cable&quot; from another MDI unit, if available.<!--j-->&nbsp;<!--j-->Perform all connections and try again.</li>
+ <li>If the condition is still present, contact Customer Support.</li>
+ <li>Make sure that the firewall does not block GDS/MDI communication.</li>
+ </ul>
+ <hr />
+ <h2>GDS/MDI Manager Software Conflict</h2>
+ <p>GDS software and MDI Manager software cannot be running at the same time.<!--j-->&nbsp;<!--j-->If both software programs are run at the same time, a software conflict may result.<!--j-->&nbsp;<!--j-->The Details selection will provide possible information regarding the error.<!--j-->&nbsp;<!--j-->You may be asked by Customer Support to provide this information if the problem persists.</p>
+ <p>If the software conflict continues to occur, a &quot;Fatal error has occurred&quot; pop-up window may be displayed the MDI Manger software.<!--j-->&nbsp;<!--j-->Shutdown the MDI Manger software and go back into the GDS program.<!--j-->&nbsp;<!--j-->If the problem is still present after entering GDS, contact Customer Support.</p>
+ <p>&nbsp;</p>
+ <p align="right"><font size="2">&copy; GM Europe, SPO Engineering, International Operations - 08 May 2009 (V3.0)</font></p>
+ </div>
+
+  </body>
+ </html>

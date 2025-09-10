@@ -1,0 +1,735 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8" />
+<title>Global Diagnostic System</title>
+<link rel="stylesheet" type="text/css" href="mdiprint.css" media="print" />
+<!-- Version 2.0.16 with all screenshots and Export Function explanation (Snapshot) -->
+
+<style type="text/css">
+	  <!--
+	div.all { margin-top:2px; margin-left:2px; margin-right:auto }
+	  
+.style1 { text-align: center;
+}
+.style2 {
+	border-style: solid;
+	border-color: black;
+	border-width: 1px;
+}
+.style3 {
+	border: 1px solid black;
+}
+.tableinsert {
+	vertical-align: top;
+	text-indent: 20px;
+}
+.caution {
+	padding: 10px;
+	margin: 0px;
+	border-color: #0000FF;
+	border-style: outset;
+	border-width: 1px 4px 4px 4px;
+	border-left: 1px solid #808080;
+	border-top: 1px solid #808080;
+	background-color: #FFCCCC;
+}
+.important {
+	padding: 10px;
+	margin: 0px;
+	border-color: #0000FF;
+	border-style: outset;
+	border-width: 1px 4px 4px 4px;
+	border-left: 1px solid #808080;
+	border-top: 1px solid #808080;
+	background-color: #FFCCCF;
+}
+.note {
+	padding: 10px;
+	margin: 0px;
+	border-color: #0000FF;
+	border-style: outset;
+	border-width: 1px 4px 4px 4px;
+	border-left: 1px solid #808080;
+	border-top: 1px solid #808080;
+	background-color: #99CCFF;
+}
+.notice {
+	padding: 10px;
+	margin: 0px;
+	border-color: #808080 #666666 #666666 #808080;
+	border-style: solid outset outset solid;
+	border-width: 1px 4px 4px 4px;
+	border-left: 1px solid #808080;
+	border-top: 1px solid #808080;
+	background-color: #C0C0C0;}
+
+* {
+	font-family:arial,sans-serif;}
+
+
+
+-->
+</style>
+</head>
+<body><div class="all">
+
+ <h1 align="center">Global Diagnostic System</h1>
+ <h1>Sisällysluettelo</h1>
+ <ol>
+ <li><a href="#intro">Johdanto</a></li>
+ <li><a href="#product_description">Tuoteseloste</a></li>
+ <li><a href="#installation">GDS Asennus</a></li>
+ <li><a href="#getting_started">Aloitusopas</a></li>
+ <li><a href="#navigation">Yleinen navigointi</a></li>
+ <li><a href="#diagnostics">Diagnostiikka</a></li>
+ <li><a href="#troubleshooting">Vianmääritys</a></li>
+ </ol>
+ <hr />
+
+  <h1><a name="intro"></a>Johdanto</h1>
+ <h2>GDS Hakuopas</h2>
+ <p>Global Diagnostic System (GDS) Pikaopas antaa yleiskuvan GDS:stä.</p>
+ <p>Kaikki tämän ohjekirjan tiedot perustuvat viimeisimpiin julkaisuhetkellä käytettävissä olleisiin tuotetietoihin.<!--j-->&nbsp;<!--j-->Valmistaja pidättää oikeuden tehdä muutoksia milloin tahansa ilman ennakkoilmoitusta.</p>
+ <p>Mitään tämän julkaisun osaa ei saa ilman GM Service and Parts Operations:in etukäteistä kirjallista lupaa toisintaa, säilyttää missään tallennusjärjestelmässä tai lähettää millään tavalla, mukaan lukien esimerkiksi elektroniset ja mekaaniset menetelmät, valokopiointi, nauhoitus tai muut keinot.<!--j-->&nbsp;<!--j-->Tämä koskee kaikkea tekstiä, taulukoita, kuvia ja kaavioita.</p>
+ <p>Lupapyynnöt tulee lähettää:</p>
+ <p>General Motors Corporation<br />
+Service and Parts Operations<br />
+Product Engineering<br />
+37350 Ecorse Road<br />
+Romulus, MI 48174-1376<br />
+U.S.A.</p>
+ <p>© 2008 GM Service and Parts Operation.<!--j-->&nbsp;<!--j-->Valmistettu U.S.A:ssa.<!--j-->&nbsp;<!--j-->Kaikki oikeudet pidätetään.</p>
+ <hr />
+
+  <h2>Yleistä</h2>
+ <p>
+GDS on suunniteltu koulutetun huoltohenkilöstön käyttöön autojen elektronisten järjestelmien diagnosointia ja korjausta varten.<!--j-->&nbsp;<!--j-->
+
+Tekniset tiedot on pyritty saamaan mahdollisimman täydellisiksi ja tarkoiksi, ja ne perustuvat julkaisuhetkellä käytettävissä oleviin tehdashuoltotietoihin.<!--j-->&nbsp;<!--j-->
+Tästä huolimatta valmistaja pidättää oikeuden tehdä muutoksia milloin tahansa ilman ennakkoilmoitusta.</p>
+ <p>
+Lue käyttöoppaat tutustuaksesi GDS:ään ja sen ominaisuuksiin ennen GDS:n käyttämistä.</p>
+ <p>GDS tarjoaa seuraavat ominaisuudet:</p>
+ <ul>
+ <li>Vikakoodien lukeminen</li>
+ <li>ECU-tunnistetietojen lukeminen</li>
+ <li>Tietoluetteloparametrien lukeminen ja graafinen näyttäminen</li>
+ <li>Tilannevedostietojen nauhoitus ja tallennus</li>
+ <li>Ohjaustoiminnot</li>
+ <li>Konfigurointi-ja nollaustoiminnot</li>
+ <li>Nauhoita ja tallenna diagnostiikkaprotokolla</li>
+ <li>Diagnostiikkaistuntojen tallennus autokohtaisesti</li>
+ </ul>
+
+  <table width="80%" border="0">
+ <tr>
+ <td class="important">
+ <b><!--j-->Tärkeää<!--j-->:<!--j--></b><br />
+Auton ohjaimien SPS-ohjelmointia ei tueta GDS:ssä.<!--j-->&nbsp;<!--j-->Käytä SPS Pass Through-ohjelmointiin MDI: llä TIS2Web / GlobalTIS SPS-ohjelmaa.</td>
+ </tr>
+ </table>
+ <hr />
+
+  <h2>Asiakastukikatsaus</h2>
+ <p>
+
+Soita paikalliseen Customer Support Center-palveluun, kun tarvitset neuvontaa kysymysten tai ongelmien ratkaisemiseksi GM-Techline-tuotteen ja siihen liittyvien tuotteiden käyttöön liittyvissä asioissa tai takuu-ja muissa korjausasioissa.<!--j-->&nbsp;<!--j-->Ota yhteys GM Dealer Equipment-palveluun, kun haluat tilata varaosia.</p>
+ <h3>Ennen soittamista</h3>
+ <p>Ennen soittamista tukipalveluun varmista, että seuraavat tiedot ovat saatavilla:</p>
+ <ul>
+ <li>Jälleenmyyntiliikkeen nimi, osoite ja jälleenmyyjän koodinumero</li>
+ <li>MDI:n tai tietokoneen sarjanumero, jos soveltuu</li>
+ <li>Nimi, osanumero ja pyydettävä määrä</li>
+ <li>Puhelinnumero, josta asentajan voi tavoittaa.</li>
+ </ul>
+ <p>Valmistele lyhyt kuvaus ongelmasta:</p>
+ <ul>
+ <li>Kerro milloin ongelma ilmeni</li>
+ <li>Luettele näytetyt vikakoodit</li>
+ <li>Kerro, mitä tarvikkeita käytettiin ongelman ilmetessä ja auton tiedot</li>
+ </ul>
+
+  <h4>MDI:N TUNNISTAMINEN</h4>
+ <p>GM MDI -kokoonpanotarra sijaitsee yksikön takana.<!--j-->&nbsp;<!--j-->
+
+Kokoonpanon tunnistenumero on kaksiosainen: valmistuskoodi jäljitystä varten ja yksilöllinen sarjanumero.<!--j-->&nbsp;<!--j-->
+Sarjanumeron avulla voidaan tunnistaa ohjelmiston MDI.</p>
+
+  <h3>Soittaminen</h3>
+
+  <h4>Eurooppalaiset käyttäjät</h4>
+ <h5>GDS-ohjelmiston asennus ja järjestelmäviestinnän tuki:</h5>
+ <p><b>DAC -Dealer Assistance Center:</b><br />
+
+
+Käyttötuki GDS-ohjelmistolle, GDS-viestinnälle TIS2Web / GlobalTIS: ille ja MDI:lle toteutetaan Dealer Assistance Centerin toimesta.<br />
+
+Soveltuva maakohtainen puhelinnumero saadaan Channel 21 -portaalin sisäänkirjautumissivulta.</p>
+ <h5>
+GDS Vehicle Diagnostic -tuki:</h5>
+ <p><b>European Technical Assistance Center:</b><br />
+
+Käyttäjän tuki auton viestintäkysymyksissä GDS-pohjaisen diagnostiikkaistunnon aikana toteutetaan European Technical Assistance Centerin toimesta.<!--j-->&nbsp;<!--j-->
+Soveltuva maakohtainen puhelinnumero on saatavilla paikalliselta General Motors Europen organisaatiolta.</p>
+ <h5>
+Tuki itsenäisille korjaamoille/jälkimarkkinoinnille:</h5>
+ <p><b>European Customer Assistance Center</b><br />
+Itsenäiset korjaamot voivat ottaa yhteyttä European Customer Assistance Center :iin yllä olevia tukipalveluita varten.<!--j-->&nbsp;<!--j-->
+Yhteystiedot saatavilla GME InfoTech Portal -palvelusta.</p>
+ <hr />
+ <h3>Ohjelmiston lisenssisopimus</h3>
+ <p>Lue tämä ohjelmiston käyttöoikeussopimus huolellisesti ennen kuin jatkat ohjelmiston käyttöä.<!--j-->&nbsp;<!--j-->
+Ohjelmiston käytön jatkaminen katsotaan sopimuksen ehtojen hyväksymiseksi.</p>
+ <p>OMISTUSOIKEUS<!--j-->:<!--j-->&nbsp;<!--j-->
+
+
+Ohjelmiston tekijänoikeudet omistaa General Motors Corporation. Lisäksi käyttäjä hyväksyy, että General Motors Corporation omistaa kaikki tekijänoikeudet ja muut immateriaalioikeudet ohjelmistoon.<!--j-->&nbsp;<!--j-->
+Kaikki oikeudet, joita ei tässä nimenomaisesti lisensoida, kuuluvat yksinomaisesti General Motors Corporationille.</p>
+ <p>KÄYTTÖ<!--j-->:<!--j-->&nbsp;<!--j-->
+Sinulle annetaan ei-yksityinen käyttöoikeus ohjelmiston käyttämiseen useissa tietokonejärjestelmissä.<!--j-->&nbsp;<!--j-->
+
+Et saa muuttaa, purkaa, muuntaa, toisintaa, jakaa tai myydä ohjelmistoa kokonaan tai osissa.<!--j-->&nbsp;<!--j-->
+Tämä käyttöoikeus on henkilökohtainen ja sen voimassaolo edellyttää, että noudatat ehdottomasti kaikkia sopimuksen ehtoja.</p>
+ <p>Päättäminen<!--j-->:<!--j-->&nbsp;<!--j-->
+
+General Motors Corporation voi päättää tämän käyttöoikeussopimuksen, jos sopimusehtoja ei noudateta.<!--j-->&nbsp;<!--j-->
+
+Päättämisen jälkeen ohjelmiston käyttö on välittömästi lopetettava ja kaikki ohjelmiston kopiot tuhottava, mukaan lukien tietokonejärjestelmissä olevat.</p>
+ <hr />
+ <h1><a name="product_description"></a>2.<!--j-->&nbsp;<!--j-->Tuoteseloste</h1>
+ <h2>Jälleenmyyjän PC-vaatimukset<!--j-->&nbsp;<!--j-->(<!--j-->Eurooppa<!--j-->)</h2>
+ <p>Minimi PC-vaatimukset käytettäessä GDS: ää TIS2Webin ja GlobalTIS:in kanssa:</p>
+ <ul>
+ <li>Prosessori:<br />
+Intel Pentium M, 1,5 GHz</li>
+ <li>Järjestelmän muisti (RAM)<br />
+1 Gt käytettäessä GDS-ja TIS2Web / GlobalTIS client -sovelluksia; 2 Gt käytettäessä GDS-ja GlobalTIS-erillisohjelmia</li>
+ <li>Kiintolevytilaa vähintään:<br />
+40 Gt</li>
+ <li>Käyttöjärjestelmä<!--j-->:<br />Windows XP Professional (SP2)</li>
+ <li>Muut ohjelmistokomponentit:<br />
+Java Web Start 1.5x tai uudempi<br />
+ </li>
+ </ul>
+ <p>
+Katso lisätietoja varten GME IT -laitteiston ja ohjelmiston erittelyt, jotka ovat saatavissa paikalliselta GME-organisaatiolta.</p>
+ <hr />
+ <h1><a name="installation"></a>3.<!--j-->&nbsp;<!--j-->GDS Asennus</h1>
+ <h2>GDS-osa, yleiskuva:</h2>
+ <p>GDS-ohjelmisto sisältää seuraavat aluksi asennettavat moduulit, jotka päivitetään säännöllisesti määrätyin väliajoin.<!--j-->&nbsp;<!--j-->[I]</p>
+ <ul>
+ <li><b>GDS Base System</b><br />
+Asennettu GDS-perusohjelmisto PC:llä</li>
+ <li><!--j--><b><!--j-->GDS Deliverables<!--j--></b><!--j-->:<br />
+Automallien diagnostiikkatietopaketit, jotka suorittavat diagnostiikkatoimet auton säätimissä.</li>
+ <li><!--j--><b><!--j-->GDS Smart Start<!--j--></b><!--j-->:<!--j--><br />Sovellusagentti, joka vertaa GDS Base System, GDS Deliverables ja MDI Manager -ohjelmistojen versioita palvelimella TIS2Web/GlobalTIS:in ja paikallisen asennuksen välillä.<!--j-->&nbsp;<!--j-->Näyttöön tulee latauskehotus, jos uusia päivityksiä on saatavana.</li>
+ <li><!--j--><b><!--j-->MDI Manager -ohjelmisto (erillinen ohjelma)<!--j--></b><!--j-->:<br />
+Ohjelma MDI-laitteen (Multiple Diagnostic Interface) päivitykseen ja konfigurointiin</li>
+ </ul>
+ <p><img src="../../images/gds_i_fin.gif" alt="gds_i.gif" width="650px"/><br />
+[I]</p>
+ <hr />
+ <h2>Asennus:</h2>
+ <p>GDS voidaan asentaa erilliseltä asennus-DVD:ltä tai suoraan ladattuna TIS2Web / GlobalTIS:istä.</p>
+ <h3>Asennus GDS-DVD:ltä:</h3>
+ <ul>
+ <li>PC tulee käynnistää Järjestelmänvalvoja-tilassa</li>
+ <li>Käynnistä asennus DVD-aloitusvalikossa</li>
+ <li>Valitse asennusohjelman kieli</li>
+ <li>Nykyisiä GDS-konfigurointiasetuksia ja tietoja voidaan käyttää, jos aiempi GDS-asennus havaitaan PC:llä.</li>
+ <li>Hyväksy käyttöoikeussopimus (edellytys jatkamiselle)</li>
+ <li>Valitse GDS-asennuskansio</li>
+ <li>GDS-asennusprosessi käynnistyy</li>
+ <li>MDI Manager -ohjelmisto asennetaan, jos PC:llä ei ole lainkaan MDI Manager -ohjelmistoa tai jos sen vanhempi versio on asennettu.<!--j-->&nbsp;<!--j-->Alkuperäisessä MDI Manager -ohjelmiston asennuksessa MDI-laitteiston tulee olla yhdistettynä asennusprosessin aikana.<!--j-->&nbsp;<!--j-->Katso lisätietoja MDI-ohjeesta.</li>
+ <li>GDS voidaan käynnistää työpöydän kuvakkeella tai valinnalla Käynnistä/Ohjelmat/GDS asennusprosessin jälkeen.<!--j-->&nbsp;<!--j--><img src="../../images/gds_icon.png" alt="gds_icon.png" /></li>
+ <li>Määritä tarvittaessa palomuurin asetukset siten, että GDS voi vaihtaa tietoja MDI-laitteen kanssa.</li>
+ <li>GDS Smart Start käynnistyy, näytetty päivitysprosessi suoritetaan ennen kuin GDS käynnistetään.</li>
+ </ul>
+ <hr />
+ <h3>Asennus TIS2Web / GlobalTIS:istä<!--j-->:</h3>
+ <p><img src="../../images/gds_ii_fin.gif" alt="gds_ii.gif" width="600px"/><br />
+[II]</p>
+ <table width="80%" border="0">
+ <tr>
+ <td class="important"><b><!--j-->Tärkeää<!--j-->:<!--j--></b><!--j-->&nbsp;<!--j-->Asennettaessa TIS2Web:istä noin 140 Mt tietoa ladataan Internetistä.</td></tr></table>
+ <ul>
+ <li>PC:n tulee olla Järjestelmänvalvoja-tilassa</li>
+ <li>Käynnistä GDS TIS2Web / GlobalTIS -kotisivulla<!--j-->&nbsp;<!--j-->[II]</li>
+ <li>GDS Smart Start ladataan TIS2Web-palvelimelta. Latauksen kesto riippuu Internet-yhteysnopeudesta.</li>
+ <li>Valitse GDS-asennuskansio.</li>
+ <li>Syötä Internet-salasana (vain jos Internet-yhteyttä varten käytetään välityspalvelinta)</li>
+ <li>Määritä tarvittaessa palomuurin asetukset siten, että GDS voi vaihtaa tietoja MDI-laitteen kanssa.</li>
+ <li>GDS Smart Start -asennus saattaa kestää hetken.</li>
+ <li>Käynnistä GDS Smart Start, GDS-päivitysprosessi suoritetaan.<!--j-->&nbsp;<!--j-->[III]</li>
+ <li>Kun asennustiedostojen lataus on valmis, GDS -versio ja MDI Manager -ohjelmiston versio näytetään ja ne voidaan ladata hyväksymällä kehote.<!--j-->&nbsp;<!--j-->Painikkeella  <b>Näytä latauksen edistyminen</b> voidaan näyttää päivitysprosessin tilarivi.</li>
+ <li>MDI Manager-ohjelmisto asennetaan jos PC:lle ei ole asennettu MDI Manager-ohjelmistoa tai jos PC:llä on MDI Manager-ohjelmiston vanhempi versio.<!--j-->&nbsp;<!--j-->MDI-laitteiston tulee olla yhdistettynä MDI Manager-ohjelmiston ensimmäisen asennuskerran aikana.<!--j-->&nbsp;<!--j-->Katso lisätietoja MDI-ohjeesta.</li>
+ </ul>
+
+  <table width="200" border="0">
+ <tr>
+ <td><img src="../../images/gds_iii_fin.gif" alt="gds_III.gif" width="200px"/></td>
+ <td><img src="../../images/gds_iv_fin.gif" alt="gds_IV.gif" width="150px" /></td>
+ </tr>
+ <tr>
+ <td>[III]</td>
+ <td>[IV]</td>
+ </tr>
+ </table>
+ <hr />
+ <h3>GDS-päivitys Smart Start:in kautta<!--j-->:</h3>
+Käynnistä GDS joko TIS2Webistä tai GlobalTIS:stä tai itsenäisenä sovelluksena Windowsin Käynnistä-valikosta.<!--j-->&nbsp;<!--j-->Ennen kuin GDS on ladattu, Smart Start -ohjelma käynnistyy ja vertaa PC GDS:n asennuksen seuraavia versioita TIS2Webin tai GlobalTIS Server -palvelimen sisältöön:</p>
+ <ul>
+ <li>GDS Smart Start</li>
+ <li>GDS Base System</li>
+ <li>MDI Manager</li>
+ </ul>
+ <p>Smart Start kehottaa käyttäjää lataamaan uudet päivitykset, jos niitä on saatavana palvelimella.<!--j-->&nbsp;<!--j-->[IV]</p>
+ <!--<p>Smart Start-päivitysprosessi GDS Base System-, GDS Deliverables-ja MDI Manager -ohjelmistoille suoritetaan vain jos GDS käynnistetään TIS2Web/GlobalTIS:istä eikä erillisenä.<!--j-->&nbsp;<!--j--><!--The update capability of standalone started GDS will be available in a future version.</p>
+--> <table width="80%" border="0">
+ <tr>
+ 	 <td class="important"><!--j--><b><!--j-->Tärkeää<!--j--><!--j-->:<!--j--></b><!--j-->&nbsp;<!--j-->Kuvatut päivitysprosessit edellyttävät, että PC on aina Järjestelmänvalvoja-tilassa.</td></tr></table>
+ <hr />
+ <h3>GDS Base System -asennuksen peruutus</h3>
+ <p>GDS-asennus voidaan peruuttaa edelliseen asennettuun versioon jos GDS-päivitys aiheuttaa käyttöongelmia.</p>
+ <p>Suorita peruutustoiminto siirtymällä valintaan KÄYNNISTYS -&gt;OHJELMAT -&gt; GDS -&gt; GDS PERUUTUS.<!--j-->&nbsp;<!--j-->Peruutustoiminnon edellytys on, että PC:llä on asennettuna vanhempi GDS-versio.</p>
+ <h3>GDS-lisenssinvalvontajärjestelmä (Vuokra)</h3>
+ <p>GDS käyttöoikeuksien hallinta -järjestelmä estää GDS:n luvattoman käytön.<!--j-->&nbsp;<!--j-->GDS-vuokrauksen uusimiseksi vaaditaan GDS:n käynnistämistä TIS2Webistä tai GlobalTIS:stä.<!--j-->&nbsp;<!--j-->GDS-vuokraus vaatii uusimista 7 päivän kuluttua, jos sovellus oli otettu käyttöön sillä kertaa vain itsenäisessä tilassa.<!--j-->&nbsp;<!--j--><br>Jos GDS-vuokra-aika on kulunut umpeen, vikailmoitus tulee esiin, ja siinä vaaditaan käyttäjää käynnistämään GDS-sovelluksen TIS2Webistä tai GlobalTIS:stä.</p>
+ <hr />
+ <h3>Lataa ja päivitä GDS Deliverables</h3>
+ <p>GDS Deliverables on joukko diagnostiikkaohjelmia, jotka ohjaavat viestintää ja diagnostiikkapalveluita GDS:n ja auton ohjaimen välillä<!--j-->.<!--j-->&nbsp;<!--j-->GDS Deliverables julkaistaan mallikohtaisesti ja sen sisältämät ohjelmat päivitetään pysyvästi TIS2Web / GlobalTIS:iin.</p>
+ <p>GDS Smart Start tunnistaa automaattisesti, onko uusia tai päivitysversioita saatavana TIS2Web / GlobalTIS:issä, kun päivitysprosessi käynnistetään.<!--j-->.<!--j-->&nbsp;<!--j-->Uudet päivitykset tulee ladata paikalliseen kansioon PC:llä ennen kuin ne voidaan asentaa GDS:ään.<!--j-->&nbsp;<!--j-->Päivityksiä jo asennetuista toimituksista ladataan automaattisesti ja ne täytyy vain asentaa GDS-päätietokantaan.</p>
+ <br clear=all />
+ <hr />
+ <h3>GDS Deliverables -ohjelman ensilataus ja päivitys</h3>
+ <ul><li>Käynnistä GDS joko TIS2Webistä tai GlobalTIS:stä tai itsenäisenä sovelluksena Windowsin Käynnistä-valikosta.</li>
+ <li>Valitse painike  <b>Lisää uusi diagnostiikkapaketti</b> GDS-sisäänkirjautumisnäkymästä.</li>
+ <li>Paina painiketta  <b>Päivitä toimitettavien tuotteiden luettelo palvelimella</b>.<!--j-->&nbsp;<!--j-->[V-1]<!--j-->.<!--j-->&nbsp;<!--j-->Palvelimella saatavissa olevat mutta ei vielä ladatut paketit näytetään symbolilla.<!--j-->&nbsp;<!--j-->
+ <img src="../../images/gds_server.png" alt="gds_server.png" width="36" height="34" /></li>
+ <li>Merkitse ja lataa paketit<!--j-->&nbsp;<!--j-->[V-2]<!--j-->.<!--j-->&nbsp;<!--j-->Suodatustoiminto auttaa etsimään tiettyjä päivityksiä.<!--j-->&nbsp;<!--j-->Ladatut paketit näytetään symbolilla.<!--j-->&nbsp;<!--j--><img src="../../images/gds_pc.png" alt="gds_pc.png" /></li>
+ <li>Asenna ladatut paketit GDS-päätietokantaan; asennetut paketit näytetään sovellusikkunassa oikealla<!--j-->&nbsp;<!--j-->[V-3]<!--j-->.</li>
+ </ul>
+ <p><img src="../../images/gds_v_fin.gif" alt="gds_v.gif" width="650px"/><br />
+[V]</p>
+ <hr />
+ <h2>Päivitä Päätietokannan GDS Deliverables -ohjelmat<!--j-->:</h2>
+ <ul>
+ 	 <li>Napsauta painiketta  <b>Päivitä diagnostiikkapaketti</b> GDS-sisäänkirjautumisnäkymässä<!--j-->&nbsp;<!--j-->[VI-1]<!--j-->.<!--j-->&nbsp;<!--j-->GDS vertaa asennettujen GDS-ohjelmien versioita palvelimella saatavissa oleviin ja lataa päivityspaketit.</li>
+ 	 <li>Ladatut paketit näytetään asennusta varten ikkunassa vasemmalla alhaalla.<!--j-->&nbsp;<!--j-->Valitse painike  <b>Asenna</b> tai  <b>Asenna kaikki</b> aloittaaksesi asennuksen.<!--j-->&nbsp;<!--j-->[VI-2]<!--j-->.</li>
+ </ul>
+ <p><img src="../../images/gds_vi_fin.gif" alt="gds_vi.gif" width="650px"/><br />
+[VI]<!--j-->:</p>
+ <hr />
+ <h2>
+Peruuta ohjelmapäivitys</h2>
+ <p>
+
+Peruutusprosessi on yleisesti sama kuin kohdassa GDS Deliverables -ohjelman ensilataus ja päivitys</p>
+ <ul>
+ 	 <li>Valitse painike  <b>Lisää uusi diagnostiikkapaketti</b> GDS-sisäänkirjautumisnäkymästä.</li>
+ 	 <li>Paina painiketta  <b>Päivitä toimitettavien tuotteiden luettelo palvelimella</b>.<!--j-->&nbsp;<!--j-->[V-1]<!--j--></li>
+ <li>Merkitse ja lataa halutut vanhemmat pakettiversiot.<!--j-->&nbsp;<!--j-->Suodatustoiminto auttaa etsimään tiettyjä päivityksiä.</li>
+ <li>Asenna ladatut paketit GDS-päätietokantaan.</li>
+ </ul>
+ <hr />
+ <h2>GDS:n asennuksen poisto<!--j-->:</h2>
+ <p>GDS voidaan poistaa käynnistämällä seuraava ohjelma:</p>
+ <p>
+KÄYNNISTÄ -&gt; OHJELMAT -&gt; GDS -&gt;GDS ASENNUKSEN POISTO</p>
+ <hr />
+ <h2>
+Vaihda GDS:n kieli<!--j-->&nbsp;<!--j-->/<!--j-->&nbsp;<!--j-->Alueasetukset<!--j-->:</h2>
+ <p>GDS käyttää PC:n käyttöjärjestelmän kieliasetuksia.<!--j-->&nbsp;<!--j-->GDS:ssä ei ole valikkoa kieliasetusten muuttamiseen.<!--j-->&nbsp;<!--j-->Suorita seuraavat vaiheet vaihtaaksesi GDS:n kielen.</p>
+ <ul>
+ <li>Avaa Windowsin OHJAUSPANEELI seuraavasti:<!--j-->&nbsp;<!--j-->KÄYNNISTÄ-&gt; ASETUKSET-&gt; OHJAUSPANEELI</li>
+ <li>Avaa valikko ALUEKOHTAISET-JA KIELIASETUKSET</li>
+ <li>Valitse haluttu maa kohdassa  <b>STANDARDIT JA MUOTOILUT</b></li>
+ <li>Avaa LISÄASETUKSET-valikko.<!--j-->&nbsp;<!--j-->Valitse haluttu kieliasetus pudotuslaatikosta MUIDEN KUIN UNICODE-OHJELMIEN KIELI</li>
+ <li>Muuta näytettävien yksiköiden asetuksia GDS:ssä määrittämällä ALUEKOHTAISET ASETUKSET.</li>
+ </ul>
+ <hr />
+ <h1><a name="getting_started"></a>4.<!--j-->&nbsp;<!--j-->Aloitusopas</h1>
+ <p><b><!--j-->HUOMAUTUS<!--j-->:<br />
+Ennen GDS:n käyttämistä tulee huomioida seuraavat varotoimenpiteet:<!--j--></b></p>
+ <ul>
+ <li>Vanhentuneen version käyttäminen saattaa vaurioittaa auton yksiköitä.<!--j-->&nbsp;<!--j-->GDS ja Multiple Diagnostic Interface tulee päivittää viimeisimpään versioonsa.</li>
+ <li>Varmista, että auton akku on täysin ladattu<!--j-->&nbsp;<!--j-->Akkujännitteen GDS:lle tulee olla 12 - 14 V.</li>
+ <li>Akkulaturia ei saa kuitenkaan olla kytkettynä autoon käytettäessä MDI:tä.</li>
+ <li>Varmista, että kaapelikytkennät eivät ole löysiä.<!--j-->&nbsp;<!--j-->Irronnut kaapeli voi aiheuttaa ohjaimen virheen.</li>
+ <li>Käytettäessä kannettavaa tietokonetta/muuta näyttölaitetta (PDA yms.) GDS:ää varten tulee varmistaa, että virransyöttö on oikein kytketty.<!--j-->&nbsp;<!--j-->Jos käytetään verkkovirtaa ja virtajohdin irtoaa, se voi häiritä ohjelmointia ja vaurioittaa ohjausyksikköä.<!--j-->&nbsp;<!--j-->Jos tietokone käyttää sisäistä virtalähdettä (akku) tulee varmistaa, että se on hyvin ladattu GDS-prosessia varten.</li>
+ </ul>
+ <table width="80%" border="0">
+ <tr>
+ <td class="note"><b>HUOMAUTUS</b><br />
+
+Jos ECU ohjelmoidaan, se tulee asentaa autoon ennen tämän prosessin aloittamista.<!--j-->&nbsp;<!--j-->Varmista, että auton akku on täysin ladattu.</td></tr></table>
+ <table width="80%" border="0">
+ <tr>
+ <td class="important"><b>Tärkeää</b><br />
+Signaalihäviöiden mahdollisuuden pienentämiseksi MDI tulee määrittää kaikkein vakainta mahdollista yhteyttä varten sijaintipaikassa.<!--j--><!--j-->Voit valita USB-, Ethernet-tai langaton Ethernet -yhteyden.</td></tr></table>
+ <hr />
+ <h2>GDS-käynnistysmenettely<!--j-->:</h2>
+ <p>GDS voidaan käynnistää TIS2Web/GlobalTIS:istä napsauttamalla GDS-kuvaketta.<!--j-->&nbsp;<!--j-->Vaihtoehtoisesti GDS voidaan käynnistää erillisenä Windowsin Käynnistä-valikosta.</p><ol><li>Käynnistä napsauttamalla GDS-symbolia TIS2Web/GlobalTIS-päävalikossa<!--j-->.<!--j-->&nbsp;<!--j-->Jos GDS käynnistetään erillisenä, napsauta KÄYNNISTÄ/OHJELMAT/GDS</li><li>Käynnistettäessä GDS Smart Start, näytettävä päivitysprosessi suoritetaan.<!--j-->&nbsp;<!--j-->Jos uusi GDS-tai MDI Manager -versio on saatavana palvelimelta, siitä annetaan latauskehote PC:lle asennusta varten.<!--j-->&nbsp;<!--j-->Käynnistä lataus tai asennus napsauttamalla  <b>Jatka,</b><!--j-->&nbsp;<!--j-->[IV]<!--j-->.<!--j-->&nbsp;<!--j-->Jos GDS käynnistetään erillistilassa, päivitys ei ole mahdollinen.</li>
+ 	 <li>GDS-sisäänkirjautumissivu ladattu.</li></ol>
+ <hr />
+ <h1><a name="navigation"></a>5.<!--j-->&nbsp;<!--j-->Yleinen navigointi</h1>
+ <h2>Alasvetovalikot<!--j-->&nbsp;<!--j--><img src="../../images/gds_menu.png" alt="gds_menu.png" width="57" height="38" /></h2>
+ <p>GDS:ssä on viisi alasvetovalikkoa<!--j-->&nbsp;<!--j-->[VII]</p> <p>Huom<!--j-->:<!--j-->&nbsp;<!--j-->Nämä valikot ovat valikkovalintoja vain GDS:n PC-versioissa<!--j-->.<!--j-->&nbsp;<!--j-->Saatavilla on myös kosketusnäyttöformaatti, jossa valikoita käytetään ponnahduspainikkeella.</p> <ul>
+ <li><b>Tiedosto</b> -valikossa on kohta  <b>Lopeta</b> GDS:n sulkemiseksi.</li>
+ <li><b>Istunto</b>-valikossa on kaksi valintaa:<!--j-->&nbsp;<!--j--><b>Tallenna nykyinen istuntoloki</b> ja  <b>Lisää kommentit istuntoon...</b><br /><b>Lisää kommentit istuntoon...</b>: tietoja voidaan syöttää tietokoneen näppäimistöllä ja tallentaa Session Log Manageriin.</li>
+ <li><b>Työkalut</b> -valinnassa on viisi valintaa:<!--j-->&nbsp;<!--j-->Käynnistä jäljitys<!--j-->,<!--j-->&nbsp;<!--j-->Tilannevedoksen toisto<!--j-->,<!--j-->&nbsp;<!--j-->Luo raportti<!--j-->,<!--j-->&nbsp;<!--j-->Näytä lataustila...<!--j-->,<!--j-->&nbsp;<!--j-->Käyttäjien hallinta<br />Uusia käyttäjiä voidaan luoda napsauttamalla symbolia sivulla  <b>Käyttäjien hallinta</b><!--j-->&nbsp;<!--j-->
+ <img src="../../images/gds_add-user.png" alt="gds_add-user.png" width="27" height="26" />
+ <!--j-->.</li>
+ <li><b>Ikkuna</b>: Valikossa </b>Asetukset</b> voidaan valita järjestelmän konfiguraatio, esim. koko näyttö, PC tai kosketusnäyttötila.</li>
+ <li><b>Ohjevalinta</b>:ssä on kolme valintaa:<br /><b>Ohjeen sisällys</b> näyttää kaikki käytettävissä olevat GDS-ohjetiedostot.<!--j-->&nbsp;<!--j-->
+<b>Tietoja GDS:stä</b> näyttää GDS-version ja Build ID:n.<!--j-->&nbsp;<!--j-->
+<b>Näytä MDI-versio</b> näyttää MDI-ohjelmisto-ja laitteistoversiot.<!--j-->&nbsp;<!--j-->
+Sinulta saatetaan kysyä tätä tietoa kun otat yhteyttä Customer Support Centeriin.</li></ul><p></p>
+ <p><img src="../../images/gds_vii_fin.gif" alt="gds_vii.gif" width="120px"/><br />
+[VII]</p>
+ <hr />
+ <h2>Diagnostiikkaohjelman työkalurivi</h2>
+ <p>Useat työkalurivin valinnat tulevat käyttöön järjestelmän navigointinäkymässä.<!--j-->&nbsp;<!--j-->[VIII]</p>
+ <ul>
+ <li><b>Nauhoita tilannevedos</b> (punainen ympyrä) on käytettävissä vain järjestelmän navigointinäkymässä ja sitä käytetään auton tilannevedoksen nauhoitukseen.<!--j-->&nbsp;<!--j-->Kun tilannevedosta nauhoitetaan, tämä valinta ei ole käytettävissä.</li>
+ <li><b>Lopeta tilannevedoksen nauhoitus</b> (sininen neliö) tulee näkyviin, kun auton tilannevedosta nauhoitetaan.<!--j-->&nbsp;<!--j-->Tämä valinta valitaan tilannevedoksen nauhoituksen lopettamiseksi ja tiedoston tallentamiseksi.</li>
+ <li><b>Näyttökuva</b>-symboli valitaan näytön tietojen sieppaamiseksi ja tallentamiseksi tietokoneelle.</li>
+ <li><b>Loitonnus</b> suurentaa fonttikokoa.<!--j-->&nbsp;<!--j-->Näytettävä kuva pienenee aina kun hiirtä napsautetaan.</li>
+ <li><b> Lähennys</b>-valinta suurentaa fonttikokoa.<!--j-->&nbsp;<!--j-->Näytettävä kuva suurenee aina kun hiirtä napsautetaan.</li>
+ <li><b>Lopeta</b>-painike sulkee aktiivisen diagnostiikkaohjelman.</li>
+ </ul>
+ <p><img src="../../images/gds_viii_fin.gif" alt="gds_viii.gif" width="400px"/><br />
+[VIII]</p>
+ <hr />
+ <h2>Nuolinäppäimet</h2>
+ <p>Nuolinäppäimet sijaitsevat parametriluettelon alla.<!--j-->&nbsp;<!--j-->Nuolinäppäimiä voidaan käyttää navigointiin seuraavasti:</p>
+ <p><img src="../../images/gds_ix_fin.gif" alt="gds_ix.gif" width="600px"/><br />
+[IX]<!--j-->:</p>
+ <ul>
+ <li><b>Siirry ylös</b>-nuolella voidaan siirtyä ylempään kansioon parametriluettelossa jokaisella valintakerralla.</li>
+ <li><b>Siirry alas</b>-nuolella voidaan siirtyä alempaan kansioon parametriluettelossa jokaisella valintakerralla.</li>
+ <li><b>Siirry oikealle</b>-nuolella voidaan avata yksi taso navigointipuunäkymässä.</li>
+ <li><b>Siirry vasemmalle</b>-nuolella voidaan sulkea yksi taso navigointipuunäkymässä.<!--j-->&nbsp;<!--j-->Tätä valintaa ei näytetä, jos avattuna on toimintosarjan ensimmäinen näyttö.</li></ul>
+ <hr />
+ <h2>Muut näppäimet</h2>
+ <p>Kaikkien näyttöjen alaosassa on myös kolme lisänäppäintä.<!--j-->&nbsp;<!--j-->Näitä näppäimiä voidaan käyttää seuraavasti:</p>
+ <ul>
+ <li><b>Käynnistä</b> käynnistää ohjelman.</li>
+ <li><b>Edellinen toiminto</b> avaa edellisen näytön.<!--j-->&nbsp;<!--j-->Tämä valinta on käytettävissä vain kun edelliseen näyttöön voidaan palata.</li>
+ <li><b>Seuraava</b>-toimenpiteellä voidaan siirtyä seuraavaan näyttöön.<!--j-->&nbsp;<!--j-->Tämä valinta on käytettävissä vain jos kaikki tarpeelliset valinnat on tehty nykyisessä näytössä.</li>
+ </ul>
+ <br clear=all />
+ <hr />
+ <h2>Auton/MDI-tietojen syöttäminen</h2>
+ <p>1.<!--j-->&nbsp;<!--j-->Valitse käyttäjä sisäänkirjautumista varten GDS-päävalikosta.<!--j-->&nbsp;<!--j-->Jos käyttäjää ei ole luotu, uusi käyttäjä voidaan luoda tai oletuskäyttäjä voidaan valita.<!--j-->&nbsp;<!--j-->(Katso osaa alasvetovalikot)<br />
+ </p>
+ <p>2.<!--j-->&nbsp;<!--j-->Kun käyttötapa on valittu, tunnistusvalikkonäyttö tulee näyttöön.<!--j-->&nbsp;<!--j-->Tässä näytössä voidaan tehdä useita valintoja:</p>
+ <p><img src="../../images/gds_x_fin.gif" alt="gds_x.gif" width="650px"/><br />
+[X]</p>
+ <ul>
+ 	 <li>[X-1]<!--j-->&nbsp;<!--j--><b><b>MDI-valinta</b></b><!--j-->:<!--j-->&nbsp;<!--j-->Kaikki jälleenmyyntiliikkeen eri verkoissa käytettävissä olevat MDI:t näytetään. Voit valita sen MDI:n, jota käytät auton diagnostiikkaa varten.<!--j-->&nbsp;<!--j-->Korosta MDI-yhteyttä varten käytettävissä oleva MDI napsauttamalla sitä ja valitse  <b>Yhdistä</b>.<!--j-->&nbsp;<!--j-->Valitse  <b>Katkaise yhteys</b> katkaistaksesi MDI-yhteyden.<!--j-->&nbsp;<!--j-->Liitä uusi MDI autoon ja valitse  <b>Yhdistä</b>.<!--j-->&nbsp;<!--j-->Valitse  <b>Päivitä</b> tarkistaaksesi verkostoissa käytettävissä olevat uudet MDI:t.<!--j-->&nbsp;<!--j-->Jatka GDS:ssä ilman yhteyttä MDI:hin aktivoimalla laatikko  <b>Navigoi ilman MDI:tä</b>.</li>
+ <li>[X-2]<!--j-->&nbsp;<!--j--><b><b>VIN-syöttö</b></b><!--j-->:<!--j-->&nbsp;<!--j-->Auton tunnistenumeron kenttä manuaalista syöttöä tai VIN:in automaattista tunnistusta varten auton ohjaimella.<!--j-->&nbsp;<!--j-->(MDI-yhteys tarvitaan).<!--j-->&nbsp;<!--j-->Lisäkommentit liittyen tähän VIN:iin/autoon voi lisätä tekstikenttään alla.</li>
+ <li>[X-3]<!--j-->&nbsp;<!--j--><b>Auton tunnistaminen</b> osio<!--j-->:<!--j-->&nbsp;<!--j-->valitse Merkki, Malli ja Mallivuosi ennen kuin jatkat.</li>
+ <li>[X-4]<!--j-->&nbsp;<!--j--><b><b>Auton diagnostiikkahistoria</b></b><!--j-->:<!--j-->&nbsp;<!--j-->Jos auto on diagnosoitu aiemmin tällä GDS-järjestelmällä, VIN ja muut oheistiedot on tallennettu auton historiaan.<!--j-->&nbsp;<!--j-->Valitse diagnosoitava auto luettelosta ja jatka suoraan kohteeseen  <b>Auton kotisivu</b>.<!--j-->&nbsp;<!--j-->Vapaa tekstisuodatintoiminto on käytettävissä</li>
+ </ul>
+ <p>3.<!--j-->&nbsp;<!--j--><b>Auton kotisivu</b> näytetään.<!--j-->&nbsp;<!--j-->From this screen various vehicle data is displayed including: entered vehicle information, previous vehicle diagnosis, session comments, session log reports, and stored data</p>
+ <hr />
+ <h2><b><b>Auton kotisivu</b></b></h2>
+ <p><b>Auton kotisivu</b> koostuu useista alueista:</p>
+ <p>[XI-1]<!--j-->:<!--j-->&nbsp;<!--j--><b>Auton tiedot</b> luettelee kaikki auton tiedot, mukaan lukien merkki, malli, vuosimalli jne.<br />Tämä luettelo päivitetään kun auto diagnosoidaan ja tallennetaan kunkin istunnon jälkeen.<!--j-->&nbsp;<!--j-->Kohdetta  <b>Poista auton asetusvalinta</b> käytetään aiempien auton tietojen poistamiseen.<!--j-->&nbsp;<!--j-->Korosta auton sisältöluettelosta poistettava rivi ja valitse Poista välineet.</p>
+ <p>[XI-2]<!--j-->:<!--j-->&nbsp;<!--j-->Kohdetta  <b>Istunnon kommentit</b> käytetään lisäämään vapaamuotoisia kommentteja diagnostiikkaistunnosta.<!--j-->&nbsp;<!--j-->Napsauta  <b>Lisää kommentti</b> lisätäksesi lisätietoja istunnosta.<!--j-->&nbsp;<!--j-->Tietoja voidaan syöttää näppäimistöllä kohdissa Käyttäjä, Tiedot tai Kommentit.<!--j-->&nbsp;<!--j-->Poista aiemmat kommentit korostamalla tietoja kohdassa Käyttäjä, Tiedot tai Kommentit ja napsauta  <b>Poista valittu kommentti</b>.</p>
+ <p>[XI-3]<!--j-->:<!--j-->&nbsp;<!--j-->Kohdetta  <b>Istuntolokiraportit</b> voidaan käyttää auton diagnostiikkatietojen tulostamiseen.<!--j-->&nbsp;<!--j--><b>Täysi näkymä</b> antaa täydellisen raportin kaikesta auton diagnostiikasta.<!--j-->&nbsp;<!--j--><b>Pelkistetty raportti</b> antaa yhteenvedon auton diagnostiikasta.</p>
+ <p>[XI-4]<!--j-->:<!--j-->&nbsp;<!--j--><b>Tilannevedostiedot</b> luettelee kaikki tallennetut auton tilannevedostiedot.<!--j-->&nbsp;<!--j-->Käyttäjänimi, tilannevedoksen nimi ja päiväys ja kommentit näytetään.<!--j-->&nbsp;<!--j-->Tilannevedoksen toisto voidaan näyttää korostamalla nimike ja valitsemalla  <b>Arviointi</b>.<!--j-->&nbsp;<!--j-->Yksittäisiä kohtia voidaan poistaa korostamalla nimike ja valitsemalla  <b>Poista</b>.<br />[XI-6]<!--j-->:<!--j-->&nbsp;<!--j--><b><a name="export_snap">Export (Vie)</a></b>-komento tallentaa valokuvan paikalliseen tietokoneeseen.<!--j-->&nbsp;<!--j-->Voit sen jälkeen lähettää tämän valokuvan edelleen halutun asiantuntijan analysoitavaksi.</p>
+ <p>[XI-5]<!--j-->:<!--j-->&nbsp;<!--j-->Valikko  <b>Suoritetut ohjelmat</b> näyttää diagnostiikkaistunnon historian.</p>
+
+  <p>Kohteella  <b>Seuraava toimenpide</b> voidaan jatkaa valitun auton diagnoosia.</p>
+ <p><img src="../../images/gds_xi_fin.gif" alt="gds_xi.gif" width="650px"/><br />
+[XI]</p>
+ <hr />
+ <h2>Järjestelmän navigointi -diagnostiikkaohjelman valinta</h2>
+ <p>Kun olet valinnut kohteen  <b>Seuraava toimenpide</b> kohdasta  <b>Auton kotisivu</b>, järjestelmän navigointinäkymä näytetään<!--j-->&nbsp;<!--j-->[XII]<!--j-->.</p>
+ <p>Valitse navigointipolku, jota haluat tutkia autossa.<!--j-->&nbsp;<!--j-->Navigointi voidaan tehdä navigointinuolilla; oikea/vasen-nuolet avaavat/sulkevat alikansion, Käynnistä-painike käynnistää valitun diagnostiikkaohjelman.<!--j-->&nbsp;<!--j-->Navigointi on myös mahdollista hiirellä napsauttamalla +-symboleita navigointipuussa tai PC-näppäimistön nuolinäppäimillä.</p>
+ <p>
+Jatka kansioiden valintaa halutulle polulle kunnes saavutat diagnostiikkaohjelman jolla on ohjelmakuvake.</p>
+ <p>
+
+Kun käynnistät diagnostiikkaohjelman, järjestelmän navigointinäkymä poistuu ja korvautuu diagnostiikkaohjelmalla.<!--j-->&nbsp;<!--j-->
+Kun olet suorittanut diagnostiikkaohjelman, valitse  <b>Lopeta</b> diagnostiikkaohjelman näkymän oikeasta yläreunasta.<!--j-->&nbsp;<!--j-->
+Tämä sulkee diagnostiikkaohjelman ja palauttaa sinut järjestelmän navigointinäkymään.</p>
+ <p><img src="../../images/gds_xii_fin.gif" alt="gds_xii.gif" width="350px"/><br />
+[XII]</p>
+ <hr />
+ <h1><a name="diagnostics"></a>6.<!--j-->&nbsp;<!--j-->Diagnostiikka</h1>
+ <h2>DTC-näyttö</h2>
+ <p>Kun  <b>Auton DTC-tiedot</b> valitaan, luettelo elektronisista ohjausyksiköistä (ECU:t) ja tallennettujen DTC-vikakoodien lukumäärä näytetään kohteesta  <b>Diagnostiikkaohjelma</b>.</p>
+ <p><img src="../../images/gds_xiii_fin.gif" alt="gds_xiii.gif" width="400px"/><br />
+[XIII]</p>
+ <p>
+Kojetaulun yksikölle on tallennettu 4 DTC:tä näytetyssä esimerkissä.<!--j-->&nbsp;<!--j-->Valitse  <b>Jatka,</b> näyttääksesi DTC-pääsivun.<br />
+
+  <img src="../../images/gds_xiv_fin.gif" alt="gds_xiv.gif" width="650px"/><br />
+[XIV]</p>
+ <p>Käytettävissä olevat DTC:t näkyvät taulukossa.<!--j-->&nbsp;<!--j-->
+Näytettävän taulukon sisältöä voidaan muokata.<!--j-->&nbsp;<!--j-->Napsauta  <b>Sarakkeen valinta</b> lisätäksesi tai poistaaksesi sarakkeita taulukossa<!--j-->&nbsp;<!--j-->[XIV-1]<!--j-->.<!--j-->&nbsp;<!--j-->
+Seuraavat DTC-tiedot voidaan näyttää:</p>
+ <table border=1 cellspacing=0 cellpadding=0>
+ <tr>
+ <td width=158 valign=top><p><b>Valinta</b></p></td>
+ <td width=427 valign=top><p><b>Kuvaus</b></p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>Tila</p></td>
+ <td width=427 valign=top><p><img src="../../images/gds_status-unknown.png" alt="gds_status-unknown.png" width="16" height="16" /><!--j-->&nbsp;<!--j-->Uusi DTC asetettu lukukierroksen aikana.<!--j-->&nbsp;<!--j-->DTC:n kuvausteksti on asetettu lihavoiduksi.</p>
+ <p><img src="../../images/gds_mail-generic.png" alt="gds_mail-generic.png" /><!--j-->&nbsp;<!--j-->DTC läsnä, ei muutosta edellisen luvun jälkeen.</p>
+ <p><img src="../../images/gds_forward.png" alt="gds_forward.png" /><!--j-->&nbsp;<!--j-->
+Nykyinen DTC, tila muuttunut edellisen luvun jälkeen.<!--j-->&nbsp;<!--j-->
+DTC:n kuvausteksti on asetettu kursivoiduksi.</p>
+ <p><img src="../../images/gds_mail-delete.png" alt="gds_mail-delete.png" /><!--j-->&nbsp;<!--j-->
+DTC poistettu nykyisen luvun aikana.<!--j-->&nbsp;<!--j-->
+DTC:n kuvausteksti asetettu punaiselle taustalle.</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>ECU</p></td>
+ <td width=427 valign=top><p>Ohjausyksikön nimi</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>Toimintojärjestelmä</p></td>
+ <td width=427 valign=top><p>Toimintojärjestelmän nimi (ECU-osa)</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>DTC</p></td>
+ <td width=427 valign=top><p>DTC koodi</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>Oiretavu</p></td>
+ <td width=427 valign=top><p>DTC:hen liittyvä oiretavun koodi</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>Kuvaus</p></td>
+ <td width=427 valign=top><p>DTC-tekstikuvaus</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>Oire</p></td>
+ <td width=427 valign=top><p>Dekoodattu oireen kuvaus</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>Tilatavu</p></td>
+ <td width=427 valign=top><p>Tulevaa käyttöä varten</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>Dekoodattu tila</p></td>
+ <td width=427 valign=top><p>DTC:n nykyinen tila</p></td>
+ </tr>
+ </table>
+ <p>
+Kohteen  <b>Suodatusasetukset</b> avulla tietyt ECU:t voidaan asettaa suodatukselle siten, että vain lueteltujen ECU:jen DTC:t näytetään<!--j-->&nbsp;<!--j-->[XIV-2]<!--j-->.<!--j-->&nbsp;<!--j-->
+Tätä toimintoa voidaan käyttää, kun DTC:t luetaan auton laajuisesti tai toimintojärjestelmän osalta.<br />
+
+Alemmassa tekstikentässä voidaan asettaa DTC-näytön suodatus, esim. tietty vikakoodi tai avainsana.<br />
+Tarkka DTC:n tila voidaan näyttää kun valintaruutu  <b>Näytä DTC:n tila</b> on aktivoitu<!--j-->&nbsp;<!--j-->[XIV-3]<!--j-->.</p>
+ <hr />
+ <h3>Poista DTC:t</h3>
+ <p><!--j-->[XIV-4]<!--j-->&nbsp;<!--j-->
+Jos  <b>Tyhjennä DTC:t</b> valitaan, näyttöön tulee auton DTC-tietonäyttö.<!--j-->&nbsp;<!--j-->[XV]<br />
+Valitse tyhjennettävät ECU:t nuolilla  <b>Lisää</b> ja  <b>Lisää kaikki</b>.<!--j-->&nbsp;<!--j-->
+Jotkut ECU:t voidaan poistaa vain yhdessä, jolloin ne on valittava yhdessä.<!--j-->&nbsp;<!--j-->
+Valitut ECU:t näytetään näytössä oikealla puolella.<!--j-->&nbsp;<!--j-->Valitse  <b>OK</b> poistaaksesi valitut ECU:t.<!--j-->&nbsp;<!--j-->
+Valitse  <b>Peruutus</b>, jos et halua poistaa ECU:ja nyt.<!--j-->&nbsp;<!--j-->
+Jos  <b>OK</b> valitaan, ponnahdusikkuna näyttää edistymisen.<!--j-->&nbsp;<!--j-->
+Poistetut koodi(t) muuttuvat punaisiksi ja katoavat seuraavassa päivityksessä.</p>
+ <p><img src="../../images/gds_xv_fin.gif" alt="gds_xv.gif" width="500px"/><br />
+[XV]</p>
+ <hr />
+ <h3>Päivitä DTC:t</h3>
+ <p>Jos painike  <b>Päivitä DTC</b> valitaan, GDS pyytää DTC-päivitystä ohjaimelta.<!--j-->&nbsp;<!--j-->[XIV-5]<!--j-->.</p>
+ <hr />
+ <h3>Poistu DTC-ohjelmasta</h3>
+ <p>
+Poistu DTC-ohjelmasta painikkeella  <b>Lopeta</b><!--j-->&nbsp;<!--j-->[XIV-6]<!--j-->.</p>
+ <table width="80%" border="0">
+ <tr>
+ <td class="important"><b><!--j-->Tärkeää<!--j-->:<!--j--></b><!--j-->&nbsp;<!--j-->
+Vain valinta  <b>Lopeta</b> mahdollistaa poistumisen <b>Diagnostiikkaohjelmaistä</b>.<!--j-->&nbsp;<!--j-->
+GDS:stä ei voida poistua, kun diagnostiikkatoimenpiteitä suoritetaan.<!--j-->&nbsp;<!--j-->
+Poistuaksesi GDS:stä navigoi takaisin GDS-sisäänkirjautumissivulle.</td></tr></table>
+ <hr />
+ <h3>Tunnistetiedot</h3>
+ <p>
+Ohjelmaa  <b>Data Display</b> voidaan käyttää auton ohjaintietojen tarkasteluun.<!--j-->&nbsp;<!--j-->
+Ohjaimen tunnistetietonäyttö antaa tietoja ohjaimen ohjelmisto-ja laitteistoversioista, joita voidaan tarvita Technical Assistance Centerissä.</p>
+ <hr />
+ <h2>
+Data Display</h2>
+ <p>
+Data Display -ohjelma antaa reaaliaikaista tilatietoa auton ohjaintiedoista ja signaaleista.</p>
+ <p>
+Valitun ohjaimen tietojen oletusnäkymä näytetään taulukossa  <b>Kaikki parametrit</b><!--j-->&nbsp;<!--j-->[XVI-1]<!--j-->.<!--j-->&nbsp;<!--j-->
+Määritä näytetyt sarakkeet yksittäin painikkeella  <b>Sarakkeen valinta</b><!--j-->&nbsp;<!--j-->[XVI-3]<!--j-->.</p>
+ <p>Yksittäistä parametria voidaan katsoa valvontalistassa valitsemalla  <b>Lisää valvontalistaan</b><!--j-->&nbsp;<!--j-->[XVI-2]<!--j-->.</p>
+
+  <p><img src="../../images/gds_xvi_fin.gif" alt="gds_xvi.gif" width="650px"/><br />
+[XVI]</p>
+
+  <p>
+Valvontalistaan valittuja parametreja voidaan tarkastella  <b>Viivadiagrammi</b>-näkymässä<!--j-->&nbsp;<!--j-->[XVII-1]<!--j-->.<!--j-->&nbsp;<!--j-->
+
+
+Käynnistä näkymä  <b>Viivadiagrammi</b> valitsemalla näytettävä parametri pudotuslaatikosta ja napsauttamalla Lisää-painiketta<!--j-->&nbsp;<!--j-->[XVII-2]<!--j-->.<!--j-->&nbsp;<!--j-->
+Viivadiagrammissa voidaan tarkastella useita parametreja.</p>
+ <p>
+Viivadiagrammin näkymää voidaan muokata alemman tehtäväpalkin painikkeilla.<!--j-->&nbsp;<!--j-->[XVII-3]</p>
+ <ol>
+ <li><b>Keskeytä vieritys/Jatka vieritystä</b>: Vaihda staattisen näkymän ja dynaamisen viivadiagramminäkymän korjauksen välillä.</li>
+ <li><b>Tietopisteet</b>: Vaihda diagramminäyttöä piste-ja viivatilojen välillä</li>
+ <li><b>Lisää merkintä</b>: Korosta määrättyjä sijainteja/tapahtumia viivadiagrammissa.</li>
+ <li><b>Lähennys</b> /  <b>Loitonnus</b> Funktio</li>
+ </ol>
+ <p>
+
+  <img src="../../images/gds_xvii_fin.gif" alt="gds_xvii.gif" width="650px"/><br />
+[XVII]</p>
+ <p>
+<b>Kaikki parametrit</b>-luettelon yksittäisiä parametreja voidaan tarkastella graafisesti<!--j-->&nbsp;<!--j-->[XVI-1]<!--j-->.<!--j-->&nbsp;<!--j-->
+Valitse yksittäinen parametri ja haluttu näyttötila valintalaatikosta<!--j-->&nbsp;<!--j-->[XVIII-1]<!--j-->.<!--j-->&nbsp;<!--j-->Parametria voidaan tarkastella seuraavissa tiloissa:</p>
+ <ul type=square>
+ 	 <li>Numerokaavio<!--j-->&nbsp;<!--j-->[XVIII-2]<!--j-->.</li>
+ 	 <li>Pylväsdiagrammi<!--j-->&nbsp;<!--j-->[XVIII-3]<!--j-->.</li>
+ 	 <li>Korkea näkyvyys<!--j-->&nbsp;<!--j-->[XVIII-4]<!--j-->.</li>
+ </ul>
+ <p>Enintään 4 parametria tai näyttötilaa voidaan näyttää kerrallaan.</p>
+
+
+   <p><img src="../../images/gds_xviii_fin.gif" alt="gds_xviii.gif" width="650px"/><br />
+[XVIII]</p>
+ <hr />
+ <h3>Tilannevedoksen toisto</h3>
+ <p><b>Tilannevedoksen toisto</b>-toiminnon avulla voidaan arvioida aiemmin nauhoitettuja auton tilannevedostietoja.<!--j-->&nbsp;<!--j-->Näitä tietoja voidaan käyttää analysoitaessa auton ongelmia ja virheen laukaisuehtojen määrittämisessä.<!--j-->&nbsp;<!--j-->Kaaviotoimintoa voidaan käyttää parametrien vertailussa, kun halutaan määrittää, toimiiko osa oikein.<!--j-->&nbsp;<!--j-->Nauhoitettuja tilannevedoksia voidaan valita katsottavaksi seuraavilla kolmella menetelmällä:</p>
+ <ul>
+ <li>Valitsemalla tilannevedostiedosto kohteesta  <b>Auton kotisivu</b> ja napsauttamalla arviointi-valintaa.</li>
+ <li>Kaksoisnapsauttamalla valittua tilannevedosta kohteessa  <b>Auton kotisivu</b>.</li>
+ <li><b>Työkalut</b>-valinnan syöttäminen  <b>Valikko</b>-valinnasta ja valitsemalla  <b>Tilannevedoksen toisto</b>.<!--j-->&nbsp;<!--j-->Avaa seuraavaksi  <b>Snapshot Manager</b>.<!--j-->&nbsp;<!--j-->Kaksoisnapsauta tilannevedostiedostoa jota haluat katsoa, tai napsauta Lataa tilannevedos -valintaa ja valitse tilannevedostiedosto.</li>
+ </ul>
+ <p>Valintamenetelmästä riippumatta Tiedosto ladattu -ponnahdusikkuna näytetään  <b>Tilannevedoksen toisto</b>-näytössä.<!--j-->&nbsp;<!--j-->Valitse OK ponnahdusikkunassa.</p>
+ <hr />
+ <h3>Tilannevedoksen toistotoiminnot<!--j-->&nbsp;<!--j-->[XIX-1]</h3>
+ <p>Nauhoitetun tilannevedoksen toistoon on useita toimintoja.</p>
+
+
+   <table width="84%" height="80" border="1">
+ <tr>
+ <td width="7%"><img src="../../images/gds_play.png" alt="gds_play.png" width="25" height="23" /></td>
+ <td width="93%">
+Toista-toiminnolla voidaan toistaa tilannevedos napsauttamalla tätä valintaa.<!--j-->
+
+&nbsp;<!--j-->
+
+Merkintä liikkuu näytön poikki, kun tätä valintaa käytetään.<!--j-->
+
+&nbsp;<!--j-->
+Kaikki valinnat tällä alueella muuttuvat harmaiksi, kun ne ovat aktiivisia.</td>
+ </tr>
+ <tr>
+ <td><img src="../../images/gds_pause.png" alt="gds_pause.png" width="24" height="21" /></td>
+ <td>Tauko-toimintoa käytetään tilannevedoksen toiston keskeyttämiseen.<!--j-->&nbsp;<!--j-->Kun tätä valintaa napsautetaan toisen kerran, tilannevedoksen toisto jatkuu siitä mihin se keskeytyi.</td>
+ </tr>
+ <tr>
+ <td><img src="../../images/gds_stop.png" alt="gds_stop.png" width="24" height="19" /></td>
+ <td>Pysäytä-toimintoa käytetään tilannevedoksen toiston pysäyttämiseksi.<!--j-->&nbsp;<!--j-->Tilannevedos alkaa alusta, jos Toista-toiminto valitaan Pysäytä-toiminnon jälkeen.</td>
+ </tr>
+ </table>
+ <hr />
+ <h3>Ajan hallinta<!--j-->&nbsp;<!--j-->[XIX-2]</h3>
+ <p>Kohteella  <b>Ajan hallinta</b> ohjataan tilannevedoksen toistoa.<!--j-->&nbsp;<!--j-->Tällä toiminnolla voidaan valita tietty ajanjakso, näyttää eri näkymiä ja ohjata näytön nopeutta.<!--j-->&nbsp;<!--j-->Seuraavat toiminnot voidaan valita suoraan kohdassa  <b>Ajan hallinta</b>.</p>
+ <table width="84%" border="1">
+ <tr>
+ <td><img src="../../images/gds_bookmark.png" alt="gds_bookmark.png" width="17" height="24" /></td>
+ <td>Kirjanmerkki-valinnan avulla voit lisätä tietyn kommentin nykyiseen näyttöön ja palata tähän kohtaan myöhemmin.<!--j-->&nbsp;<!--j-->Kun tämä valinta valitaan, näyttöön tulee ponnahdusikkuna.<!--j-->&nbsp;<!--j-->Syötä kirjanmerkin nimi ja valitse OK.</td>
+ </tr>
+ <tr>
+ <td><img src="../../images/gds_notepad.png" alt="gds_notepad.png" width="26" height="22" /></td>
+ <td>Tilannevedoksen toistostiedostoon voidaan lisätä kommentteja nykyhetkelle valitsemalla Muistio.<!--j-->&nbsp;<!--j-->Kun tämä valinta valitaan, näyttöön tulee ponnahdusikkuna.<!--j-->&nbsp;<!--j-->Syötä kommentti tilannevedostiedostoon ja valitse OK.</td>
+ </tr>
+ <tr>
+ <td><img src="../../images/gds_load.png" alt="gds_load.png" width="23" height="23" /></td>
+ <td>Lataa tilannevedos (sininen kansio) -toiminto avaa tilannevedostiedoston ja valmistaa sen lisäanalyysiä varten.<!--j-->&nbsp;<!--j-->Jos haluat tarkistaa <a href="#export_snap">viedyn valokuvan</a>, avaa *.zip-muotoon pakattu vastaava tiedosto.<!--j-->&nbsp;<!--j--><!--j-->&nbsp;<!--j-->Tämä toiminto on käytettävissä myös napsauttamalla käytettävissä olevaa tilannevedostiedostoa kohteesta  <b>Snapshot Manager</b>.</td>
+ </tr>
+ <tr>
+ <td><img src="../../images/gds_time-options.png" alt="gds_time-options.png" width="19" height="23" /></td>
+ <td>Alas-nuoli näyttää kaikki valitut  <b>Ajan hallinta</b>-asetukset.<!--j-->&nbsp;<!--j-->Yksittäisiä asetuksia voidaan myös valita napsauttamalla haluttua nimikettä.</td>
+ </tr>
+ <tr>
+ <td><img src="../../images/gds_speed.png" alt="gds_speed.png" width="57" height="27" /></td>
+ <td>
+Tilannevedoksen näyttönopeutta voidaan säätää tällä valinnalla.<!--j-->
+
+&nbsp;<!--j-->
+
+Valittavissa ovat hidas nopeus 1/8X, 1/4X, ja 1/2X.<!--j-->
+
+&nbsp;<!--j-->
+
+Reaaliaikainen nopeus voidaan myös valita asetuksella 1.<!--j-->
+
+&nbsp;<!--j-->
+Suuremmat nopeudet 2X, 4X ja 8X ovat myös mahdollisia tällä valinnalla.</td>
+ </tr>
+ </table>
+
+
+   <hr />
+ <h3>Näytä valinnat<!--j-->&nbsp;<!--j-->[XIX-3]</h3>
+ <p>Kukin valintanäyttö näyttää auton tiedot eri tavalla analyysiä varten.<!--j-->&nbsp;<!--j-->Seuraavat toiminnot voidaan valita kohdassa  <b>Käytettävissä olevat näkymät</b>:</p>
+ <ul>
+ <li>Parametriluettelonäkymä -näyttää saapuvat tiedot tilannevedostiedostosta.<!--j-->&nbsp;<!--j-->Parametrien nykyinen arvo näkyy näytössä.</li>
+ </ul>
+ <table width="80%" border="0">
+ <tr>
+ 	<td class="important"><b>Tärkeää</b><br />Parametrin nimi näkyy sieppauksessa alkuperäisellä kielellä, jos käännöstä ei ole käytettävissä nimeä varten.</td></tr></table>
+ <ul>
+ <li>Lokinäkymä -sisältää kaikki tiedot tilannevedostiedostosta.<!--j-->&nbsp;<!--j-->Kaikki parametrin arvot on lueteltu nauhoitusjärjestyksessä.<!--j-->&nbsp;<!--j-->Tiettyjä parametreja voidaan lisätä tai poistaa valvontalistasta napsauttamalla asianmukaista nimikettä.</li>
+ <li>Tilanäkymä -näyttää kaikkien parametrien arvot tietyllä ajanjaksolla.<!--j-->&nbsp;<!--j-->Näitä arvoja voidaan käyttää vertailussa laukaisunäkymän kanssa.</li>
+ <li>Laukaisunäkymä -näyttää kaikki järjestelmän ja käyttäjän määrittämät laukaisimet.<!--j-->&nbsp;<!--j-->Tämä toimintoa voidaan käyttää, kun diagnostiikkaongelmaan liittyy useita tekijöitä.<!--j-->&nbsp;<!--j-->
+Kun laukaisuehto täyttyy, varoituskolmio näkyy näytössä.<ul><li>Lataa laukaisimet<!--j-->&nbsp;<!--j-->-<!--j-->&nbsp;<!--j-->Laukaisimen määritelmät sisältävän tiedoston lataus.</li>
+ 	 <li>Tallenna laukaisimet<!--j-->&nbsp;<!--j-->-<!--j-->&nbsp;<!--j-->Laukaisimen tallennus tietokoneen kiintolevylle.</li>
+ <li>Poista laukaisin<!--j-->&nbsp;<!--j-->-<!--j-->&nbsp;<!--j-->Nykyisen laukaisimen poisto. Kohde poistetaan.</li>
+ <li>Muokkaa laukaisinta<!--j-->&nbsp;<!--j-->-<!--j-->&nbsp;<!--j-->näyttää ponnahdusikkunan, jossa voit muuttaa laukaisimen rajoja ja parametreja.</li>
+ <li>Lisää laukaisin<!--j-->&nbsp;<!--j-->-<!--j-->&nbsp;<!--j-->näyttää ponnahdusikkunan laukaisimen määritystä varten.</li></ul></li>
+ <li>DTC-näkymä<!--j-->&nbsp;<!--j-->-<!--j-->&nbsp;<!--j-->Kun Toista-toiminto on valittuna ja tämä valinta valitaan, näyttöön tulee luettelo tallennetuista DTC:istä.</li>
+ <li>Viivadiagramminäkymä -näyttää tietoja, joita voidaan tarkastella suhteessa aika-akseliin.<!--j-->&nbsp;<!--j-->Tästä näkymästä voidaan valita tiettyjä parametreja merkitsemällä valintaruutu kohdassa Valittu.<!--j-->&nbsp;<!--j-->Kaavion alaosassa on neljä toimintoa:  <b>Lähennys</b> (suurenna),  <b>Loitonnus</b> (pienennä),  <b>Kirjanmerkit</b> ja  <b>Keskeytä vieritys</b>.<!--j-->&nbsp;<!--j-->Kutakin näistä toiminnoista voidaan käyttää napsauttamalla niitä.</li>
+ </ul>
+ <p><img src="../../images/gds_xix_fin.gif" alt="gds_xix.gif" width="650px"/><br />
+[XIX]</p>
+ <hr />
+ <h2>Ohjaustoiminnot:</h2>
+ <p>GDS-ohjaustoiminnoilla tiettyjä auton toimintoja voidaan ohjata GDS-järjestelmästä.<!--j-->&nbsp;<!--j-->Valitse tietyn ohjaimen Ohjaustoiminnot järjestelmän navigoinnissa käynnistääksesi ohjaustoiminto-ohjelman.</p>
+ <p>Ohjaustoiminnot sisältyvät tietoluettelonäyttöön.<!--j-->&nbsp;<!--j-->Ohjaustoimintojen toteutuksen aikana näytettävää parametria voidaan tarkkailla tai nauhoittaa GDS-tilannevedostoiminnolla.</p>
+ <p>GDS tukee kahdentyyppisiä ohjaustoimintoja:</p>
+ <p>1.<!--j-->&nbsp;<!--j-->Digitaalinen ohjaustoiminto PÄÄLLE/POIS-ominaisuudella<!--j-->&nbsp;<!--j-->[XX-1]</p>
+ <p><img src="../../images/gds_xx_fin.gif" alt="gds_xx.gif" width="650px"/><br />
+[XX]</p>
+ <p>2.<!--j-->&nbsp;<!--j-->Analoginen ohjaustoiminto toiminnon ohjausominaisuudella.<!--j-->&nbsp;<!--j-->Toimilaitteen toimintaa voidaan ohjata ohjauspainikkeilla tai liikuttamalla osoitinta sivussa olevalla asteikolla.<!--j-->&nbsp;<!--j-->[XXI-1]<!--j-->&nbsp;<!--j-->tai<!--j-->&nbsp;<!--j-->[XXI-2]<!--j-->.</p>
+ <p><img src="../../images/gds_xxi_fin.gif" alt="gds_xxi.gif" width="650px"/><br />[XXI]</p>
+ <hr />
+ <h2>Konfigurointi-ja uudelleenasetustoiminnot:</h2>
+ <p>Konfigurointi-ja uudelleenasetustoiminnot ovat tiettyjä ohjaintoimintoja, jotka tulee suorittaa, kun järjestelmän toimilaitteita vaihdetaan tai kun ne nollataan.<!--j-->&nbsp;<!--j-->Katso lisätietoja asianomaisen järjestelmän huoltokirjasta.</p>
+ <hr />
+ <h1><a name="troubleshooting"></a>7.<!--j-->&nbsp;<!--j-->VIANMÄÄRITYS</h1>
+
+  <h2>MDI-yhteysongelmat</h2>
+ <p>Jos MDI:n kytkennät ovat löysiä tai virheellisesti kytketty autoon/tietokoneeseen, näyttöön tulee ponnahdusikkuna.<!--j-->&nbsp;<!--j-->Suorita seuraavat vaiheet:</p><ul>
+ <li>Varmista, että MDl Manager -ohjelmisto ei ole käynnissä samaan aikaan GDS:n kanssa.</li>
+ <li>Varmista, että MDI on kunnolla kytketty autoon ja tietokoneeseen</li>
+ <li>Käytä testatusti &quot;toimivaa USB-kaapelia&quot; toisesta MDI-yksiköstä, jos käytettävissä.<!--j-->&nbsp;<!--j-->Kytke kaikki liitännät ja yritä uudelleen.</li>
+ <li>Käytä testatusti &quot;toimivaa MDI DLC -yhteyskaapelia&quot; toisesta MDI-yksiköstä, jos käytettävissä.<!--j-->&nbsp;<!--j-->Kytke kaikki liitännät ja yritä uudelleen.</li>
+ <li>Jos ongelma ilmenee edelleen, ota yhteys Customer Support -palveluun.</li>
+ <li>Varmista, että palomuuri ei estä GDS/MDI-viestintää.</li>
+ </ul>
+ <hr />
+ <h2>GDS/MDI Manager ohjelmistoristiriita</h2>
+ <p>GDS-ohjelmisto ja MDI Manager-ohjelmisto eivät voi olla käynnissä samaan aikaan.<!--j-->&nbsp;<!--j-->Jos molemmat ovat käynnissä samaan aikaan, voi aiheutua ohjelmistoristiriita.<!--j-->&nbsp;<!--j-->Tarkemmat tiedot sisältävät lisätietoa virheestä.<!--j-->&nbsp;<!--j-->Customer Support -palvelussa sinua voidaan pyytää antamaan nämä tiedot, ellei ongelma poistu.</p>
+ <p>Jos ohjelmistoristiriita ei poistu, näyttöön voi tulla Vakava virhe on tapahtunut -ponnahdusikkuna MDI Manager -ohjelmassa.<!--j-->&nbsp;<!--j-->Sulje MDI Manager -ohjelmisto ja palaa GDS-ohjelmaan.<!--j-->&nbsp;<!--j-->Jos ongelma ei poistu GDS:ään siirtymisen jälkeen, ota yhteys Customer Support -palveluun.</p>
+ <p>&nbsp;</p>
+ <p align="right"><font size="2">&copy; GM Europe, SPO Engineering, International Operations - 08 May 2009 (V3.0)</font></p>
+ </div>
+
+  </body>
+ </html>

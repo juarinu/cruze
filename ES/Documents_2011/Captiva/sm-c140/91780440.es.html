@@ -1,0 +1,123 @@
+<HTML>
+<head><link rel="stylesheet" type="text/css" href="si-style.css"/><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><TITLE>Información de servicio</TITLE><STYLE>
+	.ListIndentBul2Refer{margin-left : 40pt}  ..ListIndentBul2{margin-left : -20pt}
+	.SubListIndent{margin-left : -15pt}
+	.UpNo{border-top : white}  .DownNo{border-bottom : white}  ..BothNo{border-top : white; border-bottom : white}
+	.UpBold{border-top : thin double ridge}  .DownBold{border-bottom : thin double ridge}  .BothBold{border-top : thin double ridge; border-bottom : thin double ridge}
+	.ImageIndent{margin-left : 0%}  .ImageTitleIndent{margin-left : 5%}  .ParagraphIndent{margin-left : 20pt}
+	.Arial{font-family : Arial, Helvetica, sans-serif; margin-left : 10pt; margin-right : 10pt}
+</STYLE>
+<SCRIPT LANGUAGE="JavaScript">
+	function FixMenu()
+	{
+		menuTop = document.body.scrollTop + document.body.clientHeight -40;
+		menu.style.top = menuTop;
+		menu.style.width = document.body.clientWidth; 
+	}
+</SCRIPT>
+</HEAD>
+<BODY class="Arial" onLoad="FixMenu()" onScroll="FixMenu()" onResize="FixMenu()" BGCOLOR="#FFFFFF">
+<SPAN ID="menu" STYLE="position:absolute; left:0px; top:0px; width:0px">
+	<A border="0" href="91780440.es.html">
+	<IMG src="../../../../graphic-pool/Icons/Totop.gif" align="right" halign="Bottom" border="0" alt="To the top of the document"></A>
+</SPAN>
+<TABLE width="100%" BORDER="1" rules="none" cellspacing="0" cellpadding="0" style="magin-top: 5pt">
+<TBODY>
+<TR BGCOLOR="cccc99" height="15">
+<TD width="30%"><div style="padding-left: 5pt"><B><FONT face="Arial">Captiva</FONT></B></div></TD>
+<TD width="70%" align="right" colspan="8"></TD>
+</TR>
+<TR BGCOLOR="white" height="60">
+<TD width="35%" align="left">
+<TABLE>
+<TR>
+<TD width="5%" align="left">&nbsp;</TD>
+<TD width="5%" align="left"></TD>
+<TD width="5%" align="left">&nbsp;</TD>
+</TR>
+</TABLE>
+</TD>
+<TD>
+<TABLE width="65%" align="right">
+<TR>
+<TD style="font-size:10">
+	<A href="../../../GMDE_TIS_START.html" target="_top">
+	<IMG src="../../code/menu-images/home.gif" border="0" alt="GMDE Start Page">
+</A></TD>
+<TD style="font-size:10">
+	<A href="../toc_Captiva.html" target="menu"><IMG src="../../code/menu-images/static-TOC.gif" border="0" alt="Load static TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../toc_Captiva_code.html" target="code"><IMG src="../../code/menu-images/menu_folder_open.gif" border="0" alt="Load dynamic TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../../help/readme_EN.htm" target="top" class="bottom_copyright"><IMG src="../../code/menu-images/help.gif" border="0" alt="Help?"></A>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<H2>Programación y configuración del receptor de cierre de puertas del control remoto</H2>
+
+<p><font color=brown><b>Importante:&nbsp;</b>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4" color=brown>&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</font></td><td valign="top"><font color=brown>Al reemplazar el receptor del cierre de puertos de control remoto (RCDLR), la información de control de presión de neumáticos (TPM) puede programarse en el nuevo RCDLR de dos maneras. Estos dos métodos se reflejan en las secciones siguientes. Elija sólo uno de los métodos; no es necesario realizar ambos métodos al sustituir el RCDLR.</font></td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4" color=brown>&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</font></td><td valign="top"><font color=brown>Si decide realizar el proceso de copiar y pegar información del TPM, es necesario realizar el Paso 1 ANTES de desmontar el RCDLR antiguo. Este procedimiento requiere la extracción de información específica del TPM del RCDLR antiguo antes de su desmontaje.</font></td></tr></table></div>
+
+</font></p>
+<A NAME="ss1-1780440">
+<A HREF="#ss1-1780440">
+<H3>Sustitución del receptor de cierre de puertas de control remoto - Copiar y pegar información del TPM</H3></A><p>Este procedimiento programará la información del TPM en el nuevo RCDLR usando la función copiar y pegar de la herramienta de exploración. Este procedimiento extraerá la información del tipo de neumático del TPM y los datos del sensor del RCDLR existente antes de su sustitución y almacenará esta información en la herramienta de exploración. Tras la sustitución del RCDLR y la programación del SPS, el tipo de neumático y los datos del sensor almacenados en la herramienta de exploración se graban en el nuevo RCDLR, evitando la necesidad de realizar el procedimiento de configuración del tipo de neumático y la programación del sensor.</p>
+<p>Este procedimiento debe considerarse como la primera opción de programación al sustituir un RCDLR. El procedimiento de copiar y pegar elimina la posibilidad de introducir incorrectamente el tipo de neumático o los sensores del TPM.</p>
+
+<OL>
+<p><font color=brown><b>Importante:&nbsp;</b>Este paso debe realizarse antes del desmontaje o sustitución del RCDLR antiguo.</font></p><LI TYPE="1">Con una herramienta de exploración, desplácese al procedimiento de copiar y pegar información del TPM y copie la información del TPM existente del RCDLR usando el esquema siguiente. Siga las instrucciones de pantalla después de seleccionar el Paso 1:</LI>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">Sistemas de control del vehículo</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">Configuración del módulo</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">Receptor de bloqueo de puerta de control remoto</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">Copiar y pegar información del TPM</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">Paso&nbsp;1 </td></tr></table></div>
+
+<LI TYPE="1">En este punto, instale el nuevo RCDLR.</LI>
+<LI TYPE="1">Programe el RCDLR, consulte <a href="92223856.es.html">Sistema de programación de servicio (SPS)</a> .</LI>
+<LI TYPE="1">Con una herramienta de exploración, desplácese al procedimiento de copiar y pegar información del TPM para pegar la información del TPM almacenada usando el esquema siguiente. Siga las instrucciones de pantalla después de seleccionar el Paso 2:</LI>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">Sistemas de control del vehículo</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">Configuración del módulo</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">Receptor de bloqueo de puerta de control remoto</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">Copiar y pegar información del TPM</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">Paso&nbsp;2</td></tr></table></div>
+
+<LI TYPE="1">Programe los transmisores de entrada sin llave, consulte <a href="92497562.es.html">Programación del transmisor de bloqueo de la puerta de control a distancia</a> .</LI>
+</OL>
+
+<A NAME="ss2-1780440">
+<A HREF="#ss2-1780440">
+<H3>Sustitución del receptor de cierre de puertas de control remoto - Programación del sensor del TPM</H3></A><p>Este procedimiento programará información del TPM en el nuevo RCDLR introduciendo manualmente el tipo de neumático con la herramienta de exploración y realizando la programación del sensor del TPM. Este procedimiento debe realizarse si no se puede completar el procedimiento anterior de copiar y pegar. Un ejemplo sería un RCDLR que no puede comunicarse con la herramienta de exploración y debe ser reemplazado.</p>
+
+<OL><LI TYPE="1">Programación del RCDLR, consulte <a href="92223856.es.html">Sistema de programación de servicio (SPS)</a> .</LI>
+<LI TYPE="1">Programación del transmisor de entrada sin llave, consulte <a href="92497562.es.html">Programación del transmisor de bloqueo de la puerta de control a distancia</a> .</LI>
+<LI TYPE="1">Configuración del tipo de neumático:</LI>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">3.1.&nbsp;</td><td valign="top">Instale una herramienta de diagnóstico.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">3.2.&nbsp;</td><td valign="top">Seleccione el receptor de cierre de puertas de control remoto en la configuración del módulo del menú del sistema de control del vehículo.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">3.3.&nbsp;</td><td valign="top">Seleccione el tipo de neumático/presión.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">3.4.&nbsp;</td><td valign="top">Siga las instrucciones de la pantalla.</td></tr></table></div>
+
+<LI TYPE="1">Programación del sensor de control de presión de neumáticos, consulte <a href="92132769.es.html">Programación del sensor indicador de presión de neumáticos</a> .</LI>
+</OL>
+
+
+
+<TABLE align="center"><TR>
+<TD align="left">&nbsp;</TD>
+<TD align="left"></TD>
+<TD align="left">&nbsp;</TD>
+<TD></TD>
+</TR></TABLE>
+<BR><BR><TABLE width="100%"><TBODY><TR BGCOLOR="DarkSlateBlue" align="center"><TD><FONT color="white"><B>© Copyright Chevrolet Europe. All rights reserved</B></FONT></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>

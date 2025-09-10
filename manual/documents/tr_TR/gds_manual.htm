@@ -1,0 +1,735 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8" />
+<title>Global Diagnostic System</title>
+<link rel="stylesheet" type="text/css" href="mdiprint.css" media="print" />
+<!-- Version 2.0.16 with all screenshots and Export Function explanation (Snapshot) -->
+
+<style type="text/css">
+	  <!--
+	div.all { margin-top:2px; margin-left:2px; margin-right:auto }
+	  
+.style1 { text-align: center;
+}
+.style2 {
+	border-style: solid;
+	border-color: black;
+	border-width: 1px;
+}
+.style3 {
+	border: 1px solid black;
+}
+.tableinsert {
+	vertical-align: top;
+	text-indent: 20px;
+}
+.caution {
+	padding: 10px;
+	margin: 0px;
+	border-color: #0000FF;
+	border-style: outset;
+	border-width: 1px 4px 4px 4px;
+	border-left: 1px solid #808080;
+	border-top: 1px solid #808080;
+	background-color: #FFCCCC;
+}
+.important {
+	padding: 10px;
+	margin: 0px;
+	border-color: #0000FF;
+	border-style: outset;
+	border-width: 1px 4px 4px 4px;
+	border-left: 1px solid #808080;
+	border-top: 1px solid #808080;
+	background-color: #FFCCCF;
+}
+.note {
+	padding: 10px;
+	margin: 0px;
+	border-color: #0000FF;
+	border-style: outset;
+	border-width: 1px 4px 4px 4px;
+	border-left: 1px solid #808080;
+	border-top: 1px solid #808080;
+	background-color: #99CCFF;
+}
+.notice {
+	padding: 10px;
+	margin: 0px;
+	border-color: #808080 #666666 #666666 #808080;
+	border-style: solid outset outset solid;
+	border-width: 1px 4px 4px 4px;
+	border-left: 1px solid #808080;
+	border-top: 1px solid #808080;
+	background-color: #C0C0C0;}
+
+* {
+	font-family:arial,sans-serif;}
+
+
+
+-->
+</style>
+</head>
+<body><div class="all">
+
+ <h1 align="center">Global Diagnostic System</h1>
+ <h1>İçindekiler</h1>
+ <ol>
+ <li><a href="#intro">Giriş</a></li>
+ <li><a href="#product_description">Ürün Tanımı</a></li>
+ <li><a href="#installation">GDS Kurulumu</a></li>
+ <li><a href="#getting_started">Başlarken</a></li>
+ <li><a href="#navigation">Genel Gezinti</a></li>
+ <li><a href="#diagnostics">Tanılama</a></li>
+ <li><a href="#troubleshooting">Arıza Tespiti</a></li>
+ </ol>
+ <hr />
+
+  <h1><a name="intro"></a>Giriş</h1>
+ <h2>GDS Referans Kılavuzu</h2>
+ <p>Global Diagnostic System (GDS) Hızlı Referans Kılavuzu GDS için genel bir bakış verir.</p>
+ <p>Bu kılavuzda verilen tüm bilgiler, yayım sırasında mevcut olan ürün bilgilerine göre verilmiştir.<!--j-->&nbsp;<!--j-->Her zaman için, haber vermeden değişiklik yapma hakkı saklıdır.</p>
+ <p>Bu yayımın herhangi bir bölümü, GM Service and Parts Operations'ın yazılı ön izni olmadan çoğaltılamaz, herhangi bir bilgi erişim sistemine depolanamaz veya elektronik, mekanik, fotokopi, kayıt da dahil ancak bunlarla sınırlı olmamak koşuluyla herhangi bir yoldan aktarılamaz.<!--j-->&nbsp;<!--j-->Bu durum tüm metinler, tablolar, resimler ve çizelgeler için de geçerlidir.</p>
+ <p>İzin taleplerinin gönderileceği adres:</p>
+ <p>General Motors Corporation<br />
+Service and Parts Operations<br />
+Product Engineering<br />
+37350 Ecorse Road<br />
+Romulus, MI 48174-1376<br />
+U.S.A.</p>
+ <p>© 2008 GM Service and Parts Operation.<!--j-->&nbsp;<!--j-->Made in the U.S.A.<!--j-->&nbsp;<!--j-->Bütün hakları mahfuzdur.</p>
+ <hr />
+
+  <h2>Genel Bilgiler</h2>
+ <p>
+GDS, eğitimli servis personelinin otomobil elektronik sistemlerinin onarım ve tanılama işlemlerinde kullanmaları için tasarlanmıştır.<!--j-->&nbsp;<!--j-->
+
+Yayın tarihinde mevcut olan fabrika servis bilgilerine dayanarak teknik bilgilerin eksiksiz ve doğru biçimde sunulması için her türlü gayret gösterilmiştir.<!--j-->&nbsp;<!--j-->
+Ancak her zaman için, haber vermeden değişiklik yapma hakkı saklıdır.</p>
+ <p>
+GDS ve özelliklerini tanımak ve nasıl kullanılacağını öğrenmek için lütfen GDS ile çalışmaya başlamadan önce Kullanım Kılavuzlarını tamamen okuyunuz.</p>
+ <p>GDS aşağıdaki özelliklere sahiptir:</p>
+ <ul>
+ <li>Tanılayıcı Hata Kodu okuma</li>
+ <li>ECU Tanım bilgilerini okuma</li>
+ <li>Veri Listesi Parametreleri şemalarını okuma ve gösterme</li>
+ <li>Anlık görüntü verileri kaydetme ve depolama</li>
+ <li>Denetim İşlevleri</li>
+ <li>Yapılandırma ve Sıfırlama İşlevleri</li>
+ <li>Tanılama protokollerini kaydetme ve depolama</li>
+ <li>Her araç için tanılama oturumunu kaydetme</li>
+ </ul>
+
+  <table width="80%" border="0">
+ <tr>
+ <td class="important">
+ <b><!--j-->Önemli<!--j-->:<!--j--></b><br />
+Araç kumandalarının SPS programlaması GDS tarafından desteklenmez.<!--j-->&nbsp;<!--j-->MDI ile doğrudan SPS programlama için TIS2Web / GlobalTIS SPS uygulamasını kullanın.</td>
+ </tr>
+ </table>
+ <hr />
+
+  <h2>Müşteri Desteğine Genel Bakış</h2>
+ <p>
+
+GM-Techline ve bağlı olan ürünlerinin çalışması veya garanti kapsamında olan veya olmayan onarımların ayarlanması ile ilgili sorunlar için yerel Customer Support Center'ı arayın.<!--j-->&nbsp;<!--j-->Yedek parça siparişleri için GM Dealer Equipment bölümüne başvurun.</p>
+ <h3>Aramadan Önce</h3>
+ <p>Yardım masasına telefon etmeden önce, aşağıdaki bilgileri hazır ediniz:</p>
+ <ul>
+ <li>Bayilik adı, adresi ve bayi kod numarası</li>
+ <li>MDI'nın veya varsa Notebook'un seri numarası</li>
+ <li>Talep edilecek parçanın adı, parça numarası ve miktarı</li>
+ <li>Teknisyene ulaşılabilecek telefon numarası.</li>
+ </ul>
+ <p>Problemin kısa bir tanımını hazırlayın:</p>
+ <ul>
+ <li>Problemin ortaya çıktığı zamanı belirtin</li>
+ <li>Varsa, görüntülenen hata kodlarını listeleyin</li>
+ <li>Araç bilgilerini ve sorun oluştuğunda araçta kullanılmakta olan aksesuarların bir listesini bildirin.</li>
+ </ul>
+
+  <h4>MDI'NIZIN TANIMLANMASI</h4>
+ <p>GM MDI grup etiketi birimin arka yüzünde bulunur.<!--j-->&nbsp;<!--j-->
+
+Grup tanım numarası iki bölümden oluşur: izlenebilmesi için bir üretim kodu ve özgün seri numarası<!--j-->&nbsp;<!--j-->
+Bu seri numarası yazılımda MDI tanımak için kullanılır.</p>
+
+  <h3>Çağrının yapılması</h3>
+
+  <h4>Avrupalı kullanıcılar</h4>
+ <h5>GDS Yazılım Kurulumu &amp; Sistem İletişim Desteği:</h5>
+ <p><b>DAC - Dealer Assistance Center:</b><br />
+
+
+GDS yazılımı, TIS2Web / GlobalTIS ve MDI ile GDS hakkındaki iletişim için kullanıcı desteği Bayi Destek Merkezi tarafından verilir.<br />
+
+İlgili ülke için geçerli telefon numarası Channel 21 portalı oturum açma sayfasından alınabilir.</p>
+ <h5>
+GDS Araç Diyagnostik desteği:</h5>
+ <p><b>Avrupa Teknik Destek Merkezi:</b><br />
+
+GDS tabanlı tanılama olayları esnasında, araçla ilgili iletişim konularında kullanıcı desteği Avrupa Teknik Destek Merkezi tarafından verilmektedir.<!--j-->&nbsp;<!--j-->
+İlgili ülke için geçerli telefon numarası yerel General Motors Europe organizasyonunuzdan alınabilir.</p>
+ <h5>
+Bağımsız Atölyeler/Satış sonrası desteği:</h5>
+ <p><b>European Customer Assistance Center</b><br />
+Bağımsız atölyeler yukarıda belirtilen destek hizmetleri için European Customer Assistance Center ile temasa geçebilirler.<!--j-->&nbsp;<!--j-->
+Temas bilgileri GME InfoTech Portalı'nda verilmektedir.</p>
+ <hr />
+ <h3>Yazılım Lisans Sözleşmesi</h3>
+ <p>Yazılımı kullanmaya başlamadan önce, lütfen bu yazılım lisans sözleşmesi bilgilerini dikkatlice okuyun.<!--j-->&nbsp;<!--j-->
+Yazılımı kullanmaya devam etmeniz burada belirtilen şart ve koşulları kabul ettiğinizi gösterir.</p>
+ <p>SAHİPLİK<!--j-->:<!--j-->&nbsp;<!--j-->
+
+
+Bu yazılımın telif hakkı General Motors Corporation şirketinindir ve yazılımla ilgili tüm telif haklarının ve diğer mülkiyet haklarının, başlık ve yasal hakların General Motors Corporation'a ait olduğunu kabul etmiş sayılıyorsunuz.<!--j-->&nbsp;<!--j-->
+General Motors Corporation'ın, burada özellikle lisanslandırılmayan herhangi bir yazılım hakkı saklıdır.</p>
+ <p>KULLANIM<!--j-->:<!--j-->&nbsp;<!--j-->
+Size bu yazılımı birden fazla bilgisayarda kullanmak için özel olmayan, başkasına aktarılamayan imtiyaz verilir.<!--j-->&nbsp;<!--j-->
+
+Bu yazılımın tamamını veya bir kısmını tersine çözümleme, derlemesini açma, değiştirme, çoğaltma, dağıtma veya satma hakkına sahip değilsiniz.<!--j-->&nbsp;<!--j-->
+Bu lisans size aittir ve burada belirtilen tüm şart ve koşullara tamamen uymanız koşulu ile verilmiştir.</p>
+ <p>İptal<!--j-->:<!--j-->&nbsp;<!--j-->
+
+Burada belirtilen şart ve koşullara uymamanız halinde, General Motors Corporation bu yazılım lisans sözleşmesini iptal edebilir.<!--j-->&nbsp;<!--j-->
+
+Sözleşme iptal edildiğinde, yazılımın kullanılmasına derhal son vermelisiniz ve yazılımın tüm kopyalarını, bilgisayar sistemlerinizde bulunanlar da dahil olmak üzere imha etmelisiniz.</p>
+ <hr />
+ <h1><a name="product_description"></a>2.<!--j-->&nbsp;<!--j-->Ürün Tanımı</h1>
+ <h2>Satıcı Kişisel Bilgisayar Gereksinimleri<!--j-->&nbsp;<!--j-->(<!--j-->Avrupa<!--j-->)</h2>
+ <p>GDS programının TIS2Web ve GlobalTIS ile bağlantılı olarak kullanılması için minimum kişisel bilgisayar gereksinimleri:</p>
+ <ul>
+ <li>İşlemci:<br />
+Intel Pentium M, 1,5GHz</li>
+ <li>Sistem Belleği (RAM)<br />
+GDS ve TIS2Web / GlobalTIS istemci için 1GB; GDS ve bağımsız GlobalTIS için 2GB</li>
+ <li>Sabit Disk Sürücüsü Minimum:<br />
+40 GB</li>
+ <li>İşletim Sistemi<!--j-->:<br />Windows XP Professional (SP2)</li>
+ <li>Diğer Yazılım Bileşenleri:<br />
+Java Web Start 1.5x veya üzeri<br />
+ </li>
+ </ul>
+ <p>
+Daha fazla bilgi için lütfen yerel GME organizasyonunuzda mevcut GME IT donanım ve yazılım belirtimlerine bakınız.</p>
+ <hr />
+ <h1><a name="installation"></a>3.<!--j-->&nbsp;<!--j-->GDS Kurulumu</h1>
+ <h2>GDS Bileşenlerine Genel Bakış:</h2>
+ <p>GDS yazılımında, önceden kurulması ve belirli aralıklarla güncelleştirilmesi gereken aşağıdaki modüller mevcuttur.<!--j-->&nbsp;<!--j-->[I]</p>
+ <ul>
+ <li><b>GDS Base System</b><br />
+PC'de kurulu GDS temel yazılımı</li>
+ <li><!--j--><b><!--j-->GDS Tanılama Paketleri<!--j--></b><!--j-->:<br />
+Araç kontrol üniteleriyle tanılama yordamları gerçekleştiren, araç modelleri tanılama veri paketleri.</li>
+ <li><!--j--><b><!--j-->GDS Smart Start<!--j--></b><!--j-->:<!--j--><br />TIS2Web/GlobalTIS ile yerel Kurulum arasında GDS Base System, GDS Tanılama Paketleri ve MDI Manager yazılımı Sunucusunu karşılaştıran Uygulama Aracısı.<!--j-->&nbsp;<!--j-->Kullanılabilir yeni güncelleştirmeler karşıdan yüklemek için anımsatılır.</li>
+ <li><!--j--><b><!--j-->MDI Manager Yazılımı (ayrı bir uygulama)<!--j--></b><!--j-->:<br />
+MDI Aygıtı yapılandırma ve güncelleştirme uygulaması (Çoklu Tanılama Arayüzü)</li>
+ </ul>
+ <p><img src="../../images/gds_i_trk.gif" alt="gds_i.gif" width="650px"/><br />
+[I]</p>
+ <hr />
+ <h2>Kurulum:</h2>
+ <p>GDS ayrı bir kurulum DVD'sinden veya doğrudan TIS2Web / GlobalTIS'den yüklenebilir.</p>
+ <h3>GDS DVD'sinden kurulum:</h3>
+ <ul>
+ <li>PC Yönetici modunda açılmalıdır</li>
+ <li>DVD başlat menüsündeki yürütülebilir kurulum uygulamasını başlatın</li>
+ <li>Yükleme aracı için istediğiniz dili seçin</li>
+ <li>Bilgisayarda önceden kurulmuş olan bir GDS tespit edildiğinde, mevcut GDS yapılandırması ve verileri tekrar kullanılabilir.</li>
+ <li>Lisans sözleşmesini kabul edin (devam edebilmek için gereklidir)</li>
+ <li>GDS için bir kurulum dizini seçin</li>
+ <li>GDS kurulum işlemi başlar</li>
+ <li>Bilgisayarda MDI Manager yazılımı yoksa veya eski bir versiyonu varsa, MDI Manager yazılımı kurulur.<!--j-->&nbsp;<!--j-->MDI Manager ilk kez kuruluyorsa, kurulum işlemi sırasında MDI donanımının bağlı olması gerekir.<!--j-->&nbsp;<!--j-->Ayrıntılar için MDI kılavuzuna bakın.</li>
+ <li>Kurulum işlemi tamamlandıktan sonra, GDS masaüstünde bir simge ile veya Başlat/ProgramlarGDS üzerinden başlatılabilir.<!--j-->&nbsp;<!--j--><img src="../../images/gds_icon.png" alt="gds_icon.png" /></li>
+ <li>Gerekirse, güvenlik duvarını GDS aygıtı ile MDI iletişimine izin verecek şekilde yapılandırın.</li>
+ <li>GDS Smart Startbaşlar ve GDS başlamadan önce, ekranda gösterilen güncelleştirme işlemi yürütülür.</li>
+ </ul>
+ <hr />
+ <h3>TIS2Web / GlobalTIS'den kurulum<!--j-->:</h3>
+ <p><img src="../../images/gds_ii_trk.gif" alt="gds_ii.gif" width="600px"/><br />
+[II]</p>
+ <table width="80%" border="0">
+ <tr>
+ <td class="important"><b><!--j-->Önemli<!--j-->:<!--j--></b><!--j-->&nbsp;<!--j-->TIS2Web'den kurulum sırasında İnternet üzerinden yaklaşık 140 MB veri yüklenir.</td></tr></table>
+ <ul>
+ <li>Bilgisayar Yönetici modunda çalışmalıdır</li>
+ <li>TIS2Web / GlobalTIS Giriş Sayfasından GDS'yi başlatın<!--j-->&nbsp;<!--j-->[II]</li>
+ <li>TIS2Web sunucusundan GDS Smart Start yüklenir ve bu işlem İnternet bağlantısına bağlı olarak biraz vakit alabilir.</li>
+ <li>GDS için bir kurulum dizini seçin.</li>
+ <li>İnternet Şifre'sini girin (sadece İnternet erişimi için bir proxy sunucu kullanıldığında gereklidir)</li>
+ <li>Gerekirse, güvenlik duvarını GDS aygıtı ile MDI iletişimine izin verecek şekilde yapılandırın.</li>
+ <li>GDS Smart Start kurulumu başladığında, bu işlem birkaç dakika sürebilir.</li>
+ <li>GDS Smart Start'ı başlatın, GDS güncelleştirme işlemi yürütülür.<!--j-->&nbsp;<!--j-->[III]</li>
+ <li>Dosyaların karşıdan yüklenmesi tamamlandıktan sonra, GDS versiyonu ve MDI Manager yazılım versiyonu görüntülenir ve açılan pencere istemi kabul edilerek karşıdan yüklenebilir.<!--j-->&nbsp;<!--j--><b>Yükleme Durumunu Göster</b> düğmesi üzerinden, güncelleştirme ilerlemesi durum çubuğu ekrana getirilebilir.</li>
+ <li>Bilgisayarda MDI Manager yazılımı yoksa veya eski bir MDI Manager versiyonu varsa, MDI Manager yazılımı kurulur.<!--j-->&nbsp;<!--j-->MDI Manager yazılımı ilk kez kuruluyorsa, kurulum sırasında MDI donanımının takılı olması gerekir.<!--j-->&nbsp;<!--j-->Ayrıntılar için MDI kılavuzuna bakın.</li>
+ </ul>
+
+  <table width="200" border="0">
+ <tr>
+ <td><img src="../../images/gds_iii_trk.gif" alt="gds_III.gif" width="200px"/></td>
+ <td><img src="../../images/gds_iv_trk.gif" alt="gds_IV.gif" width="150px" /></td>
+ </tr>
+ <tr>
+ <td>[III]</td>
+ <td>[IV]</td>
+ </tr>
+ </table>
+ <hr />
+ <h3>GDS üzerinden Smart Start güncelleştirme<!--j-->:</h3>
+GDS'yi TIS2Web/GlobalTIS'dan veya bağımsız bir uygulama olarak Windows start menüsünden çalıştırın.<!--j-->&nbsp;<!--j-->GDS yüklenmeden önce, Smart Start etmeni çaıştırılır ve aşağıdaki PC GDS kurulum versiyonları ile TIS2Web / GlobalTIS Sunucusu içeriğini karşılaştırır:</p>
+ <ul>
+ <li>GDS Smart Start</li>
+ <li>GDS Base System</li>
+ <li>MDI Manager</li>
+ </ul>
+ <p>Sunucuda yeni versiyonlar varsa, Smart Start kullanıcıdan yeni güncelleştirmeleri yüklemesini ister.<!--j-->&nbsp;<!--j-->[IV]</p>
+ <!--<p>GDS Base System, GDS Tanılama paketleri ve MDI Manager için Smart Start güncelleştirme işlemi, yalnızca GDS bağımsız modda değilken ve TIS2Web/GlobalTIS'den başlatıldığında yürütülür.<!--j-->&nbsp;<!--j--><!--The update capability of standalone started GDS will be available in a future version.</p>
+--> <table width="80%" border="0">
+ <tr>
+ 	 <td class="important"><!--j--><b><!--j-->Önemli<!--j--><!--j-->:<!--j--></b><!--j-->&nbsp;<!--j-->Tanımlanan güncelleştirme işlemleri için bilgisayarın daima Yönetici modunda çalışması gerekmektedir.</td></tr></table>
+ <hr />
+ <h3>GDS Base System Kurulumunun geri alınması</h3>
+ <p>GDS güncelleştirmesi çalışmada sorunlar oluşturduğunda, GDS kurulumu bir önceki versiyona geri alınabilir.</p>
+ <p>Geri alma işlevini yürütmek için: BAŞLAT -&gt;PROGRAMLAR -&gt; GDS -&gt; GDS GERİ ALMA bölümüne gidin.<!--j-->&nbsp;<!--j-->Geri alma işlevinin çalışabilmesi için, bilgisayarda daha önceki GDS versiyonunun bulunması gerekir.</p>
+ <h3>GDS Lisansı Kontrol Sistemi (Kira Sözleşmesi)</h3>
+ <p>GDS lisans denetim sistemi sayesinde GDS'nin izinsiz olarak kullanılması önlenir.<!--j-->&nbsp;<!--j-->GDS sözleşmesinin yenilenmesi için, GDS'nin TIS2Web veya GlobalTIS'den çalıştırılması gerekir.<!--j-->&nbsp;<!--j-->GDS sözleşmesinin, uygulama bu süre içinde sadece bağımsız modda çalıştırıldıysa, 7 gün sonra yenilenmesi gerekir.<!--j-->&nbsp;<!--j--><br>GDS kira sözleşme süresi dolduysa, bir hata mesajı kullanıcının sözleşmenin yenilenmesi için TIS2Web/GlobalTIS'dan GDS uygulamasını başlatmasını ister.</p>
+ <hr />
+ <h3>GDS Tanılama Paketlerinin Yüklenmesi ve Güncelleştirilmesi</h3>
+ <p>GDS Tanılama Paketleri tanılama uygulamalarıdır ve araç kontrol ünitesiyle GDS arasındaki tanılama servisini ve iletişimi denetlerler.<!--j-->.<!--j-->&nbsp;<!--j-->GDS tanılama paketleri modele göre yayımlanır ve TIS2Web / GlobalTIS üzerinde sürekli olarak güncelleştirilir.</p>
+ <p>Güncelleştirme işlemi başlatıldığında, TIS2Web / GlobalTIS'de yeni veya güncelleştirilmiş tanılama paketleri olup olmadığı GDS Smart Start tarafından otomatik olarak belirlenir.<!--j-->.<!--j-->&nbsp;<!--j-->Yeni tanılama paketleri GDS'ye yüklenmeden önce, bilgisayarda yerel bir dizine yüklenmelidir.<!--j-->&nbsp;<!--j-->Yüklü tanılama paketlerinin güncel versiyonları otomatik olarak karşıdan yüklenir ve tek gereken GDS Ana Veritabanına kurulmalarıdır.</p>
+ <br clear=all />
+ <hr />
+ <h3>GDS Tanılama Paketlerinin İlk Kez Karşıdan Yüklenmesi ve Güncelleştirilmesi</h3>
+ <ul><li>GDS'yi TIS2Web/GlobalTIS'dan veya bağımsız bir uygulama olarak Windows start menüsünden çalıştırın.</li>
+ <li>GDSOturum Açma ekranından  <b>Yeni Tanılama Paketi ekle</b> düğmesini seçin.</li>
+ <li><b>Tanılama paketi listesini sunucudan güncelleştir</b> düğmesine basın.<!--j-->&nbsp;<!--j-->[V-1]<!--j-->.<!--j-->&nbsp;<!--j-->Sunucuda mevcut olan, fakat henüz karşıdan yüklenmemiş olan paketler bir simge ile gösterilir.<!--j-->&nbsp;<!--j-->
+ <img src="../../images/gds_server.png" alt="gds_server.png" width="36" height="34" /></li>
+ <li>Tanılama paketlerini işaretleyin ve karşıdan yükleyin<!--j-->&nbsp;<!--j-->[V-2]<!--j-->.<!--j-->&nbsp;<!--j-->Filtre işlevini kullanarak, istediğiniz tanılama paketlerini seçebilirsiniz.<!--j-->&nbsp;<!--j-->Karşıdan yüklenen tanılama paketleri bir simge ile gösterilir.<!--j-->&nbsp;<!--j--><img src="../../images/gds_pc.png" alt="gds_pc.png" /></li>
+ <li>Karşıdan yüklenen paketleri GDS Ana Veritabanı'na yükleyin; yüklenen paketler sağ uygulama penceresinde görünür<!--j-->&nbsp;<!--j-->[V-3]<!--j-->.</li>
+ </ul>
+ <p><img src="../../images/gds_v_trk.gif" alt="gds_v.gif" width="650px"/><br />
+[V]</p>
+ <hr />
+ <h2>Ana Veritabanına Yüklenen GDS Tanılama Paketlerinin Güncelleştirilmesi<!--j-->:</h2>
+ <ul>
+ 	 <li>GDS Oturum Açma ekranında  <b>Tanılama Paketini Güncelleştir</b> düğmesini tıklatın<!--j-->&nbsp;<!--j-->[VI-1]<!--j-->.<!--j-->&nbsp;<!--j-->GDS yüklenmiş olan GDS tanılama paketleri ile sunucuda mevcut olan tanılama paketlerinin versiyonlarını karşılaştırır ve güncelleştirilmiş paketleri karşıdan yükler.</li>
+ 	 <li>Karşıdan yüklenen kurulum için hazır olan paketler sol alt pencerede görünür.<!--j-->&nbsp;<!--j-->Kuruluma başlamak için  <b>Yükle</b> ya da  <b>Tümünü yükle</b> düğmesini seçin.<!--j-->&nbsp;<!--j-->[VI-2]<!--j-->.</li>
+ </ul>
+ <p><img src="../../images/gds_vi_trk.gif" alt="gds_vi.gif" width="650px"/><br />
+[VI]<!--j-->:</p>
+ <hr />
+ <h2>
+Tanılama Paketi Güncelleştirmesini Geri Alma</h2>
+ <p>
+
+Geri alma işlemi genellikle GDS Tanılama Paketlerinin İlk Kez Yüklenmesi ve Güncelleştirilmesi bölümünde açıklandığı gibidir</p>
+ <ul>
+ 	 <li>GDSOturum Açma ekranından  <b>Yeni Tanılama Paketi ekle</b> düğmesini seçin.</li>
+ 	 <li><b>Tanılama paketi listesini sunucudan güncelleştir</b> düğmesine basın.<!--j-->&nbsp;<!--j-->[V-1]<!--j--></li>
+ <li>İstenen eski tanılama paketleri versiyonlarını işaretleyin ve yükleyin.<!--j-->&nbsp;<!--j-->Filtre işlevini kullanarak, istediğiniz tanılama paketlerini seçebilirsiniz.</li>
+ <li>Karşıdan yüklenmiş olan paketleri GDSAna Veritabanına yükleyin.</li>
+ </ul>
+ <hr />
+ <h2>GDS'nin Kaldırılması<!--j-->:</h2>
+ <p>GDS aşağıdaki program başlatılarak kaldırılabilir:</p>
+ <p>
+BAŞLAT -&gt; PROGRAMLAR -&gt; GDS -&gt;GDS KALDIR</p>
+ <hr />
+ <h2>
+GDS Dilinin Değiştirilmesi<!--j-->&nbsp;<!--j-->/<!--j-->&nbsp;<!--j-->Bölgesel Ayarlar<!--j-->:</h2>
+ <p>GDS, bilgisayarın işletim sistemi dilini kullanır.<!--j-->&nbsp;<!--j-->GDS'de dil ayarını değiştirmek için bir menü bulunmaz.<!--j-->&nbsp;<!--j-->GDS'nin dilini değiştirmek için aşağıdaki adımları gerçekleştirin:</p>
+ <ul>
+ <li>Aşağıdaki sıra ile Windows DENETİM MASASI'nı açın:<!--j-->&nbsp;<!--j-->START -&gt; AYARLAR -&gt; KONTROL PANELİ</li>
+ <li>BÖLGE VE DİL SEÇENEKLERİ menüsünü açın</li>
+ <li><b>STANDARTLAR VE BİÇİMLER</b>'de ülkeyi seçin</li>
+ <li>İLERİ menüsünü açın.<!--j-->&nbsp;<!--j-->UNICODE OLMAYAN PROGRAMLAR için aşağıya açılan kutudan istenen dili seçin</li>
+ <li>GDS'de gösterilen birimleri değiştirmek için BÖLGESEL SEÇENEKLER'i yapılandırın.</li>
+ </ul>
+ <hr />
+ <h1><a name="getting_started"></a>4.<!--j-->&nbsp;<!--j-->Başlarken</h1>
+ <p><b><!--j-->Not<!--j-->:<br />
+GDS ile çalışmaya başlamadan önce, aşağıdaki önlemlere uyulması önemlidir:<!--j--></b></p>
+ <ul>
+ <li>Artık geçerli olmayan bir versiyonun kullanılması araçtaki modüllere zarar verebilir.<!--j-->&nbsp;<!--j-->GDS ve Çoklu Tanılama Arabiriminin en son yazılımı yüklü olmalıdır.</li>
+ <li>Aracın aküsünün tamamen dolu olduğunu kontrol edin<!--j-->&nbsp;<!--j-->GDS için akü voltajı 12 ile 14 arasında olmalıdır.</li>
+ <li>Ancak MDI kullanılırken araca bir akü şarj cihazı bağlanmamalıdır.</li>
+ <li>Kablo bağlantılarının sağlamlığını kontrol edin.<!--j-->&nbsp;<!--j-->Ayrılmış bir kablo, kontrol ünitesinin hatalı çalışmasına sebep OLABİLİR.</li>
+ <li>GDS için bir dizüstü bilgisayar veya başka bir görüntü birimi (örn. PDA) kullanıldığında, güç kaynağının doğru bağlandığından emin olun.<!--j-->&nbsp;<!--j-->Bir AC bağlantısı varsa ve güç kablosu çıkarsa, programlama kesilebilir ve bu da kontrol modülünde hasara sebep olabilir.<!--j-->&nbsp;<!--j-->Dizüstü bilgisayar kendi dahili gücü (pil) ile çalışıyorsa, GDS işlemini tamamlamak için pilin yeterince dolu olduğundan emin olun.</li>
+ </ul>
+ <table width="80%" border="0">
+ <tr>
+ <td class="note"><b>Not</b><br />
+
+Bir ECU programlanacak ise, bu işleme başlamadan önce araca takılmış olması gerekir.<!--j-->&nbsp;<!--j-->Aracın aküsünün tamamen dolu olduğundan emin olun.</td></tr></table>
+ <table width="80%" border="0">
+ <tr>
+ <td class="important"><b>Önemli</b><br />
+Sinyal kaybı olasılığını azaltmak için, MDI bulunduğunuz yerdeki en uygun iletişim seçeneğine göre yapılandırılmalıdır.<!--j--><!--j-->USB, Ethernet veya Kablosuz Ethernet seçeneğini belirleyebilirsiniz.</td></tr></table>
+ <hr />
+ <h2>GDS Başlatma İşlemi<!--j-->:</h2>
+ <p>GDS, TIS2Web/GlobalTIS üzerinden, GDS simgesi tıklatılarak başlatılabilir.<!--j-->&nbsp;<!--j-->Alternatif olarak GDS Windows Başlat menüsünden tek başına modunda da başlatılabilir.</p><ol><li>Başlatmak için TIS2Web/GlobalTIS ana menüsünde GDS simgesini tıklatın<!--j-->.<!--j-->&nbsp;<!--j-->GDS bağımsız modda başlatıldığında, BAŞLAT/PROGRAMLAR/GDS üzerine tıklatın</li><li>GDS Smart Start'ı başlatılırken, ekranda görülen güncelleştirme işlemi yürütülür.<!--j-->&nbsp;<!--j-->Sunucuda yeni bir GDS veya MDI Manager versiyonu varsa, bilgisayara karşıdan yüklenip kurulması için size sorulacaktır.<!--j-->&nbsp;<!--j-->Karşıdan yükleme veya kurulum işlemini başlatmak için  <b>Devam,</b> üzerine tıklatın<!--j-->&nbsp;<!--j-->[IV]<!--j-->.<!--j-->&nbsp;<!--j-->GDS bağımsız modda başlatılmışsa, güncelleştirme yapılamaz.</li>
+ 	 <li>GDS Oturum Açma sayfası yüklenir.</li></ol>
+ <hr />
+ <h1><a name="navigation"></a>5.<!--j-->&nbsp;<!--j-->Genel Gezinti</h1>
+ <h2>Aşağı Açılan Menüler<!--j-->&nbsp;<!--j--><img src="../../images/gds_menu.png" alt="gds_menu.png" width="57" height="38" /></h2>
+ <p>GDS'de beş adet aşağıya açılan menü bulunur<!--j-->&nbsp;<!--j-->[VII]</p> <p>Not<!--j-->:<!--j-->&nbsp;<!--j-->Bu menüler sadece GDS yazılımının kişisel bilgisayardaki menü seçimleridir<!--j-->.<!--j-->&nbsp;<!--j-->Ayrıca bir dokunmatik ekran biçimi de mevcuttur ve bu menülere açılan bir düğme üzerinden erişilebilir.</p> <ul>
+ <li><b>Dosya</b> menüsünde  <b>Çıkış</b>'yi kapatmak için GDS girişi mevcuttur.</li>
+ <li><b>Oturum</b> menüsünde iki seçenek bulunur:<!--j-->&nbsp;<!--j--><b>Geçerli Oturum Günlüğünü kaydet</b> ve  <b>Oturuma açıklamalar ekle...</b><br /><b>Oturuma açıklamalar ekle...</b>: bilgisayarınızın klavyesi kullanılarak bilgi girebilir ve Oturum Günlüğü Yöneticisi'ne kaydedilebilir.</li>
+ <li><b>Araçlar</b> seçiminde beş seçenek mevcuttur:<!--j-->&nbsp;<!--j-->İzlemeyi Başlat<!--j-->,<!--j-->&nbsp;<!--j-->Anlık görüntüyü tekrarla<!--j-->,<!--j-->&nbsp;<!--j-->Rapor oluştur<!--j-->,<!--j-->&nbsp;<!--j-->Yükleme Durumunu Göster...<!--j-->,<!--j-->&nbsp;<!--j-->Kullanıcı Yönetimi<br />Yeni kullanıcı oluşturmak için  <b>Kullanıcı Yönetimi</b> sayfasındaki simgeyi tıklatın<!--j-->&nbsp;<!--j-->
+ <img src="../../images/gds_add-user.png" alt="gds_add-user.png" width="27" height="26" />
+ <!--j-->.</li>
+ <li><b>Pencere</b>: </b>Tercihler</b> menüsünde ekran yapılandırması seçilebilir; örn. tam ekran modu, bilgisayar veya dokunmatik ekran modu.</li>
+ <li><b>Yardım Seçimi</b> üç seçime sahiptir:<br /><b>Yardım İçerikleri</b> kullanılabilen tüm GDS yardım dosyalarını gösterir.<!--j-->&nbsp;<!--j-->
+<b>GDS Hakkında</b> GDS versiyonunu ve Yapım numarasını gösterir.<!--j-->&nbsp;<!--j-->
+<b>MDI Versiyonunu Göster</b> MDI yazılım ve donanım versiyonlarını gösterir.<!--j-->&nbsp;<!--j-->
+Customer Support Center ile temas kurduğunuzda, sizden bu bilgiler istenebilir.</li></ul><p></p>
+ <p><img src="../../images/gds_vii_trk.gif" alt="gds_vii.gif" width="120px"/><br />
+[VII]</p>
+ <hr />
+ <h2>Tanılama Uygulaması Araç Çubuğu</h2>
+ <p>Sistemde gezinti görünümüne geçtikten sonra, çeşitli araç çubuğu seçme olanakları mevcuttur.<!--j-->&nbsp;<!--j-->[VIII]</p>
+ <ul>
+ <li><b>Anlık Görüntü Kaydet</b> (Kırmızı Daire), sadece sistem gezinti görünümüne erişildikten sonra görünür ve araçta anlık görüntü kaydetmek için kullanılır.<!--j-->&nbsp;<!--j-->Bir anlık görüntü kaydedilirken bu seçim kullanılamaz.</li>
+ <li><b>Anlık Görüntü kaydını durdur</b> (Mavi Kare) aracın anlık görüntüsü kaydedilirken görünür.<!--j-->&nbsp;<!--j-->Bu seçenek seçildiğinde anlık görüntü kaydı durur ve dosya kaydedilir.</li>
+ <li><b>Ekran görüntüsü</b> simgesi seçilerek ekranın içeriği yakalanır ve bilgisayardaki bir konuma kaydedilir.</li>
+ <li><b>Uzaklaştır</b> yazı tipini büyütür.<!--j-->&nbsp;<!--j-->Fare ile her tıklatıldığında, ekrandaki resim küçülür.</li>
+ <li><b> Yakınlaştır</b> seçimi yazı tipini büyütür.<!--j-->&nbsp;<!--j-->Fare ile her tıklatıldığında, ekrandaki resim büyür.</li>
+ <li><b>Çıkış</b> düğmesi etkin tanılama uygulamasını kapatır.</li>
+ </ul>
+ <p><img src="../../images/gds_viii_trk.gif" alt="gds_viii.gif" width="400px"/><br />
+[VIII]</p>
+ <hr />
+ <h2>Ok Tuşları</h2>
+ <p>Ok tuşları parametre listesinin altında bulunur.<!--j-->&nbsp;<!--j-->Ok tuşları aşağıdaki gezinti işlemi için kullanılır:</p>
+ <p><img src="../../images/gds_ix_trk.gif" alt="gds_ix.gif" width="600px"/><br />
+[IX]<!--j-->:</p>
+ <ul>
+ <li><b>Yukarı</b> oku, her seçimde parametre listesinde bir üstteki dizine geçmek için kullanılır.</li>
+ <li><b>Aşağı</b> oku, her seçimde parametre listesinde bir alttaki dizine geçmek için kullanılır.</li>
+ <li><b>Sağa</b> oku Gezinti ağacında bir düzey açmak için kullanılabilir.</li>
+ <li><b>Sola</b> oku Gezinti ağacında bir düzey kapatmak için kullanılabilir.<!--j-->&nbsp;<!--j-->Yordamın ilk ekranındaysanız, bu seçim ekranda görünmez.</li></ul>
+ <hr />
+ <h2>Diğer tuşlar</h2>
+ <p>Diğer tuşlar tüm ekranların altında bulunur.<!--j-->&nbsp;<!--j-->Bu tuşların görevleri:</p>
+ <ul>
+ <li><b>Başlat</b> bir uygulama başlatmanızı sağlar.</li>
+ <li><b>Önceki Eylem</b> bir önceki ekrana geçmek için kullanılabilir.<!--j-->&nbsp;<!--j-->Bu seçim yalnızca geriye gidilecek bir ekran varsa kullanılabilir.</li>
+ <li><b>İleri</b> eylemi bir sonraki ekrana geçmek için kullanılabilir.<!--j-->&nbsp;<!--j-->Bu seçim yalnızca geçerli ekranda gerekli tüm seçimler yapıldığında kullanılabilir.</li>
+ </ul>
+ <br clear=all />
+ <hr />
+ <h2>Araç/MDI Bilgilerinin Girilmesi</h2>
+ <p>1.<!--j-->&nbsp;<!--j-->GDS Ana Menüsünden oturum açmak için bir kullanıcı seçin.<!--j-->&nbsp;<!--j-->Herhangi bir kullanıcı oluşturulmamışsa yeni bir kullanıcı yaratılabilir veya varsayılan kullanıcı seçilebilir.<!--j-->&nbsp;<!--j-->(Açılır menüler bölümüne bakınız)<br />
+ </p>
+ <p>2.<!--j-->&nbsp;<!--j-->Erişim seçiminiz yapıldıktan sonra, Tanımlama Menüsü ekranı görüntülenir.<!--j-->&nbsp;<!--j-->Bu ekranda birden fazla seçenek mevcuttur.</p>
+ <p><img src="../../images/gds_x_trk.gif" alt="gds_x.gif" width="650px"/><br />
+[X]</p>
+ <ul>
+ 	 <li>[X-1]<!--j-->&nbsp;<!--j--><b><b>MDI Seçimi</b></b><!--j-->:<!--j-->&nbsp;<!--j-->Bayiliğin çeşitli ağlarında mevcut olan tüm MDI'ler ekrana gelir. Araç tanılama işlemleri gerçekleştirmek için kullandığınız MDI'yi seçebilirsiniz.<!--j-->&nbsp;<!--j-->MDI bağlantısı için, kullanılabilir bir MDI'yi üzerine tıklatarak vurgulayın ve  <b>Bağlan</b> öğesini seçin.<!--j-->&nbsp;<!--j-->MDI bağlantısını kesmek için  <b>Bağlantıyı kes</b> seçin.<!--j-->&nbsp;<!--j-->Araca yeni MDI bağlayın ve  <b>Bağlan</b> öğesini seçin.<!--j-->&nbsp;<!--j-->Kullanılabilir ağlarda yeni MDI'ler olup olmadığını kontrol etmek için  <b>Yenile</b> öğesini seçin.<!--j-->&nbsp;<!--j-->MDI bağlı olmadan GDS'ye devam etmek için,  <b>MDI kullanmadan gezin</b> onay kutusunu etkinleştirin.</li>
+ <li>[X-2]<!--j-->&nbsp;<!--j--><b><b>VIN Girişi</b></b><!--j-->:<!--j-->&nbsp;<!--j-->Elle girmek için Araç Tanım numarası alanı veya aracın kontrol ünitesinden otomatik VIN numarası.<!--j-->&nbsp;<!--j-->(MDI bağlantısı gereklidir).<!--j-->&nbsp;<!--j-->Alttaki metin alanına bu VIN / Araç ile ilgili ek açıklamalar eklenebilir.</li>
+ <li>[X-3]<!--j-->&nbsp;<!--j--><b>Araç Tanımı</b> Kısım<!--j-->:<!--j-->&nbsp;<!--j-->Devam etmeden önce Marka, Model ve Model Yılı'nı seçin.</li>
+ <li>[X-4]<!--j-->&nbsp;<!--j--><b><b>Aracın Tanılama Geçmişi</b></b><!--j-->:<!--j-->&nbsp;<!--j-->Araçta daha önce bu GDS sistemi ile tanılama yapılmışsa, aracın geçmişinde VIN ve ilgili bilgiler saklanır.<!--j-->&nbsp;<!--j-->Listeden tanılama işlemi yapılacak aracı seçin ve doğrudan  <b>Aracın Giriş Sayfası</b> ile devam edin.<!--j-->&nbsp;<!--j-->Burada boş bir metin filtresi işlevi mevcuttur</li>
+ </ul>
+ <p>3.<!--j-->&nbsp;<!--j-->Ekranda  <b>Aracın Giriş Sayfası</b> görünür.<!--j-->&nbsp;<!--j-->From this screen various vehicle data is displayed including: entered vehicle information, previous vehicle diagnosis, session comments, session log reports, and stored data</p>
+ <hr />
+ <h2><b><b>Aracın Giriş Sayfası</b></b></h2>
+ <p><b>Aracın Giriş Sayfası</b> çeşitli alanlardan oluşur:</p>
+ <p>[XI-1]<!--j-->:<!--j-->&nbsp;<!--j--><b>Araç Bilgileri</b> araçla ilgili Marka, Model ve Model Yılı dahil tüm bilgileri gösterir.<br />Bu liste araçta tanılama işlemleri yapılırken her seferinde güncelleştirilir ve her oturumda kaydedilir.<!--j-->&nbsp;<!--j--><b>Araç seçeneği seçimini sil</b> ile daha önceki araç bağlamı seçimi iptal edilir.<!--j-->&nbsp;<!--j-->Araç İçerik Listesinden silinecek sırayı işaretleyin ve Ekipmanı Sil'i seçin.</p>
+ <p>[XI-2]<!--j-->:<!--j-->&nbsp;<!--j--><b>Oturum Açıklamaları</b> ile tanılama oturumu hakkında serbest kullanıcı açıklamaları eklenebilir.<!--j-->&nbsp;<!--j--><b>Açıklama Ekle</b> üzerine tıklatılarak bir oturumla ilgili ek bilgiler eklenebilir.<!--j-->&nbsp;<!--j-->Kullanıcı, Veri veya Açıklama alanlarına klavye ile bilgi girilebilir.<!--j-->&nbsp;<!--j-->Önceki açıklamaları silmek için, Kullanıcı, Veri veya Açıklama altındaki bilgileri işaretleyin ve  <b>Seçilen Açıklamayı Sil</b> üzerine tıklatın.</p>
+ <p>[XI-3]<!--j-->:<!--j-->&nbsp;<!--j--><b>Oturum Günlüğü Raporları</b> ile aracın tanılama bilgilerinin bir yazıcı çıktısı alınabilir.<!--j-->&nbsp;<!--j--><b>Tam Görünüm</b> ile araçta yapılan tanılama işlemlerinin eksiksiz bir raporu alınır.<!--j-->&nbsp;<!--j--><b>Basit Rapor</b> bir araç tanılama özeti verir.</p>
+ <p>[XI-4]<!--j-->:<!--j-->&nbsp;<!--j--><b>Anlık Görüntü Verileri</b> araçta kayıtlı tüm anlık görüntü verilerinin bir listesini çıkarır.<!--j-->&nbsp;<!--j-->Kullanıcı adı, anlık görüntü dosyasının adı, anlık görüntünün alındığı tarih ve açıklamalar görünür.<!--j-->&nbsp;<!--j-->Anlık görüntü tekrarlamasının ekrana getirilmesi için öğe işaretlenir ve  <b>Gözden Geçir</b> seçilir.<!--j-->&nbsp;<!--j-->Öğeleri silmek için, istediğiniz öğeyi işaretleyin ve  <b>Sil</b> öğesini seçin.<br />[XI-6]<!--j-->:<!--j-->&nbsp;<!--j--><b><a name="export_snap">Dışa Aktarım</a></b> yerel bilgisayarınıza bir enstantaneyi saklar.<!--j-->&nbsp;<!--j-->Daha sonra bu enstantane verisini daha da analiz edilmek üzere uygun kişiye gönderebilirsiniz.</p>
+ <p>[XI-5]<!--j-->:<!--j-->&nbsp;<!--j--><b>Yürütülen uygulamalar</b> menüsü bir tanılama oturumunun geçmişini verir.</p>
+
+  <p><b>Sonraki Eylem</b> ile seçilen araçta tanılama işlemine devam edilir.</p>
+ <p><img src="../../images/gds_xi_trk.gif" alt="gds_xi.gif" width="650px"/><br />
+[XI]</p>
+ <hr />
+ <h2>Sistemde Gezinti - Tanılama Uygulaması Seçimi</h2>
+ <p><b>Sonraki Eylem</b> bölümünden  <b>Aracın Giriş Sayfası</b> seçildikten sonra, ekrana Sistemde Gezinti görünümü gelir<!--j-->&nbsp;<!--j-->[XII]<!--j-->.</p>
+ <p>Araçta inceleme yapacağınız gezinti yolunu seçin.<!--j-->&nbsp;<!--j-->Gezinti için gezinti okları kullanılabilir; sağ/sol okları bir alt dizini açar/kapatır, Başlat düğmesi seçilen bir tanılama uygulamasını başlatır.<!--j-->&nbsp;<!--j-->Gezinti için fare ile gezinti ağacı üzerindeki + işaretine tıklatılabilir veya bilgisayarın klavyesindeki ok tuşlarına basılabilir.</p>
+ <p>
+Üzerinde uygulama simgesi bulunan bir tanılama uygulamasına erişene kadar, istenen yol için dizin seçmeye devam edin.</p>
+ <p>
+
+Bir tanılama uygulamasına eriştiğinizde, sistemde gezinti görünümü kaybolur ve yerine bir tanılama uygulaması görünür.<!--j-->&nbsp;<!--j-->
+Tanılama uygulamasını tamamladıktan sonra, tanılama uygulaması görünümünün sağ üst tarafındaki  <b>Çıkış</b> öğesini seçin.<!--j-->&nbsp;<!--j-->
+Bu durumda tanılama uygulaması kapanır ve tekrar sistemde gezinti görünümüne dönülür.</p>
+ <p><img src="../../images/gds_xii_trk.gif" alt="gds_xii.gif" width="350px"/><br />
+[XII]</p>
+ <hr />
+ <h1><a name="diagnostics"></a>6.<!--j-->&nbsp;<!--j-->Tanılama</h1>
+ <h2>DTC Ekranı</h2>
+ <p><b>Araç DTC Bilgileri</b> seçildiğinde,  <b>Tanılama Uygulaması</b>'den Elektronik kontrol Ünitelerinin (ECU) bir listesi ve kayıtlı DTC'lerin sayısı görünür.</p>
+ <p><img src="../../images/gds_xiii_trk.gif" alt="gds_xiii.gif" width="400px"/><br />
+[XIII]</p>
+ <p>
+Ekranda görünen örnekte, Alet Kümesi Modülü için kayıtlı 4 DTC görülmektedir.<!--j-->&nbsp;<!--j-->DTC Giriş Sayfası'nı göstermek için  <b>Devam,</b> öğesini seçin.<br />
+
+  <img src="../../images/gds_xiv_trk.gif" alt="gds_xiv.gif" width="650px"/><br />
+[XIV]</p>
+ <p>Mevcut DTC'ler bir tablo halinde gösterilir.<!--j-->&nbsp;<!--j-->
+Gösterilen tablonun içeriği yapılandırılabilir.<!--j-->&nbsp;<!--j-->Tabloya sütun eklemek veya tablodan sütun silmek için  <b>Sütun Seçimi</b> üzerine tıklatın<!--j-->&nbsp;<!--j-->[XIV-1]<!--j-->.<!--j-->&nbsp;<!--j-->
+Aşağıdaki DTC bilgileri ekrana getirilebilir:</p>
+ <table border=1 cellspacing=0 cellpadding=0>
+ <tr>
+ <td width=158 valign=top><p><b>Seçim</b></p></td>
+ <td width=427 valign=top><p><b>Tanım</b></p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>Durum</p></td>
+ <td width=427 valign=top><p><img src="../../images/gds_status-unknown.png" alt="gds_status-unknown.png" width="16" height="16" /><!--j-->&nbsp;<!--j-->Okuma çevriminde verilen yeni DTC.<!--j-->&nbsp;<!--j-->DTC tanımlama metni kalın harflerle yazılır.</p>
+ <p><img src="../../images/gds_mail-generic.png" alt="gds_mail-generic.png" /><!--j-->&nbsp;<!--j-->Mevcut DTC, okunan son çevrimden bu yana değişme yok</p>
+ <p><img src="../../images/gds_forward.png" alt="gds_forward.png" /><!--j-->&nbsp;<!--j-->
+Son okunan çevrimden bu yana durum değişikliğini içeren geçerli DTC.<!--j-->&nbsp;<!--j-->
+DTC tanımlama metni eğik harflerle yazılır.</p>
+ <p><img src="../../images/gds_mail-delete.png" alt="gds_mail-delete.png" /><!--j-->&nbsp;<!--j-->
+DTC geçerli okuma çevriminde silindi.<!--j-->&nbsp;<!--j-->
+DTC tanımlama metni kırmızı fonda verilir.</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>ECU</p></td>
+ <td width=427 valign=top><p>Kontrol Ünitesinin Adı</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>İşlevsel Sistem</p></td>
+ <td width=427 valign=top><p>İşlevsel Sistemin Adı (ECU Seti)</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>DTC</p></td>
+ <td width=427 valign=top><p>DTC Kodu</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>Belirti Baytı</p></td>
+ <td width=427 valign=top><p>DTC ile bağlantılı Belirti Baytı kodu</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>Tanım</p></td>
+ <td width=427 valign=top><p>DTC metni tanımlaması</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>Belirti</p></td>
+ <td width=427 valign=top><p>Kodu Çözülen Belirti tanımlaması</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>Durum Baytı</p></td>
+ <td width=427 valign=top><p>İleride kullanmak için</p></td>
+ </tr>
+ <tr>
+ <td width=158 valign=top><p>Şifresiz Durum</p></td>
+ <td width=427 valign=top><p>Geçerli DTC durumu</p></td>
+ </tr>
+ </table>
+ <p>
+<b>Filtreleme Seçenekleri</b> ile, belirli ECU'lar filtre olarak ayarlanabilir ve sonuç olarak sadece listede verilen DTC'ler ekrana getirilebilir.<!--j-->&nbsp;<!--j-->[XIV-2]<!--j-->.<!--j-->&nbsp;<!--j-->
+Bu işlev DTC'ler tüm araçtan veya işlevsel sistem tarafından okunduğunda kullanılabilir.<br />
+
+Alttaki serbest alana DTC ekranını filtrelemek için serbest metin girilebilir; örneğin özgün bir hata kodu veya anahtar sözcük.<br />
+<b>DTC Durumunu Göster</b> onay kutusu etkinleştirildiğinde, ayrıntılı bir DTC durumu gösterilebilir<!--j-->&nbsp;<!--j-->[XIV-3]<!--j-->.</p>
+ <hr />
+ <h3>DTC'leri Sil</h3>
+ <p><!--j-->[XIV-4]<!--j-->&nbsp;<!--j-->
+<b>DTC'leri Sil</b> seçildiğinde, ekrana bir araç DTC Bilgisi gelir.<!--j-->&nbsp;<!--j-->[XV]<br />
+Silmek istediğiniz ECU'ları seçmek için  <b>Ekle</b> veya  <b>Tümünü Ekle</b> oklarını kullanın.<!--j-->&nbsp;<!--j-->
+Bazı ECU'lar sadece birlikte silinebilir, bu durumda seçilmeleri de birlikte olur.<!--j-->&nbsp;<!--j-->
+Seçilen ECU'lar ekranın sağ tarafında gösterilir.<!--j-->&nbsp;<!--j-->Seçilen ECU'ları silmek için  <b>Tamam</b> öğesini seçin<!--j-->&nbsp;<!--j-->
+ECU'ları henüz silmek istemiyorsanız  <b>İptal</b> öğesini seçin.<!--j-->&nbsp;<!--j-->
+<b>Tamam</b> seçildiğinde, ekranda açılan bir ilerleme penceresi görünür.<!--j-->&nbsp;<!--j-->
+Silinen kodlar kırmızı olur ve bir sonraki yenileme ile kaybolur.</p>
+ <p><img src="../../images/gds_xv_trk.gif" alt="gds_xv.gif" width="500px"/><br />
+[XV]</p>
+ <hr />
+ <h3>DTC'leri Yenile</h3>
+ <p><b>DTC'leri Yenile</b> düğmesi seçildiğinde, GDS kontrol ünitesinden bir DTC güncelleştirme talep eder<!--j-->&nbsp;<!--j-->[XIV-5]<!--j-->.</p>
+ <hr />
+ <h3>DTC Uygulamasından çıkış</h3>
+ <p>
+DTC Uygulamasından çıkmak için  <b>Çıkış</b> düğmesine basın<!--j-->&nbsp;<!--j-->[XIV-6]<!--j-->.</p>
+ <table width="80%" border="0">
+ <tr>
+ <td class="important"><b><!--j-->Önemli<!--j-->:<!--j--></b><!--j-->&nbsp;<!--j-->
+Tanılama Uygulaması'ndan yalnızca  <b>Çıkış</b> seçimi ile çıkılabilir.<!--j-->&nbsp;<!--j-->
+Tanılama uygulamaları gerçekleştirilirken, GDS'den çıkmak mümkün değildir.<!--j-->&nbsp;<!--j-->
+GDS'den çıkmak için tekrar GDS Oturum Açma sayfasına dönün.</td></tr></table>
+ <hr />
+ <h3>Tanım Bilgileri</h3>
+ <p>
+<b>Veri Ekranı</b> uygulaması aracın kontrol ünitesi verilerini görüntülemek için kullanılabilir.<!--j-->&nbsp;<!--j-->
+Kontrol ünitesi tanım ekranında kontrol ünitesinin yazılım ve donanım öğelerinin bilgileri bulunur; bu bilgiler Teknik Yardım Merkezi'ne bilgi vermek için gerekebilir.</p>
+ <hr />
+ <h2>
+Veri Ekranı</h2>
+ <p>
+Veri Ekranı uygulaması aracın kontrol ünitesi ve sinyallerinin gerçek zamanlı durumunu verir.</p>
+ <p>
+Seçilen kontrol ünitesi verileri için varsayılan görünüm  <b>Tüm Parametreler</b> tablosunda bulunur.<!--j-->&nbsp;<!--j-->[XVI-1]<!--j-->.<!--j-->&nbsp;<!--j-->
+<b>Sütun Seçimi</b> düğmesi ile ekranda gösterilecek sütunları teker teker yapılandırın<!--j-->&nbsp;<!--j-->[XVI-3]<!--j-->.</p>
+ <p><b>İzleme Listesine Ekle</b> seçildiğinde her parametreye bir izleme listesinde bakılabilir<!--j-->&nbsp;<!--j-->[XVI-2]<!--j-->.</p>
+
+  <p><img src="../../images/gds_xvi_trk.gif" alt="gds_xvi.gif" width="650px"/><br />
+[XVI]</p>
+
+  <p>
+İzleme listesinde seçilen parametrelere  <b>Çizgi Grafiği</b> görünümünde bakılabilir<!--j-->&nbsp;<!--j-->[XVII-1]<!--j-->.<!--j-->&nbsp;<!--j-->
+
+
+<b>Çizgi Grafiği</b> görünümünü başlatmak için, aşağı açılan kutuda gösterilmesini istediğiniz parametreleri seçin ve Ekle düğmesini tıklatın<!--j-->&nbsp;<!--j-->[XVII-2]<!--j-->.<!--j-->&nbsp;<!--j-->
+Çizgi grafiğinde birden fazla parametre göstermek mümkündür.</p>
+ <p>
+Çizgi grafiğinin görünümü alt görev çubuğundaki düğmelerle yapılandırılabilir.<!--j-->&nbsp;<!--j-->[XVII-3]</p>
+ <ol>
+ <li><b>Kaydırmayı Duraklat/Kaydırmaya Devam Et</b>: Çizgi grafiği ekranının statik görünümü ile dinamik düzeltmesi arasında seçim yapar.</li>
+ <li><b>Veri Noktaları</b>: Grafik ekranını nokta modu ile çizgi modu arasında değiştirir</li>
+ <li><b>İşaret Metni Ekle</b>: Çizgisel grafikte belirli konumları/olayları işaretler.</li>
+ <li><b>Yakınlaştır</b> /  <b>Uzaklaştır</b> İşlevi</li>
+ </ol>
+ <p>
+
+  <img src="../../images/gds_xvii_trk.gif" alt="gds_xvii.gif" width="650px"/><br />
+[XVII]</p>
+ <p>
+<b>Tüm Parametreler</b> listesindeki parametreler grafiksel olarak gösterilir<!--j-->&nbsp;<!--j-->[XVI-1]<!--j-->.<!--j-->&nbsp;<!--j-->
+Bir parametre seçin ve seçim kutusundan istenen görüntüleme modunu seçin<!--j-->&nbsp;<!--j-->[XVIII-1]<!--j-->.<!--j-->&nbsp;<!--j-->Parametreler aşağıdaki modlarda görüntülenebilir:</p>
+ <ul type=square>
+ 	 <li>Kadran Grafik<!--j-->&nbsp;<!--j-->[XVIII-2]<!--j-->.</li>
+ 	 <li>Çubuk Grafik<!--j-->&nbsp;<!--j-->[XVIII-3]<!--j-->.</li>
+ 	 <li>Yüksek Görünürlük<!--j-->&nbsp;<!--j-->[XVIII-4]<!--j-->.</li>
+ </ul>
+ <p>Her seferinde en çok 4 parametre veya ekran modu görüntülenebilir.</p>
+
+
+   <p><img src="../../images/gds_xviii_trk.gif" alt="gds_xviii.gif" width="650px"/><br />
+[XVIII]</p>
+ <hr />
+ <h3>Anlık Görüntüyü Tekrarla</h3>
+ <p><b>Anlık Görüntünün Tekrarlanması</b> işlevi ile, aracın daha önce kaydedilmiş olan anlık görüntü verilerine bakılabilir.<!--j-->&nbsp;<!--j-->Bu bilgi araçtaki sorunları incelemek ve hata tetikleme koşullarını tespit etmek için kullanılır.<!--j-->&nbsp;<!--j-->Grafik işlevi parametreleri karşılaştırmak ve bir bileşenin doğru çalışıp çalışmadığını tespit etmek için kullanılır.<!--j-->&nbsp;<!--j-->Kaydedilmiş anlık görüntüleri görüntülemek için aşağıdaki üç yöntemden biri seçilebilir:</p>
+ <ul>
+ <li>Anlık görüntü dosyasını  <b>Aracın Giriş Sayfası</b> üzerinden seçip Gözden Geçir seçiminin üzerine tıklatılarak.</li>
+ <li>Seçilen anlık görüntüye  <b>Aracın Giriş Sayfası</b> üzerinden çift tıklatılarak.</li>
+ <li><b>Araçlar</b> seçiminden  <b>Menü</b> seçimini girip  <b>Anlık Görüntünün tekrarlanması</b> öğesini seçerek.<!--j-->&nbsp;<!--j-->Sonra  <b>Anlık Görüntü Yöneticisi</b> öğesini açın.<!--j-->&nbsp;<!--j-->Görüntülemek istediğiniz anlık görüntü dosyasını çift tıklatın veya Anlık Görüntüyü Yükle seçimini tıklatın ve bir anlık görüntü dosyası seçin.</li>
+ </ul>
+ <p>Seçme yönteminden bağımsız olarak,  <b>Anlık Görüntünün Tekrarlanması</b> ekranından bir Dosya Yüklendi penceresi açılır.<!--j-->&nbsp;<!--j-->Açılan pencereden Tamam'ı seçin.</p>
+ <hr />
+ <h3>Anlık Görüntü Yürütme İşlevleri<!--j-->&nbsp;<!--j-->[XIX-1]</h3>
+ <p>Kayıtlı anlık görüntüleri tekrarlamak için birden fazla anlık görüntü yürüt işlevi mevcuttur</p>
+
+
+   <table width="84%" height="80" border="1">
+ <tr>
+ <td width="7%"><img src="../../images/gds_play.png" alt="gds_play.png" width="25" height="23" /></td>
+ <td width="93%">
+Yürüt işlevi, bu seçimi tıklatarak anlık görüntüyü ileri doğru yürütmek için kullanılır.<!--j-->
+
+&nbsp;<!--j-->
+
+Bu seçim kullanıldığında, ekran boyunca bir işaret metni hareket eder.<!--j-->
+
+&nbsp;<!--j-->
+Bu alandaki tüm etkin seçimler gri olur.</td>
+ </tr>
+ <tr>
+ <td><img src="../../images/gds_pause.png" alt="gds_pause.png" width="24" height="21" /></td>
+ <td>Duraklatma işlevi anlık görüntü yürütmesini duraklatmak için kullanılır.<!--j-->&nbsp;<!--j-->Bu seçime ikinci bir kez tıklatıldığında, anlık görüntü kaldığı yerden devam eder.</td>
+ </tr>
+ <tr>
+ <td><img src="../../images/gds_stop.png" alt="gds_stop.png" width="24" height="19" /></td>
+ <td>Durdurma işlevi anlık görüntünün yürütmesini durdurmak için kullanılır.<!--j-->&nbsp;<!--j-->Durdur işlevini kullandıktan sonra Yürüt seçildiğinde, anlık görüntü tekrar baştan başlar.</td>
+ </tr>
+ </table>
+ <hr />
+ <h3>Zaman Denetimi<!--j-->&nbsp;<!--j-->[XIX-2]</h3>
+ <p>Anlık görüntünün tekrarlanmasını denetlemek için  <b>Zaman Denetimi</b> kullanılır.<!--j-->&nbsp;<!--j-->Bu işlev ile belirli bir zaman çerçevesi seçilebilir, farklı görünümler gösterilebilir ve gösterme hızı denetlenebilir.<!--j-->&nbsp;<!--j-->Aşağıdaki işlevler doğrudan  <b>Zaman Denetimi</b> altından seçilebilir.</p>
+ <table width="84%" border="1">
+ <tr>
+ <td><img src="../../images/gds_bookmark.png" alt="gds_bookmark.png" width="17" height="24" /></td>
+ <td>Yer İşareti seçimi ile geçerli gösterime belirli bir açıklama eklenebilir ve ileride bu noktaya geri dönülebilir.<!--j-->&nbsp;<!--j-->Bu işlev seçildiğinde, ekranda bir pencere açılır.<!--j-->&nbsp;<!--j-->Bir yer işareti adı girin ve Tamam'ı seçin.</td>
+ </tr>
+ <tr>
+ <td><img src="../../images/gds_notepad.png" alt="gds_notepad.png" width="26" height="22" /></td>
+ <td>O andaki anlık görüntü tekrarlama dosyasına açıklama eklemek için Notepad programı seçilebilir.<!--j-->&nbsp;<!--j-->Bu işlev seçildiğinde, ekranda bir pencere açılır.<!--j-->&nbsp;<!--j-->Anlık görüntü dosyası için bir açıklama girin ve Tamam'ı seçin.</td>
+ </tr>
+ <tr>
+ <td><img src="../../images/gds_load.png" alt="gds_load.png" width="23" height="23" /></td>
+ <td>Anlık Görüntü Yükle (mavi dizin) bir anlık görüntü dosyasını açar ve sonraki analizler için hazırlar.<!--j-->&nbsp;<!--j-->Bir <a href="#export_snap">dışa aktarılmış enstantaneyi</a> görmek için, önce ilgili arşiv *.zip'i açın.<!--j-->&nbsp;<!--j--><!--j-->&nbsp;<!--j-->Bu işlev ayrıca,  <b>Anlık Görüntü Yöneticisi</b> üzerinden kullanılabilen anlık görüntü dosyası tıklatılarak da kullanılabilir.</td>
+ </tr>
+ <tr>
+ <td><img src="../../images/gds_time-options.png" alt="gds_time-options.png" width="19" height="23" /></td>
+ <td>Aşağı Ok seçildiğinde, tüm  <b>Zaman Denetimi</b> seçenekleri görüntülenir.<!--j-->&nbsp;<!--j-->Seçenekler istediğiniz öğe üzerine tıklatılarak da seçilebilir.</td>
+ </tr>
+ <tr>
+ <td><img src="../../images/gds_speed.png" alt="gds_speed.png" width="57" height="27" /></td>
+ <td>
+Bu seçenek seçildiğinde, Anlık Görüntü Gösterge Hızı denetlenebilir.<!--j-->
+
+&nbsp;<!--j-->
+
+1/8X, 1/4X, ve 1/2X yavaş hızları seçilebilir.<!--j-->
+
+&nbsp;<!--j-->
+
+Gerçek zaman hızı da 1 ile seçilir.<!--j-->
+
+&nbsp;<!--j-->
+Bu seçim kullanılarak 2X, 4X, ve 8X katı hızlar da seçilebilir.</td>
+ </tr>
+ </table>
+
+
+   <hr />
+ <h3>Görünüm Seçimleri<!--j-->&nbsp;<!--j-->[XIX-3]</h3>
+ <p>Her Görünüm Seçimi, analiz edilecek araç verilerini farklı bir şekilde gösterir.<!--j-->&nbsp;<!--j-->Aşağıdaki işlevler  <b>Kullanılabilir Görünümler</b> altından seçilebilir:</p>
+ <ul>
+ <li>Parametre Listesi Görünümü - anlık görüntü dosyasından gelen bilgileri gösterir.<!--j-->&nbsp;<!--j-->Bu ekranda parametrelerin geçerli değerleri gösterilir.</li>
+ </ul>
+ <table width="80%" border="0">
+ <tr>
+ 	<td class="important"><b>Önemli</b><br />Ad için çeviri yapılmamışsa, parametre adı yakalamada kullanılan orijinal dilde gösterilir.</td></tr></table>
+ <ul>
+ <li>Günlük Görünümü - Anlık görüntü dosyasındaki tüm bilgileri içeren bir Günlük Görünümünü açar.<!--j-->&nbsp;<!--j-->Tüm parametre değerleri kaydedildikleri sıra ile listelenir.<!--j-->&nbsp;<!--j-->İlgili öğelere tıklatılarak belirli parametreler izleme listesine eklenebilir veya listeden çıkarılabilir.</li>
+ <li>Durum Görünümü - tüm parametrelerin değerlerini belirli bir zaman çerçevesi içinde gösterir.<!--j-->&nbsp;<!--j-->Bu değerler, tetikleme görünümü ile karşılaştırma yapmak için kullanılabilir.</li>
+ <li>Tetikleme Görünümü - sistem veya kullanıcı tarafından tanımlanan tüm tetiklemeleri gösterir.<!--j-->&nbsp;<!--j-->Bu işlev, bir tanılama sorununu etkileyen faktörler birden fazla ise kullanılabilir.<!--j-->&nbsp;<!--j-->
+Bir Tetikleme Koşulu tespit edildiğinde, ekranda bir uyarı üçgeni görünür.<ul><li>Tetiklemeleri Yükle<!--j-->&nbsp;<!--j-->-<!--j-->&nbsp;<!--j-->Tetikleme tanımlamaları içeren bir dosya yüklemenizi sağlar.</li>
+ 	 <li>Tetiklemeleri Kaydet<!--j-->&nbsp;<!--j-->-<!--j-->&nbsp;<!--j-->Tetiklemeyi bilgisayarınızın sabit diskine kaydetmenizi sağlar.</li>
+ <li>Tetiklemeyi Sil<!--j-->&nbsp;<!--j-->-<!--j-->&nbsp;<!--j-->Geçerli tetiklemeyi silmenize izin verir. Tetikleme artık sistemde bulunmaz.</li>
+ <li>Tetikleme Düzenle<!--j-->&nbsp;<!--j-->-<!--j-->&nbsp;<!--j-->bir tetikleme içindeki limitleri ve parametreleri değiştirebileceğiniz bir pencere açar.</li>
+ <li>Tetikleme Ekle<!--j-->&nbsp;<!--j-->-<!--j-->&nbsp;<!--j-->tetiklemeyi yapılandıran bir pencere açar.</li></ul></li>
+ <li>DTC Görünümü<!--j-->&nbsp;<!--j-->-<!--j-->&nbsp;<!--j-->Yürüt işlevi ve bu seçenek seçildikten sonra, bu işlev kayıtlı DTC'lerin bir listesini açar.</li>
+ <li>Çizgi Grafiği Görünümü - bir zaman eksenine göre görselleştirilebilen verileri gösterir.<!--j-->&nbsp;<!--j-->Bu görünümden, grafikte kullanmak için Seçilen altındaki kutu işaretlenerek belirli parametreler seçilebilir.<!--j-->&nbsp;<!--j-->Grafiğin altında dört işlev bulunur:  <b>Yakınlaştır</b> (büyüt),  <b>Uzaklaştır</b> (küçült),  <b>Yer işaretleri</b>, ve  <b>Kaydırmayı Duraklat</b>.<!--j-->&nbsp;<!--j-->Bu işlevlerden her birine erişmek için üzerlerine tıklatın.</li>
+ </ul>
+ <p><img src="../../images/gds_xix_trk.gif" alt="gds_xix.gif" width="650px"/><br />
+[XIX]</p>
+ <hr />
+ <h2>Denetim İşlevleri:</h2>
+ <p>GDS'deki denetim işlevleri ile, belirli araç işlevleri GDS sisteminden denetlenebilir.<!--j-->&nbsp;<!--j-->Denetim İşlevi Uygulamasını başlatmak için, Sistemde Gezinti'deki belirli bir kontrol ünitesinin Denetleme İşlevleri'ni seçin.</p>
+ <p>Denetleme işlevleri veri listesi ekranında bulunur.<!--j-->&nbsp;<!--j-->Denetleme işlevi yürütülürken, gösterilen parametrelere bakılabilir veya parametreler GDS anlık görüntü işlevi ile kaydedilebilir.</p>
+ <p>GDS iki farklı Denetleme İşlevi tipini destekler:</p>
+ <p>1.<!--j-->&nbsp;<!--j-->Aç/KAPAT özellikli Dijital Denetleme İşlevi<!--j-->&nbsp;<!--j-->[XX-1]</p>
+ <p><img src="../../images/gds_xx_trk.gif" alt="gds_xx.gif" width="650px"/><br />
+[XX]</p>
+ <p>2.<!--j-->&nbsp;<!--j-->İşlevi denetleme yetenekli Analog Denetleme İşlevi.<!--j-->&nbsp;<!--j-->Eyleyici işlevi kumanda düğmeleri üzerinden veya imleç yan taraftaki skala üzerinde gezdirilerek denetlenebilir.<!--j-->&nbsp;<!--j-->[XXI-1]<!--j-->&nbsp;<!--j-->veya<!--j-->&nbsp;<!--j-->[XXI-2]<!--j-->.</p>
+ <p><img src="../../images/gds_xxi_trk.gif" alt="gds_xxi.gif" width="650px"/><br />[XXI]</p>
+ <hr />
+ <h2>Yapılandırma ve Sıfırlama İşlevleri:</h2>
+ <p>Yapılandırma ve sıfırlama işlevleri, sistem eyleyicileri değiştirildiğinde veya sıfırlanmaları gerektiğinde yürütülecek özel kontrol ünitesi işlevleridir.<!--j-->&nbsp;<!--j-->Ayrıntılı bilgi için sistemin ilgili Servis Kılavuzuna bakın.</p>
+ <hr />
+ <h1><a name="troubleshooting"></a>7.<!--j-->&nbsp;<!--j-->HATA GİDERME</h1>
+
+  <h2>MDI Bağlantı Sorunları</h2>
+ <p>MDI bağlantıları gevşekse veya araca/bilgisayara doğru bağlantı yapılmadıysa, ekranda bir pencere açılır.<!--j-->&nbsp;<!--j-->Aşağıdaki adımları gerçekleştirin:</p><ul>
+ <li>GDS ile çalışırken, aynı anda MDI Yönetici yazılımının da çalışmadığından emin olun.</li>
+ <li>MDI'nin araca ve bilgisayara doğru olarak bağlandığından emin olun.</li>
+ <li>Eğer varsa, başka bir MDI ünitesinden bilinen &quot;iyi bir USB kablosu&quot; kullanın.<!--j-->&nbsp;<!--j-->Tüm bağlantıları gerçekleştirin ve yeniden deneyin.</li>
+ <li>Eğer varsa, başka bir MDI ünitesinden bilinen &quot;iyi bir MDI DLC bağlantı kablosu&quot; kullanın.<!--j-->&nbsp;<!--j-->Tüm bağlantıları gerçekleştirin ve yeniden deneyin.</li>
+ <li>Bu durum halen geçerliyse, Customer Support ile temasa geçin.</li>
+ <li>GDS/MDI iletişiminin bir güvenlik duvarı tarafından engellenmediğinden emin olun.</li>
+ </ul>
+ <hr />
+ <h2>GDS/MDI Manager Yazılımı Çakışması</h2>
+ <p>GDS ve MDI Manager yazılımları aynı anda çalışamaz.<!--j-->&nbsp;<!--j-->Her iki yazılım da aynı anda çalıştığında, yazılım çakışması sorunu oluşabilir.<!--j-->&nbsp;<!--j-->Ayrıntılar seçimi ile bu hata ile ilgili olası bilgiler alınabilir.<!--j-->&nbsp;<!--j-->Sorun devam ederse, Customer Support sizden bu bilgileri isteyebilir.</p>
+ <p>Yazılım çakışması devam ederse, MDI Yönetici Yazılımında bir &quot;Önemli hata oluştu&quot; penceresi açılır.<!--j-->&nbsp;<!--j-->MDI Yönetici yazılımını kapatın ve GDS programına geçin.<!--j-->&nbsp;<!--j-->Sorun GDS programına girdikten sonra da devam ederse, Customer Support ile temasa geçin.</p>
+ <p>&nbsp;</p>
+ <p align="right"><font size="2">&copy; GM Europe, SPO Engineering, International Operations - 08 May 2009 (V3.0)</font></p>
+ </div>
+
+  </body>
+ </html>

@@ -1,0 +1,255 @@
+<HTML>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><TITLE>Información de servicio</TITLE><STYLE>
+	.ListIndentBul2Refer{margin-left : 40pt}  ..ListIndentBul2{margin-left : -20pt}
+	.SubListIndent{margin-left : -15pt}
+	.UpNo{border-top : white}  .DownNo{border-bottom : white}  ..BothNo{border-top : white; border-bottom : white}
+	.UpBold{border-top : thin double ridge}  .DownBold{border-bottom : thin double ridge}  .BothBold{border-top : thin double ridge; border-bottom : thin double ridge}
+	.ImageIndent{margin-left : 0%}  .ImageTitleIndent{margin-left : 5%}  .ParagraphIndent{margin-left : 20pt}
+	.Arial{font-family : Arial, Helvetica, sans-serif; margin-left : 10pt; margin-right : 10pt}
+</STYLE>
+<SCRIPT LANGUAGE="JavaScript">
+	function FixMenu()
+	{
+		menuTop = document.body.scrollTop + document.body.clientHeight -40;
+		menu.style.top = menuTop;
+		menu.style.width = document.body.clientWidth; 
+	}
+</SCRIPT>
+</HEAD>
+<BODY class="Arial" onLoad="FixMenu()" onScroll="FixMenu()" onResize="FixMenu()" BGCOLOR="#FFFFFF">
+<SPAN ID="menu" STYLE="position:absolute; left:0px; top:0px; width:0px">
+	<A border="0" href="92222695.es.html">
+	<IMG src="../../../../graphic-pool/Icons/Totop.gif" align="right" halign="Bottom" border="0" alt="To the top of the document"></A>
+</SPAN>
+<TABLE CELLSPACING="0"  width="100%" BORDER="1" rules="none" cellspacing="0" cellpadding="0" style="magin-top: 5pt">
+<TBODY>
+<TR BGCOLOR="cccc99" height="15">
+<TD width="30%"><div style="padding-left: 5pt"><B><FONT face="Arial">Cruze</FONT></B></div></TD>
+<TD width="70%" align="right" colspan="8"></TD>
+</TR>
+<TR BGCOLOR="white" height="60">
+<TD width="35%" align="left">
+<TABLE CELLSPACING="0" >
+<TR>
+<TD width="5%" align="left">&nbsp;</TD>
+<TD width="5%" align="left"></TD>
+<TD width="5%" align="left">&nbsp;</TD>
+</TR>
+</TABLE>
+</TD>
+<TD>
+<TABLE CELLSPACING="0"  width="65%" align="right">
+<TR>
+<TD style="font-size:10">
+	<A href="../../../GMDE_TIS_START.html" target="_top">
+	<IMG src="../../code/menu-images/home.gif" border="0" alt="GMDE Start Page">
+</A></TD>
+<TD style="font-size:10">
+	<A href="../toc_Cruze.html" target="menu"><IMG src="../../code/menu-images/static-TOC.gif" border="0" alt="Load static TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../toc_Cruze_code.html" target="code"><IMG src="../../code/menu-images/menu_folder_open.gif" border="0" alt="Load dynamic TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../../help/readme_EN.htm" target="top" class="bottom_copyright"><IMG src="../../code/menu-images/help.gif" border="0" alt="Help?"></A>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+<H2>DTC P0171 o P2096</H2>
+
+
+<A NAME="ss1-2222695">
+<A HREF="#ss1-2222695">
+<H3>Instrucciones de diagnóstico</H3></A>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Lleve a cabo <a href="92092144.es.html">Comprobación del sistema de diagnóstico - Vehículo</a> antes de usar el procedimiento de diagnóstico.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Revise <a href="91957622.es.html">Diagnosis basada en estrategia</a> para tener una panorámica del enfoque de diagnóstico.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top"><a href="91814794.es.html">Instrucciones del procedimiento de diagnóstico</a> proporciona una panorámica de cada categoría de diagnóstico.</td></tr></table></div>
+
+
+<A NAME="ss2-2222695">
+<A HREF="#ss2-2222695">
+<H3>Descripción de DTC</H3></A><B>Códigos de avería&nbsp;P0171&nbsp;00:&nbsp;</B>Ajuste de la cantidad de combustible pobre <br><br><B>Códigos de avería&nbsp;P2096&nbsp;00:&nbsp;</B>Límite bajo del sistema de ajuste de combustible post-catalizador<br><br>
+<A NAME="ss3-2222695">
+<A HREF="#ss3-2222695">
+<H3>Descripción del circuito/sistema</H3></A><p>El módulo de control del motor (ECM) controla el sistema de medición de aire/combustible con el fin de proporcionar la mejor combinación posible de maniobrabilidad, economía de combustible y control de emisiones. La entrega de combustible se controla de forma diferente durante los circuitos abierto y cerrado. Durante el circuito abierto, el ECM determina la entrega de combustible basado en las señales de los sensores, sin la entrada del sensor de oxígeno calentado (HO2S). Cuando está en circuito cerrado, el ECM suma las entradas de HO2S y el nivel de la purga para calcular los ajustes de combustible de corto y largo plazo. Si el HO2S indica que la mezcla es pobre, los valores de ajuste de combustible estarán por encima de 0%. Si el HO2S indica que la mezcla es rica, los valores de ajuste de combustible estarán por debajo de 0%. Los valores de ajuste de combustible de corto plazo varían rápidamente en respuesta a las señales de tensión de HO2S. El ajuste de combustible a largo plazo realiza correcciones aproximadas con el fin de mantener una relación óptima de aire/combustible. Un bloque de celdas de memoria contiene información dispuesta en combinaciones de régimen del motor y carga del motor para una gama completa de condiciones de trabajo del vehículo. El diagnóstico de ajuste de combustible a largo plazo se basa en un promedio de la celdas actualmente en uso. El ECM selecciona las celdas en base al régimen de revoluciones y la carga del motor. El diagnóstico de ajuste de combustible realizará una comprobación para determinar si existe realmente un fallo de funcionamiento de mezcla rica, o si una cantidad de vapor excesiva del depósito de emisión de vapores (EVAP) está causando un estado de mezcla rica.</p>
+<p>Los elementos calefactores dentro de cada uno de los sensores de oxígeno calentado (HO2S) calientan el sensor para llevar al sensor más prontamente a las condiciones de trabajo. Esto permite que el sistema entre en bucle cerrado antes y el módulo de control calcule la relación aire-combustible más rápido.</p>
+<p>El sensor de oxígeno calentado (HO2S) utiliza los circuitos que siguen:</p>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Un circuito de señales</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Un circuito de referencia baja</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Un circuito de tensión de encendido</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Un circuito de control del calefactor</td></tr></table></div>
+
+
+<A NAME="ss4-2222695">
+<A HREF="#ss4-2222695">
+<H3>Condiciones para la activación de DTC</H3></A>
+
+<h4>P0171&nbsp;00</h4>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">No se emiten los DTC P0030 00, P0031 00, P0032 00, P0107 00, P0108 00, P0112 00, P0113 00, P0121 00, P0122 00, P0123 00, P0128 00, P0131 00, P0132 00, P0133 00, P0134 00, P0135 00, P0137 00, P0138 00, P0140 00, P0141 00, P0201 00 - P0204&nbsp;00, P0220&nbsp;00, P0222&nbsp;00, P0223&nbsp;00, P0300&nbsp;00-P0304&nbsp;00, P0442&nbsp;00, P0443&nbsp;00, P0446&nbsp;00, P0451&nbsp;00, P0452&nbsp;00, P0453&nbsp;00, P0454&nbsp;00, P0455&nbsp;00, P0461&nbsp;00, P0462&nbsp;00, P0463&nbsp;00, P0496&nbsp;00, P0506&nbsp;00, P0507&nbsp;00, P2101&nbsp;00, P2119&nbsp;00, P2122&nbsp;00, P2123&nbsp;00, P2127&nbsp;00, P2128&nbsp;00, P2138&nbsp;00, P2176&nbsp;00, P2A00&nbsp;00.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Donde los DTC P2270 00, P2271 00, P2272 00, P2A01 00, aplicables no están activados.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">El parámetro de estado de circuito indica cerrado.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">La programación de ajuste de combustible está activada.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">La temperatura del refrigerante del motor (ECT) está entre -38 a +150 °C (-36,4 a +302 °F).</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">La temperatura del aire de admisión (IAT) está entre -38 a +150 °C (-36,4 a +302 °F).</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">La presión absoluta del colector (MAP) está entre 5 y 255&nbsp;kPa (0,73-37&nbsp;psi).</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">La velocidad del vehículo es inferior a 134&nbsp;km/h (83&nbsp;mph).</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">El régimen de revoluciones del motor está entre 400-6000&nbsp;R.P.M.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">La presión barométrica (BARO) es superior a 70&nbsp;kPa (10&nbsp;PSI).</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Los DTC&nbsp;P0171&nbsp;00 y P2096&nbsp;00 se ejecutan continuamente cuando se han cumplido las anteriores condiciones.</td></tr></table></div>
+
+
+
+<h4>P2096&nbsp;00</h4>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">No se han ajustado DTCP000A 00, P000B 00, P0010 00, P0011 00, P0013 00, P0016 00, P0017 00, P0030 00, P0031 00, P0032 00, P0106 00, P0107 00, P0108 00, P0117 00, P0118 00, P0119 00, P0121 00, P0122 00, P0123 00, P0131 00, P0132 00, P0133 00, P0137 00, P0138 00, P0139 00, P0140 00, P0141 00, P0171 00, P0172 00, P0201 00, P0202 00, P0203 00, P0204 00, P0221 00, P0222 00, P0223 00, P0261 00, P0262 00, P0264 00, P0265 00, P0267 00, P0268 00, P0270 00, P0271 00, P0300 00, P0301 00, P0302 00, P0303 00, P0304 00, P0313 00, P0335 00, P0336 00, P0340 00, P0341 00, P0365 00, P0366 00, P0420 00, P0443 00, P0458 00, P0459 00, P1106 00, P2088 00, P2089 00, P2090 00, P2091 00, P2100 00, P2101 00, P2176 00, P2270 00, P2271 00, P2297 00, P2300 00, P2301 00, P2303 00, P2304 00, P2306 00, P2307 00, P2309 00, P2310 00, P2A00 00, P2A01 00.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">El encendido está en la posición ON.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">El sistema de emisión de vapores (EVAP) no está purgando.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Está activado el ajuste de combustible post-catalizador.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Estos DTC se reproducen continuamente cuando se han cumplido las condiciones anteriores.</td></tr></table></div>
+
+
+<A NAME="ss5-2222695">
+<A HREF="#ss5-2222695">
+<H3>Condiciones para ajustar el DTC</H3></A>
+
+<h4>P0171&nbsp;00</h4>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">El valor medio ponderado del ajuste del combustible a largo plazo es superior o inferior a un valor calibrado.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">La condición anterior se cumple durante aproximadamente 3&nbsp;minutos después de cumplirse las condiciones para la ejecución del DTC.</td></tr></table></div>
+
+<h4>P2096&nbsp;00</h4><p>La condición anterior se cumple durante aproximadamente 3&nbsp;minutos después de cumplirse las condiciones para la ejecución del DTC.</p>
+
+<A NAME="ss6-2222695">
+<A HREF="#ss6-2222695">
+<H3>Acción realizada cuando el DTC se ajusta</H3></A><p>Los DTC&nbsp;P017&nbsp;001 y P2096&nbsp;00 son DTC de tipo&nbsp;B.</p>
+
+<A NAME="ss7-2222695">
+<A HREF="#ss7-2222695">
+<H3>Condiciones para el borrar el DTC</H3></A><p>Los DTC&nbsp;P0171&nbsp;00 y P2096&nbsp;00 son DTC de tipo&nbsp;B.</p>
+
+<A NAME="ss8-2222695">
+<A HREF="#ss8-2222695">
+<H3>Ayuda al diagnóstico</H3></A>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">En vehículos equipados con un servofreno al vacío, un rápido ciclado del pedal de freno puede imitar una fuga de vacío.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Un fallo en el HO2S no provocará que se emita el DTC P2096&nbsp;00, sin que se den DTC relacionados con el circuito del HO2S. No sustituya un HO2S para aislar este DTC.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Una fuga en el sistema de escape que podría ser no audible puede dar lugar a estos DTC.</td></tr></table></div>
+
+
+<A NAME="ss9-2222695">
+<A HREF="#ss9-2222695">
+<H3>Información de referencia</H3></A><h4>Referencia esquemática</h4><p>
+<a href="92204644.es.html">Esquema de la unidad de mando del motor</a></p>
+<h4>Referencia de vista del extremo del conector</h4><p> 
+
+<a href="CELLREF_164814">Vista del extremo del conector del componente</a></p>
+<h4>Referencia de información eléctrica</h4>
+<p><div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a href="91506352.es.html">Prueba del circuito</a> </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a href="91465833.es.html">Reparaciones del conector</a> </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a href="92161319.es.html">Compruebe si hay problemas intermitentes o conexiones deficientes</a> </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a href="92160816.es.html">Reparaciones de los cableados</a> </td></tr></table></div>
+</p>
+<h4>Referencia de tipo de DTC</h4><p> 
+
+<a href="92223447.es.html">Definiciones del tipo de código diagnóstico de avería (DTC) de la cadena cinemática</a></p>
+<h4>Referencia de herramienta de diagnóstico</h4><p><a href="92202618.es.html">Referencias del módulo de control</a> para información de herramienta de diagnóstico</p>
+
+<A NAME="ss10-2222695">
+<A HREF="#ss10-2222695">
+<H3>Verificación del circuito/sistema</H3></A>
+<p><font color=brown><b>Nota:&nbsp;</b>Ignore cualquier síntoma de la caja de cambios o testigo del sistema antibloqueo de frenos (ABS) y del sistema de control de tracción hasta que se reparen las posibles averías del ajuste de combustible. Una avería del ajuste de combustible puede causar acciones predeterminadas, como cambios bruscos y la iluminación de los testigos del ABS / sistema de control de tracción.</font></p>
+<OL><LI TYPE="1">Verifique que otros DTC no estén puestos.</LI>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">⇒</td><td valign="top">Si se ha registrado alguno, consulte <a href="92222948.es.html">Lista de los códigos diagnósticos de avería (DTC) - Vehículo</a> .</td></tr></table></div>
+<LI TYPE="1">Deje que el motor se ponga a la temperatura de servicio. Con el motor en marcha, observe el sensor HO2S&nbsp;1 con un escáner. El valor del HO2S 1 debe variar entre aproximadamente 40&nbsp;mV y aproximadamente 900&nbsp;mV, y responder a cambios en el suministro de combustible.</LI>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">⇒</td><td valign="top">Si el valor no varía entre aproximadamente 40&nbsp;mV y aproximadamente 900&nbsp;mV, consulte <a href="92222691.es.html">DTC P0137-P0140, P2270, P2271, o P2A01</a> .</td></tr></table></div>
+
+<p><font color=brown><b>Nota:&nbsp;</b>La habilitación del depósito de purga de EVAP puede hacer que el ajuste de combustible quede fuera del intervalo normal por un momento.</font></p><LI TYPE="1">El parámetro normal de ajuste del combustible a corto plazo del escáner debe estar entre +10% y -10%, siendo el entorno de 0% el óptimo, y con el motor marchando a temperatura de trabajo.</LI>
+<LI TYPE="1">El parámetro de ajuste del combustible a largo plazo del escáner debe estar entre +10% y -10%, siendo el entorno de 0% el óptimo, y con el motor marchando a temperatura de trabajo.</LI>
+<LI TYPE="1">Conduzca el vehículo en la condiciones para que se ejecute el DTC. También podría conducir el vehículo en las condiciones que se haya observado de los datos del registro de fallos/cuadro congelado.</LI>
+</OL>
+
+<A NAME="ss11-2222695">
+<A HREF="#ss11-2222695">
+<H3>Comprobación del circuito/sistema </H3></A>
+<p><font color=brown><b>Nota:&nbsp;</b>Deje que el motor se ponga a la temperatura de servicio. Con el motor en marcha, observe el parámetro de ajuste del combustible a largo plazo con una herramienta de diagnóstico. El valor debe ser inferior aproximadamente al 18% con el motor en marcha a temperatura de funcionamiento.</font></p><div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">⇒</td><td valign="top"> Si el valor no es inferior al 18%, compruebe lo siguiente:</td></tr></table></div>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Con el encendido conectado y el motor parado, observe el parámetro del sensor MAP del escáner. La lectura de presión del sensor MAP del escáner debería estar dentro del rango especificado para la altitud de su localidad. Consultar <a href="90839729.es.html">Altitud frente a presión barométrica</a> .</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;⇒</td><td valign="top">Si el sensor de presión absoluta del colector B74&nbsp;no indica la presión barométrica correcta, consulte <a href="92222580.es.html">DTC P0107 o P0108</a> .</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Con el motor en marcha y la caja de cambios en Park (Estacionar) o en punto muerto, observe el parámetro sensor MAP del escáner. El parámetro del sensor MAP del escáner debería estar entre 19 y 42&nbsp;kPa (2,8-6,1&nbsp;PSI).</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;⇒</td><td valign="top">Si el parámetro del sensor MAP del escáner no se encuentra entre 19-42&nbsp;kPa (2,8-6,1&nbsp;PSI), consulte <a href="92222580.es.html">DTC P0107 o P0108</a> .</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Tubos flexibles de vacío por si existen cortes, dobleces y conexiones incorrectas.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Cantidad insuficiente de combustible en el depósito</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Baja presión del combustible Consultar <a href="92222644.es.html">Diagnosis del sistema de combustible</a> .</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Contaminación del combustible. Consultar <a href="92172150.es.html">Diagnosis de alcohol/contaminantes en el combustible</a> .</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Inyectores de combustible defectuosos. Consultar <a href="92172782.es.html">Diagnóstico de la válvula de inyección</a> .</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Faltan componentes del escape, están flojos o tienen fugas, desde el HO2S hacia delante. Consultar <a href="92169708.es.html">Síntomas - Escape del motor</a> .</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Fugas de vacío en el colector de admisión, el cuerpo de la mariposa, el tubo flexible del servofreno y las juntas tóricas del inyector</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">El sistema de admisión de aire y los conductos de admisión, por si hubiera fugas o falta el elemento del filtro de aire</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Grietas en el cánister de EVAP</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Tuberías de evaporación obstruidas o con fugas</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Fugas en el sistema de ventilación del cárter del cigüeñal. Consultar <a href="92173502.es.html">Inspección/Diagnosis del sistema de ventilación del cárter del cigüeñal</a> .</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">El HO2S por instalación incorrecta y por cables o conectores eléctricos que pueden haber tocado la instalación de escape.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Circuito de señal&nbsp;1 del sensor&nbsp;1 de oxígeno calentado B52A&nbsp;abierto, cortocircuitado a masa o cortocircuitado al circuito de referencia de baja.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Compruebe si hay algún circuito abierto o alta resistencia en la señal baja&nbsp;1 del sensor&nbsp;1 de oxígeno calentado&nbsp;B52A</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Componentes defectuosos del motor. Consultar <a href="92173664.es.html">Síntomas: Mecánica del motor</a> .</td></tr></table></div>
+
+<p>Reparar o sustituir según sea necesario.</p>
+
+<A NAME="ss12-2222695">
+<A HREF="#ss12-2222695">
+<H3>Instrucciones de reparación</H3></A>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a href="92164032.es.html">Sustitución del filtro de aire</a> </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a href="92164026.es.html">Sustitución del elemento del filtro de aire</a> </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a href="92177391.es.html">Sustitución del depósito de emisión de vapor</a> </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a href="92173477.es.html">Sustitución del inyector de combustible</a> </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a href="92173265.es.html">Sustitución del módulo de la bomba del combustible del depósito de combustible</a> </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a href="92170407.es.html">Limpieza del sistema de combustible</a> </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a href="92166605.es.html">Sustitución de la Sonda Lambda Calentada - Sensor 1</a> </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a href="92166608.es.html">Sustitución del sensor de presión absoluta del colector</a> </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a href="92166600.es.html">Sustitución del conjunto del cuerpo de la mariposa</a> </td></tr></table></div>
+
+
+<A NAME="ss13-2222695">
+<A HREF="#ss13-2222695">
+<H3>Verificación de la reparación</H3></A>
+<OL>
+<p><font color=brown><b>Nota:&nbsp;</b>Después de las reparaciones, utilice la función de reinicio del ajuste de combustible en la herramienta de diagnóstico para restablecer los valores de ajuste del combustible a largo plazo.</font></p><LI TYPE="1">Monte todos los componentes o conectores que se hayan desconectado o sustituido durante el diagnóstico.</LI>
+<LI TYPE="1">Realice cualquier procedimiento de ajuste, programación o configuración que sea necesario cuando se desmonta o sustituye un componente.</LI>
+<LI TYPE="1">Ponga en marcha el encendido con el motor apagado.</LI>
+
+<p><font color=brown><b>Nota:&nbsp;</b>No borre los códigos con el motor en marcha. Los DTC se pueden reponer en el mismo ciclo de encendido.</font></p><LI TYPE="1">Borre los DTCs.</LI>
+<LI TYPE="1">Apague el encendido durante 60&nbsp;s.</LI>
+<LI TYPE="1">Arranque el motor.</LI>
+<LI TYPE="1">Reproduzca las condiciones para activar el DTC y utilice las funciones instantánea de datos / registros de fallos, si procede, para verificar que el DTC no se vuelve a activar. Si se vuelve a activar el mismo DTC o lo hace otro DTC, consulte <a href="92222948.es.html">Lista de los códigos diagnósticos de avería (DTC) - Vehículo</a> y lleve a cabo el procedimiento de diagnóstico pertinente.</LI>
+<LI TYPE="1">Para asegúrese de que el funcionamiento del catalizador no se haya visto afectado por el problema que activó dicho DTC, realice la verificación de la reparación para el DTC&nbsp;P0420&nbsp;00. Consulte <a href="92222555.es.html">DTC P0420</a> .</LI>
+</OL>
+
+
+
+
+<TABLE CELLSPACING="0"  align="center"><TR>
+<TD align="left">&nbsp;</TD>
+<TD align="left"></TD>
+<TD align="left">&nbsp;</TD>
+<TD></TD>
+</TR></TABLE>
+<BR><BR><TABLE CELLSPACING="0"  width="100%"><TBODY><TR BGCOLOR="DarkSlateBlue" align="center"><TD><FONT color="white"><B>© Copyright Chevrolet Europe. All rights reserved</B></FONT></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>
