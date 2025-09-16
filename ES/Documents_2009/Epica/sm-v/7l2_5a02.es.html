@@ -69,7 +69,7 @@ menu.style.width = document.body.clientWidth;
 <Li>El módulo de control de transmisión (TCM) solicita a la solenoide de control de presión del embrague del convertidor de par (TCC PC) presión para aplicar y soltar el TCC.</Li>
 									<Li>Cuando el contacto está dado y el motor está apagado, este control no tiene límites. La solenoide permanece conectada hasta que recibe la orden de desactivarse y viceversa.</Li>
 									<Li>Cuando el motor está en funcionamiento, se aplican los siguientes límites de control:</Li>
-									<ul type="square" style="list-style-image:url(../../../../Graphic-Pool/Icons/compass.gif)">
+									<ul type="square" style="list-style-image:url(../../../../graphic-pool/Icons/compass.gif)">
 <li style="margin-top:0.1em; margin-bottom:0.1em">Si la palanca selectora se encuentra en la posición de estacionamiento y la transmisión está en modo caliente, no es posible solicitar la desconexión de la solenoide de PC del TCC. Si se solicita dicha desconexión, aparecerá en la pantalla del scanner el mensaje "TCC OFF command disabled in Hot Mode" (Opción de desconexión de la TCC deshabilitada en modo caliente).</li>
 										<li style="margin-top:0.1em; margin-bottom:0.1em">La solenoide de PC del TCC no puede desconectarse durante más tiempo del calibrado. Se se solicita la desconexión de la solenoide durante un intervalo de tiempo determinado, aparecerá en la pantalla del scanner el mensaje "TCC OFF time has been exceeded" (se ha superado el tiempo de desconexión del TCC).</li>
 									</ul>
@@ -91,7 +91,7 @@ menu.style.width = document.body.clientWidth;
 <Li>El módulo de control de la transmisión controla la conexión y desconexión de la solenoide de cambio 1.</Li>
 									<Li>Cuando el contacto está dado y el motor está apagado, este control no tiene límites. La solenoide permanece conectada hasta que recibe la orden de desactivarse y viceversa. Cuando se abandona el control de salida, el TCM determina el estado de la solenoide.</Li>
 									<Li>Cuando el motor está en funcionamiento, se aplican los siguientes límites de control:</Li>
-									<ul type="square" style="list-style-image:url(../../../../Graphic-Pool/Icons/compass.gif)">
+									<ul type="square" style="list-style-image:url(../../../../graphic-pool/Icons/compass.gif)">
 <li style="margin-top:0.1em; margin-bottom:0.1em">La caja de cambios debe estar en estacionamiento o punto muerto. Si la caja de cambios no se encuentra en estacionamiento o punto muerto, en la pantalla del scanner aparece el mensaje "Engine running and transmission range is not Park/Neutral" (Motor en funcionamiento y la caja de cambios no está en estacionamiento/punto muerto).</li>
 										<li style="margin-top:0.1em; margin-bottom:0.1em">La solenoide permanece conectada hasta que recibe la orden de desactivarse y viceversa. Cuando se abandona el control de salida, el TCM determina el estado de la solenoide.</li>
 										<li style="margin-top:0.1em; margin-bottom:0.1em">Los códigos de diagnóstico de averías (DTC) de la caja de cambios no deben estar activos. Si hay activo algún DTC de la caja de cambios, en la pantalla del scanner aparece el mensaje "Engine running with transmission DTC present" (Motor en funcionamiento con DTC de transmisión presente).</li>
@@ -114,7 +114,7 @@ menu.style.width = document.body.clientWidth;
 <Li>Se utiliza el scanner para solicitar incrementos de presión de 207 kPa (30 psi) desde 0-1.862 kPa (0-270 psi). El TCM ordenará entonces a la solenoide que alcance la presión solicitada.</Li>
 									<Li>Cuando el contacto está dado y el motor está apagado, la solicitud de presión puede controlarse dentro de unos límites calibrados. No hay límites para el control de salida cuando el motor está apagado.</Li>
 									<Li>Cuando el motor está en funcionamiento, se aplican los siguientes límites de control:</Li>
-									<ul type="square" style="list-style-image:url(../../../../Graphic-Pool/Icons/compass.gif)">
+									<ul type="square" style="list-style-image:url(../../../../graphic-pool/Icons/compass.gif)">
 <li style="margin-top:0.1em; margin-bottom:0.1em">Cuando la caja de cambios está en estacionamiento o punto muerto, la solicitud de presión puede controlarse dentro de unos límites calibrados. El régimen del motor debe ser inferior a 1.500 RPM. Si la velocidad del motor supera las 1.500 RPM, en la pantalla del scanner aparece el mensaje "TR in park/neutral and engine speed over 1,500RPM" (Caja de cambios en estacionamiento/punto muerto y régimen del motor por encima de 1.500 RPM).</li>
 										<li style="margin-top:0.1em; margin-bottom:0.1em">Cuando la caja de cambios no se encuentra en estacionamiento o punto muerto, la presión solicitada solo puede igualarse o superar la presión determinada por el TCM. El TCM no permite seleccionar una presión que pueda dañar la transmisión. Si la presión solicitada es inferior a la permitida por el TCM, en la pantalla del scanner aparece el mensaje "Requested pressure for the Line PC Solenoid is too low" (La presión solicitada para la solenoide de PC del conducto es demasiado baja).</li>
 										<li style="margin-top:0.1em; margin-bottom:0.1em">Los códigos de diagnóstico de averías (DTC) de la caja de cambios no deben estar activos. Si hay activo algún DTC de la caja de cambios, en la pantalla del scanner aparece el mensaje "Engine running with transmission DTC present" (Motor en funcionamiento con DTC de transmisión presente).</li>
@@ -140,7 +140,7 @@ menu.style.width = document.body.clientWidth;
 <Li>El TCM controla las solenoides de control de presión para aplicar y soltar los embragues.</Li>
 									<Li>Cuando el contacto está dado y el motor está apagado, este control no tiene límites. La solenoide permanece conectada hasta que recibe la orden de desactivarse y viceversa. Cuando se abandona el control de salida, el TCM determina el estado de la solenoide.</Li>
 									<Li>Cuando el motor está en funcionamiento, se aplican los siguientes límites de control:</Li>
-									<ul type="square" style="list-style-image:url(../../../../Graphic-Pool/Icons/compass.gif)">
+									<ul type="square" style="list-style-image:url(../../../../graphic-pool/Icons/compass.gif)">
 <li style="margin-top:0.1em; margin-bottom:0.1em">La caja de cambios debe estar en estacionamiento o punto muerto. Si la caja de cambios no se encuentra en estacionamiento o punto muerto, en la pantalla del scanner aparece el mensaje "Engine running and transmission range is not Park/Neutral" (Motor en funcionamiento y la caja de cambios no está en estacionamiento/punto muerto).</li>
 										<li style="margin-top:0.1em; margin-bottom:0.1em">La solenoide permanece conectada hasta que recibe la orden de desactivarse y viceversa. Cuando se abandona el control de salida, el TCM determina el estado de la solenoide.</li>
 										<li style="margin-top:0.1em; margin-bottom:0.1em">Los códigos de diagnóstico de averías (DTC) de la caja de cambios no deben estar activos. Si hay activo algún DTC de la caja de cambios, en la pantalla del scanner aparece el mensaje "Engine running with transmission DTC present" (Motor en funcionamiento con DTC de transmisión presente).</li>
@@ -163,7 +163,7 @@ menu.style.width = document.body.clientWidth;
 <Li>El TCM controla cambios a velocidad superior e inferior. El parámetro de marcha solicitada del scanner debería corresponderse con la combinación de la solenoide de transmisión. Consulte la tabla de relación de cambio y solenoide de cambio.</Li>
 									<Li>Cuando el contacto está dado y el motor está apagado, este control no tiene límites. Los estados de la solenoide de cambio del scanner cambian para coincidir con la marcha solicitada seleccionada.</Li>
 									<Li>Cuando el motor está en funcionamiento, se aplican los siguientes límites de control:</Li>
-									<ul type="square" style="list-style-image:url(../../../../Graphic-Pool/Icons/compass.gif)">
+									<ul type="square" style="list-style-image:url(../../../../graphic-pool/Icons/compass.gif)">
 <li style="margin-top:0.1em; margin-bottom:0.1em">El TCM no permite un cambio si este provoca que las RPM del motor sobrepasen un límite calibrado. Si se solicita una marcha y el régimen del motor es demasiado alto, en la pantalla del scanner aparece el mensaje "Engine speed too high" (Régimen del motor demasiado alto).</li>
 										<li style="margin-top:0.1em; margin-bottom:0.1em">El TCM no permite un cambio a velocidad inferior de 3ª a 2ª o de 2ª a 1ª si la velocidad del vehículo sobrepasa un límite calibrado. Si se solicita cualquiera de estos cambios a velocidad inferior y la velocidad del vehículo es demasiado alta, en la pantalla del scanner aparece el mensaje "Eng. is on and veh. speed too hi for 3-2 or 2-1 downshift" (Motor encendido y velocidad del vehículo demasiado alta para cambios a velocidad inferior de 3ª a 2ª o de 2ª a 1ª).</li>
 										<li style="margin-top:0.1em; margin-bottom:0.1em">El TCM no permite un cambio a velocidad inferior de 4ª a 3ª si la velocidad del vehículo sobrepasa un límite calibrado. Si se solicita un cambio a velocidad inferior de 4ª a 3ª y la velocidad del vehículo es demasiado alta, en la pantalla del scanner aparece el mensaje "Vehicle speed too high" (Velocidad del vehículo demasiado alta).</li>
@@ -1788,26 +1788,26 @@ menu.style.width = document.body.clientWidth;
 <Li>Asegúrese de que el líquido de la trasmisión está en un nivel correcto realizando la comprobación del líquido de la transmisión.</Li>
 					<Li>Pregunte acerca de los hábitos de conducción del cliente, arrastre del remolque, etc. El arrastre del remolque debería realizarse en D.</Li>
 					<Li>Revise los registros de avería cuando haya DTC almacenados. Compruebe que la temperatura del refrigerante del motor sea menor de 125°C (257°F).</Li>
-					<ul type="square" style="list-style-image:url(../../../../Graphic-Pool/Icons/compass.gif)">
+					<ul type="square" style="list-style-image:url(../../../../graphic-pool/Icons/compass.gif)">
 <li style="margin-top:0.1em; margin-bottom:0.1em">Si es mayor que el valor especificado, consulte Sobrecalentamiento del motor en la sección 1D, Refrigeración del motor.</li>
 					</ul>
 					<Li>Asegúrese de que el sistema de refrigeración del motor funciona correctamente. La TFT en el scanner debería aumentar hasta alcanzar una temperatura de funcionamiento normal y luego estabilizarse.</Li>
 					<Li>Revise el sistema de refrigeración de la transmisión asegurándose de que no haya obstrucciones o esté dañado.</Li>
 					<Li>Conduzca el vehículo en las condiciones necesarias para que se registre el DTC y comprobar que el DTC no se vuelve a almacenar. También puede conducir el vehículo bajo las condiciones observadas en los datos de los registros de avería/contexto de congelación.</Li>
 					<Li>Compruebe que no haya obstrucciones del flujo de aire al radiador y/o al refrigerador auxiliar (si está in talado) causadas por residuos o aletas dañadas.</Li>
-					<ul type="square" style="list-style-image:url(../../../../Graphic-Pool/Icons/compass.gif)">
+					<ul type="square" style="list-style-image:url(../../../../graphic-pool/Icons/compass.gif)">
 <li style="margin-top:0.1em; margin-bottom:0.1em">Si detecta alguna anomalía, repare o sustituya los componentes dañados según convenga.</li>
 					</ul>
 					<Li>Compruebe si en el sistema de refrigeración de la transmisión y/o el refrigerador auxiliar (si está in talado) hay conductos del refrigerador de la transmisión dañados o doblados.</Li>
-					<ul type="square" style="list-style-image:url(../../../../Graphic-Pool/Icons/compass.gif)">
+					<ul type="square" style="list-style-image:url(../../../../graphic-pool/Icons/compass.gif)">
 <li style="margin-top:0.1em; margin-bottom:0.1em">Si detecta alguna anomalía, repare o sustituya los componentes dañados según convenga.</li>
 					</ul>
 					<Li>Lleve a cabo la prueba de descarga y flujo de refrigerante del líquido de la transmisión para comprobar que el flujo del refrigerante de aceite de la transmisión es correcto.</Li>
-					<ul type="square" style="list-style-image:url(../../../../Graphic-Pool/Icons/compass.gif)">
+					<ul type="square" style="list-style-image:url(../../../../graphic-pool/Icons/compass.gif)">
 <li style="margin-top:0.1em; margin-bottom:0.1em">Si detecta alguna anomalía, repare o sustituya los componentes dañados según convenga.</li>
 					</ul>
 					<Li>Realice la comprobación de presión de línea para verificar que la presión de línea de la transmisión es correcta.</Li>
-					<ul type="square" style="list-style-image:url(../../../../Graphic-Pool/Icons/compass.gif)">
+					<ul type="square" style="list-style-image:url(../../../../graphic-pool/Icons/compass.gif)">
 <li style="margin-top:0.1em; margin-bottom:0.1em">Si la presión de línea es baja, consulte el apartado   <A target="_blank" href="7L2_5A0.es.html#V5A0FPHL">"Presión de líquido alta y baja" </A> en esta sección.</li>
 					</ul>
 				</OL>
@@ -1961,7 +1961,7 @@ menu.style.width = document.body.clientWidth;
 <Li>El DTC P0562 detecta una tensión baja del sistema durante un determinado periodo de tiempo.</Li>
 					<Li>El DTC P0563 detecta una tensión alta del sistema durante un determinado periodo de tiempo.</Li>
 					<Li>Compruebe si se detectan las siguientes anomalías:</Li>
-					<ul type="square" style="list-style-image:url(../../../../Graphic-Pool/Icons/compass.gif)">
+					<ul type="square" style="list-style-image:url(../../../../graphic-pool/Icons/compass.gif)">
 <li style="margin-top:0.1em; margin-bottom:0.1em">Terminales sueltos o dañados en el alternador</li>
 						<li style="margin-top:0.1em; margin-bottom:0.1em">Correa de accionamiento del generador suelta o desgastada</li>
 					</ul>
@@ -1993,19 +1993,19 @@ menu.style.width = document.body.clientWidth;
 <P></P>
 			<OL>
 <Li>Motor encendido, accesorios desconectados, mida y anote el la tensión de la batería en los bornes de esta. La tensión debería estar entre 12 y 15 voltios.</Li>
-					<ul type="square" style="list-style-image:url(../../../../Graphic-Pool/Icons/compass.gif)">
+					<ul type="square" style="list-style-image:url(../../../../graphic-pool/Icons/compass.gif)">
 <li style="margin-top:0.1em; margin-bottom:0.1em">Si la tensión no se encuentra en el rango especificado, compruebe el sistema de carga.</li>
 					</ul>
 					<Li>Contacto dado, motor apagado, accesorios desconectados, observe el parámetro de tensión de la batería en el scanner. La tensión de la batería debería estar entre 12 y 14,5 voltios.</Li>
-					<ul type="square" style="list-style-image:url(../../../../Graphic-Pool/Icons/compass.gif)">
+					<ul type="square" style="list-style-image:url(../../../../graphic-pool/Icons/compass.gif)">
 <li style="margin-top:0.1em; margin-bottom:0.1em">Si la tensión no se encuentra en el rango especificado, compruebe el sistema de carga.</li>
 					</ul>
 					<Li>Motor encendido, accesorios desconectados, observe el parámetro de tensión de encendido en el scanner. La tensión de encendido debería estar entre 12 y 14,5 voltios.</Li>
-					<ul type="square" style="list-style-image:url(../../../../Graphic-Pool/Icons/compass.gif)">
+					<ul type="square" style="list-style-image:url(../../../../graphic-pool/Icons/compass.gif)">
 <li style="margin-top:0.1em; margin-bottom:0.1em">Si la tensión no se encuentra en el rango especificado, compruebe el sistema de carga.</li>
 					</ul>
 					<Li>Aumente el régimen del motor a 1.500 rpm. El parámetro de tensión de encendido debería mantenerse entre 12 y 14,5 voltios.</Li>
-					<ul type="square" style="list-style-image:url(../../../../Graphic-Pool/Icons/compass.gif)">
+					<ul type="square" style="list-style-image:url(../../../../graphic-pool/Icons/compass.gif)">
 <li style="margin-top:0.1em; margin-bottom:0.1em">Si la tensión no se encuentra en el rango especificado cuando aumenta el régimen del motor, compruebe el sistema de carga.</li>
 					</ul>
 					<Li>Conduzca el vehículo en las condiciones necesarias para que se registre el DTC y comprobar que el DTC no se vuelve a almacenar. También puede conducir el vehículo bajo las condiciones observadas en los datos de los registros de avería/contexto de congelación.</Li>
@@ -2021,12 +2021,12 @@ menu.style.width = document.body.clientWidth;
 				
 				<OL>
 <Li>Motor apagado, desconecte el conector del TCM. Conecte la sonda negativa del multimedidor digital (DMM) a una toma de tierra adecuada. Dé el contacto y con el motor apagado, compruebe el circuito de tensión positivo de la batería, terminal 1 del conector del TCM y el circuito de tensión 1 de encendido, terminal 12 del conector del TCM, del lado del cableado del conector TCM con la sonda positiva del DMM. Mida la tensión de cada circuito. La tensión debería estar entre 11 y 14,5 voltios.</Li>
-					<ul type="square" style="list-style-image:url(../../../../Graphic-Pool/Icons/compass.gif)">
+					<ul type="square" style="list-style-image:url(../../../../graphic-pool/Icons/compass.gif)">
 <li style="margin-top:0.1em; margin-bottom:0.1em">Si la tensión es 0 voltios, compruebe los fusibles Ef27, F11 y el fusible F17 por si hubiera una interrupción. De estar en circuito abierto, compruebe si el circuito afectado presenta un cortocircuito a tierra.</li>
 						<li style="margin-top:0.1em; margin-bottom:0.1em">Si el fusible no está en circuito abierto, compruebe si el circuito afectado presenta un circuito abierto.</li>
 					</ul>
 					<Li>Compare el valor de tensión positiva de la batería con el valor de tensión de encendido 1 anterior. La caída de tensión entre los circuitos debería ser inferior a 0,5 voltios.</Li>
-					<ul type="square" style="list-style-image:url(../../../../Graphic-Pool/Icons/compass.gif)">
+					<ul type="square" style="list-style-image:url(../../../../graphic-pool/Icons/compass.gif)">
 <li style="margin-top:0.1em; margin-bottom:0.1em">Si la caída de tensión es mayor de 0,2 voltios, repare el circuito abierto o resistencia alta en el circuito afectado.</li>
 					</ul>
 					<Li>Si todos los circuitos y conexiones funcionan correctamente, sustituya el conjunto de válvulas solenoide de control (en carrocería y TCM).</Li>
@@ -2165,7 +2165,7 @@ menu.style.width = document.body.clientWidth;
 <Li>Motor en funcionamiento. Deje funcionar el motor durante al menos 1 minuto.</Li>
 					<Li>Quite el contacto durante al menos 30 segundos para permitir que el TCM se apague por completo.</Li>
 					<Li>Con el contacto dado, compruebe que no se haya almacenado el DTC P0602.</Li>
-					<ul type="square" style="list-style-image:url(../../../../Graphic-Pool/Icons/compass.gif)">
+					<ul type="square" style="list-style-image:url(../../../../graphic-pool/Icons/compass.gif)">
 <li style="margin-top:0.1em; margin-bottom:0.1em">Si el DTC P0602 está almacenado, reprograme el TCM. Si se vuelve a registrar el DTC, sustituya el conjunto de válvulas solenoide de control (en carrocería y TCM).</li>
 					</ul>
 					<Li>Observe la información de DTCs con un scanner. Si los DTCs P0601, P0603, P0604 o P062F están activados, sustituya el conjunto de válvulas de solenoide de control (en carrocería y TCM).</Li>
@@ -2273,17 +2273,17 @@ menu.style.width = document.body.clientWidth;
 <P></P>
 			<OL>
 <Li>Con el contacto dado, revise los registros de avería cuando haya DTC almacenados. Compruebe que el parámetro del sensor del ECT del scanner sea menor de 125°C (257°F).</Li>
-					<ul type="square" style="list-style-image:url(../../../../Graphic-Pool/Icons/compass.gif)">
+					<ul type="square" style="list-style-image:url(../../../../graphic-pool/Icons/compass.gif)">
 <li style="margin-top:0.1em; margin-bottom:0.1em">Si es mayor que el rango especificado, consulte Sobrecalentamiento del motor   <A target="_blank" href="7L2_1D0.es.html#1D0EC"> en la sección 1D, Refrigeración del motor.</A>
 						</li>
 					</ul>
 					<Li>Realice la comprobación del líquido de la transmisión para asegurarse de que el nivel del líquido y su estado es correcto. El nivel del líquido de la transmisión debería encontrarse dentro de la banda de rayado cruzado y debería ser de color rojo o marrón oscuro.</Li>
-					<ul type="square" style="list-style-image:url(../../../../Graphic-Pool/Icons/compass.gif)">
+					<ul type="square" style="list-style-image:url(../../../../graphic-pool/Icons/compass.gif)">
 <li style="margin-top:0.1em; margin-bottom:0.1em">Si nivel del líquido de la transmisión es bajo o está descolorido, consulte   <A target="_blank" href="7L2_5A06.es.html#5A0TFR">Cambio del líquido de la transmisión.</A>
 						</li>
 					</ul>
 					<Li>Conduzca el vehículo según las condiciones necesarias para registrar el DTC. Compruebe que el parámetro de la temperatura del TCM del scanner sea menor de 146°C (295°F).</Li>
-					<ul type="square" style="list-style-image:url(../../../../Graphic-Pool/Icons/compass.gif)">
+					<ul type="square" style="list-style-image:url(../../../../graphic-pool/Icons/compass.gif)">
 <li style="margin-top:0.1em; margin-bottom:0.1em">Si es mayor que el rango especificado, compruebe el estado de los componentes del sistema de refrigeración de la transmisión que se mencionan a continuación y repárelos según convenga. Si todos los componentes funcionan correctamente, sustituya el conjunto de válvulas solenoide de control (en carrocería y TCM):</li>
 					</ul>
 					<UL>
@@ -2458,7 +2458,7 @@ menu.style.width = document.body.clientWidth;
 <P></P>
 			<OL>
 <Li>Observe el parámetro del estado del circuito del conductor del lado superior. Este parámetro debería mostrar OK.</Li>
-					<ul type="square" style="list-style-image:url(../../../../Graphic-Pool/Icons/compass.gif)">
+					<ul type="square" style="list-style-image:url(../../../../graphic-pool/Icons/compass.gif)">
 <li style="margin-top:0.1em; margin-bottom:0.1em">Si el parámetro muestra Circuito abierto, Cortocircuito a tierra, Cortocircuito a batería o el DTC se vuelve a registrar, sustituya el conjunto de válvulas solenoide de control (en carrocería y TCM).</li>
 					</ul>
 				</OL>
@@ -2662,11 +2662,11 @@ menu.style.width = document.body.clientWidth;
 <P></P>
 			<OL>
 <Li>Motor en funcionamiento. Compruebe que el parámetro de temperatura del TCM del scanner se encuentra entre -254 y +254°C (-425 y +489°F).</Li>
-					<ul type="square" style="list-style-image:url(../../../../Graphic-Pool/Icons/compass.gif)">
+					<ul type="square" style="list-style-image:url(../../../../graphic-pool/Icons/compass.gif)">
 <li style="margin-top:0.1em; margin-bottom:0.1em">Si no se encuentra en el rango especificado, sustituya el conjunto de válvulas solenoide de control (en carrocería y TCM).</li>
 					</ul>
 					<Li>Conduzca el vehículo a 64 Km/h (40 mph) durante al menos 5 minutos mientras observa el sensor de temperatura de encendido del TCM y el sensor de temperatura del TCM. Compruebe que la TFT esté en un margen de 10°C (18°F) del valor mostrado por el sensor de temperatura del TCM.</Li>
-					<ul type="square" style="list-style-image:url(../../../../Graphic-Pool/Icons/compass.gif)">
+					<ul type="square" style="list-style-image:url(../../../../graphic-pool/Icons/compass.gif)">
 <li style="margin-top:0.1em; margin-bottom:0.1em">Si no se encuentra en el rango especificado, sustituya el conjunto de válvulas solenoide de control (en carrocería y TCM).</li>
 					</ul>
 					<Li>Conduzca el vehículo en las condiciones necesarias para que se registre el DTC y comprobar que el DTC no se vuelve a almacenar. También puede conducir el vehículo bajo las condiciones observadas en los datos de los registros de avería/contexto de congelación.</Li>
