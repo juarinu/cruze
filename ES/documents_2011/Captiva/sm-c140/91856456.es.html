@@ -1,0 +1,81 @@
+<HTML>
+<head><link rel="stylesheet" type="text/css" href="si-style.css"/><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><TITLE>Información de servicio</TITLE><STYLE>
+	.ListIndentBul2Refer{margin-left : 40pt}  ..ListIndentBul2{margin-left : -20pt}
+	.SubListIndent{margin-left : -15pt}
+	.UpNo{border-top : white}  .DownNo{border-bottom : white}  ..BothNo{border-top : white; border-bottom : white}
+	.UpBold{border-top : thin double ridge}  .DownBold{border-bottom : thin double ridge}  .BothBold{border-top : thin double ridge; border-bottom : thin double ridge}
+	.ImageIndent{margin-left : 0%}  .ImageTitleIndent{margin-left : 5%}  .ParagraphIndent{margin-left : 20pt}
+	.Arial{font-family : Arial, Helvetica, sans-serif; margin-left : 10pt; margin-right : 10pt}
+</STYLE>
+<SCRIPT LANGUAGE="JavaScript">
+	function FixMenu()
+	{
+		menuTop = document.body.scrollTop + document.body.clientHeight -40;
+		menu.style.top = menuTop;
+		menu.style.width = document.body.clientWidth; 
+	}
+</SCRIPT>
+</HEAD>
+<BODY class="Arial" onLoad="FixMenu()" onScroll="FixMenu()" onResize="FixMenu()" BGCOLOR="#FFFFFF">
+<SPAN ID="menu" STYLE="position:absolute; left:0px; top:0px; width:0px">
+	<A border="0" href="91856456.es.html">
+	<IMG src="../../../../graphic-pool/Icons/Totop.gif" align="right" halign="Bottom" border="0" alt="To the top of the document"></A>
+</SPAN>
+<TABLE width="100%" BORDER="1" rules="none" cellspacing="0" cellpadding="0" style="magin-top: 5pt">
+<TBODY>
+<TR BGCOLOR="cccc99" height="15">
+<TD width="30%"><div style="padding-left: 5pt"><B><FONT face="Arial">Captiva</FONT></B></div></TD>
+<TD width="70%" align="right" colspan="8"></TD>
+</TR>
+<TR BGCOLOR="white" height="60">
+<TD width="35%" align="left">
+<TABLE>
+<TR>
+<TD width="5%" align="left">&nbsp;</TD>
+<TD width="5%" align="left"></TD>
+<TD width="5%" align="left">&nbsp;</TD>
+</TR>
+</TABLE>
+</TD>
+<TD>
+<TABLE width="65%" align="right">
+<TR>
+<TD style="font-size:10">
+	<A href="../../../GMDE_TIS_START.html" target="_top">
+	<IMG src="../../code/menu-images/home.gif" border="0" alt="GMDE Start Page">
+</A></TD>
+<TD style="font-size:10">
+	<A href="../toc_Captiva.html" target="menu"><IMG src="../../code/menu-images/static-TOC.gif" border="0" alt="Load static TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../toc_Captiva_code.html" target="code"><IMG src="../../code/menu-images/menu_folder_open.gif" border="0" alt="Load dynamic TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../../help/readme_EN.htm" target="top" class="bottom_copyright"><IMG src="../../code/menu-images/help.gif" border="0" alt="Help?"></A>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<H2>Descripción y funcionamiento del monitor de presión de neumáticos</H2>
+<p>El sistema del control de presión de neumáticos (TPM) advierte al conductor cuando hay una pérdida y un aumento significativo de presión de neumáticos en cualquiera de los 4&nbsp;neumáticos y permite al conductor mostrar las presiones de neumáticos individuales y sus ubicaciones en el centro de información del conductor (DIC).</p>
+<p>El sistema usa el módulo electrónico de carrocería (BCM), el centro de información del conductor (DIC), el cuadro de panel de instrumentos (IPC), el receptor de bloqueo de la puerta de control remoto (RCDLR), el sensor de presión de transmisión de frecuencia de radio (RF) en cada conjunto de ruedas/neumáticos y el circuito de datos de serie para ejecutar las funciones del sistema. Cada sensor tiene una fuente de alimentación interna con una vida útil de 10&nbsp;años.</p>
+<p>Cuando el vehículo está parado, el acelerómetro interno de los sensores está inactivo, lo que pone los sensores en reposo. En este estado, los sensores dan una muestra de la presión de los neumáticos una vez cada 30&nbsp;segundos y no transmiten en absoluto si no cambia la presión de los neumáticos. Según aumenta la velocidad del vehículo, la fuerza centrífuga activa el acelerómetro interno de los sensores, lo que hace que éstos pasen a modo de movimiento. En este modo, los sensores dan una muestra de la presión de los neumáticos cada 30&nbsp;segundos y la transmiten en movimiento cada 60&nbsp;segundos. El RCDLR recibe y traduce los datos que contiene cada transmisión RF de los sensores en presencia del sensor, modo del sensor y presión de los neumáticos. EL RCDLR envía los datos de presión y ubicación de los neumáticos al DIC a través del circuito de datos de serie, donde se visualizan.</p>
+<p>Los sensores comparan continuamente su última muestra de presión con la muestra de presión actual y transmitirán en modo de remedición si se ha detectado un cambio de 8,3&nbsp;kPa&nbsp;(1,2&nbsp;psi) en la presión del neumático en estado de reposo o de movimiento. Cuando el sistema TPM detecta una pérdida o ganancia importante de presión de los neumáticos, el icono indicador de control de la presión de los neumáticos se ilumina en el IPC y, si dispone de ello, aparece un mensaje de comprobación del tipo de presión de los neumáticos en el DIC. El icono indicador y el mensaje DIC pueden borrarse ajustando las presiones de los neumáticos al kPa/psi recomendados y conduciendo el vehículo por encima de 40&nbsp;km/h&nbsp;(25&nbsp;mph) durante un mínimo de 2&nbsp;minutos. </p>
+<p>Si la alimentación se ha desconectado del RCDLR o si se ha desconectado la batería del vehículo, se conservarán todas las ID del sensor de TPM, pero se perderá toda la información de presión de neumáticos. Bajo estas circunstancias, el RCDLR no puede asumir que las presiones de neumáticos se mantuvieran durante un periodo desconocido de tiempo. Si se dispone de ello, el DIC mostrará guiones y la herramienta de diagnóstico indicará un valor de presión de neumáticos predeterminado de 1020&nbsp;kPa (148&nbsp;psi) para cada neumático. Si lleva el vehículo a más de 40&nbsp;km/h&nbsp;(25&nbsp;mph) durante al menos 2&nbsp;minutos se activarán los sensores, haciendo que el DIC muestre las presiones actuales de los neumáticos. La herramienta especial EL-46079/J-46079 TPM o el método de aumento/disminución de la presión también puede utilizarse para activar los sensores.</p>
+<p>El RCDLR puede detectar averías dentro del sistema TPM. Si el suceso fija un DTC, el icono del indicador del control de presión de neumáticos del IPC parpadeará durante 1&nbsp;minuto y luego permanecerá iluminado después de encenderse el encendido y completarse la comprobación de las bombillas del IPC. Cualquier avería detectada hará que el DIC muestre un mensaje de servicio del sistema del control de neumáticos. Para obtener más información acerca de otras funciones del RCDLR, consulte <a href="91763652.es.html">Descripción y funcionamiento del sistema de entrada sin llave</a>. </p>
+
+
+
+<TABLE align="center"><TR>
+<TD align="left">&nbsp;</TD>
+<TD align="left"></TD>
+<TD align="left">&nbsp;</TD>
+<TD></TD>
+</TR></TABLE>
+<BR><BR><TABLE width="100%"><TBODY><TR BGCOLOR="DarkSlateBlue" align="center"><TD><FONT color="white"><B>© Copyright Chevrolet Europe. All rights reserved</B></FONT></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>

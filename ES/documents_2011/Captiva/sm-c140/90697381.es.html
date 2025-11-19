@@ -1,0 +1,84 @@
+<HTML>
+<head><link rel="stylesheet" type="text/css" href="si-style.css"/><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><TITLE>Información de servicio</TITLE><STYLE>
+	.ListIndentBul2Refer{margin-left : 40pt}  ..ListIndentBul2{margin-left : -20pt}
+	.SubListIndent{margin-left : -15pt}
+	.UpNo{border-top : white}  .DownNo{border-bottom : white}  ..BothNo{border-top : white; border-bottom : white}
+	.UpBold{border-top : thin double ridge}  .DownBold{border-bottom : thin double ridge}  .BothBold{border-top : thin double ridge; border-bottom : thin double ridge}
+	.ImageIndent{margin-left : 0%}  .ImageTitleIndent{margin-left : 5%}  .ParagraphIndent{margin-left : 20pt}
+	.Arial{font-family : Arial, Helvetica, sans-serif; margin-left : 10pt; margin-right : 10pt}
+</STYLE>
+<SCRIPT LANGUAGE="JavaScript">
+	function FixMenu()
+	{
+		menuTop = document.body.scrollTop + document.body.clientHeight -40;
+		menu.style.top = menuTop;
+		menu.style.width = document.body.clientWidth; 
+	}
+</SCRIPT>
+</HEAD>
+<BODY class="Arial" onLoad="FixMenu()" onScroll="FixMenu()" onResize="FixMenu()" BGCOLOR="#FFFFFF">
+<SPAN ID="menu" STYLE="position:absolute; left:0px; top:0px; width:0px">
+	<A border="0" href="90697381.es.html">
+	<IMG src="../../../../graphic-pool/Icons/Totop.gif" align="right" halign="Bottom" border="0" alt="To the top of the document"></A>
+</SPAN>
+<TABLE width="100%" BORDER="1" rules="none" cellspacing="0" cellpadding="0" style="magin-top: 5pt">
+<TBODY>
+<TR BGCOLOR="cccc99" height="15">
+<TD width="30%"><div style="padding-left: 5pt"><B><FONT face="Arial">Captiva</FONT></B></div></TD>
+<TD width="70%" align="right" colspan="8"></TD>
+</TR>
+<TR BGCOLOR="white" height="60">
+<TD width="35%" align="left">
+<TABLE>
+<TR>
+<TD width="5%" align="left">&nbsp;</TD>
+<TD width="5%" align="left"></TD>
+<TD width="5%" align="left">&nbsp;</TD>
+</TR>
+</TABLE>
+</TD>
+<TD>
+<TABLE width="65%" align="right">
+<TR>
+<TD style="font-size:10">
+	<A href="../../../GMDE_TIS_START.html" target="_top">
+	<IMG src="../../code/menu-images/home.gif" border="0" alt="GMDE Start Page">
+</A></TD>
+<TD style="font-size:10">
+	<A href="../toc_Captiva.html" target="menu"><IMG src="../../code/menu-images/static-TOC.gif" border="0" alt="Load static TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../toc_Captiva_code.html" target="code"><IMG src="../../code/menu-images/menu_folder_open.gif" border="0" alt="Load dynamic TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../../help/readme_EN.htm" target="top" class="bottom_copyright"><IMG src="../../code/menu-images/help.gif" border="0" alt="Help?"></A>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<H2>Descripción y funcionamiento del sistema de asistencia de frenada</H2>
+
+<A NAME="ss1-697381">
+<A HREF="#ss1-697381">
+<H3>Descripción del componente del sistema</H3></A><p>El sistema de asistencia a la frenada consta de lo siguiente:</p><B>Pedal de freno:&nbsp;</B>Recibe, multiplica y transfiere la fuerza de entrada al sistema de freno desde el conductor.<br><br><B>Empujador del pedal de freno&nbsp;</B>Transfiere fuerza de entrada multiplicada recibida desde el pedal de freno al servofreno.<br><br><B>Servofreno de vacío:&nbsp;</B>Usa vacío de fuente para disminuir el esfuerzo que se requiere del conductor para aplicar fuerza de entrada al sistema de freno. En descanso, se aplica vacío de fuente a ambos lados del diafragma de vacío para servofrenos individuales, o a ambos lados de cada diafragma para servofrenos en tándem. Los muelles de retroceso mantienen el servofreno en posición de reposo. Cuando se aplica la fuerza de entrada al sistema de frenos, se corta el vacío a la parte trasera del diafragma(s) y se admite en su lugar aire a presión atmosférica. Esto ofrece una disminución del esfuerzo requerido en el pedal de freno. Cuando se retira la fuerza de entrada, el vacío vuelve a reemplazar a la presión atmosférica en el servofreno.<br><br><B>Fuente de vacío:&nbsp;</B>Suministra fuerza usada por un servofreno de depresión para disminuir el esfuerzo del pedal de freno. La fuente primaria de vacío suele ser el motor de combustión interna del vehículo. Algunos vehículos pueden usar una bomba de vacío para garantizar un suministro adecuado de vacío en condiciones diversas de operación, como durante arranque en frío, fuerte aceleración y gran altura.<br><br><B>Relé de bomba de vacío:&nbsp;</B>Los vehículos equipados con una bomba de vacío suelen tener un relé que se usa para alimentar tensión al motor de la bomba de vacío cuando lo solicita el controlador del tren motriz.<br><br><B>Sistema de monitorización de vacío:&nbsp;</B>Ofrece una señal de tensión de retroalimentación según la cantidad de vacío disponible para el servofreno eléctrico de depresión. Esto suele consistir en un sensor de vacío montado en el servofreno de depresión eléctrico, integrado en la válvula de control de vacío, o en línea con el tubo flexible de depresión. La retroalimentación del sensor se suele monitorizar con el módulo(s) de control del tren motriz.<br><br><B>Control de la fuente de vacío:&nbsp;</B>Si existe un sistema para monitorizar los niveles disponibles de vacío para el sistema de asistencia de freno, el módulo(s) de control del tren motriz suele realizar la función de monitorización primaria. El controlador del tren motriz suele monitorizar la señal de retroalimentación de un sensor de vacío, en relación con el vacío disponible en el servofreno eléctrico de depresión. El controlador del tren motriz usa la información para asegurar que permanece vacío disponible por encima de los niveles predeterminados. Si se requiere vacío adicional, el controlador del tren motriz puede volver a activar los cilindros de motor, si existen, o comandar que se encienda la bomba de vacío, si existe, y/o puede alterar la operación de varios otros controles y dispositivos del motor, si fuera necesario.<br><br><B>Sistema de entrega de fuente de vacío:&nbsp;</B>Permite la entrega y retención de vacío de fuente para el servofreno de depresión. Esto suele consistir en una válvula de comprobación de vacío y un tubo flexible de depresión o un tubo de depresión. Si se usa una bomba de vacío se pueden usar válvulas adicionales de comprobación.<br><br>
+<A NAME="ss2-697381">
+<A HREF="#ss2-697381">
+<H3>Funcionamiento del sistema</H3></A><p>La fuerza de entrada del sistema de frenos del conductor se multiplica por el pedal del freno y se transfiere mediante la varilla de empuje del pedal al cilindro maestro del freno hidráulico. El esfuerzo necesario para aplicar el sistema de frenos se reduce con el funcionamiento del servofreno de vacío.</p>
+<p>Cuando se aplica la fuerza del sistema de frenos, se corta el vacío a la parte trasera del diafragma(s) y se admite en su lugar aire a presión atmosférica. El vacío actuar para tirar del diafragma(s) hacia delante, mientras la presión atmosférica actúa para empujar por detrás. Debido a ello, se reduce la cantidad de esfuerzo requerido por el conductor. Cuando se quita la fuerza de entrada, el vacío vuelve a sustituir a la presión atmosférica dentro del servofreno de vacío para ayudar al servofreno a volver a estado de reposo. Los muelles de retroceso mantienen el sistema en posición de reposo.</p>
+<p>Si el vehículo está equipado con un sistema de monitorización de vacío, el módulo(s) de control del tren motriz suelen alteran las funciones de éste y/o comandar que se encienda la bomba de vacío, si existe, para proveer las necesidades de vacío del sistema de asistencia de freno, tal y como lo requieran las condiciones de funcionamiento.</p>
+
+
+
+<TABLE align="center"><TR>
+<TD align="left">&nbsp;</TD>
+<TD align="left"></TD>
+<TD align="left">&nbsp;</TD>
+<TD></TD>
+</TR></TABLE>
+<BR><BR><TABLE width="100%"><TBODY><TR BGCOLOR="DarkSlateBlue" align="center"><TD><FONT color="white"><B>© Copyright Chevrolet Europe. All rights reserved</B></FONT></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>

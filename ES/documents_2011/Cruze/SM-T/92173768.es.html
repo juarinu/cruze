@@ -1,0 +1,90 @@
+<HTML>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><TITLE>Información de servicio</TITLE><STYLE>
+	.ListIndentBul2Refer{margin-left : 40pt}  ..ListIndentBul2{margin-left : -20pt}
+	.SubListIndent{margin-left : -15pt}
+	.UpNo{border-top : white}  .DownNo{border-bottom : white}  ..BothNo{border-top : white; border-bottom : white}
+	.UpBold{border-top : thin double ridge}  .DownBold{border-bottom : thin double ridge}  .BothBold{border-top : thin double ridge; border-bottom : thin double ridge}
+	.ImageIndent{margin-left : 0%}  .ImageTitleIndent{margin-left : 5%}  .ParagraphIndent{margin-left : 20pt}
+	.Arial{font-family : Arial, Helvetica, sans-serif; margin-left : 10pt; margin-right : 10pt}
+</STYLE>
+<SCRIPT LANGUAGE="JavaScript">
+	function FixMenu()
+	{
+		menuTop = document.body.scrollTop + document.body.clientHeight -40;
+		menu.style.top = menuTop;
+		menu.style.width = document.body.clientWidth; 
+	}
+</SCRIPT>
+</HEAD>
+<BODY class="Arial" onLoad="FixMenu()" onScroll="FixMenu()" onResize="FixMenu()" BGCOLOR="#FFFFFF">
+<SPAN ID="menu" STYLE="position:absolute; left:0px; top:0px; width:0px">
+	<A border="0" href="92173768.es.html">
+	<IMG src="../../../../graphic-pool/Icons/Totop.gif" align="right" halign="Bottom" border="0" alt="A la parte superior del documento"></A>
+</SPAN>
+<TABLE CELLSPACING="0"  width="100%" BORDER="1" rules="none" cellspacing="0" cellpadding="0" style="magin-top: 5pt">
+<TBODY>
+<TR BGCOLOR="cccc99" height="15">
+<TD width="30%"><div style="padding-left: 5pt"><B><FONT face="Arial">Cruze</FONT></B></div></TD>
+<TD width="70%" align="right" colspan="8"></TD>
+</TR>
+<TR BGCOLOR="white" height="60">
+<TD width="35%" align="left">
+<TABLE CELLSPACING="0" >
+<TR>
+<TD width="5%" align="left">&nbsp;</TD>
+<TD width="5%" align="left"></TD>
+<TD width="5%" align="left">&nbsp;</TD>
+</TR>
+</TABLE>
+</TD>
+<TD>
+<TABLE CELLSPACING="0"  width="65%" align="right">
+<TR>
+<TD style="font-size:10">
+	<A href="../../../GMDE_TIS_START.html" target="_top">
+	<IMG src="../../code/menu-images/home.gif" border="0" alt="Página de inicio de GMDE">
+</A></TD>
+<TD style="font-size:10">
+	<A href="../toc_Cruze.html" target="menu"><IMG src="../../code/menu-images/static-TOC.gif" border="0" alt="Cargue el TOC estático"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../toc_Cruze_code.html" target="code"><IMG src="../../code/menu-images/menu_folder_open.gif" border="0" alt="Cargue el TOC dinámico"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../../help/readme_EN.htm" target="top" class="bottom_copyright"><IMG src="../../code/menu-images/help.gif" border="0" alt="¿Necesita ayuda?"></A>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+<H2>Programación y configuración del módulo de control del techo solar</H2>
+
+<p>Al sustituir el motor del techo corredizo/el módulo de control, debe seguirse el procedimiento de aprendizaje/inicialización del motor/actuador del techo corredizo.</p>
+
+<A NAME="ss1-2173768">
+<A HREF="#ss1-2173768">
+<H3>Procedimientos de inicialización y aprendizaje</H3></A><p>Para que el sistema de techo corredizo funcione correctamente, debe establecer su posición y el perfil de fuerza que encontrará en condiciones normales de cierre. Estos dos procedimientos deben ejecutarse cuando se coloque un controlador nuevo en el vehículo, cuando se lleve a cabo cualquier procedimiento de servicio en un componente mecánico o si el sistema parece perder la pista sobre su posición conocida.</p>
+
+<A NAME="ss2-2173768">
+<A HREF="#ss2-2173768">
+<H3>Inicialización y reinicialización.</H3></A><p>Cuando no se inicializan los controladores de techo corredizo, llevarán a cabo todas las peticiones de ABRIR, pero no comandos de CERRADO rápido o comandos de cierre comunicados mediante bus LIN. Sólo ejecutará una operación de CERRADO solicitada por el interruptor con la detección de obstáculos desactivada. Si se interrumpe un procedimiento de inicialización, los controladores volverán al estado no inicializado. Cuál de los procedimientos es el ejecutado depende del estado del controlador.</p>
+<p>Para un módulo que no está inicializado, comenzar con el proceso manteniendo el interruptor del techo corredizo en la posición de CERRADO. El techo corredizo se moverá al extremo del recorrido físico en la dirección de cerrado y guardará dicha posición. En este tiempo es necesario mantener el interruptor activo hasta que se complete el proceso. Una vez completado el procedimiento, el techo corredizo debe retroceder ligeramente a sus topes suaves. El resto de las posiciones definidas es determinado por desplazamientos desde esta posición inicial.</p>
+<p> Para un módulo que haya inicializado previamente, liberar el interruptor después de que el software considere completamente cerrado el techo corredizo. Seguidamente mantener el interruptor de techo corredizo en posición cerrada durante 10&nbsp;s. El techo corredizo reanudará el movimiento en la dirección de CERRADO hasta que se detecte el final del recorrido. En este tiempo es necesario mantener el interruptor activo hasta que se complete el proceso. Una vez completado el procedimiento, el techo corredizo debe retroceder ligeramente a sus topes suaves.</p>
+<p>Para aprender el perfil de fuerza del algoritmo antipellizcamiento tras las inicialización o la reinicialización, mover el techo a la posición de apertura completa y liberar el interruptor. Activar la función ABIERTO del interruptor de forma continua durante más de 15&nbsp;s. En este punto, el techo corredizo comenzará a moverse automáticamente hasta la posición completamente cerrada. En este tiempo es necesario mantener el interruptor activo hasta que se complete el proceso.</p>
+
+
+
+
+<TABLE CELLSPACING="0"  align="center"><TR>
+<TD align="left">&nbsp;</TD>
+<TD align="left"></TD>
+<TD align="left">&nbsp;</TD>
+<TD></TD>
+</TR></TABLE>
+<BR><BR><TABLE CELLSPACING="0"  width="100%"><TBODY><TR BGCOLOR="DarkSlateBlue" align="center"><TD><FONT color="white"><B>© Copyright Chevrolet. Reservados todos los derechos</B></FONT></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>

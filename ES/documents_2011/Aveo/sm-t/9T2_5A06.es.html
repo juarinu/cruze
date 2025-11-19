@@ -1,0 +1,565 @@
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style>.T2{    BORDER-TOP: white;}  .T3{    BORDER-BOTTOM: white;} .T4{    BORDER-TOP: white;    BORDER-BOTTOM: white} .I{ padding-left : 10pt}  .Tighten{ padding-left : 7pt} .Arial{ font-family : Arial, Helvetica, sans-serif;margin-left: 10pt;margin-right : 10pt } .TableB{ margin-left : 0pt}</style>
+<TITLE>Manual de servicio técnico2011 Aveo DTC U0001 -</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+
+ function FixMenu()
+{
+menuTop = document.body.scrollTop + document.body.clientHeight -40;
+menu.style.top = menuTop;
+menu.style.width = document.body.clientWidth; 
+}
+
+</SCRIPT>
+</HEAD>
+<BODY class="Arial" onLoad="FixMenu()" onScroll="FixMenu()" onResize="FixMenu()">
+<SPAN ID="menu" STYLE="position:absolute; left:0px; top:0px; width:0px"><A border="0" href="9T2_5A06.es.html"><IMG src="../../../../graphic-pool/Icons/Totop.gif" align="right" halign="Bottom" border="0" alt="Al principio del documento"></A></SPAN><TABLE width="100%" BORDER="1" rules="none" cellspacing="0" cellpadding="0" style="magin-top: 5pt"><TBODY>
+<TR BGCOLOR="cccc99" height="15">
+<TD width="30%"><div style="padding-left: 5pt"><B><FONT face="Arial">Aveo</FONT></B></div></TD>
+<TD width="70%" align="right" colspan="8"></TD>
+</TR>
+<TR BGCOLOR="white" height="60">
+<TD width="35%" align="left"><TABLE><TR>
+<TD width="5%" align="left"><A href="9T2_5A05.es.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_back.gif" alt="A la página anterior"></A></TD>
+<TD width="5%" align="left"></TD>
+<TD width="5%" align="left"><A href="9T2_5A07.es.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_next.gif" alt="A la página siguiente"></A></TD>
+</TR></TABLE></TD>
+<TD><TABLE width="65%" align="right"><TR>
+<TD style="font-size:10"><A href="../../../GMDE_TIS_START.html" target="_top"><IMG src="../../code/menu-images/home.gif" border="0" alt="Página de inicio GMDE"></A></TD>
+<TD style="font-size:10"><A href="../toc_Aveo.html" target="menu"><IMG src="../../code/menu-images/static-TOC.gif" border="0" alt="Índice estático"></A></TD>
+<TD style="font-size:10"><A href="../toc_Aveo_code.html" target="code"><IMG src="../../code/menu-images/menu_folder_open.gif" border="0" alt="Índice dinámico"></A></TD>
+<TD style="font-size:10"><A href="../../help/readme_EN.htm" target="top" class="bottom_copyright"><IMG src="../../code/menu-images/help.gif" border="0" alt="¿Ayuda?"></A></TD>
+</TR></TABLE></TD>
+</TR>
+</TBODY></TABLE>
+	<BR><IMG alt="T9B15A05" src="../../../../graphic-pool/T/9b/1/t9b15a05.png"><BR><A target="_blank" href="../../../../graphic-pool/T/9b/1/t9b15a05.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Gráfico de visualización"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Traducciones de texto en gráficos"></A><p style="font-size:9pt; border:1pt outset"></p>
+<BR>
+		<P></P>
+<DIV align="center" id="T5A0U0001"><font size="4"><b>DTC U0001 - </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="T5A0HSCC"><font size="4"><b>Comunicaciones del CAN de alta velocidad</b></font></DIV>
+		<P></P>
+<DIV align="left" id="T5A0CRD"><b>Condiciones para activar el DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>Las revoluciones del sensor de velocidad del motor son 400 rpm o más.</Li>
+					<Li>Las revoluciones del sensor de velocidad de entrada son 400 rpm o más.</Li>
+					<Li>El TCM recibe el estado "Bus OFF" desde el controlador del CAN.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0CSDTC"><b>Condiciones para la activación del DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>La detección anterior se produce 7 veces de forma continuada.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0ATDTC"><b>Acción realizada cuando se activa el DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>El TCM hará que se encienda la MIL y almacenará el DTC cuando detecte un fallo en el primer ciclo de encendido.</Li>
+					<Li>El TCM juzga que el acelerador se abre al 0% para el control de punto de cambio y de punto de bloqueo.</Li>
+					<Li>El TCM juzga que el acelerador se abre al 100% para el control de presión de funcionamiento.</Li>
+					<Li>No hay bloqueo</Li>
+					<Li>No hay control de automemorización
+</Li>
+					<Li>No se selecciona la 4ª marcha</Li>
+					<Li>El TCM juzga que la velocidad del motor es igual a 0 rpm.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0CCDTC"><b>Condiciones para borrar el DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>El TCM apagará la MIL cuando no se detecten más fallos en tres ciclos de encendido consecutivos.</Li>
+					<Li>El DTC puede borrarse del historial del TCM con un scanner.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0DA"><b>Ayudas para el diagnóstico</b></DIV>
+<P></P>
+			<UL>
+<Li>Este DTC no se puede recuperar con un estado actual. El diagnóstico de un DTC actual se consigue a través del síntoma, "El scanner no se comunica con el dispositivo GMLAN".</Li>
+					<Li>Una condición intermitente puede ser causada por un cortocircuito en los circuitos de datos de serie CAN. Utilice el procedimiento "El scanner no se comunica con el dispositivo GMLAN" para aislar una condición intermitente.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="center" id="T5A0U00011"><font size="4"><b>DTC U0001 - Comunicaciones del CAN de alta velocidad</b></font></DIV>
+<P></P>
+			<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Paso</B></TD>
+<TD align="center"><B>Medida</B></TD>
+<TD align="center"><B>Valor(es)</B></TD>
+<TD align="center"><B>Sí</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+<TR>
+<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+<div>¿Realizó la comprobación del sistema de diagnóstico?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Ir a   <I><A target="_blank" href="9T2_1F22.es.html#T1F2DSC">"Comprobación del sistema de diagnóstico"</A></I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+<div>Consulte   <A target="_blank" href="9T2_1F23.es.html#T1F2STDNC1">"El scanner no se comunica con el dispositivo GMLAN" </A>en la sección Controles del motor.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	<BR><IMG alt="T9B15A05" src="../../../../graphic-pool/T/9b/1/t9b15a05.png"><BR><A target="_blank" href="../../../../graphic-pool/T/9b/1/t9b15a05.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Gráfico de visualización"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Traducciones de texto en gráficos"></A><p style="font-size:9pt; border:1pt outset"></p>
+<BR>
+		<P></P>
+<DIV align="center" id="T5A0U0100"><font size="4"><b>DTC U0100 - </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="T5A0LCWE"><font size="4"><b>Comunicación perdida con ECM/PCM</b></font></DIV>
+		<P></P>
+<DIV align="left" id="T5A0CRD1"><b>Condiciones para activar el DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>Estado de fallo del bus CAN desactivado.</Li>
+					<Li>La velocidad del motor sea igual o superior a 400 rpm.</Li>
+					<Li>Las revoluciones del sensor de velocidad de entrada son 400 rpm o más.</Li>
+					<Li>El TCM no puede detectar el marco del ECM durante 0,2 segundos de forma continuada.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0CSDTC1"><b>Condiciones para la activación del DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>La detección anterior se produce de forma continuada en 10 ocasiones.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0ATDTC1"><b>Acción realizada cuando se activa el DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>El TCM hará que se encienda la MIL y almacenará el DTC cuando detecte un fallo en el primer ciclo de encendido.</Li>
+					<Li>El TCM juzga que el acelerador se abre al 0% para el control de punto de cambio y de punto de bloqueo.</Li>
+					<Li>El TCM juzga que el acelerador se abre al 100% para el control de presión de funcionamiento.</Li>
+					<Li>No hay bloqueo</Li>
+					<Li>No hay control de automemorización
+</Li>
+					<Li>No se selecciona la 4ª marcha</Li>
+					<Li>El TCM juzga que la velocidad del motor es igual a 0 rpm.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0CCDTC1"><b>Condiciones para borrar el DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>El TCM apagará la MIL cuando no se detecten más fallos en tres ciclos de encendido consecutivos.</Li>
+					<Li>El DTC puede borrarse del historial del TCM con un scanner.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0DA1"><b>Ayudas para el diagnóstico</b></DIV>
+<P></P>
+			<UL>
+<Li>Una mala conexión en el módulo inoperativo puede causar la activación de este código.</Li>
+					<Li>Un módulo mal alimentado puede provocar la activación de este código.</Li>
+					<Li>Si existen múltiples módulos sin comunicación, escoja el más cercano al conector de enlace de datos (DLC). Ciertos módulos pueden no disponer de protección interna para salidas de tensión específicas y podrían abrir una tensión positiva de la batería o un fusible de la fuente de tensión del encendido. Si el fusible de entrada de tensión presenta un circuito abierto y no se detecta ningún cortocircuito, asegúrese de que ningún circuito de tensión de salida del módulo está cortocircuitado a masa antes de sustituir el módulo. Este diagnóstico se puede utilizar para cualquier módulo que debería comunicarse con los datos de serie CAN, siempre y cuando al vehículo esté equipado con la opción que utiliza ese módulo.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="center" id="T5A0U01001"><font size="4"><b>DTC U0100 - Comunicación perdida con ECM/PCM</b></font></DIV>
+<P></P>
+			<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Paso</B></TD>
+<TD align="center"><B>Medida</B></TD>
+<TD align="center"><B>Valor(es)</B></TD>
+<TD align="center"><B>Sí</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+<TR>
+<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+<div>¿Realizó la comprobación del sistema de diagnóstico?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Ir a   <I><A target="_blank" href="9T2_1F22.es.html#T1F2DSC">"Comprobación del sistema de diagnóstico"</A></I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+<div>Compruebe si los siguientes circuitos del módulo que no se comunica correctamente presentan un circuito abierto o un cortocircuito a tierra:</div>
+								<UL>
+<Li>Los circuitos de entrada de tensión positiva de la batería</Li>
+									<Li>Los circuitos de salida de tensión positiva de la batería</Li>
+									<Li>Los circuitos de entrada de tensión del encendido</Li>
+									<Li>Los circuitos de salida de tensión del encendido</Li>
+									<Li>Los circuitos de tensión positiva de la batería conectada</Li>
+								</UL>
+								<div>¿Encontró y corrigió el problema?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 3</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Quite el contacto.</Li>
+									<Li>Compruebe los circuitos de masa del módulo que no se comunica por un circuito abierto.</Li>
+								</OL>
+								<div>¿Encontró y corrigió el problema?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+<div>Compruebe si hay presente algún circuito abierto en los circuitos de datos de serie CAN del módulo que no se comunica.</div>
+								<div>¿Encontró y corrigió el problema?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+<div>Compruebe los conectores del cableado del módulo que no se comunica por malas conexiones y tensión en los terminales en los siguientes circuitos:</div>
+								<UL>
+<Li>Los circuitos de entrada de tensión positiva de la batería</Li>
+									<Li>Los circuitos de salida de tensión positiva de la batería</Li>
+									<Li>Los circuitos de entrada de tensión del encendido</Li>
+									<Li>Los circuitos de salida de tensión del encendido</Li>
+									<Li>Los circuitos de suministro de tensión positiva de la batería conectada</Li>
+									<Li>Los circuitos de masa</Li>
+									<Li>Los circuitos de datos de serie CAN</Li>
+								</UL>
+								<div>¿Encontró y corrigió el problema?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 6</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+<div>Sustituya el módulo que no se comunica.</div>
+								<div>¿Completó la sustitución?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Borre los DTC con el scanner.</Li>
+									<Li>Quite el contacto durante 30 segundos.</Li>
+									<Li>Ponga el motor en marcha.</Li>
+									<Li>Conduzca el vehículo en las condiciones necesarias para registrar el DTC. También puede conducir el vehículo en las condiciones que observó en los registros de avería/contexto de congelación.</Li>
+								</OL>
+								<div>¿No se ha registrado el DTC en este ciclo de encendido?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+<div>Compruebe si se activa algún otro DTC.</div>
+								<div>¿Hay algún DTC activo que no se haya diagnosticado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Consulte la tabla de DTCs específica</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Sistema OK</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	<BR><IMG alt="T9B15A05" src="../../../../graphic-pool/T/9b/1/t9b15a05.png"><BR><A target="_blank" href="../../../../graphic-pool/T/9b/1/t9b15a05.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Gráfico de visualización"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Traducciones de texto en gráficos"></A><p style="font-size:9pt; border:1pt outset"></p>
+<BR>
+		<P></P>
+<DIV align="center" id="T5A0U0401"><font size="4"><b>DTC U0401 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="T5A0IDRFE"><font size="4"><b>Datos no válidos recibidos desde el ECM/PCM</b></font></DIV>
+		<P></P>
+<DIV align="left" id="T5A0CRD2"><b>Condiciones para activar el DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>La tensión de encendido sea superior a 9 V.</Li>
+					<Li>Sin estado de fallo en el bus CAN desactivado.</Li>
+					<Li>El TCM recibe la señal de velocidad del motor durante 0,2 segundos de forma continuada.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0CSDTC2"><b>Condiciones para la activación del DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>La detección anterior se produce de forma continuada en 10 ocasiones.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0ATDTC2"><b>Acción realizada cuando se activa el DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>El TCM solicitará la iluminación de la luz de retención.</Li>
+					<Li>No hay bloqueo</Li>
+					<Li>No se selecciona la 4ª marcha</Li>
+					<Li>No hay control de automemorización
+</Li>
+					<Li>No se controla la reducción del par motor</Li>
+					<Li>No hay control de presión de engrane</Li>
+					<Li>No hay control del solenoide de sincronización para N-D
+</Li>
+					<Li>El TCM estima que las revoluciones del motor son 0 rpm.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0CCDTC2"><b>Condiciones para borrar el DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>El TCM desactiva la luz de retención si no se detectan más fallos durante tres ciclos consecutivos de encendido.</Li>
+					<Li>El DTC puede borrarse del historial del TCM con un scanner.</Li>
+					<Li>El TCM borra el DTC de la memoria del historial del TCM después de cuarenta ciclos consecutivos de calentamiento sin fallo.</Li>
+					<Li>El TCM recibe la señal de velocidad del motor durante 2 segundos.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0CF2"><b>Causa de la avería</b></DIV>
+<P></P>
+			<UL>
+<Li>ECM</Li>
+					<Li>Piezas asociadas al motor</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="center" id="T5A0U04011"><font size="4"><b>DTC U0401 - Datos no válidos recibidos desde el ECM/PCM</b></font></DIV>
+<P></P>
+			<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Paso</B></TD>
+<TD align="center"><B>Medida</B></TD>
+<TD align="center"><B>Valor(es)</B></TD>
+<TD align="center"><B>Sí</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+<TR>
+<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Gire la llave de contacto a la posición OFF.</Li>
+									<Li>Instale el scanner.</Li>
+									<Li>Gire la llave de contacto a la posición ON, sin encender el motor.</Li>
+									<Li>Seleccione Almacenar datos instantáneos/registros de averías en el menú de información de los códigos de diagnóstico de averías.</Li>
+									<Li>Almacene los datos instantáneos/registros de averías.</Li>
+									<Li>Seleccione Borrar información de DTC en el menú de información de los códigos de diagnóstico de averías.</Li>
+									<Li>Borre la información del DTC.</Li>
+									<Li>Complete un ciclo de conducción con el vehículo.</Li>
+								</OL>
+								<div>¿Está encendida la luz indicadora de fallo (MIL)/retención?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Compruebe el fallo de conexión temporal del conector y repárelo si fuese necesario. Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0WHCI">"Inspección de conectores y cableado" </A> de esta sección.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Motor en funcionamiento durante 10 segundos.</Li>
+									<Li>Con el contacto en ON y el motor apagado, verifique que el DTC U0401 en está registrado.</Li>
+								</OL>
+								<div>¿Está registrado el DTC U0401?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Compruebe el fallo de conexión temporal del conector y repárelo si fuese necesario. Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0WHCI">"Inspección de conectores y cableado" </A> de esta sección.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+<div>Confirme si el DTC U0401 está registrado junto con otros DTCs.</div>
+								<div>¿Está registrado el DTC U0401 junto con otros DTCs?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Consulte la tabla de DTCs específica</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 3</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+<div>Programe el ECM. </div>
+								<div>¿Se vuelve a activar el DTC?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Sustituya el ECM.</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Sistema OK</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+<BR><BR><TABLE align="center"><TR>
+<TD align="left"><A href="9T2_5A05.es.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_back.gif" alt="A la página anterior"></A></TD>
+<TD align="left"></TD>
+<TD align="left"><A href="9T2_5A07.es.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_next.gif" alt="A la página siguiente"></A></TD>
+<TD></TD>
+</TR></TABLE>
+<TABLE width="100%"><TBODY><TR BGCOLOR="DarkSlateBlue" align="center"><TD><FONT color="white"><B>© Copyright Chevrolet Europe. Reservados todos los derechos</B></FONT></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>

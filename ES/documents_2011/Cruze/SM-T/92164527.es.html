@@ -1,0 +1,111 @@
+<HTML>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><TITLE>Información de servicio</TITLE><STYLE>
+	.ListIndentBul2Refer{margin-left : 40pt}  ..ListIndentBul2{margin-left : -20pt}
+	.SubListIndent{margin-left : -15pt}
+	.UpNo{border-top : white}  .DownNo{border-bottom : white}  ..BothNo{border-top : white; border-bottom : white}
+	.UpBold{border-top : thin double ridge}  .DownBold{border-bottom : thin double ridge}  .BothBold{border-top : thin double ridge; border-bottom : thin double ridge}
+	.ImageIndent{margin-left : 0%}  .ImageTitleIndent{margin-left : 5%}  .ParagraphIndent{margin-left : 20pt}
+	.Arial{font-family : Arial, Helvetica, sans-serif; margin-left : 10pt; margin-right : 10pt}
+</STYLE>
+<SCRIPT LANGUAGE="JavaScript">
+	function FixMenu()
+	{
+		menuTop = document.body.scrollTop + document.body.clientHeight -40;
+		menu.style.top = menuTop;
+		menu.style.width = document.body.clientWidth; 
+	}
+</SCRIPT>
+</HEAD>
+<BODY class="Arial" onLoad="FixMenu()" onScroll="FixMenu()" onResize="FixMenu()" BGCOLOR="#FFFFFF">
+<SPAN ID="menu" STYLE="position:absolute; left:0px; top:0px; width:0px">
+	<A border="0" href="92164527.es.html">
+	<IMG src="../../../../graphic-pool/Icons/Totop.gif" align="right" halign="Bottom" border="0" alt="A la parte superior del documento"></A>
+</SPAN>
+<TABLE CELLSPACING="0"  width="100%" BORDER="1" rules="none" cellspacing="0" cellpadding="0" style="magin-top: 5pt">
+<TBODY>
+<TR BGCOLOR="cccc99" height="15">
+<TD width="30%"><div style="padding-left: 5pt"><B><FONT face="Arial">Cruze</FONT></B></div></TD>
+<TD width="70%" align="right" colspan="8"></TD>
+</TR>
+<TR BGCOLOR="white" height="60">
+<TD width="35%" align="left">
+<TABLE CELLSPACING="0" >
+<TR>
+<TD width="5%" align="left">&nbsp;</TD>
+<TD width="5%" align="left"></TD>
+<TD width="5%" align="left">&nbsp;</TD>
+</TR>
+</TABLE>
+</TD>
+<TD>
+<TABLE CELLSPACING="0"  width="65%" align="right">
+<TR>
+<TD style="font-size:10">
+	<A href="../../../GMDE_TIS_START.html" target="_top">
+	<IMG src="../../code/menu-images/home.gif" border="0" alt="Página de inicio de GMDE">
+</A></TD>
+<TD style="font-size:10">
+	<A href="../toc_Cruze.html" target="menu"><IMG src="../../code/menu-images/static-TOC.gif" border="0" alt="Cargue el TOC estático"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../toc_Cruze_code.html" target="code"><IMG src="../../code/menu-images/menu_folder_open.gif" border="0" alt="Cargue el TOC dinámico"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../../help/readme_EN.htm" target="top" class="bottom_copyright"><IMG src="../../code/menu-images/help.gif" border="0" alt="¿Necesita ayuda?"></A>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+<H2>Descripción y funcionamiento del techo corredizo</H2>
+
+<p>El techo corredizo inclinable/deslizante se compone de un panel de cristal móvil y una cortinilla manual. En el sistema de techo corredizo inclinable/deslizante, la parte trasera del cristal se inclina hacia arriba para ventilar o se desliza entre el forro del techo y el panel del techo para abrirse. El cristal se controla mediante un controlador/motor integrado. La cortinilla va conectado mecánicamente con el cristal que hace que se abra con éste y que no se cierre más que el cristal.</p>
+<p>La parte eléctrica del sistema de techo corredizo inclinable/deslizante consta de:</p>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Módulo de control de la carrocería&nbsp;(BCM)</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Módulo de control del cristal del techo corredizo</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Conjunto del interruptor de mando del techo corredizo</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Conjunto del interruptor de mando de ventilación</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Red interconectada local (bus LIN)</td></tr></table></div>
+
+<p>El sistema eléctrico del techo corredizo emplea una configuración maestro/esclavo que usa un sistema basado en el bus LIN para comunicarse. El módulo maestro es el BCM, mientras que el esclavo es el módulo de control del techo corredizo.</p>
+<p>Como módulo maestro del sistema, el BCM utiliza el bus de comunicación LIN para activar y desactivar el techo corredizo, comunicar información del vehículo al controlador del techo corredizo y solicitar el movimiento de éste. El controlador proporciona al BCM información de estado y diagnóstico del sistema con fines informativos y operativos.</p>
+<p>El cristal del techo corredizo se controla con un controlador/motor integrado que incluye los componentes necesarios: electrónicos, motor, sensores de posición de efecto Hall, así como la interfaz con los interruptores de mando del conductor. El motor/controlador es capaz de controlar el movimiento en función de la activación del interruptor de mando y de las órdenes que envía el módulo maestro del sistema a través de mensajes por bus LIN.</p>
+<p>Las calibraciones operativas se cargan a través del bus de comunicación LIN mediante el módulo maestro del sistema del techo corredizo, el BCM.</p>
+
+<A NAME="ss1-2164527">
+<A HREF="#ss1-2164527">
+<H3>Interruptores de mando del cristal del techo corredizo y de la cortinilla</H3></A><p>Los interruptores de mando del techo corredizo van conectados directamente al controlador. Los interruptores del cristal deslizante presentan posiciones de apertura, apertura rápida, desactivación, cierre y cierre rápido. Los interruptores de ventilación presentan posiciones de apertura, desactivación y cierre. El interruptor de mando completa el circuito entre dos señales proporcionadas por el módulo de control, una entrada de masa de referencia y tensión de actuación facilitada por una entrada analógica a digital del interruptor. Los interruptores de mando configuran una red de escalera de resistencias distinta en el circuito dependiendo de la función seleccionada. La entrada analógica a digital del interruptor del controlador lee la gama de tensiones resultantes y determina la función tal como se indica en las tablas facilitadas.</p>
+
+<A NAME="ss2-2164527">
+<A HREF="#ss2-2164527">
+<H3>Funciones de protección del sistema</H3></A><p>El funcionamiento normal del techo corredizo puede verse alterado por uno de los siguientes casos.</p>
+<h4>Detección de bloqueo u obstáculo</h4><p>Cuando está habilitada, la detección de obstáculos se activa sólo si la apertura del techo corredizo se encuentra aproximadamente entre 4 y 200&nbsp;mm (0,16 y 7,87&nbsp;pulg.) al moverse para cerrar. Cuando se detecta un obstáculo, el movimiento de cierre se interrumpe y el techo corredizo se mueve en dirección contraria durante un corta distancia. El movimiento inverso se efectuará independientemente del modo de funcionamiento. Si el recorrido está fuera del alcance definido anteriormente, el techo corredizo intentará seguir cerrándose hasta que detecte una parada del motor o cuando el sistema llegue a uno de sus topes.</p>
+<h4>Parada del motor</h4><p>Si el techo corredizo se está abriendo o cerrando y deja de moverse durante 350&nbsp;ms cuando el interruptor o la orden por bus LIN están activos y no se ha detectado ningún obstáculo, el motor se apagará para evitar un sobrecalentamiento.</p>
+<h4>Protección térmica del sistema del techo corredizo</h4><p>Los controladores del techo corredizo cuentan con un algoritmo de protección térmica para evitar que el controlador y el motor resulten dañados por sobrecalentamiento al accionarse el interruptor de manera desmedida. Debido al algoritmo de protección térmica serán ignoradas las órdenes de apertura del techo corredizo hasta que el motor se haya enfriado. Se permitirán varias solicitudes de cierre aunque haya exceso de temperatura. Si la protección térmica se activa mientras se detecta un obstáculo, se dará fin al movimiento inverso del techo corredizo.</p>
+
+<A NAME="ss3-2164527">
+<A HREF="#ss3-2164527">
+<H3>Funcionamiento del techo corredizo</H3></A><h4>Ventilación: apertura hasta la posición de ventilación</h4><p>Cuando el techo corredizo está cerrado o en posición parcial de ventilación y se activa el interruptor de apertura de ventilación, el techo corredizo empezará a abrirse rápidamente a la posición de ventilación. El techo corredizo se detendrá cuando alcance la posición de ventilación o cuando se active el interruptor de su cristal deslizante.</p>
+<h4>Ventilación: cierre desde ventilación</h4><p>Cuando el techo corredizo esté en la posición de ventilación y se seleccione &quot;cierre&quot; en el interruptor de ventilación, el techo corredizo empezará a cerrarse rápidamente. El movimiento continuará hasta que el techo corredizo llegue a la posición de cierre máximo o se active el cristal deslizante del techo.</p>
+<h4>Cristal deslizante: apertura normal (no rápida)</h4><p>Cuando el techo corredizo no esté en posición de ventilación y su cristal deslizante se mantenga en la posición de &quot;apertura&quot;, el techo comenzará a abrirse. El movimiento continuará hasta que vuelva a seleccionarse el estado de &quot;desactivación&quot; en el interruptor o se active el interruptor de ventilación.</p>
+<h4>Cristal deslizante: apertura rápida del techo corredizo</h4><p>Cuando se pone el interruptor de mando del techo corredizo en posición de &quot;apertura rápida&quot; y el techo no está en posición de ventilación, éste se abre rápidamente hasta que el controlador determina que se ha llegado a la posición de tope o de máxima apertura, hasta que se ponga el interruptor en otro estado después de primero la posición de desactivación o cuando el interruptor de ventilación se active.</p>
+<h4>Cristal deslizante: cierre normal (no rápido)</h4><p>Cuando el interruptor del techo corredizo esté en la posición de &quot;cierre&quot; ventilación y el techo corredizo no esté en posición de ventilación, el controlador empezará a mover el techo en la dirección de cierre. Si se activa el interruptor de ventilación, se apagará el motor.</p>
+<h4>Cristal deslizante: cierre rápido del techo corredizo</h4><p>Cuando se pone el interruptor del techo corredizo en posición de &quot;cierre rápido&quot; y el techo corredizo no está en posición de ventilación, éste se cierra rápidamente hasta que el controlador determina que se ha llegado a la posición de máximo cierre, o hasta que se ponga el interruptor en otro estado después de seleccionar primero la posición de desactivación. El movimiento del techo corredizo cesará si se vuelve a poner el interruptor en la posición de cierre o de cierre rápido después de seleccionar primero la posición de desactivación o de que se seleccione cualquier estado activo del interruptor de ventilación.</p>
+
+
+
+
+<TABLE CELLSPACING="0"  align="center"><TR>
+<TD align="left">&nbsp;</TD>
+<TD align="left"></TD>
+<TD align="left">&nbsp;</TD>
+<TD></TD>
+</TR></TABLE>
+<BR><BR><TABLE CELLSPACING="0"  width="100%"><TBODY><TR BGCOLOR="DarkSlateBlue" align="center"><TD><FONT color="white"><B>© Copyright Chevrolet. Reservados todos los derechos</B></FONT></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>

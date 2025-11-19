@@ -1,0 +1,126 @@
+<HTML>
+<head><link rel="stylesheet" type="text/css" href="si-style.css"/><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><TITLE>Información de servicio</TITLE><STYLE>
+	.ListIndentBul2Refer{margin-left : 40pt}  ..ListIndentBul2{margin-left : -20pt}
+	.SubListIndent{margin-left : -15pt}
+	.UpNo{border-top : white}  .DownNo{border-bottom : white}  ..BothNo{border-top : white; border-bottom : white}
+	.UpBold{border-top : thin double ridge}  .DownBold{border-bottom : thin double ridge}  .BothBold{border-top : thin double ridge; border-bottom : thin double ridge}
+	.ImageIndent{margin-left : 0%}  .ImageTitleIndent{margin-left : 5%}  .ParagraphIndent{margin-left : 20pt}
+	.Arial{font-family : Arial, Helvetica, sans-serif; margin-left : 10pt; margin-right : 10pt}
+</STYLE>
+<SCRIPT LANGUAGE="JavaScript">
+	function FixMenu()
+	{
+		menuTop = document.body.scrollTop + document.body.clientHeight -40;
+		menu.style.top = menuTop;
+		menu.style.width = document.body.clientWidth; 
+	}
+</SCRIPT>
+</HEAD>
+<BODY class="Arial" onLoad="FixMenu()" onScroll="FixMenu()" onResize="FixMenu()" BGCOLOR="#FFFFFF">
+<SPAN ID="menu" STYLE="position:absolute; left:0px; top:0px; width:0px">
+	<A border="0" href="92226779.es.html">
+	<IMG src="../../../../graphic-pool/Icons/Totop.gif" align="right" halign="Bottom" border="0" alt="To the top of the document"></A>
+</SPAN>
+<TABLE width="100%" BORDER="1" rules="none" cellspacing="0" cellpadding="0" style="magin-top: 5pt">
+<TBODY>
+<TR BGCOLOR="cccc99" height="15">
+<TD width="30%"><div style="padding-left: 5pt"><B><FONT face="Arial">Captiva</FONT></B></div></TD>
+<TD width="70%" align="right" colspan="8"></TD>
+</TR>
+<TR BGCOLOR="white" height="60">
+<TD width="35%" align="left">
+<TABLE>
+<TR>
+<TD width="5%" align="left">&nbsp;</TD>
+<TD width="5%" align="left"></TD>
+<TD width="5%" align="left">&nbsp;</TD>
+</TR>
+</TABLE>
+</TD>
+<TD>
+<TABLE width="65%" align="right">
+<TR>
+<TD style="font-size:10">
+	<A href="../../../GMDE_TIS_START.html" target="_top">
+	<IMG src="../../code/menu-images/home.gif" border="0" alt="GMDE Start Page">
+</A></TD>
+<TD style="font-size:10">
+	<A href="../toc_Captiva.html" target="menu"><IMG src="../../code/menu-images/static-TOC.gif" border="0" alt="Load static TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../toc_Captiva_code.html" target="code"><IMG src="../../code/menu-images/menu_folder_open.gif" border="0" alt="Load dynamic TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../../help/readme_EN.htm" target="top" class="bottom_copyright"><IMG src="../../code/menu-images/help.gif" border="0" alt="Help?"></A>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<H2>Programar acelerador/ralentí — LF1, LFW</H2>
+
+<A NAME="ss1-2226779">
+<A HREF="#ss1-2226779">
+<H3>Descripción</H3></A><p>El módulo de control del motor (ECM) programa el flujo de aire a través del cuerpo del acelerador para asegurar el ralentí correcto. Los valores programados del flujo de aire se almacenan en el ECM. Estos valores se programan para ajustar la variación de producción y seguirán programándose continuamente durante toda la vida útil del vehículo para compensar la disminución de flujo de aire debida a la carbonización del cuerpo del acelerador. Cuando el índice del flujo de aire del cuerpo del acelerador cambie, debido, por ejemplo, a una limpieza o sustitución, los valores deberán volver a programarse.</p>
+<p>Un motor con un cuerpo del acelerador muy carbonizado, que haya sido limpiado o sustituido, puede necesitar varios ciclos de conducción para eliminar la carbonización de la programación Para acelerar el proceso, la herramienta de exploración puede reiniciar todos los valores programados y ponerlos otra vez a cero. Un nuevo ECM tendrá también los valores establecidos en cero.</p>
+<p>Las revoluciones al ralentí pueden ser inestables, o puede activarse un DTC, si los valores programados no coinciden con el flujo de aire real.</p>
+
+<A NAME="ss2-2226779">
+<A HREF="#ss2-2226779">
+<H3>Condiciones para ejecutar el procedimiento de aprendizaje del acelerador</H3></A>
+
+<h4>Procedimiento de reajuste</h4>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">No están activados los DTC  P0068, P0101, P0102, P0103, P0106, P0107, P0108, P0116, P0117, P0118, P0120, P0122, P0123, P0128, P0171, P0172, P0174, P0175, P0201, P0202, P0203, P0204, P0205, P0206, P0220, P0222, P0223, P0300, P0351, P0352, P0353, P0496, P0601, P0604, P0606, P060D, P0641, P0651, P1516, P2101, P2119, P2120, P2122, P2123, P2125, P2127, P2128, P2135, P2138, o P2176.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Encendido conectado, motor desconectado.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">El sensor de velocidad del vehículo (VSS) está a 0&nbsp;km/h (0&nbsp;mph).</td></tr></table></div>
+
+
+
+<h4>Procedimiento de programación</h4>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">No están activados los DTC  P0068, P0101, P0102, P0103, P0106, P0107, P0108, P0116, P0117, P0118, P0120, P0122, P0123, P0128, P0171, P0172, P0174, P0175, P0201, P0202, P0203, P0204, P0205, P0206, P0220, P0222, P0223, P0300, P0351, P0352, P0353, P0496, P0601, P0604, P0606, P060D, P0641, P0651, P1516, P2101, P2119, P2120, P2122, P2123, P2125, P2127, P2128, P2135, P2138, o P2176.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">El régimen del motor está entre 450-4.000&nbsp;RPM.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">La presión absoluta del colector (MAP) s superior a 5&nbsp;kPa.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">El flujo de masa de aire (MAF) es mayor que 2&nbsp;g/s.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">La tensión de encendido es superior a 10&nbsp;voltios.</td></tr></table></div>
+
+
+<A NAME="ss3-2226779">
+<A HREF="#ss3-2226779">
+<H3>Programación de la mariposa</H3></A>
+<OL>
+</ol><h4>Procedimiento de reajuste (realizado después de limpiar y reemplazar el cuerpo de la mariposa)</h4><ol>
+<LI TYPE="1">Con el encendido conectado y el motor desconectado, realice el reajuste de aprendizaje del ralentí en Configuración del módulo con una herramienta de diagnóstico.</LI>
+<LI TYPE="1">Arranque el motor y supervise el parámetro de compensación del flujo de aire al ralentí TB. El valor de compensación del flujo de aire al ralentí TB debe equivaler al 0&nbsp;por ciento, y el motor debe estar al ralentí a velocidad normal.</LI>
+<LI TYPE="1">Borre los DTC y vuelva al diagnóstico.</LI>
+</OL>
+
+<OL>
+</ol><h4>Procedimiento de programación (realizado después de señalar o sustituir el ECM) </h4><ol>
+
+<p><font color=brown><b>Nota:&nbsp;</b>NO realice este procedimiento si se activan DTC. Consultar <a href="92424681.es.html">Lista de los códigos diagnósticos de avería (DTC) - Vehículo</a> .</font></p><LI TYPE="1">Arranque el motor y déjelo en ralentí durante 3&nbsp;minutos.</LI>
+<LI TYPE="1">Con una herramienta de diagnóstico, supervise la velocidad de ralentí deseada y el régimen del motor real.</LI>
+<LI TYPE="1">El ECM empezará a programar las nuevas celdas de ralentí y las revoluciones al ralentí deseadas deben empezar a disminuir.</LI>
+<LI TYPE="1">Encendido desconectado durante 60 segundos.</LI>
+<LI TYPE="1">Arranque el motor y déjelo en ralentí durante 3&nbsp;minutos.</LI>
+<LI TYPE="1">Después de los 3&nbsp;minutos, el ralentí del motor debe ser el normal.</LI>
+
+<p><font color=brown><b>Nota:&nbsp;</b>Durante el ciclo de conducción, debe encenderse el indicador de revisión del motor con los DTC de velocidad de ralentí. Si se dan los códigos de velocidad de ralentí, bórrelos para que el ECM pueda seguir programando.</font></p><div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">⇒</td><td valign="top">Si el régimen de ralentí del motor no se ha programado, deberá conducir el vehículo a velocidades superiores a los 70&nbsp;km/h (44&nbsp;MPH) con varias deceleraciones y ralentís prolongados.</td></tr></table></div>
+<LI TYPE="1">Tras el ciclo de conducción, el motor deberá funcionar normal al ralentí.</LI>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">⇒</td><td valign="top">Si la velocidad de ralentí del motor no ha sido programado, desconecte el encendido durante 60&nbsp;segundos y repita el paso&nbsp;6.</td></tr></table></div>
+<LI TYPE="1">Una vez que las revoluciones del motor han vuelto a la normalidad, borre los DTC y vuelva al diagnóstico del que procede.</LI>
+</OL>
+
+
+
+<TABLE align="center"><TR>
+<TD align="left">&nbsp;</TD>
+<TD align="left"></TD>
+<TD align="left">&nbsp;</TD>
+<TD></TD>
+</TR></TABLE>
+<BR><BR><TABLE width="100%"><TBODY><TR BGCOLOR="DarkSlateBlue" align="center"><TD><FONT color="white"><B>© Copyright Chevrolet Europe. All rights reserved</B></FONT></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>

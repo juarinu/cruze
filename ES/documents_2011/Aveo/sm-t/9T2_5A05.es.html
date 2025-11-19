@@ -1,0 +1,2316 @@
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style>.T2{    BORDER-TOP: white;}  .T3{    BORDER-BOTTOM: white;} .T4{    BORDER-TOP: white;    BORDER-BOTTOM: white} .I{ padding-left : 10pt}  .Tighten{ padding-left : 7pt} .Arial{ font-family : Arial, Helvetica, sans-serif;margin-left: 10pt;margin-right : 10pt } .TableB{ margin-left : 0pt}</style>
+<TITLE>Manual de servicio técnico2011 Aveo DTC P0973</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+
+ function FixMenu()
+{
+menuTop = document.body.scrollTop + document.body.clientHeight -40;
+menu.style.top = menuTop;
+menu.style.width = document.body.clientWidth; 
+}
+
+</SCRIPT>
+</HEAD>
+<BODY class="Arial" onLoad="FixMenu()" onScroll="FixMenu()" onResize="FixMenu()">
+<SPAN ID="menu" STYLE="position:absolute; left:0px; top:0px; width:0px"><A border="0" href="9T2_5A05.es.html"><IMG src="../../../../graphic-pool/Icons/Totop.gif" align="right" halign="Bottom" border="0" alt="Al principio del documento"></A></SPAN><TABLE width="100%" BORDER="1" rules="none" cellspacing="0" cellpadding="0" style="magin-top: 5pt"><TBODY>
+<TR BGCOLOR="cccc99" height="15">
+<TD width="30%"><div style="padding-left: 5pt"><B><FONT face="Arial">Aveo</FONT></B></div></TD>
+<TD width="70%" align="right" colspan="8"></TD>
+</TR>
+<TR BGCOLOR="white" height="60">
+<TD width="35%" align="left"><TABLE><TR>
+<TD width="5%" align="left"><A href="9T2_5A04.es.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_back.gif" alt="A la página anterior"></A></TD>
+<TD width="5%" align="left"></TD>
+<TD width="5%" align="left"><A href="9T2_5A06.es.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_next.gif" alt="A la página siguiente"></A></TD>
+</TR></TABLE></TD>
+<TD><TABLE width="65%" align="right"><TR>
+<TD style="font-size:10"><A href="../../../GMDE_TIS_START.html" target="_top"><IMG src="../../code/menu-images/home.gif" border="0" alt="Página de inicio GMDE"></A></TD>
+<TD style="font-size:10"><A href="../toc_Aveo.html" target="menu"><IMG src="../../code/menu-images/static-TOC.gif" border="0" alt="Índice estático"></A></TD>
+<TD style="font-size:10"><A href="../toc_Aveo_code.html" target="code"><IMG src="../../code/menu-images/menu_folder_open.gif" border="0" alt="Índice dinámico"></A></TD>
+<TD style="font-size:10"><A href="../../help/readme_EN.htm" target="top" class="bottom_copyright"><IMG src="../../code/menu-images/help.gif" border="0" alt="¿Ayuda?"></A></TD>
+</TR></TABLE></TD>
+</TR>
+</TBODY></TABLE>
+	<BR><IMG alt="S6B15A16" src="../../../../graphic-pool/S/6b/1/s6b15a16.png"><BR><A target="_blank" href="../../../../graphic-pool/S/6b/1/s6b15a16.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Gráfico de visualización"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Traducciones de texto en gráficos"></A><p style="font-size:9pt; border:1pt outset"></p>
+<BR>
+		<P></P>
+<DIV align="center" id="T5A0P0973"><font size="4"><b>DTC P0973 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="T5A0SSE"><font size="4"><b>Fallo eléctrico en el solenoide de cambio 1 (SS1) (cortocircuito a masa)</b></font></DIV>
+		<P></P>
+<DIV align="left" id="T5A0CRD"><b>Condiciones para activar el DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>Sin modo de emergencia.</Li>
+					<Li>El TCM detecta la señal OFF (12V) del monitor del solenoide de cambio 1 (SS1), cuando el accionador del SS1 emite la señal ON (0V) durante 0,5 segundos de forma continuada.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0CSDTC"><b>Condiciones para la activación del DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>La detección anterior se da de forma continuada 1 vez.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0ATDTC"><b>Acción realizada cuando se activa el DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>El TCM hará que se encienda la MIL y almacenará el DTC cuando detecte un fallo en el primer ciclo de encendido.</Li>
+					<Li>No hay control de bloqueo</Li>
+					<Li>No se controla la reducción del par motor</Li>
+					<Li>No hay control de presión de engrane
+</Li>
+					<Li>No hay control del solenoide de sincronización para N-D</Li>
+					<Li>No hay control de automemorización</Li>
+					<Li>Decisión tras fallo: modo de emergencia</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0TCM"><b>Secuencia de cambio del TCM (gama: D)</b></DIV>
+<P></P>
+			<Table border="1" width="100%" cellspacing="0">
+<Thead bgcolor="eeeeee">
+<tr>
+<td align="center" valign="middle" colspan="3" width="50%" class="T1"><b><div>Normal</div>
+								
+							</b></td>
+							<td align="center" valign="middle" colspan="3" width="50%" class="T1"><b><div>FALLO DEL SS1</div>
+								
+							</b></td>
+						</tr>
+						<tr>
+<td align="center" valign="middle" width="16%" class="T1"><b><div>Velocidad (cada velocidad), engranaje , piñón</div>
+								
+							</b></td>
+							<td align="center" valign="middle" width="17%" class="T1"><b><div>SS1</div>
+								
+							</b></td>
+							<td align="center" valign="middle" width="17%" class="T1"><b><div>SS2</div>
+								
+							</b></td>
+							<td align="center" valign="middle" width="16%" class="T1"><b><div>Velocidad (cada velocidad), engranaje , piñón</div>
+								
+							</b></td>
+							<td align="center" valign="middle" width="17%" class="T1"><b><div>SS1</div>
+								
+							</b></td>
+							<td align="center" valign="middle" width="17%" class="T1"><b><div>SS2</div>
+								
+							</b></td>
+						</tr>
+					</Thead>
+					<Tbody align="center" valign="middle">
+<tr colspan="">
+<td class="T1" width="16%" colspan="" rowspan="" align="" valign="middle">
+<div>1ª</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>ACTIVADO</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>ACTIVADO</div>
+								
+							</td>
+							<td class="T1" width="16%" colspan="" rowspan="" align="" valign="middle">
+<div>3ª</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>FALLO</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>DESACTIVADO</div>
+								
+							</td>
+						</tr>
+						<tr colspan="">
+<td class="T1" width="16%" colspan="" rowspan="" align="" valign="middle">
+<div>2ª</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>ACTIVADO</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>DESACTIVADO</div>
+								
+							</td>
+							<td class="T1" width="16%" colspan="" rowspan="" align="" valign="middle">
+<div>3ª</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>FALLO</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>DESACTIVADO</div>
+								
+							</td>
+						</tr>
+						<tr colspan="">
+<td class="T1" width="16%" colspan="" rowspan="" align="" valign="middle">
+<div>3ª</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>DESACTIVADO</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>DESACTIVADO</div>
+								
+							</td>
+							<td class="T1" width="16%" colspan="" rowspan="" align="" valign="middle">
+<div>3ª</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>FALLO</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>DESACTIVADO</div>
+								
+							</td>
+						</tr>
+						<tr colspan="">
+<td class="T1" width="16%" colspan="" rowspan="" align="" valign="middle">
+<div>4ª</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>DESACTIVADO</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>ACTIVADO</div>
+								
+							</td>
+							<td class="T1" width="16%" colspan="" rowspan="" align="" valign="middle">
+<div>4ª</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>FALLO</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>ACTIVADO</div>
+								
+							</td>
+						</tr>
+					</Tbody>
+				</Table>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0CCDTC"><b>Condiciones para borrar el DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>El TCM apagará la MIL cuando no se detecten más fallos en tres ciclos de encendido consecutivos.</Li>
+					<Li>El DTC puede borrarse del historial del TCM con un scanner.</Li>
+					<Li>El TCM borra el DTC de la memoria del historial del TCM después de cuarenta ciclos consecutivos de calentamiento sin fallo.</Li>
+					<Li>El TCM detecta la señal On del monitor de SS1 cuando el accionador de SS1 emite la señal ON durante 1.000 ms de forma continuada.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0CF"><b>Causa de la avería</b></DIV>
+<P></P>
+			<UL>
+<Li>Cableado o conector entre el solenoide de cambio 1 (SS1) y el TCM</Li>
+					<Li>SS1</Li>
+					<Li>TCM</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="center" id="T5A0P09731"><font size="4"><b>DTC 0973 - Fallo eléctrico en el solenoide de cambio 1 (SS1) (cortocircuito a masa)</b></font></DIV>
+<P></P>
+			<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Paso</B></TD>
+<TD align="center"><B>Medida</B></TD>
+<TD align="center"><B>Valor(es)</B></TD>
+<TD align="center"><B>Sí</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+<TR>
+<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Gire la llave de contacto a la posición OFF.</Li>
+									<Li>Instale el scanner.</Li>
+									<Li>Gire la llave de contacto a la posición ON, sin encender el motor.</Li>
+									<Li>Seleccione Almacenar datos instantáneos/registros de averías en el menú de información de los códigos de diagnóstico de averías.</Li>
+									<Li>Almacene los datos instantáneos/registros de averías.</Li>
+									<Li>Seleccione Borrar información de DTC en el menú de información de los códigos de diagnóstico de averías.</Li>
+									<Li>Borre la información del DTC.</Li>
+									<Li>Complete un ciclo de conducción con el vehículo.</Li>
+								</OL>
+								<div>¿Está encendida la luz indicadora de fallo (MIL)/retención?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Compruebe el fallo de conexión temporal del conector y repárelo si fuese necesario. Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0WHCI">"Inspección de conectores y cableado" </A> de esta sección.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Seleccione Solicitar DTC por estado en el menú de información de los códigos de diagnóstico de averías.</Li>
+									<Li>Solicite el DTC por estado.</Li>
+								</OL>
+								<div>¿Se visualiza el DTC P0973?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Compruebe el fallo de conexión temporal del conector y repárelo si fuese necesario. Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0WHCI">"Inspección de conectores y cableado" </A> de esta sección.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Gire la llave de contacto a la posición OFF.</Li>
+									<Li>Compruebe la resistencia entre el cableado del vehículo y el solenoide de cambio 1 (SS). Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0UI">"Inspección de componentes"</A> de esta sección.</Li>
+									<Li>Desenchufe el conector del TCM (X-1) y compruebe la resistencia entre los terminales A16 y A23.</Li>
+								</OL>
+								<div>¿La resistencia está dentro del valor especificado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>20°C (68°F) 11-16 Ω</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Compruebe el mazo de cables y el conector del lado del vehículo.</Li>
+									<Li>Compruebe la continuidad y la presencia de cortocircuitos en los correspondientes mazos de cables. Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0WHCI">"Inspección de conectores y cableado" </A> de esta sección.</Li>
+									<Li>Compruebe el estado de las conexiones entre los correspondientes conectores. Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0WHCI">"Inspección de conectores y cableado" </A> de esta sección.</Li>
+								</OL>
+								<div>¿Muestra la inspección que todo está bien?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Sustituya el cableado del vehículo o corrija el ajuste entre los conectores.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Compruebe la resistencia entre el cable T/M y el SS1.</Li>
+									<Li>Desenchufe el conector (X-3) del cable del T/M y compruebe la resistencia entre el terminal 5 del conector del SS1 y masa.</Li>
+								</OL>
+								<div>¿La resistencia está dentro del valor especificado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>20°C (68°F) 11-16 Ω</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+<div>Limpie el conector.</div>
+								<div>¿Está resuelto el fallo?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Sistema OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 10</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Compruebe la continuidad y la presencia de cortocircuitos en los correspondientes mazos de cables. Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0WHCI">"Inspección de conectores y cableado" </A> de esta sección.</Li>
+									<Li>Compruebe el estado de las conexiones entre los correspondientes conectores. Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0WHCI">"Inspección de conectores y cableado" </A> de esta sección.</Li>
+								</OL>
+								<div>¿Está todo en buen estado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Limpie los conectores.</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Sustituya el cableado del vehículo o corrija el ajuste entre los conectores.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+<div>Inspeccione el SS1. Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0UI">"Inspección de componentes"</A> de esta sección.</div>
+								<div>¿Muestra la inspección que todo está bien?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 9</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Sustituya el SS1.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Compruebe la continuidad y presencia de cortocircuitos en el cable T/M. Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0WHCI">"Inspección de conectores y cableado" </A> de esta sección.</Li>
+									<Li>Compruebe el estado de la conexión entre los conectores (C-6). Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0WHCI">"Inspección de conectores y cableado" </A> de esta sección.</Li>
+								</OL>
+								<div>¿Está todo en buen estado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Limpie los conectores.</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Sustituya el cable T/M.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+<div>Sustituya el TCM.</div>
+								<div>¿Se ha realizado la sustitución?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Realice el procedimiento de memorización adaptativa de la transmisión. Consulte   <A target="_blank" href="9T2_5A02.es.html#T5A0TALP">"Procedimiento de memorización adaptativa de la transmisión" </A> en esta sección.</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	<BR><IMG alt="S6B15A16" src="../../../../graphic-pool/S/6b/1/s6b15a16.png"><BR><A target="_blank" href="../../../../graphic-pool/S/6b/1/s6b15a16.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Gráfico de visualización"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Traducciones de texto en gráficos"></A><p style="font-size:9pt; border:1pt outset"></p>
+<BR>
+		<P></P>
+<DIV align="center" id="T5A0P0974"><font size="4"><b>DTC P0974 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="T5A0SSE1"><font size="4"><b>Fallo eléctrico del solenoide de cambio 1 (SS1) (circuito abierto o cortocircuito a masa)</b></font></DIV>
+		<P></P>
+<DIV align="left" id="T5A0CRD1"><b>Condiciones para activar el DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>Sin modo de emergencia.</Li>
+					<Li>El TCM detecta la señal ON (12V) del monitor del solenoide de cambio 1 (SS1) cuando el accionador de SS1 emite la señal OFF (0V) durante 0,5 segundos de forma continuada.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0CSDTC1"><b>Condiciones para la activación del DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>La detección anterior se da de forma continuada 1 vez.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0ATDTC1"><b>Acción realizada cuando se activa el DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>El TCM hará que se encienda la MIL y almacenará el DTC cuando detecte un fallo en el primer ciclo de encendido.</Li>
+					<Li>No hay control de bloqueo</Li>
+					<Li>No se controla la reducción del par motor</Li>
+					<Li>No hay control de presión de engrane
+</Li>
+					<Li>No hay control del solenoide de sincronización para N-D</Li>
+					<Li>No hay control de automemorización</Li>
+					<Li>Decisión tras fallo: modo de emergencia</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0TCM1"><b>Secuencia de cambio del TCM (gama: D)</b></DIV>
+<P></P>
+			<Table border="1" width="100%" cellspacing="0">
+<Thead bgcolor="eeeeee">
+<tr>
+<td align="center" valign="middle" colspan="3" width="50%" class="T1"><b><div>Normal</div>
+								
+							</b></td>
+							<td align="center" valign="middle" colspan="3" width="50%" class="T1"><b><div>FALLO DEL SS1</div>
+								
+							</b></td>
+						</tr>
+						<tr>
+<td align="center" valign="middle" width="16%" class="T1"><b><div>Velocidad (cada velocidad), engranaje , piñón</div>
+								
+							</b></td>
+							<td align="center" valign="middle" width="17%" class="T1"><b><div>SS1</div>
+								
+							</b></td>
+							<td align="center" valign="middle" width="17%" class="T1"><b><div>SS2</div>
+								
+							</b></td>
+							<td align="center" valign="middle" width="16%" class="T1"><b><div>Velocidad (cada velocidad), engranaje , piñón</div>
+								
+							</b></td>
+							<td align="center" valign="middle" width="17%" class="T1"><b><div>SS1</div>
+								
+							</b></td>
+							<td align="center" valign="middle" width="17%" class="T1"><b><div>SS2</div>
+								
+							</b></td>
+						</tr>
+					</Thead>
+					<Tbody align="center" valign="middle">
+<tr colspan="">
+<td class="T1" width="16%" colspan="" rowspan="" align="" valign="middle">
+<div>1ª</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>ACTIVADO</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>ACTIVADO</div>
+								
+							</td>
+							<td class="T1" width="16%" colspan="" rowspan="" align="" valign="middle">
+<div>3ª</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>FALLO</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>DESACTIVADO</div>
+								
+							</td>
+						</tr>
+						<tr colspan="">
+<td class="T1" width="16%" colspan="" rowspan="" align="" valign="middle">
+<div>2ª</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>ACTIVADO</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>DESACTIVADO</div>
+								
+							</td>
+							<td class="T1" width="16%" colspan="" rowspan="" align="" valign="middle">
+<div>3ª</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>FALLO</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>DESACTIVADO</div>
+								
+							</td>
+						</tr>
+						<tr colspan="">
+<td class="T1" width="16%" colspan="" rowspan="" align="" valign="middle">
+<div>3ª</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>DESACTIVADO</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>DESACTIVADO</div>
+								
+							</td>
+							<td class="T1" width="16%" colspan="" rowspan="" align="" valign="middle">
+<div>3ª</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>FALLO</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>DESACTIVADO</div>
+								
+							</td>
+						</tr>
+						<tr colspan="">
+<td class="T1" width="16%" colspan="" rowspan="" align="" valign="middle">
+<div>4ª</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>DESACTIVADO</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>ACTIVADO</div>
+								
+							</td>
+							<td class="T1" width="16%" colspan="" rowspan="" align="" valign="middle">
+<div>4ª</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>FALLO</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>ACTIVADO</div>
+								
+							</td>
+						</tr>
+					</Tbody>
+				</Table>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0CCDTC1"><b>Condiciones para borrar el DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>El TCM apagará la MIL cuando no se detecten más fallos en tres ciclos de encendido consecutivos.</Li>
+					<Li>El DTC puede borrarse del historial del TCM con un scanner.</Li>
+					<Li>El TCM borra el DTC de la memoria del historial del TCM después de cuarenta ciclos consecutivos de calentamiento sin fallo.</Li>
+					<Li>El TCM detecta la señal OFF del monitor de SS1 cuando el accionador de SS1 emite la señal OFF durante 1.000 ms de forma continuada.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0CF1"><b>Causa de la avería</b></DIV>
+<P></P>
+			<UL>
+<Li>Cableado o conector entre el solenoide de cambio 1 (SS1) y el TCM</Li>
+					<Li>SS1</Li>
+					<Li>TCM</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="center" id="T5A0P09741"><font size="4"><b>DTC P0974 - Fallo eléctrico del solenoide de cambio 1 (SS1) (circuito abierto o cortocircuito a masa)</b></font></DIV>
+<P></P>
+			<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Paso</B></TD>
+<TD align="center"><B>Medida</B></TD>
+<TD align="center"><B>Valor(es)</B></TD>
+<TD align="center"><B>Sí</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+<TR>
+<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Gire la llave de contacto a la posición OFF.</Li>
+									<Li>Instale el scanner.</Li>
+									<Li>Gire la llave de contacto a la posición ON, sin encender el motor.</Li>
+									<Li>Seleccione Almacenar datos instantáneos/registros de averías en el menú de información de los códigos de diagnóstico de averías.</Li>
+									<Li>Almacene los datos instantáneos/registros de averías.</Li>
+									<Li>Seleccione Borrar información de DTC en el menú de información de los códigos de diagnóstico de averías.</Li>
+									<Li>Borre la información del DTC.</Li>
+									<Li>Complete un ciclo de conducción con el vehículo.</Li>
+								</OL>
+								<div>¿Está encendida la luz indicadora de fallo (MIL)/retención?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Compruebe el fallo de conexión temporal del conector y repárelo si fuese necesario. Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0WHCI">"Inspección de conectores y cableado" </A> de esta sección.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Seleccione Solicitar DTC por estado en el menú de información de los códigos de diagnóstico de averías.</Li>
+									<Li>Solicite el DTC por estado.</Li>
+								</OL>
+								<div>¿Se visualiza el DTC P0974?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Compruebe el fallo de conexión temporal del conector y repárelo si fuese necesario. Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0WHCI">"Inspección de conectores y cableado" </A> de esta sección.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Gire la llave de contacto a la posición OFF.</Li>
+									<Li>Compruebe la resistencia entre el cableado del vehículo y el solenoide de cambio 1 (SS). Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0UI">"Inspección de componentes"</A> de esta sección.</Li>
+									<Li>Desenchufe el conector del TCM (X-1) y compruebe la resistencia entre los terminales A16 y A23.</Li>
+								</OL>
+								<div>¿La resistencia está dentro del valor especificado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>20°C (68°F) 11-16 Ω</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Compruebe el mazo de cables y el conector del lado del vehículo.</Li>
+									<Li>Compruebe la continuidad y la presencia de cortocircuitos en los correspondientes mazos de cables. Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0WHCI">"Inspección de conectores y cableado" </A> de esta sección.</Li>
+									<Li>Compruebe el estado de las conexiones entre los correspondientes conectores. Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0WHCI">"Inspección de conectores y cableado" </A> de esta sección.</Li>
+								</OL>
+								<div>¿Muestra la inspección que todo está bien?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Sustituya el cableado del vehículo o corrija el ajuste entre los conectores.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Compruebe la resistencia entre el cable T/M y el SS1.</Li>
+									<Li>Desenchufe el conector (X-3) del cable del T/M y compruebe la resistencia entre el terminal 5 del conector del SS1 y masa.</Li>
+								</OL>
+								<div>¿La resistencia está dentro del valor especificado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>20°C (68°F) 11-16 Ω</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+<div>Limpie el conector.</div>
+								<div>¿Está resuelto el fallo?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Sistema OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 10</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Compruebe la continuidad y la presencia de cortocircuitos en los correspondientes mazos de cables. Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0WHCI">"Inspección de conectores y cableado" </A> de esta sección.</Li>
+									<Li>Compruebe el estado de las conexiones entre los correspondientes conectores. Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0WHCI">"Inspección de conectores y cableado" </A> de esta sección.</Li>
+								</OL>
+								<div>¿Está todo en buen estado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Limpie los conectores.</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Sustituya el cableado del vehículo o corrija el ajuste entre los conectores.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+<div>Inspeccione el SS1. Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0UI">"Inspección de componentes"</A> de esta sección.</div>
+								<div>¿Muestra la inspección que todo está bien?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 9</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Sustituya el SS1.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Compruebe la continuidad y presencia de cortocircuitos en el cable T/M. Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0WHCI">"Inspección de conectores y cableado" </A> de esta sección.</Li>
+									<Li>Compruebe el estado de la conexión entre los conectores (C-6). Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0WHCI">"Inspección de conectores y cableado" </A> de esta sección.</Li>
+								</OL>
+								<div>¿Está todo en buen estado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Limpie los conectores.</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Sustituya el cable T/M.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+<div>Sustituya el TCM.</div>
+								<div>¿Se ha realizado la sustitución?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Realice el procedimiento de memorización adaptativa de la transmisión. Consulte   <A target="_blank" href="9T2_5A02.es.html#T5A0TALP">"Procedimiento de memorización adaptativa de la transmisión" </A> en esta sección.</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	<BR><IMG alt="S6B15A16" src="../../../../graphic-pool/S/6b/1/s6b15a16.png"><BR><A target="_blank" href="../../../../graphic-pool/S/6b/1/s6b15a16.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Gráfico de visualización"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Traducciones de texto en gráficos"></A><p style="font-size:9pt; border:1pt outset"></p>
+<BR>
+		<P></P>
+<DIV align="center" id="T5A0P0976"><font size="4"><b>DTC P0976 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="T5A0SS2E"><font size="4"><b>Fallo eléctrico en el solenoide de cambio 2 (SS2) (cortocircuito a masa)</b></font></DIV>
+		<P></P>
+<DIV align="left" id="T5A0CRD2"><b>Condiciones para activar el DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>Sin modo de emergencia.</Li>
+					<Li>El TCM detecta la señal OFF (12V) del monitor del solenoide de cambio 2 (SS2) cuando el accionador de SS2 emite la señal OFF (0V) durante 0,5 segundos de forma continuada.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0CSDTC2"><b>Condiciones para la activación del DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>La detección anterior se da de forma continuada 1 vez.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0ATDTC2"><b>Acción realizada cuando se activa el DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>El TCM hará que se encienda la MIL y almacenará el DTC cuando detecte un fallo en el primer ciclo de encendido.</Li>
+					<Li>No hay control de bloqueo</Li>
+					<Li>No se controla la reducción del par motor</Li>
+					<Li>No hay control de presión de engrane
+</Li>
+					<Li>No hay control del solenoide de sincronización para N-D</Li>
+					<Li>No hay control de automemorización</Li>
+					<Li>Decisión tras fallo: modo de emergencia</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0TCM2"><b>Secuencia de cambio del TCM (gama: D)</b></DIV>
+<P></P>
+			<Table border="1" width="100%" cellspacing="0">
+<Thead bgcolor="eeeeee">
+<tr>
+<td align="center" valign="middle" colspan="3" width="50%" class="T1"><b><div>Normal</div>
+								
+							</b></td>
+							<td align="center" valign="middle" colspan="3" width="50%" class="T1"><b><div>FALLO DEL SS2</div>
+								
+							</b></td>
+						</tr>
+						<tr>
+<td align="center" valign="middle" width="16%" class="T1"><b><div>Velocidad (cada velocidad), engranaje , piñón</div>
+								
+							</b></td>
+							<td align="center" valign="middle" width="17%" class="T1"><b><div>SS1</div>
+								
+							</b></td>
+							<td align="center" valign="middle" width="17%" class="T1"><b><div>SS2</div>
+								
+							</b></td>
+							<td align="center" valign="middle" width="16%" class="T1"><b><div>Velocidad (cada velocidad), engranaje , piñón</div>
+								
+							</b></td>
+							<td align="center" valign="middle" width="17%" class="T1"><b><div>SS1</div>
+								
+							</b></td>
+							<td align="center" valign="middle" width="17%" class="T1"><b><div>SS2</div>
+								
+							</b></td>
+						</tr>
+					</Thead>
+					<Tbody align="center" valign="middle">
+<tr colspan="">
+<td class="T1" width="16%" colspan="" rowspan="" align="" valign="middle">
+<div>1ª</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>ACTIVADO</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>ACTIVADO</div>
+								
+							</td>
+							<td class="T1" width="16%" colspan="" rowspan="" align="" valign="middle">
+<div>2ª</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>ACTIVADO</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>FALLO</div>
+								
+							</td>
+						</tr>
+						<tr colspan="">
+<td class="T1" width="16%" colspan="" rowspan="" align="" valign="middle">
+<div>2ª</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>ACTIVADO</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>DESACTIVADO</div>
+								
+							</td>
+							<td class="T1" width="16%" colspan="" rowspan="" align="" valign="middle">
+<div>2ª</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>ACTIVADO</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>FALLO</div>
+								
+							</td>
+						</tr>
+						<tr colspan="">
+<td class="T1" width="16%" colspan="" rowspan="" align="" valign="middle">
+<div>3ª</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>DESACTIVADO</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>DESACTIVADO</div>
+								
+							</td>
+							<td class="T1" width="16%" colspan="" rowspan="" align="" valign="middle">
+<div>3ª</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>DESACTIVADO</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>FALLO</div>
+								
+							</td>
+						</tr>
+						<tr colspan="">
+<td class="T1" width="16%" colspan="" rowspan="" align="" valign="middle">
+<div>4ª</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>DESACTIVADO</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>ACTIVADO</div>
+								
+							</td>
+							<td class="T1" width="16%" colspan="" rowspan="" align="" valign="middle">
+<div>3ª</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>DESACTIVADO</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>FALLO</div>
+								
+							</td>
+						</tr>
+					</Tbody>
+				</Table>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0CCDTC2"><b>Condiciones para borrar el DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>El TCM apagará la MIL cuando no se detecten más fallos en tres ciclos de encendido consecutivos.</Li>
+					<Li>El DTC puede borrarse del historial del TCM con un scanner.</Li>
+					<Li>El TCM borra el DTC de la memoria del historial del TCM después de cuarenta ciclos consecutivos de calentamiento sin fallo.</Li>
+					<Li>El TCM detecta la señal On del monitor de SS2 cuando el accionador de SS2 emite la señal ON durante 1.000 ms de forma continuada.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0CF2"><b>Causa de la avería</b></DIV>
+<P></P>
+			<UL>
+<Li>Cableado o conector entre el solenoide de cambio 2 (SS2) y el TCM</Li>
+					<Li>SS2</Li>
+					<Li>TCM</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="center" id="T5A0P09761"><font size="4"><b>DTC P0976 - Fallo eléctrico en el solenoide de cambio 2 (SS2) (cortocircuito a masa)</b></font></DIV>
+<P></P>
+			<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Paso</B></TD>
+<TD align="center"><B>Medida</B></TD>
+<TD align="center"><B>Valor(es)</B></TD>
+<TD align="center"><B>Sí</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+<TR>
+<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Gire la llave de contacto a la posición OFF.</Li>
+									<Li>Instale el scanner.</Li>
+									<Li>Gire la llave de contacto a la posición ON, sin encender el motor.</Li>
+									<Li>Seleccione Almacenar datos instantáneos/registros de averías en el menú de información de los códigos de diagnóstico de averías.</Li>
+									<Li>Almacene los datos instantáneos/registros de averías.</Li>
+									<Li>Seleccione Borrar información de DTC en el menú de información de los códigos de diagnóstico de averías.</Li>
+									<Li>Borre la información del DTC.</Li>
+									<Li>Complete un ciclo de conducción con el vehículo.</Li>
+								</OL>
+								<div>¿Está encendida la luz indicadora de fallo (MIL)/retención?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Compruebe el fallo de conexión temporal del conector y repárelo si fuese necesario. Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0WHCI">"Inspección de conectores y cableado" </A> de esta sección.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Seleccione Solicitar DTC por estado en el menú de información de los códigos de diagnóstico de averías.</Li>
+									<Li>Solicite el DTC por estado.</Li>
+								</OL>
+								<div>¿Se visualiza el DTC P0976?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Compruebe el fallo de conexión temporal del conector y repárelo si fuese necesario. Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0WHCI">"Inspección de conectores y cableado" </A> de esta sección.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Gire la llave de contacto a la posición OFF.</Li>
+									<Li>Compruebe la resistencia entre el cableado del vehículo y el solenoide de cambio (SS) 2. Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0UI">"Inspección de componentes"</A> en esta sección.</Li>
+									<Li>Desenchufe el conector del TCM (X-1) y compruebe la resistencia entre los terminales A15 y A23.</Li>
+								</OL>
+								<div>¿La resistencia está dentro del valor especificado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>20°C (68°F) 11-16 Ω</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Compruebe el mazo de cables y el conector del lado del vehículo.</Li>
+									<Li>Compruebe la continuidad y la presencia de cortocircuitos en los correspondientes mazos de cables. Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0WHCI">"Inspección de conectores y cableado" </A> de esta sección.</Li>
+									<Li>Compruebe el estado de las conexiones entre los correspondientes conectores. Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0WHCI">"Inspección de conectores y cableado" </A> de esta sección.</Li>
+								</OL>
+								<div>¿Muestra la inspección que todo está bien?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Sustituya el cableado del vehículo o corrija el ajuste entre los conectores.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Compruebe la resistencia entre el cable T/M y el SS2.</Li>
+									<Li>Desenchufe el conector (X-3) del cable del T/M y compruebe la resistencia entre el terminal 10 del conector del SS2 y masa.</Li>
+								</OL>
+								<div>¿La resistencia está dentro del valor especificado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>20°C (68°F) 11-16 Ω</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+<div>Limpie el conector.</div>
+								<div>¿Está resuelto el fallo?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Sistema OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 10</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Compruebe la continuidad y la presencia de cortocircuitos en los correspondientes mazos de cables. Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0WHCI">"Inspección de conectores y cableado" </A> de esta sección.</Li>
+									<Li>Compruebe el estado de las conexiones entre los correspondientes conectores. Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0WHCI">"Inspección de conectores y cableado" </A> de esta sección.</Li>
+								</OL>
+								<div>¿Está todo en buen estado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Limpie los conectores.</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Sustituya el cableado del vehículo o corrija el ajuste entre los conectores.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+<div>Inspeccione el SS2. Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0UI">"Inspección de componentes"</A> de esta sección.</div>
+								<div>¿Muestra la inspección que todo está bien?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 9</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Sustituya el SS2.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Compruebe la continuidad y presencia de cortocircuitos en el cable T/M. Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0WHCI">"Inspección de conectores y cableado" </A> de esta sección.</Li>
+									<Li>Compruebe el estado de la conexión entre los conectores (C-6). Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0WHCI">"Inspección de conectores y cableado" </A> de esta sección.</Li>
+								</OL>
+								<div>¿Está todo en buen estado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Limpie los conectores.</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Sustituya el cable T/M.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+<div>Sustituya el TCM.</div>
+								<div>¿Se ha realizado la sustitución?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Realice el procedimiento de memorización adaptativa de la transmisión. Consulte   <A target="_blank" href="9T2_5A02.es.html#T5A0TALP">"Procedimiento de memorización adaptativa de la transmisión" </A> en esta sección.</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	<BR><IMG alt="S6B15A16" src="../../../../graphic-pool/S/6b/1/s6b15a16.png"><BR><A target="_blank" href="../../../../graphic-pool/S/6b/1/s6b15a16.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Gráfico de visualización"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Traducciones de texto en gráficos"></A><p style="font-size:9pt; border:1pt outset"></p>
+<BR>
+		<P></P>
+<DIV align="center" id="T5A0P0977"><font size="4"><b>DTC P0977 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="T5A0SS2E1"><font size="4"><b>Fallo eléctrico del solenoide de cambio 2 (SS2) (circuito abierto o cortocircuito a masa)</b></font></DIV>
+		<P></P>
+<DIV align="left" id="T5A0CRD3"><b>Condiciones para activar el DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>Sin modo de emergencia.</Li>
+					<Li>El TCM detecta la señal ON (12V) del monitor del solenoide de cambio 2 (SS2) cuando el accionador de SS2 emite la señal OFF (0V) durante 0,5 segundos.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0CSDTC3"><b>Condiciones para la activación del DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>La detección anterior se da de forma continuada 1 vez.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0ATDTC3"><b>Acción realizada cuando se activa el DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>El TCM hará que se encienda la MIL y almacenará el DTC cuando detecte un fallo en el primer ciclo de encendido.</Li>
+					<Li>No hay control de bloqueo</Li>
+					<Li>No se controla la reducción del par motor</Li>
+					<Li>No hay control de presión de engrane
+</Li>
+					<Li>No hay control del solenoide de sincronización para N-D</Li>
+					<Li>No hay control de automemorización</Li>
+					<Li>Decisión tras fallo: modo de emergencia</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0TCM3"><b>Secuencia de cambio del TCM (gama: D)</b></DIV>
+<P></P>
+			<Table border="1" width="100%" cellspacing="0">
+<Thead bgcolor="eeeeee">
+<tr>
+<td align="center" valign="middle" colspan="3" width="50%" class="T1"><b><div>Normal</div>
+								
+							</b></td>
+							<td align="center" valign="middle" colspan="3" width="50%" class="T1"><b><div>FALLO DEL SS2</div>
+								
+							</b></td>
+						</tr>
+						<tr>
+<td align="center" valign="middle" width="16%" class="T1"><b><div>Velocidad (cada velocidad), engranaje , piñón</div>
+								
+							</b></td>
+							<td align="center" valign="middle" width="17%" class="T1"><b><div>SS1</div>
+								
+							</b></td>
+							<td align="center" valign="middle" width="17%" class="T1"><b><div>SS2</div>
+								
+							</b></td>
+							<td align="center" valign="middle" width="16%" class="T1"><b><div>Velocidad (cada velocidad), engranaje , piñón</div>
+								
+							</b></td>
+							<td align="center" valign="middle" width="17%" class="T1"><b><div>SS1</div>
+								
+							</b></td>
+							<td align="center" valign="middle" width="17%" class="T1"><b><div>SS2</div>
+								
+							</b></td>
+						</tr>
+					</Thead>
+					<Tbody align="center" valign="middle">
+<tr colspan="">
+<td class="T1" width="16%" colspan="" rowspan="" align="" valign="middle">
+<div>1ª</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>ACTIVADO</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>ACTIVADO</div>
+								
+							</td>
+							<td class="T1" width="16%" colspan="" rowspan="" align="" valign="middle">
+<div>2ª</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>ACTIVADO</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>FALLO</div>
+								
+							</td>
+						</tr>
+						<tr colspan="">
+<td class="T1" width="16%" colspan="" rowspan="" align="" valign="middle">
+<div>2ª</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>ACTIVADO</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>DESACTIVADO</div>
+								
+							</td>
+							<td class="T1" width="16%" colspan="" rowspan="" align="" valign="middle">
+<div>2ª</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>ACTIVADO</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>FALLO</div>
+								
+							</td>
+						</tr>
+						<tr colspan="">
+<td class="T1" width="16%" colspan="" rowspan="" align="" valign="middle">
+<div>3ª</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>DESACTIVADO</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>DESACTIVADO</div>
+								
+							</td>
+							<td class="T1" width="16%" colspan="" rowspan="" align="" valign="middle">
+<div>3ª</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>DESACTIVADO</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>FALLO</div>
+								
+							</td>
+						</tr>
+						<tr colspan="">
+<td class="T1" width="16%" colspan="" rowspan="" align="" valign="middle">
+<div>4ª</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>DESACTIVADO</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>ACTIVADO</div>
+								
+							</td>
+							<td class="T1" width="16%" colspan="" rowspan="" align="" valign="middle">
+<div>3ª</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>DESACTIVADO</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>FALLO</div>
+								
+							</td>
+						</tr>
+					</Tbody>
+				</Table>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0CCDTC3"><b>Condiciones para borrar el DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>El TCM apagará la MIL cuando no se detecten más fallos en tres ciclos de encendido consecutivos.</Li>
+					<Li>El DTC puede borrarse del historial del TCM con un scanner.</Li>
+					<Li>El TCM borra el DTC de la memoria del historial del TCM después de cuarenta ciclos consecutivos de calentamiento sin fallo.</Li>
+					<Li>El TCM detecta la señal OFF del monitor de SS2 cuando el accionador de SS2 emite la señal OFF durante 1.000 ms de forma continuada.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0CF3"><b>Causa de la avería</b></DIV>
+<P></P>
+			<UL>
+<Li>Cableado o conector entre el solenoide de cambio 2 (SS2) y el TCM</Li>
+					<Li>SS2</Li>
+					<Li>TCM</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="center" id="T5A0P09771"><font size="4"><b>DTC P0977 - Fallo eléctrico del solenoide de cambio 2 (SS2) (circuito abierto o cortocircuito a masa)</b></font></DIV>
+<P></P>
+			<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Paso</B></TD>
+<TD align="center"><B>Medida</B></TD>
+<TD align="center"><B>Valor(es)</B></TD>
+<TD align="center"><B>Sí</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+<TR>
+<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Gire la llave de contacto a la posición OFF.</Li>
+									<Li>Instale el scanner.</Li>
+									<Li>Gire la llave de contacto a la posición ON, sin encender el motor.</Li>
+									<Li>Seleccione Almacenar datos instantáneos/registros de averías en el menú de información de los códigos de diagnóstico de averías.</Li>
+									<Li>Almacene los datos instantáneos/registros de averías.</Li>
+									<Li>Seleccione Borrar información de DTC en el menú de información de los códigos de diagnóstico de averías.</Li>
+									<Li>Borre la información del DTC.</Li>
+									<Li>Complete un ciclo de conducción con el vehículo.</Li>
+								</OL>
+								<div>¿Está encendida la luz indicadora de fallo (MIL)/retención?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Compruebe el fallo de conexión temporal del conector y repárelo si fuese necesario. Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0WHCI">"Inspección de conectores y cableado" </A> de esta sección.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Seleccione Solicitar DTC por estado en el menú de información de los códigos de diagnóstico de averías.</Li>
+									<Li>Solicite el DTC por estado.</Li>
+								</OL>
+								<div>¿Se visualiza el DTC P0977?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Compruebe el fallo de conexión temporal del conector y repárelo si fuese necesario. Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0WHCI">"Inspección de conectores y cableado" </A> de esta sección.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Gire la llave de contacto a la posición OFF.</Li>
+									<Li>Compruebe la resistencia entre el cableado del vehículo y el solenoide de cambio (SS) 2. Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0UI">"Inspección de componentes"</A> en esta sección.</Li>
+									<Li>Desenchufe el conector del TCM (X-1) y compruebe la resistencia entre los terminales A15 y A23.</Li>
+								</OL>
+								<div>¿La resistencia está dentro del valor especificado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>20°C (68°F) 11-16 Ω</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Compruebe el mazo de cables y el conector del lado del vehículo.</Li>
+									<Li>Compruebe la continuidad y la presencia de cortocircuitos en los correspondientes mazos de cables. Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0WHCI">"Inspección de conectores y cableado" </A> de esta sección.</Li>
+									<Li>Compruebe el estado de las conexiones entre los correspondientes conectores. Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0WHCI">"Inspección de conectores y cableado" </A> de esta sección.</Li>
+								</OL>
+								<div>¿Muestra la inspección que todo está bien?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Sustituya el cableado del vehículo o corrija el ajuste entre los conectores.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Compruebe la resistencia entre el cable T/M y el SS2.</Li>
+									<Li>Desenchufe el conector (X-3) del cable del T/M y compruebe la resistencia entre el terminal 10 del conector del SS2 y masa.</Li>
+								</OL>
+								<div>¿La resistencia está dentro del valor especificado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>20°C (68°F) 11-16 Ω</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+<div>Limpie el conector.</div>
+								<div>¿Está resuelto el fallo?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Sistema OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 10</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Compruebe la continuidad y la presencia de cortocircuitos en los correspondientes mazos de cables. Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0WHCI">"Inspección de conectores y cableado" </A> de esta sección.</Li>
+									<Li>Compruebe el estado de las conexiones entre los correspondientes conectores. Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0WHCI">"Inspección de conectores y cableado" </A> de esta sección.</Li>
+								</OL>
+								<div>¿Está todo en buen estado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Limpie los conectores.</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Sustituya el cableado del vehículo o corrija el ajuste entre los conectores.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+<div>Inspeccione el SS2. Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0UI">"Inspección de componentes"</A> de esta sección.</div>
+								<div>¿Muestra la inspección que todo está bien?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 9</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Sustituya el SS2.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Compruebe la continuidad y presencia de cortocircuitos en el cable T/M. Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0WHCI">"Inspección de conectores y cableado" </A> de esta sección.</Li>
+									<Li>Compruebe el estado de la conexión entre los conectores (C-6). Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0WHCI">"Inspección de conectores y cableado" </A> de esta sección.</Li>
+								</OL>
+								<div>¿Está todo en buen estado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Limpie los conectores.</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Sustituya el cable T/M.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+<div>Sustituya el TCM.</div>
+								<div>¿Se ha realizado la sustitución?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Realice el procedimiento de memorización adaptativa de la transmisión. Consulte   <A target="_blank" href="9T2_5A02.es.html#T5A0TALP">"Procedimiento de memorización adaptativa de la transmisión" </A> en esta sección.</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	<BR><IMG alt="S6B15A15" src="../../../../graphic-pool/S/6b/1/s6b15a15.png"><BR><A target="_blank" href="../../../../graphic-pool/S/6b/1/s6b15a15.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Gráfico de visualización"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Traducciones de texto en gráficos"></A><p style="font-size:9pt; border:1pt outset"></p>
+<BR>
+		<P></P>
+<DIV align="center" id="T5A0P2769"><font size="4"><b>DTC P2769 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="T5A0TCCE"><font size="4"><b>Fallo eléctrico en el embrague del convertidor de par (TCC) (cortocircuito a masa)</b></font></DIV>
+		<P></P>
+<DIV align="left" id="T5A0CRD4"><b>Condiciones para activar el DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>Sin modo de emergencia.</Li>
+					<Li>El TCM detecta la señal OFF (12V) del monitor del solenoide de bloqueo cuando el accionador del solenoide de bloqueo emite la señal ON (0V) durante 0,5 segundos de forma continuada.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0CSDTC4"><b>Condiciones para la activación del DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>La detección anterior se da de forma continuada 1 vez.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0ATDTC4"><b>Acción realizada cuando se activa el DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>El TCM hará que se encienda la MIL y almacenará el DTC cuando detecte fallos en dos ciclos de encendido consecutivos.</Li>
+					<Li>No hay solenoide de bloqueo del TCC</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0CCDTC4"><b>Condiciones para borrar el DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>El TCM apagará la MIL cuando no se detecten más fallos en tres ciclos de encendido consecutivos.</Li>
+					<Li>El DTC puede borrarse del historial del TCM con un scanner.</Li>
+					<Li>El TCM borra el DTC de la memoria del historial del TCM después de cuarenta ciclos consecutivos de calentamiento sin fallo.</Li>
+					<Li>El TCM detecta la señal ON del monitor del solenoide de bloqueo cuando el accionador del solenoide de bloqueo emite la señal ON durante 1.000 ms de forma continuada.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0CF4"><b>Causa de la avería</b></DIV>
+<P></P>
+			<UL>
+<Li>Cableado o conector entre el solenoide de bloqueo y el TCM</Li>
+					<Li>Solenoide de bloqueo</Li>
+					<Li>TCM</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="center" id="T5A0P27691"><font size="4"><b>DTC P2769 - Fallo eléctrico en el embrague del convertidor de par (TCC) (cortocircuito a masa)</b></font></DIV>
+<P></P>
+			<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Paso</B></TD>
+<TD align="center"><B>Medida</B></TD>
+<TD align="center"><B>Valor(es)</B></TD>
+<TD align="center"><B>Sí</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+<TR>
+<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Gire la llave de contacto a la posición OFF.</Li>
+									<Li>Instale el scanner.</Li>
+									<Li>Gire la llave de contacto a la posición ON, sin encender el motor.</Li>
+									<Li>Seleccione Almacenar datos instantáneos/registros de averías en el menú de información de los códigos de diagnóstico de averías.</Li>
+									<Li>Almacene los datos instantáneos/registros de averías.</Li>
+									<Li>Seleccione Borrar información de DTC en el menú de información de los códigos de diagnóstico de averías.</Li>
+									<Li>Borre la información del DTC.</Li>
+									<Li>Complete dos ciclos de conducción con el vehículo.</Li>
+								</OL>
+								<div>¿Está encendida la luz indicadora de fallo (MIL)/retención?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Compruebe el fallo de conexión temporal del conector y repárelo si fuese necesario. Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0WHCI">"Inspección de conectores y cableado" </A> de esta sección.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Seleccione Solicitar DTC por estado en el menú de información de los códigos de diagnóstico de averías.</Li>
+									<Li>Solicite el DTC por estado.</Li>
+								</OL>
+								<div>¿Se visualiza el DTC P2769?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Compruebe el fallo de conexión temporal del conector y repárelo si fuese necesario. Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0WHCI">"Inspección de conectores y cableado" </A> de esta sección.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Gire la llave de contacto a la posición OFF.</Li>
+									<Li>Compruebe la resistencia entre el cableado del vehículo y el solenoide de bloqueo. Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0UI">"Inspección de componentes" </A> de esta sección.</Li>
+									<Li>Desenchufe el conector del TCM (X-1) y compruebe la resistencia entre los terminales A5 y A23.</Li>
+								</OL>
+								<div>¿La resistencia está dentro del valor especificado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>20°C (68°F) 11-16 Ω</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Compruebe el mazo de cables y el conector del lado del vehículo.</Li>
+									<Li>Compruebe la continuidad y la presencia de cortocircuitos en los correspondientes mazos de cables. Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0WHCI">"Inspección de conectores y cableado" </A> de esta sección.</Li>
+									<Li>Compruebe el estado de las conexiones entre los correspondientes conectores. Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0WHCI">"Inspección de conectores y cableado" </A> de esta sección.</Li>
+								</OL>
+								<div>¿Muestra la inspección que todo está bien?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Sustituya el cableado del vehículo o corrija el ajuste entre los conectores.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Compruebe la resistencia entre el cable T/M y el solenoide de bloqueo.</Li>
+									<Li>Desenchufe el conector (X-3) del cable del T/M y compruebe la resistencia entre el terminal 4 del conector del solenoide de bloqueo y masa.</Li>
+								</OL>
+								<div>¿La resistencia está dentro del valor especificado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>20°C (68°F) 11-16 Ω</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+<div>Limpie el conector.</div>
+								<div>¿Está resuelto el fallo?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Sistema OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 10</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Compruebe la continuidad y la presencia de cortocircuitos en los correspondientes mazos de cables. Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0WHCI">"Inspección de conectores y cableado" </A> de esta sección.</Li>
+									<Li>Compruebe el estado de las conexiones entre los correspondientes conectores. Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0WHCI">"Inspección de conectores y cableado" </A> de esta sección.</Li>
+								</OL>
+								<div>¿Está todo en buen estado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Limpie los conectores.</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Sustituya el cableado del vehículo o corrija el ajuste entre los conectores.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+<div>Inspeccione el solenoide de bloqueo. Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0UI">"Inspección de componentes" </A> de esta sección.</div>
+								<div>¿Muestra la inspección que todo está bien?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 9</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Sustituya el solenoide de bloqueo.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Compruebe la continuidad y presencia de cortocircuitos en el cable T/M. Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0WHCI">"Inspección de conectores y cableado" </A> de esta sección.</Li>
+									<Li>Compruebe el estado de la conexión entre los conectores (C-6). Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0WHCI">"Inspección de conectores y cableado" </A> de esta sección.</Li>
+								</OL>
+								<div>¿Está todo en buen estado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Limpie los conectores.</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Sustituya el cable T/M.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+<div>Sustituya el TCM.</div>
+								<div>¿Se ha realizado la sustitución?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Realice el procedimiento de memorización adaptativa de la transmisión. Consulte   <A target="_blank" href="9T2_5A02.es.html#T5A0TALP">"Procedimiento de memorización adaptativa de la transmisión" </A> en esta sección.</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	<BR><IMG alt="S6B15A15" src="../../../../graphic-pool/S/6b/1/s6b15a15.png"><BR><A target="_blank" href="../../../../graphic-pool/S/6b/1/s6b15a15.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Gráfico de visualización"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Traducciones de texto en gráficos"></A><p style="font-size:9pt; border:1pt outset"></p>
+<BR>
+		<P></P>
+<DIV align="center" id="T5A0P2770"><font size="4"><b>DTC P2770 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="T5A0TCCE1"><font size="4"><b>Fallo eléctrico en el embrague del convertidor de par (TCC) (circuito abierto o cortocircuito a masa)</b></font></DIV>
+		<P></P>
+<DIV align="left" id="T5A0CRD5"><b>Condiciones para activar el DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>Sin modo de emergencia.</Li>
+					<Li>El TCM detecta la señal ON (12V) del monitor del solenoide de bloqueo cuando el accionador del solenoide de bloqueo emite la señal OFF (0V) durante 0,5 segundos de forma continuada.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0CSDTC5"><b>Condiciones para la activación del DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>La detección anterior se da de forma continuada 1 vez.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0ATDTC5"><b>Acción realizada cuando se activa el DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>El TCM hará que se encienda la MIL y almacenará el DTC cuando detecte fallos en dos ciclos de encendido consecutivos.</Li>
+					<Li>El TCM no emite ninguna señal de bloqueo.</Li>
+					<Li>1ª velocidad fija por debajo de 10 km/h (6 mph).</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0CCDTC5"><b>Condiciones para borrar el DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>El TCM apagará la MIL cuando no se detecten más fallos en tres ciclos de encendido consecutivos.</Li>
+					<Li>El DTC puede borrarse del historial del TCM con un scanner.</Li>
+					<Li>El TCM borra el DTC de la memoria del historial del TCM después de cuarenta ciclos consecutivos de calentamiento sin fallo.</Li>
+					<Li>El TCM detecta la señal OFF del monitor del solenoide de bloqueo cuando el accionador del solenoide de bloqueo emite la señal OFF durante 1.000 ms de forma continuada.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0CF5"><b>Causa de la avería</b></DIV>
+<P></P>
+			<UL>
+<Li>Cableado o conector entre el solenoide de bloqueo y el TCM</Li>
+					<Li>Solenoide de bloqueo</Li>
+					<Li>TCM</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="center" id="T5A0P27701"><font size="4"><b>DTC P2770 - Fallo eléctrico en el embrague del convertidor de par (TCC) (circuito abierto o cortocircuito a masa)</b></font></DIV>
+<P></P>
+			<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Paso</B></TD>
+<TD align="center"><B>Medida</B></TD>
+<TD align="center"><B>Valor(es)</B></TD>
+<TD align="center"><B>Sí</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+<TR>
+<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Gire la llave de contacto a la posición OFF.</Li>
+									<Li>Instale el scanner.</Li>
+									<Li>Gire la llave de contacto a la posición ON, sin encender el motor.</Li>
+									<Li>Seleccione Almacenar datos instantáneos/registros de averías en el menú de información de los códigos de diagnóstico de averías.</Li>
+									<Li>Almacene los datos instantáneos/registros de averías.</Li>
+									<Li>Seleccione Borrar información de DTC en el menú de información de los códigos de diagnóstico de averías.</Li>
+									<Li>Borre la información del DTC.</Li>
+									<Li>Complete dos ciclos de conducción con el vehículo.</Li>
+								</OL>
+								<div>¿Está encendida la luz indicadora de fallo (MIL)/retención?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Compruebe el fallo de conexión temporal del conector y repárelo si fuese necesario. Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0WHCI">"Inspección de conectores y cableado" </A> de esta sección.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Seleccione Solicitar DTC por estado en el menú de información de los códigos de diagnóstico de averías.</Li>
+									<Li>Solicite el DTC por estado.</Li>
+								</OL>
+								<div>¿Se visualiza el DTC P2770?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Compruebe el fallo de conexión temporal del conector y repárelo si fuese necesario. Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0WHCI">"Inspección de conectores y cableado" </A> de esta sección.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Gire la llave de contacto a la posición OFF.</Li>
+									<Li>Compruebe la resistencia entre el cableado del vehículo y el solenoide de bloqueo. Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0UI">"Inspección de componentes" </A> de esta sección.</Li>
+									<Li>Desenchufe el conector del TCM (X-1) y compruebe la resistencia entre los terminales A5 y A23.</Li>
+								</OL>
+								<div>¿La resistencia está dentro del valor especificado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>20°C (68°F) 11-16 Ω</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Compruebe el mazo de cables y el conector del lado del vehículo.</Li>
+									<Li>Compruebe la continuidad y la presencia de cortocircuitos en los correspondientes mazos de cables. Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0WHCI">"Inspección de conectores y cableado" </A> de esta sección.</Li>
+									<Li>Compruebe el estado de las conexiones entre los correspondientes conectores. Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0WHCI">"Inspección de conectores y cableado" </A> de esta sección.</Li>
+								</OL>
+								<div>¿Muestra la inspección que todo está bien?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Sustituya el cableado del vehículo o corrija el ajuste entre los conectores.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Compruebe la resistencia entre el cable T/M y el solenoide de bloqueo.</Li>
+									<Li>Desenchufe el conector (X-3) del cable del T/M y compruebe la resistencia entre el terminal 4 del conector del solenoide de bloqueo y masa.</Li>
+								</OL>
+								<div>¿La resistencia está dentro del valor especificado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>20°C (68°F) 11-16 Ω</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+<div>Limpie el conector.</div>
+								<div>¿Está resuelto el fallo?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Sistema OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 10</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Compruebe la continuidad y la presencia de cortocircuitos en los correspondientes mazos de cables. Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0WHCI">"Inspección de conectores y cableado" </A> de esta sección.</Li>
+									<Li>Compruebe el estado de las conexiones entre los correspondientes conectores. Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0WHCI">"Inspección de conectores y cableado" </A> de esta sección.</Li>
+								</OL>
+								<div>¿Está todo en buen estado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Limpie los conectores.</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Sustituya el cableado del vehículo o corrija el ajuste entre los conectores.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+<div>Inspeccione el solenoide de bloqueo. Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0UI">"Inspección de componentes" </A> de esta sección.</div>
+								<div>¿Muestra la inspección que todo está bien?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Vaya al   <I>Paso 9</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Sustituya el solenoide de bloqueo.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Compruebe la continuidad y presencia de cortocircuitos en el cable T/M. Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0WHCI">"Inspección de conectores y cableado" </A> de esta sección.</Li>
+									<Li>Compruebe el estado de la conexión entre los conectores (C-6). Consulte el apartado   <A target="_blank" href="9T2_5A02.es.html#T5A0WHCI">"Inspección de conectores y cableado" </A> de esta sección.</Li>
+								</OL>
+								<div>¿Está todo en buen estado?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Limpie los conectores.</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Sustituya el cable T/M.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+<div>Sustituya el TCM.</div>
+								<div>¿Se ha realizado la sustitución?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Realice el procedimiento de memorización adaptativa de la transmisión. Consulte   <A target="_blank" href="9T2_5A02.es.html#T5A0TALP">"Procedimiento de memorización adaptativa de la transmisión" </A> en esta sección.</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+<BR><BR><TABLE align="center"><TR>
+<TD align="left"><A href="9T2_5A04.es.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_back.gif" alt="A la página anterior"></A></TD>
+<TD align="left"></TD>
+<TD align="left"><A href="9T2_5A06.es.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_next.gif" alt="A la página siguiente"></A></TD>
+<TD></TD>
+</TR></TABLE>
+<TABLE width="100%"><TBODY><TR BGCOLOR="DarkSlateBlue" align="center"><TD><FONT color="white"><B>© Copyright Chevrolet Europe. Reservados todos los derechos</B></FONT></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>
