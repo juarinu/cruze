@@ -1,0 +1,288 @@
+<HTML>
+<head><link rel="stylesheet" type="text/css" href="si-style.css"/><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><TITLE>Información de servicio</TITLE><STYLE>
+	.ListIndentBul2Refer{margin-left : 40pt}  ..ListIndentBul2{margin-left : -20pt}
+	.SubListIndent{margin-left : -15pt}
+	.UpNo{border-top : white}  .DownNo{border-bottom : white}  ..BothNo{border-top : white; border-bottom : white}
+	.UpBold{border-top : thin double ridge}  .DownBold{border-bottom : thin double ridge}  .BothBold{border-top : thin double ridge; border-bottom : thin double ridge}
+	.ImageIndent{margin-left : 0%}  .ImageTitleIndent{margin-left : 5%}  .ParagraphIndent{margin-left : 20pt}
+	.Arial{font-family : Arial, Helvetica, sans-serif; margin-left : 10pt; margin-right : 10pt}
+</STYLE>
+<SCRIPT LANGUAGE="JavaScript">
+	function FixMenu()
+	{
+		menuTop = document.body.scrollTop + document.body.clientHeight -40;
+		menu.style.top = menuTop;
+		menu.style.width = document.body.clientWidth; 
+	}
+</SCRIPT>
+</HEAD>
+<BODY class="Arial" onLoad="FixMenu()" onScroll="FixMenu()" onResize="FixMenu()" BGCOLOR="#FFFFFF">
+<SPAN ID="menu" STYLE="position:absolute; left:0px; top:0px; width:0px">
+	<A border="0" href="92215946.es.html">
+	<IMG src="../../../../graphic-pool/Icons/Totop.gif" align="right" halign="Bottom" border="0" alt="To the top of the document"></A>
+</SPAN>
+<TABLE width="100%" BORDER="1" rules="none" cellspacing="0" cellpadding="0" style="magin-top: 5pt">
+<TBODY>
+<TR BGCOLOR="cccc99" height="15">
+<TD width="30%"><div style="padding-left: 5pt"><B><FONT face="Arial">Captiva</FONT></B></div></TD>
+<TD width="70%" align="right" colspan="8"></TD>
+</TR>
+<TR BGCOLOR="white" height="60">
+<TD width="35%" align="left">
+<TABLE>
+<TR>
+<TD width="5%" align="left">&nbsp;</TD>
+<TD width="5%" align="left"></TD>
+<TD width="5%" align="left">&nbsp;</TD>
+</TR>
+</TABLE>
+</TD>
+<TD>
+<TABLE width="65%" align="right">
+<TR>
+<TD style="font-size:10">
+	<A href="../../../GMDE_TIS_START.html" target="_top">
+	<IMG src="../../code/menu-images/home.gif" border="0" alt="GMDE Start Page">
+</A></TD>
+<TD style="font-size:10">
+	<A href="../toc_Captiva.html" target="menu"><IMG src="../../code/menu-images/static-TOC.gif" border="0" alt="Load static TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../toc_Captiva_code.html" target="code"><IMG src="../../code/menu-images/menu_folder_open.gif" border="0" alt="Load dynamic TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../../help/readme_EN.htm" target="top" class="bottom_copyright"><IMG src="../../code/menu-images/help.gif" border="0" alt="Help?"></A>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<H2>DTC P0504</H2>
+
+<A NAME="ss1-2215946">
+<A HREF="#ss1-2215946">
+<H3>Descripción de circuito</H3></A><p>El módulo de control del tren motriz (PCM) supervisa el circuito de señal del interruptor de las luces de freno y el circuito de señal de desbloqueo del control de velocidad de crucero cada 100&nbsp;ms. El PCM supervisa el estado del circuito de señal del interruptor de las luces de freno y del circuito de señal del control de velocidad de crucero para comprobar si coinciden al accionar o liberar el pedal de freno.</p>
+
+<A NAME="ss2-2215946">
+<A HREF="#ss2-2215946">
+<H3>Descripción de DTC</H3></A><p>El procedimiento de diagnóstico admite el siguiente DTC:</p>
+<p>DTC&nbsp;P0504 Correlación entre los circuitos&nbsp;1 y 2 del interruptor de freno</p>
+
+<A NAME="ss3-2215946">
+<A HREF="#ss3-2215946">
+<H3>Condiciones para la activación de DTC</H3></A><p>El encendido está en la posición ON.</p>
+
+<A NAME="ss4-2215946">
+<A HREF="#ss4-2215946">
+<H3>Condiciones para ajustar el DTC</H3></A><p>El estado de la entrada del interruptor de las luces de freno al PCM y el de la entrada del interruptor de freno/velocidad de crucero al PCM no coinciden durante al menos 2&nbsp;segundos seguidos, en 10&nbsp;ocasiones. Cada vez que las señales coinciden, dejan de hacerlo en incrementos del contador. Cuando el contador alcanza las&nbsp;10 apariciones, el DTC se activa.</p>
+
+<A NAME="ss5-2215946">
+<A HREF="#ss5-2215946">
+<H3>Acción realizada cuando el DTC se ajusta</H3></A><p>Cuando se activa el DTC&nbsp;P0504, ocurre lo siguiente:</p>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">El control de crucero se desactiva.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">El PCM funcionará como si el pedal de freno no estuviese accionado.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">El módulo de control almacena la información de los DTC en la memoria cuando se realiza un diagnóstico y éste falla.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">El testigo luminoso de avería (MIL) no se iluminará.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">El módulo de control registra las condiciones de funcionamiento en el momento en que falló el diagnóstico. El módulo de control almacena esta información en los registros de averías.</td></tr></table></div>
+
+
+<A NAME="ss6-2215946">
+<A HREF="#ss6-2215946">
+<H3>Condiciones para el borrar el DTC</H3></A>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">El DTC se borrará cuando el estado de la entrada del interruptor de las luces de freno al PCM y el de la entrada del interruptor de freno/velocidad de crucero al ECM coincidan durante al menos 2&nbsp;segundos seguidos tanto la posición de accionamiento como en la de liberación.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Se borra un DTC actual, el de fallo en la última comprobación, cuando el diagnóstico se realiza sin errores.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Un DTC del historial se borra al cabo de 40&nbsp;ciclos de calentamiento consecutivos si no se comunica ningún error de este diagnóstico o de cualquier otro que no esté relacionado con las emisiones.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Borre los DTC con una herramienta de diagnóstico.</td></tr></table></div>
+
+<TABLE CELLSPACING="0"  WIDTH="100%" BORDER=1>
+<TR>
+<TH BGCOLOR="#C0C0C0" ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Paso</P>
+</TH><TH BGCOLOR="#C0C0C0" ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Acción</P>
+</TH><TH BGCOLOR="#C0C0C0" ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Sí</P>
+</TH><TH BGCOLOR="#C0C0C0" ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>No</P>
+</TH></TR>
+<TR>
+<TD ALIGN="left" VALIGN="middle" ROWSPAN=1 COLSPAN=4><P><EM>Referencia esquemática: </EM><a href="92411566.es.html">Esquema de las luces exteriores</a> y <a href="92412250.es.html">Esquema de control de crucero</a> </P>
+<P><EM>Referencia de vista del extremo del conector: </EM><a href="92260885.es.html">Lista de componentes eléctricos maestros</a> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>1</P>
+</TD><TD ALIGN="left" VALIGN="top" ROWSPAN=1><P>¿Ha realizado la comprobación para el diagnóstico del sistema en el vehículo?</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Consultar la sección <A HREF="#S02">Paso&nbsp;2</A> </P>
+</TD><TD ALIGN="left" VALIGN="bottom" ROWSPAN=1><P>Consultar la sección <a href="92092144.es.html">Comprobación del sistema de diagnóstico - Vehículo</a> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S02"><P>2</P>
+</A></TD><TD ROWSPAN=1>
+<OL><LI TYPE="1">Con la herramienta de exploración, observe los parámetros Interruptor de freno e Interruptor de freno de velocidad de crucero.</LI>
+<LI TYPE="1">Presione y libere el pedal del freno.</LI>
+</OL>
+<P>¿Cambian de un modo similar los valores de los parámetros Interruptor de freno e Interruptor de freno de velocidad de crucero?</P>
+</TD><TD ALIGN="left" VALIGN="bottom" ROWSPAN=1><P>Vaya a la Ayuda de diagnóstico</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Consultar la sección <A HREF="#S03">Paso&nbsp;3</A> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S03"><P>3</P>
+</A></TD><TD ROWSPAN=1>
+<OL><LI TYPE="1">Con la herramienta de exploración, observe el parámetro Interruptor de freno de velocidad de crucero.</LI>
+<LI TYPE="1">Presione y libere el pedal del freno.</LI>
+</OL>
+<P>¿Cambia el valor del parámetro Interruptor de freno de velocidad de crucero con la posición del pedal de freno?</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Consultar la sección <A HREF="#S06">Paso&nbsp;6</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Consultar la sección <A HREF="#S04">Paso&nbsp;4</A> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S04"><P>4						 </P>
+</A></TD><TD ALIGN="left" VALIGN="top" ROWSPAN=1>
+<OL><LI TYPE="1">Apague el encendido.</LI>
+<LI TYPE="1">Desconecte el interruptor de freno/crucero.</LI>
+<LI TYPE="1">Ponga en marcha el encendido con el motor apagado.</LI>
+</OL>
+<P>¿Muestra &quot;Applied&quot; (Aplicado) el parámetro Interruptor de freno de velocidad de crucero?</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Consultar la sección <A HREF="#S05">Paso&nbsp;5</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Consultar la sección <A HREF="#S12">Paso&nbsp;12</A> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S05"><P>5</P>
+</A></TD><TD ROWSPAN=1>
+<OL><LI TYPE="1">Apague el encendido.</LI>
+<LI TYPE="1">Emborne un puente con fusible de 10 amp. entre el circuito de tensión positiva de encendido del interruptor de freno de velocidad de crucero y el circuito de señal de desbloqueo del control de velocidad de crucero del interruptor de freno de velocidad de crucero.</LI>
+<LI TYPE="1">Ponga en marcha el encendido con el motor apagado.</LI>
+</OL>
+<P>¿Muestra &quot;Released&quot; (Liberado) el parámetro Interruptor de freno de velocidad de crucero?</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Consultar la sección <A HREF="#S16">Paso&nbsp;16</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Consultar la sección <A HREF="#S08">Paso&nbsp;8</A> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S06"><P>6</P>
+</A></TD><TD ROWSPAN=1>
+<OL><LI TYPE="1">Apague el encendido.</LI>
+<LI TYPE="1">Desconecte el interruptor de la luz de freno.</LI>
+<LI TYPE="1">Ponga en marcha el encendido con el motor apagado.</LI>
+<LI TYPE="1">Con la herramienta de exploración, observe el parámetro Interruptor de freno.</LI>
+</OL>
+<P>¿Muestra &quot;Released&quot; (Liberado) el parámetro Interruptor de freno?</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Consultar la sección <A HREF="#S07">Paso&nbsp;7</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Consultar la sección <A HREF="#S10">Paso&nbsp;10</A> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S07"><P>7</P>
+</A></TD><TD ROWSPAN=1>
+<OL><LI TYPE="1">Apague el encendido.</LI>
+<LI TYPE="1">Conecte un puente con fusible de 15 amperios entre el circuito de tensión positiva de la batería del interruptor de la luz de freno y el circuito de señal del interruptor de la luz de freno.</LI>
+<LI TYPE="1">Ponga en marcha el encendido con el motor apagado.</LI>
+</OL>
+<P>¿Muestra &quot;Applied&quot; (Aplicado) el parámetro Interruptor de freno?</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Consultar la sección <A HREF="#S15">Paso&nbsp;15</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Consultar la sección <A HREF="#S11">Paso&nbsp;11</A> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S08"><P>8</P>
+</A></TD><TD ROWSPAN=1><P>Compruebe si el circuito de tensión positiva de encendido del interruptor de freno/crucero presenta una resistencia abierta/alta o un cortocircuito a masa. Consultar <a href="92414706.es.html">Prueba del circuito</a> y <a href="92160816.es.html">Reparaciones de los cableados</a> .</P>
+<P>¿Encontró y corrigió el problema?</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Consultar la sección <A HREF="#S20">Paso&nbsp;20</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Consultar la sección <A HREF="#S09">Paso&nbsp;9</A> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S09"><P>9</P>
+</A></TD><TD ROWSPAN=1><P>Compruebe si el circuito de señal de desbloqueo del control de velocidad de crucero del interruptor de freno/velocidad de crucero presenta una resistencia abierta/alta o un cortocircuito a masa. Consultar <a href="92414706.es.html">Prueba del circuito</a> y <a href="92160816.es.html">Reparaciones de los cableados</a> .</P>
+<P>¿Encontró y corrigió el problema?</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Consultar la sección <A HREF="#S20">Paso&nbsp;20</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Consultar la sección <A HREF="#S14">Paso&nbsp;14</A> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S10"><P>10</P>
+</A></TD><TD ALIGN="left" VALIGN="top" ROWSPAN=1><P>Compruebe si el circuito de señal del interruptor de la luz de freno presenta un cortocircuito a tensión. Consultar <a href="92414706.es.html">Prueba del circuito</a> y <a href="92160816.es.html">Reparaciones de los cableados</a> .</P>
+<P>¿Encontró y corrigió el problema?</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Consultar la sección <A HREF="#S20">Paso&nbsp;20</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Consultar la sección <A HREF="#S14">Paso&nbsp;14</A> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S11"><P>11</P>
+</A></TD><TD ROWSPAN=1><P>Compruebe si el circuito de tensión positiva de la batería del interruptor de la luz freno presenta una resistencia abierta o un cortocircuito a masa. Consultar <a href="92414706.es.html">Prueba del circuito</a> y <a href="92160816.es.html">Reparaciones de los cableados</a> .</P>
+<P>¿Encontró y corrigió el problema?</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Consultar la sección <A HREF="#S20">Paso&nbsp;20</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Consultar la sección <A HREF="#S13">Paso&nbsp;13</A> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S12"><P>12</P>
+</A></TD><TD ROWSPAN=1><P>Compruebe si el circuito de señal de desbloqueo del control de velocidad de crucero del interruptor de freno/velocidad de crucero presenta un cortocircuito a tensión. Consultar <a href="92414706.es.html">Prueba del circuito</a> y <a href="92160816.es.html">Reparaciones de los cableados</a> .</P>
+<P>¿Encontró y corrigió el problema?</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Consultar la sección <A HREF="#S20">Paso&nbsp;20</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Consultar la sección <A HREF="#S17">Paso&nbsp;17</A> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S13"><P>13</P>
+</A></TD><TD ROWSPAN=1><P>Compruebe si el circuito de señal del interruptor de la luz de freno presenta una resistencia abierta/alta o un cortocircuito a masa. Consultar <a href="92414706.es.html">Prueba del circuito</a> y <a href="92160816.es.html">Reparaciones de los cableados</a> .</P>
+<P>¿Encontró y corrigió el problema?</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Consultar la sección <A HREF="#S20">Paso&nbsp;20</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Consultar la sección <A HREF="#S14">Paso&nbsp;14</A> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S14"><P>14</P>
+</A></TD><TD ALIGN="left" VALIGN="top" ROWSPAN=1><P>Compruebe si el enchufe del mazo de cables del módulo de control del tren motriz (PCM) presenta conexiones deficientes. Consultar <a href="92161319.es.html">Compruebe si hay problemas intermitentes o conexiones deficientes</a> y <a href="92413364.es.html">Reparaciones del conector</a> .</P>
+<P>¿Encontró y corrigió el problema?</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Consultar la sección <A HREF="#S20">Paso&nbsp;20</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Consultar la sección <A HREF="#S17">Paso&nbsp;17</A> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S15"><P>15</P>
+</A></TD><TD ROWSPAN=1><P>Compruebe si el enchufe del mazo de cables del interruptor de freno/crucero presenta conexiones deficientes. Consultar <a href="92161319.es.html">Compruebe si hay problemas intermitentes o conexiones deficientes</a> y <a href="92413364.es.html">Reparaciones del conector</a> .</P>
+<P>¿Encontró y corrigió el problema?</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Consultar la sección <A HREF="#S20">Paso&nbsp;20</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Consultar la sección <A HREF="#S18">Paso&nbsp;18</A> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S16"><P>16</P>
+</A></TD><TD ROWSPAN=1><P>Compruebe si el enchufe del mazo de cables del interruptor de la luz de freno presenta conexiones deficientes. Consultar <a href="92161319.es.html">Compruebe si hay problemas intermitentes o conexiones deficientes</a> y <a href="92413364.es.html">Reparaciones del conector</a> .</P>
+<P>¿Encontró y corrigió el problema?</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Consultar la sección <A HREF="#S20">Paso&nbsp;20</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Consultar la sección <A HREF="#S19">Paso&nbsp;19</A> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S17"><P>17</P>
+</A></TD><TD ROWSPAN=1><P>Sustituya el PCM. Consulte <a href="92424696.es.html">Referencias del módulo de control</a> para realizar la sustitución, configuración y programación.</P>
+<P>¿Ha completado la sustitución?</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Consultar la sección <A HREF="#S20">Paso&nbsp;20</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>--</P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S18"><P>18</P>
+</A></TD><TD ROWSPAN=1><P>Sustituya el interruptor de la luz de freno. Consultar <a href="92236172.es.html">Sustitución del interruptor de las luces de freno</a> .</P>
+<P>¿Ha completado la sustitución?</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Consultar la sección <A HREF="#S20">Paso&nbsp;20</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>--</P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S19"><P>19</P>
+</A></TD><TD ROWSPAN=1><P>Sustituya el interruptor de freno/crucero. Consultar <a href="92236172.es.html">Sustitución del interruptor de las luces de freno</a> .</P>
+<P>¿Ha completado la sustitución?</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Consultar la sección <A HREF="#S20">Paso&nbsp;20</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>--</P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S20"><P>20</P>
+</A></TD><TD ALIGN="left" VALIGN="top" ROWSPAN=1>
+<OL><LI TYPE="1">Utilice la herramienta de exploración para borrar los DTC.</LI>
+<LI TYPE="1">Conduzca el vehículo en las condiciones que activan el DTC según las especificaciones del texto de ayuda.</LI>
+</OL>
+<P>¿Se vuelve a activar el DTC?</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Consultar la sección <A HREF="#S02">Paso&nbsp;2</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Estado del circuito: correcto</P>
+</TD></TR>
+</TABLE>
+
+
+<TABLE align="center"><TR>
+<TD align="left">&nbsp;</TD>
+<TD align="left"></TD>
+<TD align="left">&nbsp;</TD>
+<TD></TD>
+</TR></TABLE>
+<BR><BR><TABLE width="100%"><TBODY><TR BGCOLOR="DarkSlateBlue" align="center"><TD><FONT color="white"><B>© Copyright Chevrolet Europe. All rights reserved</B></FONT></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>

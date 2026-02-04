@@ -1,0 +1,91 @@
+<HTML>
+<head><link rel="stylesheet" type="text/css" href="si-style.css"/><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><TITLE>Información de servicio</TITLE><STYLE>
+	.ListIndentBul2Refer{margin-left : 40pt}  ..ListIndentBul2{margin-left : -20pt}
+	.SubListIndent{margin-left : -15pt}
+	.UpNo{border-top : white}  .DownNo{border-bottom : white}  ..BothNo{border-top : white; border-bottom : white}
+	.UpBold{border-top : thin double ridge}  .DownBold{border-bottom : thin double ridge}  .BothBold{border-top : thin double ridge; border-bottom : thin double ridge}
+	.ImageIndent{margin-left : 0%}  .ImageTitleIndent{margin-left : 5%}  .ParagraphIndent{margin-left : 20pt}
+	.Arial{font-family : Arial, Helvetica, sans-serif; margin-left : 10pt; margin-right : 10pt}
+</STYLE>
+<SCRIPT LANGUAGE="JavaScript">
+	function FixMenu()
+	{
+		menuTop = document.body.scrollTop + document.body.clientHeight -40;
+		menu.style.top = menuTop;
+		menu.style.width = document.body.clientWidth; 
+	}
+</SCRIPT>
+</HEAD>
+<BODY class="Arial" onLoad="FixMenu()" onScroll="FixMenu()" onResize="FixMenu()" BGCOLOR="#FFFFFF">
+<SPAN ID="menu" STYLE="position:absolute; left:0px; top:0px; width:0px">
+	<A border="0" href="92264886.es.html">
+	<IMG src="../../../../graphic-pool/Icons/Totop.gif" align="right" halign="Bottom" border="0" alt="To the top of the document"></A>
+</SPAN>
+<TABLE width="100%" BORDER="1" rules="none" cellspacing="0" cellpadding="0" style="magin-top: 5pt">
+<TBODY>
+<TR BGCOLOR="cccc99" height="15">
+<TD width="30%"><div style="padding-left: 5pt"><B><FONT face="Arial">Captiva</FONT></B></div></TD>
+<TD width="70%" align="right" colspan="8"></TD>
+</TR>
+<TR BGCOLOR="white" height="60">
+<TD width="35%" align="left">
+<TABLE>
+<TR>
+<TD width="5%" align="left">&nbsp;</TD>
+<TD width="5%" align="left"></TD>
+<TD width="5%" align="left">&nbsp;</TD>
+</TR>
+</TABLE>
+</TD>
+<TD>
+<TABLE width="65%" align="right">
+<TR>
+<TD style="font-size:10">
+	<A href="../../../GMDE_TIS_START.html" target="_top">
+	<IMG src="../../code/menu-images/home.gif" border="0" alt="GMDE Start Page">
+</A></TD>
+<TD style="font-size:10">
+	<A href="../toc_Captiva.html" target="menu"><IMG src="../../code/menu-images/static-TOC.gif" border="0" alt="Load static TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../toc_Captiva_code.html" target="code"><IMG src="../../code/menu-images/menu_folder_open.gif" border="0" alt="Load dynamic TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../../help/readme_EN.htm" target="top" class="bottom_copyright"><IMG src="../../code/menu-images/help.gif" border="0" alt="Help?"></A>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<H2>Descripción del sistema de admisión de aire — LF1</H2>
+<p>El sensor de flujo de masa de aire (MAF) mide la cantidad de aire que está entrando al motor. Esta medición directa del flujo de aire es más precisa que la información del flujo calculada obtenida de las entradas de otros sensores. El sensor MAF alberga también un sensor integrado de temperatura del aire de entrada (IAT). El sensor MAF utiliza los siguientes circuitos: </p>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Un circuito de tensión de encendido</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Un circuito de señales</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Un circuito de masa</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Un circuito de señal de IAT</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Un circuito de referencia baja de IAT</td></tr></table></div>
+
+<p>El sensor MAF que se usa en este vehículo, es de tipo de película caliente y es usado con el fin de medir la proporción del flujo de aire. El flujo de aire a través del sensor pasa por un sensor de temperatura, luego es calentado y, después, pasa por otro sensor de temperatura. Se mide la diferencia en la temperatura del aire antes y después del calefactor. La diferencia de la temperatura del aire es proporcional a la cantidad de flujo de aire. La diferencia de la temperatura del aire también permite determinar si el aire está fluyendo en la dirección hacia delante o hacia atrás. Mientras se incrementa el flujo de aire, se incrementa la diferencia de temperatura entre los dos sensores. El sensor MAF convierte la diferencia de temperatura en una señal de frecuencia, que monitoriza el módulo de control del motor (ECM). El ECM calcula el flujo de aire basado en esa señal.</p>
+<p>El ECM monitoriza la frecuencia de la señal del sensor MAF y puede determinar si la señal del sensor está muy baja o muy alta. El ECM también puede detectar que el flujo de aire es inapropiado para una condición de operación dada, basado en la frecuencia de la señal.</p>
+<p>La herramienta de diagnóstico muestra el valor del sensor MAF en gramos por segundo (g/s) y hercio (Hz). Los valores deberían cambiar bastante rápidamente al acelerar, pero deberían permanecer bastante estables a cualquier velocidad dada del motor. Si el ECM detecta un problema con los circuitos del sensor MAF, se guardarán los siguientes DTC:</p>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">P0101 rendimiento del sensor (MAF) de flujo de masa de aire</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">P0102 Tensión baja del circuito del sensor (MAF) de flujo de masa de aire</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">P0103 Tensión alta del circuito del sensor (MAF) de flujo de masa de aire</td></tr></table></div>
+
+
+
+
+<TABLE align="center"><TR>
+<TD align="left">&nbsp;</TD>
+<TD align="left"></TD>
+<TD align="left">&nbsp;</TD>
+<TD></TD>
+</TR></TABLE>
+<BR><BR><TABLE width="100%"><TBODY><TR BGCOLOR="DarkSlateBlue" align="center"><TD><FONT color="white"><B>© Copyright Chevrolet Europe. All rights reserved</B></FONT></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>

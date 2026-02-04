@@ -1,0 +1,230 @@
+<HTML>
+<head><link rel="stylesheet" type="text/css" href="si-style.css"/><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><TITLE>Información de servicio</TITLE><STYLE>
+	.ListIndentBul2Refer{margin-left : 40pt}  ..ListIndentBul2{margin-left : -20pt}
+	.SubListIndent{margin-left : -15pt}
+	.UpNo{border-top : white}  .DownNo{border-bottom : white}  ..BothNo{border-top : white; border-bottom : white}
+	.UpBold{border-top : thin double ridge}  .DownBold{border-bottom : thin double ridge}  .BothBold{border-top : thin double ridge; border-bottom : thin double ridge}
+	.ImageIndent{margin-left : 0%}  .ImageTitleIndent{margin-left : 5%}  .ParagraphIndent{margin-left : 20pt}
+	.Arial{font-family : Arial, Helvetica, sans-serif; margin-left : 10pt; margin-right : 10pt}
+</STYLE>
+<SCRIPT LANGUAGE="JavaScript">
+	function FixMenu()
+	{
+		menuTop = document.body.scrollTop + document.body.clientHeight -40;
+		menu.style.top = menuTop;
+		menu.style.width = document.body.clientWidth; 
+	}
+</SCRIPT>
+</HEAD>
+<BODY class="Arial" onLoad="FixMenu()" onScroll="FixMenu()" onResize="FixMenu()" BGCOLOR="#FFFFFF">
+<SPAN ID="menu" STYLE="position:absolute; left:0px; top:0px; width:0px">
+	<A border="0" href="92496096.es.html">
+	<IMG src="../../../../graphic-pool/Icons/Totop.gif" align="right" halign="Bottom" border="0" alt="To the top of the document"></A>
+</SPAN>
+<TABLE width="100%" BORDER="1" rules="none" cellspacing="0" cellpadding="0" style="magin-top: 5pt">
+<TBODY>
+<TR BGCOLOR="cccc99" height="15">
+<TD width="30%"><div style="padding-left: 5pt"><B><FONT face="Arial">Captiva</FONT></B></div></TD>
+<TD width="70%" align="right" colspan="8"></TD>
+</TR>
+<TR BGCOLOR="white" height="60">
+<TD width="35%" align="left">
+<TABLE>
+<TR>
+<TD width="5%" align="left">&nbsp;</TD>
+<TD width="5%" align="left"></TD>
+<TD width="5%" align="left">&nbsp;</TD>
+</TR>
+</TABLE>
+</TD>
+<TD>
+<TABLE width="65%" align="right">
+<TR>
+<TD style="font-size:10">
+	<A href="../../../GMDE_TIS_START.html" target="_top">
+	<IMG src="../../code/menu-images/home.gif" border="0" alt="GMDE Start Page">
+</A></TD>
+<TD style="font-size:10">
+	<A href="../toc_Captiva.html" target="menu"><IMG src="../../code/menu-images/static-TOC.gif" border="0" alt="Load static TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../toc_Captiva_code.html" target="code"><IMG src="../../code/menu-images/menu_folder_open.gif" border="0" alt="Load dynamic TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../../help/readme_EN.htm" target="top" class="bottom_copyright"><IMG src="../../code/menu-images/help.gif" border="0" alt="Help?"></A>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<H2>DTC P0300-P0304 — LE5, LE9</H2>
+
+<A NAME="ss1-2496096">
+<A HREF="#ss1-2496096">
+<H3>Instrucciones de diagnóstico</H3></A>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Lleve a cabo <a href="92092144.es.html">Comprobación del sistema de diagnóstico - Vehículo</a> antes de usar el procedimiento de diagnóstico.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Revise <a href="91957622.es.html">Diagnosis basada en estrategia</a> para tener una panorámica del enfoque de diagnóstico.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top"><a href="91814794.es.html">Instrucciones del procedimiento de diagnóstico</a> proporciona una panorámica de cada categoría de diagnóstico.</td></tr></table></div>
+
+
+<A NAME="ss2-2496096">
+<A HREF="#ss2-2496096">
+<H3>Descripciones de DTC</H3></A><B>Códigos de avería&nbsp;P0300:&nbsp;</B>Detectado fallo de encendido del motor<br><br><B>Códigos de avería&nbsp;P0301:&nbsp;</B>Detectado fallo de encendido del cilindro&nbsp;1<br><br><B>Códigos de avería&nbsp;P0302:&nbsp;</B>Detectado fallo de encendido del cilindro&nbsp;2<br><br><B>Códigos de avería&nbsp;P0303:&nbsp;</B>Detectado fallo de encendido del cilindro&nbsp;3<br><br><B>Códigos de avería&nbsp;P0304:&nbsp;</B>Detectado fallo de encendido del cilindro&nbsp;4<br><br>
+<A NAME="ss3-2496096">
+<A HREF="#ss3-2496096">
+<H3>Descripción del circuito/sistema</H3></A><p>El módulo de control del motor (ECM) utiliza información procedente del sensor de posición del cigüeñal con el fin de determinar cuando se produce un fallo de encendido y utiliza información del sensor de posición del árbol de levas con el fin de determinar el cilindro que sufre el fallo de encendido. Efectuando un seguimiento de las variaciones en la velocidad de rotación del cigüeñal de cada cilindro, el ECM puede detectar los eventos de averías de encendido individuales. Si el ECM detecta una cuota de fallos de encendido suficiente para causar niveles de emisiones que excedan las normas establecidas, el DTC&nbsp;P0300 se activa. En determinadas condiciones de conducción, una cuota de fallos de encendido puede ser suficientemente elevada como para causar que el catalizador de 3 vías se sobrecaliente y resulte dañado. El testigo luminoso de avería (MIL) parpadeará cuando haya problemas de sobrecalentamiento del convertidor, daños y se active el DTC&nbsp;P0300. Los DTC&nbsp;P0301-P0304 corresponden a los cilindros&nbsp;1-4. Si el ECM puede determinar qué cilindro específico presenta un problema, se ajustará el DTC para dicho cilindro.</p>
+
+<A NAME="ss4-2496096">
+<A HREF="#ss4-2496096">
+<H3>Condiciones para la activación de DTC</H3></A>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">No se han ajustado DTC P0010, P0011, P0013, P0014, P0016, P0017, P0018, P0019, P0020, P0021, P0023, P0024, P0068, P0101, P0102, P0103, P0111, P0112, P0113, P0117, P0118, P0120, P0122, P0123, P0222, P0223, P0315, P0335, P0336, P0606, P0641, P0651, P1516, P2101, P2120, P2122, P2123, P2125, P2127, P2128, P2135, P2138, P2176.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">El DTC&nbsp;P0315 no se activa y el régimen del motor se sitúa entre 450 y 6.750&nbsp;r.p.m.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td valign="top">O</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">El DTC&nbsp;P0315 se activa y el régimen del motor es superior a 1.000&nbsp;r.p.m.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">La tensión de encendido se sitúa entre 9-18&nbsp;V.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">El parámetro de temperatura del refrigerante del motor (ECT) está entre -7 y +125° C (+19 y +257° F).</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;⇒</td><td valign="top">Si la ECT es inferior a -7 (+19°F) en el arranque del motor, este diagnóstico queda deshabilitado hasta que la ECT sea superior a +21°C (+69°F).</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">El sistema antibloqueo de frenos (ABS) y el sistema de control de tracción no están activos o detectan una carretera poco uniforme.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">El cambio no pasa de una marcha a otra.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">El ECM no está en corte de combustible o en modo de corte de combustible en desaceleración.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">El nivel de combustible es de más del 10%.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">La gestión de potencia no está activa.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">No se detecta un deslizamiento excesivo de las ruedas motrices.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Los DTC&nbsp;P0300 y P0304 se activan continuamente cuando se cumplen las condiciones anteriores.</td></tr></table></div>
+
+
+<A NAME="ss5-2496096">
+<A HREF="#ss5-2496096">
+<H3>Condiciones para ajustar el DTC</H3></A><p>El ECM detecta una variación del régimen de giro del cigüeñal que indica que existe un fallo de encendido suficiente como para causar emisiones o niveles que pueden dañar el catalizador que exceden las normas establecidas.</p>
+
+<A NAME="ss6-2496096">
+<A HREF="#ss6-2496096">
+<H3>Acción realizada cuando el DTC se ajusta</H3></A>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Los DTC&nbsp;P0300 y P0304 son códigos de avería de tipo&nbsp;B.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Cuando el MIL parpadea, el inyector del cilindro con el fallo de encendido puede desactivarse para proteger el catalizador. En función de las condiciones que activan el código, el motor puede entrar en bucle abierto.</td></tr></table></div>
+
+
+<A NAME="ss7-2496096">
+<A HREF="#ss7-2496096">
+<H3>Condiciones para borrar el MIL/DTC</H3></A>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Los DTC&nbsp;P0300 y P0304 son códigos de avería de tipo&nbsp;B.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">El DTC debe pasar bajo las mismas condiciones que estaban presentes cuando falló el DTC.</td></tr></table></div>
+
+
+<A NAME="ss8-2496096">
+<A HREF="#ss8-2496096">
+<H3>Ayuda al diagnóstico</H3></A>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Un fallo de encendido sólo puede darse si el motor está sometido a carga o si está frío.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Un DTC por avería puede estar provocado por una vibración excesiva de fuentes que no sean el motor. Revise las siguientes fuentes posibles:</td></tr></table></div>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;</font></td><td valign="top">Una llanta o rueda que no está bien colocada o equilibrada</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;</font></td><td valign="top">Grosor variable de los rotores del freno</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;</font></td><td valign="top">Un eje impulsor no equilibrado</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;</font></td><td valign="top">Mal estado de la carretera</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;</font></td><td valign="top">Una correa o componente de accionamiento accesorio dañado; desmonte la correa y haga funcionar el motor de forma segura para evaluar </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;</font></td><td valign="top">Un anillo reluctor dañado</td></tr></table></div>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Puede que sea necesario ejecutar el procedimiento de programación de variaciones del sistema de posición del cigüeñal. Consultar <a href="92243110.es.html">Aprendizaje de la variación del sistema de posición del cigüeñal</a> .</td></tr></table></div>
+
+
+<A NAME="ss9-2496096">
+<A HREF="#ss9-2496096">
+<H3>Información de referencia</H3></A><h4>Referencia esquemática</h4><p>
+<a href="92411633.es.html">Esquema de la unidad de mando del motor</a></p>
+<h4>Referencia de vista del extremo del conector</h4><p>
+<a href="92471321.es.html">Vista del extremo del conector del componente</a></p>
+<h4>Referencia de información eléctrica</h4>
+<p><div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a href="92414706.es.html">Prueba del circuito</a> </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a href="92413364.es.html">Reparaciones de conectores</a> </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a href="92161319.es.html">Compruebe si hay estados intermitentes o conexiones deficientes</a> </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a href="92160816.es.html">Reparaciones de los cableados</a> </td></tr></table></div>
+</p>
+<h4>Referencia de tipo de DTC</h4><p>
+<a href="91803340.es.html">Definiciones del tipo de código diagnóstico de avería (DTC) de la cadena cinemática</a></p>
+<h4>Referencia de herramienta de diagnóstico</h4><p><a href="92424696.es.html">Referencias del módulo de control</a> para información de herramienta de diagnóstico</p>
+<h4>Herramientas especiales</h4>
+<p><div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Aparato de verificación de encendido HEI <em>J&nbsp;26792</em> </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Si desea informarse sobre herramientas regionales equivalentes, consultar <a href="92281448.es.html">Herramientas especiales</a> .</td></tr></table></div>
+</p>
+
+<A NAME="ss10-2496096">
+<A HREF="#ss10-2496096">
+<H3>Verificación del circuito/sistema</H3></A>
+<OL><LI TYPE="1">Verifique que no se dan otros DTC.</LI>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">⇒</td><td valign="top">Si se activa un DTC, consulte <a href="92424681.es.html">Lista de los códigos diagnósticos de avería (DTC) - Vehículo</a> .</td></tr></table></div>
+<LI TYPE="1">Con el motor a ralentí, verifique que el motor no emite ruidos extraños.</LI>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">⇒</td><td valign="top">Si se produce un ruido anormal en el motor, consulte <a href="91757952.es.html">Síntomas: Mecánica del motor</a> .</td></tr></table></div>
+<LI TYPE="1">Observe los contadores de fallos de encendido actuales con una herramienta de diagnóstico. Los contadores de averías actuales no deben estar aumentando. Fallos de encendido aleatorios que regularmente no aumentan pueden ser normales.</LI>
+<LI TYPE="1">Si el vehículo pasa la prueba de verificación del circuito / sistema, haga funcionar el vehículo según las Condiciones para reproducir el DTC. También puede hacer funcionar el vehículo en las condiciones capturadas en la lista de datos Instantánea de datos / Registros de fallos.</LI>
+</OL>
+
+<A NAME="ss11-2496096">
+<A HREF="#ss11-2496096">
+<H3>Comprobación del circuito/sistema</H3></A>
+<OL><LI TYPE="1">Compruebe que no se producen las siguientes condiciones:</LI>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">Fugas de vacío del motor</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">Presión de combustible demasiado alta o demasiado baja--Consulte <a href="92494687.es.html">Diagnosis del sistema de combustible</a> .</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">Combustible contaminado--Consulte <a href="92092997.es.html">Diagnosis de alcohol/contaminantes en el combustible</a> .</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top"> Sistema de escape restringido--Vea <a href="92246589.es.html">Escape restringido</a> .</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;⇒</td><td valign="top">Si detecta alguno de los anteriores problemas, efectúe la reparación necesaria.</td></tr></table></div>
+
+<LI TYPE="1">Con el encendido desactivado, extraiga la bobina de encendido&nbsp;T8&nbsp;del cilindro que presenta una avería, dejando el conector eléctrico conectado.</LI>
+<LI TYPE="1">Monte el aparato de verificación de encendido <em>J&nbsp;26792</em> en el fuelle de la bobina de encendido&nbsp;T8&nbsp;y la masa.</LI>
+
+<p><font color=brown><b>Nota:&nbsp;</b>Un encendido no consistente o débil se considera como falta de encendido. </font></p><LI TYPE="1">Intente arrancar el motor y observe el aparato de verificación de encendido <em>J 26792</em>. El aparato de verificación de encendido debe presentar un encendido.</LI>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">⇒</td><td valign="top">Si no hay encendido, consulte <a href="91973633.es.html">Diagnosis del sistema de encendido electrónico</a> para la diagnosis de la bobina de encendido&nbsp;T8.</td></tr></table></div>
+<LI TYPE="1">Con el encendido desactivado, extraiga la bujía del cilindro que presenta una avería. Verifique que las condiciones siguientes no se dan con la bujía de encendido:</LI>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">Gas, refrigerante o aceite agotados</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">Agrietado, desgaste, espacio de salto de chispa incorrecto</td></tr></table></div>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">⇒</td><td valign="top">Si existe un problema con la bujía, sustituya la bujía.</td></tr></table></div>
+<LI TYPE="1">Cambie la bujía que cree que funciona mal con otro cilindro que funciona correctamente.</LI>
+<LI TYPE="1">Accione el motor en las condiciones en las que se produjo el fallo de encendido. Observe los contadores de fallos de encendido actuales con una herramienta de diagnóstico. Las averías no deben producirse después del cambio de la bujía.</LI>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">⇒</td><td valign="top">Si se siguen produciendo averías, sustituya la bujía.</td></tr></table></div>
+<LI TYPE="1">Si las pruebas son normales, compruebe o revise los siguientes puntos:</LI>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">Un inyector de combustible&nbsp;Q17&nbsp;rico o pobre--Consulte <a href="92274129.es.html">Prueba de la bobina del solenoide del inyector de combustible</a> .</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">Un problema mecánico en el motor--Consulte <a href="91757952.es.html">Síntomas: Mecánica del motor</a> .</td></tr></table></div>
+
+</OL>
+
+<A NAME="ss12-2496096">
+<A HREF="#ss12-2496096">
+<H3>Instrucciones de reparación</H3></A>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<!-- <a href="MULTIREF_18852"> --><u>Sustitución de la bobina de encendido</u><!-- </a> -->&nbsp;: <a href="92493991.es.html">LE5 , LE9 o LAF</a>&nbsp;&rarr;&nbsp;<a href="92156970.es.html">LD9</a>  </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a href="92168640.es.html">Sustitución de la bujía</a>  </td></tr></table></div>
+
+
+<A NAME="ss13-2496096">
+<A HREF="#ss13-2496096">
+<H3>Verificación de la reparación</H3></A>
+<OL><LI TYPE="1">Monte todos los componentes o conectores que se hayan desconectado o sustituido durante el diagnóstico.</LI>
+<LI TYPE="1">Realice cualquier procedimiento de ajuste, programación o configuración que haga falta al desmontar o sustituir un componente.</LI>
+<LI TYPE="1">Borre los DTCs.</LI>
+<LI TYPE="1">Apague el encendido durante 60&nbsp;s.</LI>
+<LI TYPE="1">Si la reparación estaba relacionada con algún DTC, reproduzca las condiciones requeridas para activar el DTC y utilice los datos instantáneos/registros de averías, si procede, para verificar que el DTC no se vuelve a activar. Si se vuelve a activar el mismo DTC o lo hace otro DTC, consulte <a href="92424681.es.html">Lista de los códigos diagnósticos de avería (DTC) - Vehículo</a> y lleve a cabo el procedimiento de diagnóstico pertinente.</LI>
+<LI TYPE="1">Para verificar que el funcionamiento del catalizador no se ha visto afectado por el problema que activó dicho DTC, realice la verificación de la reparación para el DTC&nbsp;P0420. Consulte <a href="91967061.es.html">DTC P0420</a> .</LI>
+</OL>
+
+
+
+<TABLE align="center"><TR>
+<TD align="left">&nbsp;</TD>
+<TD align="left"></TD>
+<TD align="left">&nbsp;</TD>
+<TD></TD>
+</TR></TABLE>
+<BR><BR><TABLE width="100%"><TBODY><TR BGCOLOR="DarkSlateBlue" align="center"><TD><FONT color="white"><B>© Copyright Chevrolet Europe. All rights reserved</B></FONT></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>

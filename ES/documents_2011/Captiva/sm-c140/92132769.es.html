@@ -1,0 +1,142 @@
+<HTML>
+<head><link rel="stylesheet" type="text/css" href="si-style.css"/><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><TITLE>Información de servicio</TITLE><STYLE>
+	.ListIndentBul2Refer{margin-left : 40pt}  ..ListIndentBul2{margin-left : -20pt}
+	.SubListIndent{margin-left : -15pt}
+	.UpNo{border-top : white}  .DownNo{border-bottom : white}  ..BothNo{border-top : white; border-bottom : white}
+	.UpBold{border-top : thin double ridge}  .DownBold{border-bottom : thin double ridge}  .BothBold{border-top : thin double ridge; border-bottom : thin double ridge}
+	.ImageIndent{margin-left : 0%}  .ImageTitleIndent{margin-left : 5%}  .ParagraphIndent{margin-left : 20pt}
+	.Arial{font-family : Arial, Helvetica, sans-serif; margin-left : 10pt; margin-right : 10pt}
+</STYLE>
+<SCRIPT LANGUAGE="JavaScript">
+	function FixMenu()
+	{
+		menuTop = document.body.scrollTop + document.body.clientHeight -40;
+		menu.style.top = menuTop;
+		menu.style.width = document.body.clientWidth; 
+	}
+</SCRIPT>
+</HEAD>
+<BODY class="Arial" onLoad="FixMenu()" onScroll="FixMenu()" onResize="FixMenu()" BGCOLOR="#FFFFFF">
+<SPAN ID="menu" STYLE="position:absolute; left:0px; top:0px; width:0px">
+	<A border="0" href="92132769.es.html">
+	<IMG src="../../../../graphic-pool/Icons/Totop.gif" align="right" halign="Bottom" border="0" alt="To the top of the document"></A>
+</SPAN>
+<TABLE width="100%" BORDER="1" rules="none" cellspacing="0" cellpadding="0" style="magin-top: 5pt">
+<TBODY>
+<TR BGCOLOR="cccc99" height="15">
+<TD width="30%"><div style="padding-left: 5pt"><B><FONT face="Arial">Captiva</FONT></B></div></TD>
+<TD width="70%" align="right" colspan="8"></TD>
+</TR>
+<TR BGCOLOR="white" height="60">
+<TD width="35%" align="left">
+<TABLE>
+<TR>
+<TD width="5%" align="left">&nbsp;</TD>
+<TD width="5%" align="left"></TD>
+<TD width="5%" align="left">&nbsp;</TD>
+</TR>
+</TABLE>
+</TD>
+<TD>
+<TABLE width="65%" align="right">
+<TR>
+<TD style="font-size:10">
+	<A href="../../../GMDE_TIS_START.html" target="_top">
+	<IMG src="../../code/menu-images/home.gif" border="0" alt="GMDE Start Page">
+</A></TD>
+<TD style="font-size:10">
+	<A href="../toc_Captiva.html" target="menu"><IMG src="../../code/menu-images/static-TOC.gif" border="0" alt="Load static TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../toc_Captiva_code.html" target="code"><IMG src="../../code/menu-images/menu_folder_open.gif" border="0" alt="Load dynamic TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../../help/readme_EN.htm" target="top" class="bottom_copyright"><IMG src="../../code/menu-images/help.gif" border="0" alt="Help?"></A>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<H2>Programación del sensor indicador de presión de neumáticos</H2>
+<h4>Herramientas especiales</h4><p>Herramienta de diagnóstico de control de presión de los neumáticos EL-46079/J-46079</p>
+
+<A NAME="ss1-2132769">
+<A HREF="#ss1-2132769">
+<H3> Descripción del modo de programación</H3></A><p>Para llevar a cabo las funciones de programación del sistema de control de presión del neumático (TPM), este utiliza el cuadro del panel de instrumentos (IPC), el módulo electrónico de la carrocería (BCM), el receptor de bloqueo de la puerta de control remoto (RCDLR), el transmisor de entrada sin llave, los 4&nbsp;sensores de presión de transmisión de radiofrecuencia y el circuito de datos de serie. El procedimiento de programación del sensor debe llevarse a cabo tras cada rotación del neumático, sustitución del RCDLR o del sensor. Una vez activado el modo de programación, cada código único de identificación de los sensores podrá programarse en la memoria del RCDLR. Cuando el ID de un sensor se ha programado, el RCDLR envía un mensaje de datos de serie al BCM para que emita un pitido. Esto verifica que el sensor ha transmitido su ID y que el RCDLR lo ha recibido y programado. El RCDLR debe programar los ID de los sensores en una secuencia adecuada para determinar la ubicación correcta del sensor. El primer ID programado será el del sensor ubicado en la parte delantera izquierda, el segundo será el de la parte delantera derecha, el tercero el de la parte trasera derecha y el cuarto e de la parte trasera izquierda. Los intermitentes se iluminarán individualmente indicando la ubicación del sensor que se programará en la secuencia correcta.</p>
+<h4>Funciones del sensor mediante J-46079 </h4><p>Cada sensor tiene una bobina de baja frecuencia interna. Cuando se utiliza EL-46079/J-46079 en el modo de activación, produce una transmisión de baja frecuencia que activa el sensor. El sensor responde a la activación de baja frecuencia transmitiendo en modo de programación. Cuando el RCDLR recibe una transmisión del modo de programación mientras el TPM está en modo de programación, asignará los ID de sensores a la ubicación en el vehículo relativa al orden según el cual fueron programados.</p>
+<h4>Funciones del sensor utilizando el método de aumento/disminución de la presión</h4><p>Cada sensor tiene una prueba de medición de la presión cada 30&nbsp;segundos con el vehículo parado. Si la presión aumenta o disminuye más de 8,3&nbsp;kPa&nbsp;(1,2&nbsp;psi) desde la última medición de presión, se realizará otra medición inmediatamente para comprobar el cambio en la presión. Si ha habido un cambio en la presión, el sensor se colocará a modo de programación. Cuando el RCDLR recibe una transmisión del modo de programación mientras el TPM está en modo de programación, asignará los ID de sensores a la ubicación en el vehículo relativa al orden según el cual fueron programados.</p>
+<h4>Cancelación del modo de programación </h4><p>El modo de programación se cancelará si el encendido se ha colocado a OFF o si han pasado más de 2&nbsp;minutos y no se ha programado ningún sensor. Si el modo de programación se ha cancelado antes de la programación del primer sensor, los ID del sensor original se mantendrán. Si se cancela el modo de programación tras programarse el primer sensor, sucederá lo siguiente: </p>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Todos los ID de sensores almacenados se invalidarán en la memoria del RCDLR.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top"> Si dispone de ello, el DIC mostrará guiones en vez de la presión de los neumáticos.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Se emitirá el DTC&nbsp;C0775.</td></tr></table></div>
+
+<p>Para el correcto funcionamiento del sistema, si se dan estas condiciones, será necesaria la repetición del proceso de programación.</p>
+
+<A NAME="ss2-2132769">
+<A HREF="#ss2-2132769">
+<H3> Procedimiento de programación del TPM</H3></A>
+<p><font color=brown><b>Nota:&nbsp;</b>Si utiliza la herramienta de diagnóstico para activar el modo de programación, debe utilizar el EL-46079/J-46079 para activar los sensores. Cuando se utiliza este método de preferencia, cualquier señal del sensor aislada no afectará el procedimiento de programación. En el caso de mostrarse una información específica del sensor en la herramienta especial durante la activación pero no se emite un pitido, puede ser necesaria la rotación del vástago de válvula de la rueda a una posición distinta, debido al bloqueo de la señal del sensor por parte de otra pieza.</p><font color=brown>Si utiliza el transmisor de entrada sin llave o los botones del DIC para activar el modo de programación, se utilizará EL-46079/J-46079 o el método de aumento/disminución de la presión. Antes de seguir con este método, asegúrese de que no se está realizando otro proceso de programación de manera simultánea o que la presión de los neumáticos no se está ajustando en otro vehículo próximo con TPM. Las señales aisladas de otros vehículos provistos con la supervisión de la presión de los neumáticos que circulen cerca pueden provocar una programación inadvertida. Si el vehículo emite un pitido mientras se realiza el procedimiento de programación, lo más probable es que se haya programado un sensor aislado y que el procedimiento deba cancelarse y repetirse. Bajo estas circunstancias, es muy recomendable realizar el procedimiento de programación de TPM lejos de otros vehículos. En el caso de que la activación de un sensor en particular no cause la emisión de un pitido, puede ser necesaria la rotación del vástago de válvula de la rueda a una posición distinta, debido al bloqueo de la señal del sensor por parte de otra pieza.</font></p>
+</font></p>
+<OL>
+</ol><h4>Método preferible de activación de la programación mediante la herramienta de diagnóstico</h4><ol>
+<LI TYPE="1">Con una herramienta de diagnóstico, inicie el modo de programación del TPM. Va a emitirse un pitido doble indicando que el modo de programación se ha activado. El intermitente delantero izquierdo también se iluminará. </LI>
+<LI TYPE="1">Empezando con el neumático delantero izquierdo, active el sensor aguantando la antena del EL-46079/J-46079 hacia arriba frente al flanco del neumático que hay cerca de la llanta, en el vástago de válvula. Pulse y suelte el botón de activación y espere que se emita un pitido. Una vez se ha emitido el pitido, la información del sensor se habrá programado y el intermitente de la siguiente ubicación a programar se iluminará.</LI>
+<LI TYPE="1">Una vez se ha emitido el pitido y se ha iluminado el intermitente delantero derecho, repita el paso&nbsp;2 para los 3&nbsp;sensores en el orden siguiente:</LI>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">3.1.&nbsp;</td><td valign="top">Delantero derecho</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">3.2.&nbsp;</td><td valign="top">Trasero derecho</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">3.3.&nbsp;</td><td valign="top">Trasero izquierdo</td></tr></table></div>
+
+<LI TYPE="1">Una vez se haya programado el sensor trasero izquierdo y se haya emitido un pitido doble, el proceso de programación habrá terminado y el RCDLR saldrá del modo de programación.</LI>
+<LI TYPE="1">Con el encendido desconectado, ajuste todos los neumáticos a las presiones recomendadas. Consultar <a href="91414339.es.html">Certificación del vehículo, rótulo del neumático, antirrobo y etiqueta de ID de las piezas de servicio</a> .</LI>
+</OL>
+
+<OL>
+</ol><h4>Transmisor de entrada sin llave alternativo o método de activación de la programación del DIC</h4><ol>
+<LI TYPE="1">Con el encendido conectado, inicie el modo de programación del TPM mediante uno de los procedimientos siguientes:</LI>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">En vehículos con entrada sin llave, pulse simultáneamente los botones de bloqueo y desbloqueo de los transmisores de entrada sin llave hasta que se emita un doble pitido que indica que se ha activado el modo de programación. El intermitente delantero izquierdo también se iluminará. </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">En vehículos sin entrada sin llave, pulse y suelte el botón INFO del centro de información del conductor (DIC) hasta que aparezca el mensaje &quot;TIRE LEARN&quot; (PROGRAMACIÓN DEL NEUMÁTICO) en la pantalla del DIC. Pulse y mantenga pulsado el botón &quot;SET/RESET&quot; (INICIAR/REINICIAR) hasta que se haya emitido un pitido doble, hecho que indica que se ha activado el modo de programación. El intermitente delantero izquierdo también se iluminará. </td></tr></table></div>
+
+<LI TYPE="1">Empezando por el neumático delantero izquierdo, programe la presión de los neumáticos mediante uno de los métodos siguientes:</LI>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">Aguante la antena del EL-46079/J-46079 apuntándola hacia arriba frente al flanco del neumático que está cerca de la llanta, en el vástago de válvula. Pulse y suelte el botón de activación y espere que se emita un pitido. Una vez se ha emitido el pitido, la información del sensor se habrá programado y el intermitente de la siguiente ubicación a programar se iluminará.</td></tr></table></div>
+
+<!-- <SIO2000=2051074> -->
+
+
+
+
+
+<p><font color=red><b>Advertencia :&nbsp;</b>El sobreinflado de neumáticos puede causar daños personales o dañar los neumáticos y las ruedas. Al aumentar la presión de los neumáticos, no exceda el máximo de la presión de inflado que se indica en el flanco del neumático.</font></p>
+
+
+
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top"> Aumente/disminuya la presión de los neumáticos durante 8-10&nbsp;segundos y, a continuación, espere que se emita un pitido. El pitido puede emitirse antes o al cabo de 30&nbsp;segundos de llegar al intervalo de 8-10&nbsp;segundos de aumento/disminución de la presión. Una vez se ha emitido el pitido, la información del sensor se habrá programado y el intermitente de la siguiente ubicación a programar se iluminará.</td></tr></table></div>
+
+<LI TYPE="1">Una vez se ha emitido el pitido y se ha iluminado el intermitente delantero derecho, repita el paso&nbsp;2 para los 3&nbsp;sensores en el orden siguiente:</LI>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">3.1.&nbsp;</td><td valign="top">Delantero derecho</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">3.2.&nbsp;</td><td valign="top">Trasero derecho</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">3.3.&nbsp;</td><td valign="top">Trasero izquierdo</td></tr></table></div>
+
+<LI TYPE="1">Una vez se haya programado el sensor trasero izquierdo y se haya emitido un pitido doble, el proceso de programación habrá terminado y el RCDLR saldrá del modo de programación.</LI>
+<LI TYPE="1">Con el encendido desconectado, ajuste todos los neumáticos a las presiones recomendadas. Consultar <a href="91414339.es.html">Certificación del vehículo, rótulo del neumático, antirrobo y etiqueta de ID de las piezas de servicio</a> .</LI>
+</OL>
+
+
+
+<TABLE align="center"><TR>
+<TD align="left">&nbsp;</TD>
+<TD align="left"></TD>
+<TD align="left">&nbsp;</TD>
+<TD></TD>
+</TR></TABLE>
+<BR><BR><TABLE width="100%"><TBODY><TR BGCOLOR="DarkSlateBlue" align="center"><TD><FONT color="white"><B>© Copyright Chevrolet Europe. All rights reserved</B></FONT></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>

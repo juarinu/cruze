@@ -1,0 +1,281 @@
+<HTML>
+<head><link rel="stylesheet" type="text/css" href="si-style.css"/><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><TITLE>Información de servicio</TITLE><STYLE>
+	.ListIndentBul2Refer{margin-left : 40pt}  ..ListIndentBul2{margin-left : -20pt}
+	.SubListIndent{margin-left : -15pt}
+	.UpNo{border-top : white}  .DownNo{border-bottom : white}  ..BothNo{border-top : white; border-bottom : white}
+	.UpBold{border-top : thin double ridge}  .DownBold{border-bottom : thin double ridge}  .BothBold{border-top : thin double ridge; border-bottom : thin double ridge}
+	.ImageIndent{margin-left : 0%}  .ImageTitleIndent{margin-left : 5%}  .ParagraphIndent{margin-left : 20pt}
+	.Arial{font-family : Arial, Helvetica, sans-serif; margin-left : 10pt; margin-right : 10pt}
+</STYLE>
+<SCRIPT LANGUAGE="JavaScript">
+	function FixMenu()
+	{
+		menuTop = document.body.scrollTop + document.body.clientHeight -40;
+		menu.style.top = menuTop;
+		menu.style.width = document.body.clientWidth; 
+	}
+</SCRIPT>
+</HEAD>
+<BODY class="Arial" onLoad="FixMenu()" onScroll="FixMenu()" onResize="FixMenu()" BGCOLOR="#FFFFFF">
+<SPAN ID="menu" STYLE="position:absolute; left:0px; top:0px; width:0px">
+	<A border="0" href="91994367.es.html">
+	<IMG src="../../../../graphic-pool/Icons/Totop.gif" align="right" halign="Bottom" border="0" alt="To the top of the document"></A>
+</SPAN>
+<TABLE width="100%" BORDER="1" rules="none" cellspacing="0" cellpadding="0" style="magin-top: 5pt">
+<TBODY>
+<TR BGCOLOR="cccc99" height="15">
+<TD width="30%"><div style="padding-left: 5pt"><B><FONT face="Arial">Captiva</FONT></B></div></TD>
+<TD width="70%" align="right" colspan="8"></TD>
+</TR>
+<TR BGCOLOR="white" height="60">
+<TD width="35%" align="left">
+<TABLE>
+<TR>
+<TD width="5%" align="left">&nbsp;</TD>
+<TD width="5%" align="left"></TD>
+<TD width="5%" align="left">&nbsp;</TD>
+</TR>
+</TABLE>
+</TD>
+<TD>
+<TABLE width="65%" align="right">
+<TR>
+<TD style="font-size:10">
+	<A href="../../../GMDE_TIS_START.html" target="_top">
+	<IMG src="../../code/menu-images/home.gif" border="0" alt="GMDE Start Page">
+</A></TD>
+<TD style="font-size:10">
+	<A href="../toc_Captiva.html" target="menu"><IMG src="../../code/menu-images/static-TOC.gif" border="0" alt="Load static TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../toc_Captiva_code.html" target="code"><IMG src="../../code/menu-images/menu_folder_open.gif" border="0" alt="Load dynamic TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../../help/readme_EN.htm" target="top" class="bottom_copyright"><IMG src="../../code/menu-images/help.gif" border="0" alt="Help?"></A>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<H2>DTC B3933</H2>
+
+<A NAME="ss1-1994367">
+<A HREF="#ss1-1994367">
+<H3>Descripción de circuito</H3></A><p>El módulo de control HVAC supervisa la temperatura del evaporador a través del sensor de temperatura del evaporador. Cuando el aire es frío, la resistencia del sensor y la tensión de señal son altas. Cuando el aire es templado, la resistencia del sensor y la tensión de señal son bajas.</p>
+
+<A NAME="ss2-1994367">
+<A HREF="#ss2-1994367">
+<H3>Descripción de DTC</H3></A><p>Este procedimiento de diagnóstico incluye el siguiente DTC:</p>
+<p>DTC&nbsp;B3933 Circuito del sensor de temperatura del evaporador</p>
+
+<A NAME="ss3-1994367">
+<A HREF="#ss3-1994367">
+<H3>Condiciones para la activación de DTC</H3></A><p>El encendido se pone en ON. </p>
+
+<A NAME="ss4-1994367">
+<A HREF="#ss4-1994367">
+<H3>Condiciones para ajustar el DTC</H3></A><p>El módulo de control HVAC detecta que el circuito de señal del sensor de temperatura del evaporador es inferior a 0,09&nbsp;V (5&nbsp;vueltas) o superior a 4,90&nbsp;V (250&nbsp;vueltas).</p>
+
+<A NAME="ss5-1994367">
+<A HREF="#ss5-1994367">
+<H3>Acción realizada cuando el DTC se ajusta</H3></A>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">El segmento de desconexión del A/A se iluminará en el módulo de control HVAC.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Se desactivará el compresor del A/A.</td></tr></table></div>
+
+
+<A NAME="ss6-1994367">
+<A HREF="#ss6-1994367">
+<H3>Condiciones para el borrar el DTC</H3></A>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">El DTC será historia si el módulo de control HVAC ya no detecta una avería.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Se borrará un historial de DTC después de que hayan pasado 50&nbsp;ciclos de encendido sin fallos.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Es posible borrar el DTC con una herramienta de diagnóstico.</td></tr></table></div>
+
+
+<A NAME="ss7-1994367">
+<A HREF="#ss7-1994367">
+<H3>Descripción de prueba</H3></A><p>Los números que siguen hacen referencia a los números de los pasos de la tabla de diagnóstico.</p>
+
+<OL><A NAME="TD04">
+<LI VALUE=4>
+<p>Este paso comprueba el funcionamiento correcto del circuito en el rango de alta tensión.</p>
+</LI><A NAME="TD05">
+<LI VALUE=5>
+<p>Este paso comprueba el funcionamiento correcto del circuito en el rango de baja tensión. Si el fusible en el puente se interrumpe al efectuarse esta comprobación, el circuito de señal presenta un cortocircuito a tensión.</p>
+</LI>
+</OL><TABLE CELLSPACING="0"  WIDTH="100%" BORDER=1>
+<TR>
+<TH BGCOLOR="#C0C0C0" ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Paso</P>
+</TH><TH BGCOLOR="#C0C0C0" ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Acción</P>
+</TH><TH BGCOLOR="#C0C0C0" ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Valores</P>
+</TH><TH BGCOLOR="#C0C0C0" ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Sí</P>
+</TH><TH BGCOLOR="#C0C0C0" ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>No</P>
+</TH></TR>
+<TR>
+<TD ALIGN="left" VALIGN="top" ROWSPAN=1 COLSPAN=5><P><EM>Referencia esquemática:</EM><a href="92411652.es.html">Esquema del HVAC</a> </P>
+<P><EM>Referencia de vista del extremo del conector: </EM><a href="92471321.es.html">Vista del extremo del conector del componente</a> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S01"><P>1</P>
+</A></TD><TD ROWSPAN=1><P>¿Ha realizado la comprobación para el diagnóstico del sistema en el vehículo?</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>--</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Consultar la sección <A HREF="#S02">Paso&nbsp;2</A> </P>
+</TD><TD ALIGN="left" VALIGN="bottom" ROWSPAN=1><P>Consultar la sección <a href="92092144.es.html">Comprobación del sistema de diagnóstico - Vehículo</a> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S02"><P>2</P>
+</A></TD><TD ALIGN="left" VALIGN="top" ROWSPAN=1>
+<OL><LI TYPE="1">Instale una herramienta de diagnóstico.</LI>
+<LI TYPE="1">Ponga en marcha el encendido con el motor apagado.</LI>
+<LI TYPE="1">Con una herramienta de diagnóstico, observar el parámetro Temp. del evaporador en el panel de control de climatización, lista de datos de interrupción/cortocircuito.</LI>
+</OL>
+<P>¿Muestra la herramienta de diagnóstico que el parámetro Temp. del evaporador está dentro del rango especificado?</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>0,09-4,90&nbsp;V</P>
+</TD><TD ALIGN="left" VALIGN="bottom" ROWSPAN=1><P>Consultar la sección <A HREF="#S03">Paso&nbsp;3</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Consultar la sección <A HREF="#S04">Paso&nbsp;4</A> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S03"><P>3</P>
+</A></TD><TD ROWSPAN=1><P>Comprobar las conexiones en el panel de control de climatización y sustituir los terminales si es necesario.</P>
+<P>¿Se ha completado la reparación?</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1>&nbsp;</TD><TD ALIGN="left" VALIGN="bottom" ROWSPAN=1><P>Consultar la sección <a href="92092144.es.html">Comprobación del sistema de diagnóstico - Vehículo</a> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Consultar la sección <A HREF="#S04">Paso&nbsp;4</A> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S04"><P>
+<A HREF="#TD04">4</A>
+ </P>
+</A></TD><TD ALIGN="left" VALIGN="top" ROWSPAN=1>
+<OL><LI TYPE="1">Apague el encendido.</LI>
+<LI TYPE="1">Desconectar el sensor de temperatura del evaporador.</LI>
+<LI TYPE="1">Ponga en marcha el encendido con el motor apagado.</LI>
+<LI TYPE="1">Con una herramienta de diagnóstico, observar el parámetro Temp. del evaporador.</LI>
+</OL>
+<P>¿Es el parámetro Temp. del evaporador superior al valor especificado?</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>4,90&nbsp;V</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Consultar la sección <A HREF="#S05">Paso&nbsp;5</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Consultar la sección <A HREF="#S06">Paso&nbsp;6</A> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S05"><P>
+<A HREF="#TD05">5</A>
+ </P>
+</A></TD><TD ALIGN="left" VALIGN="top" ROWSPAN=1>
+<OL><LI TYPE="1">Apague el encendido.</LI>
+<LI TYPE="1">Conectar un cable puente con fusible de 3 A entre el circuito de señal del sensor de temperatura del evaporador y el circuito de referencia baja del sensor de temperatura del evaporador.</LI>
+<LI TYPE="1">Ponga en marcha el encendido con el motor apagado.</LI>
+<LI TYPE="1">Con una herramienta de diagnóstico, observar el parámetro Temp. del evaporador.</LI>
+</OL>
+<P>¿Es el parámetro Temp. del evaporador inferior al valor especificado?</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>0,09&nbsp;V</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Consultar la sección <A HREF="#S10">Paso&nbsp;10</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Consultar la sección <A HREF="#S07">Paso&nbsp;7</A> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S06"><P>6</P>
+</A></TD><TD ALIGN="left" VALIGN="top" ROWSPAN=1><P>Comprobar si hay cortocircuito a masa en el circuito de señal del sensor de temperatura del evaporador. Consultar <a href="92414706.es.html">Prueba del circuito</a> y <a href="92160816.es.html">Reparaciones de los cableados</a> .</P>
+<P>¿Encontró y corrigió el problema?</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>--</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Consultar la sección <A HREF="#S14">Paso&nbsp;14</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Consultar la sección <A HREF="#S11">Paso&nbsp;11</A> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S07"><P>7</P>
+</A></TD><TD ALIGN="left" VALIGN="top" ROWSPAN=1><P>Comprobar si se da alguna de las siguientes condiciones en el circuito de señal del sensor de temperatura del evaporador:</P>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Cortocircuito a tensión</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Resistencia elevada</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Un circuito abierto</td></tr></table></div>
+
+<P> Consultar <a href="92414706.es.html">Prueba del circuito</a> y <a href="92160816.es.html">Reparaciones de los cableados</a> .</P>
+<P>¿Encontró y corrigió el problema?</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>--</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Consultar la sección <A HREF="#S14">Paso&nbsp;14</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Consultar la sección <A HREF="#S08">Paso&nbsp;8</A> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S08"><P>8</P>
+</A></TD><TD ALIGN="left" VALIGN="top" ROWSPAN=1><P>Comprobar si se da alguna de las siguientes condiciones en el circuito de referencia baja del sensor de temperatura del evaporador:</P>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Resistencia elevada</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Un circuito abierto</td></tr></table></div>
+
+<P> Consultar <a href="92414706.es.html">Prueba del circuito</a> y <a href="92160816.es.html">Reparaciones de los cableados</a> .</P>
+<P>¿Encontró y corrigió el problema?</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>--</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Consultar la sección <A HREF="#S14">Paso&nbsp;14</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Consultar la sección <A HREF="#S09">Paso&nbsp;9</A> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S09"><P>9</P>
+</A></TD><TD ROWSPAN=1><P>Comprobar si existe un cortocircuito a tensión en los siguientes circuitos de señal.</P>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Sensor de temperatura del aire del habitáculo</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Sensor de temperatura del aire ambiente</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Sensor de carga solar izquierdo</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Sensor de carga solar derecho</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Sensor de luz ambiente</td></tr></table></div>
+
+<P>Consultar <a href="92414706.es.html">Prueba del circuito</a> y <a href="92160816.es.html">Reparaciones de los cableados</a> .</P>
+<P>¿Encontró y corrigió el problema?</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>--</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Consultar la sección <A HREF="#S14">Paso&nbsp;14</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Consultar la sección <A HREF="#S11">Paso&nbsp;11</A> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S10"><P>10</P>
+</A></TD><TD ALIGN="left" VALIGN="top" ROWSPAN=1><P>Revisar el conector del mazo de cables del sensor de temperatura del evaporador en busca de conexiones deficientes. Consultar <a href="92161319.es.html">Compruebe si hay estados intermitentes o conexiones deficientes</a> y <a href="92413364.es.html">Reparaciones de conectores</a> .</P>
+<P>¿Encontró y corrigió el problema?</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>--</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Consultar la sección <A HREF="#S14">Paso&nbsp;14</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Consultar la sección <A HREF="#S12">Paso&nbsp;12</A> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S11"><P>11</P>
+</A></TD><TD ALIGN="left" VALIGN="top" ROWSPAN=1><P>Revisar el conector del mazo de cables del módulo de control HVAC en busca de conexiones deficientes. Consultar <a href="92161319.es.html">Compruebe si hay estados intermitentes o conexiones deficientes</a> y <a href="92413364.es.html">Reparaciones de conectores</a> .</P>
+<P>¿Encontró y corrigió el problema?</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>--</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Consultar la sección <A HREF="#S14">Paso&nbsp;14</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Consultar la sección <A HREF="#S13">Paso&nbsp;13</A> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S12"><P>12</P>
+</A></TD><TD ALIGN="left" VALIGN="top" ROWSPAN=1><P>Sustituir el sensor de temperatura del evaporador. Consultar <a href="92235884.es.html">Sustitución del núcleo del evaporador del aire acondicionado</a> .</P>
+<P>¿Ha completado la sustitución?</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>--</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Consultar la sección <A HREF="#S14">Paso&nbsp;14</A> </P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>--</P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S13"><P>13</P>
+</A></TD><TD ROWSPAN=1><P>Sustituir el módulo de control HVAC. Consultar <a href="92235697.es.html">Desmontaje y montaje del conjunto del módulo del aire acondicionado y calefactor</a> .</P>
+<P>¿Ha completado la sustitución?</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>--</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Consultar la sección <A HREF="#S14">Paso&nbsp;14</A> </P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>--</P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S14"><P>14</P>
+</A></TD><TD ALIGN="left" VALIGN="top" ROWSPAN=1>
+<OL><LI TYPE="1">Emplear la herramienta de diagnóstico para borrar los DTC.</LI>
+<LI TYPE="1">Haga funcionar el vehículo en las condiciones para la reproducción del DTC.</LI>
+</OL>
+<P>¿Se restauran los DTC?</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>--</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Consultar la sección <A HREF="#S02">Paso&nbsp;2</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Estado del circuito: correcto</P>
+</TD></TR>
+</TABLE>
+
+
+<TABLE align="center"><TR>
+<TD align="left">&nbsp;</TD>
+<TD align="left"></TD>
+<TD align="left">&nbsp;</TD>
+<TD></TD>
+</TR></TABLE>
+<BR><BR><TABLE width="100%"><TBODY><TR BGCOLOR="DarkSlateBlue" align="center"><TD><FONT color="white"><B>© Copyright Chevrolet Europe. All rights reserved</B></FONT></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>
