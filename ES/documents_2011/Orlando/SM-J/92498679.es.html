@@ -1,0 +1,86 @@
+<HTML>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><TITLE>Información de servicio</TITLE><STYLE>
+	.ListIndentBul2Refer{margin-left : 40pt}  ..ListIndentBul2{margin-left : -20pt}
+	.SubListIndent{margin-left : -15pt}
+	.UpNo{border-top : white}  .DownNo{border-bottom : white}  ..BothNo{border-top : white; border-bottom : white}
+	.UpBold{border-top : thin double ridge}  .DownBold{border-bottom : thin double ridge}  .BothBold{border-top : thin double ridge; border-bottom : thin double ridge}
+	.ImageIndent{margin-left : 0%}  .ImageTitleIndent{margin-left : 5%}  .ParagraphIndent{margin-left : 20pt}
+	.Arial{font-family : Arial, Helvetica, sans-serif; margin-left : 10pt; margin-right : 10pt}
+</STYLE>
+<SCRIPT LANGUAGE="JavaScript">
+	function FixMenu()
+	{
+		menuTop = document.body.scrollTop + document.body.clientHeight -40;
+		menu.style.top = menuTop;
+		menu.style.width = document.body.clientWidth; 
+	}
+</SCRIPT>
+</HEAD>
+<BODY class="Arial" onLoad="FixMenu()" onScroll="FixMenu()" onResize="FixMenu()" BGCOLOR="#FFFFFF">
+<SPAN ID="menu" STYLE="position:absolute; left:0px; top:0px; width:0px">
+	<A border="0" href="92498679.es.html">
+	<IMG src="../../../../graphic-pool/Icons/Totop.gif" align="right" halign="Bottom" border="0" alt="Volver arriba"></A>
+</SPAN>
+<TABLE CELLSPACING="0"  width="100%" BORDER="1" rules="none" cellspacing="0" cellpadding="0" style="magin-top: 5pt">
+<TBODY>
+<TR BGCOLOR="cccc99" height="15">
+<TD width="30%"><div style="padding-left: 5pt"><B><FONT face="Arial">Orlando</FONT></B></div></TD>
+<TD width="70%" align="right" colspan="8"></TD>
+</TR>
+<TR BGCOLOR="white" height="60">
+<TD width="35%" align="left">
+<TABLE CELLSPACING="0" >
+<TR>
+<TD width="5%" align="left">&nbsp;</TD>
+<TD width="5%" align="left"></TD>
+<TD width="5%" align="left">&nbsp;</TD>
+</TR>
+</TABLE>
+</TD>
+<TD>
+<TABLE CELLSPACING="0"  width="65%" align="right">
+<TR>
+<TD style="font-size:10">
+	<A href="../../../GMDE_TIS_START.html" target="_top">
+	<IMG src="../../code/menu-images/home.gif" border="0" alt="Página de inicio de GMDE">
+</A></TD>
+<TD style="font-size:10">
+	<A href="../toc_Orlando.html" target="menu"><IMG src="../../code/menu-images/static-TOC.gif" border="0" alt="Cargar TOC estática"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../toc_Orlando_code.html" target="code"><IMG src="../../code/menu-images/menu_folder_open.gif" border="0" alt="Carga TOC dinámica"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../../help/readme_EN.htm" target="top" class="bottom_copyright"><IMG src="../../code/menu-images/help.gif" border="0" alt="¿Ayuda?"></A>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+<H2>Descripción y funcionamiento del monitor de presión de neumáticos</H2>
+
+
+<A NAME="ss1-2498679">
+<A HREF="#ss1-2498679">
+<H3>Funcionamiento del sistema de control de la presión de los neumáticos</H3></A><p>El sistema de supervisión de la presión de los neumáticos controla la presión de aire en todos los neumáticos y proporciona información al conductor acerca de si algún neumático está ligeramente desinflado o avisa al conductor cuando un neumático está notablemente desinflado. El sistema de supervisión de la presión de los neumáticos también proporciona información al conductor acerca de si algún neumático está demasiado inflado o si hay mucha diferencia entre las presiones de aire de los neumáticos derecho e izquierdo según el eje. Según los valores umbral adaptables, el sistema de supervisión de la presión de los neumáticos puede compensar la presión de aire modificada en distintas condiciones de conducción, por ejemplo, más presión de aire debido a una carga elevada, velocidad elevada, etc. El sistema de supervisión de la presión de los neumáticos también permite al conductor visualizar la presión de cada neumático y su ubicación en la pantalla del centro de información del conductor. El sistema utiliza cuatro sensores de neumático, un receptor de función a distancia y el módulo electrónico de la carrocería (BCM). Tras cualquier rotación del neumático o sustitución de una pieza, el sistema de supervisión de la presión de los neumáticos debe volver a programarse. Consultar <a HREF="92499742.es.html">Programación del sensor indicador de presión de neumáticos</a> .</p>
+<p>Si ninguna de las ruedas tiene sensor de presión de neumáticos, por ejemplo si se instalan neumáticos de invierno, el sistema reconocerá el cambio, se colocará en modo invierno y no mostrará una avería.</p>
+<h4>Sensores de supervisión de la presión de los neumáticos</h4><p>El sensor de supervisión de la presión de los neumáticos, uno en cada conjunto de la rueda/neumático, envía el ID del sensor, presión del neumático y el nivel bajo de la batería a través de la comunicación de frecuencia de radio. Cuando el vehículo está parado, el acelerómetro interno de los sensores está inactivo, lo que pone los sensores en reposo. En este estado, los sensores dan una muestra de la presión de los neumáticos una vez cada 30&nbsp;s y no transmiten en absoluto si no cambia la presión de los neumáticos. Según aumenta la velocidad del vehículo por encima de 20&nbsp;km/h&nbsp;(15&nbsp;MPH), la fuerza centrífuga activa el acelerómetro interno de los sensores, lo que hace que éstos pasen a modo de movimiento. En este modo, los sensores comprueban la presión de los neumáticos y la temperatura cada 10&nbsp;seg. y la transmiten con el vehículo en movimiento cada 60&nbsp;seg. Si se detecta un cambio de 8,3&nbsp;kPa&nbsp;(1,2&nbsp;PSI) en la presión, el sensor lo comunicará inmediatamente.</p>
+<p>Si la alimentación se ha desconectado del BCM o si se ha desconectado la batería del vehículo, se conservarán todas las ID del sensor de presión de neumáticos, pero se perderá toda la información de presión de neumáticos. Bajo estas circunstancias, el BCM no puede asumir que las presiones de neumáticos se mantuvieran durante un periodo desconocido de tiempo. Si está equipado, el centro de información del conductor mostrará todo rayas y la herramienta de diagnóstico indicará un valor de presión de neumáticos por defecto de 1&nbsp;020&nbsp;kPa&nbsp;(148&nbsp;PSI) para cada neumático. Si lleva el vehículo a más de 20&nbsp;km/h&nbsp;(15&nbsp;mph) durante al menos 2&nbsp;min. se activarán los sensores, haciendo que el centro de información del conductor muestre las presiones actuales de los neumáticos.</p>
+<p>El BCM tiene la capacidad de detectar averías dentro del sistema del monitor de presión de neumáticos. Si el suceso fija un DTC, el icono del indicador del monitor de presión de neumáticos del cuadro de instrumentos parpadeará durante 1&nbsp;min. y luego permanecerá iluminado después de encenderse el encendido y completarse la comprobación de las bombillas del cuadro de instrumentos. Cualquier avería detectada hará que el centro de información del conductor muestre un mensaje de servicio del sistema del monitor de neumáticos. </p>
+
+
+
+
+<TABLE CELLSPACING="0"  align="center"><TR>
+<TD align="left">&nbsp;</TD>
+<TD align="left"></TD>
+<TD align="left">&nbsp;</TD>
+<TD></TD>
+</TR></TABLE>
+<BR><BR><TABLE CELLSPACING="0"  width="100%"><TBODY><TR BGCOLOR="DarkSlateBlue" align="center"><TD><FONT color="white"><B>© Copyright Chevrolet. All rights reserved</B></FONT></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>

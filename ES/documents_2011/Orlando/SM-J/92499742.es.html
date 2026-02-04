@@ -1,0 +1,148 @@
+<HTML>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><TITLE>Información de servicio</TITLE><STYLE>
+	.ListIndentBul2Refer{margin-left : 40pt}  ..ListIndentBul2{margin-left : -20pt}
+	.SubListIndent{margin-left : -15pt}
+	.UpNo{border-top : white}  .DownNo{border-bottom : white}  ..BothNo{border-top : white; border-bottom : white}
+	.UpBold{border-top : thin double ridge}  .DownBold{border-bottom : thin double ridge}  .BothBold{border-top : thin double ridge; border-bottom : thin double ridge}
+	.ImageIndent{margin-left : 0%}  .ImageTitleIndent{margin-left : 5%}  .ParagraphIndent{margin-left : 20pt}
+	.Arial{font-family : Arial, Helvetica, sans-serif; margin-left : 10pt; margin-right : 10pt}
+</STYLE>
+<SCRIPT LANGUAGE="JavaScript">
+	function FixMenu()
+	{
+		menuTop = document.body.scrollTop + document.body.clientHeight -40;
+		menu.style.top = menuTop;
+		menu.style.width = document.body.clientWidth; 
+	}
+</SCRIPT>
+</HEAD>
+<BODY class="Arial" onLoad="FixMenu()" onScroll="FixMenu()" onResize="FixMenu()" BGCOLOR="#FFFFFF">
+<SPAN ID="menu" STYLE="position:absolute; left:0px; top:0px; width:0px">
+	<A border="0" href="92499742.es.html">
+	<IMG src="../../../../graphic-pool/Icons/Totop.gif" align="right" halign="Bottom" border="0" alt="Volver arriba"></A>
+</SPAN>
+<TABLE CELLSPACING="0"  width="100%" BORDER="1" rules="none" cellspacing="0" cellpadding="0" style="magin-top: 5pt">
+<TBODY>
+<TR BGCOLOR="cccc99" height="15">
+<TD width="30%"><div style="padding-left: 5pt"><B><FONT face="Arial">Orlando</FONT></B></div></TD>
+<TD width="70%" align="right" colspan="8"></TD>
+</TR>
+<TR BGCOLOR="white" height="60">
+<TD width="35%" align="left">
+<TABLE CELLSPACING="0" >
+<TR>
+<TD width="5%" align="left">&nbsp;</TD>
+<TD width="5%" align="left"></TD>
+<TD width="5%" align="left">&nbsp;</TD>
+</TR>
+</TABLE>
+</TD>
+<TD>
+<TABLE CELLSPACING="0"  width="65%" align="right">
+<TR>
+<TD style="font-size:10">
+	<A href="../../../GMDE_TIS_START.html" target="_top">
+	<IMG src="../../code/menu-images/home.gif" border="0" alt="Página de inicio de GMDE">
+</A></TD>
+<TD style="font-size:10">
+	<A href="../toc_Orlando.html" target="menu"><IMG src="../../code/menu-images/static-TOC.gif" border="0" alt="Cargar TOC estática"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../toc_Orlando_code.html" target="code"><IMG src="../../code/menu-images/menu_folder_open.gif" border="0" alt="Carga TOC dinámica"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../../help/readme_EN.htm" target="top" class="bottom_copyright"><IMG src="../../code/menu-images/help.gif" border="0" alt="¿Ayuda?"></A>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+<H2>Programación del sensor indicador de presión de neumáticos</H2>
+
+<h4>Herramientas especiales</h4><p>Herramienta de diagnóstico de supervisión de la presión de los neumáticos<em>EL&nbsp;46079 </em> </p>
+
+<A NAME="ss1-2499742">
+<A HREF="#ss1-2499742">
+<H3>Descripción del modo de programación</H3></A>
+<p><font color=brown><b>Nota:&nbsp;</b>Al activar el modo de programación, la palanca de marchas del cambio automático debe estar en la posición de estacionamiento. Con un cambio manual, el interruptor/palanca del freno de estacionamiento debe estar en posición de estacionamiento.</font></p><p>El sistema del supervisión de la presión de los neumáticos utiliza </p>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">4 sensores de supervisión de la presión de los neumáticos</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Actuador de función a distancia</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Módulo electrónico de la carrocería (BCM)</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Centro de información del conductor</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Cuadro de instrumentos </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Circuito de datos de serie</td></tr></table></div>
+
+<p>para realizar las funciones del modo de programación de la supervisión de presión de los neumáticos. El procedimiento de programación del sensor debe realizarse tras cada rotación del neumático, sustitución del BCM o sustitución del sensor. Una vez activado el modo de programación, cada uno de los códigos de identificación únicos de los sensores pueden programarse en la memoria del BCM. Cuando se ha programado un ID del sensor, el BCM emite un pitido y activa todos los intermitentes durante 3 segundos. Esto comprueba que el sensor ha transmitido su ID y que el BCM lo ha recibido y lo ha programado. El BCM debe programar los ID del sensor en la secuencia correcta para determinar la ubicación correcta del sensor. El primer ID programado será el del sensor ubicado en la parte delantera izquierda, el segundo será el de la parte delantera derecha, el tercero el de la parte trasera derecha y el cuarto e de la parte trasera izquierda. Los intermitentes se iluminarán individualmente indicando la ubicación del sensor que se programará en la secuencia correcta.</p>
+<h4>Funciones del sensor mediante EL&nbsp;46079 </h4><p>Cada sensor tiene una bobina de baja frecuencia interna. Cuando se utiliza la herramienta <em>EL&nbsp;46079</em> en el modo de activación, produce una transmisión de baja frecuencia que activa el sensor. El sensor responde a la activación de baja frecuencia transmitiendo en modo de programación. Cuando el BCM recibe una transmisión del modo de programación mientras la supervisión de presión de los neumáticos está en modo de programación, asignará los ID de sensores a la ubicación en el vehículo relativa al orden según el cual fueron programados. </p>
+<h4>Funciones del sensor utilizando el método de aumento/disminución de la presión</h4><p>Cada sensor tiene una prueba de medición de la presión cada 30 segundos con el vehículo parado. Si la presión aumenta o disminuye más de 8,3&nbsp;kPa (1,2&nbsp;PSI) desde la última transmisión de presión, se realizará otra medición inmediatamente para comprobar el cambio en la presión. Si ha habido un cambio en la presión, el sensor se colocará a modo de programación. Cuando el BCM recibe una transmisión del modo de programación mientras la supervisión de la presión de los neumáticos está en modo de programación, asignará esos ID de sensores a la ubicación en el vehículo relativa al orden según el cual fueron programados.</p>
+<h4>Cancelación del modo de programación </h4><p>El modo de programación se cancelará si el encendido se ha colocado a OFF o si han pasado más de 2 minutos y no se ha programado ningún sensor. Si el modo de programación se ha cancelado antes de la programación del primer sensor, los ID del sensor original se mantendrá. Si se cancela el modo de programación tras programarse el primer sensor, sucederá lo siguiente: </p>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Todos los ID de sensores almacenados se invalidarán en la memoria del BCM.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Si dispone de ello, el centro de información del conductor mostrará guiones en vez de la presión de los neumáticos.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Se emitirá el DTC C0775 si no se han ajustado los ID del sensor previo.</td></tr></table></div>
+
+<p>Para el correcto funcionamiento del sistema, si se dan estas condiciones, será necesaria la repetición del proceso de programación.</p>
+<h4>Procedimiento de programación del monitor de presión de inflado de los neumáticos </h4>
+<p><font color=brown><b>Nota:&nbsp;</b>Si utiliza la herramienta de diagnóstico para activar el modo de programación, debe utilizar el EL&nbsp;46079 para activar los sensores. Cuando se utiliza este método de preferencia, cualquier señal del sensor aislada no afectará el procedimiento de programación. En el caso de mostrarse una información específica de los sensores en la herramienta especial durante la activación pero sin emitirse un pitido, puede ser necesaria la rotación del vástago de válvula de la rueda a una posición distinta, debido al bloqueo de la señal del sensor por parte de otra pieza. </font></p><p>Si utiliza el transmisor de entrada sin llave o los botones del centro de información del conductor para activar el modo de programación, se utilizará la herramienta <em>EL&nbsp;46079</em> o el método de aumento/disminución de la presión. Antes de seguir con este método, asegúrese de que no se está realizando otro proceso de programación de manera simultánea o que la presión de los neumáticos no se está ajustando en otro vehículo próximo con supervisión de la presión de los neumáticos. Las señales aisladas de otros vehículos provistos con la supervisión de la presión de los neumáticos que circulen cerca pueden provocar una programación inadvertida. Si el vehículo emite un pitido mientras se realiza el procedimiento de programación, lo más probable es que se haya programado un sensor aislado y que el procedimiento deba cancelarse y repetirse. Bajo estas circunstancias, es muy recomendable realizar el procedimiento de programación de la supervisión de la presión de los neumáticos lejos de otros vehículos. En el caso de que la activación de un sensor no provoque la emisión de un pitido, puede ser necesaria la rotación del vástago de válvula de la rueda a una posición distinta, debido al bloqueo de la señal del sensor por parte de otra pieza. </p>
+
+<OL>
+</ol><h4>Método preferible de activación de la programación mediante la herramienta de diagnóstico</h4><ol>
+<LI TYPE="1">Mediante una herramienta de diagnóstico, inicie el modo de programación de supervisión de la presión de los neumáticos. Va a emitirse un pitido doble y, a la vez, se van a encender los intermitentes, indicando que el modo de programación se ha activado. Sólo el intermitente delantero izquierdo se iluminará.</LI>
+<LI TYPE="1">Empezando con el neumático delantero izquierdo, active el sensor aguantando la antena del mismo hacia arriba frente al flanco del neumático que hay cerca de la llanta, en el vástago de válvula. Pulse y suelte el botón de activación y espere que se emita un pitido. Una vez se hayan activado los intermitentes durante 3 segundos y se haya emitido un pitido, se programa la información del sensor y, a continuación, se iluminará el intermitente de la siguiente ubicación que debe programarse.</LI>
+<LI TYPE="1">Una vez se ha emitido el pitido y se ha iluminado el intermitente de la siguiente ubicación a programar, repita el paso 2 para los 3&nbsp;sensores en el orden siguiente:</LI>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">3.1.&nbsp;</td><td valign="top">Delantero derecho </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">3.2.&nbsp;</td><td valign="top">Trasero derecho </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">3.3.&nbsp;</td><td valign="top">Trasero izquierdo</td></tr></table></div>
+
+<LI TYPE="1">Una vez programado el sensor trasero izquierdo, los intermitentes se han activado durante 3 segundos y se ha emitido un pitido doble, el proceso de programación se habrá terminado y el BCM saldrá del modo de programación. </LI>
+<LI TYPE="1">Con el encendido desconectado, ajuste todos los neumáticos a las presiones recomendadas utilizando un dispositivo de medición fiable. Consultar <a HREF="92521892.es.html">Certificación del vehículo, rótulo del neumático, antirrobo y etiqueta de ID de las piezas de servicio</a> .</LI>
+</OL>
+
+<OL>
+</ol><h4>Método alternativo de activación de programación mediante el centro de información del conductor</h4><ol>
+<LI TYPE="1">Con el encendido conectado, pulse y suelte alternativamente el botón INFO del centro de información del conductor en el conmutador de la columna de dirección y pulse el botón del cuentakilómetros (dependiendo del nivel del centro de información del conductor) hasta que aparezca el mensaje &quot;TIRE LEARN&quot; (PROGRAMACIÓN DEL NEUMÁTICO) en la pantalla del centro de información del conductor. Pulse y mantenga pulsado el botón INICIAR/REINICIAR hasta que los intermitentes se hayan activado durante 3 segundos y se haya emitido un pitido doble, hecho que indica que se ha activado el modo de programación. El intermitente delantero izquierdo se iluminará.</LI>
+<LI TYPE="1">Empezando por el neumático delantero izquierdo, programe la presión de los neumáticos mediante uno de los métodos siguientes: </LI>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">Aguante la antena de la herramienta <em>EL&nbsp;46079</em> apuntándola hacia arriba frente al flanco del neumático que está cerca de la llanta, en el vástago de válvula. Pulse y suelte el botón de activación y espere que se emita un pitido. Una vez se hayan activado los intermitentes durante 3 segundos y se haya emitido un solo pitido, se programa la información del sensor y, a continuación, se iluminará el intermitente de la siguiente ubicación que debe programarse.</td></tr></table></div>
+
+
+
+
+
+
+
+<p><font color=red><b>Advertencia :&nbsp;</b>El sobreinflado de neumáticos puede causar daños personales o dañar los neumáticos y las ruedas. Al aumentar la presión de los neumáticos, no exceda el máximo de la presión de inflado que se indica en el flanco del neumático.</font></p>
+
+
+
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">Aumente/disminuya la presión de los neumáticos más de 8,3&nbsp;kPa (1,2&nbsp;PSI) y, a continuación, espere que se emita un pitido. El pitido puede emitirse antes o al cabo de 30 segundos del aumento/disminución de la presión. Una vez se haya emitido, la información del sensor se programará y el intermitente de la siguiente ubicación a programar se iluminará.</td></tr></table></div>
+
+<LI TYPE="1">Una vez se ha emitido el pitido y se ilumine el intermitente de la siguiente ubicación a programar, repita el paso 2 para los 3 sensores en el orden siguiente: </LI>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">3.1.&nbsp;</td><td valign="top">Delantero derecho </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">3.2.&nbsp;</td><td valign="top">Trasero derecho </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">3.3.&nbsp;</td><td valign="top">Trasero izquierdo</td></tr></table></div>
+
+<LI TYPE="1">Una vez programado el sensor trasero izquierdo, los intermitentes se han activado durante 3 segundos y se ha emitido un pitido doble, el proceso de programación se habrá terminado y el BCM saldrá del modo de programación. </LI>
+<LI TYPE="1">Con el encendido desconectado, ajuste todos los neumáticos a las presiones recomendadas mediante un manómetro de neumáticos manual preciso. Consultar <a HREF="92521892.es.html">Certificación del vehículo, rótulo del neumático, antirrobo y etiqueta de ID de las piezas de servicio</a> .</LI>
+</OL>
+
+
+
+
+<TABLE CELLSPACING="0"  align="center"><TR>
+<TD align="left">&nbsp;</TD>
+<TD align="left"></TD>
+<TD align="left">&nbsp;</TD>
+<TD></TD>
+</TR></TABLE>
+<BR><BR><TABLE CELLSPACING="0"  width="100%"><TBODY><TR BGCOLOR="DarkSlateBlue" align="center"><TD><FONT color="white"><B>© Copyright Chevrolet. All rights reserved</B></FONT></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>

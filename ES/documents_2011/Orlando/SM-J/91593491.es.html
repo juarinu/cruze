@@ -1,0 +1,219 @@
+<HTML>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><TITLE>Información de servicio</TITLE><STYLE>
+	.ListIndentBul2Refer{margin-left : 40pt}  ..ListIndentBul2{margin-left : -20pt}
+	.SubListIndent{margin-left : -15pt}
+	.UpNo{border-top : white}  .DownNo{border-bottom : white}  ..BothNo{border-top : white; border-bottom : white}
+	.UpBold{border-top : thin double ridge}  .DownBold{border-bottom : thin double ridge}  .BothBold{border-top : thin double ridge; border-bottom : thin double ridge}
+	.ImageIndent{margin-left : 0%}  .ImageTitleIndent{margin-left : 5%}  .ParagraphIndent{margin-left : 20pt}
+	.Arial{font-family : Arial, Helvetica, sans-serif; margin-left : 10pt; margin-right : 10pt}
+</STYLE>
+<SCRIPT LANGUAGE="JavaScript">
+	function FixMenu()
+	{
+		menuTop = document.body.scrollTop + document.body.clientHeight -40;
+		menu.style.top = menuTop;
+		menu.style.width = document.body.clientWidth; 
+	}
+</SCRIPT>
+</HEAD>
+<BODY class="Arial" onLoad="FixMenu()" onScroll="FixMenu()" onResize="FixMenu()" BGCOLOR="#FFFFFF">
+<SPAN ID="menu" STYLE="position:absolute; left:0px; top:0px; width:0px">
+	<A border="0" href="91593491.es.html">
+	<IMG src="../../../../graphic-pool/Icons/Totop.gif" align="right" halign="Bottom" border="0" alt="Volver arriba"></A>
+</SPAN>
+<TABLE CELLSPACING="0"  width="100%" BORDER="1" rules="none" cellspacing="0" cellpadding="0" style="magin-top: 5pt">
+<TBODY>
+<TR BGCOLOR="cccc99" height="15">
+<TD width="30%"><div style="padding-left: 5pt"><B><FONT face="Arial">Orlando</FONT></B></div></TD>
+<TD width="70%" align="right" colspan="8"></TD>
+</TR>
+<TR BGCOLOR="white" height="60">
+<TD width="35%" align="left">
+<TABLE CELLSPACING="0" >
+<TR>
+<TD width="5%" align="left">&nbsp;</TD>
+<TD width="5%" align="left"></TD>
+<TD width="5%" align="left">&nbsp;</TD>
+</TR>
+</TABLE>
+</TD>
+<TD>
+<TABLE CELLSPACING="0"  width="65%" align="right">
+<TR>
+<TD style="font-size:10">
+	<A href="../../../GMDE_TIS_START.html" target="_top">
+	<IMG src="../../code/menu-images/home.gif" border="0" alt="Página de inicio de GMDE">
+</A></TD>
+<TD style="font-size:10">
+	<A href="../toc_Orlando.html" target="menu"><IMG src="../../code/menu-images/static-TOC.gif" border="0" alt="Cargar TOC estática"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../toc_Orlando_code.html" target="code"><IMG src="../../code/menu-images/menu_folder_open.gif" border="0" alt="Carga TOC dinámica"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../../help/readme_EN.htm" target="top" class="bottom_copyright"><IMG src="../../code/menu-images/help.gif" border="0" alt="¿Ayuda?"></A>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+<H2>Descripción y funcionamiento del sistema de derrame de carga</H2>
+
+
+<A NAME="ss1-1593491">
+<A HREF="#ss1-1593491">
+<H3>Gestión de potencia eléctrica</H3></A><p>La gestión de potencia eléctrica se utiliza para supervisar y controlar el sistema de carga y alertar al conductor de posibles problemas dentro del sistema de carga. El sistema de gestión de potencia eléctrica hace el uso más eficaz de la salida del generador, mejora el estado de carga de la batería, prolonga la vida útil de la batería y gestiona las cargas eléctricas del sistema.</p>
+<p>La operación de derrame de carga es un medio de reducir cargas eléctricas durante un estado de baja tensión o de baja carga de la batería. </p>
+<p>La operación de arranque en ralentí es un medio de mejorar el rendimiento del generador durante un estado de baja tensión o de baja carga de la batería. </p>
+<p>Todas las funciones de gestión de la potencia eléctrica, tanto el derrame de carga como el arranque en ralentí, son discretas. Nunca hay activa más de una función al mismo tiempo. El arranque en ralentí se activa en etapas incrementales, el arranque en ralentí&nbsp;1 debe estar activo antes de que esté activo el arranque en ralentí&nbsp;2. A continuación, se destacan los criterios utilizados por el módulo electrónico de la carrocería (BCM) para regular la gestión de la potencia eléctrica:</p>
+<TABLE CELLSPACING="0"  WIDTH="100%" BORDER=1>
+<TR>
+<TH BGCOLOR="#C0C0C0" ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Función</P>
+</TH><TH BGCOLOR="#C0C0C0" ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Cálculo de temperatura de batería</P>
+</TH><TH BGCOLOR="#C0C0C0" ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Cálculo de voltaje de batería</P>
+</TH><TH BGCOLOR="#C0C0C0" ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Cálculo de amperios-hora</P>
+</TH><TH BGCOLOR="#C0C0C0" ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Acción realizada</P>
+</TH></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>Inicio arranque en ralentí 1</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>Menos de&nbsp;-15°C (5°F)</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>Menos de&nbsp;13&nbsp;V</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>--</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>Solicitado arranque en ralentí de primer nivel</P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>Inicio arranque en ralentí 1</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>--</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>--</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>La batería tiene una pérdida neta superior a 0,6&nbsp;AH</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>Solicitado arranque en ralentí de primer nivel</P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>Inicio arranque en ralentí 1</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>--</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>Menos de 10,9&nbsp;V</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>--</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>Solicitado arranque en ralentí de primer nivel</P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>Fin arranque en ralentí 1</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>Más de&nbsp;-15°C (5°F)</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>Más de -12&nbsp;V</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>La batería tiene una pérdida neta inferior a 0,2&nbsp;AH</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>Solicitud de arranque en ralentí de primer nivel cancelada</P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>Inicio de derrame de carga 1</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>--</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>--</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>La batería tiene una pérdida neta de 4&nbsp;AH</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>Descongelación trasera, espejos calentados, asientos calentados al 20% de su ciclo</P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>Inicio de derrame de carga 1</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>--</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>Menos de 10,9&nbsp;V</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>--</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>Descongelación trasera, espejos calentados, asientos calentados al 20% de su ciclo</P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>Fin de derrame de carga 1</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>--</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>Más de&nbsp;12&nbsp;V</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>La batería tiene una pérdida neta inferior a 2&nbsp;AH</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>Borrar derrame de carga 1</P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>Inicio arranque en ralentí 2</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>--</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>--</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>La batería tiene una pérdida neta superior a 1,6&nbsp;AH</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>Solicitado arranque en ralentí de segundo nivel</P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>Inicio arranque en ralentí 2</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>--</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>Menos de 10,9&nbsp;V</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>--</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>Solicitado arranque en ralentí de segundo nivel</P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>Fin arranque en ralentí 2</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>--</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>Más de&nbsp;12&nbsp;V</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>La batería tiene una pérdida neta inferior a 0,8&nbsp;AH</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>Solicitud de arranque en ralentí de segundo nivel cancelada</P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>Inicio de arranque en ralentí 3</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>--</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>--</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>La batería tiene una pérdida neta de 10,0&nbsp;AH</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>Solicitado arranque en ralentí de tercer nivel</P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>Inicio de arranque en ralentí 3</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>--</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>Menos de 10,9&nbsp;V</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>--</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>Solicitado arranque en ralentí de tercer nivel</P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>Fin de arranque en ralentí 3</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>--</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>Más de&nbsp;12&nbsp;V</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>La batería tiene una pérdida neta inferior a 6,0&nbsp;AH</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>Solicitud de arranque en ralentí de tercer nivel cancelada</P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>Inicio de derrame de carga 2</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>--</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>Menos de 10,9&nbsp;V</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>La batería tiene una pérdida neta superior a 12&nbsp;AH</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>Descongelación trasera, espejos calentados, asientos calentados al 50% de su ciclo. Se visualizará el mensaje &quot;BATTERY SAVER ACTIVE&quot; (Ahorrador de batería activo) en el DIC</P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>Inicio de derrame de carga 2</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>--</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>Menos de 10,9&nbsp;V</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>--</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>Descongelación trasera, espejos calentados, asientos calentados al 50% de su ciclo. Se visualizará el mensaje &quot;BATTERY SAVER ACTIVE&quot; (Ahorrador de batería activo) en el DIC</P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>Fin de derrame de carga 2</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>--</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>Más de 12,6&nbsp;V</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>La batería tiene una pérdida neta inferior a 10,5&nbsp;AH</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>Borrar derrame de carga 2</P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>Inicio de derrame de carga 3</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>--</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>Menos de 11,9&nbsp;V</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>La batería tiene una pérdida neta superior a 20&nbsp;AH</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>Descongelación trasera, espejos calentados, asientos calentados al 100% de su ciclo. Se visualizará el mensaje &quot;BATTERY SAVER ACTIVE&quot; (Ahorrador de batería activo) en el DIC</P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>Fin de derrame de carga 3</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>--</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>Más de 12,6&nbsp;V</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>La batería tiene una pérdida neta inferior a 15&nbsp;AH</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>Borrar derrame de carga 3</P>
+</TD></TR>
+</TABLE>
+
+
+
+<TABLE CELLSPACING="0"  align="center"><TR>
+<TD align="left">&nbsp;</TD>
+<TD align="left"></TD>
+<TD align="left">&nbsp;</TD>
+<TD></TD>
+</TR></TABLE>
+<BR><BR><TABLE CELLSPACING="0"  width="100%"><TBODY><TR BGCOLOR="DarkSlateBlue" align="center"><TD><FONT color="white"><B>© Copyright Chevrolet. All rights reserved</B></FONT></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>
