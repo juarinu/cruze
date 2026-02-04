@@ -1,0 +1,106 @@
+<HTML>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><TITLE>Información de servicio</TITLE><STYLE>
+	.ListIndentBul2Refer{margin-left : 40pt}  ..ListIndentBul2{margin-left : -20pt}
+	.SubListIndent{margin-left : -15pt}
+	.UpNo{border-top : white}  .DownNo{border-bottom : white}  ..BothNo{border-top : white; border-bottom : white}
+	.UpBold{border-top : thin double ridge}  .DownBold{border-bottom : thin double ridge}  .BothBold{border-top : thin double ridge; border-bottom : thin double ridge}
+	.ImageIndent{margin-left : 0%}  .ImageTitleIndent{margin-left : 5%}  .ParagraphIndent{margin-left : 20pt}
+	.Arial{font-family : Arial, Helvetica, sans-serif; margin-left : 10pt; margin-right : 10pt}
+</STYLE>
+<SCRIPT LANGUAGE="JavaScript">
+	function FixMenu()
+	{
+		menuTop = document.body.scrollTop + document.body.clientHeight -40;
+		menu.style.top = menuTop;
+		menu.style.width = document.body.clientWidth; 
+	}
+</SCRIPT>
+</HEAD>
+<BODY class="Arial" onLoad="FixMenu()" onScroll="FixMenu()" onResize="FixMenu()" BGCOLOR="#FFFFFF">
+<SPAN ID="menu" STYLE="position:absolute; left:0px; top:0px; width:0px">
+	<A border="0" href="92501382.es.html">
+	<IMG src="../../../../graphic-pool/Icons/Totop.gif" align="right" halign="Bottom" border="0" alt="Volver arriba"></A>
+</SPAN>
+<TABLE CELLSPACING="0"  width="100%" BORDER="1" rules="none" cellspacing="0" cellpadding="0" style="magin-top: 5pt">
+<TBODY>
+<TR BGCOLOR="cccc99" height="15">
+<TD width="30%"><div style="padding-left: 5pt"><B><FONT face="Arial">Cruze</FONT></B></div></TD>
+<TD width="70%" align="right" colspan="8"></TD>
+</TR>
+<TR BGCOLOR="white" height="60">
+<TD width="35%" align="left">
+<TABLE CELLSPACING="0" >
+<TR>
+<TD width="5%" align="left">&nbsp;</TD>
+<TD width="5%" align="left"></TD>
+<TD width="5%" align="left">&nbsp;</TD>
+</TR>
+</TABLE>
+</TD>
+<TD>
+<TABLE CELLSPACING="0"  width="65%" align="right">
+<TR>
+<TD style="font-size:10">
+	<A href="../../../GMDE_TIS_START.html" target="_top">
+	<IMG src="../../code/menu-images/home.gif" border="0" alt="Página de inicio de GMDE">
+</A></TD>
+<TD style="font-size:10">
+	<A href="../toc_Cruze.html" target="menu"><IMG src="../../code/menu-images/static-TOC.gif" border="0" alt="Cargar TOC estática"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../toc_Cruze_code.html" target="code"><IMG src="../../code/menu-images/menu_folder_open.gif" border="0" alt="Carga TOC dinámica"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../../help/readme_EN.htm" target="top" class="bottom_copyright"><IMG src="../../code/menu-images/help.gif" border="0" alt="¿Ayuda?"></A>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+<H2>Programación del caudal de la válvula de inyección de combustible</H2>
+
+
+<A NAME="ss1-2501382">
+<A HREF="#ss1-2501382">
+<H3>Descripción del circuito/sistema</H3></A><p>Las funciones de control del sistema de inyección de combustible están integradas en el módulo de control del motor (ECM). La información de caudal de cada uno de los inyectores, o las cifras de caudal de ajuste de cantidad inyectada, así como la posición del cilindro, están almacenados en la memoria del ECM. La programación del caudal de los inyectores de combustible debe realizarse cuando se cumple cualquiera de los siguientes procedimientos:</p>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Se ha sustituido el ECM</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Se ha sustituido una válvula de inyección de combustible</td></tr></table></div>
+
+
+<A NAME="ss2-2501382">
+<A HREF="#ss2-2501382">
+<H3>Programación del caudal de la válvula de inyección</H3></A>
+<OL><LI TYPE="1">Encendido desconectado.</LI>
+<LI TYPE="1">Registre todos los códigos de ajuste de cantidad inyectada del cilindro correspondiente para cada válvula de inyección que se está sustituyendo, o de todas las válvulas de inyección si se sustituye el ECM.</LI>
+
+<p><font color=brown><b>Nota:&nbsp;</b>Escriba el código de ajuste de cantidad de inyección, de 7 dígitos, que está en la parte superior del o de las válvulas de inyección.</font></p><LI TYPE="1">Realice la Programación del caudal del inyector en la herramienta de diagnóstico y siga las instrucciones en pantalla.</LI>
+</OL>
+
+<A NAME="ss3-2501382">
+<A HREF="#ss3-2501382">
+<H3>Verificación de la reparación</H3></A>
+<OL><LI TYPE="1">Monte todos los componentes o conectores que se hayan desconectado o sustituido durante el diagnóstico.</LI>
+<LI TYPE="1">Realice cualquier procedimiento de ajuste, programación o configuración que haga falta al desmontar o sustituir un componente.</LI>
+<LI TYPE="1">Encendido desconectado durante 60&nbsp;s.</LI>
+<LI TYPE="1">Encendido conectado, motor desconectado.</LI>
+<LI TYPE="1">Borre los DTCs.</LI>
+<LI TYPE="1">Si la reparación estaba relacionada con algún DTC, reproduzca las condiciones requeridas para activar el DTC y utilice los datos instantáneos/registros de averías, si procede, para verificar que el DTC no se vuelve a activar. Si se vuelve a activar el mismo DTC o lo hace otro DTC, consulte <a href="92449172.en.html">Lista de códigos de diagnóstico de avería (DTC) - Vehículo</a> y lleve a cabo el procedimiento de diagnóstico pertinente.</LI>
+</OL>
+
+
+
+
+<TABLE CELLSPACING="0"  align="center"><TR>
+<TD align="left">&nbsp;</TD>
+<TD align="left"></TD>
+<TD align="left">&nbsp;</TD>
+<TD></TD>
+</TR></TABLE>
+<BR><BR><TABLE CELLSPACING="0"  width="100%"><TBODY><TR BGCOLOR="DarkSlateBlue" align="center"><TD><FONT color="white"><B>© Copyright Chevrolet. All rights reserved</B></FONT></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>

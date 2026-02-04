@@ -1,0 +1,150 @@
+<HTML>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><TITLE>Información de servicio</TITLE><STYLE>
+	.ListIndentBul2Refer{margin-left : 40pt}  ..ListIndentBul2{margin-left : -20pt}
+	.SubListIndent{margin-left : -15pt}
+	.UpNo{border-top : white}  .DownNo{border-bottom : white}  ..BothNo{border-top : white; border-bottom : white}
+	.UpBold{border-top : thin double ridge}  .DownBold{border-bottom : thin double ridge}  .BothBold{border-top : thin double ridge; border-bottom : thin double ridge}
+	.ImageIndent{margin-left : 0%}  .ImageTitleIndent{margin-left : 5%}  .ParagraphIndent{margin-left : 20pt}
+	.Arial{font-family : Arial, Helvetica, sans-serif; margin-left : 10pt; margin-right : 10pt}
+</STYLE>
+<SCRIPT LANGUAGE="JavaScript">
+	function FixMenu()
+	{
+		menuTop = document.body.scrollTop + document.body.clientHeight -40;
+		menu.style.top = menuTop;
+		menu.style.width = document.body.clientWidth; 
+	}
+</SCRIPT>
+</HEAD>
+<BODY class="Arial" onLoad="FixMenu()" onScroll="FixMenu()" onResize="FixMenu()" BGCOLOR="#FFFFFF">
+<SPAN ID="menu" STYLE="position:absolute; left:0px; top:0px; width:0px">
+	<A border="0" href="92173044.es.html">
+	<IMG src="../../../../graphic-pool/Icons/Totop.gif" align="right" halign="Bottom" border="0" alt="A la parte superior del documento"></A>
+</SPAN>
+<TABLE CELLSPACING="0"  width="100%" BORDER="1" rules="none" cellspacing="0" cellpadding="0" style="magin-top: 5pt">
+<TBODY>
+<TR BGCOLOR="cccc99" height="15">
+<TD width="30%"><div style="padding-left: 5pt"><B><FONT face="Arial">Cruze</FONT></B></div></TD>
+<TD width="70%" align="right" colspan="8"></TD>
+</TR>
+<TR BGCOLOR="white" height="60">
+<TD width="35%" align="left">
+<TABLE CELLSPACING="0" >
+<TR>
+<TD width="5%" align="left">&nbsp;</TD>
+<TD width="5%" align="left"></TD>
+<TD width="5%" align="left">&nbsp;</TD>
+</TR>
+</TABLE>
+</TD>
+<TD>
+<TABLE CELLSPACING="0"  width="65%" align="right">
+<TR>
+<TD style="font-size:10">
+	<A href="../../../GMDE_TIS_START.html" target="_top">
+	<IMG src="../../code/menu-images/home.gif" border="0" alt="Página de inicio de GMDE">
+</A></TD>
+<TD style="font-size:10">
+	<A href="../toc_Cruze.html" target="menu"><IMG src="../../code/menu-images/static-TOC.gif" border="0" alt="Cargue el TOC estático"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../toc_Cruze_code.html" target="code"><IMG src="../../code/menu-images/menu_folder_open.gif" border="0" alt="Cargue el TOC dinámico"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../../help/readme_EN.htm" target="top" class="bottom_copyright"><IMG src="../../code/menu-images/help.gif" border="0" alt="¿Necesita ayuda?"></A>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+<H2>Descripción y funcionamiento de las comunicaciones de enlace de datos</H2>
+
+
+<p><font color=brown><b>Nota:&nbsp;</b>Ésta es una vista de conjunto de los diferentes buses de datos de serie usados por los módulos de control de GM para comunicar entre sí. Utilice <a href="92445152.en.html">Esquemas de comunicación de datos</a> para averiguar los buses de datos de serie que están configurados para un vehículo específico. </font></p>
+<A NAME="ss1-2173044">
+<A HREF="#ss1-2173044">
+<H3>Descripción de circuito</H3></A><p>Hay muchos componentes en un vehículo que confían en la información de otros orígenes, o transmiten información a otros orígenes, o ambos. Las redes de comunicación de datos de serie proporcionan un medio fiable y con buena relación coste/eficacia para que diversos componentes del vehículo se comuniquen entre sí para compartir información. </p>
+<p>GM utiliza una serie de diferentes buses de comunicación para garantizar el intercambio eficaz y justo a tiempo de información entre módulos de control. Cuando se comparan entre sí, algunos de estos buses son de diferente naturaleza en cuanto a velocidad, características de señal y comportamiento. Sirvan como ejemplo los buses GMLAN de alta velocidad y GMLAN de baja velocidad.</p>
+<p>Por otra parte, cuando se comparan otros buses entre sí, tienen diferentes características y funcionan simplemente en paralelo. En este caso se usan para agrupar componentes que tienen una gran interacción. Sirvan como ejemplo los buses GMLAN de alta velocidad, de expansión del tren de rodaje y de expansión del chasis. Esto les permite comunicar entre sí en un bus con congestión de mensajes reducida, garantizando la información más rápida y justo a tiempo que si todos los módulos de control se encontrasen en un solo bus.</p>
+<p>La mayoría de la información existente en el interior de una red dada suele mantenerse a nivel local, sin embargo puede ser necesario compartir alguna información con otras redes. Los módulos de control designados como pasarela desempeñan la función de transferir información entre los distintos buses. Un módulo de pasarela está conectado a un mínimo de 2 buses, e interaccionará con cada red según su estrategia de mensajes y sus modelos de transmisión.</p>
+<p>El GMLAN proporciona la capacidad para que un módulo de control de recepción supervise las transmisiones de mensajes procedentes de otros módulos de control, al objeto de determinar si no se están recibiendo mensajes de interés. El objetivo primario consiste en permitir la sustitución de valores predeterminados razonables por la información que ya no se está recibiendo. Además, un módulo de control puede generar un código diagnóstico de avería para indicar que ya no funciona el módulo de control del cual está esperando recibir información.</p>
+
+<A NAME="ss2-2173044">
+<A HREF="#ss2-2173044">
+<H3>Descripción del circuito GMLAN de alta velocidad</H3></A><p>Un bus GMLAN de alta velocidad se usa cuando es necesario intercambiar datos a una velocidad suficientemente alta para minimizar el retardo entre la ocurrencia de un cambio de valor de sensor y la recepción de esa información por un dispositivo de control que utiliza la información para ajustar las prestaciones del sistema del vehículo. </p>
+<p>La red GMLAN de datos de serie de alta velocidad consiste en un par de cables trenzados. Un circuito de señal se identifica como GMLAN alto y el otro circuito de señal se identifica como GMLAN bajo. En cada extremo del bus de datos hay un resistor terminal de 120&nbsp;Ω entre los circuitos GMLAN alto y GMLAN bajo. </p>
+<p>Los símbolos de datos (1 y 0) se transmiten secuencialmente a una velocidad de 500 Kbit/s. Los datos que se han de transmitir por el bus se representan mediante la diferencia de tensión entre la tensión de señal del GMLAN alto y la tensión de señal del GMLAN bajo. </p>
+<p>Cuando el bus de dos cables se encuentra en reposo, no se excitan los circuitos de señal de GMLAN alto y de GMLAN bajo, lo cual representa una lógica &quot;1&quot;. En este estado, ambos circuitos de señal se encuentran a la misma tensión de 2,5&nbsp;V. La tensión diferencial es de aproximadamente 0&nbsp;V. </p>
+<p>Cuando se va a transmitir una lógica &quot;0&quot;, se excita el circuito de señal de GMLAN hacia arriba a más de 3,5&nbsp;V aproximadamente, mientras que el circuito de GMLAN bajo se excita en descenso, a 1,5&nbsp;V aproximadamente. La tensión diferencial es de aproximadamente 2,0 (+/- 0,5)&nbsp;V.
+ </p>
+
+<A NAME="ss3-2173044">
+<A HREF="#ss3-2173044">
+<H3>Descripción del circuito GMLAN de alta velocidad del chasis</H3></A><p>El bus GMLAN de expansión del chasis es básicamente una copia del bus GMLAN de alta velocidad, salvo que su uso está reservado a los componentes del chasis. Esta implementación divide la congestión de mensajes entre dos buses paralelos, ayudando a garantizar la transmisión y recepción de mensajes justo a tiempo. A veces, se necesita comunicación entre el bus de expansión del chasis y el bus GMLAN de alta velocidad principal. Esto se consigue usando el módulo de control electrónico de frenos (EBCM) como módulo de pasarela. Dado que el bus de expansión del chasis GMLAN de alta velocidad y el bus GMLAN de alta velocidad principal operan de la misma manera, los diagnósticos para ambos son similares.</p>
+
+<A NAME="ss4-2173044">
+<A HREF="#ss4-2173044">
+<H3>Descripción de circuito de la Interfaz gráfica CAN (CGI)</H3></A><p>El subsistema de entretenimiento utiliza este bus para transferir gráficos de pantalla de alta velocidad entre la radio y el módulo de la pantalla de información y/o el control HVAC/Radio. Las características eléctricas del bus CAN de interfaz gráfica (CGI) son muy similares a las del bus GMLAN de alta velocidad. No obstante, la estrategia y la construcción de los mensajes son diferentes. A veces, se necesita comunicación entre el bus CAN de interfaz gráfica y el bus GMLAN de baja velocidad. Esto se consigue usando la radio SilverBox como módulo de pasarela. Como el bus CAN de interfaz gráfica y el bus GMLAN de alta velocidad tienen características eléctricas similares, los diagnósticos son similares para ambos.</p>
+<p>En el caso en que el módulo de la pantalla de información y el control de radio/HVAC sean módulos de control separados, el módulo de la pantalla de información es responsable de pasar la información entre la radio y el módulo de control de radio /HVAC. La radio sólo tiene interfaz con el módulo de pantalla de información, y el módulo de pantalla de información se comunica entonces con el control de radio/HVAC a través de una interfaz de red de interconexión local (LIN). </p>
+<p>La radio o el módulo de la pantalla de información generarán una señal de activación del bus cuando se requiera la funcionalidad del sistema. La función de comunicación de la interfaz gráfica CAN se activará o se desactivará basándose en el nivel de tensión de activación de la pila central. La red permanecerá activada mientras la tensión del circuito esté excitada en bajo, a menos de 1,5&nbsp;V. las comunicaciones se desactivan con un tensión de circuito alta de aproximadamente 5,0&nbsp;V. </p>
+<p>La radio puede ejecutar un reajuste en caliente del módulo de la pantalla de información si éste no responde a la solicitud de la radio. El reajuste de la pila central es una salida de disminución de verificación baja (inferior a 1,5&nbsp;V) de la radio al módulo de la pantalla de información y tiene las mismas características eléctricas que los de la señal de activación de la pila central que se han definido anteriormente.</p>
+
+<A NAME="ss5-2173044">
+<A HREF="#ss5-2173044">
+<H3>Descripción de circuito GMLAN de velocidad media</H3></A><p>El bus GMLAN de media velocidad es muy parecido al bus GMLAN de alta velocidad, salvo que emplea una velocidad de transmisión más baja, de 125 Kbit/s. Este bus está concebido para usarlo donde el tiempo de respuesta del sistema requiere transmitir una gran cantidad de datos en un espacio de tiempo relativamente corto, como por ejemplo para actualizar una pantalla gráfica. Como tal, se ha usado con frecuencia para aplicaciones de infoentretenimiento. A veces, se necesita comunicación entre el bus GMLAN de baja velocidad y el bus GMLAN de media velocidad. Esto se consigue usando la radio (SilverBox) como módulo de pasarela. Dado que el bus GMLAN de media velocidad y el bus GMLAN de alta velocidad principal operan de forma similar, los diagnósticos para ambos son similares.</p>
+
+<A NAME="ss6-2173044">
+<A HREF="#ss6-2173044">
+<H3>Descripción de circuito GMLAN de baja velocidad</H3></A><p>El bus GMLAN de baja velocidad se usa en aplicaciones que requieren una alta velocidad de datos, con lo cual se pueden emplear componentes menos complejos. Se usa típicamente para funciones controladas por el operador, cuyos requisitos de tiempo de respuesta son más bajos que los necesarios para el control dinámico del vehículo. </p>
+<p>La red de datos de serie GMLAN de baja velocidad consiste en un bus de un solo cable referenciado a masa, con excitación de tensión en el lado alto. Durante la operación del vehículo en la carretera, se transmiten símbolos de datos (1 y 0) de forma secuencial, a la velocidad normal de 33,3 Kbit/s. Se puede usar un modo especial de datos de alta velocidad, 83,3 Kbit/s exclusivamente para la programación de componentes. </p>
+<p>A diferencia de las redes de doble cable de alta velocidad, la red de baja velocidad de un solo cable no utiliza resistores terminales en ambos extremos de la red. </p>
+<p>Los símbolos de datos que se transmiten por el bus están representados por diferentes señales de tensión en el autobús. Cuando el bus GMLAN de baja velocidad se encuentra en reposo y no recibe excitación, hay una tensión de señal baja de aproximadamente 0,2&nbsp;V. Esto representa una lógica &quot;1&quot;. Cuando se va a transmitir una lógica &quot;0&quot;, se excita la tensión de señal hacia arriba, a aproximadamente 4,0&nbsp;V o más alta.</p>
+
+<A NAME="ss7-2173044">
+<A HREF="#ss7-2173044">
+<H3>Descripción de circuito LIN (Local Interconnect Network)</H3></A><p>El bus de red de interconexión local (LIN) consiste en un solo cable con una velocidad de transmisión de 10,417 Kbit/s. Este bus se usa para intercambiar información entre un módulo de control maestro y otros dispositivos inteligente que proporcionan funcionalidad de soporte. Este tipo de configuración no requiere la capacidad ni la velocidad de un bus GMLAN de alta velocidad ni de un GMLAN de baja velocidad, y por ello es relativamente más simple. </p>
+<p>Los símbolos de datos (1 y 0) que se van a transmitir están representados por distintos niveles de tensión en el bus de comunicación. Cuando el bus LIN está en reposo y no excitado, la señal se encuentra en un estado de tensión alta de aproximadamente Vbat. Esto representa una lógica de &quot;1&quot;. Cuando se va a transmitir una lógica &quot;0&quot;, se excita la tensión de señal en descenso, a aproximadamente masa (0,0&nbsp;V). </p>
+
+<A NAME="ss8-2173044">
+<A HREF="#ss8-2173044">
+<H3>Descripción de circuito habilitado de comunicación</H3></A><p>Los módulos de control en las redes del tipo GMLAN de alta velocidad, salvo el bus GMLAN de media velocidad y el bus CAN de interfaz gráfica, habilitan o deshabilitan la comunicación basándose en el nivel de tensión de este circuito. Cuando la tensión del circuito es alta (alrededor de 12&nbsp;V), se habilitan las comunicaciones. Cuando el circuito es bajo, se deshabilitan las comunicaciones. </p>
+<p>El bus CAN de interfaz gráfica es similar, pero emplea distintos niveles de tensión. Vea la descripción de arriba para el bus CAN de interfaz gráfica.</p>
+
+<A NAME="ss9-2173044">
+<A HREF="#ss9-2173044">
+<H3>Conector de enlace de datos (DLC)</H3></A><p>El conector de enlace de datos (DLC) es un conector de 16 cavidades estandarizado. El diseño y la ubicación del conector vienen dados por un estándar de cable industrial y es necesario que prevea lo siguiente:</p>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Pasador&nbsp;1 - terminal de comunicación GMLAN de baja velocidad </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Pasador 2 clase 2 - terminal de comunicación </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Pasador&nbsp;3 - terminal de bus (+) GMLAN de velocidad media </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Pasador&nbsp;4 - terminal de masa de potencia de herramienta de diagnóstico </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Pasador&nbsp;5 - terminal de masa de señal común </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Pasador&nbsp;6 - terminal de bus (+) de datos de serie GMLAN de alta velocidad </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Pasador 7 - terminal de comunicación de teclado </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Pasador&nbsp;11 - terminal de bus (-) de datos de serie GMLAN de velocidad media </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Pasador&nbsp;12 - terminal de bus (+) de datos de serie GMLAN de alta velocidad del chasis </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Pasador&nbsp;13 - terminal de bus (-) de datos de serie GMLAN de alta velocidad del chasis </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Pasador&nbsp;14 - terminal de bus (-) de datos de serie GMLAN de alta velocidad </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Pasador&nbsp;16 - terminal de tensión positiva de la batería, corriente de herramienta de diagnóstico </td></tr></table></div>
+
+
+<A NAME="ss10-2173044">
+<A HREF="#ss10-2173044">
+<H3>Referencia de datos de serie</H3></A><p>La herramienta de diagnóstico comunica a través de los distintos buses del vehículo. Cuando se instala una herramienta de diagnóstico en un vehículo, la herramienta de diagnóstico intentará comunicar con cualquier módulo control con el que tenga opción en el vehículo. Si una opción no está instalada en el vehículo, la herramienta de diagnóstico mostrará el mensaje &quot;No comunicación&quot; para ese módulo de control opcional. Para impedir fallos de diagnóstico de no comunicación con un módulo de control específico, consulte en <a href="92196804.en.html">Referencias de enlace de datos</a> una lista de módulos de control, los buses con los que se comunican y los códigos RPO para un módulo de control específico.</p>
+
+
+
+
+<TABLE CELLSPACING="0"  align="center"><TR>
+<TD align="left">&nbsp;</TD>
+<TD align="left"></TD>
+<TD align="left">&nbsp;</TD>
+<TD></TD>
+</TR></TABLE>
+<BR><BR><TABLE CELLSPACING="0"  width="100%"><TBODY><TR BGCOLOR="DarkSlateBlue" align="center"><TD><FONT color="white"><B>© Copyright Chevrolet. Reservados todos los derechos</B></FONT></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>
